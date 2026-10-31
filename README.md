@@ -42,8 +42,8 @@ Tests: `npm test` (analytics, adapters against fixtures, and a full simulated el
 ## Deploy (Vercel)
 
 1. Import the repo; add **Upstash for Redis** from the Marketplace (sets `UPSTASH_REDIS_REST_*`).
-2. Set `CRON_SECRET`, `FEC_API_KEY`, `NEXT_PUBLIC_SITE_URL`.
-3. `vercel.json` schedules `/api/ingest` every minute and `/api/ingest-slow` every 30 min — **Pro plan required** for per-minute cron (Hobby allows once/day; use cron-job.org or QStash to hit `/api/ingest?key=$CRON_SECRET` instead).
+2. Copy `.env.example` for local use. In Vercel set `CRON_SECRET`, `ADMIN_SECRET`, `FEC_API_KEY` and `NEXT_PUBLIC_SITE_URL` (mark the secrets Sensitive).
+3. `vercel.json` schedules `/api/ingest` once a day as a safety net (Hobby-legal). Live updates need a per-minute trigger: Vercel Pro cron, or an external pinger (cron-job.org, QStash) sending `Authorization: Bearer $CRON_SECRET` to `/api/ingest`. See `docs/PINGER.md`.
 4. For election-night traffic enable Flat Rate CDN and a Spend Management cap (see docs/research/04).
 
 ## Licenses & attribution

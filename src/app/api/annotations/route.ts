@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server";
 import { z } from "zod";
-import { jsonResponse } from "@/lib/http";
+import { jsonResponse, safeEqual } from "@/lib/http";
 import { readSlow, writeSlow } from "@/lib/snapshot-store";
 import { ANNOTATIONS, type Annotation } from "@/data/annotations";
 
@@ -33,7 +33,7 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   const secret = process.env.ADMIN_SECRET;
-  if (!secret || request.headers.get("authorization") !== `Bearer ${secret}`) {
+  if (!secret || !safeEqual(request.headers.get("authorization") ?? "", `Bearer ${secret}`)) {
     return jsonResponse(request, { error: "unauthorized" }, { status: 401, profile: "none" });
   }
   let body: unknown;

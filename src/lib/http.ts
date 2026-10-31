@@ -1,4 +1,4 @@
-import { createHash } from "node:crypto";
+import { createHash, timingSafeEqual } from "node:crypto";
 
 export type CacheProfile = "live" | "slow" | "static" | "none";
 
@@ -36,7 +36,11 @@ export function jsonResponse(
 export function isAuthorizedCron(request: Request): boolean {
   const secret = process.env.CRON_SECRET;
   if (!secret) return process.env.NODE_ENV !== "production";
-  const auth = request.headers.get("authorization");
-  const url = new URL(request.url);
-  return auth === `Bearer ${secret}` || url.searchParams.get("key") === secret;
+  return safeEqual(request.headers.get("authorization") ?? "", `Bearer ${secret}`);
+}
+
+export function safeEqual(a: string, b: string): boolean {
+  const ha = createHash("sha256").update(a).digest();
+  const hb = createHash("sha256").update(b).digest();
+  return timingSafeEqual(ha, hb);
 }

@@ -23,8 +23,7 @@ cron-job.org (every 1 min) ──► GET /api/ingest  (Authorization: Bearer $CR
    - **URL:** `https://<your-deployment>/api/ingest`
    - **Schedule:** every 1 minute
    - **Advanced → Headers:** `Authorization: Bearer <CRON_SECRET>`
-     (fallback if headers aren't available: append `?key=<CRON_SECRET>` to the URL — works, but the secret then
-     appears in request logs)
+     (the secret is only accepted in this header, never in the URL, so it stays out of request logs)
    - **Advanced → Timeout:** 30 s (the route answers after the first pull, ~10–15 s)
    - **Notifications:** on failure, and when the job gets disabled
 3. Click **Test run** → expect HTTP 200 and `"ok": true, "nextPullsIn": [30000]`.
