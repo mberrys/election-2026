@@ -3,6 +3,7 @@ import { BallotLookupForm } from "@/components/ballot/ballot-lookup";
 
 export const metadata: Metadata = {
   title: "My Ballot",
+  alternates: { canonical: "/ballot" },
   description: "Look up your polling place, early-voting sites and the contests on your ballot for Nov 3, 2026.",
 };
 

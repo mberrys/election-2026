@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { loadSources, type SourceRef } from "@/data/reference/load";
 import { HEXMAP_ATTRIBUTION } from "@/components/maps/hex-cartogram";
 
-export const metadata: Metadata = { title: "Sources & licenses" };
+export const metadata: Metadata = { title: "Sources & licenses", alternates: { canonical: "/sources" } };
 
 export default function SourcesPage() {
   const sources: SourceRef[] = loadSources();

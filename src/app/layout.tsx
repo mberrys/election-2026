@@ -6,19 +6,19 @@ import { Providers } from "./providers";
 import { SiteHeader } from "@/components/board/site-header";
 import { SiteFooter } from "@/components/board/site-footer";
 import { SimBanner } from "@/components/board/sim-banner";
+import { JsonLd } from "@/components/seo/json-ld";
+import { websiteJsonLd } from "@/lib/seo";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 // Archivo for every word (variable width 62–125 for wide headings); JetBrains Mono only for figures that tick.
 const archivo = Archivo({ variable: "--font-archivo", subsets: ["latin"], axes: ["wdth"] });
 const jetbrainsMono = JetBrains_Mono({ variable: "--font-jetbrains-mono", subsets: ["latin"] });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title: { default: "Big Board: 2026 Midterms", template: "%s · Big Board 2026" },
-  description:
-    "Live, free-data election tracker for the Nov 3, 2026 US midterms: Senate, House, governors and ballot measures with county-level expected-vote analysis.",
-  openGraph: { type: "website", siteName: "Big Board 2026" },
+  description: SITE_DESCRIPTION,
+  openGraph: { type: "website", siteName: SITE_NAME },
 };
 
 export const viewport: Viewport = { themeColor: "#07090d", colorScheme: "dark" };
@@ -36,6 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <main className="flex-1 w-full max-w-[1600px] mx-auto px-4 md:px-6 py-4 md:py-6">{children}</main>
           <SiteFooter />
         </Providers>
+        <JsonLd data={websiteJsonLd()} />
         <Analytics />
       </body>
     </html>

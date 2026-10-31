@@ -1,0 +1,93 @@
+import { afterEach, describe, expect, it, vi } from "vitest";
+import robots from "../../src/app/robots";
+import sitemap from "../../src/app/sitemap";
+import { SITE_PAGES, breadcrumbJsonLd, historyDatasetJsonLd, serializeJsonLd, websiteJsonLd } from "../../src/lib/seo";
+import { absoluteUrl, siteUrl } from "../../src/lib/site";
+
+afterEach(() => vi.unstubAllEnvs());
+
+describe("siteUrl / absoluteUrl", () => {
+  it("prefers NEXT_PUBLIC_SITE_URL, trims trailing slashes", () => {
+    expect(siteUrl({ NEXT_PUBLIC_SITE_URL: "https://example.com//", VERCEL_PROJECT_PRODUCTION_URL: "prod.vercel.app" })).toBe("https://example.com");
+  });
+
+  it("falls back to the Vercel production domain, then localhost", () => {
+    expect(siteUrl({ VERCEL_PROJECT_PRODUCTION_URL: "prod.vercel.app" })).toBe("https://prod.vercel.app");
+    expect(siteUrl({ NEXT_PUBLIC_SITE_URL: " ", VERCEL_PROJECT_PRODUCTION_URL: "" })).toBe("http://localhost:3000");
+  });
+
+  it("joins paths without doubling slashes", () => {
+    expect(absoluteUrl("/history", "https://x.test")).toBe("https://x.test/history");
+    expect(absoluteUrl("history", "https://x.test")).toBe("https://x.test/history");
+    expect(absoluteUrl("/", "https://x.test")).toBe("https://x.test");
+  });
+});
+
+describe("sitemap", () => {
+  const urls = sitemap().map((e) => e.url);
+
+  it("lists every static page and all 51 state pages, once each, as absolute URLs", () => {
+    expect(urls).toHaveLength(SITE_PAGES.length + 51);
+    expect(new Set(urls).size).toBe(urls.length);
+    expect(urls.every((u) => /^https?:\/\//.test(u))).toBe(true);
+    expect(urls).toContain(absoluteUrl("/history"));
+    expect(urls).toContain(absoluteUrl("/state/TX"));
+    expect(urls).toContain(absoluteUrl("/state/DC"));
+  });
+
+  it("leaves out API routes and the redirect-only /senate/[state]", () => {
+    expect(urls.some((u) => u.includes("/api/") || u.includes("/senate/"))).toBe(false);
+  });
+
+  it("sets valid priorities", () => {
+    for (const e of sitemap()) {
+      expect(e.priority).toBeGreaterThan(0);
+      expect(e.priority).toBeLessThanOrEqual(1);
+    }
+  });
+});
+
+describe("robots", () => {
+  it("allows crawling, blocks /api/, and points at the sitemap in production", () => {
+    vi.stubEnv("VERCEL_ENV", "production");
+    const r = robots();
+    expect(r.rules).toMatchObject({ userAgent: "*", allow: "/", disallow: "/api/" });
+    expect(r.sitemap).toBe(absoluteUrl("/sitemap.xml"));
+  });
+
+  it("allows crawling locally (no VERCEL_ENV)", () => {
+    vi.stubEnv("VERCEL_ENV", "");
+    expect(robots().rules).toMatchObject({ allow: "/" });
+  });
+
+  it("blocks everything on preview deployments", () => {
+    vi.stubEnv("VERCEL_ENV", "preview");
+    expect(robots()).toEqual({ rules: { userAgent: "*", disallow: "/" } });
+  });
+});
+
+describe("structured data", () => {
+  it("escapes < so a payload cannot close the script tag", () => {
+    const s = serializeJsonLd({ name: "</script><script>alert(1)</script>" });
+    expect(s).not.toContain("<");
+    expect(JSON.parse(s).name).toBe("</script><script>alert(1)</script>");
+  });
+
+  it("describes the site", () => {
+    expect(websiteJsonLd("https://x.test")).toMatchObject({ "@type": "WebSite", url: "https://x.test", "@id": "https://x.test/#website" });
+  });
+
+  it("builds an ordered breadcrumb with absolute URLs", () => {
+    const b = breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Texas", path: "/state/TX" }], "https://x.test");
+    expect(b.itemListElement).toEqual([
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://x.test" },
+      { "@type": "ListItem", position: 2, name: "Texas", item: "https://x.test/state/TX" },
+    ]);
+  });
+
+  it("describes the history dataset with its time span and no unverified license", () => {
+    const d = historyDatasetJsonLd({ firstYear: 1976, lastYear: 2024, dateModified: "2026-10-31T00:00:00Z" }, "https://x.test");
+    expect(d).toMatchObject({ "@type": "Dataset", url: "https://x.test/history", temporalCoverage: "1976/2024", dateModified: "2026-10-31T00:00:00Z" });
+    expect(d).not.toHaveProperty("license");
+  });
+});

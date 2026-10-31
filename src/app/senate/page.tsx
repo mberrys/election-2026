@@ -4,6 +4,7 @@ import { loadRaces, loadStates } from "@/data/reference/load";
 
 export const metadata: Metadata = {
   title: "Senate",
+  alternates: { canonical: "/senate" },
   description: "Live 2026 Senate balance of power, paths to a majority, and all 35 races with ratings, polls, money and results.",
 };
 

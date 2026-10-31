@@ -4,7 +4,7 @@ import { loadPolls, loadRaces, loadStates } from "@/data/reference/load";
 import { HouseBoard } from "@/components/house/house-board";
 import type { GenericBallotData } from "@/components/house/generic-ballot";
 
-export const metadata: Metadata = { title: "House" };
+export const metadata: Metadata = { title: "House", alternates: { canonical: "/house" } };
 
 export default function HousePage() {
   const metas = loadRaces().filter((r) => r.office === "house");

@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { loadRaces, loadStates } from "@/data/reference/load";
 import { StatesBoard } from "@/components/states/states-board";
 
-export const metadata: Metadata = { title: "States & Measures" };
+export const metadata: Metadata = { title: "States & Measures", alternates: { canonical: "/states" } };
 
 export default function StatesPage() {
   const races = loadRaces();

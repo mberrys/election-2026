@@ -1,8 +1,11 @@
+import type { Metadata } from "next";
 import { NationalBoard } from "@/components/board/national-board";
 import { loadPolls, loadRaces, loadStates } from "@/data/reference/load";
 import type { RaceMeta } from "@/data/schema";
 
 export const ensureStatic = "navigation";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 /** The national board only needs identity, candidates, ratings and holder — drop polls/money/baselines/notes. */
 function slim(m: RaceMeta): RaceMeta {

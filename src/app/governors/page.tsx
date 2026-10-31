@@ -4,6 +4,7 @@ import { loadRaces, loadStates } from "@/data/reference/load";
 
 export const metadata: Metadata = {
   title: "Governors",
+  alternates: { canonical: "/governors" },
   description: "All 36 governor races of 2026: ratings, polls, money, live margins and projections, with flips tracked as they happen.",
 };
 
