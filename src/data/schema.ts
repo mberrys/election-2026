@@ -98,6 +98,40 @@ export const Baseline = z.object({
 });
 export type Baseline = z.infer<typeof Baseline>;
 
+// ---------- Election history (public/data/reference/history.json) ----------
+
+/** Election year (as a string key) -> D minus R margin in points; negative = R. */
+export const MarginSeries = z.record(z.string(), z.number());
+export type MarginSeries = z.infer<typeof MarginSeries>;
+
+export const HistoryRow = z.object({
+  pres: MarginSeries.default({}),
+  senate: MarginSeries.default({}),
+  governor: MarginSeries.default({}),
+});
+export type HistoryRow = z.infer<typeof HistoryRow>;
+
+export const DistrictHistory = z.object({
+  /** House margins within the current map era only (not comparable across redistricting). */
+  house: MarginSeries.default({}),
+  /** Presidential margin on 2026 lines (2020, 2024). */
+  pres: MarginSeries.default({}),
+  caveat: z.enum(["redrawn-2024", "redrawn-2026"]).optional(),
+});
+export type DistrictHistory = z.infer<typeof DistrictHistory>;
+
+export const History = z.object({
+  builtAt: z.string(),
+  /** Presidential election years covered. */
+  years: z.array(z.number()),
+  national: z.object({
+    pres: z.record(z.string(), z.object({ d: z.number(), r: z.number(), margin: z.number() })),
+  }),
+  states: z.record(z.string(), HistoryRow),
+  districts: z.record(z.string(), DistrictHistory),
+});
+export type History = z.infer<typeof History>;
+
 export const RaceMeta = z.object({
   id: z.string(),
   office: Office,

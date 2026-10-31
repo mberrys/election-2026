@@ -1,9 +1,9 @@
 /**
  * Big Board reference-data build.
  *
- *   npx tsx scripts/build-reference.ts [--only=states,races,polls,money,baselines] [--no-cache] [--full]
+ *   npx tsx scripts/build-reference.ts [--only=states,races,polls,money,baselines,history] [--no-cache] [--full]
  *
- * Writes public/data/reference/{states,races,polls,money,baselines,counties,sources,meta}.json.
+ * Writes public/data/reference/{states,races,polls,money,baselines,counties,history,sources,meta}.json.
  * Every step is isolated: a failure records a warning and the build continues.
  * HTTP responses are cached under scripts/.cache/http keyed by URL hash.
  */
@@ -13,14 +13,15 @@ import { RaceMeta, StateMeta } from "../src/data/schema";
 import { setNoCache } from "./lib/http";
 import { SOURCES, type SourceEntry } from "./lib/sources";
 import { buildBaselines, type BaselinesOut, type CountyRow } from "./lib/step-baselines";
+import { buildHistory } from "./lib/step-history";
 import { buildMoney, type MoneyOut } from "./lib/step-money";
 import { buildPolls, type PollsOut } from "./lib/step-polls";
 import { buildRaces, type RacesResult } from "./lib/step-races";
 import { buildStates, type StateMetaOut } from "./lib/step-states";
 import { OUT_DIR, ensureDir, getWarnings, info, warn, writeJson } from "./lib/util";
 
-type Step = "states" | "races" | "polls" | "money" | "baselines";
-const ALL_STEPS: Step[] = ["states", "races", "polls", "money", "baselines"];
+type Step = "states" | "races" | "polls" | "money" | "baselines" | "history";
+const ALL_STEPS: Step[] = ["states", "races", "polls", "money", "baselines", "history"];
 
 function parseArgs(argv: string[]) {
   const only = new Set<Step>();
@@ -36,7 +37,7 @@ function parseArgs(argv: string[]) {
         else warn(`unknown step "${s}" in --only`);
       }
     } else if (a === "--help" || a === "-h") {
-      process.stdout.write("usage: tsx scripts/build-reference.ts [--only=states,races,polls,money,baselines] [--no-cache] [--full]\n");
+      process.stdout.write("usage: tsx scripts/build-reference.ts [--only=states,races,polls,money,baselines,history] [--no-cache] [--full]\n");
       process.exit(0);
     }
   }
@@ -138,6 +139,13 @@ async function main() {
       writeJson(path.join(OUT_DIR, "baselines.json"), baselines);
       writeJson(path.join(OUT_DIR, "counties.json"), counties);
     }
+  }
+
+  // ---- history ----
+  if (steps.includes("history")) {
+    const history = await step("history", () => buildHistory(races ?? []));
+    setSrc("medsl-president", history ? "ok" : "failed", history ? `${history.years.length} elections` : undefined);
+    if (history) writeJson(path.join(OUT_DIR, "history.json"), history);
   }
 
   // ---- races.json (after enrichment) ----

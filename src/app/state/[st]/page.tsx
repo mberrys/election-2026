@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { StateBoard } from "@/components/state/state-board";
+import { StateHistoryPanel } from "@/components/history/state-history-panel";
 import { getRacesByState, getState, loadCounties, loadStates } from "@/data/reference/load";
 
 /**
@@ -34,8 +35,11 @@ export default async function StatePage({ params }: PageProps<"/state/[st]">) {
   const counties = Object.fromEntries(Object.entries(loadCounties()).filter(([, c]) => c.state === state.abbr));
 
   return (
-    <Suspense>
-      <StateBoard state={state} metas={metas} counties={counties} />
-    </Suspense>
+    <div className="space-y-6">
+      <Suspense>
+        <StateBoard state={state} metas={metas} counties={counties} />
+      </Suspense>
+      <StateHistoryPanel abbr={state.abbr} />
+    </div>
   );
 }

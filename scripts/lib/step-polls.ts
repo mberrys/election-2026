@@ -43,6 +43,8 @@ export interface PollsOut {
     votehub?: PollAverageT & { windowDays: number; pollsters: number };
   };
   races: Record<string, PollAverageT>;
+  /** Weekly rolling poll averages since TREND_START: "generic" plus race ids with enough polls. */
+  trend: Record<string, TrendPoint[]>;
   votehub: {
     reachable: boolean;
     status: number;
@@ -71,6 +73,51 @@ function avgWindow(polls: VoteHubPoll[], pick: (p: VoteHubPoll) => { d?: number;
   const d = vals.reduce((a, v) => a + v.d, 0) / vals.length;
   const r = vals.reduce((a, v) => a + v.r, 0) / vals.length;
   return { d: round(d, 1), r: round(r, 1), n: vals.length, asOf: latest, pollsters: new Set(win.map((p) => p.pollster)).size };
+}
+
+export interface TrendPoint {
+  /** Week-ending date, YYYY-MM-DD. */
+  t: string;
+  d: number;
+  r: number;
+  n: number;
+}
+
+export const TREND_START = "2026-01-01";
+const DAY = 86400000;
+
+/**
+ * Weekly rolling averages of D and R (simple mean of polls ending within `windowDays` of each week-end), oldest
+ * first. Internals are excluded and a point needs `minN` polls, so thin stretches leave gaps instead of noise.
+ */
+export function pollTrend(
+  polls: VoteHubPoll[],
+  pick: (p: VoteHubPoll) => { d?: number; r?: number },
+  opts: { windowDays?: number; minN?: number; start?: string } = {},
+): TrendPoint[] {
+  const windowDays = opts.windowDays ?? 28;
+  const minN = opts.minN ?? 3;
+  const dated = polls
+    .filter((p) => p.end_date && !p.internal)
+    .map((p) => ({ end: p.end_date.slice(0, 10), v: pick(p) }))
+    .filter((p): p is { end: string; v: { d: number; r: number } } => typeof p.v.d === "number" && typeof p.v.r === "number");
+  if (!dated.length) return [];
+  const last = dated.reduce((m, p) => (p.end > m ? p.end : m), "");
+  const out: TrendPoint[] = [];
+  const startMs = Date.parse(opts.start ?? TREND_START);
+  for (let t = Date.parse(last); t >= startMs; t -= 7 * DAY) {
+    const hi = new Date(t).toISOString().slice(0, 10);
+    const lo = new Date(t - windowDays * DAY).toISOString().slice(0, 10);
+    const win = dated.filter((p) => p.end <= hi && p.end > lo);
+    if (win.length < minN) continue;
+    out.push({
+      t: hi,
+      d: round(win.reduce((a, p) => a + p.v.d, 0) / win.length, 1),
+      r: round(win.reduce((a, p) => a + p.v.r, 0) / win.length, 1),
+      n: win.length,
+    });
+  }
+  return out.reverse();
 }
 
 function genericPick(p: VoteHubPoll): { d?: number; r?: number } {
@@ -134,6 +181,7 @@ export async function buildPolls(races: RaceMeta[]): Promise<PollsOut> {
     builtAt: new Date().toISOString(),
     generic: {},
     races: {},
+    trend: {},
     votehub: {
       reachable: false,
       status: 0,
@@ -202,7 +250,9 @@ export async function buildPolls(races: RaceMeta[]): Promise<PollsOut> {
         out.generic.votehub.windowDays = 14;
         out.generic.votehub.pollsters = a.pollsters;
       }
-      info(`VoteHub generic ballot: ${gen.data.length} polls`);
+      const gt = pollTrend(gen.data, genericPick, { minN: 5 });
+      if (gt.length) out.trend.generic = gt;
+      info(`VoteHub generic ballot: ${gen.data.length} polls, ${gt.length} trend points`);
     }
     for (const pt of ["us-senator", "governor", "us-representative"]) {
       const r = await fetchJson<VoteHubPoll[]>(`${VOTEHUB_BASE}/polls?poll_type=${pt}`, { label: `votehub-${pt}` });
@@ -227,6 +277,8 @@ export async function buildPolls(races: RaceMeta[]): Promise<PollsOut> {
         const pa: PollAverageT = PollAverage.parse({ d: a.d, r: a.r, n: a.n, asOf: a.asOf, source: "VoteHub (CC BY 4.0)" });
         out.races[id] = pa;
         race.polls = pa;
+        const tr = pollTrend(polls, racePick(race));
+        if (tr.length >= 2) out.trend[id] = tr;
       }
       info(`VoteHub ${pt}: ${r.data.length} polls → ${groups.size} races`);
     }
