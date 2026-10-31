@@ -8,7 +8,8 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Swatch } from "@/components/board/hatch";
 import { sortRows, type HistoryRowModel, type SortKey } from "@/analytics/history";
 import type { TrendPoint } from "@/data/reference/load";
-import { HistoryDetail, lastTimeSentence } from "./history-detail";
+import { HistoryDetail } from "./history-detail";
+import { lastTimeSentence } from "./summary";
 import { HistoryStrips } from "./history-strips";
 
 export type Level = "states" | "districts";

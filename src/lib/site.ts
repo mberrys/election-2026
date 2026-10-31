@@ -13,6 +13,10 @@ export const SITE_URL = siteUrl();
 
 export const SITE_NAME = "Big Board 2026";
 
+export const DEFAULT_TITLE = "Big Board: 2026 Midterms";
+
+export const ELECTION_DAY_LABEL = "Tuesday, November 3, 2026";
+
 export const SITE_DESCRIPTION =
   "Live, free-data election tracker for the Nov 3, 2026 US midterms: Senate, House, governors and ballot measures with county-level expected-vote analysis.";
 

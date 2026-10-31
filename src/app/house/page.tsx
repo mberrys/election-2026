@@ -3,8 +3,15 @@ import { Suspense } from "react";
 import { loadPolls, loadRaces, loadStates } from "@/data/reference/load";
 import { HouseBoard } from "@/components/house/house-board";
 import type { GenericBallotData } from "@/components/house/generic-ballot";
+import { nationalCopy } from "@/components/board/page-copy";
+import { genericBallot } from "@/components/history/build-view";
+import { pageMetadata } from "@/lib/page-meta";
 
-export const metadata: Metadata = { title: "House", alternates: { canonical: "/house" } };
+export const metadata: Metadata = pageMetadata({
+  title: "2026 House Races: Ratings, Toss-ups and Live Results",
+  description: nationalCopy(loadRaces(), genericBallot().margin).house,
+  path: "/house",
+});
 
 export default function HousePage() {
   const metas = loadRaces().filter((r) => r.office === "house");

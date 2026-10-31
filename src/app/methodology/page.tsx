@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/page-meta";
 
-export const metadata: Metadata = { title: "Methodology", alternates: { canonical: "/methodology" } };
+export const metadata: Metadata = pageMetadata({
+  title: "Methodology: How the Big Board Projects Elections",
+  description: "How the Big Board turns polls, ratings, vote counts and election history into projections for the 2026 midterms, what it adjusts, and what it does not.",
+  path: "/methodology",
+});
 
 export default function MethodologyPage() {
   return (

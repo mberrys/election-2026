@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import { SenateBoard } from "@/components/senate/senate-board";
+import { nationalCopy } from "@/components/board/page-copy";
+import { genericBallot } from "@/components/history/build-view";
 import { loadRaces, loadStates } from "@/data/reference/load";
+import { pageMetadata } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  title: "Senate",
-  alternates: { canonical: "/senate" },
-  description: "Live 2026 Senate balance of power, paths to a majority, and all 35 races with ratings, polls, money and results.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "2026 Senate Races: Ratings, Polls and Path to a Majority",
+  description: nationalCopy(loadRaces(), genericBallot().margin).senate,
+  path: "/senate",
+});
 
 export default function SenatePage() {
   const metas = loadRaces().filter((r) => r.office === "senate");

@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import { loadSources, type SourceRef } from "@/data/reference/load";
 import { HEXMAP_ATTRIBUTION } from "@/components/maps/hex-cartogram";
+import { pageMetadata } from "@/lib/page-meta";
 
-export const metadata: Metadata = { title: "Sources & licenses", alternates: { canonical: "/sources" } };
+export const metadata: Metadata = pageMetadata({
+  title: "Sources & licenses",
+  description: "Every data source behind the Big Board's polls, ratings, election history and live results, with licenses and refresh schedules.",
+  path: "/sources",
+});
 
 export default function SourcesPage() {
   const sources: SourceRef[] = loadSources();

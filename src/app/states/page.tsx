@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { loadRaces, loadStates } from "@/data/reference/load";
 import { StatesBoard } from "@/components/states/states-board";
+import { pageMetadata } from "@/lib/page-meta";
 
-export const metadata: Metadata = { title: "States & Measures", alternates: { canonical: "/states" } };
+export const metadata: Metadata = pageMetadata({
+  title: "2026 State Ballot Measures and Legislature Races",
+  description: `${loadRaces().filter((r) => r.office === "ballot").length} statewide ballot measures and ${loadRaces().filter((r) => r.office === "stateleg").length} state legislative chamber races on the Nov 3, 2026 ballot, by state, with governors and poll closing times.`,
+  path: "/states",
+});
 
 export default function StatesPage() {
   const races = loadRaces();

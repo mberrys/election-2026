@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { BallotLookupForm } from "@/components/ballot/ballot-lookup";
+import { pageMetadata } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  title: "My Ballot",
-  alternates: { canonical: "/ballot" },
-  description: "Look up your polling place, early-voting sites and the contests on your ballot for Nov 3, 2026.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Find Your Polling Place and Ballot for Nov 3, 2026",
+  description: "Enter your address to see your polling place, early-voting sites and the contests on your ballot for the Nov 3, 2026 election.",
+  path: "/ballot",
+});
 
 export default function BallotPage() {
   return (

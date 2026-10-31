@@ -61,3 +61,15 @@ the upstream load on state election servers — not recommended.
 
 1M CDN requests ≈ **7,000 viewer-hours** (e.g. 1,000 people for 7 hours). Exceeding a Hobby limit **pauses the
 project**. Fine for you and a small audience; for anything public, move to Pro before Nov 3.
+
+## Search engine pings (IndexNow)
+
+After a deploy that ships new reference data, tell Bing-family search engines the pages changed. The key file lives at
+`public/<key>.txt` and the route submits every sitemap URL (needs `NEXT_PUBLIC_SITE_URL` set to the public origin):
+
+```bash
+curl -X POST https://<your-deployment>/api/indexnow -H "Authorization: Bearer $CRON_SECRET"
+```
+
+`{"ok":true,...}` with status 200 or 202 means the batch was accepted. Google does not read IndexNow: submit
+`/sitemap.xml` in Search Console and use URL Inspection → Request indexing for the key pages instead.

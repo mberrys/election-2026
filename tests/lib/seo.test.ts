@@ -1,7 +1,8 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import robots from "../../src/app/robots";
 import sitemap from "../../src/app/sitemap";
-import { SITE_PAGES, breadcrumbJsonLd, historyDatasetJsonLd, serializeJsonLd, websiteJsonLd } from "../../src/lib/seo";
+import { pageMetadata } from "../../src/lib/page-meta";
+import { SITE_PAGES, breadcrumbJsonLd, historyDatasetJsonLd, serializeJsonLd, webPageJsonLd, websiteJsonLd } from "../../src/lib/seo";
 import { absoluteUrl, siteUrl } from "../../src/lib/site";
 
 afterEach(() => vi.unstubAllEnvs());
@@ -47,6 +48,23 @@ describe("sitemap", () => {
   });
 });
 
+describe("pageMetadata", () => {
+  it("sets canonical, Open Graph and Twitter tags together, with the site name on share titles", () => {
+    const m = pageMetadata({ title: "Texas", description: "About Texas", path: "/state/TX" });
+    expect(m.title).toBe("Texas");
+    expect(m.alternates).toEqual({ canonical: "/state/TX" });
+    expect(m.openGraph).toMatchObject({ title: "Texas · Big Board 2026", description: "About Texas", url: "/state/TX", siteName: "Big Board 2026" });
+    expect(m.twitter).toMatchObject({ card: "summary_large_image", title: "Texas · Big Board 2026", description: "About Texas" });
+  });
+
+  it("uses the default title and description for the home page", () => {
+    const m = pageMetadata({ path: "/" });
+    expect(m).not.toHaveProperty("title");
+    expect(m.openGraph).toMatchObject({ title: "Big Board: 2026 Midterms" });
+    expect(m.description).toBeTruthy();
+  });
+});
+
 describe("robots", () => {
   it("allows crawling, blocks /api/, and points at the sitemap in production", () => {
     vi.stubEnv("VERCEL_ENV", "production");
@@ -75,6 +93,21 @@ describe("structured data", () => {
 
   it("describes the site", () => {
     expect(websiteJsonLd("https://x.test")).toMatchObject({ "@type": "WebSite", url: "https://x.test", "@id": "https://x.test/#website" });
+  });
+
+  it("describes a page with its refresh date and the place it is about", () => {
+    const w = webPageJsonLd(
+      { name: "Texas", description: "d", path: "/state/TX", dateModified: "2026-10-31T00:00:00Z", about: { type: "State", name: "Texas" } },
+      "https://x.test",
+    );
+    expect(w).toMatchObject({
+      "@type": "WebPage",
+      "@id": "https://x.test/state/TX#webpage",
+      isPartOf: { "@id": "https://x.test/#website" },
+      dateModified: "2026-10-31T00:00:00Z",
+      about: { "@type": "State", name: "Texas" },
+    });
+    expect(webPageJsonLd({ name: "n", description: "d", path: "/" }, "https://x.test")).not.toHaveProperty("about");
   });
 
   it("builds an ordered breadcrumb with absolute URLs", () => {

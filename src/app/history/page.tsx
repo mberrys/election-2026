@@ -3,13 +3,15 @@ import { HistoryBoard } from "@/components/history/history-board";
 import { buildHistoryView } from "@/components/history/build-view";
 import { JsonLd } from "@/components/seo/json-ld";
 import { loadHistory } from "@/data/reference/load";
+import { pageMetadata } from "@/lib/page-meta";
 import { historyDatasetJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Then & Now",
-  alternates: { canonical: "/history" },
-  description: "Current polling against every presidential election since 1976, and the last time each state or district voted the way the polls point.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Then & Now: 2026 Polls Against 50 Years of Election History",
+  description:
+    "Current polling against every presidential election since 1976, and the last time each state or district voted the way the polls point. Find when your state last voted this blue or this red.",
+  path: "/history",
+});
 
 export default function HistoryPage() {
   const view = buildHistoryView();

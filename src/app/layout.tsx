@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Archivo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
@@ -8,7 +9,7 @@ import { SiteFooter } from "@/components/board/site-footer";
 import { SimBanner } from "@/components/board/sim-banner";
 import { JsonLd } from "@/components/seo/json-ld";
 import { websiteJsonLd } from "@/lib/seo";
-import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
+import { DEFAULT_TITLE, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 // Archivo for every word (variable width 62–125 for wide headings); JetBrains Mono only for figures that tick.
 const archivo = Archivo({ variable: "--font-archivo", subsets: ["latin"], axes: ["wdth"] });
@@ -16,9 +17,10 @@ const jetbrainsMono = JetBrains_Mono({ variable: "--font-jetbrains-mono", subset
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: "Big Board: 2026 Midterms", template: "%s · Big Board 2026" },
+  title: { default: DEFAULT_TITLE, template: "%s · Big Board 2026" },
   description: SITE_DESCRIPTION,
-  openGraph: { type: "website", siteName: SITE_NAME },
+  openGraph: { type: "website", siteName: SITE_NAME, title: DEFAULT_TITLE, description: SITE_DESCRIPTION },
+  twitter: { card: "summary_large_image", title: DEFAULT_TITLE, description: SITE_DESCRIPTION },
 };
 
 export const viewport: Viewport = { themeColor: "#07090d", colorScheme: "dark" };
@@ -38,6 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </Providers>
         <JsonLd data={websiteJsonLd()} />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

@@ -9,6 +9,7 @@ import type { HistoryRowModel } from "@/analytics/history";
 import type { TrendPoint } from "@/data/reference/load";
 import { fmtMarginDR } from "@/lib/format";
 import { cn } from "@/lib/utils";
+import { YARDSTICK_LABEL, lastTimeSentence } from "./summary";
 
 const lineConfig = { margin: { label: "Poll margin (D−R)", color: "var(--foreground)" } } satisfies ChartConfig;
 const barConfig = { margin: { label: "Margin (D−R)", color: "var(--party-d)" } } satisfies ChartConfig;
@@ -16,36 +17,11 @@ const barConfig = { margin: { label: "Margin (D−R)", color: "var(--party-d)" }
 const dateFmt = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
 const monthFmt = new Intl.DateTimeFormat("en-US", { month: "short", timeZone: "UTC" });
 
-export const YARDSTICK_LABEL: Record<string, string> = {
-  pres: "presidential",
-  senate: "Senate",
-  governor: "governor",
-  house: "House",
-};
-
 interface Props {
   row: HistoryRowModel;
   yardstick: string;
   trend?: TrendPoint[];
   className?: string;
-}
-
-/** Headline sentence: projection, the last election at or beyond it, and the change from the latest election. */
-export function lastTimeSentence(row: HistoryRowModel, yardstick: string): string {
-  const p = row.projection;
-  if (!p) return "No poll or baseline to project from yet.";
-  const noun = YARDSTICK_LABEL[yardstick] ?? yardstick;
-  const side = p.margin >= 0 ? "Democratic" : "Republican";
-  const ys = Object.keys(row.series).map(Number);
-  if (row.lastTime === undefined) {
-    return `Projected ${fmtMarginDR(p.margin)}: no ${noun} election from ${Math.min(...ys)} to ${Math.max(...ys)} was as ${side} as that.`;
-  }
-  const m = row.series[String(row.lastTime)];
-  const latest = row.latestYear;
-  if (row.lastTime === latest) {
-    return `Projected ${fmtMarginDR(p.margin)}, about where it voted in ${latest} (${fmtMarginDR(m)}).`;
-  }
-  return `Projected ${fmtMarginDR(p.margin)}: last this ${side} in ${row.lastTime} (${fmtMarginDR(m)}).`;
 }
 
 export function HistoryDetail({ row, yardstick, trend, className }: Props) {

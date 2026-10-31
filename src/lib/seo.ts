@@ -13,7 +13,9 @@ export const SITE_PAGES: ReadonlyArray<{
   { path: "/house", changeFrequency: "hourly", priority: 0.9, dataDriven: true },
   { path: "/governors", changeFrequency: "hourly", priority: 0.9, dataDriven: true },
   { path: "/states", changeFrequency: "daily", priority: 0.7, dataDriven: true },
+  { path: "/election-night", changeFrequency: "daily", priority: 0.8, dataDriven: true },
   { path: "/history", changeFrequency: "daily", priority: 0.7, dataDriven: true },
+  { path: "/explainers", changeFrequency: "weekly", priority: 0.6, dataDriven: true },
   { path: "/ballot", changeFrequency: "monthly", priority: 0.5, dataDriven: false },
   { path: "/methodology", changeFrequency: "monthly", priority: 0.4, dataDriven: false },
   { path: "/sources", changeFrequency: "monthly", priority: 0.3, dataDriven: false },
@@ -33,6 +35,28 @@ export function websiteJsonLd(base: string = SITE_URL) {
     url: base,
     description: SITE_DESCRIPTION,
     inLanguage: "en-US",
+  };
+}
+
+/** A page of the site, with its last data refresh. `about` names the place when the page is about one. */
+export function webPageJsonLd(
+  opts: { name: string; description: string; path: string; dateModified?: string; about?: { type: string; name: string } },
+  base: string = SITE_URL,
+) {
+  const url = absoluteUrl(opts.path, base);
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: opts.name,
+    description: opts.description,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${base}/#website` },
+    ...(opts.dateModified ? { dateModified: opts.dateModified } : {}),
+    ...(opts.about
+      ? { about: { "@type": opts.about.type, name: opts.about.name, containedInPlace: { "@type": "Country", name: "United States" } } }
+      : {}),
   };
 }
 

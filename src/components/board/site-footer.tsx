@@ -8,7 +8,13 @@ export function SiteFooter() {
           Big Board is an independent, free-data tracker. Vote counts come from official state and county election offices;
           projections are our own model, not race calls by AP or any network.
         </p>
-        <div className="flex gap-4 shrink-0">
+        <div className="flex flex-wrap gap-x-4 gap-y-1 shrink-0">
+          <Link href="/election-night" className="hover:text-foreground">
+            Poll closing times
+          </Link>
+          <Link href="/explainers" className="hover:text-foreground">
+            Explainers
+          </Link>
           <Link href="/methodology" className="hover:text-foreground">
             Methodology
           </Link>
