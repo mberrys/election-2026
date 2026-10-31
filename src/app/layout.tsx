@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Archivo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <main className="flex-1 w-full max-w-[1600px] mx-auto px-4 md:px-6 py-4 md:py-6">{children}</main>
           <SiteFooter />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
