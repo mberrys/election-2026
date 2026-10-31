@@ -250,8 +250,8 @@ export function mirageInfo(state: Pick<StateMeta, "voteOrder" | "voteOrderNote">
       const late = anyPresent && present.eday && pctIn > 0.5;
       return {
         label: late
-          ? "Election Day vote now arriving — expect drift toward R"
-          : "Early & mail counted first — early numbers lean D",
+          ? "Election Day vote now arriving; expect drift toward R"
+          : "Early & mail counted first, so early numbers lean D",
         lean: late ? "R" : "D",
         present,
         note: state.voteOrderNote,
@@ -261,15 +261,15 @@ export function mirageInfo(state: Pick<StateMeta, "voteOrder" | "voteOrderNote">
       const late = anyPresent && (present.early || present.mail) && pctIn > 0.5;
       return {
         label: late
-          ? "Early & mail vote now arriving — expect drift toward D"
-          : "Election Day counted first — early numbers lean R",
+          ? "Early & mail vote now arriving; expect drift toward D"
+          : "Election Day counted first, so early numbers lean R",
         lean: late ? "D" : "R",
         present,
         note: state.voteOrderNote,
       };
     }
     case "mixed":
-      return { label: "Mixed reporting order — early numbers are noisy", lean: null, present, note: state.voteOrderNote };
+      return { label: "Mixed reporting order: early numbers are noisy", lean: null, present, note: state.voteOrderNote };
     default:
       return { label: "Reporting order not documented", lean: null, present, note: state.voteOrderNote };
   }

@@ -147,7 +147,7 @@ export function CountyTable({
                 <TableCell className={cn("px-2 py-1.5 text-right tnum font-medium", ouColor(r.overUnder))}>{fmtOU(r.overUnder)}</TableCell>
                 <TableCell
                   className={cn("px-2 py-1.5 text-right tnum", needsBad && "text-muted-foreground/70 italic line-through decoration-destructive/60")}
-                  title={needsBad ? (r.needs! > 100 ? "More than 100% of the remaining vote — impossible" : "Below 0% — already past the benchmark") : undefined}
+                  title={needsBad ? (r.needs! > 100 ? "More than 100% of the remaining vote: impossible" : "Below 0%: already past the benchmark") : undefined}
                 >
                   {r.needs == null ? "—" : r.needs > 100 ? "impossible" : r.needs < 0 ? "locked" : fmtPct(r.needs, 0)}
                 </TableCell>

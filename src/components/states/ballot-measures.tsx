@@ -109,7 +109,7 @@ function GroupRows({ group, live }: { group: { state: string; name: string; list
             ) : (
               <TableCell colSpan={4} className="align-top text-right">
                 <a href={url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground">
-                  No live feed — see Ballotpedia <ExternalLinkIcon className="size-3" />
+                  No live feed. See Ballotpedia <ExternalLinkIcon className="size-3" />
                 </a>
               </TableCell>
             )}

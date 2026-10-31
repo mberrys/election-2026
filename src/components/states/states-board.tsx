@@ -24,7 +24,7 @@ export function StatesBoard({ legs, measures, governors, states }: { legs: RaceM
       <BallotMeasures measures={measures} live={live} stateNames={stateNames} />
       <p className="text-[11px] text-muted-foreground">
         Chamber compositions, candidates, ratings and measure summaries: Wikipedia, CC BY-SA 4.0. Measure texts and status: Ballotpedia (link-outs).
-        Live counts come from official state and county feeds where available, see{" "}
+        Live counts come from official state and county feeds where available; see{" "}
         <Link href="/methodology" className="underline-offset-2 hover:underline">
           methodology
         </Link>

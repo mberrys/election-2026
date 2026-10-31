@@ -85,11 +85,11 @@ export function StateBoard({ state, metas, counties }: StateBoardProps) {
       {noFeed && (
         <Card className="border-dashed px-4 py-3 text-sm text-muted-foreground" role="status">
           <p>
-            <span className="font-medium text-foreground">No live feed yet</span> —{" "}
+            <span className="font-medium text-foreground">No live feed yet.</span>{" "}
             {tier
-              ? `this state's results come from ${TIER_SOURCE_LABEL[tier]}${state.feeds.length ? ` (${state.feeds.join(", ")})` : ""}.`
-              : "no automated source is configured for this state yet; the board below is built from reference data and 2024 county baselines."}
-            {isError && " The results endpoint is currently unreachable; retrying automatically."}
+              ? `This state's results come from ${TIER_SOURCE_LABEL[tier]}${state.feeds.length ? ` (${state.feeds.join(", ")})` : ""}.`
+              : "No automated source is configured for this state yet. The board below uses reference data and 2024 county baselines."}
+            {isError && " The results endpoint is unreachable. We retry automatically."}
           </p>
         </Card>
       )}
@@ -126,7 +126,7 @@ export function StateBoard({ state, metas, counties }: StateBoardProps) {
         <Card className="gap-3 p-4 lg:col-span-7">
           <SectionLabel>
             Bellwether watchlist{" "}
-            <span className="normal-case tracking-normal text-muted-foreground/80">— counties that tracked the state in 2020 &amp; 2024</span>
+            <span className="normal-case tracking-normal text-muted-foreground/80">(counties that tracked the state in 2020 &amp; 2024)</span>
           </SectionLabel>
           <Bellwethers
             rows={rows}

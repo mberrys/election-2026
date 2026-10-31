@@ -20,16 +20,16 @@ export default function MethodologyPage() {
       </p>
       <ul>
         <li>
-          <strong>Tier A — official statewide feed.</strong> A single JSON/CSV published by the state (North Carolina,
+          <strong>Tier A: official statewide feed.</strong> A single JSON/CSV published by the state (North Carolina,
           Virginia, Georgia, California, Minnesota, Alaska, Iowa).
         </li>
         <li>
-          <strong>Tier B — county feeds.</strong> States whose own site blocks automated access but whose counties publish
+          <strong>Tier B: county feeds.</strong> States whose own site blocks automated access but whose counties publish
           open files (Arizona, Pennsylvania, Texas, Ohio, Michigan, New York, Florida). Coverage is partial and labelled.
         </li>
         <li>
-          <strong>Tier C — delayed/community.</strong> Hand-edited tables (Wikipedia, CC BY-SA) used only where nothing
-          machine-readable exists. Expect minutes-to-hours of lag.
+          <strong>Tier C: delayed or community-edited.</strong> Hand-edited tables (Wikipedia, CC BY-SA) used only where nothing
+          machine-readable exists. Expect lags of minutes to hours.
         </li>
       </ul>
 

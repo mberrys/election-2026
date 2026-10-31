@@ -91,7 +91,7 @@ export function TopLine({ race, meta }: { race?: Race; meta?: RaceMeta }) {
       <RaceFlags detailed flags={race?.flags ?? (meta ? annotationsFor(meta) : undefined)} />
 
       {isBallot && !cands.length ? (
-        <p className="text-sm text-muted-foreground">{meta?.notes ?? "Ballot measure — yes/no totals appear once the feed reports them."}</p>
+        <p className="text-sm text-muted-foreground">{meta?.notes ?? "Ballot measure. Yes/no totals appear once the feed reports them."}</p>
       ) : (
         <NumberFlowGroup>
           <ul className="grid gap-3 sm:grid-cols-2">
@@ -222,9 +222,9 @@ function NeedsCallout({ cand, party, share, remaining }: { cand?: Cand; party: P
   const color = party === "D" ? "text-party-d-ink" : "text-party-r-ink";
   let body: React.ReactNode;
   if (share == null || remaining == null) body = <span className="text-muted-foreground">Needs-of-remaining appears once votes report.</span>;
-  else if (remaining <= 0 && share <= 0) body = <span>has the votes — nothing left to count</span>;
+  else if (remaining <= 0 && share <= 0) body = <span>has the votes; nothing left to count</span>;
   else if (share > 100) body = <span className="text-muted-foreground">cannot catch up with the remaining vote</span>;
-  else if (share < 0) body = <span>has it locked — leads by more than what remains</span>;
+  else if (share < 0) body = <span>has it locked: leads by more than what remains</span>;
   else
     body = (
       <span>

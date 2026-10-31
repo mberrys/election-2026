@@ -138,7 +138,7 @@ export async function runIngest({ reason, timeoutMs = 25_000 }: { reason: string
           if (mins != null && outstanding > marginVotes) {
             unitStalls.push({
               severity: outstanding / Math.max(1, marginVotes),
-              text: `County count stalled: ${u.name} (${r.name}) — no new votes for ${mins} min at ${Math.round((u.pctExpected ?? 0) * 100)}% in; ~${Math.round(outstanding).toLocaleString()} votes outstanding vs. a ${Math.round(marginVotes).toLocaleString()}-vote statewide margin`,
+              text: `County count stalled: ${u.name} (${r.name}): no new votes for ${mins} min at ${Math.round((u.pctExpected ?? 0) * 100)}% in; ~${Math.round(outstanding).toLocaleString()} votes outstanding vs. a ${Math.round(marginVotes).toLocaleString()}-vote statewide margin`,
             });
           }
         }
@@ -154,11 +154,11 @@ export async function runIngest({ reason, timeoutMs = 25_000 }: { reason: string
 
     const seq = await nextSeq();
     const notices: string[] = [];
-    if (isSimulation()) notices.unshift(`SIMULATION MODE — not real results (sim clock ${simNow(new Date()).toISOString()})`);
+    if (isSimulation()) notices.unshift(`SIMULATION MODE: not real results (sim clock ${simNow(new Date()).toISOString()})`);
     if (gated.size) notices.push(`Pre-close test data ignored for ${[...gated].sort().join(", ")} (polls not closed)`);
     notices.push(...unitStalls.sort((a, b) => b.severity - a.severity).slice(0, 6).map((u) => u.text));
     for (const { r, mins } of stalled.slice(0, 8)) {
-      notices.push(`Count stalled: ${r.name} — no new votes for ${mins} min at ${Math.round((r.pctExpected ?? 0) * 100)}% in`);
+      notices.push(`Count stalled: ${r.name}: no new votes for ${mins} min at ${Math.round((r.pctExpected ?? 0) * 100)}% in`);
     }
     for (const f of feeds) if (!f.ok) notices.push(`${f.adapter} (${f.states.join(",")}): ${f.lastError ?? "failed"}`);
 

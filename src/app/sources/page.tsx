@@ -11,23 +11,22 @@ export default function SourcesPage() {
       <header>
         <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">Sources &amp; licenses</h1>
         <p className="text-sm text-muted-foreground mt-1">
-          Everything the Big Board shows comes from the sources below. Live vote counts are pulled directly from official
-          election authorities; nothing is scraped from news organizations&apos; results pages, and no AP or network race
-          calls are republished.
+          The Big Board pulls live vote counts straight from official election authorities. We scrape no news
+          organization&apos;s results page and republish no AP or network race calls. Every other source is listed below.
         </p>
       </header>
 
       <section>
         <h2 className="text-sm text-muted-foreground mb-2">Live results feeds</h2>
         <ul className="text-sm space-y-1">
-          <li>North Carolina State Board of Elections — er.ncsbe.gov (statewide JSON, vote-method split)</li>
-          <li>Virginia Department of Elections — enr.elections.virginia.gov (Enhanced Voting export)</li>
-          <li>Georgia Secretary of State — results.sos.ga.gov (Enhanced Voting export)</li>
-          <li>California Secretary of State — api.sos.ca.gov</li>
-          <li>Minnesota Secretary of State — electionresultsfiles.sos.mn.gov (precinct file)</li>
-          <li>Alaska Division of Elections — elections.alaska.gov (precinct CSV)</li>
-          <li>Iowa Secretary of State — electionresults.iowa.gov (Clarity)</li>
-          <li>County election offices (Tier B) where the state site is not machine-readable — listed per state on its board</li>
+          <li>North Carolina State Board of Elections: er.ncsbe.gov (statewide JSON, vote-method split)</li>
+          <li>Virginia Department of Elections: enr.elections.virginia.gov (Enhanced Voting export)</li>
+          <li>Georgia Secretary of State: results.sos.ga.gov (Enhanced Voting export)</li>
+          <li>California Secretary of State: api.sos.ca.gov</li>
+          <li>Minnesota Secretary of State: electionresultsfiles.sos.mn.gov (precinct file)</li>
+          <li>Alaska Division of Elections: elections.alaska.gov (precinct CSV)</li>
+          <li>Iowa Secretary of State: electionresults.iowa.gov (Clarity)</li>
+          <li>County election offices (Tier B) where the state site is not machine-readable; each state board lists them</li>
         </ul>
       </section>
 

@@ -36,7 +36,7 @@ export function WhatsLeft({
   const allPre = rows.every((r) => !r.live);
 
   if (!top.length)
-    return <p className={cn("text-sm text-muted-foreground", className)}>Nothing left to count{rows.length ? " — every county is fully reported." : "."}</p>;
+    return <p className={cn("text-sm text-muted-foreground", className)}>Nothing left to count{rows.length ? ": every county is fully reported." : "."}</p>;
 
   return (
     <div className={cn("space-y-1.5", className)}>

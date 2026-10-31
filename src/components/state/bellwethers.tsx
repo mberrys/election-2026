@@ -42,7 +42,7 @@ export function Bellwethers({
   );
 
   if (!ranked.length)
-    return <p className={cn("text-sm text-muted-foreground", className)}>No county baselines for this state yet — bellwethers appear once 2020/2024 county results are loaded.</p>;
+    return <p className={cn("text-sm text-muted-foreground", className)}>No county baselines for this state yet. Bellwethers appear once 2020/2024 county results load.</p>;
 
   return (
     <ul className={cn("grid gap-2 sm:grid-cols-2 xl:grid-cols-4", className)}>

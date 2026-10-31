@@ -18,7 +18,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "Big Board — 2026 Midterms", template: "%s · Big Board 2026" },
+  title: { default: "Big Board: 2026 Midterms", template: "%s · Big Board 2026" },
   description:
     "Live, free-data election tracker for the Nov 3, 2026 US midterms: Senate, House, governors and ballot measures with county-level expected-vote analysis.",
   openGraph: { type: "website", siteName: "Big Board 2026" },

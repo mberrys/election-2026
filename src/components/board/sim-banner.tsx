@@ -15,7 +15,7 @@ export function SimBanner() {
     : null;
   return (
     <div role="alert" className="bg-stale text-black text-center text-xs font-semibold tracking-wide py-1.5 px-4">
-      SIMULATION — these are not real results{et ? ` · simulated time ${et} ET Nov 3` : ""}
+      SIMULATION: these are not real results{et ? ` · simulated time ${et} ET Nov 3` : ""}
     </div>
   );
 }
