@@ -137,9 +137,9 @@ export function CountyTable({
                 </TableCell>
                 <TableCell className="px-2 py-1.5 text-right tnum">{fmtVotes(r.votesIn)}</TableCell>
                 <TableCell className="px-2 py-1.5 text-right tnum text-muted-foreground">{r.expected != null ? compact.format(Math.round(r.expected)) : "—"}</TableCell>
-                <TableCell className="px-2 py-1.5 text-right tnum text-party-d">{fmtPct(r.dPct)}</TableCell>
-                <TableCell className="px-2 py-1.5 text-right tnum text-party-r">{fmtPct(r.rPct)}</TableCell>
-                <TableCell className={cn("px-2 py-1.5 text-right tnum font-medium", r.margin != null && (r.margin > 0 ? "text-party-d" : r.margin < 0 ? "text-party-r" : ""))}>
+                <TableCell className="px-2 py-1.5 text-right tnum text-party-d-ink">{fmtPct(r.dPct)}</TableCell>
+                <TableCell className="px-2 py-1.5 text-right tnum text-party-r-ink">{fmtPct(r.rPct)}</TableCell>
+                <TableCell className={cn("px-2 py-1.5 text-right tnum font-medium", r.margin != null && (r.margin > 0 ? "text-party-d-ink" : r.margin < 0 ? "text-party-r-ink" : ""))}>
                   {fmtMarginDR(r.margin)}
                 </TableCell>
                 <TableCell className="px-2 py-1.5 text-right tnum text-muted-foreground">{fmtMarginDR(r.margin2024)}</TableCell>

@@ -77,7 +77,7 @@ export function Bellwethers({
                   <dt className="text-muted-foreground" title="Historical lean relative to the statewide margin">
                     Lean
                   </dt>
-                  <dd className={cn("tnum font-medium", b.lean > 0.05 ? "text-party-d" : b.lean < -0.05 ? "text-party-r" : "")} title={`Mean of ${b.baselines} baseline${b.baselines === 1 ? "" : "s"}; |lean| ${b.absLean.toFixed(1)}`}>
+                  <dd className={cn("tnum font-medium", b.lean > 0.05 ? "text-party-d-ink" : b.lean < -0.05 ? "text-party-r-ink" : "")} title={`Mean of ${b.baselines} baseline${b.baselines === 1 ? "" : "s"}; |lean| ${b.absLean.toFixed(1)}`}>
                     {fmtMarginDR(b.lean)}
                   </dd>
                 </div>

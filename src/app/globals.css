@@ -9,6 +9,8 @@
   --color-party-d: var(--party-d);
   --color-party-d-soft: var(--party-d-soft);
   --color-party-d-faint: var(--party-d-faint);
+  --color-party-d-ink: var(--party-d-ink);
+  --color-party-r-ink: var(--party-r-ink);
   --color-party-r: var(--party-r);
   --color-party-r-soft: var(--party-r-soft);
   --color-party-r-faint: var(--party-r-faint);
@@ -73,6 +75,9 @@
   --party-i: oklch(0.68 0.13 80);
   --party-i-soft: oklch(0.68 0.13 80 / 55%);
   --party-o: oklch(0.6 0.03 255);
+  /* Text-weight party colours: the fills above are too dark to read as small text on the dark ground (4.5:1). */
+  --party-d-ink: oklch(0.74 0.13 258);
+  --party-r-ink: oklch(0.74 0.15 25);
   --uncalled: oklch(0.42 0.012 255);
   --live: oklch(0.75 0.18 145);
   --stale: oklch(0.78 0.16 75);

@@ -108,7 +108,7 @@ export function GenericBallotPanel({ generic, className }: { generic: GenericBal
                 {m.label}
                 {m.kind === "avg" && <span className="opacity-70">({m.key === "rio" ? generic?.riotimes?.asOf : generic?.votehub?.asOf})</span>}
               </span>
-              <span className={cn("tnum font-semibold", m.value > 0 ? "text-party-d" : m.value < 0 ? "text-party-r" : "")}>{fmtMarginDR(m.value)}</span>
+              <span className={cn("tnum font-semibold", m.value > 0 ? "text-party-d-ink" : m.value < 0 ? "text-party-r-ink" : "")}>{fmtMarginDR(m.value)}</span>
             </li>
           ))}
         </ul>

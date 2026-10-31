@@ -86,7 +86,7 @@ export function WhatsLeft({
               </span>
               <span className="flex items-baseline gap-2 tnum whitespace-nowrap">
                 <span className="w-14 text-right font-semibold">{compact.format(Math.round(r.remaining ?? 0))}</span>
-                <span className={cn("w-16 text-right text-[11px]", bench != null && (bench > 0 ? "text-party-d" : bench < 0 ? "text-party-r" : "text-muted-foreground"))} title="Benchmark lean of the remaining vote">
+                <span className={cn("w-16 text-right text-[11px]", bench != null && (bench > 0 ? "text-party-d-ink" : bench < 0 ? "text-party-r-ink" : "text-muted-foreground"))} title="Benchmark lean of the remaining vote">
                   {bench != null ? `lean ${fmtMarginDR(bench, 0)}` : "—"}
                 </span>
               </span>

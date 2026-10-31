@@ -136,7 +136,7 @@ export function HouseTable({
                 <TableCell>
                   <RatingBadge rating={m.ratings.consensus} />
                 </TableCell>
-                <TableCell className={cn("text-right tnum", (m.baseline.presMargin2024 ?? 0) > 0 ? "text-party-d" : (m.baseline.presMargin2024 ?? 0) < 0 ? "text-party-r" : "text-muted-foreground")}>
+                <TableCell className={cn("text-right tnum", (m.baseline.presMargin2024 ?? 0) > 0 ? "text-party-d-ink" : (m.baseline.presMargin2024 ?? 0) < 0 ? "text-party-r-ink" : "text-muted-foreground")}>
                   {fmtMarginDR(m.baseline.presMargin2024)}
                 </TableCell>
                 <TableCell className="text-right">

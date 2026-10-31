@@ -259,7 +259,7 @@ function RaceRow({ row, expectedTier }: { row: Row; expectedTier?: StateMeta["ti
                 Held {meta.heldBy}
               </span>
             )}
-            {flip && <span className={cn("font-semibold", flip === "D" ? "text-party-d" : "text-party-r")}>Flip → {flip}</span>}
+            {flip && <span className={cn("font-semibold", flip === "D" ? "text-party-d-ink" : "text-party-r-ink")}>Flip → {flip}</span>}
           </div>
         </div>
       </TableCell>
@@ -294,7 +294,7 @@ function RaceRow({ row, expectedTier }: { row: Row; expectedTier?: StateMeta["ti
       <TableCell className="align-top text-right tnum">
         {meta.polls ? (
           <span title={`${meta.polls.source}, as of ${meta.polls.asOf}`}>
-            <span className={cn(poll != null && poll > 0 && "text-party-d", poll != null && poll < 0 && "text-party-r")}>
+            <span className={cn(poll != null && poll > 0 && "text-party-d-ink", poll != null && poll < 0 && "text-party-r-ink")}>
               {fmtMarginDR(poll)}
             </span>{" "}
             <span className="text-[11px] text-muted-foreground">(n={meta.polls.n})</span>
@@ -309,7 +309,7 @@ function RaceRow({ row, expectedTier }: { row: Row; expectedTier?: StateMeta["ti
           <ul className="space-y-0.5 text-xs">
             {cashRows.map((c) => (
               <li key={c.id} className="flex items-center justify-end gap-1.5">
-                <span className={cn("text-[10px]", c.party === "D" ? "text-party-d" : c.party === "R" ? "text-party-r" : "text-party-i")}>{c.party}</span>
+                <span className={cn("text-[10px]", c.party === "D" ? "text-party-d-ink" : c.party === "R" ? "text-party-r-ink" : "text-party-i")}>{c.party}</span>
                 <span>${compact.format(cash[c.id])}</span>
               </li>
             ))}
@@ -335,8 +335,8 @@ function RaceRow({ row, expectedTier }: { row: Row; expectedTier?: StateMeta["ti
         {race?.model ? (
           <span
             className={cn(
-              race.model.projectedMarginDR > 0.5 && "text-party-d",
-              race.model.projectedMarginDR < -0.5 && "text-party-r",
+              race.model.projectedMarginDR > 0.5 && "text-party-d-ink",
+              race.model.projectedMarginDR < -0.5 && "text-party-r-ink",
               (!race.totalVotes || race.status === "not_started") && "text-muted-foreground",
             )}
             title="Model estimate of the final D − R margin with its uncertainty band"

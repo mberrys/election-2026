@@ -69,7 +69,7 @@ function Side({
   leaning: number;
   right?: boolean;
 }) {
-  const color = party === "D" ? "text-party-d" : "text-party-r";
+  const color = party === "D" ? "text-party-d-ink" : "text-party-r-ink";
   return (
     <div className={cn("min-w-0", right && "text-right")}>
       <div className={cn("display tnum font-bold leading-none text-6xl sm:text-7xl", color)}>

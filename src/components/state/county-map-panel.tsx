@@ -167,9 +167,9 @@ function legendFor(mode: MapMode) {
   const right = mode === "margin" ? "D+30" : "D+15";
   return (
     <>
-      <span className="text-party-r">{left}</span>
+      <span className="text-party-r-ink">{left}</span>
       <span className="h-2 w-24 rounded-sm" style={{ background: `linear-gradient(90deg, ${R_BASE}), var(--uncalled), ${D_BASE}))` }} />
-      <span className="text-party-d">{right}</span>
+      <span className="text-party-d-ink">{right}</span>
       {mode === "swing" && <span className="ml-1 normal-case tracking-normal">vs 2024 pres.</span>}
       {mode === "benchmark" && <span className="ml-1 normal-case tracking-normal">vs tie benchmark</span>}
     </>
@@ -184,7 +184,7 @@ export function fmtOU(v: number | undefined): string {
 
 export function ouColor(v: number | undefined): string | undefined {
   if (v == null || Number.isNaN(v) || Math.abs(v) < 0.05) return undefined;
-  return v > 0 ? "text-party-d" : "text-party-r";
+  return v > 0 ? "text-party-d-ink" : "text-party-r-ink";
 }
 
 export function fmtNeeds(v: number | undefined): string {

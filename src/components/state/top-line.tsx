@@ -117,7 +117,7 @@ export function TopLine({ race, meta }: { race?: Race; meta?: RaceMeta }) {
                   </div>
                   <div className="mt-2 flex items-end justify-between gap-3">
                     <Votes value={c.votes} className="display text-4xl md:text-5xl font-bold leading-none" />
-                    <Pct value={c.pct} className={cn("display text-3xl font-semibold leading-none", c.party === "D" ? "text-party-d" : c.party === "R" ? "text-party-r" : "text-party-i")} />
+                    <Pct value={c.pct} className={cn("display text-3xl font-semibold leading-none", c.party === "D" ? "text-party-d-ink" : c.party === "R" ? "text-party-r-ink" : "text-party-i")} />
                   </div>
                   <div className="mt-2 h-1.5 overflow-hidden rounded-sm bg-uncalled/30">
                     <div
@@ -219,7 +219,7 @@ export function ProjectionGauge({ margin, band, live, className }: { margin: num
 
 function NeedsCallout({ cand, party, share, remaining }: { cand?: Cand; party: Party; share?: number; remaining?: number }) {
   const name = cand ? lastName(cand.name) : partyLabel[party];
-  const color = party === "D" ? "text-party-d" : "text-party-r";
+  const color = party === "D" ? "text-party-d-ink" : "text-party-r-ink";
   let body: React.ReactNode;
   if (share == null || remaining == null) body = <span className="text-muted-foreground">Needs-of-remaining appears once votes report.</span>;
   else if (remaining <= 0 && share <= 0) body = <span>has the votes — nothing left to count</span>;

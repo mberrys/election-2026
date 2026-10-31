@@ -79,7 +79,7 @@ function PartyPath({
   uncalledCount: number;
 }) {
   const label = party === "D" ? "Democrats" : "Republicans";
-  const color = party === "D" ? "text-party-d" : "text-party-r";
+  const color = party === "D" ? "text-party-d-ink" : "text-party-r-ink";
   const headline =
     path.need === 0
       ? `${label} are at ${path.have}: control ${path.target === 50 ? "via the VP tie-break" : "secured"}`
@@ -135,7 +135,7 @@ function Chip({
   const favorable = lean === party;
   const hostile = lean !== "tossup" && lean !== party;
   const solid = party === "D" ? "bg-party-d text-white border-party-d" : "bg-party-r text-white border-party-r";
-  const soft = party === "D" ? "bg-party-d-faint border-party-d/40 text-party-d" : "bg-party-r-faint border-party-r/40 text-party-r";
+  const soft = party === "D" ? "bg-party-d-faint border-party-d/40 text-party-d-ink" : "bg-party-r-faint border-party-r/40 text-party-r-ink";
   const title = [
     `${stateName(meta.state)}${meta.special ? " (special)" : ""}`,
     rating ? ratingLabel[rating] : "Unrated",

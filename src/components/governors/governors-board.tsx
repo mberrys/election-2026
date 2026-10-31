@@ -72,7 +72,7 @@ export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: P
               </div>
               <div>
                 Net so far:{" "}
-                <span className={cn("font-semibold", flipsD.length > flipsR.length && "text-party-d", flipsR.length > flipsD.length && "text-party-r")}>
+                <span className={cn("font-semibold", flipsD.length > flipsR.length && "text-party-d-ink", flipsR.length > flipsD.length && "text-party-r-ink")}>
                   {flipsD.length === flipsR.length ? "even" : flipsD.length > flipsR.length ? `D +${flipsD.length - flipsR.length}` : `R +${flipsR.length - flipsD.length}`}
                 </span>
               </div>
@@ -98,7 +98,7 @@ export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: P
               {flips.map((f, i) => (
                 <span key={f.meta.id}>
                   {i > 0 && ", "}
-                  <span className={f.to === "D" ? "text-party-d" : f.to === "R" ? "text-party-r" : "text-party-i"}>
+                  <span className={f.to === "D" ? "text-party-d-ink" : f.to === "R" ? "text-party-r-ink" : "text-party-i"}>
                     {f.meta.state} {f.meta.heldBy}→{f.to}
                   </span>
                 </span>
@@ -154,7 +154,7 @@ function Stat({
   sub: [number, string][];
   right?: boolean;
 }) {
-  const color = party === "D" ? "text-party-d" : "text-party-r";
+  const color = party === "D" ? "text-party-d-ink" : "text-party-r-ink";
   return (
     <div className={cn(right && "sm:text-right")}>
       <div className={cn("display tnum text-6xl font-bold leading-none", color)}>

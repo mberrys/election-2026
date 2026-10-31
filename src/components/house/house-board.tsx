@@ -93,14 +93,14 @@ export function HouseBoard({ metas, states, generic }: { metas: RaceMeta[]; stat
       <Card size="sm">
         <CardContent className="space-y-3">
           <div className="flex items-end justify-between gap-3">
-            <BigCount n={summary.dTotal} called={summary.bop.called.D} net={summary.netD} label="Dem" className="text-party-d" />
+            <BigCount n={summary.dTotal} called={summary.bop.called.D} net={summary.netD} label="Dem" className="text-party-d-ink" />
             <div className="text-center text-[11px] text-muted-foreground leading-tight">
               <div className="display text-lg text-foreground tnum">218 to control</div>
               <div className="tnum">
                 <Num value={summary.tossup} /> toss-ups · <Num value={summary.calledCount} /> of 435 called
               </div>
             </div>
-            <BigCount n={summary.rTotal} called={summary.bop.called.R} net={summary.netR} label="GOP" className="text-party-r" right />
+            <BigCount n={summary.rTotal} called={summary.bop.called.R} net={summary.netR} label="GOP" className="text-party-r-ink" right />
           </div>
           <BalanceBar bop={summary.bop} height={20} className="mt-4" />
           <p className="text-[10px] text-muted-foreground">

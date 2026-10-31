@@ -13,7 +13,7 @@ export function StatusBadge({ status, party, className }: { status: RaceStatus; 
           className,
         )}
       >
-        ✓ Projected
+        Projected
       </Badge>
     );
   if (status === "runoff") return <Badge variant="outline" className={cn("border-stale text-stale", className)}>Runoff</Badge>;
@@ -31,8 +31,8 @@ export function RatingBadge({ rating, className }: { rating?: RatingCode; classN
       className={cn(
         "inline-flex items-center rounded px-1.5 py-0.5 text-[11px] font-medium tnum",
         lean === "T" && "bg-uncalled/50 text-foreground",
-        lean === "D" && (strength === 3 ? "bg-party-d text-white" : strength === 2 ? "bg-party-d-soft" : "bg-party-d-faint text-party-d"),
-        lean === "R" && (strength === 3 ? "bg-party-r text-white" : strength === 2 ? "bg-party-r-soft" : "bg-party-r-faint text-party-r"),
+        lean === "D" && (strength === 3 ? "bg-party-d text-white" : strength === 2 ? "bg-party-d-soft" : "bg-party-d-faint text-party-d-ink"),
+        lean === "R" && (strength === 3 ? "bg-party-r text-white" : strength === 2 ? "bg-party-r-soft" : "bg-party-r-faint text-party-r-ink"),
         className,
       )}
       title={ratingLabel[rating]}

@@ -94,8 +94,8 @@ export function ChamberGrid({
       <CardHeader>
         <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">Legislative chamber control</CardTitle>
         <p className="text-xs text-muted-foreground">
-          <span className="tnum">{counts.total}</span> chambers hold elections in 2026: <span className="text-party-d tnum">{counts.d} D</span>,{" "}
-          <span className="text-party-r tnum">{counts.r} R</span>, <span className="tnum">{counts.other}</span> coalition / tied. Top half = upper chamber, bottom = lower.
+          <span className="tnum">{counts.total}</span> chambers hold elections in 2026: <span className="text-party-d-ink tnum">{counts.d} D</span>,{" "}
+          <span className="text-party-r-ink tnum">{counts.r} R</span>, <span className="tnum">{counts.other}</span> coalition / tied. Top half = upper chamber, bottom = lower.
         </p>
       </CardHeader>
       <CardContent className="space-y-4">
