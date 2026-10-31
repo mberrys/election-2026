@@ -48,12 +48,12 @@ export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: P
       </div>
 
       <header className="flex flex-wrap items-baseline justify-between gap-2">
-        <h1 className="display text-3xl font-bold tracking-tight">Governors</h1>
+        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">Governors</h1>
         <p className="text-sm text-muted-foreground">{metas.length} governorships on the ballot · Georgia requires a majority or goes to a runoff</p>
       </header>
 
       <Card>
-        <CardContent className="pt-5">
+        <CardContent>
           <div className="grid gap-4 sm:grid-cols-[1fr_auto_1fr] sm:items-end">
             <Stat
               party="D"
@@ -66,13 +66,13 @@ export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: P
               ]}
             />
             <div className="text-center text-xs text-muted-foreground tnum">
-              <div className="display text-base font-semibold text-foreground tracking-wide">36 SEATS UP</div>
+              <div className="display text-base font-semibold text-foreground tracking-wide">36 seats up</div>
               <div>
                 {calledTotal} called · {bop.tossup} toss-up{bop.tossup === 1 ? "" : "s"}
               </div>
               <div>
                 Net so far:{" "}
-                <span className={cn("font-semibold", flipsD.length > flipsR.length && "text-party-d", flipsR.length > flipsD.length && "text-party-r")}>
+                <span className={cn("font-semibold", flipsD.length > flipsR.length && "text-party-d-ink", flipsR.length > flipsD.length && "text-party-r-ink")}>
                   {flipsD.length === flipsR.length ? "even" : flipsD.length > flipsR.length ? `D +${flipsD.length - flipsR.length}` : `R +${flipsR.length - flipsD.length}`}
                 </span>
               </div>
@@ -98,7 +98,7 @@ export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: P
               {flips.map((f, i) => (
                 <span key={f.meta.id}>
                   {i > 0 && ", "}
-                  <span className={f.to === "D" ? "text-party-d" : f.to === "R" ? "text-party-r" : "text-party-i"}>
+                  <span className={f.to === "D" ? "text-party-d-ink" : f.to === "R" ? "text-party-r-ink" : "text-party-i"}>
                     {f.meta.state} {f.meta.heldBy}→{f.to}
                   </span>
                 </span>
@@ -133,7 +133,7 @@ export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: P
       {mounted && data?.notices?.length ? (
         <ul className="space-y-1 text-xs text-stale">
           {data.notices.map((n, i) => (
-            <li key={i}>⚠ {n}</li>
+            <li key={i}>{n}</li>
           ))}
         </ul>
       ) : null}
@@ -154,13 +154,13 @@ function Stat({
   sub: [number, string][];
   right?: boolean;
 }) {
-  const color = party === "D" ? "text-party-d" : "text-party-r";
+  const color = party === "D" ? "text-party-d-ink" : "text-party-r-ink";
   return (
     <div className={cn(right && "sm:text-right")}>
       <div className={cn("display tnum text-6xl font-bold leading-none", color)}>
         <Num value={big} />
       </div>
-      <div className="mt-1 text-[11px] uppercase tracking-wider text-muted-foreground">{bigLabel}</div>
+      <div className="mt-1 text-[11px] text-muted-foreground">{bigLabel}</div>
       <div className={cn("mt-2 flex flex-wrap gap-x-3 text-[11px] text-muted-foreground tnum", right && "sm:justify-end")}>
         {sub.map(([n, l]) => (
           <span key={l}>

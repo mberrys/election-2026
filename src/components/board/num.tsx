@@ -41,7 +41,7 @@ export function MarginDR({ value, digits = 1, className }: { value: number | nul
   if (value == null || Number.isNaN(value)) return <span className={cn("tnum text-muted-foreground", className)}>—</span>;
   const lead = Math.abs(value) < 0.05 ? null : value > 0 ? "D" : "R";
   return (
-    <span className={cn("tnum", lead === "D" && "text-party-d", lead === "R" && "text-party-r", className)}>
+    <span className={cn("tnum", lead === "D" && "text-party-d-ink", lead === "R" && "text-party-r-ink", className)}>
       {lead ? `${lead}+` : "Even "}
       {lead && <Num value={Math.abs(value)} format={{ minimumFractionDigits: digits, maximumFractionDigits: digits }} />}
     </span>

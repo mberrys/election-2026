@@ -48,14 +48,14 @@ export function PollCloseWatch({
   return (
     <Card size="sm">
       <CardHeader>
-        <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">
+        <CardTitle className="text-sm font-semibold">
           Seats to watch, by poll-closing hour <span className="normal-case tracking-normal">(lean, tilt and toss-up seats)</span>
         </CardTitle>
       </CardHeader>
       <CardContent>
         <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin snap-x">
           {groups.map((g) => (
-            <section key={g.key} className="min-w-[13.5rem] max-w-[16rem] shrink-0 snap-start rounded-lg bg-muted/30 ring-1 ring-foreground/5">
+            <section key={g.key} className="min-w-[13.5rem] max-w-[16rem] shrink-0 snap-start rounded-lg bg-muted/30 border border-border/60">
               <header className="flex items-baseline justify-between px-2.5 py-1.5 border-b border-border/60">
                 <h3 className="display text-base font-semibold tnum">{g.label}</h3>
                 <span className="text-[11px] text-muted-foreground tnum">{g.list.length}</span>
@@ -80,7 +80,7 @@ export function PollCloseWatch({
                       <RatingBadge rating={m.ratings.consensus} className="shrink-0" />
                       <span className="ml-auto shrink-0">
                         {lr?.projection ? (
-                          <StatusBadge status="projected" party={lr.projection.party} className="h-4 px-1.5 text-[10px]" />
+                          <StatusBadge status="projected" party={lr.projection.party} className="h-4 px-1.5 text-[11px]" />
                         ) : margin != null ? (
                           <MarginDR value={margin} />
                         ) : (

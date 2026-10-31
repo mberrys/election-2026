@@ -60,14 +60,18 @@ export function GenericBallotPanel({ generic, className }: { generic: GenericBal
   return (
     <Card size="sm" className={className}>
       <CardHeader>
-        <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">Generic ballot</CardTitle>
+        <CardTitle className="text-sm font-semibold">Generic ballot</CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">
         {!hasPolls && <p className="text-xs text-muted-foreground">No generic-ballot averages in the reference data.</p>}
         <div className="relative pt-6 pb-5">
           {/* axis */}
-          <div className="relative h-2 rounded-sm overflow-hidden bg-gradient-to-r from-party-r via-uncalled to-party-d opacity-80" />
-          <div className="absolute inset-x-0 top-6 h-2 flex justify-between text-[10px] text-muted-foreground tnum -translate-y-5">
+          <div className="flex h-2 gap-px overflow-hidden rounded-sm" aria-hidden>
+            <div className="flex-1 bg-party-r-soft" />
+            <div className="flex-1 bg-uncalled/50" />
+            <div className="flex-1 bg-party-d-soft" />
+          </div>
+          <div className="absolute inset-x-0 top-6 h-2 flex justify-between text-[11px] text-muted-foreground tnum -translate-y-5">
             <span>R+{AXIS}</span>
             <span>Even</span>
             <span>D+{AXIS}</span>
@@ -85,7 +89,7 @@ export function GenericBallotPanel({ generic, className }: { generic: GenericBal
                 aria-label={`${m.label}: ${fmtMarginDR(m.value)}`}
               >
                 {m.kind === "avg" ? (
-                  <span className="block h-6 w-[3px] rounded-full bg-foreground shadow-[0_0_0_1px_var(--background)]" />
+                  <span className="block h-6 w-[3px] rounded-full bg-foreground outline outline-1 outline-background" />
                 ) : (
                   <span className="block h-4 w-[2px] bg-stale" />
                 )}
@@ -108,12 +112,12 @@ export function GenericBallotPanel({ generic, className }: { generic: GenericBal
                 {m.label}
                 {m.kind === "avg" && <span className="opacity-70">({m.key === "rio" ? generic?.riotimes?.asOf : generic?.votehub?.asOf})</span>}
               </span>
-              <span className={cn("tnum font-semibold", m.value > 0 ? "text-party-d" : m.value < 0 ? "text-party-r" : "")}>{fmtMarginDR(m.value)}</span>
+              <span className={cn("tnum font-semibold", m.value > 0 ? "text-party-d-ink" : m.value < 0 ? "text-party-r-ink" : "")}>{fmtMarginDR(m.value)}</span>
             </li>
           ))}
         </ul>
         {hasPolls && (
-          <p className="text-[10px] text-muted-foreground leading-snug">
+          <p className="text-[11px] text-muted-foreground leading-snug">
             Rio Times average is an equal-weight mean of public averages (CC BY 4.0); VoteHub average CC BY 4.0.
             {markers.filter((m) => m.kind === "avg").map((m) => ` ${m.label} is ${fmtMarginDR(m.value - HOUSE_NATIONAL_MARGIN_2024_DR)} toward D vs 2024.`).join("")}
           </p>

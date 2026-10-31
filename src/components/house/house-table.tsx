@@ -128,7 +128,7 @@ export function HouseTable({
                         <PartyDot party={c.party} />
                         <span className="truncate">{c.name}</span>
                         {c.incumbent && <span className="text-muted-foreground">*</span>}
-                        {c.id === winner && <span className="text-[10px] text-muted-foreground">✓</span>}
+                        {c.id === winner && <span className="text-[11px] text-muted-foreground">Called</span>}
                       </span>
                     ))}
                   </div>
@@ -136,7 +136,7 @@ export function HouseTable({
                 <TableCell>
                   <RatingBadge rating={m.ratings.consensus} />
                 </TableCell>
-                <TableCell className={cn("text-right tnum", (m.baseline.presMargin2024 ?? 0) > 0 ? "text-party-d" : (m.baseline.presMargin2024 ?? 0) < 0 ? "text-party-r" : "text-muted-foreground")}>
+                <TableCell className={cn("text-right tnum", (m.baseline.presMargin2024 ?? 0) > 0 ? "text-party-d-ink" : (m.baseline.presMargin2024 ?? 0) < 0 ? "text-party-r-ink" : "text-muted-foreground")}>
                   {fmtMarginDR(m.baseline.presMargin2024)}
                 </TableCell>
                 <TableCell className="text-right">

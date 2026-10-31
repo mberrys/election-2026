@@ -92,10 +92,10 @@ export function ChamberGrid({
   return (
     <Card size="sm">
       <CardHeader>
-        <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">Legislative chamber control</CardTitle>
+        <CardTitle className="text-sm font-semibold">Legislative chamber control</CardTitle>
         <p className="text-xs text-muted-foreground">
-          <span className="tnum">{counts.total}</span> chambers hold elections in 2026: <span className="text-party-d tnum">{counts.d} D</span>,{" "}
-          <span className="text-party-r tnum">{counts.r} R</span>, <span className="tnum">{counts.other}</span> coalition / tied. Top half = upper chamber, bottom = lower.
+          <span className="tnum">{counts.total}</span> chambers hold elections in 2026: <span className="text-party-d-ink tnum">{counts.d} D</span>,{" "}
+          <span className="text-party-r-ink tnum">{counts.r} R</span>, <span className="tnum">{counts.other}</span> coalition / tied. Top half = upper chamber, bottom = lower.
         </p>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -125,7 +125,7 @@ export function ChamberGrid({
                 <div
                   key={t.state}
                   className={cn(
-                    "relative aspect-square overflow-hidden rounded-sm ring-1 text-[10px] md:text-xs",
+                    "relative aspect-square overflow-hidden rounded-sm ring-1 text-[11px] md:text-xs",
                     anyUp ? "ring-foreground/20" : "ring-foreground/10 bg-muted/20",
                   )}
                   style={{ gridColumn: t.col + 1, gridRow: t.row + 1 }}

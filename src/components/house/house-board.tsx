@@ -93,17 +93,17 @@ export function HouseBoard({ metas, states, generic }: { metas: RaceMeta[]; stat
       <Card size="sm">
         <CardContent className="space-y-3">
           <div className="flex items-end justify-between gap-3">
-            <BigCount n={summary.dTotal} called={summary.bop.called.D} net={summary.netD} label="Dem" className="text-party-d" />
+            <BigCount n={summary.dTotal} called={summary.bop.called.D} net={summary.netD} label="Dem" className="text-party-d-ink" />
             <div className="text-center text-[11px] text-muted-foreground leading-tight">
               <div className="display text-lg text-foreground tnum">218 to control</div>
               <div className="tnum">
                 <Num value={summary.tossup} /> toss-ups · <Num value={summary.calledCount} /> of 435 called
               </div>
             </div>
-            <BigCount n={summary.rTotal} called={summary.bop.called.R} net={summary.netR} label="GOP" className="text-party-r" right />
+            <BigCount n={summary.rTotal} called={summary.bop.called.R} net={summary.netR} label="GOP" className="text-party-r-ink" right />
           </div>
           <BalanceBar bop={summary.bop} height={20} className="mt-4" />
-          <p className="text-[10px] text-muted-foreground">
+          <p className="text-[11px] text-muted-foreground">
             Solid = projected by Big Board; translucent = uncalled, by consensus rating lean. Net change compares projected + leaning seats with seats
             held going into the election (toss-ups excluded).
           </p>
@@ -168,7 +168,7 @@ export function HouseBoard({ metas, states, generic }: { metas: RaceMeta[]; stat
                 {filtering ? `${filteredMetas.length} of ${metas.length} districts match` : `${metas.length} districts`}
               </span>
             </div>
-            <p className="text-[10px] text-muted-foreground">{HEXMAP_ATTRIBUTION}</p>
+            <p className="text-[11px] text-muted-foreground">{HEXMAP_ATTRIBUTION}</p>
           </CardContent>
         </Card>
 
@@ -212,7 +212,7 @@ export function HouseBoard({ metas, states, generic }: { metas: RaceMeta[]; stat
             )}
             <RaceCard live={focusLive} meta={focusMeta} href={pinned && focusMeta ? `/state/${focusMeta.state}` : undefined} className="shadow-xl bg-popover" />
             {focusMeta && (
-              <div className="mt-1 flex justify-between rounded-md bg-popover/90 px-2 py-1 text-[10px] text-muted-foreground tnum ring-1 ring-foreground/10">
+              <div className="mt-1 flex justify-between rounded-md bg-popover/90 px-2 py-1 text-[11px] text-muted-foreground tnum ring-1 ring-foreground/10">
                 <span>2024 pres. {fmtMarginDR(focusMeta.baseline.presMargin2024)}</span>
                 <span>Prior House {fmtMarginDR(focusMeta.baseline.prevRaceMargin)}</span>
                 <span>Held {focusMeta.heldBy ?? "—"}</span>
@@ -264,7 +264,7 @@ function BigCount({ n, called, net, label, className, right }: { n: number; call
       <div className={cn("display text-5xl md:text-6xl font-bold tnum", className)}>
         <Num value={n} />
       </div>
-      <div className="mt-1 text-[11px] uppercase tracking-wider text-muted-foreground">
+      <div className="mt-1 text-[11px] text-muted-foreground">
         {label} · <span className="tnum">{called}</span> called
       </div>
       <div className={cn("mt-0.5 text-xs tnum", net > 0 ? "text-live" : net < 0 ? "text-stale" : "text-muted-foreground")} title="Projected + leaning seats minus seats held before the election">

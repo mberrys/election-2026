@@ -111,7 +111,7 @@ export function CountyMapPanel({
             </ToggleGroupItem>
           ))}
         </ToggleGroup>
-        <div className="flex items-center gap-2 text-[10px] uppercase tracking-wider text-muted-foreground">{legend}</div>
+        <div className="flex items-center gap-2 text-[11px] text-muted-foreground">{legend}</div>
       </div>
 
       <div
@@ -146,7 +146,7 @@ export function CountyMapPanel({
               <dt className="text-muted-foreground">D needs of rest</dt>
               <dd className="text-right">{fmtNeeds(hoverRow.needs)}</dd>
             </dl>
-            <div className="mt-1 text-[10px] text-muted-foreground">Click to pin in the table</div>
+            <div className="mt-1 text-[11px] text-muted-foreground">Click to pin in the table</div>
           </div>
         )}
       </div>
@@ -159,7 +159,7 @@ function legendFor(mode: MapMode) {
     return (
       <>
         <span>0%</span>
-        <span className="h-2 w-24 rounded-sm" style={{ background: "linear-gradient(90deg, oklch(0.75 0.18 145 / 0.12), oklch(0.75 0.18 145))" }} />
+        <span className="h-2 w-24 rounded-sm" style={{ background: "linear-gradient(90deg, oklch(0.75 0.18 145 / 0.12), oklch(0.75 0.18 145))" }} /> {/* taste-skill-ignore: colour-scale legend */}
         <span>100%</span>
       </>
     );
@@ -167,9 +167,9 @@ function legendFor(mode: MapMode) {
   const right = mode === "margin" ? "D+30" : "D+15";
   return (
     <>
-      <span className="text-party-r">{left}</span>
-      <span className="h-2 w-24 rounded-sm" style={{ background: `linear-gradient(90deg, ${R_BASE}), var(--uncalled), ${D_BASE}))` }} />
-      <span className="text-party-d">{right}</span>
+      <span className="text-party-r-ink">{left}</span>
+      <span className="h-2 w-24 rounded-sm" style={{ background: `linear-gradient(90deg, ${R_BASE}), var(--uncalled), ${D_BASE}))` }} /> {/* taste-skill-ignore: colour-scale legend */}
+      <span className="text-party-d-ink">{right}</span>
       {mode === "swing" && <span className="ml-1 normal-case tracking-normal">vs 2024 pres.</span>}
       {mode === "benchmark" && <span className="ml-1 normal-case tracking-normal">vs tie benchmark</span>}
     </>
@@ -184,7 +184,7 @@ export function fmtOU(v: number | undefined): string {
 
 export function ouColor(v: number | undefined): string | undefined {
   if (v == null || Number.isNaN(v) || Math.abs(v) < 0.05) return undefined;
-  return v > 0 ? "text-party-d" : "text-party-r";
+  return v > 0 ? "text-party-d-ink" : "text-party-r-ink";
 }
 
 export function fmtNeeds(v: number | undefined): string {

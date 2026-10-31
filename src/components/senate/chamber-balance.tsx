@@ -22,11 +22,11 @@ export function ChamberBalance({ bop, className }: { bop: BalanceOfPower; classN
 
   return (
     <Card className={cn("overflow-hidden", className)}>
-      <CardContent className="pt-5">
+      <CardContent>
         <div className="flex items-end justify-between gap-4">
           <Side party="D" total={totals.d} won={won.d} notUp={bop.notUp.D + bop.notUp.I} called={bop.called.D + bop.called.I} leaning={bop.leaning.D + bop.leaning.I} />
           <div className="hidden sm:flex flex-col items-center text-center text-xs text-muted-foreground pb-1">
-            <span className="display text-base font-semibold text-foreground tracking-wide">U.S. SENATE</span>
+            <span className="display text-base font-semibold text-foreground tracking-wide">U.S. Senate</span>
             <span className="tnum">{bop.majority} for majority · 50 + VP ({VP_PARTY})</span>
             <span className="tnum">
               {uncalled} uncalled · {bop.tossup} toss-up{bop.tossup === 1 ? "" : "s"}
@@ -69,13 +69,13 @@ function Side({
   leaning: number;
   right?: boolean;
 }) {
-  const color = party === "D" ? "text-party-d" : "text-party-r";
+  const color = party === "D" ? "text-party-d-ink" : "text-party-r-ink";
   return (
     <div className={cn("min-w-0", right && "text-right")}>
       <div className={cn("display tnum font-bold leading-none text-6xl sm:text-7xl", color)}>
         <Num value={total} />
       </div>
-      <div className="mt-1 text-[11px] uppercase tracking-wider text-muted-foreground">{party === "D" ? "Dem + Ind" : "GOP"}</div>
+      <div className="mt-1 text-[11px] text-muted-foreground">{party === "D" ? "Dem + Ind" : "GOP"}</div>
       <div className={cn("mt-2 flex flex-wrap gap-x-3 gap-y-0.5 text-[11px] text-muted-foreground tnum", right && "justify-end")}>
         <span>
           <b className="text-foreground">{notUp}</b> not up

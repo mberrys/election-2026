@@ -7,7 +7,8 @@ import { useMounted } from "@/hooks/use-mounted";
 import { BalanceBar } from "./balance-bar";
 import { RaceCard } from "./race-card";
 import { IntegrityWatch } from "./integrity-watch";
-import { Num } from "./num";
+import { ControlLanes } from "./control-lanes";
+import { VP_PARTY } from "@/components/senate/chamber-balance";
 import { TierBadge } from "./status-badge";
 import { HexCartogram, HEXMAP_ATTRIBUTION } from "@/components/maps/hex-cartogram";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -32,7 +33,7 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
 
   // Pre-election balance from ratings alone, so the board is meaningful before any votes arrive.
   const balance = useMemo(() => {
-    if (mounted && data?.balance) return data.balance;
+    if (mounted && data?.balance && data.races.length) return data.balance;
     return {
       senate: computeBalance("senate", [], metas, SENATE_NOT_UP_2026),
       house: computeBalance("house", [], metas, { D: 0, R: 0, I: 0 }),
@@ -68,22 +69,27 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
 
   return (
     <div className="space-y-6">
+      <header className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">Midterm board</h1>
+        <p className="text-sm text-muted-foreground">Senate, House and governors from official count feeds</p>
+      </header>
+
       {/* Balance of power */}
       <section className="grid gap-4 lg:grid-cols-[1fr_1fr_minmax(260px,0.6fr)]">
-        <BopCard title="U.S. Senate" bop={balance.senate} live={mounted && !!data?.balance} href="/senate" />
-        <BopCard title="U.S. House" bop={balance.house} live={mounted && !!data?.balance} href="/house" />
+        <ControlLanes title="U.S. Senate" bop={balance.senate} href="/senate" vpParty={VP_PARTY} />
+        <ControlLanes title="U.S. House" bop={balance.house} href="/house" />
         <Card className="gap-3">
           <CardHeader className="pb-0">
-            <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">Governors · Generic ballot</CardTitle>
+            <CardTitle className="text-sm font-semibold">Governors · Generic ballot</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <GovStrip bop={balance.governor} />
             {genericBallot ? (
               <div>
                 <div className="flex items-baseline justify-between text-sm">
-                  <span className="text-party-d font-semibold tnum">D {genericBallot.d.toFixed(1)}</span>
+                  <span className="text-party-d-ink font-semibold tnum">D {genericBallot.d.toFixed(1)}</span>
                   <span className="text-xs text-muted-foreground">{fmtMarginDR(genericBallot.d - genericBallot.r)} · {genericBallot.source}</span>
-                  <span className="text-party-r font-semibold tnum">R {genericBallot.r.toFixed(1)}</span>
+                  <span className="text-party-r-ink font-semibold tnum">R {genericBallot.r.toFixed(1)}</span>
                 </div>
                 <div className="mt-1 flex h-2 overflow-hidden rounded-sm bg-uncalled/40">
                   <div className="bg-party-d" style={{ width: `${genericBallot.d}%` }} />
@@ -123,19 +129,19 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
       <section className="grid gap-4 xl:grid-cols-[1.4fr_1fr]">
         <Card className="gap-3">
           <CardHeader className="pb-0 flex-row items-center justify-between">
-            <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">House · all 435 districts</CardTitle>
+            <CardTitle className="text-sm font-semibold">House · all 435 districts</CardTitle>
             <Link href="/house" className="text-xs text-muted-foreground hover:text-foreground">
               Open House board →
             </Link>
           </CardHeader>
           <CardContent>
             <HouseCartogram metaById={metaById} live={live} />
-            <p className="mt-2 text-[10px] text-muted-foreground">{HEXMAP_ATTRIBUTION}</p>
+            <p className="mt-2 text-[11px] text-muted-foreground">{HEXMAP_ATTRIBUTION}</p>
           </CardContent>
         </Card>
         <Card className="gap-3">
           <CardHeader className="pb-0">
-            <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">Poll closings · Tuesday Nov 3 (ET)</CardTitle>
+            <CardTitle className="text-sm font-semibold">Poll closings · Tuesday Nov 3 (ET)</CardTitle>
           </CardHeader>
           <CardContent>
             <PollCloseTimeline states={states} metas={metas} live={live} />
@@ -167,7 +173,7 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
           {data.notices.length > 0 && (
             <ul className="mt-2 text-xs text-stale space-y-1">
               {data.notices.map((n, i) => (
-                <li key={i}>⚠ {n}</li>
+                <li key={i}>{n}</li>
               ))}
             </ul>
           )}
@@ -187,62 +193,15 @@ function SectionTitle({ title, sub }: { title: string; sub?: string }) {
   );
 }
 
-function BopCard({ title, bop, live, href }: { title: string; bop: BalanceOfPower; live: boolean; href: string }) {
-  const d = bop.notUp.D + bop.notUp.I + bop.called.D + bop.called.I;
-  const r = bop.notUp.R + bop.called.R;
-  const dLean = bop.leaning.D + bop.leaning.I;
-  const rLean = bop.leaning.R;
-  return (
-    <Card className="gap-3">
-      <CardHeader className="pb-0 flex-row items-center justify-between">
-        <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">{title}</CardTitle>
-        <Link href={href} className="text-xs text-muted-foreground hover:text-foreground">
-          Details →
-        </Link>
-      </CardHeader>
-      <CardContent>
-        <div className="flex items-end justify-between mb-3">
-          <Big n={d} lean={dLean} label="Dem seats (held + won)" className="text-party-d" />
-          <div className="text-center text-[11px] text-muted-foreground leading-tight">
-            <div className="tnum">
-              <span className="text-foreground font-semibold">{bop.majority}</span> to control
-            </div>
-            <div className="tnum">{bop.tossup} toss-ups</div>
-            {live && <div className="tnum">{(bop.raceIds?.uncalled.length ?? 0)} uncalled</div>}
-          </div>
-          <Big n={r} lean={rLean} label="GOP seats (held + won)" className="text-party-r" right />
-        </div>
-        <BalanceBar bop={bop} height={18} />
-        <div className="mt-2 flex justify-between text-[10px] text-muted-foreground tnum">
-          <span>+{dLean} leaning</span>
-          <span>+{rLean} leaning</span>
-        </div>
-      </CardContent>
-    </Card>
-  );
-}
-
-function Big({ n, lean, label, className, right }: { n: number; lean: number; label: string; className?: string; right?: boolean }) {
-  return (
-    <div className={right ? "text-right" : ""}>
-      <div className={cn("display text-5xl font-bold leading-none", className)}>
-        <Num value={n} />
-        {lean > 0 && <span className="text-xl text-muted-foreground font-medium"> +{lean}</span>}
-      </div>
-      <div className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">{label}</div>
-    </div>
-  );
-}
-
 function GovStrip({ bop }: { bop: BalanceOfPower }) {
   const d = bop.called.D + bop.called.I + bop.leaning.D + bop.leaning.I;
   const r = bop.called.R + bop.leaning.R;
   return (
     <div>
       <div className="flex items-baseline justify-between text-sm">
-        <span className="text-party-d font-semibold tnum">{d}</span>
+        <span className="text-party-d-ink font-semibold tnum">{d}</span>
         <span className="text-xs text-muted-foreground">36 governorships · {bop.tossup} toss-ups</span>
-        <span className="text-party-r font-semibold tnum">{r}</span>
+        <span className="text-party-r-ink font-semibold tnum">{r}</span>
       </div>
       <BalanceBar bop={bop} height={8} showMajorityTick={false} className="mt-1" />
     </div>
@@ -283,7 +242,7 @@ function HouseCartogram({ metaById, live }: { metaById: Map<string, RaceMeta>; l
 
 function Legend() {
   return (
-    <div className="flex items-center gap-3 text-[10px] text-muted-foreground">
+    <div className="flex items-center gap-3 text-[11px] text-muted-foreground">
       <span className="flex items-center gap-1"><i className="h-2.5 w-2.5 rounded-sm bg-party-d inline-block" /> D</span>
       <span className="flex items-center gap-1"><i className="h-2.5 w-2.5 rounded-sm bg-party-d-faint inline-block" /> Lean D</span>
       <span className="flex items-center gap-1"><i className="h-2.5 w-2.5 rounded-sm bg-uncalled inline-block" /> Toss-up</span>
@@ -335,7 +294,7 @@ function PollCloseTimeline({ states, metas, live }: { states: StateMeta[]; metas
                   title={n ? `${s.name}: ${n} competitive race${n > 1 ? "s" : ""}` : s.name}
                 >
                   {s.abbr}
-                  {n > 0 && <span className="ml-1 text-[10px] text-muted-foreground">{n}</span>}
+                  {n > 0 && <span className="ml-1 text-[11px] text-muted-foreground">{n}</span>}
                 </Link>
               );
             })}

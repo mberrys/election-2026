@@ -14,7 +14,7 @@ export default function HousePage() {
   return (
     <div className="space-y-4">
       <header className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-        <h1 className="display text-3xl md:text-4xl font-bold tracking-tight">U.S. House</h1>
+        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">U.S. House</h1>
         <p className="text-sm text-muted-foreground">All 435 seats · 218 for a majority</p>
       </header>
       <Suspense>

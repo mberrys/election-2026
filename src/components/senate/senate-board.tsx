@@ -32,14 +32,14 @@ export function SenateBoard({ metas, states }: { metas: RaceMeta[]; states: Pick
       </div>
 
       <header className="flex flex-wrap items-baseline justify-between gap-2">
-        <h1 className="display text-3xl font-bold tracking-tight">Senate</h1>
+        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">Senate</h1>
         <p className="text-sm text-muted-foreground">
           {metas.length} seats on the ballot · specials in {metas.filter((m) => m.special).map((m) => m.state).join(", ")} · Georgia requires
           a majority or goes to a runoff
         </p>
       </header>
 
-      <div className="grid gap-4 xl:grid-cols-5">
+      <div className="grid items-start gap-4 xl:grid-cols-5">
         <ChamberBalance bop={bop} className="xl:col-span-3" />
         <PathToMajority bop={bop} metas={metas} live={live} stateName={stateName} className="xl:col-span-2" />
       </div>
@@ -54,7 +54,7 @@ export function SenateBoard({ metas, states }: { metas: RaceMeta[]; states: Pick
       {mounted && data?.notices?.length ? (
         <ul className="space-y-1 text-xs text-stale">
           {data.notices.map((n, i) => (
-            <li key={i}>⚠ {n}</li>
+            <li key={i}>{n}</li>
           ))}
         </ul>
       ) : null}

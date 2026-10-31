@@ -112,12 +112,12 @@ export function TopLine({ race, meta }: { race?: Race; meta?: RaceMeta }) {
                       {c.name}
                       {c.incumbent ? <span className="text-muted-foreground"> *</span> : null}
                     </span>
-                    <span className="text-[11px] uppercase tracking-wider text-muted-foreground">{partyLabel[c.party]}</span>
-                    {isWinner && <span className="ml-auto text-[10px] font-semibold uppercase tracking-wider text-live">Projected</span>}
+                    <span className="text-[11px] text-muted-foreground">{partyLabel[c.party]}</span>
+                    {isWinner && <span className="ml-auto text-[11px] font-semibold text-live">Projected</span>}
                   </div>
                   <div className="mt-2 flex items-end justify-between gap-3">
                     <Votes value={c.votes} className="display text-4xl md:text-5xl font-bold leading-none" />
-                    <Pct value={c.pct} className={cn("display text-3xl font-semibold leading-none", c.party === "D" ? "text-party-d" : c.party === "R" ? "text-party-r" : "text-party-i")} />
+                    <Pct value={c.pct} className={cn("display text-3xl font-semibold leading-none", c.party === "D" ? "text-party-d-ink" : c.party === "R" ? "text-party-r-ink" : "text-party-i")} />
                   </div>
                   <div className="mt-2 h-1.5 overflow-hidden rounded-sm bg-uncalled/30">
                     <div
@@ -172,7 +172,7 @@ export function ProjectionGauge({ margin, band, live, className }: { margin: num
   return (
     <div className={cn("min-w-0", className)}>
       <div className="mb-1 flex items-baseline justify-between text-[11px] text-muted-foreground">
-        <span className="uppercase tracking-[0.18em]">{live ? "Projected final margin" : "Pre-election expectation"}</span>
+        <span>{live ? "Projected final margin" : "Pre-election expectation"}</span>
         <span className="tnum">
           <span className="font-semibold text-foreground">{fmtMarginDR(margin)}</span> ± {band.toFixed(1)} ·{" "}
           <span className="italic">{live ? "model, not a call" : "polls & ratings, not a call"}</span>
@@ -219,7 +219,7 @@ export function ProjectionGauge({ margin, band, live, className }: { margin: num
 
 function NeedsCallout({ cand, party, share, remaining }: { cand?: Cand; party: Party; share?: number; remaining?: number }) {
   const name = cand ? lastName(cand.name) : partyLabel[party];
-  const color = party === "D" ? "text-party-d" : "text-party-r";
+  const color = party === "D" ? "text-party-d-ink" : "text-party-r-ink";
   let body: React.ReactNode;
   if (share == null || remaining == null) body = <span className="text-muted-foreground">Needs-of-remaining appears once votes report.</span>;
   else if (remaining <= 0 && share <= 0) body = <span>has the votes — nothing left to count</span>;

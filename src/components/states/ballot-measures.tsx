@@ -28,7 +28,7 @@ export function BallotMeasures({ measures, live, stateNames }: { measures: RaceM
   return (
     <Card size="sm">
       <CardHeader>
-        <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">Ballot measures</CardTitle>
+        <CardTitle className="text-sm font-semibold">Ballot measures</CardTitle>
         <p className="text-xs text-muted-foreground">
           <span className="tnum">{measures.length}</span> statewide measures in <span className="tnum">{groups.length}</span> states.{" "}
           {liveCount > 0 ? (

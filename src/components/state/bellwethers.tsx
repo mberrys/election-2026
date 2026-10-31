@@ -67,7 +67,7 @@ export function Bellwethers({
             >
               <div className="flex items-baseline justify-between gap-2">
                 <span className="truncate text-sm font-semibold">
-                  <span className="mr-1.5 text-[10px] text-muted-foreground tnum">#{i + 1}</span>
+                  <span className="mr-1.5 text-[11px] text-muted-foreground tnum">#{i + 1}</span>
                   {b.name ?? r?.name ?? b.id}
                 </span>
                 <span className="text-[11px] tnum text-muted-foreground">{pctIn != null ? `${Math.round(pctIn * 100)}% in` : "—"}</span>
@@ -77,7 +77,7 @@ export function Bellwethers({
                   <dt className="text-muted-foreground" title="Historical lean relative to the statewide margin">
                     Lean
                   </dt>
-                  <dd className={cn("tnum font-medium", b.lean > 0.05 ? "text-party-d" : b.lean < -0.05 ? "text-party-r" : "")} title={`Mean of ${b.baselines} baseline${b.baselines === 1 ? "" : "s"}; |lean| ${b.absLean.toFixed(1)}`}>
+                  <dd className={cn("tnum font-medium", b.lean > 0.05 ? "text-party-d-ink" : b.lean < -0.05 ? "text-party-r-ink" : "")} title={`Mean of ${b.baselines} baseline${b.baselines === 1 ? "" : "s"}; |lean| ${b.absLean.toFixed(1)}`}>
                     {fmtMarginDR(b.lean)}
                   </dd>
                 </div>

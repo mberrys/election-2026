@@ -9,7 +9,7 @@ export default function SourcesPage() {
   return (
     <article className="max-w-5xl space-y-6">
       <header>
-        <h1 className="display text-3xl font-bold tracking-tight">Sources &amp; licenses</h1>
+        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">Sources &amp; licenses</h1>
         <p className="text-sm text-muted-foreground mt-1">
           Everything the Big Board shows comes from the sources below. Live vote counts are pulled directly from official
           election authorities; nothing is scraped from news organizations&apos; results pages, and no AP or network race
@@ -18,7 +18,7 @@ export default function SourcesPage() {
       </header>
 
       <section>
-        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Live results feeds</h2>
+        <h2 className="text-sm text-muted-foreground mb-2">Live results feeds</h2>
         <ul className="text-sm space-y-1">
           <li>North Carolina State Board of Elections — er.ncsbe.gov (statewide JSON, vote-method split)</li>
           <li>Virginia Department of Elections — enr.elections.virginia.gov (Enhanced Voting export)</li>
@@ -32,10 +32,10 @@ export default function SourcesPage() {
       </section>
 
       <section>
-        <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Reference data</h2>
+        <h2 className="text-sm text-muted-foreground mb-2">Reference data</h2>
         <div className="overflow-x-auto rounded-md border border-border/60">
           <table className="w-full text-sm">
-            <thead className="bg-card text-left text-xs uppercase tracking-wider text-muted-foreground">
+            <thead className="bg-card text-left text-xs text-muted-foreground">
               <tr>
                 <th className="px-3 py-2">Source</th>
                 <th className="px-3 py-2">Used for</th>

@@ -34,7 +34,7 @@ export function PathToMajority({
   return (
     <Card className={className}>
       <CardHeader className="pb-2">
-        <CardTitle className="text-sm uppercase tracking-wider text-muted-foreground">Path to majority</CardTitle>
+        <CardTitle className="text-sm font-semibold">Path to majority</CardTitle>
       </CardHeader>
       <CardContent className="space-y-5">
         <PartyPath party="D" path={paths.D} won={bop.raceIds?.calledD.concat(bop.raceIds.calledI) ?? []} metaById={metaById} live={live} stateName={stateName} uncalledCount={uncalled.length} />
@@ -79,7 +79,7 @@ function PartyPath({
   uncalledCount: number;
 }) {
   const label = party === "D" ? "Democrats" : "Republicans";
-  const color = party === "D" ? "text-party-d" : "text-party-r";
+  const color = party === "D" ? "text-party-d-ink" : "text-party-r-ink";
   const headline =
     path.need === 0
       ? `${label} are at ${path.have}: control ${path.target === 50 ? "via the VP tie-break" : "secured"}`
@@ -135,7 +135,7 @@ function Chip({
   const favorable = lean === party;
   const hostile = lean !== "tossup" && lean !== party;
   const solid = party === "D" ? "bg-party-d text-white border-party-d" : "bg-party-r text-white border-party-r";
-  const soft = party === "D" ? "bg-party-d-faint border-party-d/40 text-party-d" : "bg-party-r-faint border-party-r/40 text-party-r";
+  const soft = party === "D" ? "bg-party-d-faint border-party-d/40 text-party-d-ink" : "bg-party-r-faint border-party-r/40 text-party-r-ink";
   const title = [
     `${stateName(meta.state)}${meta.special ? " (special)" : ""}`,
     rating ? ratingLabel[rating] : "Unrated",
@@ -158,16 +158,15 @@ function Chip({
           state === "needed" && hostile && "border-dashed border-foreground/30 bg-transparent text-muted-foreground",
         )}
       >
-        {state === "won" && <span aria-hidden>✓</span>}
         {meta.state}
-        {meta.special && <span className="text-[9px] font-normal opacity-80">sp</span>}
+        {meta.special && <span className="text-[11px] font-normal opacity-80">sp</span>}
         {state === "needed" && (lean === "tossup" || hostile) && (
-          <span className="text-[9px] font-normal uppercase tracking-wider opacity-80">{lean === "tossup" ? "toss" : "flip"}</span>
+          <span className="text-[11px] font-normal opacity-80">{lean === "tossup" ? "toss" : "flip"}</span>
         )}
         {counting && state === "needed" && (
           <span
             className={cn(
-              "ml-0.5 text-[10px] font-medium",
+              "ml-0.5 text-[11px] font-medium",
               leader?.party === party ? "text-live" : leader ? "text-stale" : "opacity-70",
             )}
           >
