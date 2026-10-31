@@ -64,7 +64,7 @@ export function matchup(meta: RaceMeta): string | undefined {
   return d.length === 1 && r.length === 1 ? `${d[0].name} (D) vs ${r[0].name} (R)` : undefined;
 }
 
-function candidatesText(meta: RaceMeta): string | undefined {
+export function candidatesText(meta: RaceMeta): string | undefined {
   if (!meta.candidates.length) return undefined;
   const order = (p: Party) => (p === "D" ? 0 : p === "R" ? 1 : 2);
   const list = [...meta.candidates]
@@ -73,7 +73,7 @@ function candidatesText(meta: RaceMeta): string | undefined {
   return `Candidates: ${list.join(", ")}.`;
 }
 
-function ratingText(meta: RaceMeta): string | undefined {
+export function ratingText(meta: RaceMeta): string | undefined {
   const c = meta.ratings.consensus;
   if (!c) return undefined;
   const others = (Object.keys(RATERS) as (keyof typeof RATERS)[])
@@ -83,7 +83,7 @@ function ratingText(meta: RaceMeta): string | undefined {
   return `The consensus rating is ${ratingLabel[c]}${others.length ? ` (${others.join("; ")})` : ""}${asOf ? `, as of ${asOf}` : ""}.`;
 }
 
-function pollText(meta: RaceMeta): string | undefined {
+export function pollText(meta: RaceMeta): string | undefined {
   const p = meta.polls;
   if (!p) return undefined;
   const date = shortDate(p.asOf);
@@ -131,7 +131,7 @@ function askedParty(w: LastWins): "d" | "r" {
 }
 
 /** "When did X last elect a Democrat ...": Senate and governor series from the Big Board's own (possibly gappy) dataset. */
-function lastWinQa(phrase: (who: string) => string, ansNoun: string, w: LastWins): QA {
+export function lastWinQa(phrase: (who: string) => string, ansNoun: string, w: LastWins): QA {
   const ask = askedParty(w);
   const other = ask === "d" ? "r" : "d";
   const hit = w[ask];

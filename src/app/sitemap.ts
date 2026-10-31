@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
-import { loadPolls, loadStates } from "@/data/reference/load";
+import { isRaceOffice, raceSlug } from "@/components/race/race-content";
+import { loadPolls, loadRaces, loadStates } from "@/data/reference/load";
 import { SITE_PAGES } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
 
@@ -22,5 +23,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...(lastModified ? { lastModified } : {}),
   }));
 
-  return [...pages, ...states];
+  // Senate and governor races are weighted above House races, which are numerous and mostly low-traffic.
+  const races: MetadataRoute.Sitemap = loadRaces()
+    .filter((r) => isRaceOffice(r.office))
+    .map((r) => ({
+      url: absoluteUrl(`/race/${raceSlug(r)}`),
+      changeFrequency: "daily",
+      priority: r.office === "house" ? 0.5 : 0.6,
+      ...(lastModified ? { lastModified } : {}),
+    }));
+
+  return [...pages, ...states, ...races];
 }

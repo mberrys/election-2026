@@ -147,6 +147,12 @@ export function statewideRace(races: RaceMeta[]): RaceMeta | undefined {
   return withPolls("senate", false) ?? withPolls("senate", true) ?? withPolls("governor", false);
 }
 
+/** Then & Now row for one race: its own poll average when it has one, else its 2024 margin moved by the national swing. */
+export function raceRow(meta: RaceMeta, series: MarginSeries, baseline2024: number | undefined, input: BuildInput, label: string): HistoryRowModel {
+  const projection = projectedMargin(meta, baseline2024, ctx(input, latestNational(input.history)));
+  return finishRow({ id: meta.id, label, kind: meta.office === "house" ? "district" : "state", series, projection });
+}
+
 export interface BuildInput {
   history: History;
   races: RaceMeta[];

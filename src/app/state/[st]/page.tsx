@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { StateBoard } from "@/components/state/state-board";
 import { StateHistoryPanel } from "@/components/history/state-history-panel";
 import { StateQa } from "@/components/state/state-qa";
+import { StateRaces } from "@/components/state/state-races";
 import { stateDescription, stateTitle } from "@/components/state/state-content";
 import { stateContentInput } from "@/components/state/state-content-data";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -61,6 +62,7 @@ export default async function StatePage({ params }: PageProps<"/state/[st]">) {
       </Suspense>
       <StateHistoryPanel abbr={state.abbr} />
       <StateQa input={input} />
+      <StateRaces abbr={state.abbr} stateName={state.name} />
     </div>
   );
 }

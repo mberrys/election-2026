@@ -27,13 +27,20 @@ describe("siteUrl / absoluteUrl", () => {
 describe("sitemap", () => {
   const urls = sitemap().map((e) => e.url);
 
-  it("lists every static page and all 51 state pages, once each, as absolute URLs", () => {
-    expect(urls).toHaveLength(SITE_PAGES.length + 51);
+  it("lists every static page, all 51 state pages and all 506 race pages, once each, as absolute URLs", () => {
+    expect(urls).toHaveLength(SITE_PAGES.length + 51 + 506);
     expect(new Set(urls).size).toBe(urls.length);
     expect(urls.every((u) => /^https?:\/\//.test(u))).toBe(true);
     expect(urls).toContain(absoluteUrl("/history"));
     expect(urls).toContain(absoluteUrl("/state/TX"));
     expect(urls).toContain(absoluteUrl("/state/DC"));
+  });
+
+  it("lists one race page per Senate, governor and House race", () => {
+    expect(urls).toContain(absoluteUrl("/race/senate-tx"));
+    expect(urls).toContain(absoluteUrl("/race/governor-ga"));
+    expect(urls).toContain(absoluteUrl("/race/house-tx-15"));
+    expect(urls.filter((u) => u.includes("/race/"))).toHaveLength(506);
   });
 
   it("leaves out API routes and the redirect-only /senate/[state]", () => {
