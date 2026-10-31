@@ -85,6 +85,6 @@ describe("runAdapters", () => {
     expect(ids).toEqual(expect.arrayContaining(["nc-ncsbe", "ev-va", "ev-ga", "ca-sos", "mn-sos", "ak-doe", "clarity-ia", "wikipedia-results"]));
     if (process.env.ENABLE_NYT_XCHECK !== "1") expect(ids).not.toContain("nyt-xcheck");
     expect(adapterById.get("nc-ncsbe")?.states).toEqual(["NC"]);
-    expect(adapters.filter((a) => a.tier === "A").length).toBe(7);
+    expect(adapters.filter((a) => a.tier === "A").length).toBe(9); // + az-sos, wa-sos (mi-counties is tier B)
   });
 });

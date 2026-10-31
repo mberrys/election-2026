@@ -1,0 +1,743 @@
+{
+ "_note": "Congressional District 2 - U.S. Representative — 20261103, fetched 2026-10-30; trimmed to ballotItemWithBreakdown.{name,breakdownResults} (jurisdiction/ballotItems/statistics dropped)",
+ "ballotItemWithBreakdown": {
+  "name": [
+   {
+    "languageId": "en",
+    "text": "Congressional District 2 - U.S. Representative"
+   }
+  ],
+  "breakdownResults": [
+   {
+    "parentBallotItemId": "01000000-0ae2-65ae-97fc-08df1040053d",
+    "locality": {
+     "id": "01000000-f977-1a83-6425-08ddd6a09cb1",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Island County"
+      }
+     ],
+     "shortName": "island-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "ISLAND"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 90,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 90
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "54c40000-9064-bbec-3d49-08df15c0a82a",
+      "nativeId": "1601890",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Rick Larsen"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-4647-08df15c0a808",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-41f0-08df15c0a82a",
+      "nativeId": "1601891",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Edwin H. Feller"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-2e1b-08df15c0a7f5",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-37b7-08df15c0a82a",
+      "nativeId": "9910",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-1c1b-2200-c62d-08df0857b7c2",
+    "locality": {
+     "id": "01000000-f977-1a83-b520-08ddd6a09cbb",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "San Juan County"
+      }
+     ],
+     "shortName": "san-juan-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "SAN JUAN"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 23,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 23
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "54c40000-9064-bbec-3d49-08df15c0a82a",
+      "nativeId": "1601890",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Rick Larsen"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-4647-08df15c0a808",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-41f0-08df15c0a82a",
+      "nativeId": "1601891",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Edwin H. Feller"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-2e1b-08df15c0a7f5",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-37b7-08df15c0a82a",
+      "nativeId": "9910",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-bd5d-c14f-e5eb-08df12989022",
+    "locality": {
+     "id": "01000000-f977-1a83-8590-08ddd6a09cbc",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Skagit County"
+      }
+     ],
+     "shortName": "skagit-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "SKAGIT"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 373,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 373
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "54c40000-9064-bbec-3d49-08df15c0a82a",
+      "nativeId": "1601890",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Rick Larsen"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-4647-08df15c0a808",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-41f0-08df15c0a82a",
+      "nativeId": "1601891",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Edwin H. Feller"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-2e1b-08df15c0a7f5",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-37b7-08df15c0a82a",
+      "nativeId": "9910",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-a3a2-e129-908b-08df134d581a",
+    "locality": {
+     "id": "01000000-f977-1a83-262f-08ddd6a09cbe",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Snohomish County"
+      }
+     ],
+     "shortName": "snohomish-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "SNOHOMISH"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 311,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 311
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "54c40000-9064-bbec-3d49-08df15c0a82a",
+      "nativeId": "1601890",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Rick Larsen"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-4647-08df15c0a808",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-41f0-08df15c0a82a",
+      "nativeId": "1601891",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Edwin H. Feller"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-2e1b-08df15c0a7f5",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-37b7-08df15c0a82a",
+      "nativeId": "9910",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-9a88-e54e-56b8-08df1406363c",
+    "locality": {
+     "id": "01000000-f977-1a83-5d8a-08ddd6a09cc2",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Whatcom County"
+      }
+     ],
+     "shortName": "whatcom-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "WHATCOM"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 176,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 176
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "54c40000-9064-bbec-3d49-08df15c0a82a",
+      "nativeId": "1601890",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Rick Larsen"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-4647-08df15c0a808",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-41f0-08df15c0a82a",
+      "nativeId": "1601891",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Edwin H. Feller"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-2e1b-08df15c0a7f5",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-37b7-08df15c0a82a",
+      "nativeId": "9910",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   }
+  ]
+ }
+}

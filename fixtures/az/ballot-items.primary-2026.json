@@ -1,0 +1,821 @@
+{
+ "_note": "trimmed: id/name/contestType/reportingStatus only; filtered",
+ "data": [
+  {
+   "id": "3cf893fe-8987-445f-b66d-1b534e8edfdc",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 2 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "97424acf-4598-4ab0-9917-72911eb20a6e",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 2 (LIB)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "79206fb3-89e8-4038-b7ed-a39c19aa12b3",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 2 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "40542258-ec78-499f-9561-d75a5468b713",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Governor (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "3289f03f-c800-4da2-b668-deed9561b8dd",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Governor (GRN)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "8104473a-e922-4f38-b59f-8c7b8e583286",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Governor (NL)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "d26840fe-675a-42ac-90f4-6bbe461c55b9",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Governor (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "a7b1efc7-2376-4961-a25e-6d9dcfc368a3",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 2 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "89b0500e-0c3d-4e80-abd5-1650c30d9581",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 2 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "2bfaec3a-f992-4139-ae89-4385ed5ea8fc",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 20 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c2764f6d-10d8-42b2-8d97-8e08856ea34b",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 21 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "cbc32a26-6ee7-4187-8c7d-479d0b257c1f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 21 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "792bd1a8-c28a-4bc8-897e-3eccb183eca9",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 22 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "fabc4897-915c-4881-84bc-313f47193b63",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 23 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "4c6a6b6a-aa0e-40d2-8295-efe89a5e6fab",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 23 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "a0cc6410-d745-42b0-91c2-8830238460ab",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 24 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "60b15485-1ca5-4c9c-b76c-a26028009829",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 24 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "563c74e7-5962-4454-87b0-5819f59e9b4b",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 24 (GRN)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f80acebf-eb58-4c4f-93ca-4d6c1f3042f3",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 25 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "38899725-1798-4c50-9fb8-6f5dff3c1a5e",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 25 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "3424103b-9752-4959-9036-287944d80c3b",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 26 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "e05f9a7b-8402-4a58-aa2a-475d514afab0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 26 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "707a1739-5198-417d-ace8-8df7ca261975",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 27 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "38eac3fa-cfa0-4008-952b-2251b9e71bd2",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 27 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "856be06a-a260-4c27-96a8-c0922412aead",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 28 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "6505dfa9-f078-4b07-a2f2-3b5bdea2049a",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 28 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f91ff397-3697-4144-8a31-ebc47c3f053d",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 29 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "d81ad01b-76dc-4a63-9704-92e531d79cf3",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 29 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "40238a3d-90eb-4385-a772-27e5ba05348c",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 2 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "516fcb03-6366-4e6f-8650-dd9d94fe3eb5",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 2 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "a1c0a7da-3a2a-4586-92fb-115f6898c6d1",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 20 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "40a12e36-d092-4499-a24e-2b7e31efce74",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 20 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f41d01dd-dbf3-4ab9-a5df-09d07bedf6ee",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 21 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "49e9d6cf-b4fb-4b10-b40a-0eab6872f30a",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 21 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "d9c36785-89a3-460e-9918-602d82ce7d44",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 22 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "ae457e7e-a605-4c0e-91be-5f06f2e7fa0d",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 22 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "118be6b7-3b97-4048-b03e-b14be3ed2ef0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 23 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f825ef3f-0af5-478e-8be4-bb6f65e633b3",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 23 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f8c1c7c1-c128-4bd7-8214-8894a9198290",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 24 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "d025bde2-d1b9-41c8-a31d-b8892f4fc08d",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 24 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "0ecdd7d6-eaf8-4250-86ff-c7de3e2ecc7c",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 25 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "33773c53-0b6c-487c-b148-bef1012416d8",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 25 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "5fcb5c65-206b-43d0-9df4-e36b3922f1b3",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 26 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "70764614-a31a-490a-b0a2-f7b6b9bcdd7b",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 26 (GRN)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "9ec4cbb6-36c0-4f63-aee2-9810c5063083",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 26 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "5276bfe9-e4d6-46cb-b91b-d8b7cc550b21",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 27 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "1b659b25-4f29-4692-a2da-625d8bd10c5b",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 27 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "6753d755-9c78-4a2f-8e03-5941d9d60176",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 28 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "01a7a535-663f-4bd4-9d41-9767248ae0a3",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 28 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "de78714a-5d6e-4a41-a385-946825002a89",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 29 (DEM)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "649e1a42-ab42-40b8-850a-7639ff89b449",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 29 (REP)"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-09T17:56:51.6029081Z",
+    "reportingStatusDetails": null
+   }
+  }
+ ]
+}

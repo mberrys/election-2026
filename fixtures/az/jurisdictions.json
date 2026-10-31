@@ -1,0 +1,45 @@
+{
+ "shortName": "Arizona",
+ "elections": [
+  {
+   "publicElectionId": "110326GeneralElection",
+   "electionDate": "2026-11-03",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "2026 General Election"
+    },
+    {
+     "languageId": "1",
+     "text": "Elección General"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "November 3, 2026"
+    },
+    {
+     "languageId": "1",
+     "text": "3 de noviembre de 2026"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "Primary-07-21-26",
+   "electionDate": "2026-07-21",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "2026 Primary Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "July 21, 2026"
+    }
+   ]
+  }
+ ]
+}

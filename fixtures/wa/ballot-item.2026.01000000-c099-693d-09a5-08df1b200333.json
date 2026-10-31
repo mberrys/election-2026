@@ -1,0 +1,4381 @@
+{
+ "_note": "Initiative Measure No. IL26-001 — 20261103, fetched 2026-10-30; trimmed to ballotItemWithBreakdown.{name,breakdownResults} (jurisdiction/ballotItems/statistics dropped)",
+ "ballotItemWithBreakdown": {
+  "name": [
+   {
+    "languageId": "en",
+    "text": "Initiative Measure No. IL26-001"
+   }
+  ],
+  "breakdownResults": [
+   {
+    "parentBallotItemId": "01000000-368f-c1af-7250-08df1022d105",
+    "locality": {
+     "id": "01000000-f977-1a83-b33e-08ddd6a09ca6",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Adams County"
+      }
+     ],
+     "shortName": "adams-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "ADAMS"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 30,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 30
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-5a98-8b40-e9ac-08df03ba90b7",
+    "locality": {
+     "id": "01000000-f977-1a83-8b66-08ddd6a09ca8",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Asotin County"
+      }
+     ],
+     "shortName": "asotin-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "ASOTIN"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 66,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 66
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-cd86-3a61-3d0e-08df24a83e2b",
+    "locality": {
+     "id": "01000000-f977-1a83-4559-08ddd6a09ca9",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Benton County"
+      }
+     ],
+     "shortName": "benton-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "BENTON"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 250,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 250
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-2afe-f1a0-ee92-08df0944e2e1",
+    "locality": {
+     "id": "01000000-f977-1a83-f99e-08ddd6a09ca9",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Chelan County"
+      }
+     ],
+     "shortName": "chelan-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "CHELAN"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 107,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 107
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-ddae-c1b1-edb5-08df0f5c0685",
+    "locality": {
+     "id": "01000000-f977-1a83-ad30-08ddd6a09caa",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Clallam County"
+      }
+     ],
+     "shortName": "clallam-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "CLALLAM"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 67,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 67
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-1b8e-c128-6ac5-08df08491fc6",
+    "locality": {
+     "id": "01000000-f977-1a83-56b4-08ddd6a09cab",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Clark County"
+      }
+     ],
+     "shortName": "clark-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "CLARK"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 375,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 375
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-525b-68c8-f8f4-08df0ec65661",
+    "locality": {
+     "id": "01000000-f977-1a83-0277-08ddd6a09cac",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Columbia County"
+      }
+     ],
+     "shortName": "columbia-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "COLUMBIA"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 26,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 26
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-4921-08d5-e98f-08df144167d8",
+    "locality": {
+     "id": "01000000-f977-1a83-ac95-08ddd6a09cac",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Cowlitz County"
+      }
+     ],
+     "shortName": "cowlitz-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "COWLITZ"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 92,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 92
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-3a9b-f5fa-2bf9-08df1837c0ce",
+    "locality": {
+     "id": "01000000-f977-1a83-5bf7-08ddd6a09cad",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Douglas County"
+      }
+     ],
+     "shortName": "douglas-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "DOUGLAS"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 232,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 232
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-cdbf-5612-3ee6-08df12a91ba0",
+    "locality": {
+     "id": "01000000-f977-1a83-0502-08ddd6a09cae",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Ferry County"
+      }
+     ],
+     "shortName": "ferry-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "FERRY"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 19,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 19
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-826d-789f-cab1-08df1f319e2e",
+    "locality": {
+     "id": "01000000-f977-1a83-b165-08ddd6a09cae",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Franklin County"
+      }
+     ],
+     "shortName": "franklin-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "FRANKLIN"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 123,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 123
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-3f87-a0fd-61b3-08df046bcd4a",
+    "locality": {
+     "id": "01000000-f977-1a83-5b77-08ddd6a09caf",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Garfield County"
+      }
+     ],
+     "shortName": "garfield-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "GARFIELD"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 11,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 11
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-ecd8-2711-c493-08df0eab3d92",
+    "locality": {
+     "id": "01000000-f977-1a83-0a73-08ddd6a09cb0",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Grant County"
+      }
+     ],
+     "shortName": "grant-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "GRANT"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 81,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 81
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-cc5f-ae64-3f85-08df2ef6a546",
+    "locality": {
+     "id": "01000000-f977-1a83-b7d1-08ddd6a09cb0",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Grays Harbor County"
+      }
+     ],
+     "shortName": "grays-harbor-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "GRAYS HARBOR"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 97,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 97
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-0ae2-65ae-5178-08df10400548",
+    "locality": {
+     "id": "01000000-f977-1a83-6425-08ddd6a09cb1",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Island County"
+      }
+     ],
+     "shortName": "island-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "ISLAND"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 90,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 90
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-c9bf-b8af-9ce4-08df0abcacb0",
+    "locality": {
+     "id": "01000000-f977-1a83-1d0e-08ddd6a09cb2",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Jefferson County"
+      }
+     ],
+     "shortName": "jefferson-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "JEFFERSON"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 37,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 37
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-f0b7-9b6a-3c20-08df232198dc",
+    "locality": {
+     "id": "01000000-f977-1a83-d40f-08ddd6a09cb2",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "King County"
+      }
+     ],
+     "shortName": "king-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "KING"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 3685,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 3685
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-bd5d-c14f-2772-08df12a97db2",
+    "locality": {
+     "id": "01000000-f977-1a83-8682-08ddd6a09cb3",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Kitsap County"
+      }
+     ],
+     "shortName": "kitsap-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "KITSAP"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 246,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 246
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-bd5d-c14f-0a5f-08df12b22b81",
+    "locality": {
+     "id": "01000000-f977-1a83-38ad-08ddd6a09cb4",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Kittitas County"
+      }
+     ],
+     "shortName": "kittitas-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "KITTITAS"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 54,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 54
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-3f87-a0fd-70fd-08df078e257f",
+    "locality": {
+     "id": "01000000-f977-1a83-eddf-08ddd6a09cb4",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Klickitat County"
+      }
+     ],
+     "shortName": "klickitat-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "KLICKITAT"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 98,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 98
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-c23f-516e-ee21-08df0ac5a6c3",
+    "locality": {
+     "id": "01000000-f977-1a83-a581-08ddd6a09cb5",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Lewis County"
+      }
+     ],
+     "shortName": "lewis-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "LEWIS"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 106,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 106
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-f837-7950-d4ed-08df0df8c187",
+    "locality": {
+     "id": "01000000-f977-1a83-5c13-08ddd6a09cb6",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Lincoln County"
+      }
+     ],
+     "shortName": "lincoln-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "LINCOLN"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 46,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 46
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-015f-2c84-0369-08df1046dfc4",
+    "locality": {
+     "id": "01000000-f977-1a83-420f-08ddd6a09cb7",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Mason County"
+      }
+     ],
+     "shortName": "mason-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "MASON"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 58,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 58
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-7e64-87ed-1b58-08df14415d43",
+    "locality": {
+     "id": "01000000-f977-1a83-6c66-08ddd6a09cb8",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Okanogan County"
+      }
+     ],
+     "shortName": "okanogan-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "OKANOGAN"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 100,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 100
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-0bac-9173-aad6-08df14e9c1be",
+    "locality": {
+     "id": "01000000-f977-1a83-37cd-08ddd6a09cb9",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Pacific County"
+      }
+     ],
+     "shortName": "pacific-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "PACIFIC"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 42,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 42
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-f837-7950-e93b-08df0de0e976",
+    "locality": {
+     "id": "01000000-f977-1a83-0a9a-08ddd6a09cba",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Pend Oreille County"
+      }
+     ],
+     "shortName": "pend-oreille-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "PEND OREILLE"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 27,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 27
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-f6f7-9c6e-15d7-08df143a0935",
+    "locality": {
+     "id": "01000000-f977-1a83-f161-08ddd6a09cba",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Pierce County"
+      }
+     ],
+     "shortName": "pierce-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "PIERCE"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 745,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 745
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-1c1b-2200-ab7a-08df0857b7c2",
+    "locality": {
+     "id": "01000000-f977-1a83-b520-08ddd6a09cbb",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "San Juan County"
+      }
+     ],
+     "shortName": "san-juan-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "SAN JUAN"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 23,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 23
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-bd5d-c14f-e761-08df12989022",
+    "locality": {
+     "id": "01000000-f977-1a83-8590-08ddd6a09cbc",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Skagit County"
+      }
+     ],
+     "shortName": "skagit-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "SKAGIT"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 373,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 373
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-7c77-d3cb-2250-08df1f45b415",
+    "locality": {
+     "id": "01000000-f977-1a83-6920-08ddd6a09cbd",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Skamania County"
+      }
+     ],
+     "shortName": "skamania-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "SKAMANIA"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 23,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 23
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-a3a2-e129-659a-08df134d5818",
+    "locality": {
+     "id": "01000000-f977-1a83-262f-08ddd6a09cbe",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Snohomish County"
+      }
+     ],
+     "shortName": "snohomish-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "SNOHOMISH"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 875,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 875
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-bd5d-c14f-f60e-08df12b2898d",
+    "locality": {
+     "id": "01000000-f977-1a83-f298-08ddd6a09cbe",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Spokane County"
+      }
+     ],
+     "shortName": "spokane-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "SPOKANE"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 453,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 453
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-bd5d-c14f-bba0-08df12a609a8",
+    "locality": {
+     "id": "01000000-f977-1a83-ae0a-08ddd6a09cbf",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Stevens County"
+      }
+     ],
+     "shortName": "stevens-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "STEVENS"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 69,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 69
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-2afe-f1a0-a3d5-08df09124097",
+    "locality": {
+     "id": "01000000-f977-1a83-605b-08ddd6a09cc0",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Thurston County"
+      }
+     ],
+     "shortName": "thurston-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "THURSTON"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 308,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 308
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-d5f6-060b-607d-08df12779436",
+    "locality": {
+     "id": "01000000-f977-1a83-0cbd-08ddd6a09cc1",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Wahkiakum County"
+      }
+     ],
+     "shortName": "wahkiakum-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "WAHKIAKUM"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 11,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 11
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-bd5d-c14f-0868-08df128a2362",
+    "locality": {
+     "id": "01000000-f977-1a83-b406-08ddd6a09cc1",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Walla Walla County"
+      }
+     ],
+     "shortName": "walla-walla-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "WALLA WALLA"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 62,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 62
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-9a88-e54e-3ea9-08df1406363c",
+    "locality": {
+     "id": "01000000-f977-1a83-5d8a-08ddd6a09cc2",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Whatcom County"
+      }
+     ],
+     "shortName": "whatcom-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "WHATCOM"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 176,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 176
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-33ba-98a4-85af-08df142002b1",
+    "locality": {
+     "id": "01000000-f977-1a83-0a29-08ddd6a09cc3",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Whitman County"
+      }
+     ],
+     "shortName": "whitman-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "WHITMAN"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 81,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 81
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-525b-68c8-1632-08df0eb86bfd",
+    "locality": {
+     "id": "01000000-f977-1a83-f3fc-08ddd6a09cc3",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Yakima County"
+      }
+     ],
+     "shortName": "yakima-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "YAKIMA"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 224,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 224
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "01000000-c099-693d-dd22-08df1b200333",
+      "nativeId": "Yes-1-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Yes"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-c099-693d-e107-08df1b200333",
+      "nativeId": "No-2-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "No"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2d6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   }
+  ]
+ }
+}

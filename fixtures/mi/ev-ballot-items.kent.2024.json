@@ -1,0 +1,1789 @@
+{
+ "_note": "https://app.enhancedvoting.com/results/public/api/elections/kent-county-mi/2024KentCountyGeneral/ballot-items, fetched 2026-10-30; filtered to Senate/Governor/US House/statewide proposals (+ WSU Governor, kept to test exclusion); records unaltered",
+ "data": [
+  {
+   "id": "01000000-382c-52d9-b9fe-08dcd9a70d99",
+   "parentId": null,
+   "parentJurisdictionName": null,
+   "publishPublicElectionId": null,
+   "relatedIds": null,
+   "name": [
+    {
+     "languageId": "en",
+     "text": "United States Senator"
+    }
+   ],
+   "voteFor": [
+    {
+     "languageId": "en",
+     "text": "Vote for 1"
+    }
+   ],
+   "referendum": [],
+   "turnout": null,
+   "reportingStatus": {
+    "reportingUnits": 240,
+    "totalUnits": 240,
+    "asOf": "2025-06-30T13:22:05.307597Z",
+    "reportingStatusDetails": null
+   },
+   "voteTotal": 368720,
+   "underVoteCount": null,
+   "overVoteCount": null,
+   "contestGroupId": null,
+   "contestType": "Candidate",
+   "summaryResults": {
+    "ballotOptions": [
+     {
+      "id": "01000000-382c-52d9-ba9f-08dcd9a70d99",
+      "nativeId": "16",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Elissa Slotkin"
+       }
+      ],
+      "voteCount": 187509,
+      "party": {
+       "id": "01000000-382c-52d9-efda-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Democrat"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#255C99",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 62003
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 85347
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 40159
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-bb03-08dcd9a70d99",
+      "nativeId": "17",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Mike Rogers"
+       }
+      ],
+      "voteCount": 170388,
+      "party": {
+       "id": "01000000-382c-52d9-f9a2-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 65027
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 51991
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 53370
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-bb64-08dcd9a70d99",
+      "nativeId": "18",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Joseph Solis-Mullen"
+       }
+      ],
+      "voteCount": 4353,
+      "party": {
+       "id": "01000000-382c-52d9-fabf-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Libertarian"
+        }
+       ],
+       "abbreviation": "LIB",
+       "standardName": null,
+       "color": "#f4c900",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 2427
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 1011
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 915
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-bbc3-08dcd9a70d99",
+      "nativeId": "19",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Dave Stein"
+       }
+      ],
+      "voteCount": 2322,
+      "party": {
+       "id": "01000000-382c-52d9-fb2f-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "U.S. Taxpayers"
+        }
+       ],
+       "abbreviation": "UST",
+       "standardName": null,
+       "color": "#B0B939",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 1209
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 697
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 416
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-bc22-08dcd9a70d99",
+      "nativeId": "20",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Douglas P. Marsh"
+       }
+      ],
+      "voteCount": 2485,
+      "party": {
+       "id": "01000000-382c-52d9-fb90-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Green"
+        }
+       ],
+       "abbreviation": "GRN",
+       "standardName": null,
+       "color": "#007029",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 1331
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 756
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 398
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-bc84-08dcd9a70d99",
+      "nativeId": "21",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Doug Dern"
+       }
+      ],
+      "voteCount": 1101,
+      "party": {
+       "id": "01000000-382c-52d9-fc20-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Natural Law"
+        }
+       ],
+       "abbreviation": "NLP",
+       "standardName": null,
+       "color": "#FF9933",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 597
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 303
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 201
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-bd2e-08dcd9a70d99",
+      "nativeId": "549",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 562,
+      "party": {
+       "id": "01000000-382c-52d9-fcbf-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": ""
+        }
+       ],
+       "abbreviation": "",
+       "standardName": null,
+       "color": "#CB4D26",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 357
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 108
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 97
+       }
+      ],
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   "rankedChoiceSummaryResults": null,
+   "hasBreakdownResults": null,
+   "crossCounties": null,
+   "isCloseRace": null,
+   "partyName": null
+  },
+  {
+   "id": "01000000-382c-52d9-bd48-08dcd9a70d99",
+   "parentId": null,
+   "parentJurisdictionName": null,
+   "publishPublicElectionId": null,
+   "relatedIds": null,
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Representative in Congress - 2nd District"
+    }
+   ],
+   "voteFor": [
+    {
+     "languageId": "en",
+     "text": "Vote for 1"
+    }
+   ],
+   "referendum": [],
+   "turnout": null,
+   "reportingStatus": {
+    "reportingUnits": 37,
+    "totalUnits": 37,
+    "asOf": "2025-06-30T13:22:05.307597Z",
+    "reportingStatusDetails": null
+   },
+   "voteTotal": 62166,
+   "underVoteCount": null,
+   "overVoteCount": null,
+   "contestGroupId": null,
+   "contestType": "Candidate",
+   "summaryResults": {
+    "ballotOptions": [
+     {
+      "id": "01000000-382c-52d9-bde8-08dcd9a70d99",
+      "nativeId": "22",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Michael Lynch"
+       }
+      ],
+      "voteCount": 19885,
+      "party": {
+       "id": "01000000-382c-52d9-efda-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Democrat"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#255C99",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 4787
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 10053
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 5045
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-be4a-08dcd9a70d99",
+      "nativeId": "23",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "John R. Moolenaar"
+       }
+      ],
+      "voteCount": 40360,
+      "party": {
+       "id": "01000000-382c-52d9-f9a2-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 13549
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 11121
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 15690
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-beab-08dcd9a70d99",
+      "nativeId": "24",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Ben DeJong"
+       }
+      ],
+      "voteCount": 1133,
+      "party": {
+       "id": "01000000-382c-52d9-fabf-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Libertarian"
+        }
+       ],
+       "abbreviation": "LIB",
+       "standardName": null,
+       "color": "#f4c900",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 586
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 228
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 319
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-bf0c-08dcd9a70d99",
+      "nativeId": "25",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Scott Adams"
+       }
+      ],
+      "voteCount": 696,
+      "party": {
+       "id": "01000000-382c-52d9-fb2f-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "U.S. Taxpayers"
+        }
+       ],
+       "abbreviation": "UST",
+       "standardName": null,
+       "color": "#B0B939",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 351
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 155
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 190
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-bfb9-08dcd9a70d99",
+      "nativeId": "566",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 92,
+      "party": {
+       "id": "01000000-382c-52d9-fcbf-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": ""
+        }
+       ],
+       "abbreviation": "",
+       "standardName": null,
+       "color": "#CB4D26",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 45
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 16
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 31
+       }
+      ],
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   "rankedChoiceSummaryResults": null,
+   "hasBreakdownResults": null,
+   "crossCounties": null,
+   "isCloseRace": null,
+   "partyName": null
+  },
+  {
+   "id": "01000000-382c-52d9-bfd1-08dcd9a70d99",
+   "parentId": null,
+   "parentJurisdictionName": null,
+   "publishPublicElectionId": null,
+   "relatedIds": null,
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Representative in Congress - 3rd District"
+    }
+   ],
+   "voteFor": [
+    {
+     "languageId": "en",
+     "text": "Vote for 1"
+    }
+   ],
+   "referendum": [],
+   "turnout": null,
+   "reportingStatus": {
+    "reportingUnits": 203,
+    "totalUnits": 203,
+    "asOf": "2025-06-30T13:22:05.307597Z",
+    "reportingStatusDetails": null
+   },
+   "voteTotal": 303922,
+   "underVoteCount": null,
+   "overVoteCount": null,
+   "contestGroupId": null,
+   "contestType": "Candidate",
+   "summaryResults": {
+    "ballotOptions": [
+     {
+      "id": "01000000-382c-52d9-c06a-08dcd9a70d99",
+      "nativeId": "26",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Hillary Scholten"
+       }
+      ],
+      "voteCount": 169152,
+      "party": {
+       "id": "01000000-382c-52d9-efda-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Democrat"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#255C99",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 58227
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 75689
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 35236
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-c0cc-08dcd9a70d99",
+      "nativeId": "27",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Paul Hudson"
+       }
+      ],
+      "voteCount": 126670,
+      "party": {
+       "id": "01000000-382c-52d9-f9a2-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 49249
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 40399
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 37022
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-c12d-08dcd9a70d99",
+      "nativeId": "28",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Alex Avery"
+       }
+      ],
+      "voteCount": 3801,
+      "party": {
+       "id": "01000000-382c-52d9-fabf-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Libertarian"
+        }
+       ],
+       "abbreviation": "LIB",
+       "standardName": null,
+       "color": "#f4c900",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 2296
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 799
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 706
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-c18d-08dcd9a70d99",
+      "nativeId": "29",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Louis Palus"
+       }
+      ],
+      "voteCount": 3834,
+      "party": {
+       "id": "01000000-382c-52d9-fbdb-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Working Class"
+        }
+       ],
+       "abbreviation": "WCP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 2402
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 778
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 654
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-c233-08dcd9a70d99",
+      "nativeId": "473",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 465,
+      "party": {
+       "id": "01000000-382c-52d9-fcbf-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": ""
+        }
+       ],
+       "abbreviation": "",
+       "standardName": null,
+       "color": "#CB4D26",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 324
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 72
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 69
+       }
+      ],
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   "rankedChoiceSummaryResults": null,
+   "hasBreakdownResults": null,
+   "crossCounties": null,
+   "isCloseRace": null,
+   "partyName": null
+  },
+  {
+   "id": "01000000-382c-52d9-e040-08dcd9a70d99",
+   "parentId": null,
+   "parentJurisdictionName": null,
+   "publishPublicElectionId": null,
+   "relatedIds": null,
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Governor of Wayne State University"
+    }
+   ],
+   "voteFor": [
+    {
+     "languageId": "en",
+     "text": "Vote for 2"
+    }
+   ],
+   "referendum": [],
+   "turnout": null,
+   "reportingStatus": {
+    "reportingUnits": 240,
+    "totalUnits": 240,
+    "asOf": "2025-06-30T13:22:05.307597Z",
+    "reportingStatusDetails": null
+   },
+   "voteTotal": 663494,
+   "underVoteCount": null,
+   "overVoteCount": null,
+   "contestGroupId": null,
+   "contestType": "Candidate",
+   "summaryResults": {
+    "ballotOptions": [
+     {
+      "id": "01000000-382c-52d9-e0e2-08dcd9a70d99",
+      "nativeId": "72",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Rasha Demashkieh"
+       }
+      ],
+      "voteCount": 159244,
+      "party": {
+       "id": "01000000-382c-52d9-efda-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Democrat"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#255C99",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 52594
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 72435
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 34215
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-e143-08dcd9a70d99",
+      "nativeId": "73",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Mark T. Gaffney"
+       }
+      ],
+      "voteCount": 155908,
+      "party": {
+       "id": "01000000-382c-52d9-efda-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Democrat"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#255C99",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 50363
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 72258
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 33287
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-e1a4-08dcd9a70d99",
+      "nativeId": "74",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Michael Busuito"
+       }
+      ],
+      "voteCount": 160213,
+      "party": {
+       "id": "01000000-382c-52d9-f9a2-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 58521
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 51510
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 50182
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-e205-08dcd9a70d99",
+      "nativeId": "75",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Sunny Reddy"
+       }
+      ],
+      "voteCount": 156089,
+      "party": {
+       "id": "01000000-382c-52d9-f9a2-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 56843
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 50339
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 48907
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-e265-08dcd9a70d99",
+      "nativeId": "76",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Farid Ishac"
+       }
+      ],
+      "voteCount": 7138,
+      "party": {
+       "id": "01000000-382c-52d9-fabf-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Libertarian"
+        }
+       ],
+       "abbreviation": "LIB",
+       "standardName": null,
+       "color": "#f4c900",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 3829
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 1608
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 1701
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-e2c6-08dcd9a70d99",
+      "nativeId": "77",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "William Mohr II"
+       }
+      ],
+      "voteCount": 4080,
+      "party": {
+       "id": "01000000-382c-52d9-fb2f-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "U.S. Taxpayers"
+        }
+       ],
+       "abbreviation": "UST",
+       "standardName": null,
+       "color": "#B0B939",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 2013
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 1145
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 922
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-e328-08dcd9a70d99",
+      "nativeId": "79",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Sami Makhoul"
+       }
+      ],
+      "voteCount": 4502,
+      "party": {
+       "id": "01000000-382c-52d9-fb90-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Green"
+        }
+       ],
+       "abbreviation": "GRN",
+       "standardName": null,
+       "color": "#007029",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 2142
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 1473
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 887
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-e388-08dcd9a70d99",
+      "nativeId": "78",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Suzanne Roehrig"
+       }
+      ],
+      "voteCount": 10637,
+      "party": {
+       "id": "01000000-382c-52d9-fbdb-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Working Class"
+        }
+       ],
+       "abbreviation": "WCP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 5088
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 3453
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 2096
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-e3e8-08dcd9a70d99",
+      "nativeId": "80",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Kathleen Oakford"
+       }
+      ],
+      "voteCount": 3912,
+      "party": {
+       "id": "01000000-382c-52d9-fc20-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Natural Law"
+        }
+       ],
+       "abbreviation": "NLP",
+       "standardName": null,
+       "color": "#FF9933",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 1909
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 1281
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 722
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-382c-52d9-e4a0-08dcd9a70d99",
+      "nativeId": "657",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 1771,
+      "party": {
+       "id": "01000000-382c-52d9-fcbf-08dcd9a70d8c",
+       "name": [
+        {
+         "languageId": "en",
+         "text": ""
+        }
+       ],
+       "abbreviation": "",
+       "standardName": null,
+       "color": "#CB4D26",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-382c-52d9-17de-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         }
+        ],
+        "voteCount": 1133
+       },
+       {
+        "groupId": "01000000-382c-52d9-1e9a-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "AV Counting Boards"
+         }
+        ],
+        "voteCount": 236
+       },
+       {
+        "groupId": "01000000-382c-52d9-1f91-08dcd9a70d90",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         }
+        ],
+        "voteCount": 402
+       }
+      ],
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   "rankedChoiceSummaryResults": null,
+   "hasBreakdownResults": null,
+   "crossCounties": null,
+   "isCloseRace": null,
+   "partyName": null
+  }
+ ]
+}

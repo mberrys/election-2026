@@ -1,0 +1,261 @@
+{
+ "shortName": "kent-county-mi",
+ "elections": [
+  {
+   "publicElectionId": "11032026_20261005115447",
+   "electionDate": "2026-11-03",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "November 3, 2026 General Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "November 3, 2026"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "November42025",
+   "electionDate": "2025-11-04",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "November 4, 2025 Special & General Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "November 4, 2025"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "August52025",
+   "electionDate": "2025-08-05",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "August 5, 2025 Special & Primary Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "August 5, 2025"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "2025KentCountySpecial",
+   "electionDate": "2025-05-06",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "May 2025 Special Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "May 6, 2025"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "2024KentCountyGeneral",
+   "electionDate": "2024-11-05",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "2024 Kent County General"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "November 5, 2024"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "August2024StatePrimary",
+   "electionDate": "2024-08-06",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "August 2024 State Primary"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "August 6, 2024"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "May2024SpecialElection",
+   "electionDate": "2024-05-17",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "May 2024 Special Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "May 17, 2024"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "February27th2024Election",
+   "electionDate": "2024-02-27",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "February 27th 2024 Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "February 27, 2024"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "November7th2023Election",
+   "electionDate": "2023-11-07",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "November 7th 2023 Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "November 7, 2023"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "August2023Election",
+   "electionDate": "2023-08-08",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "August 2023 Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "August 8, 2023"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "May2023SpecialElection",
+   "electionDate": "2023-05-02",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "May 2023 Special Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "May 2, 2023"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "November2022GeneralElection",
+   "electionDate": "2022-11-08",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "November 2022 General Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "November 8, 2022"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "August2022PrimaryElection",
+   "electionDate": "2022-08-02",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "August 2022 Primary Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "August 2, 2022"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "May2022Election",
+   "electionDate": "2022-05-03",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "May 2022 Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "May 3, 2022"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "March2022Election",
+   "electionDate": "2022-03-01",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "March 2022 Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "March 1, 2022"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "November2021Election",
+   "electionDate": "2021-11-02",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "November 2021 Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "November 2, 2021"
+    }
+   ]
+  }
+ ]
+}

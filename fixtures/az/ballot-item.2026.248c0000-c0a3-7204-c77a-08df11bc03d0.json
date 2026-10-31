@@ -1,0 +1,4007 @@
+{
+ "_note": "PROPOSITION 141 — 110326GeneralElection, fetched 2026-10-30; trimmed to ballotItemWithBreakdown.{name,breakdownResults} (jurisdiction/ballotItems/statistics dropped)",
+ "ballotItemWithBreakdown": {
+  "name": [
+   {
+    "languageId": "en",
+    "text": "PROPOSITION 141"
+   },
+   {
+    "languageId": "1",
+    "text": "PROPOSICIÓN 141"
+   }
+  ],
+  "breakdownResults": [
+   {
+    "parentBallotItemId": "01000000-ae43-29c7-9281-08df263fbd0a",
+    "locality": {
+     "id": "01000000-0496-9e5d-8720-08dbda36ae85",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Apache County"
+      },
+      {
+       "languageId": "1",
+       "text": "Apache County"
+      }
+     ],
+     "shortName": "apache-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Apache County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 44,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 44
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-f0c4-e619-4749-08df29429bc8",
+    "locality": {
+     "id": "01000000-0496-9e5d-604a-08dbda36ae89",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Cochise County"
+      },
+      {
+       "languageId": "1",
+       "text": "Cochise County"
+      }
+     ],
+     "shortName": "cochise-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Cochise County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 55,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 55
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-2cfb-27a5-0e65-08df19c5879a",
+    "locality": {
+     "id": "01000000-0496-9e5d-f29e-08dbda36ae8a",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Coconino County"
+      },
+      {
+       "languageId": "1",
+       "text": "Condado de Coconino"
+      }
+     ],
+     "shortName": "coconino-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Coconino County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 56,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 56
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-ff2f-1409-ceae-08df2b175a43",
+    "locality": {
+     "id": "01000000-0496-9e5d-e1ca-08dbda36ae8b",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Gila County"
+      },
+      {
+       "languageId": "1",
+       "text": "Gila County"
+      }
+     ],
+     "shortName": "gila-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Gila County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 39,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 39
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-4272-2096-53f0-08df200b1032",
+    "locality": {
+     "id": "01000000-0496-9e5d-d553-08dbda36ae8c",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Graham County"
+      },
+      {
+       "languageId": "1",
+       "text": "Graham County"
+      }
+     ],
+     "shortName": "graham-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Graham County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 23,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 23
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-c639-6905-e17a-08df1d7ee036",
+    "locality": {
+     "id": "01000000-0496-9e5d-991f-08dbda36ae8e",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Greenlee County"
+      },
+      {
+       "languageId": "1",
+       "text": "Greenlee County"
+      }
+     ],
+     "shortName": "greenlee-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Greenlee County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 6,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 6
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-5929-ea70-b69a-08df23f30c87",
+    "locality": {
+     "id": "01000000-0496-9e5d-d168-08dbda36ae8f",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "La Paz County"
+      },
+      {
+       "languageId": "1",
+       "text": "La Paz County"
+      }
+     ],
+     "shortName": "la-paz-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "La Paz County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 11,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 11
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-ba19-e6b8-c3a9-08df1d836d32",
+    "locality": {
+     "id": "01000000-0496-9e5d-9eb9-08dbda36ae91",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Maricopa County"
+      },
+      {
+       "languageId": "1",
+       "text": "Maricopa County"
+      }
+     ],
+     "shortName": "maricopa-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Maricopa County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 956,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 75
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 881
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-68b8-edcd-af27-08df2653ea60",
+    "locality": {
+     "id": "01000000-0496-9e5d-cc92-08dbda36ae92",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Mohave County"
+      },
+      {
+       "languageId": "1",
+       "text": "Mohave County"
+      }
+     ],
+     "shortName": "mohave-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Mohave County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 24,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 24
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-52a3-1e99-deda-08df1a82444e",
+    "locality": {
+     "id": "01000000-0496-9e5d-f590-08dbda36ae93",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Navajo County"
+      },
+      {
+       "languageId": "1",
+       "text": "Navajo County"
+      }
+     ],
+     "shortName": "navajo-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Navajo County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 19,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 19
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-58fd-503a-49df-08df200eba05",
+    "locality": {
+     "id": "01000000-0496-9e5d-f471-08dbda36ae94",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Pima County"
+      },
+      {
+       "languageId": "1",
+       "text": "Pima County"
+      }
+     ],
+     "shortName": "pima-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Pima County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 265,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 265
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-e648-bf54-814a-08df1f09835d",
+    "locality": {
+     "id": "01000000-0496-9e5d-d66a-08dbda36ae95",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Pinal County"
+      },
+      {
+       "languageId": "1",
+       "text": "Pinal County"
+      }
+     ],
+     "shortName": "pinal-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Pinal County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 136,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 136
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-8a24-abe2-16aa-08df2a4d02da",
+    "locality": {
+     "id": "01000000-0496-9e5d-aff3-08dbda36ae96",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Santa Cruz County"
+      },
+      {
+       "languageId": "1",
+       "text": "Santa Cruz County"
+      }
+     ],
+     "shortName": "santa-cruz-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Santa Cruz County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 24,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 24
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-63f1-c82f-f131-08df1e60d10c",
+    "locality": {
+     "id": "01000000-0496-9e5d-1def-08dbda36ae98",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Yavapai County"
+      },
+      {
+       "languageId": "1",
+       "text": "Yavapai County"
+      }
+     ],
+     "shortName": "yavapai-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Yavapai County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 57,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 16
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 41
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-2a9c-7504-16ca-08df1a95e3cc",
+    "locality": {
+     "id": "01000000-0496-9e5d-12e0-08dbda36ae99",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Yuma County"
+      },
+      {
+       "languageId": "1",
+       "text": "Yuma County"
+      }
+     ],
+     "shortName": "yuma-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Yuma County"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 47,
+     "asOf": "2026-10-30T17:38:42.7808887Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 47
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "248c0000-c0a3-7204-c96b-08df11bc03d0",
+      "nativeId": "233",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "YES"
+       },
+       {
+        "languageId": "1",
+        "text": "YES"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "248c0000-c0a3-7204-ca9b-08df11bc03d0",
+      "nativeId": "234",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NO"
+       },
+       {
+        "languageId": "1",
+        "text": "NO"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": [
+       {
+        "groupId": "01000000-d225-a699-f8ae-08df1f18332a",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early A.R.S. 16-579"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación anticipada A.R.S. 16-579"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-a763-f11d-f178-08df1808ecc2",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Provisional"
+         },
+         {
+          "languageId": "1",
+          "text": "Provisional"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-eb6e-08df1808e641",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Early Voting"
+         },
+         {
+          "languageId": "1",
+          "text": "Votación Anticipada"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-3a7a-2b48-4542-08df1f183c17",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Late Early*"
+         },
+         {
+          "languageId": "1",
+          "text": "Tarde temprano"
+         }
+        ],
+        "voteCount": 0
+       },
+       {
+        "groupId": "01000000-e2a1-9676-0c93-08df1808dfa5",
+        "groupName": [
+         {
+          "languageId": "en",
+          "text": "Election Day"
+         },
+         {
+          "languageId": "1",
+          "text": "Día de la Elección"
+         }
+        ],
+        "voteCount": 0
+       }
+      ],
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   }
+  ]
+ }
+}

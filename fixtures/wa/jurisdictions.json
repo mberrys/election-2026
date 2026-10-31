@@ -1,0 +1,69 @@
+{
+ "shortName": "washington",
+ "elections": [
+  {
+   "publicElectionId": "20261103",
+   "electionDate": "2026-11-03",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "2026 General"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "November 3, 2026"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "20260804",
+   "electionDate": "2026-08-04",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "2026 Primary"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "August 4, 2026"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "20260428",
+   "electionDate": "2026-04-28",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "2026 April Special Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "April 28, 2026"
+    }
+   ]
+  },
+  {
+   "publicElectionId": "20260210",
+   "electionDate": "2026-02-10",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "2026 February Special Election"
+    }
+   ],
+   "dateText": [
+    {
+     "languageId": "en",
+     "text": "February 10, 2026"
+    }
+   ]
+  }
+ ]
+}

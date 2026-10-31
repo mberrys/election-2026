@@ -8,6 +8,9 @@ import { iaClarity } from "./clarity";
 import { wikipediaResults } from "./wikipedia-results";
 import { isNytXcheckEnabled, nytXcheck } from "./nyt-xcheck";
 import { isSimulation, simulator } from "./simulator";
+import { azSos } from "./az-sos";
+import { miCounties } from "./mi-counties";
+import { waSos } from "./wa-sos";
 
 /**
  * Production adapter list, in the order ingest runs them. Tier A official
@@ -24,6 +27,9 @@ export const adapters: Adapter[] = isSimulation() ? [simulator] : [
   akDoe,
   iaClarity,
   wikipediaResults,
+  azSos,
+  waSos,
+  miCounties,
   ...(isNytXcheckEnabled() ? [nytXcheck] : []),
 ];
 

@@ -1,0 +1,2357 @@
+{
+ "_note": "trimmed: id/name/contestType/reportingStatus only",
+ "data": [
+  {
+   "id": "c31b2089-ca34-4908-89d5-1e164769b18f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative - Congressional District 1"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "212641ea-7af6-4eda-bb13-d09b73589923",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative - Congressional District 2"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 5,
+    "totalUnits": 5,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c485d645-4a83-4bcb-bbf4-fb4c6dccc4c7",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative - Congressional District 3"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 7,
+    "totalUnits": 7,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "ea94e146-9121-4337-a582-50937ad9e341",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative - Congressional District 4"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 8,
+    "totalUnits": 8,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "da86b206-d29f-4f1e-8d8f-e4fcc51c2012",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative - Congressional District 5"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 12,
+    "totalUnits": 12,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "de851b07-1fed-4849-8b22-1c75611ad585",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative - Congressional District 6"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 5,
+    "totalUnits": 6,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "01000000-1d7a-03ca-6f75-08dee2b56242",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative - Congressional District 7"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "e3e92bb8-d8e0-41d6-a4f3-3c51c0814a8d",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative - Congressional District 8"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 6,
+    "totalUnits": 6,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "01000000-2354-7f03-b1f0-08dee2b591f5",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative - Congressional District 9"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "ca63ca1f-54a2-44e7-8b7b-c6e9f4c81d0b",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative - Congressional District 10"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c925b39c-c868-4dad-a585-c8883a88fa37",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 1"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f56bea01-b06c-4613-a742-2cc717030b1b",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 1"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "0d816b85-f167-44c6-9bee-e2ebd60197c7",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 2"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c5ccf6b2-55b8-4ca4-b7fa-c3a790a2014f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 2"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "001ba0cc-dada-4bcf-8e02-784b037d1fd1",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 3"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "78f73558-7ac9-4c2b-98fd-da73375a6a40",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 3"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "024cf939-2f6b-496f-8188-09ea76c7a4a1",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 4"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "5a14b058-eacb-4459-8ada-2e7c71510f7c",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 4"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "867eb143-c579-448d-b706-97355ae577ea",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 5"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "73ea1c79-edf4-40f4-ab26-3b06e1306bfc",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 5"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "55abd17e-6bb7-4846-9625-70df6023e6e5",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 6"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "7a08fc4c-62db-427d-9d11-9489271448b2",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 6"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "dfdd9b1a-5f33-4f69-8f2c-33dcf15e957f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 6"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "ba7e7bb0-742a-4fb0-b6f2-b2980996c479",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 7"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 7,
+    "totalUnits": 7,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "ed34fd53-54da-42a8-8fbc-054c3f717be0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 7"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 7,
+    "totalUnits": 7,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "2f306e99-0a9e-4186-b230-1088cb65fa05",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 7"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 7,
+    "totalUnits": 7,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "45ccea9c-87ff-4c63-be94-c5ea3b0c1d84",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 8"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "749019b1-0c29-4306-b875-7c03d639e7e8",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 8"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "8435b513-8e21-4a88-9d06-e58b8c27d03c",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 8"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "553b1cd9-81c3-4ced-88c2-a3dcf0ef1748",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 9"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 7,
+    "totalUnits": 7,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f8ed34ba-56cc-4362-b7e7-e6ca17667e4d",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 9"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 7,
+    "totalUnits": 7,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "5e4df3e8-4c00-4a74-9a1d-096d6ac73997",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 10"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 3,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "ee552214-f29e-4cd7-820d-c45d70bcd67f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 10"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 3,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "8a5f12fc-4803-4e9a-b712-560aacb360ca",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 11"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "25d0a15e-9949-4edc-8877-dc935c4c248c",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 11"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "3a9b6671-190c-42cb-8498-c31d7357bafb",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 12"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 3,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c622390b-571f-4fc1-81a9-b1bcdab7817a",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 12"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 3,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "49d3d12c-c0b9-47b3-8777-d640af43b617",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 13"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 4,
+    "totalUnits": 4,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "b24c74fe-93b7-40d2-8404-5b8011bb485b",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 13"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 4,
+    "totalUnits": 4,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "1f2935b1-97c8-4380-8d59-b93b7771d0c1",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 13"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 4,
+    "totalUnits": 4,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "e8ae1511-4d14-41fd-b8b8-93fccc6740e4",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 14"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 4,
+    "totalUnits": 4,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "78095520-7285-4ab5-9cc8-903d09c89597",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 14"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 4,
+    "totalUnits": 4,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "32d67a67-57c7-4763-a170-10523af70cb7",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 15"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "1942e0de-b7fa-4ddd-8cb1-aeb639f5c1fc",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 15"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "6cabef1d-89e2-49f0-8e19-cbfd92c1d395",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 15"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c6d2b86d-29f4-4f16-92c0-dad680681902",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 16"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 4,
+    "totalUnits": 4,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "518d384e-bdd6-4617-8489-e66a3da4b7f5",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 16"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 4,
+    "totalUnits": 4,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "339e7559-c780-46de-86b7-85da0f63eb2d",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 17"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 3,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "cd4f9310-77d8-41f1-9677-8eafc298b497",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 17"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 3,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "0495bca3-0207-4a05-81b8-2a73103fd61a",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 18"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "6c48a800-2441-4f29-8344-7362378be88d",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 18"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "8b2a7a71-432e-45a8-95b8-fe561fa66dfa",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 19"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 6,
+    "totalUnits": 6,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "707b2e90-3f29-488f-9984-dfa0241e97f3",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 19"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 6,
+    "totalUnits": 6,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "5055badf-2296-4c0c-a871-9d993c6b6aa0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 20"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 4,
+    "totalUnits": 4,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "4eff00c9-a8ad-4ecb-964d-e6df1aa42a3d",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 20"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 4,
+    "totalUnits": 4,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "93076564-03b4-44d8-9263-8cea42e1b3a6",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 21"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "2282f0ff-cba5-4ec7-b7d5-6506af47150e",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 21"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c3ba2916-9b5b-4f47-a040-f38cf09a597e",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 21"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "d5c2351d-eec3-457e-b507-14871dd091fc",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 22"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "316bf663-8941-4023-a9f6-3a4078bcf78a",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 22"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f627432f-afd5-4828-bb35-7a6d962bc772",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 23"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c9445716-44a2-43c5-8c28-d99bc4146a19",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 23"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "fcd0802f-eb3c-42fc-8685-7875a1edea6e",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 24"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "cf856e78-0d30-4844-8343-202b5094a867",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 24"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "e6edf2f6-28c6-4c99-b44d-40d321e21bad",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 25"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "b3ddd1e0-a66e-45c5-ba1e-669046e9ced2",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 25"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "b3a1dca0-bc7e-4ed0-9392-1d36a8c3d389",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 26"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f962e4ab-c643-430d-9daa-fbece0b6d02f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 26"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f000faf7-e7c6-4eed-84e8-0b3dca8ba4f8",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 26"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c9528ce5-77b6-4014-912f-c7ded653ed08",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 27"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "cccf6c41-2840-4512-aa33-96b1ce94ff20",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 27"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "82e4f461-81e0-43d9-9039-b1eb56ca51ab",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 28"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "807379be-4f3e-4220-9a15-a10c0b3fb434",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 28"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "3728cc16-d919-452c-93df-f8d4ba953e81",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 29"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c9c96bd0-0056-404f-90b2-968e832d22d5",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 29"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "2e9a9bf9-3055-4395-9c36-b085ffeb4ead",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 29"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "5fea5f35-fc94-402a-a784-b6b7514beb6a",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 30"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "bf3dd909-e7a8-4f2e-8dbc-bdaabc191bc9",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 30"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "3a65b383-29a2-40c7-b78d-2ccca4eaf245",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 30"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "bf00ce87-a384-48a5-9550-0f766df44542",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 31"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "fc2ef6b0-b9d1-405b-bd35-5ab16b772285",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 31"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "d07dc38f-58af-4d32-b557-b174254bba60",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 31"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "3268b452-71f2-4db3-a5ce-9028d5749505",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 32"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "e920355c-9251-46b4-a186-aa9850f3600a",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 32"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "3334574d-3e90-41b3-b5c6-8cfce6eeea47",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 32"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "3ffe6a41-2140-437d-a147-59f2a79cb335",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 33"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "92f5b394-f228-49de-9084-1fbee3019bce",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 33"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "6758bee6-abd6-4671-8444-625b90777fdf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 33"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c7966dd4-ea7f-4a55-8133-e956c75f9f53",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 34"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "70bbcec3-9d9a-40e0-af0d-6dfb6ef277a1",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 34"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "855d3bcb-dff1-4afd-8967-cd4f2e2db6f3",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 34"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "eb0c039b-96b5-49ae-b6d4-0315e908bea1",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 35"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 3,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "68b5af9c-990c-4d25-b16e-0a6fa103506d",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 35"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 3,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "72754e80-6c72-4550-ad72-35fd5538bc5b",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 35"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 3,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "e93680d7-d9b3-4175-83ee-adba336dde7f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 36"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "77822d26-bce3-4669-9f2d-257e194267e6",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 36"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "ce17a4b7-e35f-4d7f-9427-293414308ec4",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 36"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "5172531d-7655-4d17-98b6-5a917cd7a303",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 37"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "ba3225dc-829b-4051-a29c-a814819525c4",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 37"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f7af3fab-5bb3-4d87-9c16-0c024f289f3f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 37"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "2d81f598-0eab-4f56-b411-669d5d583d25",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 38"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "6b9083e2-82c1-48bd-bd31-e8e04663ac95",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 38"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "c8bca7f6-1bea-483d-a6e1-01491292078e",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 38"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f3f6b06c-07c9-445d-b6fb-04ba650d2b60",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 39"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "e6814dc7-b9ab-4657-9bbd-849b3a05d092",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 39"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "5abb2f8e-8693-46e4-abed-5af52ce0658f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 40"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 3,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "fadff12e-12f3-4649-88e6-429a39c4fd10",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 40"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 3,
+    "totalUnits": 3,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "d05a4be9-7c95-425a-83cf-71b866d0a1aa",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 41"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "62cbb312-a77c-4423-a322-af4deeb397ba",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 41"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "ac5058ee-534f-4d6e-aa37-9cebeb734508",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 42"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "9096aab7-84f8-4cd0-8fb5-5095847b0281",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 42"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "9afaa7fc-5ffc-4332-ae06-83561561601c",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 42"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "1a64166f-7f83-4715-8172-cf6b6fdd4885",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 43"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "e5e8a69c-c849-491c-8ef1-3463cb04c34a",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 43"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "558627bb-b263-4e0e-a2af-0cebb917cdc0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 43"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "fd88d6da-b079-419c-9b46-12cfc028c6b6",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 44"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "49f61927-90af-4438-be3b-9ef163c1c79f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 44"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "24229b25-dd0b-4fea-90c4-768009d7aabc",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 44"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "047a72bf-65da-4f4b-baff-15d5bb163eee",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 45"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "fac732a7-4397-4399-b00b-cc83b1e65abb",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 45"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "05492615-0bea-4c48-8ba1-291ecd381db0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 45"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "2b1e7d3b-f54f-4cfe-b60a-316b62b39546",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 46"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "e82edf73-5d85-47db-bdf4-8d747c5ef2c7",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 46"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "9563067f-4b20-48d8-b247-900c47f5ee89",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 46"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "5a289fc5-071a-4433-b108-46da496387d5",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 47"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "93d63bb7-2814-4733-b847-2439ec35935e",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 47"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "89137438-3a71-4b7b-a314-9a1c2db3b4e6",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 47"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "0fab119f-283c-4d98-9258-d114a3412fce",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - Legislative District 48"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "6a71c1b0-8b7e-4aec-859a-4409f8b67c6a",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 48"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "de7f4f84-0dd6-4021-893e-9a64d57fe4af",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 48"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f4c97802-89b7-443e-9081-9703a21c5fc7",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 1 - Legislative District 49"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "611fe7a0-2399-41e2-9922-63daec000ca8",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative Pos. 2 - Legislative District 49"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 1,
+    "totalUnits": 1,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "425c88a2-23fb-4c7e-a5fa-e11917c88d5f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Justice Position #01 - Supreme Court"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 38,
+    "totalUnits": 39,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "d53b2e6d-540f-40e4-a528-00fb50c156a5",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Justice Position #03 - Supreme Court"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 38,
+    "totalUnits": 39,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "172b187c-c5f1-4ca0-884e-c373dd261151",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Justice Position #05 - Supreme Court"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 38,
+    "totalUnits": 39,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "ed53472a-d0db-48d2-a426-437f2cff4c46",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Justice Position #07 - Supreme Court"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 38,
+    "totalUnits": 39,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "01000000-b181-fd83-cab3-08ded78e4e12",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "PUD Commissioner District 1"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "44867ac9-45df-48aa-a53b-636afa2a3791",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "South Beach Regional Fire Authority - Bonds Issue"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "de07c847-b5df-4a0c-8127-e19d93e26db7",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Snoqualmie Pass Fire & Rescue Intent to Continue Voter Authorized Benefit Charge"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "f0c2ce44-74ee-436b-b501-6a2d61001199",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Hospital District 304, Proposition No. 1"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "3d64a397-cbaa-4f4a-a001-3a0740e3fa46",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Proposition No. 1 -Darrington School District"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "83d825dd-e4d0-4506-8cc8-75b3eb8c31c1",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Proposition No. 1 - Sno - Isle Library District"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "606d2869-04b4-484a-be4e-4e06f5b3f9e6",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Proposition No. 1 Renewal of One-Year Special Levy"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "5e06c0a9-d725-4fad-9523-4f2ff66fdf4f",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Proposition No. 1 Emergency Medical Services Property Tax Levy"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "87ff1d84-883d-47b4-a0c0-37b82f5abda8",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Two Year Maintenance and Operation Levy for Pool"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 2,
+    "totalUnits": 2,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "e4ee029d-2f29-46c3-b82d-45f4454630d6",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Renewal and Increase of Emergency Medical Services Levy"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "208506b0-6a79-492c-940b-53796174ffe8",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Emergency Medical Services Property Tax Levy"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 0,
+    "asOf": "2026-10-29T21:02:34.0024872Z",
+    "reportingStatusDetails": null
+   }
+  }
+ ]
+}

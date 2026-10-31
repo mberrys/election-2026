@@ -1,0 +1,159 @@
+{
+ "_note": "Congressional District 7 - U.S. Representative — 20261103, fetched 2026-10-30; trimmed to ballotItemWithBreakdown.{name,breakdownResults} (jurisdiction/ballotItems/statistics dropped)",
+ "ballotItemWithBreakdown": {
+  "name": [
+   {
+    "languageId": "en",
+    "text": "Congressional District 7 - U.S. Representative"
+   }
+  ],
+  "breakdownResults": [
+   {
+    "parentBallotItemId": "01000000-f0b7-9b6a-109f-08df232198dc",
+    "locality": {
+     "id": "01000000-f977-1a83-d40f-08ddd6a09cb2",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "King County"
+      }
+     ],
+     "shortName": "king-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "KING"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 1186,
+     "asOf": "2026-10-22T15:55:34.6947413Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 1186
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "54c40000-9064-bbec-a211-08df15c0a82a",
+      "nativeId": "1601900",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Pramila Jayapal"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-4647-08df15c0a808",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-a699-08df15c0a82a",
+      "nativeId": "1601901",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Nirav Sheth"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "54c40000-9064-bbec-2e1b-08df15c0a7f5",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "54c40000-9064-bbec-9d06-08df15c0a82a",
+      "nativeId": "9910",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   }
+  ]
+ }
+}

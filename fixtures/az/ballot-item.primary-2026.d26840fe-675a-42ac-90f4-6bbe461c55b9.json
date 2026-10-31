@@ -1,0 +1,421 @@
+{
+ "_note": "Governor (REP) — Primary-07-21-26, fetched 2026-10-30; trimmed to ballotItemWithBreakdown.{name,breakdownResults} (jurisdiction/ballotItems/statistics dropped)",
+ "ballotItemWithBreakdown": {
+  "name": [
+   {
+    "languageId": "en",
+    "text": "Governor (REP)"
+   }
+  ],
+  "breakdownResults": [
+   {
+    "parentBallotItemId": "01000000-3e91-1431-fcbf-08dec00c90f6",
+    "locality": {
+     "id": "01000000-0496-9e5d-f29e-08dbda36ae8a",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Coconino County"
+      }
+     ],
+     "shortName": "coconino-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Coconino County"
+    },
+    "voteTotal": 8716,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 56,
+     "totalUnits": 56,
+     "asOf": "2026-10-09T17:56:51.6029256Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 56
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "99bb315c-cd50-4fa0-acbe-cffeddef2109",
+      "nativeId": "013",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "BIGGS, ANDY"
+       }
+      ],
+      "voteCount": 6210,
+      "party": {
+       "id": "01000000-2354-7f03-2fe1-08dee1bcca6f",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "fa6e510c-70ef-4c5e-988a-2cc587ac7ec3",
+      "nativeId": "014",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "SCHWEIKERT, DAVID"
+       }
+      ],
+      "voteCount": 1134,
+      "party": {
+       "id": "01000000-2354-7f03-2fe1-08dee1bcca6f",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "5084997a-70c7-4ae5-82d2-b267e1d80c7d",
+      "nativeId": "016",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NEELY, SCOTT"
+       }
+      ],
+      "voteCount": 793,
+      "party": {
+       "id": "01000000-2354-7f03-2fe1-08dee1bcca6f",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "85cfced8-ef53-40bf-b1bf-0ae9f00d4c15",
+      "nativeId": "015",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "MICELI, KEN"
+       }
+      ],
+      "voteCount": 479,
+      "party": {
+       "id": "01000000-2354-7f03-2fe1-08dee1bcca6f",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "8e13d961-bca7-451d-8475-1dffa53829fe",
+      "nativeId": "Write-in",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 100,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-8c2b-e2c2-3a20-08dee43cfc9e",
+    "locality": {
+     "id": "01000000-0496-9e5d-cc92-08dbda36ae92",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Mohave County"
+      }
+     ],
+     "shortName": "mohave-county-az",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "Mohave County"
+    },
+    "voteTotal": 34104,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 24,
+     "totalUnits": 24,
+     "asOf": "2026-10-09T17:56:51.6029256Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 24
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "99bb315c-cd50-4fa0-acbe-cffeddef2109",
+      "nativeId": "013",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "BIGGS, ANDY"
+       }
+      ],
+      "voteCount": 26705,
+      "party": {
+       "id": "01000000-2354-7f03-2fe1-08dee1bcca6f",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "fa6e510c-70ef-4c5e-988a-2cc587ac7ec3",
+      "nativeId": "014",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "SCHWEIKERT, DAVID"
+       }
+      ],
+      "voteCount": 3660,
+      "party": {
+       "id": "01000000-2354-7f03-2fe1-08dee1bcca6f",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "5084997a-70c7-4ae5-82d2-b267e1d80c7d",
+      "nativeId": "016",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "NEELY, SCOTT"
+       }
+      ],
+      "voteCount": 2647,
+      "party": {
+       "id": "01000000-2354-7f03-2fe1-08dee1bcca6f",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "85cfced8-ef53-40bf-b1bf-0ae9f00d4c15",
+      "nativeId": "015",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "MICELI, KEN"
+       }
+      ],
+      "voteCount": 1092,
+      "party": {
+       "id": "01000000-2354-7f03-2fe1-08dee1bcca6f",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "Republican"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#960018",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "8e13d961-bca7-451d-8475-1dffa53829fe",
+      "nativeId": "Write-in",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-in"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#999999",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   }
+  ]
+ }
+}

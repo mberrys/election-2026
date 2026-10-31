@@ -1,0 +1,1411 @@
+{
+ "_note": "U.S. Representative - Congressional District 6 — 20260804, fetched 2026-10-30; trimmed to ballotItemWithBreakdown.{name,breakdownResults} (jurisdiction/ballotItems/statistics dropped)",
+ "ballotItemWithBreakdown": {
+  "name": [
+   {
+    "languageId": "en",
+    "text": "U.S. Representative - Congressional District 6"
+   }
+  ],
+  "breakdownResults": [
+   {
+    "parentBallotItemId": "01000000-6320-7fef-c5da-08dee386d16f",
+    "locality": {
+     "id": "01000000-f977-1a83-ad30-08ddd6a09caa",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Clallam County"
+      }
+     ],
+     "shortName": "clallam-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "CLALLAM"
+    },
+    "voteTotal": 0,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 0,
+     "totalUnits": 67,
+     "asOf": "2026-10-29T21:02:34.0025093Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 67
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "cf7e01c4-bbd7-4d37-be44-d021cc145466",
+      "nativeId": "175344-EmilyRandall",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Emily Randall"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "01000000-dbce-7f71-10a9-08decd3d0dc7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "64d1238e-7a00-4db4-b0c6-d69de7f0273c",
+      "nativeId": "175344-BrianPOGorman",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Brian P. O'Gorman"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "01000000-1777-f62e-9546-08decd3d21ed",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Independent Party)"
+        }
+       ],
+       "abbreviation": "IND",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "e1a921f6-d8c4-40b6-9e07-2ac248b9c0ea",
+      "nativeId": "175344-TeresaFox",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Teresa Fox"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "01000000-1777-f62e-fe8f-08decd3d18f7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "ff6d6193-1024-4d87-9dae-a657f5e55e25",
+      "nativeId": "175344-MacyJones",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Macy Jones"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "01000000-dbce-7f71-393d-08decd3d6839",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(States No Party Preference)"
+        }
+       ],
+       "abbreviation": "NO",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "9560a3c4-c6d5-40e0-af31-fc309c9d0654",
+      "nativeId": "175344-LeonLawson",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Leon Lawson"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": "01000000-dbce-7f71-45cd-08decd3d3e64",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Trump Republican Party)"
+        }
+       ],
+       "abbreviation": "TRU",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-7a3b-96d8-53fa-08ded6ea9131",
+      "nativeId": "Write-In-6-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-In"
+       }
+      ],
+      "voteCount": 0,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-c031-8a58-90ee-08dedd18ee1f",
+    "locality": {
+     "id": "01000000-f977-1a83-b7d1-08ddd6a09cb0",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Grays Harbor County"
+      }
+     ],
+     "shortName": "grays-harbor-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "GRAYS HARBOR"
+    },
+    "voteTotal": 17803,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 97,
+     "totalUnits": 97,
+     "asOf": "2026-10-29T21:02:34.0025093Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 97
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "cf7e01c4-bbd7-4d37-be44-d021cc145466",
+      "nativeId": "175344-EmilyRandall",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Emily Randall"
+       }
+      ],
+      "voteCount": 8519,
+      "party": {
+       "id": "01000000-dbce-7f71-10a9-08decd3d0dc7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "64d1238e-7a00-4db4-b0c6-d69de7f0273c",
+      "nativeId": "175344-BrianPOGorman",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Brian P. O'Gorman"
+       }
+      ],
+      "voteCount": 791,
+      "party": {
+       "id": "01000000-1777-f62e-9546-08decd3d21ed",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Independent Party)"
+        }
+       ],
+       "abbreviation": "IND",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "e1a921f6-d8c4-40b6-9e07-2ac248b9c0ea",
+      "nativeId": "175344-TeresaFox",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Teresa Fox"
+       }
+      ],
+      "voteCount": 4680,
+      "party": {
+       "id": "01000000-1777-f62e-fe8f-08decd3d18f7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "ff6d6193-1024-4d87-9dae-a657f5e55e25",
+      "nativeId": "175344-MacyJones",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Macy Jones"
+       }
+      ],
+      "voteCount": 394,
+      "party": {
+       "id": "01000000-dbce-7f71-393d-08decd3d6839",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(States No Party Preference)"
+        }
+       ],
+       "abbreviation": "NO",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "9560a3c4-c6d5-40e0-af31-fc309c9d0654",
+      "nativeId": "175344-LeonLawson",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Leon Lawson"
+       }
+      ],
+      "voteCount": 3405,
+      "party": {
+       "id": "01000000-dbce-7f71-45cd-08decd3d3e64",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Trump Republican Party)"
+        }
+       ],
+       "abbreviation": "TRU",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-7a3b-96d8-53fa-08ded6ea9131",
+      "nativeId": "Write-In-6-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-In"
+       }
+      ],
+      "voteCount": 14,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-7c4e-b06d-c30e-08debda735c1",
+    "locality": {
+     "id": "01000000-f977-1a83-1d0e-08ddd6a09cb2",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Jefferson County"
+      }
+     ],
+     "shortName": "jefferson-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "JEFFERSON"
+    },
+    "voteTotal": 15547,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 37,
+     "totalUnits": 37,
+     "asOf": "2026-10-29T21:02:34.0025093Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 37
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "cf7e01c4-bbd7-4d37-be44-d021cc145466",
+      "nativeId": "175344-EmilyRandall",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Emily Randall"
+       }
+      ],
+      "voteCount": 11263,
+      "party": {
+       "id": "01000000-dbce-7f71-10a9-08decd3d0dc7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "64d1238e-7a00-4db4-b0c6-d69de7f0273c",
+      "nativeId": "175344-BrianPOGorman",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Brian P. O'Gorman"
+       }
+      ],
+      "voteCount": 478,
+      "party": {
+       "id": "01000000-1777-f62e-9546-08decd3d21ed",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Independent Party)"
+        }
+       ],
+       "abbreviation": "IND",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "e1a921f6-d8c4-40b6-9e07-2ac248b9c0ea",
+      "nativeId": "175344-TeresaFox",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Teresa Fox"
+       }
+      ],
+      "voteCount": 2319,
+      "party": {
+       "id": "01000000-1777-f62e-fe8f-08decd3d18f7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "ff6d6193-1024-4d87-9dae-a657f5e55e25",
+      "nativeId": "175344-MacyJones",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Macy Jones"
+       }
+      ],
+      "voteCount": 484,
+      "party": {
+       "id": "01000000-dbce-7f71-393d-08decd3d6839",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(States No Party Preference)"
+        }
+       ],
+       "abbreviation": "NO",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "9560a3c4-c6d5-40e0-af31-fc309c9d0654",
+      "nativeId": "175344-LeonLawson",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Leon Lawson"
+       }
+      ],
+      "voteCount": 993,
+      "party": {
+       "id": "01000000-dbce-7f71-45cd-08decd3d3e64",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Trump Republican Party)"
+        }
+       ],
+       "abbreviation": "TRU",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-7a3b-96d8-53fa-08ded6ea9131",
+      "nativeId": "Write-In-6-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-In"
+       }
+      ],
+      "voteCount": 10,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-8957-7234-ad37-08ded0a9d473",
+    "locality": {
+     "id": "01000000-f977-1a83-8682-08ddd6a09cb3",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Kitsap County"
+      }
+     ],
+     "shortName": "kitsap-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "KITSAP"
+    },
+    "voteTotal": 83632,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 246,
+     "totalUnits": 246,
+     "asOf": "2026-10-29T21:02:34.0025093Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 246
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "cf7e01c4-bbd7-4d37-be44-d021cc145466",
+      "nativeId": "175344-EmilyRandall",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Emily Randall"
+       }
+      ],
+      "voteCount": 49515,
+      "party": {
+       "id": "01000000-dbce-7f71-10a9-08decd3d0dc7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "64d1238e-7a00-4db4-b0c6-d69de7f0273c",
+      "nativeId": "175344-BrianPOGorman",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Brian P. O'Gorman"
+       }
+      ],
+      "voteCount": 2429,
+      "party": {
+       "id": "01000000-1777-f62e-9546-08decd3d21ed",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Independent Party)"
+        }
+       ],
+       "abbreviation": "IND",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "e1a921f6-d8c4-40b6-9e07-2ac248b9c0ea",
+      "nativeId": "175344-TeresaFox",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Teresa Fox"
+       }
+      ],
+      "voteCount": 23045,
+      "party": {
+       "id": "01000000-1777-f62e-fe8f-08decd3d18f7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "ff6d6193-1024-4d87-9dae-a657f5e55e25",
+      "nativeId": "175344-MacyJones",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Macy Jones"
+       }
+      ],
+      "voteCount": 2197,
+      "party": {
+       "id": "01000000-dbce-7f71-393d-08decd3d6839",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(States No Party Preference)"
+        }
+       ],
+       "abbreviation": "NO",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "9560a3c4-c6d5-40e0-af31-fc309c9d0654",
+      "nativeId": "175344-LeonLawson",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Leon Lawson"
+       }
+      ],
+      "voteCount": 6399,
+      "party": {
+       "id": "01000000-dbce-7f71-45cd-08decd3d3e64",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Trump Republican Party)"
+        }
+       ],
+       "abbreviation": "TRU",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-7a3b-96d8-53fa-08ded6ea9131",
+      "nativeId": "Write-In-6-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-In"
+       }
+      ],
+      "voteCount": 47,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-642f-fee5-0cb0-08dee389eeed",
+    "locality": {
+     "id": "01000000-f977-1a83-420f-08ddd6a09cb7",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Mason County"
+      }
+     ],
+     "shortName": "mason-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "MASON"
+    },
+    "voteTotal": 19610,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 58,
+     "totalUnits": 58,
+     "asOf": "2026-10-29T21:02:34.0025093Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 58
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "cf7e01c4-bbd7-4d37-be44-d021cc145466",
+      "nativeId": "175344-EmilyRandall",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Emily Randall"
+       }
+      ],
+      "voteCount": 9367,
+      "party": {
+       "id": "01000000-dbce-7f71-10a9-08decd3d0dc7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "64d1238e-7a00-4db4-b0c6-d69de7f0273c",
+      "nativeId": "175344-BrianPOGorman",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Brian P. O'Gorman"
+       }
+      ],
+      "voteCount": 820,
+      "party": {
+       "id": "01000000-1777-f62e-9546-08decd3d21ed",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Independent Party)"
+        }
+       ],
+       "abbreviation": "IND",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "e1a921f6-d8c4-40b6-9e07-2ac248b9c0ea",
+      "nativeId": "175344-TeresaFox",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Teresa Fox"
+       }
+      ],
+      "voteCount": 5599,
+      "party": {
+       "id": "01000000-1777-f62e-fe8f-08decd3d18f7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "ff6d6193-1024-4d87-9dae-a657f5e55e25",
+      "nativeId": "175344-MacyJones",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Macy Jones"
+       }
+      ],
+      "voteCount": 472,
+      "party": {
+       "id": "01000000-dbce-7f71-393d-08decd3d6839",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(States No Party Preference)"
+        }
+       ],
+       "abbreviation": "NO",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "9560a3c4-c6d5-40e0-af31-fc309c9d0654",
+      "nativeId": "175344-LeonLawson",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Leon Lawson"
+       }
+      ],
+      "voteCount": 3345,
+      "party": {
+       "id": "01000000-dbce-7f71-45cd-08decd3d3e64",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Trump Republican Party)"
+        }
+       ],
+       "abbreviation": "TRU",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-7a3b-96d8-53fa-08ded6ea9131",
+      "nativeId": "Write-In-6-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-In"
+       }
+      ],
+      "voteCount": 7,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   },
+   {
+    "parentBallotItemId": "01000000-3424-4dff-7ffc-08dee38f7e7c",
+    "locality": {
+     "id": "01000000-f977-1a83-f161-08ddd6a09cba",
+     "name": [
+      {
+       "languageId": "en",
+       "text": "Pierce County"
+      }
+     ],
+     "shortName": "pierce-county-wa",
+     "turnoutPercent": null,
+     "percentReporting": null,
+     "precinctsReporting": null,
+     "hasCountGroupStatus": false,
+     "hasPrecinctStatus": false,
+     "mapFeatureId": "PIERCE"
+    },
+    "voteTotal": 62675,
+    "underVoteCount": null,
+    "overVoteCount": null,
+    "precinctReportingStatus": {
+     "reportingUnits": 180,
+     "totalUnits": 180,
+     "asOf": "2026-10-29T21:02:34.0025093Z",
+     "reportingStatusDetails": [
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Fully Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-fully-reported",
+       "order": 1,
+       "value": 180
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Partially Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-partially-reported",
+       "order": 3,
+       "value": 0
+      },
+      {
+       "groupName": [
+        {
+         "languageId": null,
+         "text": "Not Reported"
+        }
+       ],
+       "reportingStatusClientTextKey": "reporting-status-not-reported",
+       "order": 4,
+       "value": 0
+      }
+     ]
+    },
+    "ballotOptions": [
+     {
+      "id": "cf7e01c4-bbd7-4d37-be44-d021cc145466",
+      "nativeId": "175344-EmilyRandall",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Emily Randall"
+       }
+      ],
+      "voteCount": 39486,
+      "party": {
+       "id": "01000000-dbce-7f71-10a9-08decd3d0dc7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Democratic Party)"
+        }
+       ],
+       "abbreviation": "DEM",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "64d1238e-7a00-4db4-b0c6-d69de7f0273c",
+      "nativeId": "175344-BrianPOGorman",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Brian P. O'Gorman"
+       }
+      ],
+      "voteCount": 1761,
+      "party": {
+       "id": "01000000-1777-f62e-9546-08decd3d21ed",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Independent Party)"
+        }
+       ],
+       "abbreviation": "IND",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "e1a921f6-d8c4-40b6-9e07-2ac248b9c0ea",
+      "nativeId": "175344-TeresaFox",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Teresa Fox"
+       }
+      ],
+      "voteCount": 14435,
+      "party": {
+       "id": "01000000-1777-f62e-fe8f-08decd3d18f7",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Republican Party)"
+        }
+       ],
+       "abbreviation": "REP",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#ffffff",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "ff6d6193-1024-4d87-9dae-a657f5e55e25",
+      "nativeId": "175344-MacyJones",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Macy Jones"
+       }
+      ],
+      "voteCount": 1779,
+      "party": {
+       "id": "01000000-dbce-7f71-393d-08decd3d6839",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(States No Party Preference)"
+        }
+       ],
+       "abbreviation": "NO",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#FFFFFF",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "9560a3c4-c6d5-40e0-af31-fc309c9d0654",
+      "nativeId": "175344-LeonLawson",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Leon Lawson"
+       }
+      ],
+      "voteCount": 5163,
+      "party": {
+       "id": "01000000-dbce-7f71-45cd-08decd3d3e64",
+       "name": [
+        {
+         "languageId": "en",
+         "text": "(Prefers Trump Republican Party)"
+        }
+       ],
+       "abbreviation": "TRU",
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": "#000000",
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": false,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     },
+     {
+      "id": "01000000-7a3b-96d8-53fa-08ded6ea9131",
+      "nativeId": "Write-In-6-",
+      "name": [
+       {
+        "languageId": "en",
+        "text": "Write-In"
+       }
+      ],
+      "voteCount": 51,
+      "party": {
+       "id": null,
+       "name": null,
+       "abbreviation": null,
+       "standardName": null,
+       "color": "#2D6657",
+       "textColor": null,
+       "showInPublicResultsFilters": null
+      },
+      "groupResults": null,
+      "isWriteIn": true,
+      "isQualifiedWriteIn": false,
+      "isWinner": null
+     }
+    ]
+   }
+  ]
+ }
+}

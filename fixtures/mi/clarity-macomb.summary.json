@@ -1,0 +1,8457 @@
+[
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "Straight Party Ticket",
+  "K": "0004",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Democratic Party",
+   "Republican Party",
+   "Libertarian Party",
+   "U.S. Taxpayers Party",
+   "Green Party",
+   "Working Class Party",
+   "Natural Law Party"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "LIB",
+   "UST",
+   "GRN",
+   "WC",
+   "NLP"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "Governor & Lieutenant Governor",
+  "K": "0005",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Jocelyn Benson & Winnie Brinks",
+   "REP John James & Jay DeBoyer",
+   "LIB Anthony Hudson & Beau Parmenter",
+   "UST Donna Brandenburg & Robert Donald Cowper II",
+   "GRN Douglas Campbell & Bobbie Clay",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "LIB",
+   "UST",
+   "GRN",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "Secretary of State",
+  "K": "0007",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Garlin Gilchrist II",
+   "REP Anthony G. Forlini",
+   "LIB Christine Sloan",
+   "UST Scott E. Aughney",
+   "GRN Eric Borregard",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "LIB",
+   "UST",
+   "GRN",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "Attorney General",
+  "K": "0009",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Eli Savit",
+   "REP Doug Lloyd",
+   "LIB Jason Dye",
+   "UST John Perry Ludtke Jr.",
+   "GRN Jeff Polonowski",
+   "NLP Doug Dern",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "LIB",
+   "UST",
+   "GRN",
+   "NLP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "United States Senator",
+  "K": "0011",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Abdul El-Sayed",
+   "REP Mike Rogers",
+   "LIB Lydia Christensen",
+   "UST Tim Long",
+   "GRN Douglas P. Marsh",
+   "NLP Walter P. Kristy",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "LIB",
+   "UST",
+   "GRN",
+   "NLP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "Representative in Congress 9th District",
+  "K": "0013",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 58,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Ray Pooley",
+   "REP Lisa McClain",
+   "LIB Kevin Vayko",
+   "UST John Vlahos",
+   "GRN Destiny Clayton",
+   "WC Jim Walkowicz",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "LIB",
+   "UST",
+   "GRN",
+   "WC",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "Representative in Congress 10th District",
+  "K": "0014",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 191,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Christina Bertrand Hines",
+   "REP Michael Bouchard",
+   "LIB Mike Saliba",
+   "GRN Kwabena Nkromo",
+   "WC Andrea L. Kirby",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "LIB",
+   "GRN",
+   "WC",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Senator 9th District",
+  "K": "0016",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 22,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Theresa Brooks",
+   "REP Michael Webber",
+   "WC Jacob R. Schodowski",
+   "NPA Philippe M. Cicchini",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "WC",
+   "NPA",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Senator 10th District",
+  "K": "0017",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 28,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Natalie Price",
+   "REP Michelle Nard",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Senator 11th District",
+  "K": "0018",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 80,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Veronica Klinefelt",
+   "REP Johnnie S. Townsend",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Senator 12th District",
+  "K": "0019",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 46,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Kevin Hertel",
+   "REP John Goldwater",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Senator 24th District",
+  "K": "0020",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 66,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Edlira Sako",
+   "REP Douglas Chester Wozniak",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Senator 25th District",
+  "K": "0021",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 11,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM April L. Osentoski",
+   "REP Andrew Beeler",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 11th District",
+  "K": "0023",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 15,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Kimberly Fisher",
+   "REP Matthew Stafford",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 12th District",
+  "K": "0024",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 16,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Kimberly L. Edwards",
+   "REP Randell J. Shafer",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 13th District",
+  "K": "0025",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 27,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Mai Xiong",
+   "REP Mark Thomas Foster",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 14th District",
+  "K": "0026",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 21,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Mike McFall",
+   "REP Larry Szyska",
+   "GRN Jeff Sparling",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "GRN",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 57th District",
+  "K": "0027",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 16,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Tom Turner",
+   "REP Thomas E. Kuhn",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 58th District",
+  "K": "0028",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 29,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Katrina Manetta",
+   "REP Ron Robinson",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 59th District",
+  "K": "0029",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 24,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Jason Robbins",
+   "REP Sylvia Grot",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 60th District",
+  "K": "0030",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 23,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Amy Gray",
+   "REP Joseph Aragona",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 61st District",
+  "K": "0031",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 26,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Denise Mentzer",
+   "REP Robert Wojtowicz",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 62nd District",
+  "K": "0032",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 23,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Matthew Smith",
+   "REP Alicia St. Germaine",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 63rd District",
+  "K": "0033",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 13,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Jamie Sonneberger",
+   "REP Pamela Hornberger",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 65th District",
+  "K": "0034",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 13,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM James M. O'Brien",
+   "REP Jaime Greene",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_1",
+  "CAT": "Federal&#x2F;State",
+  "C": "State Representative 66th District",
+  "K": "0035",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 11,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Ned Zimmer",
+   "REP Josh Schriver",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "County Executive",
+  "K": "0045",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Mark A. Hackel",
+   "REP Richard Moore",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "County Commissioner 1st District Partial Term Ending 12/31/2028",
+  "K": "0046",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 23,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Michael E. LaBuhn",
+   "REP Ken Goike",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Lenox Township Trustee Partial Term Ending 12/01/2028",
+  "K": "0047",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 4,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Cory Ferriby",
+   "DEM Ed Pate",
+   "REP Scott Clifford",
+   "REP Ron Zemens",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "DEM",
+   "REP",
+   "REP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Harrison Township Library Board Member Partial Term Ending 12/01/2028",
+  "K": "0067",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 6,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Laura Johnson",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Center Line Mayor",
+  "K": "0068",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 4,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Richard Moeller",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Center Line Council Member",
+  "K": "0069",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 4,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "John J. Hanselman",
+   "Peter Harenski",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Memphis Mayor",
+  "K": "0070",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Gretchen Varney",
+   "Tammy J. Wehrum",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Memphis Council Member",
+  "K": "0071",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "James Hattie",
+   "Roberta A. Mazur",
+   "Keith Nida",
+   "Amber E. Randazzo",
+   "Timothy T. Zimmer",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Utica Mayor",
+  "K": "0072",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Gus Calandrino",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Utica Council Member",
+  "K": "0073",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Joel DeVriendt",
+   "Paul Weaver",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of Armada President",
+  "K": "0074",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "David Coenen",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of Armada Clerk",
+  "K": "0075",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Michelle Poulos",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of Armada Treasurer",
+  "K": "0076",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Anne R. Porter",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of Armada Trustee",
+  "K": "0077",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Jo E. Adair",
+   "Amy Joy Barzyk",
+   "Kevin Grand",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of New Haven President",
+  "K": "0078",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 2,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Brian Meissen",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of New Haven Clerk",
+  "K": "0079",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 2,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON"
+  ],
+  "PCT": [
+   0
+  ],
+  "V": [
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0
+  ],
+  "CRC": [
+   0
+  ],
+  "CRO": [
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of New Haven Treasurer",
+  "K": "0080",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 2,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Timothy Sosnovske",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of New Haven Trustee",
+  "K": "0081",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 2,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Matt Benoit",
+   "Chris Dilbert Sr.",
+   "Henry J. Gavulic",
+   "Fred Nona",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of Romeo President",
+  "K": "0082",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 3,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Jamie Lucero",
+   "Justin A. Parker",
+   "Kelley Stephens",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of Romeo Clerk",
+  "K": "0083",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 3,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Lisa Hall",
+   "Meagan Poznanski",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of Romeo Treasurer",
+  "K": "0084",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 3,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Caroline Miller",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": "Village of Romeo Trustee Full Term",
+  "K": "0085",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 3,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Charles Bennett",
+   "Matthew Edwards",
+   "Zachary D. Fowler",
+   "Leo Hudson",
+   "Shelley Rosso",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_2",
+  "CAT": "County&#x2F;Local",
+  "C": " Village of Romeo Trustee Partial Term Ending 12/01/2028",
+  "K": "0086",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 3,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Sharon K. Smith",
+   "Zachary Throne",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Justice of Supreme Court",
+  "K": "0048",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Megan Kathleen Cavanagh",
+   "Noah P. Hood",
+   "Thomas W. Howe",
+   "Casandra Morse-Bills",
+   "Michael Warren",
+   "Jody White",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Judge of 2nd District Court of Appeals",
+  "K": "0050",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Sima G. Patel",
+   "Christopher M. Trebilcock",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Judge of 16th Circuit Court (Incumbent)",
+  "K": "0052",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 4,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Julie Gatti",
+   "Tanya A. Grillo",
+   "James M. Maceroni",
+   "Matthew S. Switalski",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Judge of 16th Circuit Court (Non-Incumbent)",
+  "K": "0053",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "James L. Spagnuolo",
+   "Genevieve L. Taylor",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Judge of Probate Court",
+  "K": "0055",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Sara A. Schimke",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Judge of District Court 37th District",
+  "K": "0057",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 57,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Michael C. Chupa",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Judge of District Court 38th District",
+  "K": "0058",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 8,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Kathleen G. Galen",
+   "Richard W. Goodman",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Judge of District Court 39th District",
+  "K": "0059",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 17,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Derek G. Boedeker",
+   "Dana C. Freers",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Judge of District Court 40th District",
+  "K": "0060",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 12,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Joseph Craigen Oster",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Judge of District Court 41A District",
+  "K": "0061",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 85,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Annemarie Marino Lepore",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Judge of District Court 41B District",
+  "K": "0062",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 30,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Jacob Michael Femminineo Jr.",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_3",
+  "CAT": "Judicial",
+  "C": "Judge of District Court 42-1 District",
+  "K": "0063",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 20,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Jennifer Andary",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "State Board of Education Member",
+  "K": "0037",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Judith Pritchett",
+   "DEM Tiffany Tilley",
+   "REP Terence Collins",
+   "REP Bree Moeggenberg",
+   "LIB Charles Essner",
+   "UST William Mohr II",
+   "UST Christine C. Schwartz",
+   "GRN Wissam Charafeddine",
+   "WC Mary Anne Hering",
+   "NLP Kelli Monroe",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "DEM",
+   "REP",
+   "REP",
+   "LIB",
+   "UST",
+   "UST",
+   "GRN",
+   "WC",
+   "NLP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "University of Michigan Regent",
+  "K": "0039",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Paul Brown",
+   "DEM Amir Makled",
+   "REP Lena Epstein",
+   "REP Michael Schostak",
+   "LIB Andrew Chadderdon",
+   "UST Kyle Maas",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "DEM",
+   "REP",
+   "REP",
+   "LIB",
+   "UST",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Michigan State University Trustee",
+  "K": "0041",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Brianna Scott",
+   "DEM Kelly Tebay Zemke",
+   "REP Julie Maday",
+   "REP Roger Victory",
+   "LIB Daniel R. Patterson",
+   "LIB Will Tyler White",
+   "UST Janet Sanger",
+   "UST John Sanger",
+   "GRN John Anthony La Pietra",
+   "WC Yaz Ozbek",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "DEM",
+   "REP",
+   "REP",
+   "LIB",
+   "LIB",
+   "UST",
+   "UST",
+   "GRN",
+   "WC",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Wayne State University Governor",
+  "K": "0043",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "DEM Shereef Akeel",
+   "DEM Richard Mack",
+   "REP Andy Anuzis",
+   "REP Christa Murphy",
+   "LIB Alex Avery",
+   "LIB Jami Van Alstine",
+   "UST Jeff McDonald",
+   "GRN Paul M. Ragan",
+   "WC Suzanne Roehrig",
+   "NLP Kathleen Oakford",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "DEM",
+   "DEM",
+   "REP",
+   "REP",
+   "LIB",
+   "LIB",
+   "UST",
+   "GRN",
+   "WC",
+   "NLP",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Macomb Community College Trustee",
+  "K": "0065",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Joseph A. Backus",
+   "Frank Cusumano",
+   "Dwayne Anthony Haywood",
+   "Drake Kress",
+   "Ronald P. Papa",
+   "Vito Pianello",
+   "Richard D. Shaffer",
+   "Shelley Vitale",
+   "Vince Viviano",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Almont Community Schools Board Member 6-Year Term",
+  "K": "0087",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Adam Eckardt",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Almont Community Schools Board Member 4-Year Term",
+  "K": "0088",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Sheri Ankley",
+   "Janaea Smith",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Almont Community Schools Board Member Partial Term Ending 12/31/2028",
+  "K": "0089",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Katie Rotarius",
+   "James Wade Jr.",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Anchor Bay School District Board Member Full Term",
+  "K": "0090",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 10,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Daryl Scott Ayers",
+   "Anne Berglund",
+   "Tom Braun",
+   "Richard M. Malik",
+   "Charles M. Penzien",
+   "Dennis Richards",
+   "Cyndy Williams-Sandoval",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Anchor Bay School District Board Member Partial Term Ending 12/31/2028",
+  "K": "0091",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 10,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Anthony Birkmeier",
+   "Shawn Elliott",
+   "Yveline Marcon",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Armada Area Schools Board Member ",
+  "K": "0092",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 6,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Andrew Blake",
+   "Susan Nieman",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Center Line Public Schools Board Member",
+  "K": "0093",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 8,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Gary T. Gasowski",
+   "Daniel Taylor",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Chippewa Valley Schools Board Member Full Term",
+  "K": "0094",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 25,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Renee Kraft",
+   "Terry Prince",
+   "Vito Strolis",
+   "Victoria M. Zucca",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Chippewa Valley Schools Board Member Partial Term Ending 12/31/2028",
+  "K": "0095",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 25,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Denise Aquino",
+   "William Mierzwinski",
+   "Lew Miles",
+   "Kenneth A. Pearl",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Clintondale Community Schools Board Member",
+  "K": "0096",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 3,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Jason Davidson",
+   "David Hilliard",
+   "Samantha Hilliard",
+   "Jared Maynard",
+   "Will Rucker",
+   "Dorothy Wilkins",
+   "Diane Zontini",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Eastpointe Community Schools Board Member",
+  "K": "0097",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 10,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Jon Gruenberg",
+   "Ian Colin McCain",
+   "Robert L. Puller",
+   "Addie M. Richardson",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Fitzgerald Public Schools Board Member",
+  "K": "0098",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 5,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Khaja Shahab Ahmed",
+   "Kimberly M. Lee",
+   "Randel Meisner",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Fraser Public Schools Board Member Full Term",
+  "K": "0099",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 8,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Molly Magnotte",
+   "Jamie Pietron",
+   "Abigail Wasil",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Fraser Public Schools Board Member Partial Term Ending 12/31/2028",
+  "K": "0100",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 8,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Todd Burrows",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Lake Shore Public Schools Board Member",
+  "K": "0101",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 4,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Rebecca L. Allensworth",
+   "Elizabeth Munger",
+   "Mistie Ryan",
+   "Wendy Tobias",
+   "Kurt Troutman",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Lakeview Public Schools Board Member",
+  "K": "0102",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 4,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Daniel Dombrowski",
+   "Robbyn Martin Morphew",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "L'Anse Creuse Public Schools Board Member Full Term",
+  "K": "0103",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 19,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Jon A. Kopczyk",
+   "Adam Lipski",
+   "Andrea Marble",
+   "Steven Maul",
+   "Dale VanDeWater",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "L'Anse Creuse Public Schools Board Member Partial Term Ending 12/31/2030",
+  "K": "0104",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 19,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Jeffrey Cyprus",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Memphis Community Schools Board Member Full Term",
+  "K": "0105",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 2,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Tamie Rawlings",
+   "Nancy Thomson",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Memphis Community Schools Board Member Partial Term Ending 12/31/2030",
+  "K": "0106",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 2,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON"
+  ],
+  "PCT": [
+   0
+  ],
+  "V": [
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0
+  ],
+  "CRC": [
+   0
+  ],
+  "CRO": [
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Memphis Community Schools Board Member Partial Term Ending 12/31/2028",
+  "K": "0107",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 2,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON"
+  ],
+  "PCT": [
+   0
+  ],
+  "V": [
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0
+  ],
+  "CRC": [
+   0
+  ],
+  "CRO": [
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Mount Clemens Community Schools Board Member",
+  "K": "0108",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 10,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "David McFadden",
+   "Dontae Walker",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "New Haven Community Schools Board Member",
+  "K": "0109",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 11,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Tanya France",
+   "Shana Mayer",
+   "Regina Patton",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Richmond Community Schools Board Member",
+  "K": "0110",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 5,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Dana Maclean",
+   "David Mangune",
+   "Beth Stemmerich",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Rochester Community Schools Board Member Full Term",
+  "K": "0111",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 2,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Michael Frink",
+   "Lawrence D. Halushka",
+   "Lisa Halushka",
+   "Sherry Wynn Perdue",
+   "Jamie Rawcliffe",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Rochester Community Schools Board Member Partial Term Ending 12/31/2028",
+  "K": "0112",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 2,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Laurin Gracey-Parker",
+   "Deanna Harless",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Romeo Community Schools Board Member",
+  "K": "0113",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 15,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Wayne D. Conner II",
+   "Josie Docherty",
+   "Brian Hayes",
+   "Troy Patrick Kosal",
+   "Amy Nelson",
+   "Kim Voss",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Roseville Community Schools Board Member",
+  "K": "0114",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 11,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Gina Marie Aiuto",
+   "D.L. Dye",
+   "Daniel M. Olsen",
+   "Samantha Syer",
+   "Charles E. Whisnant",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "South Lake Schools Board Member",
+  "K": "0115",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 3,
+  "TP": 6,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Kristine Crook",
+   "Erin Liberty",
+   "Britney Muhammad",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Utica Community Schools Board Member",
+  "K": "0116",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 57,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Donesa Crivella",
+   "Steven Meyer",
+   "Daryl Robinson II",
+   "Mary K. Smolenski",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Van Dyke Public Schools Board Member",
+  "K": "0117",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 9,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Jecinda Jones-Bettie",
+   "Ivan Monroe Thomas",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Warren Consolidated Schools Board Member Full Term",
+  "K": "0118",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 37,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Sharon L. Nemeth",
+   "Carmela Rudd",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Warren Consolidated Schools Board Member Partial Term Ending 12/31/2030",
+  "K": "0119",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 37,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Carl Weckerle",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Warren Consolidated Schools Board Member Partial Term Ending 12/31/2028",
+  "K": "0120",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 37,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Kyle Johnson",
+   "Sue Kattula",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_4",
+  "CAT": "School Boards",
+  "C": "Warren Woods Public Schools Board Member",
+  "K": "0121",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 2,
+  "TP": 9,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Jason Chamberlain",
+   "Michael Garcia",
+   "Unofficial Write-in"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "State Proposal 2026-1",
+  "K": "0122",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "State Proposal 2026-2",
+  "K": "0123",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Macomb County Veterans' Millage",
+  "K": "0124",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Macomb County Public Transportation Millage",
+  "K": "0125",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Macomb County Zoological Authority Millage",
+  "K": "0126",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 249,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Center Line Library Millage Proposal",
+  "K": "0127",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 4,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Memphis Police Millage",
+  "K": "0128",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "New Baltimore Bond Proposal",
+  "K": "0129",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 5,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Sterling Heights Charter Amendment-Vacancy",
+  "K": "0130",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 40,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Sterling Heights Charter Amendment-Purchasing",
+  "K": "0131",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 40,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Harrison Township Millage Proposal",
+  "K": "0132",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 6,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Village of Romeo Bond Proposal",
+  "K": "0133",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 3,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Almont Community Schools Millage Proposal",
+  "K": "0134",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 1,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Chippewa Valley Schools Bond Proposal",
+  "K": "0135",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 25,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ },
+ {
+  "CATKEY": "C_5",
+  "CAT": "Proposals",
+  "C": "Eastpointe Community Schools Bond Proposal",
+  "K": "0136",
+  "AggID": null,
+  "regvoters": 0,
+  "BCxContest": 0,
+  "VF": 1,
+  "TP": 10,
+  "PR": 0,
+  "TV": 0,
+  "BC": 0,
+  "RC": 0,
+  "RO": 0,
+  "CH": [
+   "Yes",
+   "No"
+  ],
+  "CHAggId": null,
+  "P": [
+   "NON",
+   "NON"
+  ],
+  "PCT": [
+   0,
+   0
+  ],
+  "V": [
+   0,
+   0
+  ],
+  "RCVRoundVGain": null,
+  "RCVRoundPCTGain": null,
+  "T": [
+   0
+  ],
+  "RCVExhaustedBallots": null,
+  "RCVBallotsCast": null,
+  "RCVOverVotes": null,
+  "W": [
+   0,
+   0
+  ],
+  "CRC": [
+   0,
+   0
+  ],
+  "CRO": [
+   0,
+   0
+  ],
+  "IsCumulative": null,
+  "CumulativeVotes": null,
+  "CumulativeChoices": null,
+  "CumulativePercentages": null,
+  "IsContestNoChoice": 0,
+  "IsRCV": false,
+  "RCVAwaitingResults": false,
+  "RCVRounds": 0
+ }
+]

@@ -1,0 +1,1985 @@
+{
+ "_note": "trimmed: id/name/contestType/reportingStatus only",
+ "data": [
+  {
+   "id": "248c0000-c0a3-7204-fbf5-08df11bc03ba",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 1"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante de U.S.. en el Congreso - Distrito No. 1"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-0306-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 2"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante de EE.UU. en el Congreso Distrito 2"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 9,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-1287-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 3"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante de U.S.. en el Congreso - Distrito No. 3"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-19ef-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 4"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante de U.S.. en el Congreso - Distrito No. 4"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-2065-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 5"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante de U.S.. en el Congreso - Distrito No. 5"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 2,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-2536-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 6"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante de U.S.. en el Congreso - Distrito No. 6"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 5,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-2dec-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 7"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante de U.S.. en el Congreso - Distrito No. 7"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 6,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-325f-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 8"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante de U.S.. en el Congreso - Distrito No. 8"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-36a6-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "U.S. Representative in Congress - District No. 9"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante de U.S.. en el Congreso - Distrito No. 9"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 4,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-3acd-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Governor and Lieutenant Governor"
+    },
+    {
+     "languageId": "1",
+     "text": "Gobernador y Vicegobernador"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-6c95-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Secretary of State"
+    },
+    {
+     "languageId": "1",
+     "text": "Secretario de Estado"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-71c9-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Attorney General"
+    },
+    {
+     "languageId": "1",
+     "text": "Procurador General"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-75f7-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Treasurer"
+    },
+    {
+     "languageId": "1",
+     "text": "Tesorero Estatal"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-7a58-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Superintendent of Public Instruction"
+    },
+    {
+     "languageId": "1",
+     "text": "Superintendente de Instrucción Pública"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-7e87-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Mine Inspector"
+    },
+    {
+     "languageId": "1",
+     "text": "Inspector Estatal de Minas"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-82ca-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Corporation Commissioner"
+    },
+    {
+     "languageId": "1",
+     "text": "Comisionado de Corporaciones"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-420e-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No.  1"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal Distrito 1"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 2,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-4679-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No.  2"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 2"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-4ad0-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No.  3"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 3"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-4f68-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No.  4"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 4"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-5477-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No.  5"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 5"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-5896-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No.  6"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal Distrito 6"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 7,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-5c92-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No.  7"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal Distrito 7"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 4,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-60d7-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No.  8"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 8"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-6552-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No.  9"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 9"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-6957-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 10"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 10"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 2,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-6ea5-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 11"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 11"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-73d4-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 12"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 12"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-7844-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 13"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 13"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-7cc9-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 14"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 14"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-80ef-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 15"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 15"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 2,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-84d9-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 16"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 16"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 3,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-88d3-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 17"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 17"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 2,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-8cc1-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 18"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 18"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-90f5-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 19"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 19"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 5,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-94d4-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 20"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 20"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-97f8-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 21"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 21"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 3,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-9bd8-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 22"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 22"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-9ea7-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 23"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 23"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 4,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-a29a-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 24"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 24"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-a6a4-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 25"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 25"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 2,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-aa9e-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 26"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 26"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-ae98-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 27"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 27"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-b285-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 28"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 28"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-b695-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 29"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 29"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-ba9a-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Senator - District No. 30"
+    },
+    {
+     "languageId": "1",
+     "text": "Senador Estatal - Distrito No. 30"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 4,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-bd73-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No.  1"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal Distrito 1"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 2,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-c288-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No.  2"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 2"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-c7b6-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No.  3"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 3"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-d003-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No.  4"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 4"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-d720-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No.  5"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 5"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-db61-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No.  6"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal Distrito 6"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 7,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-e123-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No.  7"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal Distrito 7"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 4,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-e7c1-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No.  8"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 8"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-ed26-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No.  9"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 9"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-f2a9-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 10"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 10"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 2,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-fa57-08df11bc03cf",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 11"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 11"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-0111-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 12"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 12"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-0668-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 13"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 13"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-0d11-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 14"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 14"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-125a-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 15"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 15"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 2,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-16af-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 16"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 16"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 3,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-1bfe-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 17"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 17"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 2,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-2268-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 18"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 18"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-27d9-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 19"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 19"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 5,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-2efe-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 20"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 20"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-3354-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 21"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 21"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 3,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-38a2-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 22"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 22"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-3cdd-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 23"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 23"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 4,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-4383-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 24"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 24"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-48dc-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 25"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 25"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 2,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-4e34-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 26"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 26"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-55d7-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 27"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 27"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-5b33-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 28"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 28"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-61b9-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 29"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 29"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-671e-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "State Representative - District No. 30"
+    },
+    {
+     "languageId": "1",
+     "text": "Representante Estatal - Distrito No. 30"
+    }
+   ],
+   "contestType": "Candidate",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 4,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-8a96-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall JOHN LOPEZ IV, Justice of the Supreme Court be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Deberá permanecer en su cargo LOPEZ IV, JOHN, Juez de la Corte Suprema?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-8ea3-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Michael Catlett, Judge of the Court of Appeals Division I, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Michael Catlett, juez de la División I del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-92cb-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Anni Hill Foster, Judge of the Court of Appeals Division I, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Anni Hill Foster, juez de la División I del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-972d-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Randall Howe, Judge of the Court of Appeals Division I, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Randall Howe, juez de la División I del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-9b2a-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Andrew Jacobs, Judge of the Court of Appeals Division I, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Andrew Jacobs, juez de la División I del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-9f27-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Daniel  Kiley , Judge of the Court of Appeals Division I, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Daniel  Kiley, juez de la División I del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-a340-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge James Morse Jr., Judge of the Court of Appeals Division I, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez James Morse Jr., juez de la División I del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-a742-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Jennifer Perkins, Judge of the Court of Appeals Division I, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Jennifer Perkins, juez de la División I del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-ab26-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge David Weinzweig, Judge of the Court of Appeals Division I, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez David Weinzweig, juez de la División II del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-af3e-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Sean Brearcliffe, Judge of the Court of Appeals Division II, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Sean Brearcliffe, juez de la División II del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-b348-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Karl Eppich, Judge of the Court of Appeals Division II, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Karl Eppich, juez de la División II del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 5,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-b736-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Lacey Stover Gard, Judge of the Court of Appeals Division II, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Lacey Stover Gard, juez de la División II del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 5,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-bb1b-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Michael Kelly, Judge of the Court of Appeals Division II, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Michael Kelly, juez de la División II del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-bf14-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Christopher O’Neil, Judge of the Court of Appeals Division II, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Christopher O’Neil, juez de la División II del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 5,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-c393-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "Shall Judge Jeffrey Sklar, Judge of the Court of Appeals Division II, be retained in office?"
+    },
+    {
+     "languageId": "1",
+     "text": "¿Debe permanecer en su cargo el juez Jeffrey Sklar, juez de la División II del Tribunal de Apelaciones?"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 1,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-c77a-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "PROPOSITION 141"
+    },
+    {
+     "languageId": "1",
+     "text": "PROPOSICIÓN 141"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-cba8-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "PROPOSITION 142"
+    },
+    {
+     "languageId": "1",
+     "text": "PROPOSICIÓN 142"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-cf93-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "PROPOSITION 144"
+    },
+    {
+     "languageId": "1",
+     "text": "PROPOSICIÓN 144"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-d38f-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "PROPOSITION 316"
+    },
+    {
+     "languageId": "1",
+     "text": "PROPOSICIÓN 316"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-d77d-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "PROPOSITION 317"
+    },
+    {
+     "languageId": "1",
+     "text": "PROPOSICIÓN 317"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-db59-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "PROPOSITION 318"
+    },
+    {
+     "languageId": "1",
+     "text": "PROPOSICIÓN 318"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-df39-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "PROPOSITION 319"
+    },
+    {
+     "languageId": "1",
+     "text": "PROPOSICIÓN 319"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  },
+  {
+   "id": "248c0000-c0a3-7204-e33e-08df11bc03d0",
+   "name": [
+    {
+     "languageId": "en",
+     "text": "PROPOSITION 320"
+    },
+    {
+     "languageId": "1",
+     "text": "PROPOSICIÓN 320"
+    }
+   ],
+   "contestType": "BallotMeasure",
+   "reportingStatus": {
+    "reportingUnits": 0,
+    "totalUnits": 15,
+    "asOf": "2026-10-30T17:38:42.7808766Z",
+    "reportingStatusDetails": null
+   }
+  }
+ ]
+}
