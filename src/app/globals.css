@@ -5,27 +5,82 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+ * Hatch: solid is known, hatched is still out.
+ *   uncounted / uncalled  → 45° hatch (.hatch), never a grey fill
+ *   leading               → party tint + dashed party outline (.lead-d / .lead-r); on map shapes a dark tint + dot
+ *   projected · Big Board → solid party fill + "BB" stamp
+ *   decided               → solid party fill + ink check
+ *   held                  → hazard band (.hazard) on the top edge, party colours muted, amber status line
+ * The hatch and hazard patterns are the only repeating gradients: they carry data.
+ */
+
 @theme inline {
+  /* Surfaces + ink */
+  --color-ground: var(--ground);
+  --color-s1: var(--s1);
+  --color-s2: var(--s2);
+  --color-s3: var(--s3);
+  --color-s4: var(--s4);
+  --color-hairline: var(--hairline);
+  --color-border-strong: var(--border-strong);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+  --color-on-party: var(--on-party);
+
+  /* Party */
   --color-party-d: var(--party-d);
   --color-party-d-soft: var(--party-d-soft);
   --color-party-d-faint: var(--party-d-faint);
   --color-party-d-ink: var(--party-d-ink);
-  --color-party-r-ink: var(--party-r-ink);
+  --color-party-d-tint: var(--party-d-tint);
+  --color-party-d-muted: var(--party-d-muted);
   --color-party-r: var(--party-r);
   --color-party-r-soft: var(--party-r-soft);
   --color-party-r-faint: var(--party-r-faint);
+  --color-party-r-ink: var(--party-r-ink);
+  --color-party-r-tint: var(--party-r-tint);
+  --color-party-r-muted: var(--party-r-muted);
   --color-party-i: var(--party-i);
   --color-party-i-soft: var(--party-i-soft);
   --color-party-o: var(--party-o);
+
+  /* Margin ramp: tilt <2, lean 2–5, likely 5–10, safe 10–20, landslide 20+ */
+  --color-ramp-d-1: var(--ramp-d-1);
+  --color-ramp-d-2: var(--ramp-d-2);
+  --color-ramp-d-3: var(--ramp-d-3);
+  --color-ramp-d-4: var(--ramp-d-4);
+  --color-ramp-d-5: var(--ramp-d-5);
+  --color-ramp-r-1: var(--ramp-r-1);
+  --color-ramp-r-2: var(--ramp-r-2);
+  --color-ramp-r-3: var(--ramp-r-3);
+  --color-ramp-r-4: var(--ramp-r-4);
+  --color-ramp-r-5: var(--ramp-r-5);
+
+  /* Signals */
   --color-uncalled: var(--uncalled);
+  --color-signal: var(--signal);
+  --color-signal-ink: var(--signal-ink);
+  --color-alert: var(--alert);
+  --color-alert-ink: var(--alert-ink);
   --color-live: var(--live);
   --color-stale: var(--stale);
+
+  /* Type */
   --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-jetbrains-mono);
+  --font-heading: var(--font-sans);
+
+  /* Motion */
+  --ease-roll: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-bar: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-map: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* shadcn */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -64,90 +119,176 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/* ---------- Light theme (secondary) ---------- */
 :root {
-  /* Party palette (Kornacki board) */
-  --party-d: oklch(0.56 0.17 258);
-  --party-d-soft: oklch(0.56 0.17 258 / 55%);
-  --party-d-faint: oklch(0.56 0.17 258 / 22%);
-  --party-r: oklch(0.58 0.2 25);
-  --party-r-soft: oklch(0.58 0.2 25 / 55%);
-  --party-r-faint: oklch(0.58 0.2 25 / 22%);
-  --party-i: oklch(0.68 0.13 80);
-  --party-i-soft: oklch(0.68 0.13 80 / 55%);
-  --party-o: oklch(0.6 0.03 255);
-  /* Text-weight party colours: the fills above are too dark to read as small text on the dark ground (4.5:1). */
-  --party-d-ink: oklch(0.74 0.13 258);
-  --party-r-ink: oklch(0.74 0.15 25);
-  --uncalled: oklch(0.42 0.012 255);
-  --live: oklch(0.75 0.18 145);
-  --stale: oklch(0.78 0.16 75);
-  --font-display: var(--font-barlow);
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
+  --ground: #f4f5f7;
+  --s1: #ffffff;
+  --s2: #fafbfc;
+  --s3: #edf0f4;
+  --s4: #e1e6ed;
+  --hairline: #dde2e9;
+  --border-strong: #c4ccd7;
+  --ink: #0a0d12;
+  --ink-muted: #545d6c;
+  --ink-faint: #7d8594;
+  --on-party: #ffffff;
 
-.dark {
-  --background: oklch(0.16 0.012 255);
-  --foreground: oklch(0.96 0.005 255);
-  --card: oklch(0.205 0.014 255);
-  --card-foreground: oklch(0.96 0.005 255);
-  --popover: oklch(0.205 0.014 255);
-  --popover-foreground: oklch(0.96 0.005 255);
-  --primary: oklch(0.92 0.01 255);
-  --primary-foreground: oklch(0.2 0.014 255);
-  --secondary: oklch(0.26 0.016 255);
-  --secondary-foreground: oklch(0.96 0.005 255);
-  --muted: oklch(0.26 0.016 255);
-  --muted-foreground: oklch(0.72 0.012 255);
-  --accent: oklch(0.29 0.02 255);
-  --accent-foreground: oklch(0.96 0.005 255);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.6 0.02 255);
+  --party-d: #1f5bc4;
+  --party-d-ink: #1f5bc4;
+  --party-d-soft: rgb(31 91 196 / 18%);
+  --party-d-faint: rgb(31 91 196 / 10%);
+  --party-d-tint: #d3e0f6;
+  --party-d-muted: #8fa6c6;
+  --party-r: #c8282d;
+  --party-r-ink: #b3242a;
+  --party-r-soft: rgb(200 40 45 / 16%);
+  --party-r-faint: rgb(200 40 45 / 9%);
+  --party-r-tint: #f6d6d4;
+  --party-r-muted: #c79a97;
+  --party-i: #5e5642;
+  --party-i-soft: rgb(94 86 66 / 18%);
+  --party-o: #6e5c99;
+
+  --ramp-d-1: #c9daf5;
+  --ramp-d-2: #93b6ec;
+  --ramp-d-3: #5a8ddb;
+  --ramp-d-4: #2f68c9;
+  --ramp-d-5: #173f8f;
+  --ramp-r-1: #f5cfcb;
+  --ramp-r-2: #eb9b93;
+  --ramp-r-3: #dc6158;
+  --ramp-r-4: #c23530;
+  --ramp-r-5: #8a1f1d;
+
+  --hatch-line: #b9c1cd;
+  --hatch-ground: #ffffff;
+  --uncalled: var(--hatch-line);
+  --signal: #d4f25a;
+  --signal-ink: #4d6b00;
+  --alert: #ffb020;
+  --alert-ink: #a15c00;
+  --live: var(--signal);
+  --stale: #6b7383;
+
+  --font-display: var(--font-archivo);
+  --font-sans: var(--font-archivo);
+
+  --background: var(--ground);
+  --foreground: var(--ink);
+  --card: var(--s2);
+  --card-foreground: var(--ink);
+  --popover: var(--s1);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--s1);
+  --secondary: var(--s3);
+  --secondary-foreground: var(--ink);
+  --muted: var(--s3);
+  --muted-foreground: var(--ink-muted);
+  --accent: var(--s4);
+  --accent-foreground: var(--ink);
+  --destructive: var(--alert-ink);
+  --border: var(--hairline);
+  --input: var(--border-strong);
+  --ring: var(--signal-ink);
   --chart-1: var(--party-d);
   --chart-2: var(--party-r);
   --chart-3: var(--party-i);
-  --chart-4: oklch(0.72 0.012 255);
-  --chart-5: oklch(0.45 0.012 255);
-  --sidebar: oklch(0.205 0.014 255);
-  --sidebar-foreground: oklch(0.96 0.005 255);
+  --chart-4: var(--ink-muted);
+  --chart-5: var(--ink-faint);
+  --radius: 0.1875rem;
+  --sidebar: var(--s1);
+  --sidebar-foreground: var(--ink);
   --sidebar-primary: var(--party-d);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.26 0.016 255);
-  --sidebar-accent-foreground: oklch(0.96 0.005 255);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.6 0.02 255);
+  --sidebar-primary-foreground: var(--on-party);
+  --sidebar-accent: var(--s3);
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: var(--hairline);
+  --sidebar-ring: var(--signal-ink);
+}
+
+/* ---------- Dark theme (default, primary) ---------- */
+.dark {
+  --ground: #07090d;
+  --s1: #0d1016;
+  --s2: #141820;
+  --s3: #1c212b;
+  --s4: #262c38;
+  --hairline: #222833;
+  --border-strong: #323a48;
+  --ink: #eef1f6;
+  --ink-muted: #9aa3b2;
+  --ink-faint: #6b7383;
+  --on-party: #07090d;
+
+  --party-d: #59a0f9;
+  --party-d-ink: #9cc5ff;
+  --party-d-soft: rgb(89 160 249 / 24%);
+  --party-d-faint: rgb(89 160 249 / 12%);
+  --party-d-tint: #23364f;
+  --party-d-muted: #3b5677;
+  --party-r: #f36358;
+  --party-r-ink: #ff9c92;
+  --party-r-soft: rgb(243 99 88 / 24%);
+  --party-r-faint: rgb(243 99 88 / 12%);
+  --party-r-tint: #4a2725;
+  --party-r-muted: #7a4642;
+  --party-i: #e8e2d0;
+  --party-i-soft: rgb(232 226 208 / 24%);
+  --party-o: #a898c8;
+
+  --ramp-d-1: #2c4a72;
+  --ramp-d-2: #34609a;
+  --ramp-d-3: #3f7bc6;
+  --ramp-d-4: #59a0f9;
+  --ramp-d-5: #93c2ff;
+  --ramp-r-1: #6e3330;
+  --ramp-r-2: #95403a;
+  --ramp-r-3: #c24e45;
+  --ramp-r-4: #f36358;
+  --ramp-r-5: #ff9a8f;
+
+  --hatch-line: #3a4252;
+  --hatch-ground: #0d1016;
+  --uncalled: var(--hatch-line);
+  --signal: #d4f25a;
+  --signal-ink: #d4f25a;
+  --alert: #ffb020;
+  --alert-ink: #ffb020;
+  --live: var(--signal);
+  --stale: #6b7383;
+
+  --background: var(--ground);
+  --foreground: var(--ink);
+  --card: var(--s2);
+  --card-foreground: var(--ink);
+  --popover: var(--s2);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--ground);
+  --secondary: var(--s3);
+  --secondary-foreground: var(--ink);
+  --muted: var(--s3);
+  --muted-foreground: var(--ink-muted);
+  --accent: var(--s3);
+  --accent-foreground: var(--ink);
+  --destructive: var(--alert);
+  --border: var(--hairline);
+  --input: var(--border-strong);
+  --ring: var(--signal);
+  --chart-1: var(--party-d);
+  --chart-2: var(--party-r);
+  --chart-3: var(--party-i);
+  --chart-4: var(--ink-muted);
+  --chart-5: var(--ink-faint);
+  --sidebar: var(--s1);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--party-d);
+  --sidebar-primary-foreground: var(--on-party);
+  --sidebar-accent: var(--s3);
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: var(--hairline);
+  --sidebar-ring: var(--signal);
 }
 
 @layer base {
@@ -162,10 +303,85 @@
   }
 }
 @layer base {
-  html { color-scheme: dark; }
+  html {
+    color-scheme: dark;
+    /* The sticky header (56px, 96px with the phone nav row) never covers an anchored heading. */
+    scroll-padding-top: 6.5rem;
+  }
+  body {
+    font-stretch: 100%;
+    font-optical-sizing: auto;
+  }
+  :focus-visible {
+    outline-color: var(--ring);
+  }
   .tnum { font-variant-numeric: tabular-nums; }
-  .display { font-family: var(--font-display); letter-spacing: -0.01em; }
+  /* Headings and big figures: Archivo, slightly wide. */
+  .display { font-family: var(--font-display); font-stretch: 112%; letter-spacing: -0.01em; }
+  /* The one hero number per screen. */
+  .hero-num { font-family: var(--font-display); font-stretch: 125%; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  /* Ticking figures only (vote counts, shares, deltas). Labels stay in Archivo. */
+  .fig { font-family: var(--font-mono); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
 }
+
 @layer utilities {
   .scrollbar-thin { scrollbar-width: thin; }
+
+  /* Uncounted / uncalled. 6px pitch; .hatch-sm (5px) on small marks. */
+  .hatch {
+    background: repeating-linear-gradient(135deg, var(--hatch-line) 0 1.5px, transparent 1.5px 6px), var(--hatch-ground);
+  }
+  .hatch-sm {
+    background: repeating-linear-gradient(135deg, var(--hatch-line) 0 1.5px, transparent 1.5px 5px), var(--hatch-ground);
+  }
+  /* Uncalled but rated toward a party: still hatched, the hatch takes the party's colour. */
+  .hatch-d {
+    background: repeating-linear-gradient(135deg, var(--party-d-muted) 0 1.5px, transparent 1.5px 6px), var(--party-d-faint);
+  }
+  .hatch-r {
+    background: repeating-linear-gradient(135deg, var(--party-r-muted) 0 1.5px, transparent 1.5px 6px), var(--party-r-faint);
+  }
+  /* Held: count paused, litigation, ballots set aside. 10px band on the top edge. */
+  .hazard {
+    background: repeating-linear-gradient(135deg, #ffb020 0 7px, #07090d 7px 14px);
+  }
+  /* Leading (not decided): party tint + 2px dashed party outline. */
+  .lead-d {
+    background-color: var(--party-d-soft);
+    border: 2px dashed var(--party-d);
+  }
+  .lead-r {
+    background-color: var(--party-r-soft);
+    border: 2px dashed var(--party-r);
+  }
+  .lead-i {
+    background-color: var(--party-i-soft);
+    border: 2px dashed var(--party-i);
+  }
+}
+
+/* Motion: number roll 600ms, bar growth 900ms, map fill 320ms, call moment 1400ms, update flash 1200ms. */
+@keyframes hatch-flash {
+  from { box-shadow: inset 0 0 0 2px var(--signal); }
+  to { box-shadow: inset 0 0 0 2px transparent; }
+}
+@keyframes hatch-call {
+  0% { transform: scale(0.96); opacity: 0.4; }
+  40% { transform: scale(1.02); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@layer utilities {
+  .anim-bar { transition: width 900ms var(--ease-bar), left 900ms var(--ease-bar); }
+  .anim-map { transition: fill 320ms var(--ease-map), fill-opacity 320ms var(--ease-map); }
+  .anim-flash { animation: hatch-flash 1200ms ease-out 1; }
+  .anim-call { animation: hatch-call 1400ms var(--ease-roll) 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

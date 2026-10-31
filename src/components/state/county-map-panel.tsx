@@ -3,6 +3,7 @@
 import { useCallback, useMemo, useRef, useState } from "react";
 import { divergingT, swingVs2024 } from "@/analytics";
 import { CountyMap, marginFill } from "@/components/maps/county-map";
+import { rampColor, Swatch } from "@/components/board/hatch";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { fmtMarginDR, fmtPct, fmtVotes } from "@/lib/format";
 import { cn } from "@/lib/utils";
@@ -17,18 +18,14 @@ const MODES: { value: MapMode; label: string; hint: string }[] = [
   { value: "pctin", label: "% in", hint: "Share of expected vote reported" },
 ];
 
-const D_BASE = "oklch(0.56 0.17 258";
-const R_BASE = "oklch(0.58 0.2 25";
-
-/** Diverging fill around 0: blue for +, red for −, neutral gray near centre. */
+/** Diverging fill around 0 on the margin ramp: blue for +, red for −, a neutral surface near centre. */
 function divergingFill(v: number | undefined, range: number, pctIn?: number) {
   if (v == null || Number.isNaN(v)) return null;
   const t = divergingT(v, range);
   const strength = Math.abs(t - 0.5) * 2;
   const opacity = pctIn == null ? 1 : 0.35 + 0.65 * Math.min(1, pctIn);
-  if (strength < 0.04) return { fill: "var(--uncalled)", opacity: Math.max(0.5, opacity) };
-  const alpha = 0.2 + 0.8 * strength;
-  return { fill: `${t > 0.5 ? D_BASE : R_BASE} / ${alpha.toFixed(2)})`, opacity };
+  if (strength < 0.04) return { fill: "var(--s4)", opacity: Math.max(0.5, opacity) };
+  return { fill: rampColor(v), opacity };
 }
 
 export function CountyMapPanel({
@@ -111,7 +108,7 @@ export function CountyMapPanel({
             </ToggleGroupItem>
           ))}
         </ToggleGroup>
-        <div className="flex items-center gap-2 text-[11px] text-muted-foreground">{legend}</div>
+        <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">{legend}</div>
       </div>
 
       <div
@@ -124,7 +121,7 @@ export function CountyMapPanel({
         <CountyMap stateFips={stateFips} fill={fill} onHover={setHover} selected={selected} />
         {hoverRow && (
           <div
-            className="pointer-events-none absolute z-10 w-56 rounded-md border border-border bg-popover/95 p-2.5 text-xs shadow-lg backdrop-blur"
+            className="pointer-events-none absolute z-10 w-56 rounded-[3px] border border-border-strong bg-popover p-2.5 text-xs"
             style={{ left: Math.max(0, Math.min(pos.x + 14, pos.w - 230)), top: pos.y + 14 }}
             role="tooltip"
           >
@@ -146,7 +143,7 @@ export function CountyMapPanel({
               <dt className="text-muted-foreground">D needs of rest</dt>
               <dd className="text-right">{fmtNeeds(hoverRow.needs)}</dd>
             </dl>
-            <div className="mt-1 text-[11px] text-muted-foreground">Click to pin in the table</div>
+            <div className="mt-1 text-xs text-muted-foreground">Click to pin in the table</div>
           </div>
         )}
       </div>
@@ -159,19 +156,32 @@ function legendFor(mode: MapMode) {
     return (
       <>
         <span>0%</span>
-        <span className="h-2 w-24 rounded-sm" style={{ background: "linear-gradient(90deg, oklch(0.75 0.18 145 / 0.12), oklch(0.75 0.18 145))" }} /> {/* taste-skill-ignore: colour-scale legend */}
+        <span className="flex gap-px">
+          {[0.12, 0.34, 0.56, 0.78, 1].map((o) => (
+            <i key={o} className="inline-block h-3 w-4 bg-signal" style={{ opacity: o }} />
+          ))}
+        </span>
         <span>100%</span>
       </>
     );
-  const left = mode === "margin" ? "R+30" : "R+15";
-  const right = mode === "margin" ? "D+30" : "D+15";
+  const steps = [5, 4, 3, 2, 1] as const;
   return (
     <>
-      <span className="text-party-r-ink">{left}</span>
-      <span className="h-2 w-24 rounded-sm" style={{ background: `linear-gradient(90deg, ${R_BASE}), var(--uncalled), ${D_BASE}))` }} /> {/* taste-skill-ignore: colour-scale legend */}
-      <span className="text-party-d-ink">{right}</span>
-      {mode === "swing" && <span className="ml-1 normal-case tracking-normal">vs 2024 pres.</span>}
-      {mode === "benchmark" && <span className="ml-1 normal-case tracking-normal">vs tie benchmark</span>}
+      <span className="text-party-r-ink">R</span>
+      <span className="flex gap-px" aria-label="Margin ramp: landslide, safe, likely, lean, tilt">
+        {steps.map((n) => (
+          <Swatch key={`r${n}`} kind={`ramp-r-${n}`} className="h-3 w-3.5 rounded-none" />
+        ))}
+        {[...steps].reverse().map((n) => (
+          <Swatch key={`d${n}`} kind={`ramp-d-${n}`} className="h-3 w-3.5 rounded-none" />
+        ))}
+      </span>
+      <span className="text-party-d-ink">D</span>
+      {mode === "swing" && <span className="ml-1">vs 2024 pres.</span>}
+      {mode === "benchmark" && <span className="ml-1">vs tie benchmark</span>}
+      <span className="ml-2 flex items-center gap-1">
+        <Swatch kind="uncounted" /> not counted
+      </span>
     </>
   );
 }

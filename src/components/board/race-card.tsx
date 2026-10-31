@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import type { Race, RaceMeta } from "@/data/schema";
+import type { Party, Race, RaceMeta } from "@/data/schema";
 import { Card } from "@/components/ui/card";
 import { Pct } from "./num";
 import { RatingBadge, StatusBadge } from "./status-badge";
@@ -11,13 +11,20 @@ import { annotationsFor } from "@/data/annotations";
 
 type LiveRace = Omit<Race, "units"> | Race;
 type Cand = { id: string; name: string; party: string; incumbent?: boolean; votes: number; pct: number };
+type Flag = NonNullable<Race["flags"]>[number];
 
-/** The widest margin the lane can show, in points; anything beyond pins to the end of the lane. */
-const LANE_CAP = 20;
+/** A race counts as close for the needs tick while the trailer needs at most this share of what is left. */
+const NEEDS_CLOSE = 70;
+/** Share of the expected vote that must be in before the needs tick appears. */
+const NEEDS_MIN_IN = 0.2;
+
+/** Flags that hold a race: the count is paused, in court, or has ballots set aside. Advisories do not. */
+const HOLDING: ReadonlySet<Flag["kind"]> = new Set(["count-paused", "litigation", "set-aside"]);
 
 const surname = (name: string) => name.split(" ").filter((p) => !/^(jr|sr|ii|iii|iv)\.?$/i.test(p)).pop() ?? name;
 const lastName = (c: { name: string }) => surname(c.name).toLowerCase();
-const pos = (v: number) => 50 + (50 * Math.max(-LANE_CAP, Math.min(LANE_CAP, v))) / LANE_CAP;
+/** Join the last two words so a short line never leaves one orphan word on a second line. */
+const keepTail = (s: string) => s.replace(/ (\S+)$/, " $1");
 
 /** The nominee of a party: the vote leader once votes exist, otherwise the incumbent, then the best-documented filer. */
 function pick(list: Cand[], party: "D" | "R", counting: boolean): Cand | undefined {
@@ -27,10 +34,26 @@ function pick(list: Cand[], party: "D" | "R", counting: boolean): Cand | undefin
   return [...side].sort((a, b) => rank(b) - rank(a))[0];
 }
 
+function partyFill(party: string, held: boolean) {
+  if (party === "D") return held ? "bg-party-d-muted" : "bg-party-d";
+  if (party === "R") return held ? "bg-party-r-muted" : "bg-party-r";
+  return held ? "bg-ink-faint" : "bg-party-i";
+}
+
+function holdLine(f: Flag): string {
+  const t = f.asOf.includes("T")
+    ? new Date(f.asOf).toLocaleTimeString("en-US", { timeZone: "America/New_York", hour: "numeric", minute: "2-digit" }).toLowerCase()
+    : null;
+  if (f.kind === "count-paused") return t ? `Count paused at ${t}` : "Count paused";
+  if (f.kind === "set-aside") return f.challengedBallots ? `About ${f.challengedBallots.toLocaleString()} ballots set aside` : "Ballots set aside";
+  return "In litigation, call on hold";
+}
+
 /**
- * Race card as a margin lane: the two main candidates face each other across a centre line, the bar is the
- * current margin, and the pale span (once votes are in) is the model's range for the final margin, so how much
- * is still unsettled is drawn rather than implied. Before votes the lane is empty and says so.
+ * Race card in the Hatch grammar. The bar is the expected vote drawn to scale: [leader][trailer][hatched remainder],
+ * so how much is still out is visible rather than implied. In a close race a 3px ink tick inside the hatch marks the
+ * share of what is left the trailing candidate needs. A held race (paused count, litigation, set-aside ballots) gets a
+ * hazard band on its top edge, muted party colours and an amber status line.
  */
 export function RaceCard({ live, meta, href, className }: { live?: LiveRace; meta?: RaceMeta; href?: string; className?: string }) {
   const title = live?.name ?? meta?.name ?? "Race";
@@ -47,71 +70,109 @@ export function RaceCard({ live, meta, href, className }: { live?: LiveRace; met
   const dr = counting ? live!.marginDR : undefined;
   const model = counting ? live!.model : undefined;
   const pctIn = live?.pctExpected;
-  const pctInPts = pctIn != null ? pctIn * (pctIn <= 1 ? 100 : 1) : null;
+  const pctFrac = pctIn != null ? (pctIn <= 1 ? pctIn : pctIn / 100) : null;
   const projected = live?.projection;
+  const status = live?.status ?? "not_started";
+  const called = status === "projected" || status === "certified";
 
-  const margin =
-    dr == null ? "—" : Math.abs(dr) < 0.05 ? "Even" : `${dr > 0 ? "D" : "R"}+${Math.abs(dr).toFixed(1)}`;
-  const marginTone = dr == null || Math.abs(dr) < 0.05 ? "text-muted-foreground" : dr > 0 ? "text-party-d-ink" : "text-party-r-ink";
-  const lo = model ? pos(model.projectedMarginDR - model.band) : 0;
-  const hi = model ? pos(model.projectedMarginDR + model.band) : 0;
+  const flags = live?.flags ?? (meta ? annotationsFor(meta) : undefined);
+  const holdFlag = counting && !called ? flags?.find((f) => HOLDING.has(f.kind)) : undefined;
+  const held = !!holdFlag;
+
+  const margin = dr == null ? "—" : Math.abs(dr) < 0.05 ? "Even" : `${dr > 0 ? "D" : "R"}+${Math.abs(dr).toFixed(1)}`;
+  const marginTone =
+    dr == null || Math.abs(dr) < 0.05 || held ? "text-muted-foreground" : dr > 0 ? "text-party-d-ink" : "text-party-r-ink";
+
+  // Expected vote to scale. Without a pct-in estimate, what is counted is all we can draw.
+  const total = counting ? live!.totalVotes : 0;
+  const ev = counting ? Math.max(total, live!.expectedVote ?? (pctFrac && pctFrac > 0 ? total / pctFrac : total)) : 1;
+  const ranked = counting ? [d, r, offLane].filter((c): c is Cand => !!c).sort((a, b) => b.votes - a.votes) : [];
+  const shown = ranked.reduce((s, c) => s + c.votes, 0);
+  const segs = ranked.map((c) => ({ c, w: c.votes / ev }));
+  const restW = counting ? Math.max(0, total - shown) / ev : 0;
+  const remainderW = counting ? Math.max(0, 1 - total / ev) : 1;
+
+  // Needs tick: the trailing major-party candidate's required share of the remainder. Only for a close race with
+  // enough counted to mean something (early on every trailer "needs 50%"), and only while it is still reachable.
+  const trailer = !called && d && r && counting ? (d.votes < r.votes ? d : r) : undefined;
+  const needs = trailer ? (trailer.party === "D" ? model?.needsOfRemainingD : model?.needsOfRemainingR) : undefined;
+  const showNeeds = trailer && needs != null && needs > 0 && needs <= NEEDS_CLOSE && (pctFrac ?? 0) >= NEEDS_MIN_IN && remainderW > 0.01;
+  const remainderStart = 1 - remainderW;
 
   const body = (
-    <Card className={cn("gap-2.5 p-3 transition-colors hover:border-foreground/30", className)}>
-      <div className="flex items-center justify-between gap-2">
-        <div className="min-w-0 truncate text-sm font-semibold">{title}</div>
-        <StatusBadge status={live?.status ?? "not_started"} party={projected?.party} />
+    <Card className={cn("relative h-full gap-3 p-3 transition-colors hover:border-border-strong", held && "pt-[22px]", className)}>
+      {held && <div aria-hidden className="hazard absolute inset-x-0 top-0 h-2.5" />}
+      <div className="flex items-start justify-between gap-2">
+        <h3 className={cn("min-w-0 truncate text-base font-semibold leading-6", held && "text-muted-foreground")}>{title}</h3>
+        <StatusBadge status={status} party={projected?.party} leader={leader?.party as Party | undefined} />
       </div>
 
-      <div className="grid grid-cols-[1fr_auto_1fr] items-end gap-x-2">
-        <Side c={d} counting={counting} winner={projected?.winnerId === d?.id} tone="text-party-d-ink" />
-        <span className={cn("display text-2xl font-bold leading-none tnum", marginTone)} aria-label={dr == null ? "No margin yet" : `Margin ${margin}`}>
+      <div className="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-end gap-x-3">
+        <Side c={d} counting={counting} winner={projected?.winnerId === d?.id} lead={leader === d} held={held} tone="text-party-d-ink" />
+        <span className={cn("fig text-2xl font-semibold leading-none", marginTone)} aria-label={dr == null ? "No margin yet" : `Margin ${margin}`}>
           {margin}
         </span>
-        <Side c={r} counting={counting} winner={projected?.winnerId === r?.id} tone="text-party-r-ink" right />
+        <Side c={r} counting={counting} winner={projected?.winnerId === r?.id} lead={leader === r} held={held} tone="text-party-r-ink" right />
       </div>
 
       <div
         role="img"
         aria-label={
-          counting && dr != null
-            ? `Margin ${margin}${model ? `, projected final range ${fmtRange(model.projectedMarginDR, model.band)}` : ""}`
+          counting
+            ? `${ranked.map((c) => `${surname(c.name)} ${c.pct.toFixed(1)}%`).join(", ")}; ${Math.round(remainderW * 100)}% of the expected vote still out`
             : "No votes counted yet"
         }
-        className="relative h-3 rounded-sm bg-uncalled/30"
+        className="relative"
       >
-        {model && <div className="absolute inset-y-0 rounded-sm bg-foreground/20" style={{ left: `${lo}%`, width: `${Math.max(0, hi - lo)}%` }} />}
-        {dr != null && (
+        <div className="flex h-3.5 w-full overflow-hidden rounded-[2px] bg-s1">
+          {segs.map(({ c, w }) => (
+            <div key={c.id} className={cn("h-full anim-bar", partyFill(c.party, held))} style={{ width: `${w * 100}%` }} title={c.name} />
+          ))}
+          {restW > 0 && <div className="h-full bg-ink-faint anim-bar" style={{ width: `${restW * 100}%` }} title="Others" />}
+          {remainderW > 0 && <div className="h-full hatch anim-bar" style={{ width: `${remainderW * 100}%` }} title="Still to count" />}
+        </div>
+        {showNeeds && (
           <div
-            className={cn("absolute inset-y-0", dr > 0 ? "bg-party-d" : "bg-party-r")}
-            style={{ left: dr > 0 ? "50%" : `${pos(dr)}%`, width: `${Math.abs(pos(dr) - 50)}%` }}
+            aria-hidden
+            className="absolute -inset-y-1 w-[3px] -translate-x-1/2 bg-foreground anim-bar"
+            style={{ left: `${(remainderStart + (needs! / 100) * remainderW) * 100}%` }}
           />
         )}
-        <div className="absolute -inset-y-0.5 left-1/2 w-px bg-foreground/70" />
       </div>
 
-      <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-xs text-muted-foreground tnum">
+      {holdFlag ? (
+        <p className="text-sm font-semibold text-alert-ink" title={holdFlag.summary}>
+          {keepTail(holdLine(holdFlag))}
+        </p>
+      ) : showNeeds ? (
+        <p className="text-sm text-pretty text-foreground">
+          {keepTail(`${surname(trailer!.name)} needs ${Math.round(needs!)}% of what is left`)}
+        </p>
+      ) : null}
+
+      <div className="mt-auto flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5 text-xs text-muted-foreground tnum">
         <span>
-          {counting && pctInPts != null ? (
+          {counting && pctFrac != null ? (
             <>
-              <Pct value={pctInPts} digits={0} /> of expected vote in
+              <Pct value={pctFrac * 100} digits={0} /> of expected vote in
               {model ? <span title="Model range for the final margin"> · final {fmtRange(model.projectedMarginDR, model.band)}</span> : null}
             </>
           ) : (
             "No votes yet"
           )}
         </span>
-        <span className="flex items-center gap-1.5">
-          <RaceFlags flags={live?.flags ?? (meta ? annotationsFor(meta) : undefined)} />
+        <span className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
+          {!holdFlag && <RaceFlags flags={flags} />}
           {meta?.ratings.consensus && <RatingBadge rating={meta.ratings.consensus} />}
         </span>
       </div>
 
       {(offLane || others.length > 0) && (
-        <div className="text-xs text-muted-foreground">
+        <div className="text-xs text-muted-foreground text-pretty">
           {offLane ? (
             <span>
-              <span className="font-medium text-foreground">{offLane.name}</span> ({offLane.party}) leads with {offLane.pct.toFixed(1)}%
+              <span className="font-medium text-foreground">{offLane.name}</span> ({offLane.party}) leads with{" "}
+              <span className="fig">{offLane.pct.toFixed(1)}%</span>
             </span>
           ) : (
             <span>
@@ -125,7 +186,7 @@ export function RaceCard({ live, meta, href, className }: { live?: LiveRace; met
   );
 
   return href ? (
-    <Link href={href} className="block">
+    <Link href={href} className="block h-full">
       {body}
     </Link>
   ) : (
@@ -138,15 +199,31 @@ function fmtRange(center: number, band: number) {
   return `${lead} ± ${band.toFixed(1)}`;
 }
 
-function Side({ c, counting, winner, tone, right }: { c?: Cand; counting: boolean; winner: boolean; tone: string; right?: boolean }) {
-  if (!c) return <span className={cn("text-xs text-muted-foreground", right && "text-right")}>No nominee</span>;
+function Side({
+  c,
+  counting,
+  winner,
+  lead,
+  held,
+  tone,
+  right,
+}: {
+  c?: Cand;
+  counting: boolean;
+  winner: boolean;
+  lead: boolean;
+  held: boolean;
+  tone: string;
+  right?: boolean;
+}) {
+  if (!c) return <span className={cn("text-sm text-muted-foreground", right && "text-right")}>No nominee</span>;
   return (
     <div className={cn("min-w-0", right && "text-right")}>
-      <div className={cn("truncate text-sm", tone, winner ? "font-bold" : "font-medium")}>
+      <div className={cn("truncate text-[15px]", held ? "text-muted-foreground" : tone, winner || lead ? "font-bold" : "font-medium")}>
         {surname(c.name)}
-        {c.incumbent ? <span className="text-muted-foreground"> (inc.)</span> : null}
+        {c.incumbent ? <span className="font-normal text-muted-foreground"> (inc.)</span> : null}
       </div>
-      <div className="text-xs text-muted-foreground tnum">{counting ? <Pct value={c.pct} digits={1} /> : " "}</div>
+      <div className="text-sm text-muted-foreground">{counting ? <Pct value={c.pct} digits={1} /> : " "}</div>
     </div>
   );
 }

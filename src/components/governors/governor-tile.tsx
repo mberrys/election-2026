@@ -4,25 +4,37 @@ import Link from "next/link";
 import { ratingLean } from "@/analytics";
 import { MarginDR, Pct } from "@/components/board/num";
 import { PartyDot, RatingBadge } from "@/components/board/status-badge";
+import { BBStamp, CheckMark } from "@/components/board/hatch";
 import type { Party, RaceMeta } from "@/data/schema";
 import { ratingLabel } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { flippedTo, isCalled, type LiveRace } from "@/components/senate/balance";
 
 const PARTY_RANK = { D: 0, R: 1, I: 2, L: 3, G: 3, O: 4 } as const;
+const HOLDING = new Set(["count-paused", "litigation", "set-aside"]);
 
-/** Tile colour: projection wins; otherwise the consensus rating tint; toss-ups grey. */
-function tileClasses(projected: Party | undefined, rating: RaceMeta["ratings"]["consensus"], leader: Party | undefined, counting: boolean) {
-  if (projected === "D") return "bg-party-d text-white border-party-d";
-  if (projected === "R") return "bg-party-r text-white border-party-r";
-  if (projected) return "bg-party-i text-black border-party-i";
-  const lean = ratingLean(rating);
-  const strong = rating?.startsWith("solid") || rating?.startsWith("likely");
-  // The vote leader is drawn as a full-strength border; the fill carries the rating and stays pale so called seats are the loudest tiles.
-  const edge = (p: "d" | "r") => (counting && leader === p.toUpperCase() ? (p === "d" ? "border-party-d" : "border-party-r") : p === "d" ? "border-party-d/40" : "border-party-r/40");
-  if (lean === "D") return cn(strong ? "bg-party-d-faint" : "bg-party-d-faint/45", edge("d"));
-  if (lean === "R") return cn(strong ? "bg-party-r-faint" : "bg-party-r-faint/45", edge("r"));
-  return cn("bg-uncalled/40", counting && leader ? (leader === "D" ? "border-party-d" : "border-party-r") : "border-border");
+type TileState = "projected" | "decided" | "held" | "leading" | "uncounted";
+
+/**
+ * Tile in the Hatch grammar:
+ *   projected → solid party fill + BB stamp      decided (certified) → solid fill + ink check
+ *   leading   → party tint + dashed party outline
+ *   held      → hazard band on the top edge, muted party colours
+ *   uncounted → hatch, with the rating as a chip
+ */
+function tileClasses(state: TileState, party: Party | undefined) {
+  const p = party === "D" ? "d" : party === "R" ? "r" : party ? "i" : undefined;
+  if (state === "projected" || state === "decided")
+    return p === "d"
+      ? "border border-party-d bg-party-d text-on-party"
+      : p === "r"
+        ? "border border-party-r bg-party-r text-on-party"
+        : "border border-party-i bg-party-i text-ground";
+  if (state === "held")
+    return cn("border border-hairline pt-[18px]", p === "d" ? "bg-party-d-muted/40" : p === "r" ? "bg-party-r-muted/40" : "bg-s2");
+  // .lead-* carries its own 2px dashed border, so no `border` utility here.
+  if (state === "leading") return p === "d" ? "lead-d" : p === "r" ? "lead-r" : "lead-i";
+  return "hatch border border-hairline";
 }
 
 export function GovernorTile({ meta, race, stateName }: { meta: RaceMeta; race: LiveRace | undefined; stateName: string }) {
@@ -32,53 +44,97 @@ export function GovernorTile({ meta, race, stateName }: { meta: RaceMeta; race: 
   const leaderParty = counting ? race?.candidates.find((c) => c.id === race.leaderId)?.party : undefined;
   const flip = flippedTo(meta, race);
   const rating = meta.ratings.consensus;
+  const holdFlag = counting && !called ? race?.flags?.find((f) => HOLDING.has(f.kind)) : undefined;
+
+  const state: TileState = called
+    ? race?.status === "certified"
+      ? "decided"
+      : "projected"
+    : holdFlag
+      ? "held"
+      : counting && leaderParty
+        ? "leading"
+        : "uncounted";
+  const solid = state === "projected" || state === "decided";
+  const lean = ratingLean(rating);
+  const tileParty: Party | undefined = solid
+    ? (projected ?? race?.candidates.find((c) => c.id === race?.leaderId)?.party)
+    : (leaderParty ?? (lean === "tossup" ? undefined : lean));
 
   const cands = counting && race
     ? [...race.candidates].sort((a, b) => b.votes - a.votes).slice(0, 2)
     : [...meta.candidates].sort((a, b) => PARTY_RANK[a.party] - PARTY_RANK[b.party]).slice(0, 2).map((c) => ({ ...c, pct: undefined as number | undefined }));
 
+  const sub = solid ? "text-on-party/80" : "text-muted-foreground";
+
   return (
     <Link
       href={`/state/${meta.state}`}
       className={cn(
-        "group relative flex min-h-[132px] flex-col rounded-lg border p-2.5 transition-[filter,transform] hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring",
-        tileClasses(projected, rating, leaderParty, counting),
+        "group relative flex h-full min-h-[148px] flex-col overflow-hidden rounded-[3px] p-2.5 transition-[filter] hover:brightness-110 focus-visible:outline-2 focus-visible:outline-ring",
+        tileClasses(state, tileParty),
       )}
-      aria-label={`${stateName} governor: ${rating ? ratingLabel[rating] : "unrated"}${called ? ", projected" : ""}`}
+      aria-label={`${stateName} governor: ${rating ? ratingLabel[rating] : "unrated"}${called ? ", projected by Big Board" : ""}${holdFlag ? ", count held" : ""}`}
     >
+      {state === "held" && <span aria-hidden className="hazard absolute inset-x-0 top-0 h-2.5" />}
+      {flip && meta.heldBy && (
+        <span
+          aria-hidden
+          title={`Flipped from ${meta.heldBy}`}
+          className={cn("absolute right-0 top-0 h-3 w-3", meta.heldBy === "D" ? "bg-party-d" : meta.heldBy === "R" ? "bg-party-r" : "bg-party-i")}
+          style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%)" }}
+        />
+      )}
       <div className="flex items-start justify-between gap-1">
-        <span className="display text-3xl font-bold leading-none tracking-tight">{meta.state}</span>
-        <div className="flex flex-col items-end gap-0.5">
-          {called ? (
-            <span className="rounded bg-black/25 px-1 text-[11px] font-semibold">Called</span>
+        <span className={cn("display text-[28px] font-extrabold leading-none tracking-tight", state === "held" && "text-muted-foreground")}>{meta.state}</span>
+        <div className="flex flex-col items-end gap-1">
+          {state === "projected" ? (
+            <span className="inline-flex items-center gap-1 text-xs font-semibold">
+              <BBStamp className="bg-ground text-ink" />
+              Projected
+            </span>
+          ) : state === "decided" ? (
+            <span className="inline-flex items-center gap-1 text-xs font-semibold">
+              <CheckMark /> Certified
+            </span>
           ) : (
-            <RatingBadge rating={rating} className="text-[11px]" />
+            <RatingBadge rating={rating} className="rounded-[2px] bg-s1/90 px-1 py-0.5" />
           )}
-          {flip && <span className="text-[11px] font-semibold">Flip → {flip}</span>}
-          {meta.heldBy && !flip && <span className={cn("text-[11px]", called ? "opacity-80" : "text-muted-foreground")}>Held {meta.heldBy}</span>}
+          {flip && <span className="text-xs font-semibold">Flip to {flip}</span>}
+          {meta.heldBy && !flip && <span className={cn("text-xs", sub)}>Held {meta.heldBy}</span>}
         </div>
       </div>
 
-      <ul className={cn("mt-2 space-y-0.5 text-xs", called && "text-white/90")}>
+      <ul className="mt-2 space-y-1 text-sm">
         {cands.map((c) => (
           <li key={c.id} className="flex items-center gap-1.5">
-            <PartyDot party={c.party} className={cn(called && "ring-1 ring-white/60")} />
-            <span className={cn("truncate", c.id === race?.projection?.winnerId && "font-semibold")}>
+            <PartyDot party={c.party} className={cn(solid && "ring-1 ring-on-party/60", state === "held" && "opacity-60")} />
+            <span
+              className={cn(
+                "truncate",
+                state === "held" && "text-muted-foreground",
+                (c.id === race?.projection?.winnerId || (state === "leading" && c.id === race?.leaderId)) && "font-semibold",
+              )}
+            >
               {c.name.split(" ").slice(-1)[0]}
               {"incumbent" in c && c.incumbent ? " *" : ""}
             </span>
-            {c.pct != null && <Pct value={c.pct} digits={1} className="ml-auto text-[11px]" />}
+            {c.pct != null && <Pct value={c.pct} digits={1} className="ml-auto text-xs" />}
           </li>
         ))}
       </ul>
 
-      <div className={cn("mt-auto flex items-center justify-between pt-2 text-[11px] tnum", called ? "text-white/90" : "text-muted-foreground")}>
-        {counting && race ? (
+      <div className={cn("mt-auto flex items-center justify-between gap-2 pt-2 text-xs tnum", sub)}>
+        {holdFlag ? (
+          <span className="font-semibold text-alert-ink" title={holdFlag.summary}>
+            {holdFlag.kind === "count-paused" ? "Count paused" : holdFlag.kind === "litigation" ? "In litigation" : "Ballots set aside"}
+          </span>
+        ) : counting && race ? (
           <>
             <span>
               <Pct value={(race.pctExpected ?? 0) * 100} digits={0} /> in
             </span>
-            <MarginDR value={race.marginDR} className={cn(called && "text-white")} />
+            <MarginDR value={race.marginDR} className={cn(solid && "text-on-party")} />
           </>
         ) : (
           <>

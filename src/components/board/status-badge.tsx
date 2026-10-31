@@ -1,62 +1,122 @@
-import { Badge } from "@/components/ui/badge";
 import type { Party, RaceStatus, RatingCode, Tier } from "@/data/schema";
 import { ratingLabel } from "@/lib/format";
 import { cn } from "@/lib/utils";
+import { BBStamp, CheckMark } from "./hatch";
 
-export function StatusBadge({ status, party, className }: { status: RaceStatus; party?: Party; className?: string }) {
+const chip = "inline-flex h-6 w-fit shrink-0 items-center gap-1.5 whitespace-nowrap rounded-[3px] px-1.5 text-xs font-semibold leading-none";
+
+type Main = "D" | "R" | "I";
+const main = (p?: Party): Main | undefined => (p === "D" || p === "R" ? p : p ? "I" : undefined);
+
+/**
+ * Race state in the Hatch grammar:
+ *   projected  → solid party fill + BB stamp, "Projected · Big Board"
+ *   certified  → solid party fill + ink check (decided)
+ *   counting   → dashed party outline on a tint when someone leads, else a neutral outline
+ *   not started→ hatched swatch: nothing counted yet
+ */
+export function StatusBadge({
+  status,
+  party,
+  leader,
+  className,
+}: {
+  status: RaceStatus;
+  party?: Party;
+  /** Current vote leader's party while counting; draws the "leading" style. */
+  leader?: Party;
+  className?: string;
+}) {
+  const p = main(party);
   if (status === "projected")
     return (
-      <Badge
+      <span className={cn(chip, "border border-hairline bg-s3 pl-1 text-foreground", className)}>
+        <BBStamp party={p} />
+        Projected · Big Board
+      </span>
+    );
+  if (status === "certified")
+    return (
+      <span
         className={cn(
-          "border-0 text-white",
-          party === "D" ? "bg-party-d" : party === "R" ? "bg-party-r" : "bg-party-i",
+          chip,
+          p === "D" ? "bg-party-d text-on-party" : p === "R" ? "bg-party-r text-on-party" : p ? "bg-party-i text-ground" : "bg-ink text-ground",
           className,
         )}
       >
-        Projected
-      </Badge>
+        <CheckMark />
+        Certified
+      </span>
     );
-  if (status === "runoff") return <Badge variant="outline" className={cn("border-stale text-stale", className)}>Runoff</Badge>;
-  if (status === "certified") return <Badge variant="secondary" className={className}>Certified</Badge>;
-  if (status === "counting") return <Badge variant="outline" className={cn("text-muted-foreground", className)}>Counting</Badge>;
-  return <Badge variant="outline" className={cn("text-muted-foreground/70 border-dashed", className)}>Polls open</Badge>;
+  if (status === "runoff") return <span className={cn(chip, "border border-border-strong text-foreground", className)}>Runoff</span>;
+  if (status === "counting") {
+    const l = main(leader);
+    if (l)
+      return (
+        <span
+          className={cn(
+            chip,
+            l === "D" ? "lead-d text-party-d-ink" : l === "R" ? "lead-r text-party-r-ink" : "lead-i text-party-i",
+            className,
+          )}
+        >
+          {leader} leads
+        </span>
+      );
+    return <span className={cn(chip, "border border-border-strong text-muted-foreground", className)}>Counting</span>;
+  }
+  return (
+    <span className={cn(chip, "border border-hairline font-medium text-muted-foreground", className)}>
+      <i aria-hidden className="hatch-sm inline-block h-3 w-3 rounded-[2px]" />
+      Polls open
+    </span>
+  );
 }
 
+const RAMP_BY_STRENGTH = { solid: 4, likely: 3, lean: 2, tilt: 1 } as const;
+
+/** Consensus rating: a forecast, not a count, so never a solid party block. Ramp square + label; toss-ups hatched. */
 export function RatingBadge({ rating, className }: { rating?: RatingCode; className?: string }) {
   if (!rating) return null;
-  const lean = rating.endsWith("-d") ? "D" : rating.endsWith("-r") ? "R" : "T";
-  const strength = rating.startsWith("solid") ? 3 : rating.startsWith("likely") ? 2 : 1;
+  const lean = rating.endsWith("-d") ? "d" : rating.endsWith("-r") ? "r" : null;
+  const step = lean ? RAMP_BY_STRENGTH[rating.split("-")[0] as keyof typeof RAMP_BY_STRENGTH] : null;
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded px-1.5 py-0.5 text-[11px] font-medium tnum",
-        lean === "T" && "bg-uncalled/50 text-foreground",
-        lean === "D" && (strength === 3 ? "bg-party-d text-white" : strength === 2 ? "bg-party-d-soft" : "bg-party-d-faint text-party-d-ink"),
-        lean === "R" && (strength === 3 ? "bg-party-r text-white" : strength === 2 ? "bg-party-r-soft" : "bg-party-r-faint text-party-r-ink"),
+        "inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-medium tnum",
+        lean === "d" ? "text-party-d-ink" : lean === "r" ? "text-party-r-ink" : "text-foreground",
         className,
       )}
       title={ratingLabel[rating]}
     >
+      <i
+        aria-hidden
+        className={cn("inline-block h-3 w-3 shrink-0 rounded-[2px]", !lean && "hatch-sm")}
+        style={lean ? { background: `var(--ramp-${lean}-${step})` } : undefined}
+      />
       {ratingLabel[rating]}
     </span>
   );
 }
 
+/** Source tier: A = solid ink square, B = outlined square, C = dashed faint outline. */
 export function TierBadge({ tier, className }: { tier?: Tier; className?: string }) {
   if (!tier) return null;
   const label = tier === "A" ? "Official feed" : tier === "B" ? "County feeds" : "Delayed";
   return (
-    <span
-      className={cn(
-        "inline-flex items-center gap-1 rounded-full border px-1.5 py-px text-[11px]",
-        tier === "A" && "border-live/50 text-live",
-        tier === "B" && "border-stale/50 text-stale",
-        tier === "C" && "border-muted-foreground/40 text-muted-foreground",
-        className,
-      )}
-      title={`Tier ${tier}: ${label}`}
-    >
-      {tier} · {label}
+    <span className={cn("inline-flex items-center gap-1.5 whitespace-nowrap text-xs text-muted-foreground", className)} title={`Tier ${tier}: ${label}`}>
+      <span
+        aria-hidden
+        className={cn(
+          "inline-flex h-4 w-4 items-center justify-center rounded-[2px] text-[12px] font-extrabold leading-none",
+          tier === "A" && "bg-ink text-ground",
+          tier === "B" && "border border-ink text-foreground",
+          tier === "C" && "border border-dashed border-ink-faint text-ink-faint",
+        )}
+      >
+        {tier}
+      </span>
+      {label}
     </span>
   );
 }
@@ -65,7 +125,7 @@ export function PartyDot({ party, className }: { party: Party; className?: strin
   return (
     <span
       className={cn(
-        "inline-block h-2 w-2 rounded-full",
+        "inline-block h-2 w-2 shrink-0 rounded-full",
         party === "D" ? "bg-party-d" : party === "R" ? "bg-party-r" : party === "O" ? "bg-party-o" : "bg-party-i",
         className,
       )}

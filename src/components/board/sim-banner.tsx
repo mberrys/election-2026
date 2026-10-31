@@ -14,7 +14,7 @@ export function SimBanner() {
     ? new Date(clock).toLocaleTimeString("en-US", { timeZone: "America/New_York", hour: "numeric", minute: "2-digit" })
     : null;
   return (
-    <div role="alert" className="bg-stale text-black text-center text-xs font-semibold tracking-wide py-1.5 px-4">
+    <div role="alert" className="bg-alert px-4 py-1.5 text-center text-sm font-semibold text-ground">
       SIMULATION: these are not real results{et ? ` · simulated time ${et} ET Nov 3` : ""}
     </div>
   );

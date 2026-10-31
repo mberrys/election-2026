@@ -7,6 +7,7 @@ import { annotationsFor, ANNOTATIONS } from "@/data/annotations";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MarginDR, Pct } from "./num";
 import { StatusBadge, TierBadge } from "./status-badge";
+import { FreshDot } from "./hatch";
 import { cn } from "@/lib/utils";
 
 type Live = NationalPayload["races"][number];
@@ -66,19 +67,19 @@ export function IntegrityWatch({
   return (
     <Card className="gap-0 py-0">
       <CardHeader className="gap-1 border-b py-4">
-        <CardTitle className="text-base font-semibold">
+        <CardTitle className="display text-lg font-bold">
           Integrity watch
           <span className="ml-2 text-sm font-normal text-muted-foreground tnum">
             {rows.length} states · {attention ? `${attention} flagged` : "none flagged"}
           </span>
         </CardTitle>
-        <p className="text-xs text-muted-foreground">
+        <p className="text-sm text-muted-foreground text-pretty">
           Model projections in these states wait until {Math.round(WATCH_MIN_PCT * 100)}% of the expected vote is in. A state joins when
           litigation, set-aside ballots, a paused count or an advisory is posted, or when a county stops reporting.
         </p>
       </CardHeader>
       <CardContent className="px-0">
-        <div className="hidden grid-cols-[9rem_minmax(0,1.3fr)_minmax(0,1.4fr)_9rem] gap-x-4 border-b px-4 py-2 text-xs text-muted-foreground md:grid">
+        <div className="hidden grid-cols-[9rem_minmax(0,1.3fr)_minmax(0,1.4fr)_9rem] gap-x-4 border-b px-4 py-2 text-sm text-muted-foreground md:grid">
           <span>State</span>
           <span>Statewide races</span>
           <span>Why watched</span>
@@ -90,7 +91,7 @@ export function IntegrityWatch({
               key={r.st}
               className={cn(
                 "grid gap-x-4 gap-y-1 border-b border-l-2 border-b-border/50 px-4 py-2.5 text-sm last:border-b-0 md:grid-cols-[9rem_minmax(0,1.3fr)_minmax(0,1.4fr)_9rem]",
-                r.severity === 2 ? "border-l-destructive" : r.severity === 1 ? "border-l-stale" : "border-l-transparent",
+                r.severity === 2 ? "border-l-4 border-l-alert" : r.severity === 1 ? "border-l-alert" : "border-l-transparent",
               )}
             >
               <div className="flex items-baseline justify-between gap-2 md:block">
@@ -102,11 +103,11 @@ export function IntegrityWatch({
                 </span>
               </div>
               <ul className="space-y-1">
-                {r.statewide.length === 0 && <li className="text-xs text-muted-foreground">House races only, see state board</li>}
+                {r.statewide.length === 0 && <li className="text-sm text-muted-foreground">House races only, see state board</li>}
                 {r.statewide.map((m) => {
                   const lr = live.get(m.id);
                   return (
-                    <li key={m.id} className="flex items-center justify-between gap-2 text-xs">
+                    <li key={m.id} className="flex flex-wrap items-center justify-between gap-2 text-sm">
                       <span className="truncate">{m.office === "senate" ? `Senate${m.special ? " (special)" : ""}` : "Governor"}</span>
                       <span className="flex items-center gap-2 tnum">
                         {lr?.pctExpected != null && lr.totalVotes > 0 && (
@@ -115,28 +116,34 @@ export function IntegrityWatch({
                           </span>
                         )}
                         {lr?.marginDR != null && lr.totalVotes > 0 && <MarginDR value={lr.marginDR} />}
-                        <StatusBadge status={lr?.status ?? "not_started"} party={lr?.projection?.party} />
+                        <StatusBadge
+                          status={lr?.status ?? "not_started"}
+                          party={lr?.projection?.party}
+                          leader={lr?.candidates.find((c) => c.id === lr.leaderId)?.party}
+                        />
                       </span>
                     </li>
                   );
                 })}
               </ul>
-              <ul className="space-y-1 text-xs">
+              <ul className="space-y-1 text-sm">
                 {r.base && r.severity === 0 && <li className="text-muted-foreground">Watch list</li>}
                 {r.alerts.map((a, i) => (
-                  <li key={`a${i}`} className="text-destructive">
+                  <li key={`a${i}`} className="flex items-center gap-1.5 font-semibold text-alert-ink">
+                    <FreshDot state="held" />
                     {a}
                   </li>
                 ))}
                 {r.reasons
                   .filter((x) => x === "Stalled count" && !r.alerts.length)
                   .map((x) => (
-                    <li key={x} className="text-destructive">
+                    <li key={x} className="flex items-center gap-1.5 font-semibold text-alert-ink">
+                      <FreshDot state="held" />
                       {x}
                     </li>
                   ))}
                 {r.flags.map((f, i) => (
-                  <li key={`f${i}`} className="text-stale" title={f.summary}>
+                  <li key={`f${i}`} className="text-alert-ink" title={f.summary}>
                     {FLAG_LABEL[f.kind]}
                     {f.kind === "set-aside" && f.challengedBallots ? `: about ${f.challengedBallots.toLocaleString()} ballots demanded set aside` : ""}
                     {f.url && (
@@ -166,7 +173,7 @@ function FeedCell({ st, feed }: { st: string; feed?: NonNullable<NationalPayload
       </span>
     );
   return (
-    <span className={cn(feed.ok ? "text-muted-foreground" : "text-destructive")}>
+    <span className={cn(feed.ok ? "text-muted-foreground" : "text-alert-ink")}>
       <TierBadge tier={feed.tier} /> {feed.ok ? "" : "feed error"}
     </span>
   );

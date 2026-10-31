@@ -40,7 +40,7 @@ export function PathToMajority({
         <PartyPath party="D" path={paths.D} won={bop.raceIds?.calledD.concat(bop.raceIds.calledI) ?? []} metaById={metaById} live={live} stateName={stateName} uncalledCount={uncalled.length} />
         <PartyPath party="R" path={paths.R} won={bop.raceIds?.calledR ?? []} metaById={metaById} live={live} stateName={stateName} uncalledCount={uncalled.length} />
         <div>
-          <div className="mb-1 flex items-center justify-between text-[11px] text-muted-foreground">
+          <div className="mb-1 flex flex-wrap items-center justify-between gap-x-3 text-xs text-muted-foreground">
             <span>Seats on the board through the night</span>
             <span className="flex items-center gap-3">
               <span className="inline-flex items-center gap-1">
@@ -92,7 +92,7 @@ function PartyPath({
       <div className="flex flex-wrap items-baseline justify-between gap-x-3">
         <div className={cn("text-sm font-semibold", color)}>{headline}</div>
         {path.need > 0 && path.feasible && (
-          <div className="text-[11px] text-muted-foreground tnum">
+          <div className="text-xs text-muted-foreground tnum">
             Cheapest path: must win <b className="text-foreground">{path.mustWinNonLeaning}</b> toss-up/opposing-lean seat
             {path.mustWinNonLeaning === 1 ? "" : "s"}
           </div>
@@ -134,8 +134,9 @@ function Chip({
   const leader = leaderOf(race);
   const favorable = lean === party;
   const hostile = lean !== "tossup" && lean !== party;
-  const solid = party === "D" ? "bg-party-d text-white border-party-d" : "bg-party-r text-white border-party-r";
-  const soft = party === "D" ? "bg-party-d-faint border-party-d/40 text-party-d-ink" : "bg-party-r-faint border-party-r/40 text-party-r-ink";
+  // Won = solid; still needed = hatched (in the party's colour when the rating already leans its way).
+  const solid = party === "D" ? "bg-party-d text-on-party border-party-d" : "bg-party-r text-on-party border-party-r";
+  const soft = party === "D" ? "hatch-d border-party-d-muted text-party-d-ink" : "hatch-r border-party-r-muted text-party-r-ink";
   const title = [
     `${stateName(meta.state)}${meta.special ? " (special)" : ""}`,
     rating ? ratingLabel[rating] : "Unrated",
@@ -151,23 +152,23 @@ function Chip({
         href={`/state/${meta.state}`}
         title={title}
         className={cn(
-          "inline-flex items-center gap-1 rounded-md border px-1.5 py-0.5 text-xs font-semibold tnum transition-colors hover:brightness-110",
+          "inline-flex items-center gap-1 rounded-[3px] border px-1.5 py-0.5 text-sm font-semibold tnum transition-colors hover:brightness-110",
           state === "won" && solid,
           state === "needed" && favorable && soft,
-          state === "needed" && lean === "tossup" && "border-dashed border-foreground/40 bg-uncalled/40 text-foreground",
-          state === "needed" && hostile && "border-dashed border-foreground/30 bg-transparent text-muted-foreground",
+          state === "needed" && lean === "tossup" && "hatch border-border-strong text-foreground",
+          state === "needed" && hostile && "border-dashed border-border-strong bg-transparent text-muted-foreground",
         )}
       >
         {meta.state}
-        {meta.special && <span className="text-[11px] font-normal opacity-80">sp</span>}
+        {meta.special && <span className="text-xs font-normal opacity-80">sp</span>}
         {state === "needed" && (lean === "tossup" || hostile) && (
-          <span className="text-[11px] font-normal opacity-80">{lean === "tossup" ? "toss" : "flip"}</span>
+          <span className="text-xs font-normal opacity-80">{lean === "tossup" ? "toss" : "flip"}</span>
         )}
         {counting && state === "needed" && (
           <span
             className={cn(
-              "ml-0.5 text-[11px] font-medium",
-              leader?.party === party ? "text-live" : leader ? "text-stale" : "opacity-70",
+              "fig ml-0.5 text-xs font-medium",
+              leader?.party === "D" ? "text-party-d-ink" : leader?.party === "R" ? "text-party-r-ink" : "opacity-70",
             )}
           >
             {leader ? `${leader.party} ${fmtMarginDR(race?.marginDR, 1).replace(/^[DR]\+/, "+")}` : "…"}

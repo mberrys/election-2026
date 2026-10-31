@@ -10,6 +10,7 @@ import { HexCartogram, HEXMAP_ATTRIBUTION } from "@/components/maps/hex-cartogra
 import { BalanceBar } from "@/components/board/balance-bar";
 import { RaceCard } from "@/components/board/race-card";
 import { Num } from "@/components/board/num";
+import { Swatch, type SwatchKind } from "@/components/board/hatch";
 import { Card, CardContent } from "@/components/ui/card";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -30,6 +31,7 @@ import {
   summarizeHouse,
   swingDR,
   tileFill,
+  tileMark,
   type HouseFilter,
   type LiveRace,
   type MapMode,
@@ -59,6 +61,7 @@ export function HouseBoard({ metas, states, generic }: { metas: RaceMeta[]; stat
   const filteredMetas = useMemo(() => (filtering ? metas.filter((m) => matches(m.id)) : metas), [metas, filtering, matches]);
 
   const fill = useCallback((id: string) => tileFill(mode, live.get(id), metaById.get(id)), [mode, live, metaById]);
+  const mark = useCallback((id: string) => tileMark(mode, live.get(id), metaById.get(id)), [mode, live, metaById]);
   const label = useCallback(
     (id: string) => {
       const m = metaById.get(id);
@@ -154,6 +157,7 @@ export function HouseBoard({ metas, states, generic }: { metas: RaceMeta[]; stat
 
             <HexCartogram
               fill={fill}
+              mark={mark}
               label={label}
               onHover={setHover}
               onSelect={(id) => setPinned((p) => (p === id ? null : id))}
@@ -162,13 +166,13 @@ export function HouseBoard({ metas, states, generic }: { metas: RaceMeta[]; stat
               showLabels
             />
 
-            <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] text-muted-foreground">
+            <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground">
               <Legend mode={mode} />
               <span className="tnum">
                 {filtering ? `${filteredMetas.length} of ${metas.length} districts match` : `${metas.length} districts`}
               </span>
             </div>
-            <p className="text-[11px] text-muted-foreground">{HEXMAP_ATTRIBUTION}</p>
+            <p className="text-xs text-muted-foreground">{HEXMAP_ATTRIBUTION}</p>
           </CardContent>
         </Card>
 
@@ -267,7 +271,7 @@ function BigCount({ n, called, net, label, className, right }: { n: number; call
       <div className="mt-1 text-[11px] text-muted-foreground">
         {label} · <span className="tnum">{called}</span> called
       </div>
-      <div className={cn("mt-0.5 text-xs tnum", net > 0 ? "text-live" : net < 0 ? "text-stale" : "text-muted-foreground")} title="Projected + leaning seats minus seats held before the election">
+      <div className="mt-0.5 text-xs text-muted-foreground tnum" title="Projected + leaning seats minus seats held before the election">
         {net > 0 ? "+" : ""}
         {net} vs 2024
       </div>
@@ -275,10 +279,10 @@ function BigCount({ n, called, net, label, className, right }: { n: number; call
   );
 }
 
-function Sw({ color, label }: { color: string; label: string }) {
+function Sw({ kind, label }: { kind: SwatchKind; label: string }) {
   return (
-    <span className="inline-flex items-center gap-1">
-      <span className="inline-block size-2.5 rounded-sm" style={{ background: color }} />
+    <span className="inline-flex items-center gap-1.5">
+      <Swatch kind={kind} />
       {label}
     </span>
   );
@@ -288,41 +292,44 @@ function Legend({ mode }: { mode: MapMode }) {
   switch (mode) {
     case "status":
       return (
-        <div className="flex flex-wrap gap-3">
-          <Sw color="var(--party-d)" label="D projected" />
-          <Sw color="color-mix(in oklch, var(--party-d) 50%, var(--uncalled))" label="D leaning" />
-          <Sw color="var(--uncalled)" label="Toss-up" />
-          <Sw color="color-mix(in oklch, var(--party-r) 50%, var(--uncalled))" label="R leaning" />
-          <Sw color="var(--party-r)" label="R projected" />
+        <div className="flex flex-wrap gap-x-3 gap-y-1">
+          <Sw kind="projected-d" label="D projected" />
+          <Sw kind="leading-d" label="D leads" />
+          <Sw kind="lean-d" label="Lean D, uncalled" />
+          <Sw kind="uncounted" label="Toss-up" />
+          <Sw kind="lean-r" label="Lean R, uncalled" />
+          <Sw kind="leading-r" label="R leads" />
+          <Sw kind="projected-r" label="R projected" />
         </div>
       );
     case "margin":
       return (
-        <div className="flex flex-wrap gap-3 items-center">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
           <span>Live D − R margin</span>
-          <Sw color="var(--party-r)" label="R+30" />
-          <Sw color="var(--uncalled)" label="Even" />
-          <Sw color="var(--party-d)" label="D+30" />
-          <span className="opacity-70">· grey = no votes yet</span>
+          <Sw kind="ramp-r-5" label="R+20" />
+          <Sw kind="ramp-r-1" label="R+2" />
+          <Sw kind="ramp-d-1" label="D+2" />
+          <Sw kind="ramp-d-5" label="D+20" />
+          <Sw kind="uncounted" label="No votes yet" />
         </div>
       );
     case "swing":
       return (
-        <div className="flex flex-wrap gap-3 items-center">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
           <span>Live margin minus 2024 presidential margin</span>
-          <Sw color="var(--party-r)" label="→R 15" />
-          <Sw color="var(--uncalled)" label="No swing" />
-          <Sw color="var(--party-d)" label="→D 15" />
+          <Sw kind="ramp-r-5" label="→R 10" />
+          <Sw kind="ramp-d-5" label="→D 10" />
+          <Sw kind="uncounted" label="No votes yet" />
         </div>
       );
     case "ratings":
       return (
-        <div className="flex flex-wrap gap-3">
-          <Sw color="var(--party-d)" label="Solid D" />
-          <Sw color="color-mix(in oklch, var(--party-d) 50%, var(--uncalled))" label="Lean D" />
-          <Sw color="var(--uncalled)" label="Toss-up" />
-          <Sw color="color-mix(in oklch, var(--party-r) 50%, var(--uncalled))" label="Lean R" />
-          <Sw color="var(--party-r)" label="Solid R" />
+        <div className="flex flex-wrap gap-x-3 gap-y-1">
+          <Sw kind="ramp-d-4" label="Solid D" />
+          <Sw kind="ramp-d-2" label="Lean D" />
+          <Sw kind="uncounted" label="Toss-up" />
+          <Sw kind="ramp-r-2" label="Lean R" />
+          <Sw kind="ramp-r-4" label="Solid R" />
         </div>
       );
   }

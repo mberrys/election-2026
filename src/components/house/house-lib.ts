@@ -107,35 +107,53 @@ export function partyVar(p: Party | null | undefined): string {
   return "var(--party-i)";
 }
 
-/** Mix a party colour toward the neutral "uncalled" grey; t ∈ [0,1], 1 = full party colour. */
-function mixToward(p: Party | null, t: number): string {
-  const pct = Math.round(Math.max(0, Math.min(1, t)) * 100);
-  return `color-mix(in oklch, ${partyVar(p)} ${pct}%, var(--uncalled))`;
+const RAMP_BY_STRENGTH = { solid: 4, likely: 3, lean: 2, tilt: 1 } as const;
+const HATCH = "hatch";
+
+/** Margin ramp step for a value in points, with `saturateAt` mapped onto the landslide (20+) step. */
+function rampFor(v: number, saturateAt: number): string {
+  const m = (Math.abs(v) * 30) / saturateAt; // the ramp thresholds are set on a ±30 margin scale
+  const step = m < 2 ? 1 : m < 5 ? 2 : m < 10 ? 3 : m < 20 ? 4 : 5;
+  return `var(--ramp-${v > 0 ? "d" : "r"}-${step})`;
 }
 
-const MARGIN_SATURATE_AT = 30; // points: ±30 or more renders the full party colour
+const MARGIN_SATURATE_AT = 30; // points
 const SWING_SATURATE_AT = 15;
 
-/** Diverging fill for a D−R value; null when there is nothing to show. */
+/** Diverging ramp fill for a D−R value; null (drawn hatched) when there is nothing to show. */
 export function divergingFill(v: number | undefined, saturateAt: number): string | null {
   if (v == null || Number.isNaN(v)) return null;
-  if (Math.abs(v) < 0.05) return "var(--uncalled)";
-  const t = 0.18 + 0.82 * Math.min(1, Math.abs(v) / saturateAt);
-  return mixToward(v > 0 ? "D" : "R", t);
+  if (Math.abs(v) < 0.05) return "var(--s4)";
+  return rampFor(v, saturateAt);
 }
 
+/** Consensus rating on the ramp (tilt 1 … solid 4); toss-ups hatched. */
 export function ratingFill(r: RatingCode | undefined): string | null {
   if (!r) return null;
   const lean = RATING_LEAN[r];
-  if (lean === "tossup") return "var(--uncalled)";
-  const strength = r.startsWith("solid") ? 1 : r.startsWith("likely") ? 0.72 : r.startsWith("lean") ? 0.5 : 0.32;
-  return mixToward(lean, strength);
+  if (lean === "tossup") return HATCH;
+  const step = RAMP_BY_STRENGTH[r.split("-")[0] as keyof typeof RAMP_BY_STRENGTH];
+  return `var(--ramp-${lean === "D" ? "d" : "r"}-${step})`;
 }
 
+function leaderParty(live: LiveRace | undefined): Party | undefined {
+  if (!live || live.status !== "counting" || !live.totalVotes || !live.leaderId) return undefined;
+  return live.candidates.find((c) => c.id === live.leaderId)?.party;
+}
+
+const TINT: Partial<Record<Party, string>> = { D: "var(--party-d-tint)", R: "var(--party-r-tint)" };
+
+/**
+ * Status in the Hatch grammar: projected = solid party; leading = dark party tint (the dot comes from tileMark);
+ * otherwise hatched, in the rating's party colour when it leans, neutral for toss-ups.
+ */
 export function statusFill(live: LiveRace | undefined, meta: RaceMeta | undefined): string | null {
-  const { party, called } = seatLean(live, meta);
-  if (party == null) return meta ? "var(--uncalled)" : null;
-  return called ? partyVar(party) : mixToward(party, 0.5);
+  if (live?.projection) return partyVar(live.projection.party);
+  const lead = leaderParty(live);
+  if (lead) return TINT[lead] ?? "var(--s4)";
+  const { party } = seatLean(live, meta);
+  if (party == null) return meta ? HATCH : null;
+  return party === "D" ? "hatch-d" : party === "R" ? "hatch-r" : HATCH;
 }
 
 export function tileFill(mode: MapMode, live: LiveRace | undefined, meta: RaceMeta | undefined): string | null {
@@ -149,6 +167,16 @@ export function tileFill(mode: MapMode, live: LiveRace | undefined, meta: RaceMe
     case "ratings":
       return ratingFill(meta?.ratings.consensus);
   }
+}
+
+/** Status-mode marks: a full-colour dot on a leading seat, and the old holder's colour on a flipped one. */
+export function tileMark(mode: MapMode, live: LiveRace | undefined, meta: RaceMeta | undefined): { dot?: string; flipFrom?: string } | null {
+  if (mode !== "status") return null;
+  const lead = live?.projection ? undefined : leaderParty(live);
+  const winner = live?.projection?.party;
+  const flipFrom = winner && meta?.heldBy && winner !== meta.heldBy ? partyVar(meta.heldBy) : undefined;
+  if (!lead && !flipFrom) return null;
+  return { dot: lead ? partyVar(lead) : undefined, flipFrom };
 }
 
 export function ratingRank(r: RatingCode | undefined): number {

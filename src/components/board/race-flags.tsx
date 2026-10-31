@@ -10,40 +10,44 @@ const LABEL: Record<Flag["kind"], string> = {
   advisory: "Advisory",
 };
 
-/** Small chips for litigation / set-aside ballots. Full text in the title tooltip; link to the source. */
+/** Integrity chips (amber: the one colour reserved for paused counts, litigation and set-aside ballots). */
 export function RaceFlags({ flags, className, detailed = false }: { flags?: Flag[]; className?: string; detailed?: boolean }) {
   if (!flags?.length) return null;
   if (detailed) {
     return (
       <ul className={cn("space-y-1.5", className)}>
         {flags.map((f, i) => (
-          <li key={i} className="rounded-md border border-stale/40 bg-stale/10 px-3 py-2 text-xs">
-            <span className="font-semibold text-stale">{LABEL[f.kind]}</span>
-            {f.challengedBallots ? <span className="tnum text-stale"> · ~{f.challengedBallots.toLocaleString()} ballots</span> : null}
-            <span className="text-muted-foreground">: {f.summary} </span>
-            {f.url && (
-              <a href={f.url} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-foreground">
-                Source ({f.asOf})
-              </a>
-            )}
-            {f.challengedBallots ? (
-              <div className="mt-1 text-[11px] text-muted-foreground">
-                We will not project a winner whose lead is smaller than this pool.
-              </div>
-            ) : null}
+          <li key={i} className="overflow-hidden rounded-[3px] border border-hairline bg-s2 text-sm">
+            <div aria-hidden className="hazard h-2.5" />
+            <div className="px-3 py-2">
+              <span className="font-semibold text-alert-ink">{LABEL[f.kind]}</span>
+              {f.challengedBallots ? <span className="fig text-alert-ink"> · ~{f.challengedBallots.toLocaleString()} ballots</span> : null}
+              <span className="text-muted-foreground">: {f.summary} </span>
+              {f.url && (
+                <a href={f.url} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-foreground">
+                  Source ({f.asOf})
+                </a>
+              )}
+              {f.challengedBallots ? (
+                <div className="mt-1 text-xs text-muted-foreground">
+                  We will not project a winner whose lead is smaller than this pool.
+                </div>
+              ) : null}
+            </div>
           </li>
         ))}
       </ul>
     );
   }
   return (
-    <span className={cn("inline-flex gap-1", className)}>
+    <span className={cn("inline-flex flex-wrap gap-x-2 gap-y-1", className)}>
       {flags.map((f, i) => (
         <span
           key={i}
           title={`${LABEL[f.kind]}: ${f.summary}${f.challengedBallots ? ` (~${f.challengedBallots.toLocaleString()} ballots)` : ""}`}
-          className="inline-flex items-center rounded border border-stale/50 px-1 py-px text-[11px] font-medium text-stale"
+          className="inline-flex items-center gap-1 whitespace-nowrap text-xs font-semibold text-alert-ink"
         >
+          <i aria-hidden className="inline-block h-2.5 w-2.5 bg-alert" />
           {LABEL[f.kind]}
         </span>
       ))}

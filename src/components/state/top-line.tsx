@@ -8,6 +8,7 @@ import { Card } from "@/components/ui/card";
 import { MarginDR, Num, NumberFlowGroup, Pct, Votes } from "@/components/board/num";
 import { PartyDot, RatingBadge, StatusBadge } from "@/components/board/status-badge";
 import { RaceFlags } from "@/components/board/race-flags";
+import { BBStamp } from "@/components/board/hatch";
 import { annotationsFor } from "@/data/annotations";
 import { compact, fmtMarginDR, fmtPct, nf0, partyLabel } from "@/lib/format";
 import { cn } from "@/lib/utils";
@@ -113,7 +114,12 @@ export function TopLine({ race, meta }: { race?: Race; meta?: RaceMeta }) {
                       {c.incumbent ? <span className="text-muted-foreground"> *</span> : null}
                     </span>
                     <span className="text-[11px] text-muted-foreground">{partyLabel[c.party]}</span>
-                    {isWinner && <span className="ml-auto text-[11px] font-semibold text-live">Projected</span>}
+                    {isWinner && (
+                      <span className="ml-auto inline-flex items-center gap-1 text-xs font-semibold text-foreground">
+                        <BBStamp party={c.party === "D" || c.party === "R" ? c.party : "I"} />
+                        Projected · Big Board
+                      </span>
+                    )}
                   </div>
                   <div className="mt-2 flex items-end justify-between gap-3">
                     <Votes value={c.votes} className="display text-4xl md:text-5xl font-bold leading-none" />

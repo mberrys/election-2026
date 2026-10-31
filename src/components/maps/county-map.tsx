@@ -1,17 +1,19 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useId, useMemo, useState } from "react";
 import { geoPath, type GeoPermissibleObjects } from "d3-geo";
 import { feature, mesh } from "topojson-client";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import { cn } from "@/lib/utils";
+import { HatchPattern, rampColor } from "@/components/board/hatch";
 
 type CountyProps = { name?: string };
 type Fill = (fips: string) => { fill: string; opacity?: number } | null;
 
 /**
  * SVG county choropleth for one state from us-atlas counties-10m (pre-projected Albers USA, 975×610 frame).
- * Fits the state's bounding box into the viewBox. `fill(fips)` decides color; null → uncalled gray.
+ * Fits the state's bounding box into the viewBox. `fill(fips)` decides color. The whole state sits on a hatch
+ * (uncounted), so a county with no fill stays hatched and a partly counted one lets the hatch show through its opacity.
  */
 export function CountyMap({
   stateFips,
@@ -29,6 +31,7 @@ export function CountyMap({
   topologyUrl?: string;
 }) {
   const [topo, setTopo] = useState<Topology | null>(null);
+  const hatchId = `${useId().replace(/:/g, "")}-hatch`;
   useEffect(() => {
     let alive = true;
     fetch(topologyUrl)
@@ -56,13 +59,20 @@ export function CountyMap({
         String(a.id).padStart(5, "0").startsWith(stateFips) &&
         String(b.id).padStart(5, "0").startsWith(stateFips),
     );
-    return { mine, path, viewBox: `${x0 - 2} ${y0 - 2} ${x1 - x0 + 4} ${y1 - y0 + 4}`, borders };
+    const outline = path(fc);
+    // ~110 hatch lines across the state whatever its size, so small and large states read the same.
+    const pitch = Math.max(x1 - x0, y1 - y0) / 110;
+    return { mine, path, viewBox: `${x0 - 2} ${y0 - 2} ${x1 - x0 + 4} ${y1 - y0 + 4}`, borders, outline, pitch };
   }, [topo, stateFips]);
 
   if (!geo) return <div className={cn("aspect-[4/3] w-full animate-pulse rounded-md bg-muted/40", className)} />;
 
   return (
     <svg viewBox={geo.viewBox} className={cn("w-full h-auto", className)} role="img" aria-label="County results map">
+      <defs>
+        <HatchPattern id={hatchId} pitch={geo.pitch} />
+      </defs>
+      <path d={geo.outline ?? undefined} fill={`url(#${hatchId})`} pointerEvents="none" />
       {geo.mine.map((f) => {
         const fips = String(f.id).padStart(5, "0");
         const style = fill(fips);
@@ -70,11 +80,11 @@ export function CountyMap({
           <path
             key={fips}
             d={geo.path(f as GeoPermissibleObjects) ?? undefined}
-            fill={style?.fill ?? "var(--uncalled)"}
-            fillOpacity={style?.opacity ?? (style ? 1 : 0.35)}
+            fill={style && style.fill !== "var(--uncalled)" ? style.fill : "transparent"}
+            fillOpacity={style?.opacity ?? 1}
             stroke={selected === fips ? "var(--foreground)" : "none"}
             strokeWidth={selected === fips ? 1.5 : 0}
-            className="transition-[fill,fill-opacity] duration-500 cursor-pointer hover:brightness-125"
+            className="anim-map cursor-pointer hover:brightness-125"
             onMouseEnter={() => onHover?.(fips)}
             onMouseLeave={() => onHover?.(null)}
           >
@@ -87,12 +97,12 @@ export function CountyMap({
   );
 }
 
-/** Diverging D/R color for a D−R margin in points. Saturates at ±30. */
+/**
+ * D/R margin on the 5-step ramp (tilt <2, lean 2–5, likely 5–10, safe 10–20, landslide 20+ pts).
+ * Opacity follows the share counted, so the hatch underneath shows how much of the county is still out.
+ */
 export function marginFill(marginDR: number | undefined | null, pctIn?: number) {
   if (marginDR == null || Number.isNaN(marginDR)) return null;
-  const t = Math.min(1, Math.abs(marginDR) / 30);
-  const alpha = 0.25 + 0.75 * t;
-  const base = marginDR >= 0 ? "oklch(0.56 0.17 258" : "oklch(0.58 0.2 25";
   const opacity = pctIn == null ? 1 : 0.35 + 0.65 * Math.min(1, pctIn);
-  return { fill: `${base} / ${alpha.toFixed(2)})`, opacity };
+  return { fill: rampColor(marginDR), opacity };
 }

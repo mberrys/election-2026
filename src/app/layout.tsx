@@ -1,18 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Barlow_Condensed, Geist, Geist_Mono } from "next/font/google";
+import { Archivo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { SiteHeader } from "@/components/board/site-header";
 import { SiteFooter } from "@/components/board/site-footer";
 import { SimBanner } from "@/components/board/sim-banner";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
-const barlow = Barlow_Condensed({
-  variable: "--font-barlow",
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
-});
+// Archivo for every word (variable width 62–125 for wide headings); JetBrains Mono only for figures that tick.
+const archivo = Archivo({ variable: "--font-archivo", subsets: ["latin"], axes: ["wdth"] });
+const jetbrainsMono = JetBrains_Mono({ variable: "--font-jetbrains-mono", subsets: ["latin"] });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
@@ -24,14 +20,13 @@ export const metadata: Metadata = {
   openGraph: { type: "website", siteName: "Big Board 2026" },
 };
 
-export const viewport: Viewport = { themeColor: "#161a24", colorScheme: "dark" };
+export const viewport: Viewport = { themeColor: "#07090d", colorScheme: "dark" };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`dark ${geistSans.variable} ${geistMono.variable} ${barlow.variable} h-full antialiased`}
-      style={{ ["--font-sans" as string]: "var(--font-geist-sans)" }}
+      className={`dark ${archivo.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Providers>

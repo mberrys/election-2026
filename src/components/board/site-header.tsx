@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { NavLink } from "./nav-link";
-import { LiveStatus } from "./live-status";
+import { FreshnessRail, LiveStatus } from "./live-status";
 import { HeaderBalance } from "./header-balance";
 
 const NAV = [
@@ -14,27 +14,29 @@ const NAV = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background">
-      <div className="mx-auto flex w-full max-w-[1600px] items-center gap-4 px-4 md:px-6 h-14">
-        <Link href="/" className="flex items-baseline gap-2 shrink-0">
-          <span className="display text-2xl font-800 leading-none tracking-tight">BIG BOARD</span>
-          <span className="text-[11px] tracking-[0.2em] text-muted-foreground">Midterms 2026</span>
+    <header className="z-40 border-b border-border bg-background lg:sticky lg:top-0">
+      <FreshnessRail />
+      <div className="mx-auto flex h-14 w-full max-w-[1600px] items-center gap-5 px-4 md:px-6">
+        <Link href="/" className="shrink-0" aria-label="Big Board, 2026 midterms">
+          <span className="text-[22px] font-extrabold leading-none tracking-tight" style={{ fontStretch: "125%" }}>
+            BIG BOARD
+          </span>
         </Link>
-        <nav className="hidden lg:flex items-center gap-1 text-sm">
+        <nav className="hidden items-center gap-1 text-[15px] lg:flex">
           {NAV.map((n) => (
             <NavLink key={n.href} href={n.href}>
               {n.label}
             </NavLink>
           ))}
         </nav>
-        <div className="ml-auto flex items-center gap-3">
-          <div className="hidden lg:block">
+        <div className="ml-auto flex items-center gap-4">
+          <div className="hidden xl:block">
             <HeaderBalance />
           </div>
           <LiveStatus />
         </div>
       </div>
-      <nav className="lg:hidden flex flex-wrap gap-x-1 px-4 md:px-6 pb-2 text-sm">
+      <nav className="flex flex-wrap gap-x-1 px-2 pb-1.5 text-[15px] md:px-4 lg:hidden">
         {NAV.map((n) => (
           <NavLink key={n.href} href={n.href}>
             {n.label}

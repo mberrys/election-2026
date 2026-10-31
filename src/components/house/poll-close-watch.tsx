@@ -80,7 +80,7 @@ export function PollCloseWatch({
                       <RatingBadge rating={m.ratings.consensus} className="shrink-0" />
                       <span className="ml-auto shrink-0">
                         {lr?.projection ? (
-                          <StatusBadge status="projected" party={lr.projection.party} className="h-4 px-1.5 text-[11px]" />
+                          <StatusBadge status="projected" party={lr.projection.party} />
                         ) : margin != null ? (
                           <MarginDR value={margin} />
                         ) : (

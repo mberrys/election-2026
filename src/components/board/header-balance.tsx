@@ -23,12 +23,12 @@ function Mini({ label, bop }: { label: string; bop: BalanceOfPower }) {
   const r = bop.notUp.R + bop.called.R;
   return (
     <div className="w-44">
-      <div className="flex items-baseline justify-between text-[11px] leading-none mb-1">
-        <span className="tnum font-semibold text-party-d-ink">{d}</span>
+      <div className="mb-1 flex items-baseline justify-between gap-2 text-xs leading-none">
+        <span className="fig font-semibold text-party-d-ink">{d}</span>
         <span className="text-muted-foreground">{label}</span>
-        <span className="tnum font-semibold text-party-r-ink">{r}</span>
+        <span className="fig font-semibold text-party-r-ink">{r}</span>
       </div>
-      <BalanceBar bop={bop} height={6} showMajorityTick={false} />
+      <BalanceBar bop={bop} height={5} showMajorityTick={false} />
     </div>
   );
 }
