@@ -137,7 +137,8 @@ export function lastWinQa(phrase: (who: string) => string, ansNoun: string, w: L
   const hit = w[ask];
   const alt = w[other];
   const q = phrase(ask === "d" ? "a Democrat" : "a Republican");
-  const caveat = `This covers the ${w.total} elections in the Big Board's dataset, ${w.first}–${w.last}, which may have gaps.`;
+  const twoRaces = ansNoun === "a Senate race" ? " Where a state held two Senate races in one year, only the regular election is counted." : "";
+  const caveat = `This covers the ${w.total} elections in the Big Board's dataset, ${w.first}–${w.last}, which may have gaps.${twoRaces}`;
   if (!hit) {
     return { q, a: `No ${SIDE[ask]} candidate won ${ansNoun} in the dataset.${alt ? ` The last ${SIDE[other]} win was ${alt.year} (${fmtMarginDR(alt.margin)}).` : ""} ${caveat}` };
   }

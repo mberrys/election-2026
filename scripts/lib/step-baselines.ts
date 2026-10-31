@@ -73,12 +73,15 @@ function aggregateTonmcg(csv: string): { byState: Map<string, StateAgg>; byCount
   return { byState, byCounty };
 }
 
-export async function priorFromRaceSummary(page: string, sectionRe: RegExp, year: number, label: string) {
+export async function priorFromRaceSummary(page: string, sectionRe: RegExp, year: number, label: string, opts: { requireSection?: boolean } = {}) {
   const out: Record<string, { margin: number; year: number }> = {};
   const p = await fetchWikitext(page);
   if (!p) return out;
   const text = stripComments(p.wikitext);
-  const sec = getSection(text, sectionRe) ?? text;
+  const found = getSection(text, sectionRe);
+  // With `requireSection`, a page without that section yields nothing instead of falling back to the first table anywhere.
+  if (!found && opts.requireSection) return out;
+  const sec = found ?? text;
   for (const t of parseTables(sec)) {
     for (const row of t.dataRows) {
       const st = stateAtStart(cellText(row.cells[0]));

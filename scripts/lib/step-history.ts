@@ -62,22 +62,43 @@ export function parsePresidentCsv(csv: string): PresidentParse {
   return { years: [...years].sort((a, b) => a - b), national, states };
 }
 
+/**
+ * Add `extra` margins for one election year, but only for states with no margin that year. A state that held two
+ * races in one year (a regular and a special election) keeps the regular one, so a year never holds two margins.
+ */
+export function fillMissing(out: Record<string, Series>, extra: Record<string, { margin: number }>, year: number): number {
+  let added = 0;
+  for (const [st, v] of Object.entries(extra)) {
+    if (!Number.isFinite(v.margin) || Math.abs(v.margin) > 100) continue;
+    const series = (out[st] ??= {});
+    if (String(year) in series) continue;
+    series[String(year)] = v.margin;
+    added++;
+  }
+  return added;
+}
+
 async function statewideHistory(
   kind: "senate" | "governor",
   years: number[],
   pageFor: (year: number) => string,
   sectionRe: RegExp,
+  /** Section holding specials that Wikipedia lists apart from the regular table (Senate pages from 2014 on). */
+  specialsRe?: RegExp,
 ): Promise<Record<string, Series>> {
   const out: Record<string, Series> = {};
   let covered = 0;
+  let specials = 0;
   for (const y of years) {
     const rows = await priorFromRaceSummary(pageFor(y), sectionRe, y, `${kind} ${y}`);
     const entries = Object.entries(rows).filter(([, v]) => Number.isFinite(v.margin) && Math.abs(v.margin) <= 100);
-    if (!entries.length) continue;
-    covered++;
-    for (const [st, v] of entries) (out[st] ??= {})[String(y)] = v.margin;
+    if (entries.length) {
+      covered++;
+      for (const [st, v] of entries) (out[st] ??= {})[String(y)] = v.margin;
+    }
+    if (specialsRe) specials += fillMissing(out, await priorFromRaceSummary(pageFor(y), specialsRe, y, `${kind} ${y} specials`, { requireSection: true }), y);
   }
-  info(`${kind} history: ${covered}/${years.length} election pages parsed, ${Object.keys(out).length} states`);
+  info(`${kind} history: ${covered}/${years.length} election pages parsed, ${Object.keys(out).length} states${specialsRe ? `, ${specials} special-only years added` : ""}`);
   return out;
 }
 
@@ -97,6 +118,7 @@ export async function buildHistory(races: RaceMeta[]): Promise<HistoryT | undefi
     range(SENATE_FROM + (SENATE_FROM % 2), 2024, 2),
     (y) => `${y} United States Senate elections`,
     /^Elections leading to the next Congress$/i,
+    /^Special elections during the preceding Congress$/i,
   );
   const governor = await statewideHistory(
     "governor",

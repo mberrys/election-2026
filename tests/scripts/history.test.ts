@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { parsePresidentCsv } from "../../scripts/lib/step-history";
+import { fillMissing, parsePresidentCsv } from "../../scripts/lib/step-history";
 import { pollTrend, type VoteHubPoll } from "../../scripts/lib/step-polls";
 
 const HEADER = "year,state,state_po,state_fips,state_cen,state_ic,office,candidate,party_detailed,writein,candidatevotes,totalvotes,version,notes,party_simplified";
@@ -63,5 +63,22 @@ describe("pollTrend", () => {
 
   it("returns nothing when there are too few polls", () => {
     expect(pollTrend([poll("2026-02-01", 40, 40)], pick, { minN: 3 })).toEqual([]);
+  });
+});
+
+describe("fillMissing", () => {
+  it("adds a special-election margin only for a state with no margin that year", () => {
+    const out: Record<string, Record<string, number>> = { GA: { "2020": 1.2 }, AZ: { "2018": 2.4 } };
+    const added = fillMissing(out, { GA: { margin: 2 }, AZ: { margin: 2.4 }, HI: { margin: 42.1 } }, 2020);
+    expect(added).toBe(2);
+    expect(out.GA).toEqual({ "2020": 1.2 });
+    expect(out.AZ).toEqual({ "2018": 2.4, "2020": 2.4 });
+    expect(out.HI).toEqual({ "2020": 42.1 });
+  });
+
+  it("skips margins outside the plausible range", () => {
+    const out: Record<string, Record<string, number>> = {};
+    expect(fillMissing(out, { XX: { margin: 250 }, YY: { margin: Number.NaN } }, 2022)).toBe(0);
+    expect(out).toEqual({});
   });
 });
