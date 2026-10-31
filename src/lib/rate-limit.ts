@@ -11,8 +11,9 @@ export async function allow(key: string, limit: number, windowSec: number, now =
   if (redis) {
     try {
       const k = `rl:${key}`;
-      const n = await redis.incr(k);
-      if (n === 1) await redis.expire(k, windowSec);
+      // One round trip: EXPIRE NX sets the TTL only if the key has none, so a lost request between INCR and EXPIRE
+      // can't leave a counter that never resets.
+      const [n] = await redis.pipeline().incr(k).expire(k, windowSec, "NX").exec<[number, number]>();
       return n <= limit;
     } catch {
       // Fall through to the in-memory limiter rather than failing the request.

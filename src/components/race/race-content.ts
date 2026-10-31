@@ -106,7 +106,8 @@ export function raceDescription({ meta, state }: RaceContentInput): string {
   ].filter(Boolean);
   const pres = meta.baseline.presMargin2024;
   const tail = !poll && pres !== undefined ? ` 2024 presidential margin ${fmtMarginDR(pres)}.` : "";
-  return clip(`${lead}: ${detail.join(", ")}.${tail} Candidates, rating, polls and history.`.replace(": .", "."), 300);
+  const head = detail.length ? `${lead}: ${detail.join(", ")}.` : `${lead}.`;
+  return clip(`${head}${tail} Candidates, rating, polls and history.`, 300);
 }
 
 /** Up to three short lines for the share card. */
