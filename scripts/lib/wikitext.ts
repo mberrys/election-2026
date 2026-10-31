@@ -7,7 +7,12 @@ import type { Party } from "../../src/data/schema";
 // ---------- cleanup ----------
 
 export function stripComments(s: string): string {
-  return s.replace(/<!--[\s\S]*?-->/g, "");
+  let out = s;
+  for (let prev = ""; prev !== out; ) {
+    prev = out;
+    out = out.replace(/<!--[\s\S]*?-->/g, "");
+  }
+  return out;
 }
 
 export function stripRefs(s: string): string {
@@ -114,9 +119,13 @@ export function plainText(src: string): string {
   }
   s = s.replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, "$1");
   s = s.replace(/\[https?:\/\/\S+\s+([^\]]*)\]/g, "$1").replace(/\[https?:\/\/\S+\]/g, "");
-  s = s.replace(/<br\s*\/?>/gi, " ").replace(/<[^>]+>/g, "");
+  s = s.replace(/<br\s*\/?>/gi, " ");
+  for (let prev = ""; prev !== s; ) {
+    prev = s;
+    s = s.replace(/<[^>]+>/g, "");
+  }
   s = s.replace(/'{2,}/g, "");
-  s = s.replace(/&nbsp;|&#160;/g, " ").replace(/&amp;/g, "&").replace(/&ndash;|&#8211;/g, "–").replace(/&mdash;/g, "—");
+  s = s.replace(/&nbsp;|&#160;/g, " ").replace(/&ndash;|&#8211;/g, "–").replace(/&mdash;/g, "—").replace(/&amp;/g, "&");
   return s.replace(/\s+/g, " ").trim();
 }
 

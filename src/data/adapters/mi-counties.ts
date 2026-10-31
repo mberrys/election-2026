@@ -176,9 +176,9 @@ function stripTags(s: string): string {
   return s
     .replace(/<br\s*\/?>/gi, " ")
     .replace(/<[^>]*>/g, " ")
-    .replace(/&amp;/g, "&")
     .replace(/&#39;|&apos;/g, "'")
     .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, "&")
     .replace(/\s+/g, " ")
     .trim();
 }

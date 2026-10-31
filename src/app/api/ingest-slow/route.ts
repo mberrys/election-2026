@@ -16,6 +16,7 @@ export async function GET(request: NextRequest) {
     const generic = await refreshGenericBallot();
     return jsonResponse(request, { ok: true, generic }, { profile: "none" });
   } catch (e) {
-    return jsonResponse(request, { ok: false, error: e instanceof Error ? e.message : String(e) }, { status: 502, profile: "none" });
+    console.error("ingest-slow failed", e);
+    return jsonResponse(request, { ok: false, error: "refresh failed" }, { status: 502, profile: "none" });
   }
 }

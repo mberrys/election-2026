@@ -40,8 +40,11 @@ export function setNoCache(v: boolean): void {
 const lastRequestByHost = new Map<string, number>();
 const httpDir = path.join(CACHE_DIR, "http");
 
+/** Cache key from the URL minus any api_key, so credentials never feed the hash (and rotating a key keeps the cache). */
 function cacheKey(url: string): string {
-  return crypto.createHash("sha1").update(url).digest("hex");
+  const u = new URL(url);
+  u.searchParams.delete("api_key");
+  return crypto.createHash("sha256").update(u.href).digest("hex");
 }
 
 function readCache(url: string): FetchResult | undefined {
