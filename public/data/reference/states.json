@@ -1,0 +1,479 @@
+[
+ {
+  "abbr": "AL",
+  "name": "Alabama",
+  "fips": "01",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "AK",
+  "name": "Alaska",
+  "fips": "02",
+  "pollCloseEt": "00:00/01:00",
+  "pollCloseFirstEt": "00:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "AZ",
+  "name": "Arizona",
+  "fips": "04",
+  "pollCloseEt": "21:00",
+  "voteOrder": "mixed",
+  "voteOrderNote": "Early in-person and mail received before Election Day drop by ~8pm ET; late-arriving mail counted over following days.",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "AR",
+  "name": "Arkansas",
+  "fips": "05",
+  "pollCloseEt": "20:30",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "CA",
+  "name": "California",
+  "fips": "06",
+  "pollCloseEt": "23:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "CO",
+  "name": "Colorado",
+  "fips": "08",
+  "pollCloseEt": "21:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "CT",
+  "name": "Connecticut",
+  "fips": "09",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "DE",
+  "name": "Delaware",
+  "fips": "10",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "DC",
+  "name": "District of Columbia",
+  "fips": "11",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "FL",
+  "name": "Florida",
+  "fips": "12",
+  "pollCloseEt": "19:00/20:00",
+  "pollCloseFirstEt": "19:00",
+  "voteOrder": "unknown",
+  "voteOrderNote": "Commonly early/mail first but unconfirmed for 2026 (research flagged UNVERIFIED).",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "GA",
+  "name": "Georgia",
+  "fips": "13",
+  "pollCloseEt": "19:00",
+  "voteOrder": "early-first",
+  "voteOrderNote": "Early and mail reported first; Election Day follows; blue mirage.",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "HI",
+  "name": "Hawaii",
+  "fips": "15",
+  "pollCloseEt": "00:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "ID",
+  "name": "Idaho",
+  "fips": "16",
+  "pollCloseEt": "22:00/23:00",
+  "pollCloseFirstEt": "22:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "IL",
+  "name": "Illinois",
+  "fips": "17",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "IN",
+  "name": "Indiana",
+  "fips": "18",
+  "pollCloseEt": "18:00/19:00",
+  "pollCloseFirstEt": "18:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "IA",
+  "name": "Iowa",
+  "fips": "19",
+  "pollCloseEt": "21:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "KS",
+  "name": "Kansas",
+  "fips": "20",
+  "pollCloseEt": "20:00/21:00",
+  "pollCloseFirstEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "KY",
+  "name": "Kentucky",
+  "fips": "21",
+  "pollCloseEt": "18:00/19:00",
+  "pollCloseFirstEt": "18:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "LA",
+  "name": "Louisiana",
+  "fips": "22",
+  "pollCloseEt": "21:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "ME",
+  "name": "Maine",
+  "fips": "23",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "MD",
+  "name": "Maryland",
+  "fips": "24",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "MA",
+  "name": "Massachusetts",
+  "fips": "25",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "MI",
+  "name": "Michigan",
+  "fips": "26",
+  "pollCloseEt": "20:00/21:00",
+  "pollCloseFirstEt": "20:00",
+  "voteOrder": "unknown",
+  "voteOrderNote": "2024 reporting order not confirmed (research flagged UNVERIFIED).",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "MN",
+  "name": "Minnesota",
+  "fips": "27",
+  "pollCloseEt": "21:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "MS",
+  "name": "Mississippi",
+  "fips": "28",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "MO",
+  "name": "Missouri",
+  "fips": "29",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "MT",
+  "name": "Montana",
+  "fips": "30",
+  "pollCloseEt": "22:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "NE",
+  "name": "Nebraska",
+  "fips": "31",
+  "pollCloseEt": "21:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "NV",
+  "name": "Nevada",
+  "fips": "32",
+  "pollCloseEt": "22:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "NH",
+  "name": "New Hampshire",
+  "fips": "33",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "NJ",
+  "name": "New Jersey",
+  "fips": "34",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "NM",
+  "name": "New Mexico",
+  "fips": "35",
+  "pollCloseEt": "21:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "NY",
+  "name": "New York",
+  "fips": "36",
+  "pollCloseEt": "21:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "NC",
+  "name": "North Carolina",
+  "fips": "37",
+  "pollCloseEt": "19:30",
+  "voteOrder": "early-first",
+  "voteOrderNote": "Mail/early reported first; blue mirage, later Election Day shift R.",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "ND",
+  "name": "North Dakota",
+  "fips": "38",
+  "pollCloseEt": "22:00/23:00",
+  "pollCloseFirstEt": "22:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "OH",
+  "name": "Ohio",
+  "fips": "39",
+  "pollCloseEt": "19:30",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "OK",
+  "name": "Oklahoma",
+  "fips": "40",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "OR",
+  "name": "Oregon",
+  "fips": "41",
+  "pollCloseEt": "22:00/23:00",
+  "pollCloseFirstEt": "22:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "PA",
+  "name": "Pennsylvania",
+  "fips": "42",
+  "pollCloseEt": "20:00",
+  "voteOrder": "mixed",
+  "voteOrderNote": "Mail-heavy early batches (Philadelphia, Allegheny) but big-city mail can also land late; order varies by county.",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "RI",
+  "name": "Rhode Island",
+  "fips": "44",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "SC",
+  "name": "South Carolina",
+  "fips": "45",
+  "pollCloseEt": "19:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "SD",
+  "name": "South Dakota",
+  "fips": "46",
+  "pollCloseEt": "20:00/21:00",
+  "pollCloseFirstEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "TN",
+  "name": "Tennessee",
+  "fips": "47",
+  "pollCloseEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "TX",
+  "name": "Texas",
+  "fips": "48",
+  "pollCloseEt": "20:00/21:00",
+  "pollCloseFirstEt": "20:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "UT",
+  "name": "Utah",
+  "fips": "49",
+  "pollCloseEt": "22:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "VT",
+  "name": "Vermont",
+  "fips": "50",
+  "pollCloseEt": "19:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "VA",
+  "name": "Virginia",
+  "fips": "51",
+  "pollCloseEt": "19:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "WA",
+  "name": "Washington",
+  "fips": "53",
+  "pollCloseEt": "23:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "WV",
+  "name": "West Virginia",
+  "fips": "54",
+  "pollCloseEt": "19:30",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "WI",
+  "name": "Wisconsin",
+  "fips": "55",
+  "pollCloseEt": "21:00",
+  "voteOrder": "eday-first",
+  "voteOrderNote": "Mail cannot be processed before Election Day; Milwaukee central-count absentees report late (late Democratic shift).",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ },
+ {
+  "abbr": "WY",
+  "name": "Wyoming",
+  "fips": "56",
+  "pollCloseEt": "21:00",
+  "voteOrder": "unknown",
+  "feeds": [],
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+ }
+]

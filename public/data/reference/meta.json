@@ -1,0 +1,203 @@
+{
+ "builtAt": "2026-10-31T05:09:08.030Z",
+ "args": {
+  "steps": [
+   "states",
+   "races",
+   "polls",
+   "money",
+   "baselines"
+  ],
+  "noCache": false,
+  "full": false
+ },
+ "counts": {
+  "states": 51,
+  "races": 735,
+  "senate": 35,
+  "house": 435,
+  "governor": 36,
+  "ballot": 141,
+  "stateleg": 88,
+  "candidates": 1416,
+  "ratingsCoveragePct": 100,
+  "ratingsWithAllThree": 214,
+  "fecMatchedPct": 88.6,
+  "fecMatchedCandidates": 109,
+  "fecEligibleCandidates": 123,
+  "racesWithPolls": 129,
+  "racesWithMoney": 35,
+  "counties": 3208,
+  "houseWithPresBaseline": 435,
+  "houseWithPrevMargin": 435
+ },
+ "coverage": {
+  "houseMissingMajorPartyCandidate": [
+   "house:AZ-03",
+   "house:CA-04",
+   "house:CA-06",
+   "house:CA-07",
+   "house:CA-11",
+   "house:CA-12",
+   "house:CA-14",
+   "house:CA-29",
+   "house:CA-34",
+   "house:CA-37",
+   "house:CA-40",
+   "house:FL-10",
+   "house:MA-01",
+   "house:MA-02",
+   "house:MA-05",
+   "house:MA-07",
+   "house:NJ-08",
+   "house:PA-03",
+   "house:WI-02"
+  ],
+  "houseNoCandidates": [],
+  "houseNoRating": [],
+  "rioTimes": {
+   "reachable": true,
+   "compared": 178,
+   "disagreements": 0,
+   "missingInRio": 0
+  },
+  "downballot": {
+   "fetched": true,
+   "districts": 435,
+   "statesCovered": [
+    "AK",
+    "AL",
+    "AR",
+    "AZ",
+    "CA",
+    "CO",
+    "CT",
+    "DE",
+    "FL",
+    "GA",
+    "HI",
+    "IA",
+    "ID",
+    "IL",
+    "IN",
+    "KS",
+    "KY",
+    "LA",
+    "MA",
+    "MD",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "MS",
+    "MT",
+    "NC",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NM",
+    "NV",
+    "NY",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VA",
+    "VT",
+    "WA",
+    "WI",
+    "WV",
+    "WY"
+   ],
+   "redrawnStatesCoverage": {
+    "TX": {
+     "rows": 38,
+     "has2020": 0
+    },
+    "CA": {
+     "rows": 52,
+     "has2020": 0
+    },
+    "MO": {
+     "rows": 8,
+     "has2020": 8
+    },
+    "UT": {
+     "rows": 4,
+     "has2020": 0
+    },
+    "NC": {
+     "rows": 14,
+     "has2020": 0
+    },
+    "OH": {
+     "rows": 15,
+     "has2020": 0
+    },
+    "FL": {
+     "rows": 28,
+     "has2020": 0
+    },
+    "TN": {
+     "rows": 9,
+     "has2020": 0
+    },
+    "LA": {
+     "rows": 6,
+     "has2020": 0
+    },
+    "AL": {
+     "rows": 7,
+     "has2020": 0
+    }
+   }
+  },
+  "medsl": {
+   "attempted": true,
+   "ok": false,
+   "message": "datafile 13592823 HTTP 400: {\"status\":\"ERROR\",\"message\":\"You may not download this file without the required Guestbook response for guestbookID 458.\"}"
+  },
+  "votehub": {
+   "reachable": true,
+   "status": 200,
+   "racesWithPolls": 129
+  },
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga",
+  "wikipediaRevisions": [
+   {
+    "title": "2026 United States Senate elections",
+    "revid": 1382915634
+   },
+   {
+    "title": "2026 United States gubernatorial elections",
+    "revid": 1382860978
+   },
+   {
+    "title": "2026 United States House of Representatives elections",
+    "revid": 1382821364
+   },
+   {
+    "title": "2026 United States House of Representatives election ratings",
+    "revid": 1382868346
+   },
+   {
+    "title": "2026 United States ballot measures",
+    "revid": 1382837973
+   },
+   {
+    "title": "2026 United States state legislative elections",
+    "revid": 1382284395
+   }
+  ]
+ },
+ "warnings": [
+  "MEDSL House download unavailable (datafile 13592823 HTTP 400: {\"status\":\"ERROR\",\"message\":\"You may not download this file without the required Guestbook response for guestbookID 458.\"}); falling back to Wikipedia 2024 House page"
+ ]
+}

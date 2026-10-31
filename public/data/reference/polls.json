@@ -1,0 +1,1139 @@
+{
+ "builtAt": "2026-10-31T05:09:08.320Z",
+ "generic": {
+  "riotimes": {
+   "d": 51.6,
+   "r": 42.7,
+   "margin": 8.9,
+   "asOf": "2026-10-29",
+   "method": "equal-weight mean of public averages (DDHQ, FiftyPlusOne, NBC, RCP, Silver Bulletin); stale >21d dropped",
+   "sources": [
+    {
+     "source": "Decision Desk HQ",
+     "d": 51.2,
+     "r": 41.8,
+     "margin": 9.4,
+     "updated": "2026-10-29",
+     "inAverage": true,
+     "url": "https://votes.decisiondeskhq.com/polls/generic-ballot/national/lv-rv-adults"
+    },
+    {
+     "source": "FiftyPlusOne",
+     "d": 52.2,
+     "r": 43.2,
+     "margin": 9,
+     "updated": "2026-10-29",
+     "inAverage": true,
+     "url": "https://fiftyplusone.news/polls/generic-ballot/generic-ballot"
+    },
+    {
+     "source": "NBC News",
+     "d": 52,
+     "r": 43,
+     "margin": 9,
+     "updated": "2026-10-29",
+     "inAverage": true,
+     "url": "https://www.nbcnews.com/politics/2026-elections/house-control-polls"
+    },
+    {
+     "source": "RealClearPolitics",
+     "d": 51.4,
+     "r": 43.2,
+     "margin": 8.2,
+     "updated": "2026-10-29",
+     "inAverage": true,
+     "url": "https://www.realclearpolling.com/polls/state-of-the-union/generic-congressional-vote"
+    },
+    {
+     "source": "Silver Bulletin",
+     "d": 51.2,
+     "r": 42.4,
+     "margin": 8.8,
+     "updated": "2026-10-29",
+     "inAverage": true,
+     "url": "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls"
+    }
+   ],
+   "license": "CC BY 4.0 — credit The Rio Times and link to https://www.riotimesonline.com/us-midterms-2026-data-room/"
+  },
+  "votehub": {
+   "d": 47.8,
+   "r": 40.8,
+   "n": 8,
+   "asOf": "2026-10-04",
+   "source": "VoteHub (CC BY 4.0)",
+   "windowDays": 14,
+   "pollsters": 6
+  }
+ },
+ "races": {
+  "senate:MI": {
+   "d": 48.7,
+   "r": 44.7,
+   "n": 13,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:OH-special": {
+   "d": 47.5,
+   "r": 44.3,
+   "n": 14,
+   "asOf": "2026-10-23",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:AK": {
+   "d": 48.1,
+   "r": 48.2,
+   "n": 4,
+   "asOf": "2026-10-16",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:IA": {
+   "d": 45.7,
+   "r": 46.1,
+   "n": 11,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:FL-special": {
+   "d": 43.2,
+   "r": 49.6,
+   "n": 9,
+   "asOf": "2026-10-27",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:ME": {
+   "d": 49.6,
+   "r": 46.7,
+   "n": 9,
+   "asOf": "2026-10-26",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:NC": {
+   "d": 52.4,
+   "r": 41,
+   "n": 9,
+   "asOf": "2026-10-25",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:GA": {
+   "d": 52.7,
+   "r": 43.2,
+   "n": 7,
+   "asOf": "2026-10-23",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:NH": {
+   "d": 49.5,
+   "r": 42.8,
+   "n": 4,
+   "asOf": "2026-10-20",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:MS": {
+   "d": 44.3,
+   "r": 48.7,
+   "n": 3,
+   "asOf": "2026-10-14",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:MN": {
+   "d": 45.8,
+   "r": 42.5,
+   "n": 4,
+   "asOf": "2026-10-12",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:TX": {
+   "d": 49,
+   "r": 46.5,
+   "n": 20,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:KS": {
+   "d": 49.4,
+   "r": 45.8,
+   "n": 4,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:AR": {
+   "d": 40,
+   "r": 52,
+   "n": 3,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:MT": {
+   "d": 21,
+   "r": 39.8,
+   "n": 4,
+   "asOf": "2026-10-23",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:MA": {
+   "d": 55.2,
+   "r": 28.6,
+   "n": 5,
+   "asOf": "2026-10-18",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:VA": {
+   "d": 49,
+   "r": 32.5,
+   "n": 2,
+   "asOf": "2026-06-16",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:RI": {
+   "d": 53,
+   "r": 32,
+   "n": 3,
+   "asOf": "2026-10-08",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:AL": {
+   "d": 35.8,
+   "r": 52,
+   "n": 4,
+   "asOf": "2026-10-24",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:NM": {
+   "d": 53.5,
+   "r": 37,
+   "n": 2,
+   "asOf": "2026-09-30",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:TN": {
+   "d": 31,
+   "r": 51,
+   "n": 1,
+   "asOf": "2026-08-26",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:SC": {
+   "d": 46,
+   "r": 48,
+   "n": 3,
+   "asOf": "2026-10-25",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "senate:IL": {
+   "d": 54.5,
+   "r": 40.8,
+   "n": 3,
+   "asOf": "2026-10-30",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:IA": {
+   "d": 50.9,
+   "r": 44.1,
+   "n": 11,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:GA": {
+   "d": 47.6,
+   "r": 49,
+   "n": 8,
+   "asOf": "2026-10-23",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:OH": {
+   "d": 48.3,
+   "r": 45.2,
+   "n": 13,
+   "asOf": "2026-10-23",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:TX": {
+   "d": 46.9,
+   "r": 49.3,
+   "n": 15,
+   "asOf": "2026-10-29",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:ME": {
+   "d": 49.3,
+   "r": 39.1,
+   "n": 7,
+   "asOf": "2026-10-26",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:FL": {
+   "d": 44.2,
+   "r": 48.5,
+   "n": 11,
+   "asOf": "2026-10-23",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:CT": {
+   "d": 55.5,
+   "r": 36.2,
+   "n": 5,
+   "asOf": "2026-10-12",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:NH": {
+   "d": 42,
+   "r": 49.3,
+   "n": 4,
+   "asOf": "2026-10-20",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:MN": {
+   "d": 50,
+   "r": 41.3,
+   "n": 3,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:AK": {
+   "d": 51.5,
+   "r": 42.1,
+   "n": 5,
+   "asOf": "2026-10-25",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:NV": {
+   "d": 43.4,
+   "r": 41.7,
+   "n": 3,
+   "asOf": "2026-10-25",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:WI": {
+   "d": 48.7,
+   "r": 45,
+   "n": 3,
+   "asOf": "2026-10-23",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:AZ": {
+   "d": 49.8,
+   "r": 44,
+   "n": 4,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:NE": {
+   "d": 40.3,
+   "r": 46,
+   "n": 3,
+   "asOf": "2026-10-23",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:OR": {
+   "d": 45,
+   "r": 44.3,
+   "n": 3,
+   "asOf": "2026-10-01",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:PA": {
+   "d": 56.9,
+   "r": 34.6,
+   "n": 4,
+   "asOf": "2026-10-21",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:IL": {
+   "d": 55.6,
+   "r": 36.4,
+   "n": 3,
+   "asOf": "2026-10-22",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:TN": {
+   "d": 33.7,
+   "r": 45,
+   "n": 3,
+   "asOf": "2026-10-16",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:AL": {
+   "d": 40.3,
+   "r": 49.7,
+   "n": 3,
+   "asOf": "2026-10-24",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:NY": {
+   "d": 53.3,
+   "r": 38.3,
+   "n": 5,
+   "asOf": "2026-10-19",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:MI": {
+   "d": 51.4,
+   "r": 43,
+   "n": 9,
+   "asOf": "2026-10-27",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:CA": {
+   "d": 58.5,
+   "r": 34.3,
+   "n": 4,
+   "asOf": "2026-10-25",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:RI": {
+   "d": 41.5,
+   "r": 17,
+   "n": 2,
+   "asOf": "2026-10-08",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:VT": {
+   "d": 47.5,
+   "r": 46,
+   "n": 2,
+   "asOf": "2026-10-25",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:SC": {
+   "d": 38.2,
+   "r": 49.5,
+   "n": 3,
+   "asOf": "2026-10-25",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:MD": {
+   "d": 54.5,
+   "r": 27.5,
+   "n": 2,
+   "asOf": "2026-09-27",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:NM": {
+   "d": 41,
+   "r": 24,
+   "n": 1,
+   "asOf": "2026-08-07",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:KS": {
+   "d": 46.9,
+   "r": 49.1,
+   "n": 4,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "governor:SD": {
+   "d": 40,
+   "r": 54,
+   "n": 2,
+   "asOf": "2026-10-26",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:AZ-06": {
+   "d": 45.7,
+   "r": 43.7,
+   "n": 3,
+   "asOf": "2026-06-11",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:CA-22": {
+   "d": 51,
+   "r": 44,
+   "n": 2,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:CO-03": {
+   "d": 47,
+   "r": 46,
+   "n": 1,
+   "asOf": "2026-10-21",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:FL-27": {
+   "d": 44.5,
+   "r": 46.5,
+   "n": 2,
+   "asOf": "2026-09-13",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:IA-01": {
+   "d": 41.5,
+   "r": 37,
+   "n": 2,
+   "asOf": "2026-07-16",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:ME-02": {
+   "d": 43,
+   "r": 48.5,
+   "n": 2,
+   "asOf": "2026-04-29",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:MI-04": {
+   "d": 42,
+   "r": 43.5,
+   "n": 2,
+   "asOf": "2026-03-14",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:MI-07": {
+   "d": 51,
+   "r": 46,
+   "n": 2,
+   "asOf": "2026-10-14",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NY-01": {
+   "d": 38,
+   "r": 41,
+   "n": 1,
+   "asOf": "2025-12-11",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:PA-10": {
+   "d": 47.5,
+   "r": 44,
+   "n": 2,
+   "asOf": "2026-09-20",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:TX-15": {
+   "d": 51.7,
+   "r": 43.3,
+   "n": 3,
+   "asOf": "2026-10-16",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:TX-23": {
+   "d": 43.7,
+   "r": 45,
+   "n": 3,
+   "asOf": "2026-10-07",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:VA-01": {
+   "d": 47,
+   "r": 44.7,
+   "n": 3,
+   "asOf": "2026-10-22",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:WA-03": {
+   "d": 45.3,
+   "r": 45.7,
+   "n": 3,
+   "asOf": "2026-10-21",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:WI-03": {
+   "d": 47,
+   "r": 44,
+   "n": 2,
+   "asOf": "2026-06-25",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:MT-01": {
+   "d": 48.1,
+   "r": 42.2,
+   "n": 4,
+   "asOf": "2026-10-21",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NY-04": {
+   "d": 46,
+   "r": 41,
+   "n": 1,
+   "asOf": "2026-02-17",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NE-01": {
+   "d": 45.7,
+   "r": 45.3,
+   "n": 3,
+   "asOf": "2026-10-20",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:FL-28": {
+   "d": 41,
+   "r": 45,
+   "n": 1,
+   "asOf": "2026-03-07",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NJ-07": {
+   "d": 47,
+   "r": 43,
+   "n": 1,
+   "asOf": "2026-05-26",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NY-17": {
+   "d": 48,
+   "r": 47,
+   "n": 3,
+   "asOf": "2026-09-29",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NY-18": {
+   "d": 42,
+   "r": 35,
+   "n": 1,
+   "asOf": "2026-02-17",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:PA-08": {
+   "d": 49.5,
+   "r": 46.5,
+   "n": 2,
+   "asOf": "2026-10-14",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NH-02": {
+   "d": 53.3,
+   "r": 36,
+   "n": 3,
+   "asOf": "2026-10-20",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:OH-15": {
+   "d": 44.7,
+   "r": 45,
+   "n": 3,
+   "asOf": "2026-10-12",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:PA-07": {
+   "d": 47,
+   "r": 42,
+   "n": 3,
+   "asOf": "2026-10-15",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:VA-02": {
+   "d": 47,
+   "r": 47,
+   "n": 1,
+   "asOf": "2026-07-13",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:OH-07": {
+   "d": 47,
+   "r": 40,
+   "n": 3,
+   "asOf": "2026-08-10",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:SC-01": {
+   "d": 47.5,
+   "r": 47.5,
+   "n": 2,
+   "asOf": "2026-10-22",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:IA-02": {
+   "d": 48,
+   "r": 46,
+   "n": 2,
+   "asOf": "2026-10-14",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:IL-04": {
+   "d": 34,
+   "r": 15,
+   "n": 1,
+   "asOf": "2026-08-04",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NY-21": {
+   "d": 43.3,
+   "r": 47,
+   "n": 3,
+   "asOf": "2026-10-13",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:FL-13": {
+   "d": 44,
+   "r": 46,
+   "n": 3,
+   "asOf": "2026-10-15",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:FL-22": {
+   "d": 50,
+   "r": 50,
+   "n": 1,
+   "asOf": "2026-08-12",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:AR-02": {
+   "d": 48,
+   "r": 48,
+   "n": 2,
+   "asOf": "2026-10-14",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:TX-28": {
+   "d": 49.5,
+   "r": 34,
+   "n": 2,
+   "asOf": "2026-10-13",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:TX-34": {
+   "d": 47.5,
+   "r": 42.5,
+   "n": 2,
+   "asOf": "2026-10-19",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:OH-01": {
+   "d": 47.9,
+   "r": 44.6,
+   "n": 1,
+   "asOf": "2026-08-24",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:MI-10": {
+   "d": 45,
+   "r": 45,
+   "n": 1,
+   "asOf": "2026-08-13",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:PA-01": {
+   "d": 48,
+   "r": 49,
+   "n": 1,
+   "asOf": "2026-08-23",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:TX-35": {
+   "d": 47.3,
+   "r": 46.3,
+   "n": 3,
+   "asOf": "2026-10-14",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NM-02": {
+   "d": 46,
+   "r": 43,
+   "n": 1,
+   "asOf": "2026-09-02",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:CA-48": {
+   "d": 48,
+   "r": 41.3,
+   "n": 3,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:TN-09": {
+   "d": 44,
+   "r": 48,
+   "n": 1,
+   "asOf": "2026-09-03",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NE-02": {
+   "d": 48,
+   "r": 40,
+   "n": 2,
+   "asOf": "2026-10-05",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:MN-01": {
+   "d": 45.3,
+   "r": 44.3,
+   "n": 3,
+   "asOf": "2026-10-14",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NH-01": {
+   "d": 46,
+   "r": 42,
+   "n": 2,
+   "asOf": "2026-10-20",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:MO-02": {
+   "d": 46.3,
+   "r": 44.7,
+   "n": 3,
+   "asOf": "2026-10-20",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:OH-09": {
+   "d": 48,
+   "r": 48,
+   "n": 1,
+   "asOf": "2026-09-23",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:WI-01": {
+   "d": 48,
+   "r": 47.5,
+   "n": 2,
+   "asOf": "2026-10-01",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:VA-05": {
+   "d": 46,
+   "r": 51,
+   "n": 1,
+   "asOf": "2026-09-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:UT-01": {
+   "d": 62.7,
+   "r": 21.2,
+   "n": 1,
+   "asOf": "2026-09-10",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:UT-02": {
+   "d": 34,
+   "r": 39,
+   "n": 1,
+   "asOf": "2026-09-24",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:UT-03": {
+   "d": 26.4,
+   "r": 44.5,
+   "n": 1,
+   "asOf": "2026-09-15",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:UT-04": {
+   "d": 32.9,
+   "r": 41.7,
+   "n": 1,
+   "asOf": "2026-09-17",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:AZ-01": {
+   "d": 46.7,
+   "r": 43.3,
+   "n": 2,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:FL-16": {
+   "d": 39,
+   "r": 43,
+   "n": 1,
+   "asOf": "2026-10-02",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NC-01": {
+   "d": 51,
+   "r": 41,
+   "n": 1,
+   "asOf": "2026-10-06",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:KY-06": {
+   "d": 47,
+   "r": 41,
+   "n": 4,
+   "asOf": "2026-10-20",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NM-01": {
+   "d": 53,
+   "r": 35,
+   "n": 1,
+   "asOf": "2026-10-09",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:CO-04": {
+   "d": 40,
+   "r": 45,
+   "n": 1,
+   "asOf": "2026-09-24",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NM-03": {
+   "d": 53,
+   "r": 39,
+   "n": 1,
+   "asOf": "2026-10-09",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:RI-02": {
+   "d": 52,
+   "r": 39,
+   "n": 1,
+   "asOf": "2026-10-08",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:RI-01": {
+   "d": 52,
+   "r": 33,
+   "n": 1,
+   "asOf": "2026-10-08",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:OH-10": {
+   "d": 47,
+   "r": 44,
+   "n": 1,
+   "asOf": "2026-10-13",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:FL-07": {
+   "d": 45,
+   "r": 45,
+   "n": 1,
+   "asOf": "2026-10-19",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:IN-05": {
+   "d": 45.8,
+   "r": 47.7,
+   "n": 2,
+   "asOf": "2026-10-22",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NC-09": {
+   "d": 42,
+   "r": 46,
+   "n": 1,
+   "asOf": "2026-10-20",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NV-02": {
+   "d": 44,
+   "r": 46,
+   "n": 1,
+   "asOf": "2026-10-13",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:FL-14": {
+   "d": 48,
+   "r": 43,
+   "n": 1,
+   "asOf": "2026-10-14",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NC-11": {
+   "d": 56,
+   "r": 43,
+   "n": 1,
+   "asOf": "2026-10-14",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:AZ-02": {
+   "d": 50,
+   "r": 48,
+   "n": 1,
+   "asOf": "2026-10-14",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:FL-25": {
+   "d": 47,
+   "r": 42,
+   "n": 1,
+   "asOf": "2026-10-22",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:NJ-02": {
+   "d": 40,
+   "r": 50,
+   "n": 1,
+   "asOf": "2026-10-10",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:AL-02": {
+   "d": 46,
+   "r": 48,
+   "n": 1,
+   "asOf": "2026-10-25",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:MT-02": {
+   "d": 18,
+   "r": 29,
+   "n": 1,
+   "asOf": "2026-10-21",
+   "source": "VoteHub (CC BY 4.0)"
+  },
+  "house:CA-01": {
+   "d": 54,
+   "r": 40,
+   "n": 1,
+   "asOf": "2026-10-28",
+   "source": "VoteHub (CC BY 4.0)"
+  }
+ },
+ "votehub": {
+  "reachable": true,
+  "status": 200,
+  "auth": "none required (verified from Node fetch, no key/header)",
+  "endpoints": [
+   "/polls",
+   "/polls/{id}",
+   "/subjects",
+   "/poll-types"
+  ],
+  "filters": [
+   "poll_type",
+   "subject",
+   "pollster",
+   "start_date",
+   "end_date",
+   "population"
+  ],
+  "pollTypes": [
+   "governor",
+   "us-representative",
+   "presidential-primary",
+   "us-senator",
+   "favorability",
+   "generic-ballot",
+   "mayor",
+   "proposition-50",
+   "attorney-general",
+   "approval"
+  ],
+  "subjectsSeen": {
+   "2026 Michigan": 102,
+   "2026 Ohio": 60,
+   "2026 Alaska": 30,
+   "2026 Iowa": 53,
+   "2026 Florida": 65,
+   "2026 Texas Democratic": 24,
+   "2026 Maine": 67,
+   "2026 Texas Republican": 19,
+   "2026 North Carolina": 47,
+   "2026 Illinois Democratic": 16,
+   "2026 Illinois Republican": 1,
+   "2026 Georgia": 42,
+   "2026 New Hampshire": 40,
+   "2026 Mississippi": 3,
+   "2026 Minnesota": 29,
+   "2026 Texas": 110,
+   "2026 Kansas": 13,
+   "2026 Arkansas": 5,
+   "2026 Montana": 27,
+   "2026 Massachusetts": 44,
+   "2026 Virginia": 6,
+   "2026 Rhode Island": 9,
+   "2026 Alabama": 10,
+   "2026 Idaho": 1,
+   "2026 New Mexico": 3,
+   "2026 Tennessee": 6,
+   "2026 South Carolina": 7,
+   "2026 Nebraska": 8,
+   "2026 Illinois": 6,
+   "2026 South Dakota": 6,
+   "2025 New Jersey": 39,
+   "2025 Virginia": 53,
+   "2026 Connecticut": 8,
+   "2026 Nevada": 7,
+   "2026 Wisconsin": 29,
+   "2026 Arizona": 23,
+   "2026 Oregon": 4,
+   "2026 Pennsylvania": 18,
+   "2026 New York": 24,
+   "2026 California": 9,
+   "2026 Vermont": 6,
+   "2026 Maryland": 2,
+   "2026 AK-01": 13,
+   "2026 AZ-06": 4,
+   "2026 CA-22": 3,
+   "2026 CO-03": 2,
+   "2026 FL-27": 4,
+   "2026 IA-01": 2,
+   "2026 ME-02": 6,
+   "2026 MI-04": 2,
+   "2026 MI-07": 4,
+   "2026 NY-01": 1,
+   "2026 PA-10": 4,
+   "2026 TX-15": 5,
+   "2026 TX-23": 4,
+   "2026 VA-01": 5,
+   "2026 WA-03": 4,
+   "2026 WI-03": 2,
+   "2026 MT-01": 6,
+   "2026 NY-04": 1,
+   "2026 NE-01": 4,
+   "2026 FL-28": 2,
+   "2026 NJ-07": 1,
+   "2026 NY-17": 4,
+   "2026 NY-18": 1,
+   "2026 PA-08": 2,
+   "2026 NH-02": 4,
+   "2026 VT-01": 3,
+   "2026 OH-15": 3,
+   "2026 PA-07": 3,
+   "2026 VA-02": 1,
+   "2026 CA-06": 2,
+   "2026 OH-07": 3,
+   "2026 SC-01": 2,
+   "2026 IA-02": 2,
+   "2026 IL-04": 1,
+   "2026 NY-21": 4,
+   "2026 FL-13": 3,
+   "2026 FL-22": 1,
+   "2026 AR-02": 2,
+   "2026 TX-28": 2,
+   "2026 TX-34": 2,
+   "2026 OH-01": 1,
+   "2026 MI-10": 1,
+   "2026 PA-01": 1,
+   "2026 TX-35": 3,
+   "2026 NM-02": 1,
+   "2026 CA-48": 3,
+   "2026 CA-40": 2,
+   "2026 TN-09": 1,
+   "2026 NE-02": 2,
+   "2026 MN-01": 3,
+   "2026 NH-01": 2,
+   "2026 MO-02": 3,
+   "2026 OH-09": 1,
+   "2026 WI-01": 2,
+   "2026 VA-05": 1,
+   "2026 UT-01": 1,
+   "2026 UT-02": 1,
+   "2026 UT-03": 1,
+   "2026 UT-04": 1,
+   "2026 CA-11": 2,
+   "2026 AZ-01": 2,
+   "2026 FL-16": 1,
+   "2026 NC-01": 1,
+   "2026 KY-06": 4,
+   "2026 NM-01": 1,
+   "2026 CO-04": 1,
+   "2026 NM-03": 1,
+   "2026 RI-02": 1,
+   "2026 RI-01": 1,
+   "2026 OH-10": 1,
+   "2026 FL-07": 1,
+   "2026 IN-05": 2,
+   "2026 NC-09": 1,
+   "2026 NV-02": 1,
+   "2026 SD-01": 1,
+   "2026 FL-14": 1,
+   "2026 NC-11": 1,
+   "2026 AZ-02": 1,
+   "2026 FL-25": 1,
+   "2026 NJ-02": 1,
+   "2026 CA-34": 1,
+   "2026 AL-02": 1,
+   "2026 MT-02": 1,
+   "2026 CA-01": 1
+  },
+  "note": "Beta API. /polls accepts poll_type (approval, favorability, generic-ballot, governor, us-senator, us-representative, ...) and subject ('2026 Georgia', '2026 NY-23'); race averages here are simple means over the last 30 days (min 3 polls), excluding internals. Primary-subject polls ('2026 Texas Republican') ignored. Observed: start_date/end_date/limit/page/offset/sort parameters are ignored (same 547-row generic list returned); no auth or rate-limit headers seen."
+ },
+ "riotimes": {
+  "reachable": true,
+  "status": 200,
+  "updated": "2026-10-30T23:51:02Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+  "raceTitle": "Governor - Statewide Results",
+  "Reporting": "2.5% (588 of 23,860) precincts reporting",
+  "ReportingTime": "October 30, 2026, 4:39 p.m.",
+  "candidates": [
+    {
+      "Name": "Xavier Becerra",
+      "Party": "Dem",
+      "Votes": "1,125",
+      "Percent": "53.6",
+      "incumbent": false
+    },
+    {
+      "Name": "Steve Hilton",
+      "Party": "Rep",
+      "Votes": "972",
+      "Percent": "46.4",
+      "incumbent": false
+    }
+  ]
+}

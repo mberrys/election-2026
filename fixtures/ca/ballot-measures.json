@@ -1,0 +1,119 @@
+{
+  "raceTitle": "Ballot Measures - Statewide Results",
+  "Reporting": "2.5% (588 of 23,860) precincts reporting",
+  "ReportingTime": "October 30, 2026, 4:39 p.m.",
+  "ballot-measures": [
+    {
+      "Name": "Authorizes Bonds For Housing Affordability Programs. Legislative Statute.",
+      "Number": "01",
+      "yesVotes": "1414",
+      "yesPercent": "61.7",
+      "noVotes": "878",
+      "noPercent": "38.3"
+    },
+    {
+      "Name": "Increases State's Rainy Day Fund. Legislative Constitutional Amendment.",
+      "Number": "02",
+      "yesVotes": "1011",
+      "yesPercent": "45.9",
+      "noVotes": "1194",
+      "noPercent": "54.1"
+    },
+    {
+      "Name": "Provides Permanent Funding For Schools And Health Care By Extending Existing Tax On High Incomes. Initiative Constitutional Amendment.",
+      "Number": "03",
+      "yesVotes": "1679",
+      "yesPercent": "74.4",
+      "noVotes": "577",
+      "noPercent": "25.6"
+    },
+    {
+      "Name": "Repeals Prohibition Against Public Funding Of Election Campaigns. Legislative Statute.",
+      "Number": "04",
+      "yesVotes": "875",
+      "yesPercent": "37.5",
+      "noVotes": "1459",
+      "noPercent": "62.5"
+    },
+    {
+      "Name": "Changes Recall Election Process For Statewide Officers. Legislative Constitutional Amendment.",
+      "Number": "05",
+      "yesVotes": "1243",
+      "yesPercent": "55.3",
+      "noVotes": "1004",
+      "noPercent": "44.7"
+    },
+    {
+      "Name": "Creates Loan Program For Middle-Income Buyers Of Qualified New Homes. Initiative Statute.",
+      "Number": "37",
+      "yesVotes": "1103",
+      "yesPercent": "47.4",
+      "noVotes": "1225",
+      "noPercent": "52.6"
+    },
+    {
+      "Name": "Authorizes Bonds For Immunology Medical Research. Initiative Statute.",
+      "Number": "38",
+      "yesVotes": "1176",
+      "yesPercent": "52.0",
+      "noVotes": "1086",
+      "noPercent": "48.0"
+    },
+    {
+      "Name": "Prohibits Citizens From Voting Unless They Present Government-Issued Identification. Initiative Constitutional Amendment.",
+      "Number": "39",
+      "yesVotes": "780",
+      "yesPercent": "34.1",
+      "noVotes": "1509",
+      "noPercent": "65.9"
+    },
+    {
+      "Name": "Imposes One-Time Tax On Certain Taxpayers. Initiative Constitutional Amendment And Statute.",
+      "Number": "40",
+      "yesVotes": "1343",
+      "yesPercent": "57.1",
+      "noVotes": "1011",
+      "noPercent": "42.9"
+    },
+    {
+      "Name": "Prohibits New State Taxes That Exclude Revenues From State Spending Limit. Requires Audits For New State Special Taxes. Initiative Constitutional Amendment.",
+      "Number": "41",
+      "yesVotes": "1317",
+      "yesPercent": "55.5",
+      "noVotes": "1055",
+      "noPercent": "44.5"
+    },
+    {
+      "Name": "Prohibits New State Personal Property Taxes And Certain Retroactive State Taxes. Initiative Constitutional Amendment.",
+      "Number": "42",
+      "yesVotes": "1244",
+      "yesPercent": "52.3",
+      "noVotes": "1134",
+      "noPercent": "47.7"
+    },
+    {
+      "Name": "Limits Voters' Ability To Raise Revenues For Local Government Services. Legislative Constitutional Amendment.",
+      "Number": "43",
+      "yesVotes": "1354",
+      "yesPercent": "59.4",
+      "noVotes": "927",
+      "noPercent": "40.6"
+    },
+    {
+      "Name": "Requires Community Health Clinics Spend 90% Of Revenue On Program Services. Initiative Statute.",
+      "Number": "44",
+      "yesVotes": "1504",
+      "yesPercent": "64.2",
+      "noVotes": "837",
+      "noPercent": "35.8"
+    },
+    {
+      "Name": "Modifies Environmental Review For Certain Projects. Initiative Statute.",
+      "Number": "45",
+      "yesVotes": "1529",
+      "yesPercent": "66.0",
+      "noVotes": "789",
+      "noPercent": "34.0"
+    }
+  ]
+}

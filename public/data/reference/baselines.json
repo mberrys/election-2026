@@ -1,0 +1,6704 @@
+{
+ "builtAt": "2026-10-31T05:09:08.352Z",
+ "states": {
+  "AL": {
+   "presMargin2024": -30.59,
+   "presMargin2020": -25.46,
+   "turnout2024": 2256352,
+   "turnout2020": 2323304
+  },
+  "AK": {
+   "presMargin2024": -13.8,
+   "presMargin2020": -9.32,
+   "turnout2024": 324097,
+   "turnout2020": 391346
+  },
+  "AZ": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "turnout2024": 3389319,
+   "turnout2020": 3387326
+  },
+  "AR": {
+   "presMargin2024": -30.64,
+   "presMargin2020": -27.62,
+   "turnout2024": 1182676,
+   "turnout2020": 1219069
+  },
+  "CA": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536,
+   "turnout2020": 17495906
+  },
+  "CO": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873,
+   "turnout2020": 3256953
+  },
+  "CT": {
+   "presMargin2024": 14.51,
+   "presMargin2020": 20.03,
+   "turnout2024": 1758429,
+   "turnout2020": 1824280
+  },
+  "DE": {
+   "presMargin2024": 14.74,
+   "presMargin2020": 18.98,
+   "turnout2024": 511697,
+   "turnout2020": 504010
+  },
+  "DC": {
+   "presMargin2024": 83.81,
+   "presMargin2020": 86.75,
+   "turnout2024": 325869,
+   "turnout2020": 344356
+  },
+  "FL": {
+   "presMargin2024": -13.1,
+   "presMargin2020": -3.36,
+   "turnout2024": 10893547,
+   "turnout2020": 11067456
+  },
+  "GA": {
+   "presMargin2024": -2.19,
+   "presMargin2020": 0.24,
+   "turnout2024": 5250047,
+   "turnout2020": 4997716
+  },
+  "HI": {
+   "presMargin2024": 23.1,
+   "presMargin2020": 29.46,
+   "turnout2024": 516701,
+   "turnout2020": 574469
+  },
+  "ID": {
+   "presMargin2024": -36.5,
+   "presMargin2020": -30.77,
+   "turnout2024": 904812,
+   "turnout2020": 868105
+  },
+  "IL": {
+   "presMargin2024": 10.98,
+   "presMargin2020": 16.97,
+   "turnout2024": 5592368,
+   "turnout2020": 6038850
+  },
+  "IN": {
+   "presMargin2024": -18.98,
+   "presMargin2020": -16.07,
+   "turnout2024": 2933700,
+   "turnout2020": 3033198
+  },
+  "IA": {
+   "presMargin2024": -13.26,
+   "presMargin2020": -8.2,
+   "turnout2024": 1656849,
+   "turnout2020": 1690871
+  },
+  "KS": {
+   "presMargin2024": -16.12,
+   "presMargin2020": -14.78,
+   "turnout2024": 1327591,
+   "turnout2020": 1349567
+  },
+  "KY": {
+   "presMargin2024": -30.55,
+   "presMargin2020": -25.94,
+   "turnout2024": 2073309,
+   "turnout2020": 2136768
+  },
+  "LA": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "turnout2024": 2006975,
+   "turnout2020": 2148062
+  },
+  "ME": {
+   "presMargin2024": 6.94,
+   "presMargin2020": 8.67,
+   "turnout2024": 831375,
+   "turnout2020": 813740
+  },
+  "MD": {
+   "presMargin2024": 28.75,
+   "presMargin2020": 33.21,
+   "turnout2024": 3015650,
+   "turnout2020": 3037030
+  },
+  "MA": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437,
+   "turnout2020": 3631402
+  },
+  "MI": {
+   "presMargin2024": -1.41,
+   "presMargin2020": 2.78,
+   "turnout2024": 5662504,
+   "turnout2020": 5539302
+  },
+  "MN": {
+   "presMargin2024": 4.26,
+   "presMargin2020": 7.11,
+   "turnout2024": 3240916,
+   "turnout2020": 3277171
+  },
+  "MS": {
+   "presMargin2024": -22.89,
+   "presMargin2020": -16.53,
+   "turnout2024": 1228008,
+   "turnout2020": 1315178
+  },
+  "MO": {
+   "presMargin2024": -18.42,
+   "presMargin2020": -15.39,
+   "turnout2024": 2993596,
+   "turnout2020": 3025962
+  },
+  "MT": {
+   "presMargin2024": -19.93,
+   "presMargin2020": -16.31,
+   "turnout2024": 602963,
+   "turnout2020": 605750
+  },
+  "NE": {
+   "presMargin2024": -20.57,
+   "presMargin2020": -19.06,
+   "turnout2024": 947159,
+   "turnout2020": 956379
+  },
+  "NV": {
+   "presMargin2024": -3.1,
+   "presMargin2020": 2.39,
+   "turnout2024": 1484840,
+   "turnout2020": 1405376
+  },
+  "NH": {
+   "presMargin2024": 2.79,
+   "presMargin2020": 7.37,
+   "turnout2024": 822153,
+   "turnout2020": 804430
+  },
+  "NJ": {
+   "presMargin2024": 5.91,
+   "presMargin2020": 15.89,
+   "turnout2024": 4272725,
+   "turnout2020": 4564234
+  },
+  "NM": {
+   "presMargin2024": 6,
+   "presMargin2020": 10.79,
+   "turnout2024": 923403,
+   "turnout2020": 923965
+  },
+  "NY": {
+   "presMargin2024": 12.69,
+   "presMargin2020": 23.14,
+   "turnout2024": 8198094,
+   "turnout2020": 8616205
+  },
+  "NC": {
+   "presMargin2024": -3.22,
+   "presMargin2020": -1.35,
+   "turnout2024": 5679647,
+   "turnout2020": 5524801
+  },
+  "ND": {
+   "presMargin2024": -36.76,
+   "presMargin2020": -33.36,
+   "turnout2024": 365059,
+   "turnout2020": 361819
+  },
+  "OH": {
+   "presMargin2024": -11.21,
+   "presMargin2020": -8.03,
+   "turnout2024": 5765017,
+   "turnout2020": 5922202
+  },
+  "OK": {
+   "presMargin2024": -34.26,
+   "presMargin2020": -33.09,
+   "turnout2024": 1566173,
+   "turnout2020": 1560699
+  },
+  "OR": {
+   "presMargin2024": 14.39,
+   "presMargin2020": 16.09,
+   "turnout2024": 2207592,
+   "turnout2020": 2374321
+  },
+  "PA": {
+   "presMargin2024": -1.71,
+   "presMargin2020": 1.18,
+   "turnout2024": 7034206,
+   "turnout2020": 6925255
+  },
+  "RI": {
+   "presMargin2024": 13.85,
+   "presMargin2020": 20.6,
+   "turnout2024": 510659,
+   "turnout2020": 516383
+  },
+  "SC": {
+   "presMargin2024": -17.87,
+   "presMargin2020": -11.68,
+   "turnout2024": 2548140,
+   "turnout2020": 2513329
+  },
+  "SD": {
+   "presMargin2024": -29.19,
+   "presMargin2020": -26.16,
+   "turnout2024": 428922,
+   "turnout2020": 422609
+  },
+  "TN": {
+   "presMargin2024": -29.72,
+   "presMargin2020": -23.21,
+   "turnout2024": 3063942,
+   "turnout2020": 3053851
+  },
+  "TX": {
+   "presMargin2024": -13.69,
+   "presMargin2020": -5.58,
+   "turnout2024": 11380105,
+   "turnout2020": 11317911
+  },
+  "UT": {
+   "presMargin2024": -21.59,
+   "presMargin2020": -20.48,
+   "turnout2024": 1487951,
+   "turnout2020": 1488289
+  },
+  "VT": {
+   "presMargin2024": 31.77,
+   "presMargin2020": 35.41,
+   "turnout2024": 366389,
+   "turnout2020": 367428
+  },
+  "VA": {
+   "presMargin2024": 5.81,
+   "presMargin2020": 10.11,
+   "turnout2024": 4482576,
+   "turnout2020": 4460524
+  },
+  "WA": {
+   "presMargin2024": 18.34,
+   "presMargin2020": 19.2,
+   "turnout2024": 3898835,
+   "turnout2020": 4087631
+  },
+  "WV": {
+   "presMargin2024": -41.87,
+   "presMargin2020": -38.94,
+   "turnout2024": 762390,
+   "turnout2020": 794652
+  },
+  "WI": {
+   "presMargin2024": -0.86,
+   "presMargin2020": 0.62,
+   "turnout2024": 3415213,
+   "turnout2020": 3297352
+  },
+  "WY": {
+   "presMargin2024": -46.22,
+   "presMargin2020": -43.38,
+   "turnout2024": 266353,
+   "turnout2020": 276765
+  }
+ },
+ "races": {
+  "senate:FL-special": {
+   "presMargin2024": -13.1,
+   "presMargin2020": -3.36,
+   "prevRaceMargin": -16.4,
+   "prevRaceYear": 2022,
+   "turnout2024": 10893547
+  },
+  "senate:OH-special": {
+   "presMargin2024": -11.21,
+   "presMargin2020": -8.03,
+   "prevRaceMargin": -6.1,
+   "prevRaceYear": 2022,
+   "turnout2024": 5765017
+  },
+  "senate:AL": {
+   "presMargin2024": -30.59,
+   "presMargin2020": -25.46,
+   "prevRaceMargin": -20.4,
+   "prevRaceYear": 2020,
+   "turnout2024": 2256352
+  },
+  "senate:AK": {
+   "presMargin2024": -13.8,
+   "presMargin2020": -9.32,
+   "prevRaceMargin": -53.9,
+   "prevRaceYear": 2020,
+   "turnout2024": 324097
+  },
+  "senate:AR": {
+   "presMargin2024": -30.64,
+   "presMargin2020": -27.62,
+   "prevRaceMargin": -66.5,
+   "prevRaceYear": 2020,
+   "turnout2024": 1182676
+  },
+  "senate:CO": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "prevRaceMargin": 9.3,
+   "prevRaceYear": 2020,
+   "turnout2024": 3190873
+  },
+  "senate:DE": {
+   "presMargin2024": 14.74,
+   "presMargin2020": 18.98,
+   "prevRaceMargin": 21.5,
+   "prevRaceYear": 2020,
+   "turnout2024": 511697
+  },
+  "senate:GA": {
+   "presMargin2024": -2.19,
+   "presMargin2020": 0.24,
+   "prevRaceMargin": 1.2,
+   "prevRaceYear": 2020,
+   "turnout2024": 5250047
+  },
+  "senate:ID": {
+   "presMargin2024": -36.5,
+   "presMargin2020": -30.77,
+   "prevRaceMargin": -29.3,
+   "prevRaceYear": 2020,
+   "turnout2024": 904812
+  },
+  "senate:IL": {
+   "presMargin2024": 10.98,
+   "presMargin2020": 16.97,
+   "prevRaceMargin": 16,
+   "prevRaceYear": 2020,
+   "turnout2024": 5592368
+  },
+  "senate:IA": {
+   "presMargin2024": -13.26,
+   "presMargin2020": -8.2,
+   "prevRaceMargin": -6.6,
+   "prevRaceYear": 2020,
+   "turnout2024": 1656849
+  },
+  "senate:KS": {
+   "presMargin2024": -16.12,
+   "presMargin2020": -14.78,
+   "prevRaceMargin": -11.4,
+   "prevRaceYear": 2020,
+   "turnout2024": 1327591
+  },
+  "senate:KY": {
+   "presMargin2024": -30.55,
+   "presMargin2020": -25.94,
+   "prevRaceMargin": -19.6,
+   "prevRaceYear": 2020,
+   "turnout2024": 2073309
+  },
+  "senate:LA": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "prevRaceMargin": -40.3,
+   "prevRaceYear": 2020,
+   "turnout2024": 2006975
+  },
+  "senate:ME": {
+   "presMargin2024": 6.94,
+   "presMargin2020": 8.67,
+   "prevRaceMargin": -8.6,
+   "prevRaceYear": 2020,
+   "turnout2024": 831375
+  },
+  "senate:MA": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "prevRaceMargin": 33.2,
+   "prevRaceYear": 2020,
+   "turnout2024": 3453437
+  },
+  "senate:MI": {
+   "presMargin2024": -1.41,
+   "presMargin2020": 2.78,
+   "prevRaceMargin": 1.7,
+   "prevRaceYear": 2020,
+   "turnout2024": 5662504
+  },
+  "senate:MN": {
+   "presMargin2024": 4.26,
+   "presMargin2020": 7.11,
+   "prevRaceMargin": 5.3,
+   "prevRaceYear": 2020,
+   "turnout2024": 3240916
+  },
+  "senate:MS": {
+   "presMargin2024": -22.89,
+   "presMargin2020": -16.53,
+   "prevRaceMargin": -10,
+   "prevRaceYear": 2020,
+   "turnout2024": 1228008
+  },
+  "senate:MT": {
+   "presMargin2024": -19.93,
+   "presMargin2020": -16.31,
+   "prevRaceMargin": -10,
+   "prevRaceYear": 2020,
+   "turnout2024": 602963
+  },
+  "senate:NE": {
+   "presMargin2024": -20.57,
+   "presMargin2020": -19.06,
+   "prevRaceMargin": -38.3,
+   "prevRaceYear": 2020,
+   "turnout2024": 947159
+  },
+  "senate:NH": {
+   "presMargin2024": 2.79,
+   "presMargin2020": 7.37,
+   "prevRaceMargin": 15.7,
+   "prevRaceYear": 2020,
+   "turnout2024": 822153
+  },
+  "senate:NJ": {
+   "presMargin2024": 5.91,
+   "presMargin2020": 15.89,
+   "prevRaceMargin": 16.3,
+   "prevRaceYear": 2020,
+   "turnout2024": 4272725
+  },
+  "senate:NM": {
+   "presMargin2024": 6,
+   "presMargin2020": 10.79,
+   "prevRaceMargin": 6.1,
+   "prevRaceYear": 2020,
+   "turnout2024": 923403
+  },
+  "senate:NC": {
+   "presMargin2024": -3.22,
+   "presMargin2020": -1.35,
+   "prevRaceMargin": -1.8,
+   "prevRaceYear": 2020,
+   "turnout2024": 5679647
+  },
+  "senate:OK": {
+   "presMargin2024": -34.26,
+   "presMargin2020": -33.09,
+   "prevRaceMargin": -30.1,
+   "prevRaceYear": 2020,
+   "turnout2024": 1566173
+  },
+  "senate:OR": {
+   "presMargin2024": 14.39,
+   "presMargin2020": 16.09,
+   "prevRaceMargin": 17.6,
+   "prevRaceYear": 2020,
+   "turnout2024": 2207592
+  },
+  "senate:RI": {
+   "presMargin2024": 13.85,
+   "presMargin2020": 20.6,
+   "prevRaceMargin": 33.2,
+   "prevRaceYear": 2020,
+   "turnout2024": 510659
+  },
+  "senate:SC": {
+   "presMargin2024": -17.87,
+   "presMargin2020": -11.68,
+   "prevRaceMargin": -10.3,
+   "prevRaceYear": 2020,
+   "turnout2024": 2548140
+  },
+  "senate:SD": {
+   "presMargin2024": -29.19,
+   "presMargin2020": -26.16,
+   "prevRaceMargin": -31.4,
+   "prevRaceYear": 2020,
+   "turnout2024": 428922
+  },
+  "senate:TN": {
+   "presMargin2024": -29.72,
+   "presMargin2020": -23.21,
+   "prevRaceMargin": -27,
+   "prevRaceYear": 2020,
+   "turnout2024": 3063942
+  },
+  "senate:TX": {
+   "presMargin2024": -13.69,
+   "presMargin2020": -5.58,
+   "prevRaceMargin": -9.6,
+   "prevRaceYear": 2020,
+   "turnout2024": 11380105
+  },
+  "senate:VA": {
+   "presMargin2024": 5.81,
+   "presMargin2020": 10.11,
+   "prevRaceMargin": 12.1,
+   "prevRaceYear": 2020,
+   "turnout2024": 4482576
+  },
+  "senate:WV": {
+   "presMargin2024": -41.87,
+   "presMargin2020": -38.94,
+   "prevRaceMargin": -43.3,
+   "prevRaceYear": 2020,
+   "turnout2024": 762390
+  },
+  "senate:WY": {
+   "presMargin2024": -46.22,
+   "presMargin2020": -43.38,
+   "prevRaceMargin": -46.2,
+   "prevRaceYear": 2020,
+   "turnout2024": 266353
+  },
+  "governor:AL": {
+   "presMargin2024": -30.59,
+   "presMargin2020": -25.46,
+   "prevRaceMargin": -37.7,
+   "prevRaceYear": 2022,
+   "turnout2024": 2256352
+  },
+  "governor:AK": {
+   "presMargin2024": -13.8,
+   "presMargin2020": -9.32,
+   "prevRaceMargin": -26.1,
+   "prevRaceYear": 2022,
+   "turnout2024": 324097
+  },
+  "governor:AZ": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "prevRaceMargin": 0.6,
+   "prevRaceYear": 2022,
+   "turnout2024": 3389319
+  },
+  "governor:AR": {
+   "presMargin2024": -30.64,
+   "presMargin2020": -27.62,
+   "prevRaceMargin": -27.8,
+   "prevRaceYear": 2022,
+   "turnout2024": 1182676
+  },
+  "governor:CA": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "prevRaceMargin": 18.4,
+   "prevRaceYear": 2022,
+   "turnout2024": 15862536
+  },
+  "governor:CO": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "prevRaceMargin": 19.3,
+   "prevRaceYear": 2022,
+   "turnout2024": 3190873
+  },
+  "governor:CT": {
+   "presMargin2024": 14.51,
+   "presMargin2020": 20.03,
+   "prevRaceMargin": 12.9,
+   "prevRaceYear": 2022,
+   "turnout2024": 1758429
+  },
+  "governor:FL": {
+   "presMargin2024": -13.1,
+   "presMargin2020": -3.36,
+   "prevRaceMargin": -19.4,
+   "prevRaceYear": 2022,
+   "turnout2024": 10893547
+  },
+  "governor:GA": {
+   "presMargin2024": -2.19,
+   "presMargin2020": 0.24,
+   "prevRaceMargin": -7.5,
+   "prevRaceYear": 2022,
+   "turnout2024": 5250047
+  },
+  "governor:HI": {
+   "presMargin2024": 23.1,
+   "presMargin2020": 29.46,
+   "prevRaceMargin": 26.4,
+   "prevRaceYear": 2022,
+   "turnout2024": 516701
+  },
+  "governor:ID": {
+   "presMargin2024": -36.5,
+   "presMargin2020": -30.77,
+   "prevRaceMargin": -40.2,
+   "prevRaceYear": 2022,
+   "turnout2024": 904812
+  },
+  "governor:IL": {
+   "presMargin2024": 10.98,
+   "presMargin2020": 16.97,
+   "prevRaceMargin": 12.5,
+   "prevRaceYear": 2022,
+   "turnout2024": 5592368
+  },
+  "governor:IA": {
+   "presMargin2024": -13.26,
+   "presMargin2020": -8.2,
+   "prevRaceMargin": -18.5,
+   "prevRaceYear": 2022,
+   "turnout2024": 1656849
+  },
+  "governor:KS": {
+   "presMargin2024": -16.12,
+   "presMargin2020": -14.78,
+   "prevRaceMargin": 2.2,
+   "prevRaceYear": 2022,
+   "turnout2024": 1327591
+  },
+  "governor:ME": {
+   "presMargin2024": 6.94,
+   "presMargin2020": 8.67,
+   "prevRaceMargin": 13.3,
+   "prevRaceYear": 2022,
+   "turnout2024": 831375
+  },
+  "governor:MD": {
+   "presMargin2024": 28.75,
+   "presMargin2020": 33.21,
+   "prevRaceMargin": 32.4,
+   "prevRaceYear": 2022,
+   "turnout2024": 3015650
+  },
+  "governor:MA": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "prevRaceMargin": 29.1,
+   "prevRaceYear": 2022,
+   "turnout2024": 3453437
+  },
+  "governor:MI": {
+   "presMargin2024": -1.41,
+   "presMargin2020": 2.78,
+   "prevRaceMargin": 10.6,
+   "prevRaceYear": 2022,
+   "turnout2024": 5662504
+  },
+  "governor:MN": {
+   "presMargin2024": 4.26,
+   "presMargin2020": 7.11,
+   "prevRaceMargin": 7.7,
+   "prevRaceYear": 2022,
+   "turnout2024": 3240916
+  },
+  "governor:NE": {
+   "presMargin2024": -20.57,
+   "presMargin2020": -19.06,
+   "prevRaceMargin": -23.4,
+   "prevRaceYear": 2022,
+   "turnout2024": 947159
+  },
+  "governor:NV": {
+   "presMargin2024": -3.1,
+   "presMargin2020": 2.39,
+   "prevRaceMargin": -1.5,
+   "prevRaceYear": 2022,
+   "turnout2024": 1484840
+  },
+  "governor:NH": {
+   "presMargin2024": 2.79,
+   "presMargin2020": 7.37,
+   "prevRaceMargin": -9.3,
+   "prevRaceYear": 2024,
+   "turnout2024": 822153
+  },
+  "governor:NM": {
+   "presMargin2024": 6,
+   "presMargin2020": 10.79,
+   "prevRaceMargin": 6.4,
+   "prevRaceYear": 2022,
+   "turnout2024": 923403
+  },
+  "governor:NY": {
+   "presMargin2024": 12.69,
+   "presMargin2020": 23.14,
+   "prevRaceMargin": 6.4,
+   "prevRaceYear": 2022,
+   "turnout2024": 8198094
+  },
+  "governor:OH": {
+   "presMargin2024": -11.21,
+   "presMargin2020": -8.03,
+   "prevRaceMargin": -25,
+   "prevRaceYear": 2022,
+   "turnout2024": 5765017
+  },
+  "governor:OK": {
+   "presMargin2024": -34.26,
+   "presMargin2020": -33.09,
+   "prevRaceMargin": -13.6,
+   "prevRaceYear": 2022,
+   "turnout2024": 1566173
+  },
+  "governor:OR": {
+   "presMargin2024": 14.39,
+   "presMargin2020": 16.09,
+   "prevRaceMargin": 3.4,
+   "prevRaceYear": 2022,
+   "turnout2024": 2207592
+  },
+  "governor:PA": {
+   "presMargin2024": -1.71,
+   "presMargin2020": 1.18,
+   "prevRaceMargin": 14.8,
+   "prevRaceYear": 2022,
+   "turnout2024": 7034206
+  },
+  "governor:RI": {
+   "presMargin2024": 13.85,
+   "presMargin2020": 20.6,
+   "prevRaceMargin": 19,
+   "prevRaceYear": 2022,
+   "turnout2024": 510659
+  },
+  "governor:SC": {
+   "presMargin2024": -17.87,
+   "presMargin2020": -11.68,
+   "prevRaceMargin": -17.4,
+   "prevRaceYear": 2022,
+   "turnout2024": 2548140
+  },
+  "governor:SD": {
+   "presMargin2024": -29.19,
+   "presMargin2020": -26.16,
+   "prevRaceMargin": -26.8,
+   "prevRaceYear": 2022,
+   "turnout2024": 428922
+  },
+  "governor:TN": {
+   "presMargin2024": -29.72,
+   "presMargin2020": -23.21,
+   "prevRaceMargin": -32,
+   "prevRaceYear": 2022,
+   "turnout2024": 3063942
+  },
+  "governor:TX": {
+   "presMargin2024": -13.69,
+   "presMargin2020": -5.58,
+   "prevRaceMargin": -10.9,
+   "prevRaceYear": 2022,
+   "turnout2024": 11380105
+  },
+  "governor:VT": {
+   "presMargin2024": 31.77,
+   "presMargin2020": 35.41,
+   "prevRaceMargin": -51.6,
+   "prevRaceYear": 2024,
+   "turnout2024": 366389
+  },
+  "governor:WI": {
+   "presMargin2024": -0.86,
+   "presMargin2020": 0.62,
+   "prevRaceMargin": 3.4,
+   "prevRaceYear": 2022,
+   "turnout2024": 3415213
+  },
+  "governor:WY": {
+   "presMargin2024": -46.22,
+   "presMargin2020": -43.38,
+   "prevRaceMargin": -58.3,
+   "prevRaceYear": 2022,
+   "turnout2024": 266353
+  },
+  "house:AL-01": {
+   "presMargin2024": -36,
+   "prevRaceMargin": -57,
+   "prevRaceYear": 2024
+  },
+  "house:AL-02": {
+   "presMargin2024": -15,
+   "prevRaceMargin": 9.2,
+   "prevRaceYear": 2024
+  },
+  "house:AL-03": {
+   "presMargin2024": -47,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:AL-04": {
+   "presMargin2024": -67,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:AL-05": {
+   "presMargin2024": -29,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:AL-06": {
+   "presMargin2024": -35,
+   "prevRaceMargin": -40.8,
+   "prevRaceYear": 2024
+  },
+  "house:AL-07": {
+   "presMargin2024": 17,
+   "prevRaceMargin": 27.4,
+   "prevRaceYear": 2024
+  },
+  "house:AK-AL": {
+   "presMargin2024": -14,
+   "presMargin2020": -10,
+   "prevRaceMargin": -2.4,
+   "prevRaceYear": 2024
+  },
+  "house:AZ-01": {
+   "presMargin2024": -3,
+   "presMargin2020": 1,
+   "prevRaceMargin": -3.8,
+   "prevRaceYear": 2024
+  },
+  "house:AZ-02": {
+   "presMargin2024": -15,
+   "presMargin2020": -8,
+   "prevRaceMargin": -9,
+   "prevRaceYear": 2024
+  },
+  "house:AZ-03": {
+   "presMargin2024": 40,
+   "presMargin2020": 51,
+   "prevRaceMargin": 44.3,
+   "prevRaceYear": 2024
+  },
+  "house:AZ-04": {
+   "presMargin2024": 7,
+   "presMargin2020": 10,
+   "prevRaceMargin": 7.2,
+   "prevRaceYear": 2024
+  },
+  "house:AZ-05": {
+   "presMargin2024": -20,
+   "presMargin2020": -16,
+   "prevRaceMargin": -20.8,
+   "prevRaceYear": 2024
+  },
+  "house:AZ-06": {
+   "presMargin2024": -1,
+   "presMargin2020": 0,
+   "prevRaceMargin": -2.5,
+   "prevRaceYear": 2024
+  },
+  "house:AZ-07": {
+   "presMargin2024": 22,
+   "presMargin2020": 33,
+   "prevRaceMargin": 26.8,
+   "prevRaceYear": 2024
+  },
+  "house:AZ-08": {
+   "presMargin2024": -17,
+   "presMargin2020": -13,
+   "prevRaceMargin": -13,
+   "prevRaceYear": 2024
+  },
+  "house:AZ-09": {
+   "presMargin2024": -31,
+   "presMargin2020": -26,
+   "prevRaceMargin": -30.6,
+   "prevRaceYear": 2024
+  },
+  "house:AR-01": {
+   "presMargin2024": -46,
+   "presMargin2020": -41,
+   "prevRaceMargin": -48.9,
+   "prevRaceYear": 2024
+  },
+  "house:AR-02": {
+   "presMargin2024": -16,
+   "presMargin2020": -13,
+   "prevRaceMargin": -17.8,
+   "prevRaceYear": 2024
+  },
+  "house:AR-03": {
+   "presMargin2024": -25,
+   "presMargin2020": -23,
+   "prevRaceMargin": -32,
+   "prevRaceYear": 2024
+  },
+  "house:AR-04": {
+   "presMargin2024": -40,
+   "presMargin2020": -35,
+   "prevRaceMargin": -45.8,
+   "prevRaceYear": 2024
+  },
+  "house:CA-01": {
+   "presMargin2024": 12,
+   "prevRaceMargin": -30.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-02": {
+   "presMargin2024": 25,
+   "prevRaceMargin": 43.8,
+   "prevRaceYear": 2024
+  },
+  "house:CA-03": {
+   "presMargin2024": 10,
+   "prevRaceMargin": -11,
+   "prevRaceYear": 2024
+  },
+  "house:CA-04": {
+   "presMargin2024": 15,
+   "prevRaceMargin": 33,
+   "prevRaceYear": 2024
+  },
+  "house:CA-05": {
+   "presMargin2024": -21,
+   "prevRaceMargin": -23.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-06": {
+   "presMargin2024": 9,
+   "prevRaceMargin": 15.2,
+   "prevRaceYear": 2024
+  },
+  "house:CA-07": {
+   "presMargin2024": 13,
+   "prevRaceMargin": 33.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-08": {
+   "presMargin2024": 34,
+   "prevRaceMargin": 48,
+   "prevRaceYear": 2024
+  },
+  "house:CA-09": {
+   "presMargin2024": 11,
+   "prevRaceMargin": 3.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-10": {
+   "presMargin2024": 33,
+   "prevRaceMargin": 33,
+   "prevRaceYear": 2024
+  },
+  "house:CA-11": {
+   "presMargin2024": 68,
+   "prevRaceMargin": 62,
+   "prevRaceYear": 2024
+  },
+  "house:CA-12": {
+   "presMargin2024": 74,
+   "prevRaceMargin": 65.4,
+   "prevRaceYear": 2024
+  },
+  "house:CA-13": {
+   "presMargin2024": 1,
+   "prevRaceMargin": 0.1,
+   "prevRaceYear": 2024
+  },
+  "house:CA-14": {
+   "presMargin2024": 34,
+   "prevRaceMargin": 35.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-15": {
+   "presMargin2024": 48,
+   "prevRaceMargin": 46.2,
+   "prevRaceYear": 2024
+  },
+  "house:CA-16": {
+   "presMargin2024": 48,
+   "prevRaceMargin": 58.2,
+   "prevRaceYear": 2024
+  },
+  "house:CA-17": {
+   "presMargin2024": 39,
+   "prevRaceMargin": 35.4,
+   "prevRaceYear": 2024
+  },
+  "house:CA-18": {
+   "presMargin2024": 29,
+   "prevRaceMargin": 29.2,
+   "prevRaceYear": 2024
+  },
+  "house:CA-19": {
+   "presMargin2024": 34,
+   "prevRaceMargin": 38.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-20": {
+   "presMargin2024": -32,
+   "prevRaceMargin": -65.1,
+   "prevRaceYear": 2024
+  },
+  "house:CA-21": {
+   "presMargin2024": 6,
+   "prevRaceMargin": 5.2,
+   "prevRaceYear": 2024
+  },
+  "house:CA-22": {
+   "presMargin2024": -2,
+   "prevRaceMargin": -6.8,
+   "prevRaceYear": 2024
+  },
+  "house:CA-23": {
+   "presMargin2024": -19,
+   "prevRaceMargin": -20.2,
+   "prevRaceYear": 2024
+  },
+  "house:CA-24": {
+   "presMargin2024": 25,
+   "prevRaceMargin": 25.4,
+   "prevRaceYear": 2024
+  },
+  "house:CA-25": {
+   "presMargin2024": 6,
+   "prevRaceMargin": 12.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-26": {
+   "presMargin2024": 15,
+   "prevRaceMargin": 12.2,
+   "prevRaceYear": 2024
+  },
+  "house:CA-27": {
+   "presMargin2024": 9,
+   "prevRaceMargin": 2.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-28": {
+   "presMargin2024": 25,
+   "prevRaceMargin": 29.8,
+   "prevRaceYear": 2024
+  },
+  "house:CA-29": {
+   "presMargin2024": 33,
+   "prevRaceMargin": 39.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-30": {
+   "presMargin2024": 40,
+   "prevRaceMargin": 36.8,
+   "prevRaceYear": 2024
+  },
+  "house:CA-31": {
+   "presMargin2024": 13,
+   "prevRaceMargin": 19.4,
+   "prevRaceYear": 2024
+  },
+  "house:CA-32": {
+   "presMargin2024": 25,
+   "prevRaceMargin": 32.4,
+   "prevRaceYear": 2024
+  },
+  "house:CA-33": {
+   "presMargin2024": 9,
+   "prevRaceMargin": 17.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-34": {
+   "presMargin2024": 51,
+   "prevRaceMargin": 55.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-35": {
+   "presMargin2024": 7,
+   "prevRaceMargin": 16.8,
+   "prevRaceYear": 2024
+  },
+  "house:CA-36": {
+   "presMargin2024": 39,
+   "prevRaceMargin": 37.4,
+   "prevRaceYear": 2024
+  },
+  "house:CA-37": {
+   "presMargin2024": 61,
+   "prevRaceMargin": 78.3,
+   "prevRaceYear": 2024
+  },
+  "house:CA-38": {
+   "presMargin2024": 13,
+   "prevRaceMargin": 19.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-39": {
+   "presMargin2024": 9,
+   "prevRaceMargin": 13.4,
+   "prevRaceYear": 2024
+  },
+  "house:CA-40": {
+   "presMargin2024": -13,
+   "prevRaceMargin": -10.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-41": {
+   "presMargin2024": 15,
+   "prevRaceMargin": -3.4,
+   "prevRaceYear": 2024
+  },
+  "house:CA-42": {
+   "presMargin2024": 13,
+   "prevRaceMargin": 36.2,
+   "prevRaceYear": 2024
+  },
+  "house:CA-43": {
+   "presMargin2024": 49,
+   "prevRaceMargin": 50.2,
+   "prevRaceYear": 2024
+  },
+  "house:CA-44": {
+   "presMargin2024": 35,
+   "prevRaceMargin": 42.8,
+   "prevRaceYear": 2024
+  },
+  "house:CA-45": {
+   "presMargin2024": 4,
+   "prevRaceMargin": 0.2,
+   "prevRaceYear": 2024
+  },
+  "house:CA-46": {
+   "presMargin2024": 17,
+   "prevRaceMargin": 26.8,
+   "prevRaceYear": 2024
+  },
+  "house:CA-47": {
+   "presMargin2024": 10,
+   "prevRaceMargin": 2.8,
+   "prevRaceYear": 2024
+  },
+  "house:CA-48": {
+   "presMargin2024": 3,
+   "prevRaceMargin": -18.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-49": {
+   "presMargin2024": 13,
+   "prevRaceMargin": 4.4,
+   "prevRaceYear": 2024
+  },
+  "house:CA-50": {
+   "presMargin2024": 19,
+   "prevRaceMargin": 28.6,
+   "prevRaceYear": 2024
+  },
+  "house:CA-51": {
+   "presMargin2024": 19,
+   "prevRaceMargin": 21.4,
+   "prevRaceYear": 2024
+  },
+  "house:CA-52": {
+   "presMargin2024": 17,
+   "prevRaceMargin": 32.6,
+   "prevRaceYear": 2024
+  },
+  "house:CO-01": {
+   "presMargin2024": 56,
+   "presMargin2020": 62,
+   "prevRaceMargin": 55,
+   "prevRaceYear": 2024
+  },
+  "house:CO-02": {
+   "presMargin2024": 40,
+   "presMargin2020": 40,
+   "prevRaceMargin": 39.5,
+   "prevRaceYear": 2024
+  },
+  "house:CO-03": {
+   "presMargin2024": -10,
+   "presMargin2020": -8,
+   "prevRaceMargin": -5,
+   "prevRaceYear": 2024
+  },
+  "house:CO-04": {
+   "presMargin2024": -18,
+   "presMargin2020": -19,
+   "prevRaceMargin": -11.6,
+   "prevRaceYear": 2024
+  },
+  "house:CO-05": {
+   "presMargin2024": -9,
+   "presMargin2020": -10,
+   "prevRaceMargin": -13.8,
+   "prevRaceYear": 2024
+  },
+  "house:CO-06": {
+   "presMargin2024": 19,
+   "presMargin2020": 24,
+   "prevRaceMargin": 20.5,
+   "prevRaceYear": 2024
+  },
+  "house:CO-07": {
+   "presMargin2024": 15,
+   "presMargin2020": 14,
+   "prevRaceMargin": 14.1,
+   "prevRaceYear": 2024
+  },
+  "house:CO-08": {
+   "presMargin2024": -2,
+   "presMargin2020": 5,
+   "prevRaceMargin": -0.8,
+   "prevRaceYear": 2024
+  },
+  "house:CT-01": {
+   "presMargin2024": 23,
+   "presMargin2020": 28,
+   "prevRaceMargin": 28.3,
+   "prevRaceYear": 2024
+  },
+  "house:CT-02": {
+   "presMargin2024": 8,
+   "presMargin2020": 12,
+   "prevRaceMargin": 16,
+   "prevRaceYear": 2024
+  },
+  "house:CT-03": {
+   "presMargin2024": 14,
+   "presMargin2020": 19,
+   "prevRaceMargin": 17.8,
+   "prevRaceYear": 2024
+  },
+  "house:CT-04": {
+   "presMargin2024": 23,
+   "presMargin2020": 31,
+   "prevRaceMargin": 23.8,
+   "prevRaceYear": 2024
+  },
+  "house:CT-05": {
+   "presMargin2024": 6,
+   "presMargin2020": 11,
+   "prevRaceMargin": 6.8,
+   "prevRaceYear": 2024
+  },
+  "house:DE-AL": {
+   "presMargin2024": 15,
+   "presMargin2020": 19,
+   "prevRaceMargin": 15.8,
+   "prevRaceYear": 2024
+  },
+  "house:FL-01": {
+   "presMargin2024": -37,
+   "prevRaceMargin": -32,
+   "prevRaceYear": 2024
+  },
+  "house:FL-02": {
+   "presMargin2024": -18,
+   "prevRaceMargin": -23.2,
+   "prevRaceYear": 2024
+  },
+  "house:FL-03": {
+   "presMargin2024": -21,
+   "prevRaceMargin": -23.2,
+   "prevRaceYear": 2024
+  },
+  "house:FL-04": {
+   "presMargin2024": -11,
+   "prevRaceMargin": -14.6,
+   "prevRaceYear": 2024
+  },
+  "house:FL-05": {
+   "presMargin2024": -21,
+   "prevRaceMargin": -26.2,
+   "prevRaceYear": 2024
+  },
+  "house:FL-06": {
+   "presMargin2024": -30,
+   "prevRaceMargin": -33,
+   "prevRaceYear": 2024
+  },
+  "house:FL-07": {
+   "presMargin2024": -13,
+   "prevRaceMargin": -13,
+   "prevRaceYear": 2024
+  },
+  "house:FL-08": {
+   "presMargin2024": -17,
+   "prevRaceMargin": -24.4,
+   "prevRaceYear": 2024
+  },
+  "house:FL-09": {
+   "presMargin2024": -17,
+   "prevRaceMargin": 12.5,
+   "prevRaceYear": 2024
+  },
+  "house:FL-10": {
+   "presMargin2024": 24,
+   "prevRaceMargin": 24.8,
+   "prevRaceYear": 2024
+  },
+  "house:FL-11": {
+   "presMargin2024": -15,
+   "prevRaceMargin": -20.8,
+   "prevRaceYear": 2024
+  },
+  "house:FL-12": {
+   "presMargin2024": -15,
+   "prevRaceMargin": -42,
+   "prevRaceYear": 2024
+  },
+  "house:FL-13": {
+   "presMargin2024": -13,
+   "prevRaceMargin": -9.6,
+   "prevRaceYear": 2024
+  },
+  "house:FL-14": {
+   "presMargin2024": -11,
+   "prevRaceMargin": 15.3,
+   "prevRaceYear": 2024
+  },
+  "house:FL-15": {
+   "presMargin2024": -20,
+   "prevRaceMargin": -12.4,
+   "prevRaceYear": 2024
+  },
+  "house:FL-16": {
+   "presMargin2024": -13,
+   "prevRaceMargin": -19,
+   "prevRaceYear": 2024
+  },
+  "house:FL-17": {
+   "presMargin2024": -22,
+   "prevRaceMargin": -27.8,
+   "prevRaceYear": 2024
+  },
+  "house:FL-18": {
+   "presMargin2024": -17,
+   "prevRaceMargin": -30.6,
+   "prevRaceYear": 2024
+  },
+  "house:FL-19": {
+   "presMargin2024": -30,
+   "prevRaceMargin": -32.6,
+   "prevRaceYear": 2024
+  },
+  "house:FL-20": {
+   "presMargin2024": 37,
+   "prevRaceMargin": 100,
+   "prevRaceYear": 2024
+  },
+  "house:FL-21": {
+   "presMargin2024": -16,
+   "prevRaceMargin": -23.6,
+   "prevRaceYear": 2024
+  },
+  "house:FL-22": {
+   "presMargin2024": -11,
+   "prevRaceMargin": 10,
+   "prevRaceYear": 2024
+  },
+  "house:FL-23": {
+   "presMargin2024": 13,
+   "prevRaceMargin": 4.8,
+   "prevRaceYear": 2024
+  },
+  "house:FL-24": {
+   "presMargin2024": 39,
+   "prevRaceMargin": 36.4,
+   "prevRaceYear": 2024
+  },
+  "house:FL-25": {
+   "presMargin2024": -9,
+   "prevRaceMargin": 9,
+   "prevRaceYear": 2024
+  },
+  "house:FL-26": {
+   "presMargin2024": -19,
+   "prevRaceMargin": -41.8,
+   "prevRaceYear": 2024
+  },
+  "house:FL-27": {
+   "presMargin2024": -15,
+   "prevRaceMargin": -20.8,
+   "prevRaceYear": 2024
+  },
+  "house:FL-28": {
+   "presMargin2024": -25,
+   "prevRaceMargin": -29.2,
+   "prevRaceYear": 2024
+  },
+  "house:GA-01": {
+   "presMargin2024": -16,
+   "presMargin2020": -13,
+   "prevRaceMargin": -24,
+   "prevRaceYear": 2024
+  },
+  "house:GA-02": {
+   "presMargin2024": 8,
+   "presMargin2020": 11,
+   "prevRaceMargin": 12.6,
+   "prevRaceYear": 2024
+  },
+  "house:GA-03": {
+   "presMargin2024": -30,
+   "presMargin2020": -30,
+   "prevRaceMargin": -32.6,
+   "prevRaceYear": 2024
+  },
+  "house:GA-04": {
+   "presMargin2024": 53,
+   "presMargin2020": 57,
+   "prevRaceMargin": 51.2,
+   "prevRaceYear": 2024
+  },
+  "house:GA-05": {
+   "presMargin2024": 71,
+   "presMargin2020": 73,
+   "prevRaceMargin": 71.4,
+   "prevRaceYear": 2024
+  },
+  "house:GA-06": {
+   "presMargin2024": 50,
+   "presMargin2020": 49,
+   "prevRaceMargin": 49.4,
+   "prevRaceYear": 2024
+  },
+  "house:GA-07": {
+   "presMargin2024": -22,
+   "presMargin2020": -19,
+   "prevRaceMargin": -29.8,
+   "prevRaceYear": 2024
+  },
+  "house:GA-08": {
+   "presMargin2024": -30,
+   "presMargin2020": -27,
+   "prevRaceMargin": -37.8,
+   "prevRaceYear": 2024
+  },
+  "house:GA-09": {
+   "presMargin2024": -34,
+   "presMargin2020": -32,
+   "prevRaceMargin": -38,
+   "prevRaceYear": 2024
+  },
+  "house:GA-10": {
+   "presMargin2024": -21,
+   "presMargin2020": -21,
+   "prevRaceMargin": -26.2,
+   "prevRaceYear": 2024
+  },
+  "house:GA-11": {
+   "presMargin2024": -23,
+   "presMargin2020": -22,
+   "prevRaceMargin": -34.6,
+   "prevRaceYear": 2024
+  },
+  "house:GA-12": {
+   "presMargin2024": -14,
+   "presMargin2020": -10,
+   "prevRaceMargin": -20.6,
+   "prevRaceYear": 2024
+  },
+  "house:GA-13": {
+   "presMargin2024": 43,
+   "presMargin2020": 41,
+   "prevRaceMargin": 43.6,
+   "prevRaceYear": 2024
+  },
+  "house:GA-14": {
+   "presMargin2024": -37,
+   "presMargin2020": -37,
+   "prevRaceMargin": -28.8,
+   "prevRaceYear": 2024
+  },
+  "house:HI-01": {
+   "presMargin2024": 25,
+   "presMargin2020": 30,
+   "prevRaceMargin": 43.6,
+   "prevRaceYear": 2024
+  },
+  "house:HI-02": {
+   "presMargin2024": 22,
+   "presMargin2020": 30,
+   "prevRaceMargin": 36.3,
+   "prevRaceYear": 2024
+  },
+  "house:ID-01": {
+   "presMargin2024": -45,
+   "presMargin2020": -38,
+   "prevRaceMargin": -45.6,
+   "prevRaceYear": 2024
+  },
+  "house:ID-02": {
+   "presMargin2024": -27,
+   "presMargin2020": -23,
+   "prevRaceMargin": -30.4,
+   "prevRaceYear": 2024
+  },
+  "house:IL-01": {
+   "presMargin2024": 32,
+   "presMargin2020": 42,
+   "prevRaceMargin": 31.8,
+   "prevRaceYear": 2024
+  },
+  "house:IL-02": {
+   "presMargin2024": 33,
+   "presMargin2020": 40,
+   "prevRaceMargin": 35.2,
+   "prevRaceYear": 2024
+  },
+  "house:IL-03": {
+   "presMargin2024": 31,
+   "presMargin2020": 42,
+   "prevRaceMargin": 34.6,
+   "prevRaceYear": 2024
+  },
+  "house:IL-04": {
+   "presMargin2024": 28,
+   "presMargin2020": 46,
+   "prevRaceMargin": 40.2,
+   "prevRaceYear": 2024
+  },
+  "house:IL-05": {
+   "presMargin2024": 37,
+   "presMargin2020": 40,
+   "prevRaceMargin": 38,
+   "prevRaceYear": 2024
+  },
+  "house:IL-06": {
+   "presMargin2024": 5,
+   "presMargin2020": 11,
+   "prevRaceMargin": 8.4,
+   "prevRaceYear": 2024
+  },
+  "house:IL-07": {
+   "presMargin2024": 65,
+   "presMargin2020": 73,
+   "prevRaceMargin": 66.6,
+   "prevRaceYear": 2024
+  },
+  "house:IL-08": {
+   "presMargin2024": 7,
+   "presMargin2020": 16,
+   "prevRaceMargin": 14.2,
+   "prevRaceYear": 2024
+  },
+  "house:IL-09": {
+   "presMargin2024": 37,
+   "presMargin2020": 42,
+   "prevRaceMargin": 36.8,
+   "prevRaceYear": 2024
+  },
+  "house:IL-10": {
+   "presMargin2024": 22,
+   "presMargin2020": 26,
+   "prevRaceMargin": 20,
+   "prevRaceYear": 2024
+  },
+  "house:IL-11": {
+   "presMargin2024": 11,
+   "presMargin2020": 16,
+   "prevRaceMargin": 11.2,
+   "prevRaceYear": 2024
+  },
+  "house:IL-12": {
+   "presMargin2024": -43,
+   "presMargin2020": -43,
+   "prevRaceMargin": -48.4,
+   "prevRaceYear": 2024
+  },
+  "house:IL-13": {
+   "presMargin2024": 10,
+   "presMargin2020": 11,
+   "prevRaceMargin": 16.2,
+   "prevRaceYear": 2024
+  },
+  "house:IL-14": {
+   "presMargin2024": 5,
+   "presMargin2020": 12,
+   "prevRaceMargin": 10.2,
+   "prevRaceYear": 2024
+  },
+  "house:IL-15": {
+   "presMargin2024": -40,
+   "presMargin2020": -38,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:IL-16": {
+   "presMargin2024": -23,
+   "presMargin2020": -22,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:IL-17": {
+   "presMargin2024": 5,
+   "presMargin2020": 8,
+   "prevRaceMargin": 8.8,
+   "prevRaceYear": 2024
+  },
+  "house:IN-01": {
+   "presMargin2024": 0,
+   "presMargin2020": 8,
+   "prevRaceMargin": 8.5,
+   "prevRaceYear": 2024
+  },
+  "house:IN-02": {
+   "presMargin2024": -26,
+   "presMargin2020": -22,
+   "prevRaceMargin": -28.1,
+   "prevRaceYear": 2024
+  },
+  "house:IN-03": {
+   "presMargin2024": -31,
+   "presMargin2020": -30,
+   "prevRaceMargin": -33.6,
+   "prevRaceYear": 2024
+  },
+  "house:IN-04": {
+   "presMargin2024": -30,
+   "presMargin2020": -29,
+   "prevRaceMargin": -33.9,
+   "prevRaceYear": 2024
+  },
+  "house:IN-05": {
+   "presMargin2024": -16,
+   "presMargin2020": -16,
+   "prevRaceMargin": -18.6,
+   "prevRaceYear": 2024
+  },
+  "house:IN-06": {
+   "presMargin2024": -32,
+   "presMargin2020": -32,
+   "prevRaceMargin": -32.2,
+   "prevRaceYear": 2024
+  },
+  "house:IN-07": {
+   "presMargin2024": 42,
+   "presMargin2020": 42,
+   "prevRaceMargin": 39.3,
+   "prevRaceYear": 2024
+  },
+  "house:IN-08": {
+   "presMargin2024": -36,
+   "presMargin2020": -33,
+   "prevRaceMargin": -38.5,
+   "prevRaceYear": 2024
+  },
+  "house:IN-09": {
+   "presMargin2024": -30,
+   "presMargin2020": -28,
+   "prevRaceMargin": -31.7,
+   "prevRaceYear": 2024
+  },
+  "house:IA-01": {
+   "presMargin2024": -9,
+   "presMargin2020": -3,
+   "prevRaceMargin": -0.2,
+   "prevRaceYear": 2024
+  },
+  "house:IA-02": {
+   "presMargin2024": -10,
+   "presMargin2020": -4,
+   "prevRaceMargin": -15.5,
+   "prevRaceYear": 2024
+  },
+  "house:IA-03": {
+   "presMargin2024": -5,
+   "presMargin2020": 0,
+   "prevRaceMargin": -3.8,
+   "prevRaceYear": 2024
+  },
+  "house:IA-04": {
+   "presMargin2024": -31,
+   "presMargin2020": -26,
+   "prevRaceMargin": -34.4,
+   "prevRaceYear": 2024
+  },
+  "house:KS-01": {
+   "presMargin2024": -32,
+   "presMargin2020": -30,
+   "prevRaceMargin": -38.2,
+   "prevRaceYear": 2024
+  },
+  "house:KS-02": {
+   "presMargin2024": -20,
+   "presMargin2020": -16,
+   "prevRaceMargin": -18.9,
+   "prevRaceYear": 2024
+  },
+  "house:KS-03": {
+   "presMargin2024": 4,
+   "presMargin2020": 4,
+   "prevRaceMargin": 10.8,
+   "prevRaceYear": 2024
+  },
+  "house:KS-04": {
+   "presMargin2024": -23,
+   "presMargin2020": -22,
+   "prevRaceMargin": -30,
+   "prevRaceYear": 2024
+  },
+  "house:KY-01": {
+   "presMargin2024": -47,
+   "presMargin2020": -43,
+   "prevRaceMargin": -49.4,
+   "prevRaceYear": 2024
+  },
+  "house:KY-02": {
+   "presMargin2024": -41,
+   "presMargin2020": -37,
+   "prevRaceMargin": -46.2,
+   "prevRaceYear": 2024
+  },
+  "house:KY-03": {
+   "presMargin2024": 19,
+   "presMargin2020": 22,
+   "prevRaceMargin": 24,
+   "prevRaceYear": 2024
+  },
+  "house:KY-04": {
+   "presMargin2024": -36,
+   "presMargin2020": -32,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:KY-05": {
+   "presMargin2024": -64,
+   "presMargin2020": -59,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:KY-06": {
+   "presMargin2024": -15,
+   "presMargin2020": -11,
+   "prevRaceMargin": -26.8,
+   "prevRaceYear": 2024
+  },
+  "house:LA-01": {
+   "presMargin2024": -38,
+   "prevRaceMargin": -42.8,
+   "prevRaceYear": 2024
+  },
+  "house:LA-02": {
+   "presMargin2024": 48,
+   "prevRaceMargin": 46.7,
+   "prevRaceYear": 2024
+  },
+  "house:LA-03": {
+   "presMargin2024": -36,
+   "prevRaceMargin": -51.9,
+   "prevRaceYear": 2024
+  },
+  "house:LA-04": {
+   "presMargin2024": -35,
+   "prevRaceMargin": -85.8,
+   "prevRaceYear": 2024
+  },
+  "house:LA-05": {
+   "presMargin2024": -34,
+   "prevRaceMargin": -37,
+   "prevRaceYear": 2024
+  },
+  "house:LA-06": {
+   "presMargin2024": -30,
+   "prevRaceMargin": 13.1,
+   "prevRaceYear": 2024
+  },
+  "house:ME-01": {
+   "presMargin2024": 22,
+   "presMargin2020": 23,
+   "prevRaceMargin": 22.3,
+   "prevRaceYear": 2024
+  },
+  "house:ME-02": {
+   "presMargin2024": -10,
+   "presMargin2020": -7,
+   "prevRaceMargin": 0.6,
+   "prevRaceYear": 2024
+  },
+  "house:MD-01": {
+   "presMargin2024": -17,
+   "presMargin2020": -14,
+   "prevRaceMargin": -22,
+   "prevRaceYear": 2024
+  },
+  "house:MD-02": {
+   "presMargin2024": 18,
+   "presMargin2020": 20,
+   "prevRaceMargin": 18.7,
+   "prevRaceYear": 2024
+  },
+  "house:MD-03": {
+   "presMargin2024": 23,
+   "presMargin2020": 26,
+   "prevRaceMargin": 21.4,
+   "prevRaceYear": 2024
+  },
+  "house:MD-04": {
+   "presMargin2024": 73,
+   "presMargin2020": 81,
+   "prevRaceMargin": 77.2,
+   "prevRaceYear": 2024
+  },
+  "house:MD-05": {
+   "presMargin2024": 34,
+   "presMargin2020": 36,
+   "prevRaceMargin": 35.8,
+   "prevRaceYear": 2024
+  },
+  "house:MD-06": {
+   "presMargin2024": 6,
+   "presMargin2020": 10,
+   "prevRaceMargin": 6.4,
+   "prevRaceYear": 2024
+  },
+  "house:MD-07": {
+   "presMargin2024": 59,
+   "presMargin2020": 64,
+   "prevRaceMargin": 63.1,
+   "prevRaceYear": 2024
+  },
+  "house:MD-08": {
+   "presMargin2024": 57,
+   "presMargin2020": 63,
+   "prevRaceMargin": 56.3,
+   "prevRaceYear": 2024
+  },
+  "house:MA-01": {
+   "presMargin2024": 14,
+   "presMargin2020": 22,
+   "prevRaceMargin": 62.6,
+   "prevRaceYear": 2024
+  },
+  "house:MA-02": {
+   "presMargin2024": 24,
+   "presMargin2020": 30,
+   "prevRaceMargin": 68.8,
+   "prevRaceYear": 2024
+  },
+  "house:MA-03": {
+   "presMargin2024": 19,
+   "presMargin2020": 28,
+   "prevRaceMargin": 100,
+   "prevRaceYear": 2024
+  },
+  "house:MA-04": {
+   "presMargin2024": 20,
+   "presMargin2020": 28,
+   "prevRaceMargin": 100,
+   "prevRaceYear": 2024
+  },
+  "house:MA-05": {
+   "presMargin2024": 45,
+   "presMargin2020": 51,
+   "prevRaceMargin": 100,
+   "prevRaceYear": 2024
+  },
+  "house:MA-06": {
+   "presMargin2024": 20,
+   "presMargin2020": 28,
+   "prevRaceMargin": 100,
+   "prevRaceYear": 2024
+  },
+  "house:MA-07": {
+   "presMargin2024": 63,
+   "presMargin2020": 73,
+   "prevRaceMargin": 100,
+   "prevRaceYear": 2024
+  },
+  "house:MA-08": {
+   "presMargin2024": 26,
+   "presMargin2020": 36,
+   "prevRaceMargin": 41,
+   "prevRaceYear": 2024
+  },
+  "house:MA-09": {
+   "presMargin2024": 11,
+   "presMargin2020": 18,
+   "prevRaceMargin": 13,
+   "prevRaceYear": 2024
+  },
+  "house:MI-01": {
+   "presMargin2024": -21,
+   "presMargin2020": -20,
+   "prevRaceMargin": -21.2,
+   "prevRaceYear": 2024
+  },
+  "house:MI-02": {
+   "presMargin2024": -30,
+   "presMargin2020": -28,
+   "prevRaceMargin": -33.4,
+   "prevRaceYear": 2024
+  },
+  "house:MI-03": {
+   "presMargin2024": 8,
+   "presMargin2020": 8,
+   "prevRaceMargin": 9.9,
+   "prevRaceYear": 2024
+  },
+  "house:MI-04": {
+   "presMargin2024": -6,
+   "presMargin2020": -4,
+   "prevRaceMargin": -11.7,
+   "prevRaceYear": 2024
+  },
+  "house:MI-05": {
+   "presMargin2024": -27,
+   "presMargin2020": -24,
+   "prevRaceMargin": -32.9,
+   "prevRaceYear": 2024
+  },
+  "house:MI-06": {
+   "presMargin2024": 23,
+   "presMargin2020": 27,
+   "prevRaceMargin": 27,
+   "prevRaceYear": 2024
+  },
+  "house:MI-07": {
+   "presMargin2024": -1,
+   "presMargin2020": 0,
+   "prevRaceMargin": -3.7,
+   "prevRaceYear": 2024
+  },
+  "house:MI-08": {
+   "presMargin2024": -2,
+   "presMargin2020": 2,
+   "prevRaceMargin": 6.6,
+   "prevRaceYear": 2024
+  },
+  "house:MI-09": {
+   "presMargin2024": -32,
+   "presMargin2020": -29,
+   "prevRaceMargin": -37.3,
+   "prevRaceYear": 2024
+  },
+  "house:MI-10": {
+   "presMargin2024": -6,
+   "presMargin2020": -1,
+   "prevRaceMargin": -6.1,
+   "prevRaceYear": 2024
+  },
+  "house:MI-11": {
+   "presMargin2024": 16,
+   "presMargin2020": 20,
+   "prevRaceMargin": 18.6,
+   "prevRaceYear": 2024
+  },
+  "house:MI-12": {
+   "presMargin2024": 38,
+   "presMargin2020": 49,
+   "prevRaceMargin": 44.3,
+   "prevRaceYear": 2024
+  },
+  "house:MI-13": {
+   "presMargin2024": 41,
+   "presMargin2020": 49,
+   "prevRaceMargin": 44.1,
+   "prevRaceYear": 2024
+  },
+  "house:MN-01": {
+   "presMargin2024": -12,
+   "presMargin2020": -10,
+   "prevRaceMargin": -17,
+   "prevRaceYear": 2024
+  },
+  "house:MN-02": {
+   "presMargin2024": 6,
+   "presMargin2020": 8,
+   "prevRaceMargin": 13.5,
+   "prevRaceYear": 2024
+  },
+  "house:MN-03": {
+   "presMargin2024": 22,
+   "presMargin2020": 21,
+   "prevRaceMargin": 17,
+   "prevRaceYear": 2024
+  },
+  "house:MN-04": {
+   "presMargin2024": 36,
+   "presMargin2020": 38,
+   "prevRaceMargin": 34.8,
+   "prevRaceYear": 2024
+  },
+  "house:MN-05": {
+   "presMargin2024": 62,
+   "presMargin2020": 64,
+   "prevRaceMargin": 50.4,
+   "prevRaceYear": 2024
+  },
+  "house:MN-06": {
+   "presMargin2024": -20,
+   "presMargin2020": -18,
+   "prevRaceMargin": -25,
+   "prevRaceYear": 2024
+  },
+  "house:MN-07": {
+   "presMargin2024": -36,
+   "presMargin2020": -34,
+   "prevRaceMargin": -41,
+   "prevRaceYear": 2024
+  },
+  "house:MN-08": {
+   "presMargin2024": -14,
+   "presMargin2020": -12,
+   "prevRaceMargin": -16,
+   "prevRaceYear": 2024
+  },
+  "house:MS-01": {
+   "presMargin2024": -37,
+   "presMargin2020": -32,
+   "prevRaceMargin": -39.6,
+   "prevRaceYear": 2024
+  },
+  "house:MS-02": {
+   "presMargin2024": 21,
+   "presMargin2020": 26,
+   "prevRaceMargin": 24,
+   "prevRaceYear": 2024
+  },
+  "house:MS-03": {
+   "presMargin2024": -29,
+   "presMargin2020": -25,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:MS-04": {
+   "presMargin2024": -43,
+   "presMargin2020": -38,
+   "prevRaceMargin": -47.9,
+   "prevRaceYear": 2024
+  },
+  "house:MO-01": {
+   "presMargin2024": 57,
+   "presMargin2020": 58,
+   "prevRaceMargin": 57.5,
+   "prevRaceYear": 2024
+  },
+  "house:MO-02": {
+   "presMargin2024": -8,
+   "presMargin2020": -8,
+   "prevRaceMargin": -12,
+   "prevRaceYear": 2024
+  },
+  "house:MO-03": {
+   "presMargin2024": -27,
+   "presMargin2020": -26,
+   "prevRaceMargin": -26,
+   "prevRaceYear": 2024
+  },
+  "house:MO-04": {
+   "presMargin2024": -43,
+   "presMargin2020": -40,
+   "prevRaceMargin": -44.7,
+   "prevRaceYear": 2024
+  },
+  "house:MO-05": {
+   "presMargin2024": 23,
+   "presMargin2020": 26,
+   "prevRaceMargin": 23.8,
+   "prevRaceYear": 2024
+  },
+  "house:MO-06": {
+   "presMargin2024": -39,
+   "presMargin2020": -37,
+   "prevRaceMargin": -43.8,
+   "prevRaceYear": 2024
+  },
+  "house:MO-07": {
+   "presMargin2024": -43,
+   "presMargin2020": -42,
+   "prevRaceMargin": -45.3,
+   "prevRaceYear": 2024
+  },
+  "house:MO-08": {
+   "presMargin2024": -55,
+   "presMargin2020": -51,
+   "prevRaceMargin": -54.4,
+   "prevRaceYear": 2024
+  },
+  "house:MT-01": {
+   "presMargin2024": -11,
+   "presMargin2020": -7,
+   "prevRaceMargin": -7.7,
+   "prevRaceYear": 2024
+  },
+  "house:MT-02": {
+   "presMargin2024": -29,
+   "presMargin2020": -27,
+   "prevRaceMargin": -32,
+   "prevRaceYear": 2024
+  },
+  "house:NE-01": {
+   "presMargin2024": -13,
+   "presMargin2020": -11,
+   "prevRaceMargin": -20.2,
+   "prevRaceYear": 2024
+  },
+  "house:NE-02": {
+   "presMargin2024": 5,
+   "presMargin2020": 6,
+   "prevRaceMargin": -1.8,
+   "prevRaceYear": 2024
+  },
+  "house:NE-03": {
+   "presMargin2024": -53,
+   "presMargin2020": -52,
+   "prevRaceMargin": -60.8,
+   "prevRaceYear": 2024
+  },
+  "house:NV-01": {
+   "presMargin2024": 2,
+   "presMargin2020": 8,
+   "prevRaceMargin": 7.5,
+   "prevRaceYear": 2024
+  },
+  "house:NV-02": {
+   "presMargin2024": -14,
+   "presMargin2020": -11,
+   "prevRaceMargin": -55,
+   "prevRaceYear": 2024
+  },
+  "house:NV-03": {
+   "presMargin2024": -1,
+   "presMargin2020": 6,
+   "prevRaceMargin": 2.8,
+   "prevRaceYear": 2024
+  },
+  "house:NV-04": {
+   "presMargin2024": 2,
+   "presMargin2020": 8,
+   "prevRaceMargin": 8.1,
+   "prevRaceYear": 2024
+  },
+  "house:NH-01": {
+   "presMargin2024": 2,
+   "presMargin2020": 6,
+   "prevRaceMargin": 8,
+   "prevRaceYear": 2024
+  },
+  "house:NH-02": {
+   "presMargin2024": 3,
+   "presMargin2020": 9,
+   "prevRaceMargin": 6,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-01": {
+   "presMargin2024": 19,
+   "presMargin2020": 25,
+   "prevRaceMargin": 17.8,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-02": {
+   "presMargin2024": -13,
+   "presMargin2020": -5,
+   "prevRaceMargin": -16.9,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-03": {
+   "presMargin2024": 8,
+   "presMargin2020": 14,
+   "prevRaceMargin": 8.6,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-04": {
+   "presMargin2024": -30,
+   "presMargin2020": -23,
+   "prevRaceMargin": -35.7,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-05": {
+   "presMargin2024": 2,
+   "presMargin2020": 13,
+   "prevRaceMargin": 11.3,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-06": {
+   "presMargin2024": 6,
+   "presMargin2020": 19,
+   "prevRaceMargin": 15.8,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-07": {
+   "presMargin2024": -2,
+   "presMargin2020": 4,
+   "prevRaceMargin": -5.4,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-08": {
+   "presMargin2024": 24,
+   "presMargin2020": 45,
+   "prevRaceMargin": 24.8,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-09": {
+   "presMargin2024": -1,
+   "presMargin2020": 19,
+   "prevRaceMargin": 4.9,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-10": {
+   "presMargin2024": 51,
+   "presMargin2020": 62,
+   "prevRaceMargin": 52.2,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-11": {
+   "presMargin2024": 8,
+   "presMargin2020": 17,
+   "prevRaceMargin": 15.3,
+   "prevRaceYear": 2024
+  },
+  "house:NJ-12": {
+   "presMargin2024": 24,
+   "presMargin2020": 35,
+   "prevRaceMargin": 24.8,
+   "prevRaceYear": 2024
+  },
+  "house:NM-01": {
+   "presMargin2024": 13,
+   "presMargin2020": 14,
+   "prevRaceMargin": 12.8,
+   "prevRaceYear": 2024
+  },
+  "house:NM-02": {
+   "presMargin2024": -2,
+   "presMargin2020": 6,
+   "prevRaceMargin": 4.2,
+   "prevRaceYear": 2024
+  },
+  "house:NM-03": {
+   "presMargin2024": 6,
+   "presMargin2020": 10,
+   "prevRaceMargin": 12.6,
+   "prevRaceYear": 2024
+  },
+  "house:NY-01": {
+   "presMargin2024": -10,
+   "presMargin2020": -1,
+   "prevRaceMargin": -10.4,
+   "prevRaceYear": 2024
+  },
+  "house:NY-02": {
+   "presMargin2024": -13,
+   "presMargin2020": -3,
+   "prevRaceMargin": -18.4,
+   "prevRaceYear": 2024
+  },
+  "house:NY-03": {
+   "presMargin2024": -4,
+   "presMargin2020": 11,
+   "prevRaceMargin": 3.6,
+   "prevRaceYear": 2024
+  },
+  "house:NY-04": {
+   "presMargin2024": 1,
+   "presMargin2020": 15,
+   "prevRaceMargin": 2.2,
+   "prevRaceYear": 2024
+  },
+  "house:NY-05": {
+   "presMargin2024": 42,
+   "presMargin2020": 62,
+   "prevRaceMargin": 45.8,
+   "prevRaceYear": 2024
+  },
+  "house:NY-06": {
+   "presMargin2024": 6,
+   "presMargin2020": 29,
+   "prevRaceMargin": 23.1,
+   "prevRaceYear": 2024
+  },
+  "house:NY-07": {
+   "presMargin2024": 46,
+   "presMargin2020": 61,
+   "prevRaceMargin": 56.2,
+   "prevRaceYear": 2024
+  },
+  "house:NY-08": {
+   "presMargin2024": 44,
+   "presMargin2020": 55,
+   "prevRaceMargin": 50.8,
+   "prevRaceYear": 2024
+  },
+  "house:NY-09": {
+   "presMargin2024": 40,
+   "presMargin2020": 52,
+   "prevRaceMargin": 48.6,
+   "prevRaceYear": 2024
+  },
+  "house:NY-10": {
+   "presMargin2024": 60,
+   "presMargin2020": 71,
+   "prevRaceMargin": 67.5,
+   "prevRaceYear": 2024
+  },
+  "house:NY-11": {
+   "presMargin2024": -24,
+   "presMargin2020": -7,
+   "prevRaceMargin": -28.2,
+   "prevRaceYear": 2024
+  },
+  "house:NY-12": {
+   "presMargin2024": 64,
+   "presMargin2020": 71,
+   "prevRaceMargin": 61,
+   "prevRaceYear": 2024
+  },
+  "house:NY-13": {
+   "presMargin2024": 59,
+   "presMargin2020": 77,
+   "prevRaceMargin": 67,
+   "prevRaceYear": 2024
+  },
+  "house:NY-14": {
+   "presMargin2024": 32,
+   "presMargin2020": 55,
+   "prevRaceMargin": 38.4,
+   "prevRaceYear": 2024
+  },
+  "house:NY-15": {
+   "presMargin2024": 49,
+   "presMargin2020": 71,
+   "prevRaceMargin": 55.1,
+   "prevRaceYear": 2024
+  },
+  "house:NY-16": {
+   "presMargin2024": 33,
+   "presMargin2020": 45,
+   "prevRaceMargin": 43.2,
+   "prevRaceYear": 2024
+  },
+  "house:NY-17": {
+   "presMargin2024": 1,
+   "presMargin2020": 10,
+   "prevRaceMargin": -6.4,
+   "prevRaceYear": 2024
+  },
+  "house:NY-18": {
+   "presMargin2024": 3,
+   "presMargin2020": 9,
+   "prevRaceMargin": 14.4,
+   "prevRaceYear": 2024
+  },
+  "house:NY-19": {
+   "presMargin2024": 1,
+   "presMargin2020": 4,
+   "prevRaceMargin": 2.2,
+   "prevRaceYear": 2024
+  },
+  "house:NY-20": {
+   "presMargin2024": 14,
+   "presMargin2020": 20,
+   "prevRaceMargin": 22.2,
+   "prevRaceYear": 2024
+  },
+  "house:NY-21": {
+   "presMargin2024": -21,
+   "presMargin2020": -16,
+   "prevRaceMargin": -24,
+   "prevRaceYear": 2024
+  },
+  "house:NY-22": {
+   "presMargin2024": 8,
+   "presMargin2020": 12,
+   "prevRaceMargin": 9.2,
+   "prevRaceYear": 2024
+  },
+  "house:NY-23": {
+   "presMargin2024": -21,
+   "presMargin2020": -18,
+   "prevRaceMargin": -31.6,
+   "prevRaceYear": 2024
+  },
+  "house:NY-24": {
+   "presMargin2024": -23,
+   "presMargin2020": -20,
+   "prevRaceMargin": -31.4,
+   "prevRaceYear": 2024
+  },
+  "house:NY-25": {
+   "presMargin2024": 19,
+   "presMargin2020": 20,
+   "prevRaceMargin": 21.6,
+   "prevRaceYear": 2024
+  },
+  "house:NY-26": {
+   "presMargin2024": 19,
+   "presMargin2020": 25,
+   "prevRaceMargin": 30.4,
+   "prevRaceYear": 2024
+  },
+  "house:NC-01": {
+   "presMargin2024": -11,
+   "prevRaceMargin": 1.7,
+   "prevRaceYear": 2024
+  },
+  "house:NC-02": {
+   "presMargin2024": 34,
+   "prevRaceMargin": 34.7,
+   "prevRaceYear": 2024
+  },
+  "house:NC-03": {
+   "presMargin2024": -13,
+   "prevRaceMargin": -77.4,
+   "prevRaceYear": 2024
+  },
+  "house:NC-04": {
+   "presMargin2024": 45,
+   "prevRaceMargin": 45.7,
+   "prevRaceYear": 2024
+  },
+  "house:NC-05": {
+   "presMargin2024": -17,
+   "prevRaceMargin": -19,
+   "prevRaceYear": 2024
+  },
+  "house:NC-06": {
+   "presMargin2024": -17,
+   "prevRaceMargin": -69.2,
+   "prevRaceYear": 2024
+  },
+  "house:NC-07": {
+   "presMargin2024": -13,
+   "prevRaceMargin": -17.2,
+   "prevRaceYear": 2024
+  },
+  "house:NC-08": {
+   "presMargin2024": -19,
+   "prevRaceMargin": -19.2,
+   "prevRaceYear": 2024
+  },
+  "house:NC-09": {
+   "presMargin2024": -15,
+   "prevRaceMargin": -18.5,
+   "prevRaceYear": 2024
+  },
+  "house:NC-10": {
+   "presMargin2024": -17,
+   "prevRaceMargin": -19.3,
+   "prevRaceYear": 2024
+  },
+  "house:NC-11": {
+   "presMargin2024": -9,
+   "prevRaceMargin": -13.6,
+   "prevRaceYear": 2024
+  },
+  "house:NC-12": {
+   "presMargin2024": 46,
+   "prevRaceMargin": 48,
+   "prevRaceYear": 2024
+  },
+  "house:NC-13": {
+   "presMargin2024": -17,
+   "prevRaceMargin": -17.2,
+   "prevRaceYear": 2024
+  },
+  "house:NC-14": {
+   "presMargin2024": -15,
+   "prevRaceMargin": -16.2,
+   "prevRaceYear": 2024
+  },
+  "house:ND-AL": {
+   "presMargin2024": -37,
+   "presMargin2020": -33,
+   "prevRaceMargin": -39,
+   "prevRaceYear": 2024
+  },
+  "house:OH-01": {
+   "presMargin2024": -3,
+   "prevRaceMargin": 9.2,
+   "prevRaceYear": 2024
+  },
+  "house:OH-02": {
+   "presMargin2024": -42,
+   "prevRaceMargin": -47.2,
+   "prevRaceYear": 2024
+  },
+  "house:OH-03": {
+   "presMargin2024": 41,
+   "prevRaceMargin": 41.4,
+   "prevRaceYear": 2024
+  },
+  "house:OH-04": {
+   "presMargin2024": -43,
+   "prevRaceMargin": -37,
+   "prevRaceYear": 2024
+  },
+  "house:OH-05": {
+   "presMargin2024": -23,
+   "prevRaceMargin": -35,
+   "prevRaceYear": 2024
+  },
+  "house:OH-06": {
+   "presMargin2024": -35,
+   "prevRaceMargin": -33.4,
+   "prevRaceYear": 2024
+  },
+  "house:OH-07": {
+   "presMargin2024": -11,
+   "prevRaceMargin": -15,
+   "prevRaceYear": 2024
+  },
+  "house:OH-08": {
+   "presMargin2024": -15,
+   "prevRaceMargin": -25.6,
+   "prevRaceYear": 2024
+  },
+  "house:OH-09": {
+   "presMargin2024": -11,
+   "prevRaceMargin": 0.7,
+   "prevRaceYear": 2024
+  },
+  "house:OH-10": {
+   "presMargin2024": -7,
+   "prevRaceMargin": -18.4,
+   "prevRaceYear": 2024
+  },
+  "house:OH-11": {
+   "presMargin2024": 55,
+   "prevRaceMargin": 58.7,
+   "prevRaceYear": 2024
+  },
+  "house:OH-12": {
+   "presMargin2024": -30,
+   "prevRaceMargin": -37,
+   "prevRaceYear": 2024
+  },
+  "house:OH-13": {
+   "presMargin2024": 3,
+   "prevRaceMargin": 2.2,
+   "prevRaceYear": 2024
+  },
+  "house:OH-14": {
+   "presMargin2024": -21,
+   "prevRaceMargin": -26.8,
+   "prevRaceYear": 2024
+  },
+  "house:OH-15": {
+   "presMargin2024": -10,
+   "prevRaceMargin": -13,
+   "prevRaceYear": 2024
+  },
+  "house:OK-01": {
+   "presMargin2024": -22,
+   "presMargin2020": -21,
+   "prevRaceMargin": -25.9,
+   "prevRaceYear": 2024
+  },
+  "house:OK-02": {
+   "presMargin2024": -56,
+   "presMargin2020": -54,
+   "prevRaceMargin": -52.8,
+   "prevRaceYear": 2024
+  },
+  "house:OK-03": {
+   "presMargin2024": -46,
+   "presMargin2020": -44,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:OK-04": {
+   "presMargin2024": -34,
+   "presMargin2020": -32,
+   "prevRaceMargin": -36.9,
+   "prevRaceYear": 2024
+  },
+  "house:OK-05": {
+   "presMargin2024": -18,
+   "presMargin2020": -17,
+   "prevRaceMargin": -21.4,
+   "prevRaceYear": 2024
+  },
+  "house:OR-01": {
+   "presMargin2024": 38,
+   "presMargin2020": 39,
+   "prevRaceMargin": 40.6,
+   "prevRaceYear": 2024
+  },
+  "house:OR-02": {
+   "presMargin2024": -27,
+   "presMargin2020": -24,
+   "prevRaceMargin": -31.2,
+   "prevRaceYear": 2024
+  },
+  "house:OR-03": {
+   "presMargin2024": 46,
+   "presMargin2020": 48,
+   "prevRaceMargin": 42.6,
+   "prevRaceYear": 2024
+  },
+  "house:OR-04": {
+   "presMargin2024": 13,
+   "presMargin2020": 13,
+   "prevRaceMargin": 7.8,
+   "prevRaceYear": 2024
+  },
+  "house:OR-05": {
+   "presMargin2024": 9,
+   "presMargin2020": 9,
+   "prevRaceMargin": 2.7,
+   "prevRaceYear": 2024
+  },
+  "house:OR-06": {
+   "presMargin2024": 11,
+   "presMargin2020": 13,
+   "prevRaceMargin": 6.8,
+   "prevRaceYear": 2024
+  },
+  "house:PA-01": {
+   "presMargin2024": 1,
+   "presMargin2020": 5,
+   "prevRaceMargin": -12.8,
+   "prevRaceYear": 2024
+  },
+  "house:PA-02": {
+   "presMargin2024": 35,
+   "presMargin2020": 43,
+   "prevRaceMargin": 42.9,
+   "prevRaceYear": 2024
+  },
+  "house:PA-03": {
+   "presMargin2024": 77,
+   "presMargin2020": 81,
+   "prevRaceMargin": 100,
+   "prevRaceYear": 2024
+  },
+  "house:PA-04": {
+   "presMargin2024": 15,
+   "presMargin2020": 19,
+   "prevRaceMargin": 18.2,
+   "prevRaceYear": 2024
+  },
+  "house:PA-05": {
+   "presMargin2024": 29,
+   "presMargin2020": 33,
+   "prevRaceMargin": 30.6,
+   "prevRaceYear": 2024
+  },
+  "house:PA-06": {
+   "presMargin2024": 11,
+   "presMargin2020": 15,
+   "prevRaceMargin": 12.4,
+   "prevRaceYear": 2024
+  },
+  "house:PA-07": {
+   "presMargin2024": -3,
+   "presMargin2020": 1,
+   "prevRaceMargin": -1,
+   "prevRaceYear": 2024
+  },
+  "house:PA-08": {
+   "presMargin2024": -9,
+   "presMargin2020": -3,
+   "prevRaceMargin": -1.6,
+   "prevRaceYear": 2024
+  },
+  "house:PA-09": {
+   "presMargin2024": -38,
+   "presMargin2020": -37,
+   "prevRaceMargin": -41,
+   "prevRaceYear": 2024
+  },
+  "house:PA-10": {
+   "presMargin2024": -5,
+   "presMargin2020": -4,
+   "prevRaceMargin": -1.2,
+   "prevRaceYear": 2024
+  },
+  "house:PA-11": {
+   "presMargin2024": -21,
+   "presMargin2020": -21,
+   "prevRaceMargin": -25.8,
+   "prevRaceYear": 2024
+  },
+  "house:PA-12": {
+   "presMargin2024": 19,
+   "presMargin2020": 20,
+   "prevRaceMargin": 12.8,
+   "prevRaceYear": 2024
+  },
+  "house:PA-13": {
+   "presMargin2024": -45,
+   "presMargin2020": -45,
+   "prevRaceMargin": -48.4,
+   "prevRaceYear": 2024
+  },
+  "house:PA-14": {
+   "presMargin2024": -33,
+   "presMargin2020": -31,
+   "prevRaceMargin": -33.2,
+   "prevRaceYear": 2024
+  },
+  "house:PA-15": {
+   "presMargin2024": -38,
+   "presMargin2020": -37,
+   "prevRaceMargin": -43,
+   "prevRaceYear": 2024
+  },
+  "house:PA-16": {
+   "presMargin2024": -23,
+   "presMargin2020": -21,
+   "prevRaceMargin": -27.2,
+   "prevRaceYear": 2024
+  },
+  "house:PA-17": {
+   "presMargin2024": 5,
+   "presMargin2020": 6,
+   "prevRaceMargin": 7.8,
+   "prevRaceYear": 2024
+  },
+  "house:RI-01": {
+   "presMargin2024": 22,
+   "presMargin2020": 29,
+   "prevRaceMargin": 31.1,
+   "prevRaceYear": 2024
+  },
+  "house:RI-02": {
+   "presMargin2024": 6,
+   "presMargin2020": 14,
+   "prevRaceMargin": 16.8,
+   "prevRaceYear": 2024
+  },
+  "house:SC-01": {
+   "presMargin2024": -13,
+   "presMargin2020": -8,
+   "prevRaceMargin": -16.6,
+   "prevRaceYear": 2024
+  },
+  "house:SC-02": {
+   "presMargin2024": -14,
+   "presMargin2020": -11,
+   "prevRaceMargin": -19.4,
+   "prevRaceYear": 2024
+  },
+  "house:SC-03": {
+   "presMargin2024": -43,
+   "presMargin2020": -37,
+   "prevRaceMargin": -46.4,
+   "prevRaceYear": 2024
+  },
+  "house:SC-04": {
+   "presMargin2024": -24,
+   "presMargin2020": -18,
+   "prevRaceMargin": -22.6,
+   "prevRaceYear": 2024
+  },
+  "house:SC-05": {
+   "presMargin2024": -23,
+   "presMargin2020": -18,
+   "prevRaceMargin": -27.2,
+   "prevRaceYear": 2024
+  },
+  "house:SC-06": {
+   "presMargin2024": 23,
+   "presMargin2020": 32,
+   "prevRaceMargin": 22.8,
+   "prevRaceYear": 2024
+  },
+  "house:SC-07": {
+   "presMargin2024": -27,
+   "presMargin2020": -19,
+   "prevRaceMargin": -30,
+   "prevRaceYear": 2024
+  },
+  "house:SD-AL": {
+   "presMargin2024": -29,
+   "presMargin2020": -26,
+   "prevRaceMargin": -44,
+   "prevRaceYear": 2024
+  },
+  "house:TN-01": {
+   "presMargin2024": -57,
+   "prevRaceMargin": -59.3,
+   "prevRaceYear": 2024
+  },
+  "house:TN-02": {
+   "presMargin2024": -34,
+   "prevRaceMargin": -38.6,
+   "prevRaceYear": 2024
+  },
+  "house:TN-03": {
+   "presMargin2024": -36,
+   "prevRaceMargin": -38.1,
+   "prevRaceYear": 2024
+  },
+  "house:TN-04": {
+   "presMargin2024": -24,
+   "prevRaceMargin": -43.2,
+   "prevRaceYear": 2024
+  },
+  "house:TN-05": {
+   "presMargin2024": -23,
+   "prevRaceMargin": -17.4,
+   "prevRaceYear": 2024
+  },
+  "house:TN-06": {
+   "presMargin2024": -27,
+   "prevRaceMargin": -36,
+   "prevRaceYear": 2024
+  },
+  "house:TN-07": {
+   "presMargin2024": -22,
+   "prevRaceMargin": -21.5,
+   "prevRaceYear": 2024
+  },
+  "house:TN-08": {
+   "presMargin2024": -20,
+   "prevRaceMargin": -46.7,
+   "prevRaceYear": 2024
+  },
+  "house:TN-09": {
+   "presMargin2024": -21,
+   "prevRaceMargin": 45.6,
+   "prevRaceYear": 2024
+  },
+  "house:TX-01": {
+   "presMargin2024": -49,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:TX-02": {
+   "presMargin2024": -23,
+   "prevRaceMargin": -31.4,
+   "prevRaceYear": 2024
+  },
+  "house:TX-03": {
+   "presMargin2024": -24,
+   "prevRaceMargin": -25,
+   "prevRaceYear": 2024
+  },
+  "house:TX-04": {
+   "presMargin2024": -24,
+   "prevRaceMargin": -36.8,
+   "prevRaceYear": 2024
+  },
+  "house:TX-05": {
+   "presMargin2024": -21,
+   "prevRaceMargin": -28.2,
+   "prevRaceYear": 2024
+  },
+  "house:TX-06": {
+   "presMargin2024": -23,
+   "prevRaceMargin": -31.4,
+   "prevRaceYear": 2024
+  },
+  "house:TX-07": {
+   "presMargin2024": 23,
+   "prevRaceMargin": 22.6,
+   "prevRaceYear": 2024
+  },
+  "house:TX-08": {
+   "presMargin2024": -27,
+   "prevRaceMargin": -36.4,
+   "prevRaceYear": 2024
+  },
+  "house:TX-09": {
+   "presMargin2024": -19,
+   "prevRaceMargin": 100,
+   "prevRaceYear": 2024
+  },
+  "house:TX-10": {
+   "presMargin2024": -23,
+   "prevRaceMargin": -29.6,
+   "prevRaceYear": 2024
+  },
+  "house:TX-11": {
+   "presMargin2024": -35,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:TX-12": {
+   "presMargin2024": -23,
+   "prevRaceMargin": -27,
+   "prevRaceYear": 2024
+  },
+  "house:TX-13": {
+   "presMargin2024": -47,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:TX-14": {
+   "presMargin2024": -25,
+   "prevRaceMargin": -37.4,
+   "prevRaceYear": 2024
+  },
+  "house:TX-15": {
+   "presMargin2024": -18,
+   "prevRaceMargin": -14.2,
+   "prevRaceYear": 2024
+  },
+  "house:TX-16": {
+   "presMargin2024": 17,
+   "prevRaceMargin": 19,
+   "prevRaceYear": 2024
+  },
+  "house:TX-17": {
+   "presMargin2024": -21,
+   "prevRaceMargin": -32.6,
+   "prevRaceYear": 2024
+  },
+  "house:TX-18": {
+   "presMargin2024": 55,
+   "prevRaceMargin": 38.8,
+   "prevRaceYear": 2024
+  },
+  "house:TX-19": {
+   "presMargin2024": -51,
+   "prevRaceMargin": -80.7,
+   "prevRaceYear": 2024
+  },
+  "house:TX-20": {
+   "presMargin2024": 29,
+   "prevRaceMargin": 100,
+   "prevRaceYear": 2024
+  },
+  "house:TX-21": {
+   "presMargin2024": -21,
+   "prevRaceMargin": -25.8,
+   "prevRaceYear": 2024
+  },
+  "house:TX-22": {
+   "presMargin2024": -22,
+   "prevRaceMargin": -24.2,
+   "prevRaceYear": 2024
+  },
+  "house:TX-23": {
+   "presMargin2024": -15,
+   "prevRaceMargin": -24.6,
+   "prevRaceYear": 2024
+  },
+  "house:TX-24": {
+   "presMargin2024": -16,
+   "prevRaceMargin": -20.6,
+   "prevRaceYear": 2024
+  },
+  "house:TX-25": {
+   "presMargin2024": -25,
+   "prevRaceMargin": -100,
+   "prevRaceYear": 2024
+  },
+  "house:TX-26": {
+   "presMargin2024": -24,
+   "prevRaceMargin": -26.4,
+   "prevRaceYear": 2024
+  },
+  "house:TX-27": {
+   "presMargin2024": -21,
+   "prevRaceMargin": -32,
+   "prevRaceYear": 2024
+  },
+  "house:TX-28": {
+   "presMargin2024": -11,
+   "prevRaceMargin": 5.6,
+   "prevRaceYear": 2024
+  },
+  "house:TX-29": {
+   "presMargin2024": 31,
+   "prevRaceMargin": 30.6,
+   "prevRaceYear": 2024
+  },
+  "house:TX-30": {
+   "presMargin2024": 47,
+   "prevRaceMargin": 84.9,
+   "prevRaceYear": 2024
+  },
+  "house:TX-31": {
+   "presMargin2024": -22,
+   "prevRaceMargin": -28.8,
+   "prevRaceYear": 2024
+  },
+  "house:TX-32": {
+   "presMargin2024": -18,
+   "prevRaceMargin": 23.5,
+   "prevRaceYear": 2024
+  },
+  "house:TX-33": {
+   "presMargin2024": 32,
+   "prevRaceMargin": 37.6,
+   "prevRaceYear": 2024
+  },
+  "house:TX-34": {
+   "presMargin2024": -10,
+   "prevRaceMargin": 2.6,
+   "prevRaceYear": 2024
+  },
+  "house:TX-35": {
+   "presMargin2024": -11,
+   "prevRaceMargin": 34.8,
+   "prevRaceYear": 2024
+  },
+  "house:TX-36": {
+   "presMargin2024": -25,
+   "prevRaceMargin": -38.8,
+   "prevRaceYear": 2024
+  },
+  "house:TX-37": {
+   "presMargin2024": 56,
+   "prevRaceMargin": 50.6,
+   "prevRaceYear": 2024
+  },
+  "house:TX-38": {
+   "presMargin2024": -21,
+   "prevRaceMargin": -25.5,
+   "prevRaceYear": 2024
+  },
+  "house:UT-01": {
+   "presMargin2024": 23,
+   "prevRaceMargin": -31,
+   "prevRaceYear": 2024
+  },
+  "house:UT-02": {
+   "presMargin2024": -29,
+   "prevRaceMargin": -23.8,
+   "prevRaceYear": 2024
+  },
+  "house:UT-03": {
+   "presMargin2024": -41,
+   "prevRaceMargin": -32.8,
+   "prevRaceYear": 2024
+  },
+  "house:UT-04": {
+   "presMargin2024": -33,
+   "prevRaceMargin": -33.2,
+   "prevRaceYear": 2024
+  },
+  "house:VT-AL": {
+   "presMargin2024": 31,
+   "presMargin2020": 35,
+   "prevRaceMargin": 32.6,
+   "prevRaceYear": 2024
+  },
+  "house:VA-01": {
+   "presMargin2024": -5,
+   "presMargin2020": -6,
+   "prevRaceMargin": -12.8,
+   "prevRaceYear": 2024
+  },
+  "house:VA-02": {
+   "presMargin2024": -1,
+   "presMargin2020": 2,
+   "prevRaceMargin": -3.8,
+   "prevRaceYear": 2024
+  },
+  "house:VA-03": {
+   "presMargin2024": 35,
+   "presMargin2020": 38,
+   "prevRaceMargin": 40.2,
+   "prevRaceYear": 2024
+  },
+  "house:VA-04": {
+   "presMargin2024": 33,
+   "presMargin2020": 35,
+   "prevRaceMargin": 35,
+   "prevRaceYear": 2024
+  },
+  "house:VA-05": {
+   "presMargin2024": -13,
+   "presMargin2020": -8,
+   "prevRaceMargin": -15,
+   "prevRaceYear": 2024
+  },
+  "house:VA-06": {
+   "presMargin2024": -24,
+   "presMargin2020": -22,
+   "prevRaceMargin": -28.4,
+   "prevRaceYear": 2024
+  },
+  "house:VA-07": {
+   "presMargin2024": 3,
+   "presMargin2020": 7,
+   "prevRaceMargin": 2.6,
+   "prevRaceYear": 2024
+  },
+  "house:VA-08": {
+   "presMargin2024": 50,
+   "presMargin2020": 56,
+   "prevRaceMargin": 47,
+   "prevRaceYear": 2024
+  },
+  "house:VA-09": {
+   "presMargin2024": -44,
+   "presMargin2020": -42,
+   "prevRaceMargin": -45.2,
+   "prevRaceYear": 2024
+  },
+  "house:VA-10": {
+   "presMargin2024": 8,
+   "presMargin2020": 18,
+   "prevRaceMargin": 4.6,
+   "prevRaceYear": 2024
+  },
+  "house:VA-11": {
+   "presMargin2024": 35,
+   "presMargin2020": 41,
+   "prevRaceMargin": 34,
+   "prevRaceYear": 2024
+  },
+  "house:WA-01": {
+   "presMargin2024": 29,
+   "presMargin2020": 31,
+   "prevRaceMargin": 26.4,
+   "prevRaceYear": 2024
+  },
+  "house:WA-02": {
+   "presMargin2024": 23,
+   "presMargin2020": 23,
+   "prevRaceMargin": 28,
+   "prevRaceYear": 2024
+  },
+  "house:WA-03": {
+   "presMargin2024": -3,
+   "presMargin2020": -4,
+   "prevRaceMargin": 3.8,
+   "prevRaceYear": 2024
+  },
+  "house:WA-04": {
+   "presMargin2024": -21,
+   "presMargin2020": -17,
+   "prevRaceMargin": -53,
+   "prevRaceYear": 2024
+  },
+  "house:WA-05": {
+   "presMargin2024": -11,
+   "presMargin2020": -10,
+   "prevRaceMargin": -21.4,
+   "prevRaceYear": 2024
+  },
+  "house:WA-06": {
+   "presMargin2024": 19,
+   "presMargin2020": 17,
+   "prevRaceMargin": 13.6,
+   "prevRaceYear": 2024
+  },
+  "house:WA-07": {
+   "presMargin2024": 75,
+   "presMargin2020": 76,
+   "prevRaceMargin": 68.4,
+   "prevRaceYear": 2024
+  },
+  "house:WA-08": {
+   "presMargin2024": 5,
+   "presMargin2020": 7,
+   "prevRaceMargin": 8.2,
+   "prevRaceYear": 2024
+  },
+  "house:WA-09": {
+   "presMargin2024": 41,
+   "presMargin2020": 46,
+   "prevRaceMargin": 66.9,
+   "prevRaceYear": 2024
+  },
+  "house:WA-10": {
+   "presMargin2024": 18,
+   "presMargin2020": 17,
+   "prevRaceMargin": 17.4,
+   "prevRaceYear": 2024
+  },
+  "house:WV-01": {
+   "presMargin2024": -44,
+   "presMargin2020": -41,
+   "prevRaceMargin": -42.2,
+   "prevRaceYear": 2024
+  },
+  "house:WV-02": {
+   "presMargin2024": -40,
+   "presMargin2020": -37,
+   "prevRaceMargin": -41.6,
+   "prevRaceYear": 2024
+  },
+  "house:WI-01": {
+   "presMargin2024": -5,
+   "presMargin2020": -2,
+   "prevRaceMargin": -10.2,
+   "prevRaceYear": 2024
+  },
+  "house:WI-02": {
+   "presMargin2024": 40,
+   "presMargin2020": 42,
+   "prevRaceMargin": 40.2,
+   "prevRaceYear": 2024
+  },
+  "house:WI-03": {
+   "presMargin2024": -7,
+   "presMargin2020": -4,
+   "prevRaceMargin": -2.8,
+   "prevRaceYear": 2024
+  },
+  "house:WI-04": {
+   "presMargin2024": 52,
+   "presMargin2020": 53,
+   "prevRaceMargin": 52.5,
+   "prevRaceYear": 2024
+  },
+  "house:WI-05": {
+   "presMargin2024": -22,
+   "presMargin2020": -23,
+   "prevRaceMargin": -29,
+   "prevRaceYear": 2024
+  },
+  "house:WI-06": {
+   "presMargin2024": -17,
+   "presMargin2020": -16,
+   "prevRaceMargin": -22.6,
+   "prevRaceYear": 2024
+  },
+  "house:WI-07": {
+   "presMargin2024": -23,
+   "presMargin2020": -20,
+   "prevRaceMargin": -27.2,
+   "prevRaceYear": 2024
+  },
+  "house:WI-08": {
+   "presMargin2024": -16,
+   "presMargin2020": -16,
+   "prevRaceMargin": -14.6,
+   "prevRaceYear": 2024
+  },
+  "house:WY-AL": {
+   "presMargin2024": -46,
+   "presMargin2020": -43,
+   "prevRaceMargin": -47.6,
+   "prevRaceYear": 2024
+  },
+  "ballot:AL-require-lieutenant-governor-vacancies-to": {
+   "presMargin2024": -30.59,
+   "presMargin2020": -25.46,
+   "turnout2024": 2256352
+  },
+  "ballot:AL-require-pledge-of-allegiance-and": {
+   "presMargin2024": -30.59,
+   "presMargin2020": -25.46,
+   "turnout2024": 2256352
+  },
+  "ballot:AL-school-district-consolidation-process-amendment": {
+   "presMargin2024": -30.59,
+   "presMargin2020": -25.46,
+   "turnout2024": 2256352
+  },
+  "ballot:AL-broadcast-the-star-spangled-banner": {
+   "presMargin2024": -30.59,
+   "presMargin2020": -25.46,
+   "turnout2024": 2256352
+  },
+  "ballot:AK-repeal-alaskas-electoral-system-of-ranked": {
+   "presMargin2024": -13.8,
+   "presMargin2020": -9.32,
+   "turnout2024": 324097
+  },
+  "ballot:AK-citizenship-voting-requirement-initiative": {
+   "presMargin2024": -13.8,
+   "presMargin2020": -9.32,
+   "turnout2024": 324097
+  },
+  "ballot:AZ-prop-141": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "turnout2024": 3389319
+  },
+  "ballot:AZ-prop-142": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "turnout2024": 3389319
+  },
+  "ballot:AZ-prop-144": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "turnout2024": 3389319
+  },
+  "ballot:AZ-prop-316": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "turnout2024": 3389319
+  },
+  "ballot:AZ-prop-317": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "turnout2024": 3389319
+  },
+  "ballot:AZ-prop-318": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "turnout2024": 3389319
+  },
+  "ballot:AZ-prop-319": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "turnout2024": 3389319
+  },
+  "ballot:AZ-prop-320": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "turnout2024": 3389319
+  },
+  "ballot:AR-authorize-legislature-to-create-programs": {
+   "presMargin2024": -30.64,
+   "presMargin2020": -27.62,
+   "turnout2024": 1182676
+  },
+  "ballot:AR-citizenship-requirement-for-voting-amendment": {
+   "presMargin2024": -30.64,
+   "presMargin2020": -27.62,
+   "turnout2024": 1182676
+  },
+  "ballot:AR-natural-resources-commission-bond-measure": {
+   "presMargin2024": -30.64,
+   "presMargin2020": -27.62,
+   "turnout2024": 1182676
+  },
+  "ballot:AR-right-to-keep-and-bear": {
+   "presMargin2024": -30.64,
+   "presMargin2020": -27.62,
+   "turnout2024": 1182676
+  },
+  "ballot:CA-prop-1": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-2": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-3": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-4": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-5": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-37": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-38": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-39": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-propostion-40": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-41": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-42": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-43": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-44": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CA-prop-45": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "ballot:CO-amendment-81": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-amendment-82": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-amendment-83": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-amendment-84": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-amendment-85": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-amendment-86": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-initiative-195": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-penalties-for-fentanyl-sale-and": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-require-life-in-prison-for": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-sex-requirement-for-school-and": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-initiative-110": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-establish-44-cap-on-individual": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-retain-sporting-goods-sales-tax": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:CO-tabor-revenue-cap-increase-for": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "ballot:FL-changes-to-budget-stabilization-fund": {
+   "presMargin2024": -13.1,
+   "presMargin2020": -3.36,
+   "turnout2024": 10893547
+  },
+  "ballot:FL-exempt-tangible-personal-property-used": {
+   "presMargin2024": -13.1,
+   "presMargin2020": -3.36,
+   "turnout2024": 10893547
+  },
+  "ballot:FL-amendment-3": {
+   "presMargin2024": -13.1,
+   "presMargin2020": -3.36,
+   "turnout2024": 10893547
+  },
+  "ballot:GA-increase-acre-limit-for-agriculture": {
+   "presMargin2024": -2.19,
+   "presMargin2020": 0.24,
+   "turnout2024": 5250047
+  },
+  "ballot:GA-authorize-creation-of-next-generation": {
+   "presMargin2024": -2.19,
+   "presMargin2020": 0.24,
+   "turnout2024": 5250047
+  },
+  "ballot:GA-require-nonpartisan-elections-for-probate": {
+   "presMargin2024": -2.19,
+   "presMargin2020": 0.24,
+   "turnout2024": 5250047
+  },
+  "ballot:HI-increase-time-for-senate-to": {
+   "presMargin2024": 23.1,
+   "presMargin2020": 29.46,
+   "turnout2024": 516701
+  },
+  "ballot:HI-legislative-authority-to-authorize-counties": {
+   "presMargin2024": 23.1,
+   "presMargin2020": 29.46,
+   "turnout2024": 516701
+  },
+  "ballot:ID-hjr-4": {
+   "presMargin2024": -36.5,
+   "presMargin2020": -30.77,
+   "turnout2024": 904812
+  },
+  "ballot:ID-hjr-6": {
+   "presMargin2024": -36.5,
+   "presMargin2020": -30.77,
+   "turnout2024": 904812
+  },
+  "ballot:ID-official-state-gun-question": {
+   "presMargin2024": -36.5,
+   "presMargin2020": -30.77,
+   "turnout2024": 904812
+  },
+  "ballot:IN-residency-requirements-for-city-and": {
+   "presMargin2024": -18.98,
+   "presMargin2020": -16.07,
+   "turnout2024": 2933700
+  },
+  "ballot:IN-question-1": {
+   "presMargin2024": -18.98,
+   "presMargin2020": -16.07,
+   "turnout2024": 2933700
+  },
+  "ballot:IA-amendment-1": {
+   "presMargin2024": -13.26,
+   "presMargin2020": -8.2,
+   "turnout2024": 1656849
+  },
+  "ballot:KS-citizenship-voting-requirement-amendment": {
+   "presMargin2024": -16.12,
+   "presMargin2020": -14.78,
+   "turnout2024": 1327591
+  },
+  "ballot:KY-limit-governors-pardon-power-and": {
+   "presMargin2024": -30.55,
+   "presMargin2020": -25.94,
+   "turnout2024": 2073309
+  },
+  "ballot:LA-raise-income-limit-to-150": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "turnout2024": 2006975
+  },
+  "ballot:LA-one-time-transfer-of-disabled": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "turnout2024": 2006975
+  },
+  "ballot:LA-property-tax-rate-limits-based": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "turnout2024": 2006975
+  },
+  "ballot:LA-prohibit-post-conviction-bail-for": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "turnout2024": 2006975
+  },
+  "ballot:LA-tax-exemption-for-rehabilitated-property": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "turnout2024": 2006975
+  },
+  "ballot:LA-prohibit-property-expropriation-by-foreign": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "turnout2024": 2006975
+  },
+  "ballot:LA-property-tax-exemption-for-seniors": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "turnout2024": 2006975
+  },
+  "ballot:LA-amendment-4": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "turnout2024": 2006975
+  },
+  "ballot:LA-removing-payment-order-requirement-for": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "turnout2024": 2006975
+  },
+  "ballot:LA-use-public-funds-for-drinking": {
+   "presMargin2024": -22.01,
+   "presMargin2020": -18.61,
+   "turnout2024": 2006975
+  },
+  "ballot:MD-commission-on-judicial-disabilities-vacancies": {
+   "presMargin2024": 28.75,
+   "presMargin2020": 33.21,
+   "turnout2024": 3015650
+  },
+  "ballot:MD-changes-to-collective-bargaining-for": {
+   "presMargin2024": 28.75,
+   "presMargin2020": 33.21,
+   "turnout2024": 3015650
+  },
+  "ballot:MD-provide-that-nothing-in-state": {
+   "presMargin2024": 28.75,
+   "presMargin2020": 33.21,
+   "turnout2024": 3015650
+  },
+  "ballot:MA-question-1": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437
+  },
+  "ballot:MA-question-2": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437
+  },
+  "ballot:MA-question-3": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437
+  },
+  "ballot:MA-question-4": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437
+  },
+  "ballot:MA-question-5": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437
+  },
+  "ballot:MA-question-6": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437
+  },
+  "ballot:MA-question-7": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437
+  },
+  "ballot:MA-question-8": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437
+  },
+  "ballot:MA-question-9": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437
+  },
+  "ballot:MI-proposal-1": {
+   "presMargin2024": -1.41,
+   "presMargin2020": 2.78,
+   "turnout2024": 5662504
+  },
+  "ballot:MI-proposal-2": {
+   "presMargin2024": -1.41,
+   "presMargin2020": 2.78,
+   "turnout2024": 5662504
+  },
+  "ballot:MN-alter-management-and-investment-policies": {
+   "presMargin2024": 4.26,
+   "presMargin2020": 7.11,
+   "turnout2024": 3240916
+  },
+  "ballot:MO-amendment-3": {
+   "presMargin2024": -18.42,
+   "presMargin2020": -15.39,
+   "turnout2024": 2993596
+  },
+  "ballot:MO-amendment-6": {
+   "presMargin2024": -18.42,
+   "presMargin2020": -15.39,
+   "turnout2024": 2993596
+  },
+  "ballot:MO-amendment-7": {
+   "presMargin2024": -18.42,
+   "presMargin2020": -15.39,
+   "turnout2024": 2993596
+  },
+  "ballot:MO-amendment-8": {
+   "presMargin2024": -18.42,
+   "presMargin2020": -15.39,
+   "turnout2024": 2993596
+  },
+  "ballot:MO-proposition-a": {
+   "presMargin2024": -18.42,
+   "presMargin2020": -15.39,
+   "turnout2024": 2993596
+  },
+  "ballot:MT-ci-132": {
+   "presMargin2024": -19.93,
+   "presMargin2020": -16.31,
+   "turnout2024": 602963
+  },
+  "ballot:MT-ci-133": {
+   "presMargin2024": -19.93,
+   "presMargin2020": -16.31,
+   "turnout2024": 602963
+  },
+  "ballot:MT-i-194": {
+   "presMargin2024": -19.93,
+   "presMargin2020": -16.31,
+   "turnout2024": 602963
+  },
+  "ballot:NE-change-state-legislative-term-limits": {
+   "presMargin2024": -20.57,
+   "presMargin2020": -19.06,
+   "turnout2024": 947159
+  },
+  "ballot:NE-sex-requirement-for-school-and": {
+   "presMargin2024": -20.57,
+   "presMargin2020": -19.06,
+   "turnout2024": 947159
+  },
+  "ballot:NE-allow-laws-authorizing-online-sports": {
+   "presMargin2024": -20.57,
+   "presMargin2020": -19.06,
+   "turnout2024": 947159
+  },
+  "ballot:NE-allow-and-regulate-online-sports": {
+   "presMargin2024": -20.57,
+   "presMargin2020": -19.06,
+   "turnout2024": 947159
+  },
+  "ballot:NV-question-6": {
+   "presMargin2024": -3.1,
+   "presMargin2020": 2.39,
+   "turnout2024": 1484840
+  },
+  "ballot:NV-question-7": {
+   "presMargin2024": -3.1,
+   "presMargin2020": 2.39,
+   "turnout2024": 1484840
+  },
+  "ballot:NH-abolish-office-of-register": {
+   "presMargin2024": 2.79,
+   "presMargin2020": 7.37,
+   "turnout2024": 822153
+  },
+  "ballot:NM-eliminate-governors-pocket-veto": {
+   "presMargin2024": 6,
+   "presMargin2020": 10.79,
+   "turnout2024": 923403
+  },
+  "ballot:NM-board-of-regents-nominating": {
+   "presMargin2024": 6,
+   "presMargin2020": 10.79,
+   "turnout2024": 923403
+  },
+  "ballot:NM-establish-salary-for-state": {
+   "presMargin2024": 6,
+   "presMargin2020": 10.79,
+   "turnout2024": 923403
+  },
+  "ballot:NM-repeal-separate-election-requirement": {
+   "presMargin2024": 6,
+   "presMargin2020": 10.79,
+   "turnout2024": 923403
+  },
+  "ballot:NM-higher-education-improvements-bond": {
+   "presMargin2024": 6,
+   "presMargin2020": 10.79,
+   "turnout2024": 923403
+  },
+  "ballot:NM-library-acquisition-bond-issue": {
+   "presMargin2024": 6,
+   "presMargin2020": 10.79,
+   "turnout2024": 923403
+  },
+  "ballot:NM-senior-citizen-facilities-bond": {
+   "presMargin2024": 6,
+   "presMargin2020": 10.79,
+   "turnout2024": 923403
+  },
+  "ballot:NC-require-voter-identification-amendment": {
+   "presMargin2024": -3.22,
+   "presMargin2020": -1.35,
+   "turnout2024": 5679647
+  },
+  "ballot:NC-reduce-income-tax-rate": {
+   "presMargin2024": -3.22,
+   "presMargin2020": -1.35,
+   "turnout2024": 5679647
+  },
+  "ballot:NC-property-tax-levy-limit": {
+   "presMargin2024": -3.22,
+   "presMargin2020": -1.35,
+   "turnout2024": 5679647
+  },
+  "ballot:ND-measure-1": {
+   "presMargin2024": -36.76,
+   "presMargin2020": -33.36,
+   "turnout2024": 365059
+  },
+  "ballot:OH-issue-3": {
+   "presMargin2024": -11.21,
+   "presMargin2020": -8.03,
+   "turnout2024": 5765017
+  },
+  "ballot:OK-question-845": {
+   "presMargin2024": -34.26,
+   "presMargin2020": -33.09,
+   "turnout2024": 1566173
+  },
+  "ballot:OK-question-847": {
+   "presMargin2024": -34.26,
+   "presMargin2020": -33.09,
+   "turnout2024": 1566173
+  },
+  "ballot:RI-economic-and-infrastructure-development": {
+   "presMargin2024": 13.85,
+   "presMargin2020": 20.6,
+   "turnout2024": 510659
+  },
+  "ballot:RI-environment-and-watershed-protection": {
+   "presMargin2024": 13.85,
+   "presMargin2020": 20.6,
+   "turnout2024": 510659
+  },
+  "ballot:RI-higher-education-bond-measure": {
+   "presMargin2024": 13.85,
+   "presMargin2020": 20.6,
+   "turnout2024": 510659
+  },
+  "ballot:RI-historical-center-and-cultural": {
+   "presMargin2024": 13.85,
+   "presMargin2020": 20.6,
+   "turnout2024": 510659
+  },
+  "ballot:RI-housing-development-bond-measure": {
+   "presMargin2024": 13.85,
+   "presMargin2020": 20.6,
+   "turnout2024": 510659
+  },
+  "ballot:SD-constitutional-amendment-i": {
+   "presMargin2024": -29.19,
+   "presMargin2020": -26.16,
+   "turnout2024": 428922
+  },
+  "ballot:SD-constitutional-amendment-j": {
+   "presMargin2024": -29.19,
+   "presMargin2020": -26.16,
+   "turnout2024": 428922
+  },
+  "ballot:SD-constitutional-amendment-k": {
+   "presMargin2024": -29.19,
+   "presMargin2020": -26.16,
+   "turnout2024": 428922
+  },
+  "ballot:SD-constitutional-amendment-l": {
+   "presMargin2024": -29.19,
+   "presMargin2020": -26.16,
+   "turnout2024": 428922
+  },
+  "ballot:TN-amendment-1": {
+   "presMargin2024": -29.72,
+   "presMargin2020": -23.21,
+   "turnout2024": 3063942
+  },
+  "ballot:TN-amendment-2": {
+   "presMargin2024": -29.72,
+   "presMargin2020": -23.21,
+   "turnout2024": 3063942
+  },
+  "ballot:TN-amendment-3": {
+   "presMargin2024": -29.72,
+   "presMargin2020": -23.21,
+   "turnout2024": 3063942
+  },
+  "ballot:UT-60-vote-requirement-for-ballot": {
+   "presMargin2024": -21.59,
+   "presMargin2020": -20.48,
+   "turnout2024": 1487951
+  },
+  "ballot:UT-publication-requirements-for-constitutional-amendments": {
+   "presMargin2024": -21.59,
+   "presMargin2020": -20.48,
+   "turnout2024": 1487951
+  },
+  "ballot:VT-proposal-3": {
+   "presMargin2024": 31.77,
+   "presMargin2020": 35.41,
+   "turnout2024": 366389
+  },
+  "ballot:VT-proposal-4": {
+   "presMargin2024": 31.77,
+   "presMargin2020": 35.41,
+   "turnout2024": 366389
+  },
+  "ballot:VA-2026-virginia-voting-rights-restoration-amendment": {
+   "presMargin2024": 5.81,
+   "presMargin2020": 10.11,
+   "turnout2024": 4482576
+  },
+  "ballot:VA-2026-virginia-repeal-same-sex-marriage": {
+   "presMargin2024": 5.81,
+   "presMargin2020": 10.11,
+   "turnout2024": 4482576
+  },
+  "ballot:VA-2026-virginia-right-to-reproductive-freedom": {
+   "presMargin2024": 5.81,
+   "presMargin2020": 10.11,
+   "turnout2024": 4482576
+  },
+  "ballot:WA-parental-right-to-review-education": {
+   "presMargin2024": 18.34,
+   "presMargin2020": 19.2,
+   "turnout2024": 3898835
+  },
+  "ballot:WV-citizenship-voting-requirement-amendment": {
+   "presMargin2024": -41.87,
+   "presMargin2020": -38.94,
+   "turnout2024": 762390
+  },
+  "ballot:WI-prohibit-government-closure-of-places": {
+   "presMargin2024": -0.86,
+   "presMargin2020": 0.62,
+   "turnout2024": 3415213
+  },
+  "ballot:WI-prohibit-government-discrimination-or-preferential": {
+   "presMargin2024": -0.86,
+   "presMargin2020": 0.62,
+   "turnout2024": 3415213
+  },
+  "ballot:WI-prohibit-partial-veto-to-increase": {
+   "presMargin2024": -0.86,
+   "presMargin2020": 0.62,
+   "turnout2024": 3415213
+  },
+  "ballot:WY-homeowners-primary-residence-property-tax": {
+   "presMargin2024": -46.22,
+   "presMargin2020": -43.38,
+   "turnout2024": 266353
+  },
+  "stateleg:AL-senate": {
+   "presMargin2024": -30.59,
+   "presMargin2020": -25.46,
+   "turnout2024": 2256352
+  },
+  "stateleg:AL-house": {
+   "presMargin2024": -30.59,
+   "presMargin2020": -25.46,
+   "turnout2024": 2256352
+  },
+  "stateleg:AK-senate": {
+   "presMargin2024": -13.8,
+   "presMargin2020": -9.32,
+   "turnout2024": 324097
+  },
+  "stateleg:AK-house": {
+   "presMargin2024": -13.8,
+   "presMargin2020": -9.32,
+   "turnout2024": 324097
+  },
+  "stateleg:AZ-senate": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "turnout2024": 3389319
+  },
+  "stateleg:AZ-house": {
+   "presMargin2024": -5.53,
+   "presMargin2020": 0.31,
+   "turnout2024": 3389319
+  },
+  "stateleg:AR-senate": {
+   "presMargin2024": -30.64,
+   "presMargin2020": -27.62,
+   "turnout2024": 1182676
+  },
+  "stateleg:AR-house": {
+   "presMargin2024": -30.64,
+   "presMargin2020": -27.62,
+   "turnout2024": 1182676
+  },
+  "stateleg:CA-senate": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "stateleg:CA-assembly": {
+   "presMargin2024": 20.14,
+   "presMargin2020": 29.17,
+   "turnout2024": 15862536
+  },
+  "stateleg:CO-senate": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "stateleg:CO-house": {
+   "presMargin2024": 10.99,
+   "presMargin2020": 13.5,
+   "turnout2024": 3190873
+  },
+  "stateleg:CT-senate": {
+   "presMargin2024": 14.51,
+   "presMargin2020": 20.03,
+   "turnout2024": 1758429
+  },
+  "stateleg:CT-house": {
+   "presMargin2024": 14.51,
+   "presMargin2020": 20.03,
+   "turnout2024": 1758429
+  },
+  "stateleg:DE-senate": {
+   "presMargin2024": 14.74,
+   "presMargin2020": 18.98,
+   "turnout2024": 511697
+  },
+  "stateleg:DE-house": {
+   "presMargin2024": 14.74,
+   "presMargin2020": 18.98,
+   "turnout2024": 511697
+  },
+  "stateleg:FL-senate": {
+   "presMargin2024": -13.1,
+   "presMargin2020": -3.36,
+   "turnout2024": 10893547
+  },
+  "stateleg:FL-house": {
+   "presMargin2024": -13.1,
+   "presMargin2020": -3.36,
+   "turnout2024": 10893547
+  },
+  "stateleg:GA-senate": {
+   "presMargin2024": -2.19,
+   "presMargin2020": 0.24,
+   "turnout2024": 5250047
+  },
+  "stateleg:GA-house": {
+   "presMargin2024": -2.19,
+   "presMargin2020": 0.24,
+   "turnout2024": 5250047
+  },
+  "stateleg:HI-senate": {
+   "presMargin2024": 23.1,
+   "presMargin2020": 29.46,
+   "turnout2024": 516701
+  },
+  "stateleg:HI-house": {
+   "presMargin2024": 23.1,
+   "presMargin2020": 29.46,
+   "turnout2024": 516701
+  },
+  "stateleg:ID-senate": {
+   "presMargin2024": -36.5,
+   "presMargin2020": -30.77,
+   "turnout2024": 904812
+  },
+  "stateleg:ID-house": {
+   "presMargin2024": -36.5,
+   "presMargin2020": -30.77,
+   "turnout2024": 904812
+  },
+  "stateleg:IL-senate": {
+   "presMargin2024": 10.98,
+   "presMargin2020": 16.97,
+   "turnout2024": 5592368
+  },
+  "stateleg:IL-house": {
+   "presMargin2024": 10.98,
+   "presMargin2020": 16.97,
+   "turnout2024": 5592368
+  },
+  "stateleg:IN-senate": {
+   "presMargin2024": -18.98,
+   "presMargin2020": -16.07,
+   "turnout2024": 2933700
+  },
+  "stateleg:IN-house": {
+   "presMargin2024": -18.98,
+   "presMargin2020": -16.07,
+   "turnout2024": 2933700
+  },
+  "stateleg:IA-senate": {
+   "presMargin2024": -13.26,
+   "presMargin2020": -8.2,
+   "turnout2024": 1656849
+  },
+  "stateleg:IA-house": {
+   "presMargin2024": -13.26,
+   "presMargin2020": -8.2,
+   "turnout2024": 1656849
+  },
+  "stateleg:KS-house": {
+   "presMargin2024": -16.12,
+   "presMargin2020": -14.78,
+   "turnout2024": 1327591
+  },
+  "stateleg:KY-senate": {
+   "presMargin2024": -30.55,
+   "presMargin2020": -25.94,
+   "turnout2024": 2073309
+  },
+  "stateleg:KY-house": {
+   "presMargin2024": -30.55,
+   "presMargin2020": -25.94,
+   "turnout2024": 2073309
+  },
+  "stateleg:ME-senate": {
+   "presMargin2024": 6.94,
+   "presMargin2020": 8.67,
+   "turnout2024": 831375
+  },
+  "stateleg:ME-house": {
+   "presMargin2024": 6.94,
+   "presMargin2020": 8.67,
+   "turnout2024": 831375
+  },
+  "stateleg:MD-senate": {
+   "presMargin2024": 28.75,
+   "presMargin2020": 33.21,
+   "turnout2024": 3015650
+  },
+  "stateleg:MD-house": {
+   "presMargin2024": 28.75,
+   "presMargin2020": 33.21,
+   "turnout2024": 3015650
+  },
+  "stateleg:MA-senate": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437
+  },
+  "stateleg:MA-house": {
+   "presMargin2024": 25.34,
+   "presMargin2020": 33.46,
+   "turnout2024": 3453437
+  },
+  "stateleg:MI-senate": {
+   "presMargin2024": -1.41,
+   "presMargin2020": 2.78,
+   "turnout2024": 5662504
+  },
+  "stateleg:MI-house": {
+   "presMargin2024": -1.41,
+   "presMargin2020": 2.78,
+   "turnout2024": 5662504
+  },
+  "stateleg:MN-senate": {
+   "presMargin2024": 4.26,
+   "presMargin2020": 7.11,
+   "turnout2024": 3240916
+  },
+  "stateleg:MN-house": {
+   "presMargin2024": 4.26,
+   "presMargin2020": 7.11,
+   "turnout2024": 3240916
+  },
+  "stateleg:MO-senate": {
+   "presMargin2024": -18.42,
+   "presMargin2020": -15.39,
+   "turnout2024": 2993596
+  },
+  "stateleg:MO-house": {
+   "presMargin2024": -18.42,
+   "presMargin2020": -15.39,
+   "turnout2024": 2993596
+  },
+  "stateleg:MT-senate": {
+   "presMargin2024": -19.93,
+   "presMargin2020": -16.31,
+   "turnout2024": 602963
+  },
+  "stateleg:MT-house": {
+   "presMargin2024": -19.93,
+   "presMargin2020": -16.31,
+   "turnout2024": 602963
+  },
+  "stateleg:NV-senate": {
+   "presMargin2024": -3.1,
+   "presMargin2020": 2.39,
+   "turnout2024": 1484840
+  },
+  "stateleg:NV-assembly": {
+   "presMargin2024": -3.1,
+   "presMargin2020": 2.39,
+   "turnout2024": 1484840
+  },
+  "stateleg:NH-senate": {
+   "presMargin2024": 2.79,
+   "presMargin2020": 7.37,
+   "turnout2024": 822153
+  },
+  "stateleg:NH-house": {
+   "presMargin2024": 2.79,
+   "presMargin2020": 7.37,
+   "turnout2024": 822153
+  },
+  "stateleg:NM-house": {
+   "presMargin2024": 6,
+   "presMargin2020": 10.79,
+   "turnout2024": 923403
+  },
+  "stateleg:NY-senate": {
+   "presMargin2024": 12.69,
+   "presMargin2020": 23.14,
+   "turnout2024": 8198094
+  },
+  "stateleg:NY-assembly": {
+   "presMargin2024": 12.69,
+   "presMargin2020": 23.14,
+   "turnout2024": 8198094
+  },
+  "stateleg:NC-senate": {
+   "presMargin2024": -3.22,
+   "presMargin2020": -1.35,
+   "turnout2024": 5679647
+  },
+  "stateleg:NC-house": {
+   "presMargin2024": -3.22,
+   "presMargin2020": -1.35,
+   "turnout2024": 5679647
+  },
+  "stateleg:ND-senate": {
+   "presMargin2024": -36.76,
+   "presMargin2020": -33.36,
+   "turnout2024": 365059
+  },
+  "stateleg:ND-house": {
+   "presMargin2024": -36.76,
+   "presMargin2020": -33.36,
+   "turnout2024": 365059
+  },
+  "stateleg:OH-senate": {
+   "presMargin2024": -11.21,
+   "presMargin2020": -8.03,
+   "turnout2024": 5765017
+  },
+  "stateleg:OH-house": {
+   "presMargin2024": -11.21,
+   "presMargin2020": -8.03,
+   "turnout2024": 5765017
+  },
+  "stateleg:OK-senate": {
+   "presMargin2024": -34.26,
+   "presMargin2020": -33.09,
+   "turnout2024": 1566173
+  },
+  "stateleg:OK-house": {
+   "presMargin2024": -34.26,
+   "presMargin2020": -33.09,
+   "turnout2024": 1566173
+  },
+  "stateleg:OR-senate": {
+   "presMargin2024": 14.39,
+   "presMargin2020": 16.09,
+   "turnout2024": 2207592
+  },
+  "stateleg:OR-house": {
+   "presMargin2024": 14.39,
+   "presMargin2020": 16.09,
+   "turnout2024": 2207592
+  },
+  "stateleg:PA-senate": {
+   "presMargin2024": -1.71,
+   "presMargin2020": 1.18,
+   "turnout2024": 7034206
+  },
+  "stateleg:PA-house": {
+   "presMargin2024": -1.71,
+   "presMargin2020": 1.18,
+   "turnout2024": 7034206
+  },
+  "stateleg:RI-senate": {
+   "presMargin2024": 13.85,
+   "presMargin2020": 20.6,
+   "turnout2024": 510659
+  },
+  "stateleg:RI-house": {
+   "presMargin2024": 13.85,
+   "presMargin2020": 20.6,
+   "turnout2024": 510659
+  },
+  "stateleg:SC-house": {
+   "presMargin2024": -17.87,
+   "presMargin2020": -11.68,
+   "turnout2024": 2548140
+  },
+  "stateleg:SD-senate": {
+   "presMargin2024": -29.19,
+   "presMargin2020": -26.16,
+   "turnout2024": 428922
+  },
+  "stateleg:SD-house": {
+   "presMargin2024": -29.19,
+   "presMargin2020": -26.16,
+   "turnout2024": 428922
+  },
+  "stateleg:TN-senate": {
+   "presMargin2024": -29.72,
+   "presMargin2020": -23.21,
+   "turnout2024": 3063942
+  },
+  "stateleg:TN-house": {
+   "presMargin2024": -29.72,
+   "presMargin2020": -23.21,
+   "turnout2024": 3063942
+  },
+  "stateleg:TX-senate": {
+   "presMargin2024": -13.69,
+   "presMargin2020": -5.58,
+   "turnout2024": 11380105
+  },
+  "stateleg:TX-house": {
+   "presMargin2024": -13.69,
+   "presMargin2020": -5.58,
+   "turnout2024": 11380105
+  },
+  "stateleg:UT-senate": {
+   "presMargin2024": -21.59,
+   "presMargin2020": -20.48,
+   "turnout2024": 1487951
+  },
+  "stateleg:UT-house": {
+   "presMargin2024": -21.59,
+   "presMargin2020": -20.48,
+   "turnout2024": 1487951
+  },
+  "stateleg:VT-senate": {
+   "presMargin2024": 31.77,
+   "presMargin2020": 35.41,
+   "turnout2024": 366389
+  },
+  "stateleg:VT-house": {
+   "presMargin2024": 31.77,
+   "presMargin2020": 35.41,
+   "turnout2024": 366389
+  },
+  "stateleg:WA-senate": {
+   "presMargin2024": 18.34,
+   "presMargin2020": 19.2,
+   "turnout2024": 3898835
+  },
+  "stateleg:WA-house": {
+   "presMargin2024": 18.34,
+   "presMargin2020": 19.2,
+   "turnout2024": 3898835
+  },
+  "stateleg:WV-senate": {
+   "presMargin2024": -41.87,
+   "presMargin2020": -38.94,
+   "turnout2024": 762390
+  },
+  "stateleg:WV-house": {
+   "presMargin2024": -41.87,
+   "presMargin2020": -38.94,
+   "turnout2024": 762390
+  },
+  "stateleg:WI-senate": {
+   "presMargin2024": -0.86,
+   "presMargin2020": 0.62,
+   "turnout2024": 3415213
+  },
+  "stateleg:WI-assembly": {
+   "presMargin2024": -0.86,
+   "presMargin2020": 0.62,
+   "turnout2024": 3415213
+  },
+  "stateleg:WY-senate": {
+   "presMargin2024": -46.22,
+   "presMargin2020": -43.38,
+   "turnout2024": 266353
+  },
+  "stateleg:WY-house": {
+   "presMargin2024": -46.22,
+   "presMargin2020": -43.38,
+   "turnout2024": 266353
+  },
+  "stateleg:NE-legislature": {
+   "presMargin2024": -20.57,
+   "presMargin2020": -19.06,
+   "turnout2024": 947159
+  }
+ },
+ "prior": {
+  "senate2020": {
+   "AL": {
+    "margin": -20.4,
+    "year": 2020
+   },
+   "AK": {
+    "margin": -53.9,
+    "year": 2020
+   },
+   "AR": {
+    "margin": -66.5,
+    "year": 2020
+   },
+   "CO": {
+    "margin": 9.3,
+    "year": 2020
+   },
+   "DE": {
+    "margin": 21.5,
+    "year": 2020
+   },
+   "GA": {
+    "margin": 1.2,
+    "year": 2020
+   },
+   "ID": {
+    "margin": -29.3,
+    "year": 2020
+   },
+   "IL": {
+    "margin": 16,
+    "year": 2020
+   },
+   "IA": {
+    "margin": -6.6,
+    "year": 2020
+   },
+   "KS": {
+    "margin": -11.4,
+    "year": 2020
+   },
+   "KY": {
+    "margin": -19.6,
+    "year": 2020
+   },
+   "LA": {
+    "margin": -40.3,
+    "year": 2020
+   },
+   "ME": {
+    "margin": -8.6,
+    "year": 2020
+   },
+   "MA": {
+    "margin": 33.2,
+    "year": 2020
+   },
+   "MI": {
+    "margin": 1.7,
+    "year": 2020
+   },
+   "MN": {
+    "margin": 5.3,
+    "year": 2020
+   },
+   "MS": {
+    "margin": -10,
+    "year": 2020
+   },
+   "MT": {
+    "margin": -10,
+    "year": 2020
+   },
+   "NE": {
+    "margin": -38.3,
+    "year": 2020
+   },
+   "NH": {
+    "margin": 15.7,
+    "year": 2020
+   },
+   "NJ": {
+    "margin": 16.3,
+    "year": 2020
+   },
+   "NM": {
+    "margin": 6.1,
+    "year": 2020
+   },
+   "NC": {
+    "margin": -1.8,
+    "year": 2020
+   },
+   "OK": {
+    "margin": -30.1,
+    "year": 2020
+   },
+   "OR": {
+    "margin": 17.6,
+    "year": 2020
+   },
+   "RI": {
+    "margin": 33.2,
+    "year": 2020
+   },
+   "SC": {
+    "margin": -10.3,
+    "year": 2020
+   },
+   "SD": {
+    "margin": -31.4,
+    "year": 2020
+   },
+   "TN": {
+    "margin": -27,
+    "year": 2020
+   },
+   "TX": {
+    "margin": -9.6,
+    "year": 2020
+   },
+   "VA": {
+    "margin": 12.1,
+    "year": 2020
+   },
+   "WV": {
+    "margin": -43.3,
+    "year": 2020
+   },
+   "WY": {
+    "margin": -46.2,
+    "year": 2020
+   }
+  },
+  "senate2022": {
+   "AL": {
+    "margin": -35.7,
+    "year": 2022
+   },
+   "AK": {
+    "margin": -43.3,
+    "year": 2022
+   },
+   "AZ": {
+    "margin": 4.9,
+    "year": 2022
+   },
+   "AR": {
+    "margin": -34.8,
+    "year": 2022
+   },
+   "CA": {
+    "margin": 22.2,
+    "year": 2022
+   },
+   "CO": {
+    "margin": 14.6,
+    "year": 2022
+   },
+   "CT": {
+    "margin": 15,
+    "year": 2022
+   },
+   "FL": {
+    "margin": -16.4,
+    "year": 2022
+   },
+   "GA": {
+    "margin": 2.8,
+    "year": 2022
+   },
+   "HI": {
+    "margin": 45.2,
+    "year": 2022
+   },
+   "ID": {
+    "margin": -32,
+    "year": 2022
+   },
+   "IL": {
+    "margin": 15.3,
+    "year": 2022
+   },
+   "IN": {
+    "margin": -20.7,
+    "year": 2022
+   },
+   "IA": {
+    "margin": -12.2,
+    "year": 2022
+   },
+   "KS": {
+    "margin": -23,
+    "year": 2022
+   },
+   "KY": {
+    "margin": -23.6,
+    "year": 2022
+   },
+   "LA": {
+    "margin": -43.7,
+    "year": 2022
+   },
+   "MD": {
+    "margin": 31.6,
+    "year": 2022
+   },
+   "MO": {
+    "margin": -13.2,
+    "year": 2022
+   },
+   "NV": {
+    "margin": 0.8,
+    "year": 2022
+   },
+   "NH": {
+    "margin": 9.2,
+    "year": 2022
+   },
+   "NY": {
+    "margin": 14,
+    "year": 2022
+   },
+   "NC": {
+    "margin": -3.2,
+    "year": 2022
+   },
+   "ND": {
+    "margin": -31.4,
+    "year": 2022
+   },
+   "OH": {
+    "margin": -6.1,
+    "year": 2022
+   },
+   "OK": {
+    "margin": -32.2,
+    "year": 2022
+   },
+   "OR": {
+    "margin": 14.9,
+    "year": 2022
+   },
+   "PA": {
+    "margin": 4.9,
+    "year": 2022
+   },
+   "SC": {
+    "margin": -25.9,
+    "year": 2022
+   },
+   "SD": {
+    "margin": -43.4,
+    "year": 2022
+   },
+   "UT": {
+    "margin": -53.1,
+    "year": 2022
+   },
+   "VT": {
+    "margin": 40.4,
+    "year": 2022
+   },
+   "WA": {
+    "margin": 14.5,
+    "year": 2022
+   },
+   "WI": {
+    "margin": -1,
+    "year": 2022
+   }
+  },
+  "governor2022": {
+   "AL": {
+    "margin": -37.7,
+    "year": 2022
+   },
+   "AK": {
+    "margin": -26.1,
+    "year": 2022
+   },
+   "AZ": {
+    "margin": 0.6,
+    "year": 2022
+   },
+   "AR": {
+    "margin": -27.8,
+    "year": 2022
+   },
+   "CA": {
+    "margin": 18.4,
+    "year": 2022
+   },
+   "CO": {
+    "margin": 19.3,
+    "year": 2022
+   },
+   "CT": {
+    "margin": 12.9,
+    "year": 2022
+   },
+   "FL": {
+    "margin": -19.4,
+    "year": 2022
+   },
+   "GA": {
+    "margin": -7.5,
+    "year": 2022
+   },
+   "HI": {
+    "margin": 26.4,
+    "year": 2022
+   },
+   "ID": {
+    "margin": -40.2,
+    "year": 2022
+   },
+   "IL": {
+    "margin": 12.5,
+    "year": 2022
+   },
+   "IA": {
+    "margin": -18.5,
+    "year": 2022
+   },
+   "KS": {
+    "margin": 2.2,
+    "year": 2022
+   },
+   "ME": {
+    "margin": 13.3,
+    "year": 2022
+   },
+   "MD": {
+    "margin": 32.4,
+    "year": 2022
+   },
+   "MA": {
+    "margin": 29.1,
+    "year": 2022
+   },
+   "MI": {
+    "margin": 10.6,
+    "year": 2022
+   },
+   "MN": {
+    "margin": 7.7,
+    "year": 2022
+   },
+   "NE": {
+    "margin": -23.4,
+    "year": 2022
+   },
+   "NV": {
+    "margin": -1.5,
+    "year": 2022
+   },
+   "NH": {
+    "margin": -15.5,
+    "year": 2022
+   },
+   "NM": {
+    "margin": 6.4,
+    "year": 2022
+   },
+   "NY": {
+    "margin": 6.4,
+    "year": 2022
+   },
+   "OH": {
+    "margin": -25,
+    "year": 2022
+   },
+   "OK": {
+    "margin": -13.6,
+    "year": 2022
+   },
+   "OR": {
+    "margin": 3.4,
+    "year": 2022
+   },
+   "PA": {
+    "margin": 14.8,
+    "year": 2022
+   },
+   "RI": {
+    "margin": 19,
+    "year": 2022
+   },
+   "SC": {
+    "margin": -17.4,
+    "year": 2022
+   },
+   "SD": {
+    "margin": -26.8,
+    "year": 2022
+   },
+   "TN": {
+    "margin": -32,
+    "year": 2022
+   },
+   "TX": {
+    "margin": -10.9,
+    "year": 2022
+   },
+   "VT": {
+    "margin": -47,
+    "year": 2022
+   },
+   "WI": {
+    "margin": 3.4,
+    "year": 2022
+   },
+   "WY": {
+    "margin": -58.3,
+    "year": 2022
+   }
+  },
+  "governor2024": {
+   "DE": {
+    "margin": 12.2,
+    "year": 2024
+   },
+   "IN": {
+    "margin": -13.3,
+    "year": 2024
+   },
+   "MO": {
+    "margin": -20.5,
+    "year": 2024
+   },
+   "MT": {
+    "margin": -20.3,
+    "year": 2024
+   },
+   "NH": {
+    "margin": -9.3,
+    "year": 2024
+   },
+   "NC": {
+    "margin": 14.8,
+    "year": 2024
+   },
+   "ND": {
+    "margin": -42.4,
+    "year": 2024
+   },
+   "UT": {
+    "margin": -24.4,
+    "year": 2024
+   },
+   "VT": {
+    "margin": -51.6,
+    "year": 2024
+   },
+   "WA": {
+    "margin": 11.4,
+    "year": 2024
+   },
+   "WV": {
+    "margin": -30.4,
+    "year": 2024
+   }
+  },
+  "house2024Source": "Wikipedia: 2024 United States House of Representatives elections (2024 lines)",
+  "house2024": {
+   "AL-01": {
+    "margin": -57,
+    "year": 2024
+   },
+   "AL-02": {
+    "margin": 9.2,
+    "year": 2024
+   },
+   "AL-03": {
+    "margin": -100,
+    "year": 2024
+   },
+   "AL-04": {
+    "margin": -100,
+    "year": 2024
+   },
+   "AL-05": {
+    "margin": -100,
+    "year": 2024
+   },
+   "AL-06": {
+    "margin": -40.8,
+    "year": 2024
+   },
+   "AL-07": {
+    "margin": 27.4,
+    "year": 2024
+   },
+   "AK-AL": {
+    "margin": -2.4,
+    "year": 2024
+   },
+   "AZ-01": {
+    "margin": -3.8,
+    "year": 2024
+   },
+   "AZ-02": {
+    "margin": -9,
+    "year": 2024
+   },
+   "AZ-03": {
+    "margin": 44.3,
+    "year": 2024
+   },
+   "AZ-04": {
+    "margin": 7.2,
+    "year": 2024
+   },
+   "AZ-05": {
+    "margin": -20.8,
+    "year": 2024
+   },
+   "AZ-06": {
+    "margin": -2.5,
+    "year": 2024
+   },
+   "AZ-07": {
+    "margin": 26.8,
+    "year": 2024
+   },
+   "AZ-08": {
+    "margin": -13,
+    "year": 2024
+   },
+   "AZ-09": {
+    "margin": -30.6,
+    "year": 2024
+   },
+   "AR-01": {
+    "margin": -48.9,
+    "year": 2024
+   },
+   "AR-02": {
+    "margin": -17.8,
+    "year": 2024
+   },
+   "AR-03": {
+    "margin": -32,
+    "year": 2024
+   },
+   "AR-04": {
+    "margin": -45.8,
+    "year": 2024
+   },
+   "CA-01": {
+    "margin": -30.6,
+    "year": 2024
+   },
+   "CA-02": {
+    "margin": 43.8,
+    "year": 2024
+   },
+   "CA-03": {
+    "margin": -11,
+    "year": 2024
+   },
+   "CA-04": {
+    "margin": 33,
+    "year": 2024
+   },
+   "CA-05": {
+    "margin": -23.6,
+    "year": 2024
+   },
+   "CA-06": {
+    "margin": 15.2,
+    "year": 2024
+   },
+   "CA-07": {
+    "margin": 33.6,
+    "year": 2024
+   },
+   "CA-08": {
+    "margin": 48,
+    "year": 2024
+   },
+   "CA-09": {
+    "margin": 3.6,
+    "year": 2024
+   },
+   "CA-10": {
+    "margin": 33,
+    "year": 2024
+   },
+   "CA-11": {
+    "margin": 62,
+    "year": 2024
+   },
+   "CA-12": {
+    "margin": 65.4,
+    "year": 2024
+   },
+   "CA-13": {
+    "margin": 0.1,
+    "year": 2024
+   },
+   "CA-14": {
+    "margin": 35.6,
+    "year": 2024
+   },
+   "CA-15": {
+    "margin": 46.2,
+    "year": 2024
+   },
+   "CA-16": {
+    "margin": 58.2,
+    "year": 2024
+   },
+   "CA-17": {
+    "margin": 35.4,
+    "year": 2024
+   },
+   "CA-18": {
+    "margin": 29.2,
+    "year": 2024
+   },
+   "CA-19": {
+    "margin": 38.6,
+    "year": 2024
+   },
+   "CA-20": {
+    "margin": -65.1,
+    "year": 2024
+   },
+   "CA-21": {
+    "margin": 5.2,
+    "year": 2024
+   },
+   "CA-22": {
+    "margin": -6.8,
+    "year": 2024
+   },
+   "CA-23": {
+    "margin": -20.2,
+    "year": 2024
+   },
+   "CA-24": {
+    "margin": 25.4,
+    "year": 2024
+   },
+   "CA-25": {
+    "margin": 12.6,
+    "year": 2024
+   },
+   "CA-26": {
+    "margin": 12.2,
+    "year": 2024
+   },
+   "CA-27": {
+    "margin": 2.6,
+    "year": 2024
+   },
+   "CA-28": {
+    "margin": 29.8,
+    "year": 2024
+   },
+   "CA-29": {
+    "margin": 39.6,
+    "year": 2024
+   },
+   "CA-30": {
+    "margin": 36.8,
+    "year": 2024
+   },
+   "CA-31": {
+    "margin": 19.4,
+    "year": 2024
+   },
+   "CA-32": {
+    "margin": 32.4,
+    "year": 2024
+   },
+   "CA-33": {
+    "margin": 17.6,
+    "year": 2024
+   },
+   "CA-34": {
+    "margin": 55.6,
+    "year": 2024
+   },
+   "CA-35": {
+    "margin": 16.8,
+    "year": 2024
+   },
+   "CA-36": {
+    "margin": 37.4,
+    "year": 2024
+   },
+   "CA-37": {
+    "margin": 78.3,
+    "year": 2024
+   },
+   "CA-38": {
+    "margin": 19.6,
+    "year": 2024
+   },
+   "CA-39": {
+    "margin": 13.4,
+    "year": 2024
+   },
+   "CA-40": {
+    "margin": -10.6,
+    "year": 2024
+   },
+   "CA-41": {
+    "margin": -3.4,
+    "year": 2024
+   },
+   "CA-42": {
+    "margin": 36.2,
+    "year": 2024
+   },
+   "CA-43": {
+    "margin": 50.2,
+    "year": 2024
+   },
+   "CA-44": {
+    "margin": 42.8,
+    "year": 2024
+   },
+   "CA-45": {
+    "margin": 0.2,
+    "year": 2024
+   },
+   "CA-46": {
+    "margin": 26.8,
+    "year": 2024
+   },
+   "CA-47": {
+    "margin": 2.8,
+    "year": 2024
+   },
+   "CA-48": {
+    "margin": -18.6,
+    "year": 2024
+   },
+   "CA-49": {
+    "margin": 4.4,
+    "year": 2024
+   },
+   "CA-50": {
+    "margin": 28.6,
+    "year": 2024
+   },
+   "CA-51": {
+    "margin": 21.4,
+    "year": 2024
+   },
+   "CA-52": {
+    "margin": 32.6,
+    "year": 2024
+   },
+   "CO-01": {
+    "margin": 55,
+    "year": 2024
+   },
+   "CO-02": {
+    "margin": 39.5,
+    "year": 2024
+   },
+   "CO-03": {
+    "margin": -5,
+    "year": 2024
+   },
+   "CO-04": {
+    "margin": -11.6,
+    "year": 2024
+   },
+   "CO-05": {
+    "margin": -13.8,
+    "year": 2024
+   },
+   "CO-06": {
+    "margin": 20.5,
+    "year": 2024
+   },
+   "CO-07": {
+    "margin": 14.1,
+    "year": 2024
+   },
+   "CO-08": {
+    "margin": -0.8,
+    "year": 2024
+   },
+   "CT-01": {
+    "margin": 28.3,
+    "year": 2024
+   },
+   "CT-02": {
+    "margin": 16,
+    "year": 2024
+   },
+   "CT-03": {
+    "margin": 17.8,
+    "year": 2024
+   },
+   "CT-04": {
+    "margin": 23.8,
+    "year": 2024
+   },
+   "CT-05": {
+    "margin": 6.8,
+    "year": 2024
+   },
+   "DE-AL": {
+    "margin": 15.8,
+    "year": 2024
+   },
+   "FL-01": {
+    "margin": -32,
+    "year": 2024
+   },
+   "FL-02": {
+    "margin": -23.2,
+    "year": 2024
+   },
+   "FL-03": {
+    "margin": -23.2,
+    "year": 2024
+   },
+   "FL-04": {
+    "margin": -14.6,
+    "year": 2024
+   },
+   "FL-05": {
+    "margin": -26.2,
+    "year": 2024
+   },
+   "FL-06": {
+    "margin": -33,
+    "year": 2024
+   },
+   "FL-07": {
+    "margin": -13,
+    "year": 2024
+   },
+   "FL-08": {
+    "margin": -24.4,
+    "year": 2024
+   },
+   "FL-09": {
+    "margin": 12.5,
+    "year": 2024
+   },
+   "FL-10": {
+    "margin": 24.8,
+    "year": 2024
+   },
+   "FL-11": {
+    "margin": -20.8,
+    "year": 2024
+   },
+   "FL-12": {
+    "margin": -42,
+    "year": 2024
+   },
+   "FL-13": {
+    "margin": -9.6,
+    "year": 2024
+   },
+   "FL-14": {
+    "margin": 15.3,
+    "year": 2024
+   },
+   "FL-15": {
+    "margin": -12.4,
+    "year": 2024
+   },
+   "FL-16": {
+    "margin": -19,
+    "year": 2024
+   },
+   "FL-17": {
+    "margin": -27.8,
+    "year": 2024
+   },
+   "FL-18": {
+    "margin": -30.6,
+    "year": 2024
+   },
+   "FL-19": {
+    "margin": -32.6,
+    "year": 2024
+   },
+   "FL-20": {
+    "margin": 100,
+    "year": 2024
+   },
+   "FL-21": {
+    "margin": -23.6,
+    "year": 2024
+   },
+   "FL-22": {
+    "margin": 10,
+    "year": 2024
+   },
+   "FL-23": {
+    "margin": 4.8,
+    "year": 2024
+   },
+   "FL-24": {
+    "margin": 36.4,
+    "year": 2024
+   },
+   "FL-25": {
+    "margin": 9,
+    "year": 2024
+   },
+   "FL-26": {
+    "margin": -41.8,
+    "year": 2024
+   },
+   "FL-27": {
+    "margin": -20.8,
+    "year": 2024
+   },
+   "FL-28": {
+    "margin": -29.2,
+    "year": 2024
+   },
+   "GA-01": {
+    "margin": -24,
+    "year": 2024
+   },
+   "GA-02": {
+    "margin": 12.6,
+    "year": 2024
+   },
+   "GA-03": {
+    "margin": -32.6,
+    "year": 2024
+   },
+   "GA-04": {
+    "margin": 51.2,
+    "year": 2024
+   },
+   "GA-05": {
+    "margin": 71.4,
+    "year": 2024
+   },
+   "GA-06": {
+    "margin": 49.4,
+    "year": 2024
+   },
+   "GA-07": {
+    "margin": -29.8,
+    "year": 2024
+   },
+   "GA-08": {
+    "margin": -37.8,
+    "year": 2024
+   },
+   "GA-09": {
+    "margin": -38,
+    "year": 2024
+   },
+   "GA-10": {
+    "margin": -26.2,
+    "year": 2024
+   },
+   "GA-11": {
+    "margin": -34.6,
+    "year": 2024
+   },
+   "GA-12": {
+    "margin": -20.6,
+    "year": 2024
+   },
+   "GA-13": {
+    "margin": 43.6,
+    "year": 2024
+   },
+   "GA-14": {
+    "margin": -28.8,
+    "year": 2024
+   },
+   "HI-01": {
+    "margin": 43.6,
+    "year": 2024
+   },
+   "HI-02": {
+    "margin": 36.3,
+    "year": 2024
+   },
+   "ID-01": {
+    "margin": -45.6,
+    "year": 2024
+   },
+   "ID-02": {
+    "margin": -30.4,
+    "year": 2024
+   },
+   "IL-01": {
+    "margin": 31.8,
+    "year": 2024
+   },
+   "IL-02": {
+    "margin": 35.2,
+    "year": 2024
+   },
+   "IL-03": {
+    "margin": 34.6,
+    "year": 2024
+   },
+   "IL-04": {
+    "margin": 40.2,
+    "year": 2024
+   },
+   "IL-05": {
+    "margin": 38,
+    "year": 2024
+   },
+   "IL-06": {
+    "margin": 8.4,
+    "year": 2024
+   },
+   "IL-07": {
+    "margin": 66.6,
+    "year": 2024
+   },
+   "IL-08": {
+    "margin": 14.2,
+    "year": 2024
+   },
+   "IL-09": {
+    "margin": 36.8,
+    "year": 2024
+   },
+   "IL-10": {
+    "margin": 20,
+    "year": 2024
+   },
+   "IL-11": {
+    "margin": 11.2,
+    "year": 2024
+   },
+   "IL-12": {
+    "margin": -48.4,
+    "year": 2024
+   },
+   "IL-13": {
+    "margin": 16.2,
+    "year": 2024
+   },
+   "IL-14": {
+    "margin": 10.2,
+    "year": 2024
+   },
+   "IL-15": {
+    "margin": -100,
+    "year": 2024
+   },
+   "IL-16": {
+    "margin": -100,
+    "year": 2024
+   },
+   "IL-17": {
+    "margin": 8.8,
+    "year": 2024
+   },
+   "IN-01": {
+    "margin": 8.5,
+    "year": 2024
+   },
+   "IN-02": {
+    "margin": -28.1,
+    "year": 2024
+   },
+   "IN-03": {
+    "margin": -33.6,
+    "year": 2024
+   },
+   "IN-04": {
+    "margin": -33.9,
+    "year": 2024
+   },
+   "IN-05": {
+    "margin": -18.6,
+    "year": 2024
+   },
+   "IN-06": {
+    "margin": -32.2,
+    "year": 2024
+   },
+   "IN-07": {
+    "margin": 39.3,
+    "year": 2024
+   },
+   "IN-08": {
+    "margin": -38.5,
+    "year": 2024
+   },
+   "IN-09": {
+    "margin": -31.7,
+    "year": 2024
+   },
+   "IA-01": {
+    "margin": -0.2,
+    "year": 2024
+   },
+   "IA-02": {
+    "margin": -15.5,
+    "year": 2024
+   },
+   "IA-03": {
+    "margin": -3.8,
+    "year": 2024
+   },
+   "IA-04": {
+    "margin": -34.4,
+    "year": 2024
+   },
+   "KS-01": {
+    "margin": -38.2,
+    "year": 2024
+   },
+   "KS-02": {
+    "margin": -18.9,
+    "year": 2024
+   },
+   "KS-03": {
+    "margin": 10.8,
+    "year": 2024
+   },
+   "KS-04": {
+    "margin": -30,
+    "year": 2024
+   },
+   "KY-01": {
+    "margin": -49.4,
+    "year": 2024
+   },
+   "KY-02": {
+    "margin": -46.2,
+    "year": 2024
+   },
+   "KY-03": {
+    "margin": 24,
+    "year": 2024
+   },
+   "KY-04": {
+    "margin": -100,
+    "year": 2024
+   },
+   "KY-05": {
+    "margin": -100,
+    "year": 2024
+   },
+   "KY-06": {
+    "margin": -26.8,
+    "year": 2024
+   },
+   "LA-01": {
+    "margin": -42.8,
+    "year": 2024
+   },
+   "LA-02": {
+    "margin": 46.7,
+    "year": 2024
+   },
+   "LA-03": {
+    "margin": -51.9,
+    "year": 2024
+   },
+   "LA-04": {
+    "margin": -85.8,
+    "year": 2024
+   },
+   "LA-05": {
+    "margin": -37,
+    "year": 2024
+   },
+   "LA-06": {
+    "margin": 13.1,
+    "year": 2024
+   },
+   "ME-01": {
+    "margin": 22.3,
+    "year": 2024
+   },
+   "ME-02": {
+    "margin": 0.6,
+    "year": 2024
+   },
+   "MD-01": {
+    "margin": -22,
+    "year": 2024
+   },
+   "MD-02": {
+    "margin": 18.7,
+    "year": 2024
+   },
+   "MD-03": {
+    "margin": 21.4,
+    "year": 2024
+   },
+   "MD-04": {
+    "margin": 77.2,
+    "year": 2024
+   },
+   "MD-05": {
+    "margin": 35.8,
+    "year": 2024
+   },
+   "MD-06": {
+    "margin": 6.4,
+    "year": 2024
+   },
+   "MD-07": {
+    "margin": 63.1,
+    "year": 2024
+   },
+   "MD-08": {
+    "margin": 56.3,
+    "year": 2024
+   },
+   "MA-01": {
+    "margin": 62.6,
+    "year": 2024
+   },
+   "MA-02": {
+    "margin": 68.8,
+    "year": 2024
+   },
+   "MA-03": {
+    "margin": 100,
+    "year": 2024
+   },
+   "MA-04": {
+    "margin": 100,
+    "year": 2024
+   },
+   "MA-05": {
+    "margin": 100,
+    "year": 2024
+   },
+   "MA-06": {
+    "margin": 100,
+    "year": 2024
+   },
+   "MA-07": {
+    "margin": 100,
+    "year": 2024
+   },
+   "MA-08": {
+    "margin": 41,
+    "year": 2024
+   },
+   "MA-09": {
+    "margin": 13,
+    "year": 2024
+   },
+   "MI-01": {
+    "margin": -21.2,
+    "year": 2024
+   },
+   "MI-02": {
+    "margin": -33.4,
+    "year": 2024
+   },
+   "MI-03": {
+    "margin": 9.9,
+    "year": 2024
+   },
+   "MI-04": {
+    "margin": -11.7,
+    "year": 2024
+   },
+   "MI-05": {
+    "margin": -32.9,
+    "year": 2024
+   },
+   "MI-06": {
+    "margin": 27,
+    "year": 2024
+   },
+   "MI-07": {
+    "margin": -3.7,
+    "year": 2024
+   },
+   "MI-08": {
+    "margin": 6.6,
+    "year": 2024
+   },
+   "MI-09": {
+    "margin": -37.3,
+    "year": 2024
+   },
+   "MI-10": {
+    "margin": -6.1,
+    "year": 2024
+   },
+   "MI-11": {
+    "margin": 18.6,
+    "year": 2024
+   },
+   "MI-12": {
+    "margin": 44.3,
+    "year": 2024
+   },
+   "MI-13": {
+    "margin": 44.1,
+    "year": 2024
+   },
+   "MN-01": {
+    "margin": -17,
+    "year": 2024
+   },
+   "MN-02": {
+    "margin": 13.5,
+    "year": 2024
+   },
+   "MN-03": {
+    "margin": 17,
+    "year": 2024
+   },
+   "MN-04": {
+    "margin": 34.8,
+    "year": 2024
+   },
+   "MN-05": {
+    "margin": 50.4,
+    "year": 2024
+   },
+   "MN-06": {
+    "margin": -25,
+    "year": 2024
+   },
+   "MN-07": {
+    "margin": -41,
+    "year": 2024
+   },
+   "MN-08": {
+    "margin": -16,
+    "year": 2024
+   },
+   "MS-01": {
+    "margin": -39.6,
+    "year": 2024
+   },
+   "MS-02": {
+    "margin": 24,
+    "year": 2024
+   },
+   "MS-03": {
+    "margin": -100,
+    "year": 2024
+   },
+   "MS-04": {
+    "margin": -47.9,
+    "year": 2024
+   },
+   "MO-01": {
+    "margin": 57.5,
+    "year": 2024
+   },
+   "MO-02": {
+    "margin": -12,
+    "year": 2024
+   },
+   "MO-03": {
+    "margin": -26,
+    "year": 2024
+   },
+   "MO-04": {
+    "margin": -44.7,
+    "year": 2024
+   },
+   "MO-05": {
+    "margin": 23.8,
+    "year": 2024
+   },
+   "MO-06": {
+    "margin": -43.8,
+    "year": 2024
+   },
+   "MO-07": {
+    "margin": -45.3,
+    "year": 2024
+   },
+   "MO-08": {
+    "margin": -54.4,
+    "year": 2024
+   },
+   "MT-01": {
+    "margin": -7.7,
+    "year": 2024
+   },
+   "MT-02": {
+    "margin": -32,
+    "year": 2024
+   },
+   "NE-01": {
+    "margin": -20.2,
+    "year": 2024
+   },
+   "NE-02": {
+    "margin": -1.8,
+    "year": 2024
+   },
+   "NE-03": {
+    "margin": -60.8,
+    "year": 2024
+   },
+   "NV-01": {
+    "margin": 7.5,
+    "year": 2024
+   },
+   "NV-02": {
+    "margin": -55,
+    "year": 2024
+   },
+   "NV-03": {
+    "margin": 2.8,
+    "year": 2024
+   },
+   "NV-04": {
+    "margin": 8.1,
+    "year": 2024
+   },
+   "NH-01": {
+    "margin": 8,
+    "year": 2024
+   },
+   "NH-02": {
+    "margin": 6,
+    "year": 2024
+   },
+   "NJ-01": {
+    "margin": 17.8,
+    "year": 2024
+   },
+   "NJ-02": {
+    "margin": -16.9,
+    "year": 2024
+   },
+   "NJ-03": {
+    "margin": 8.6,
+    "year": 2024
+   },
+   "NJ-04": {
+    "margin": -35.7,
+    "year": 2024
+   },
+   "NJ-05": {
+    "margin": 11.3,
+    "year": 2024
+   },
+   "NJ-06": {
+    "margin": 15.8,
+    "year": 2024
+   },
+   "NJ-07": {
+    "margin": -5.4,
+    "year": 2024
+   },
+   "NJ-08": {
+    "margin": 24.8,
+    "year": 2024
+   },
+   "NJ-09": {
+    "margin": 4.9,
+    "year": 2024
+   },
+   "NJ-10": {
+    "margin": 52.2,
+    "year": 2024
+   },
+   "NJ-11": {
+    "margin": 15.3,
+    "year": 2024
+   },
+   "NJ-12": {
+    "margin": 24.8,
+    "year": 2024
+   },
+   "NM-01": {
+    "margin": 12.8,
+    "year": 2024
+   },
+   "NM-02": {
+    "margin": 4.2,
+    "year": 2024
+   },
+   "NM-03": {
+    "margin": 12.6,
+    "year": 2024
+   },
+   "NY-01": {
+    "margin": -10.4,
+    "year": 2024
+   },
+   "NY-02": {
+    "margin": -18.4,
+    "year": 2024
+   },
+   "NY-03": {
+    "margin": 3.6,
+    "year": 2024
+   },
+   "NY-04": {
+    "margin": 2.2,
+    "year": 2024
+   },
+   "NY-05": {
+    "margin": 45.8,
+    "year": 2024
+   },
+   "NY-06": {
+    "margin": 23.1,
+    "year": 2024
+   },
+   "NY-07": {
+    "margin": 56.2,
+    "year": 2024
+   },
+   "NY-08": {
+    "margin": 50.8,
+    "year": 2024
+   },
+   "NY-09": {
+    "margin": 48.6,
+    "year": 2024
+   },
+   "NY-10": {
+    "margin": 67.5,
+    "year": 2024
+   },
+   "NY-11": {
+    "margin": -28.2,
+    "year": 2024
+   },
+   "NY-12": {
+    "margin": 61,
+    "year": 2024
+   },
+   "NY-13": {
+    "margin": 67,
+    "year": 2024
+   },
+   "NY-14": {
+    "margin": 38.4,
+    "year": 2024
+   },
+   "NY-15": {
+    "margin": 55.1,
+    "year": 2024
+   },
+   "NY-16": {
+    "margin": 43.2,
+    "year": 2024
+   },
+   "NY-17": {
+    "margin": -6.4,
+    "year": 2024
+   },
+   "NY-18": {
+    "margin": 14.4,
+    "year": 2024
+   },
+   "NY-19": {
+    "margin": 2.2,
+    "year": 2024
+   },
+   "NY-20": {
+    "margin": 22.2,
+    "year": 2024
+   },
+   "NY-21": {
+    "margin": -24,
+    "year": 2024
+   },
+   "NY-22": {
+    "margin": 9.2,
+    "year": 2024
+   },
+   "NY-23": {
+    "margin": -31.6,
+    "year": 2024
+   },
+   "NY-24": {
+    "margin": -31.4,
+    "year": 2024
+   },
+   "NY-25": {
+    "margin": 21.6,
+    "year": 2024
+   },
+   "NY-26": {
+    "margin": 30.4,
+    "year": 2024
+   },
+   "NC-01": {
+    "margin": 1.7,
+    "year": 2024
+   },
+   "NC-02": {
+    "margin": 34.7,
+    "year": 2024
+   },
+   "NC-03": {
+    "margin": -77.4,
+    "year": 2024
+   },
+   "NC-04": {
+    "margin": 45.7,
+    "year": 2024
+   },
+   "NC-05": {
+    "margin": -19,
+    "year": 2024
+   },
+   "NC-06": {
+    "margin": -69.2,
+    "year": 2024
+   },
+   "NC-07": {
+    "margin": -17.2,
+    "year": 2024
+   },
+   "NC-08": {
+    "margin": -19.2,
+    "year": 2024
+   },
+   "NC-09": {
+    "margin": -18.5,
+    "year": 2024
+   },
+   "NC-10": {
+    "margin": -19.3,
+    "year": 2024
+   },
+   "NC-11": {
+    "margin": -13.6,
+    "year": 2024
+   },
+   "NC-12": {
+    "margin": 48,
+    "year": 2024
+   },
+   "NC-13": {
+    "margin": -17.2,
+    "year": 2024
+   },
+   "NC-14": {
+    "margin": -16.2,
+    "year": 2024
+   },
+   "ND-AL": {
+    "margin": -39,
+    "year": 2024
+   },
+   "OH-01": {
+    "margin": 9.2,
+    "year": 2024
+   },
+   "OH-02": {
+    "margin": -47.2,
+    "year": 2024
+   },
+   "OH-03": {
+    "margin": 41.4,
+    "year": 2024
+   },
+   "OH-04": {
+    "margin": -37,
+    "year": 2024
+   },
+   "OH-05": {
+    "margin": -35,
+    "year": 2024
+   },
+   "OH-06": {
+    "margin": -33.4,
+    "year": 2024
+   },
+   "OH-07": {
+    "margin": -15,
+    "year": 2024
+   },
+   "OH-08": {
+    "margin": -25.6,
+    "year": 2024
+   },
+   "OH-09": {
+    "margin": 0.7,
+    "year": 2024
+   },
+   "OH-10": {
+    "margin": -18.4,
+    "year": 2024
+   },
+   "OH-11": {
+    "margin": 58.7,
+    "year": 2024
+   },
+   "OH-12": {
+    "margin": -37,
+    "year": 2024
+   },
+   "OH-13": {
+    "margin": 2.2,
+    "year": 2024
+   },
+   "OH-14": {
+    "margin": -26.8,
+    "year": 2024
+   },
+   "OH-15": {
+    "margin": -13,
+    "year": 2024
+   },
+   "OK-01": {
+    "margin": -25.9,
+    "year": 2024
+   },
+   "OK-02": {
+    "margin": -52.8,
+    "year": 2024
+   },
+   "OK-03": {
+    "margin": -100,
+    "year": 2024
+   },
+   "OK-04": {
+    "margin": -36.9,
+    "year": 2024
+   },
+   "OK-05": {
+    "margin": -21.4,
+    "year": 2024
+   },
+   "OR-01": {
+    "margin": 40.6,
+    "year": 2024
+   },
+   "OR-02": {
+    "margin": -31.2,
+    "year": 2024
+   },
+   "OR-03": {
+    "margin": 42.6,
+    "year": 2024
+   },
+   "OR-04": {
+    "margin": 7.8,
+    "year": 2024
+   },
+   "OR-05": {
+    "margin": 2.7,
+    "year": 2024
+   },
+   "OR-06": {
+    "margin": 6.8,
+    "year": 2024
+   },
+   "PA-01": {
+    "margin": -12.8,
+    "year": 2024
+   },
+   "PA-02": {
+    "margin": 42.9,
+    "year": 2024
+   },
+   "PA-03": {
+    "margin": 100,
+    "year": 2024
+   },
+   "PA-04": {
+    "margin": 18.2,
+    "year": 2024
+   },
+   "PA-05": {
+    "margin": 30.6,
+    "year": 2024
+   },
+   "PA-06": {
+    "margin": 12.4,
+    "year": 2024
+   },
+   "PA-07": {
+    "margin": -1,
+    "year": 2024
+   },
+   "PA-08": {
+    "margin": -1.6,
+    "year": 2024
+   },
+   "PA-09": {
+    "margin": -41,
+    "year": 2024
+   },
+   "PA-10": {
+    "margin": -1.2,
+    "year": 2024
+   },
+   "PA-11": {
+    "margin": -25.8,
+    "year": 2024
+   },
+   "PA-12": {
+    "margin": 12.8,
+    "year": 2024
+   },
+   "PA-13": {
+    "margin": -48.4,
+    "year": 2024
+   },
+   "PA-14": {
+    "margin": -33.2,
+    "year": 2024
+   },
+   "PA-15": {
+    "margin": -43,
+    "year": 2024
+   },
+   "PA-16": {
+    "margin": -27.2,
+    "year": 2024
+   },
+   "PA-17": {
+    "margin": 7.8,
+    "year": 2024
+   },
+   "RI-01": {
+    "margin": 31.1,
+    "year": 2024
+   },
+   "RI-02": {
+    "margin": 16.8,
+    "year": 2024
+   },
+   "SC-01": {
+    "margin": -16.6,
+    "year": 2024
+   },
+   "SC-02": {
+    "margin": -19.4,
+    "year": 2024
+   },
+   "SC-03": {
+    "margin": -46.4,
+    "year": 2024
+   },
+   "SC-04": {
+    "margin": -22.6,
+    "year": 2024
+   },
+   "SC-05": {
+    "margin": -27.2,
+    "year": 2024
+   },
+   "SC-06": {
+    "margin": 22.8,
+    "year": 2024
+   },
+   "SC-07": {
+    "margin": -30,
+    "year": 2024
+   },
+   "SD-AL": {
+    "margin": -44,
+    "year": 2024
+   },
+   "TN-01": {
+    "margin": -59.3,
+    "year": 2024
+   },
+   "TN-02": {
+    "margin": -38.6,
+    "year": 2024
+   },
+   "TN-03": {
+    "margin": -38.1,
+    "year": 2024
+   },
+   "TN-04": {
+    "margin": -43.2,
+    "year": 2024
+   },
+   "TN-05": {
+    "margin": -17.4,
+    "year": 2024
+   },
+   "TN-06": {
+    "margin": -36,
+    "year": 2024
+   },
+   "TN-07": {
+    "margin": -21.5,
+    "year": 2024
+   },
+   "TN-08": {
+    "margin": -46.7,
+    "year": 2024
+   },
+   "TN-09": {
+    "margin": 45.6,
+    "year": 2024
+   },
+   "TX-01": {
+    "margin": -100,
+    "year": 2024
+   },
+   "TX-02": {
+    "margin": -31.4,
+    "year": 2024
+   },
+   "TX-03": {
+    "margin": -25,
+    "year": 2024
+   },
+   "TX-04": {
+    "margin": -36.8,
+    "year": 2024
+   },
+   "TX-05": {
+    "margin": -28.2,
+    "year": 2024
+   },
+   "TX-06": {
+    "margin": -31.4,
+    "year": 2024
+   },
+   "TX-07": {
+    "margin": 22.6,
+    "year": 2024
+   },
+   "TX-08": {
+    "margin": -36.4,
+    "year": 2024
+   },
+   "TX-09": {
+    "margin": 100,
+    "year": 2024
+   },
+   "TX-10": {
+    "margin": -29.6,
+    "year": 2024
+   },
+   "TX-11": {
+    "margin": -100,
+    "year": 2024
+   },
+   "TX-12": {
+    "margin": -27,
+    "year": 2024
+   },
+   "TX-13": {
+    "margin": -100,
+    "year": 2024
+   },
+   "TX-14": {
+    "margin": -37.4,
+    "year": 2024
+   },
+   "TX-15": {
+    "margin": -14.2,
+    "year": 2024
+   },
+   "TX-16": {
+    "margin": 19,
+    "year": 2024
+   },
+   "TX-17": {
+    "margin": -32.6,
+    "year": 2024
+   },
+   "TX-18": {
+    "margin": 38.8,
+    "year": 2024
+   },
+   "TX-19": {
+    "margin": -80.7,
+    "year": 2024
+   },
+   "TX-20": {
+    "margin": 100,
+    "year": 2024
+   },
+   "TX-21": {
+    "margin": -25.8,
+    "year": 2024
+   },
+   "TX-22": {
+    "margin": -24.2,
+    "year": 2024
+   },
+   "TX-23": {
+    "margin": -24.6,
+    "year": 2024
+   },
+   "TX-24": {
+    "margin": -20.6,
+    "year": 2024
+   },
+   "TX-25": {
+    "margin": -100,
+    "year": 2024
+   },
+   "TX-26": {
+    "margin": -26.4,
+    "year": 2024
+   },
+   "TX-27": {
+    "margin": -32,
+    "year": 2024
+   },
+   "TX-28": {
+    "margin": 5.6,
+    "year": 2024
+   },
+   "TX-29": {
+    "margin": 30.6,
+    "year": 2024
+   },
+   "TX-30": {
+    "margin": 84.9,
+    "year": 2024
+   },
+   "TX-31": {
+    "margin": -28.8,
+    "year": 2024
+   },
+   "TX-32": {
+    "margin": 23.5,
+    "year": 2024
+   },
+   "TX-33": {
+    "margin": 37.6,
+    "year": 2024
+   },
+   "TX-34": {
+    "margin": 2.6,
+    "year": 2024
+   },
+   "TX-35": {
+    "margin": 34.8,
+    "year": 2024
+   },
+   "TX-36": {
+    "margin": -38.8,
+    "year": 2024
+   },
+   "TX-37": {
+    "margin": 50.6,
+    "year": 2024
+   },
+   "TX-38": {
+    "margin": -25.5,
+    "year": 2024
+   },
+   "UT-01": {
+    "margin": -31,
+    "year": 2024
+   },
+   "UT-02": {
+    "margin": -23.8,
+    "year": 2024
+   },
+   "UT-03": {
+    "margin": -32.8,
+    "year": 2024
+   },
+   "UT-04": {
+    "margin": -33.2,
+    "year": 2024
+   },
+   "VT-AL": {
+    "margin": 32.6,
+    "year": 2024
+   },
+   "VA-01": {
+    "margin": -12.8,
+    "year": 2024
+   },
+   "VA-02": {
+    "margin": -3.8,
+    "year": 2024
+   },
+   "VA-03": {
+    "margin": 40.2,
+    "year": 2024
+   },
+   "VA-04": {
+    "margin": 35,
+    "year": 2024
+   },
+   "VA-05": {
+    "margin": -15,
+    "year": 2024
+   },
+   "VA-06": {
+    "margin": -28.4,
+    "year": 2024
+   },
+   "VA-07": {
+    "margin": 2.6,
+    "year": 2024
+   },
+   "VA-08": {
+    "margin": 47,
+    "year": 2024
+   },
+   "VA-09": {
+    "margin": -45.2,
+    "year": 2024
+   },
+   "VA-10": {
+    "margin": 4.6,
+    "year": 2024
+   },
+   "VA-11": {
+    "margin": 34,
+    "year": 2024
+   },
+   "WA-01": {
+    "margin": 26.4,
+    "year": 2024
+   },
+   "WA-02": {
+    "margin": 28,
+    "year": 2024
+   },
+   "WA-03": {
+    "margin": 3.8,
+    "year": 2024
+   },
+   "WA-04": {
+    "margin": -53,
+    "year": 2024
+   },
+   "WA-05": {
+    "margin": -21.4,
+    "year": 2024
+   },
+   "WA-06": {
+    "margin": 13.6,
+    "year": 2024
+   },
+   "WA-07": {
+    "margin": 68.4,
+    "year": 2024
+   },
+   "WA-08": {
+    "margin": 8.2,
+    "year": 2024
+   },
+   "WA-09": {
+    "margin": 66.9,
+    "year": 2024
+   },
+   "WA-10": {
+    "margin": 17.4,
+    "year": 2024
+   },
+   "WV-01": {
+    "margin": -42.2,
+    "year": 2024
+   },
+   "WV-02": {
+    "margin": -41.6,
+    "year": 2024
+   },
+   "WI-01": {
+    "margin": -10.2,
+    "year": 2024
+   },
+   "WI-02": {
+    "margin": 40.2,
+    "year": 2024
+   },
+   "WI-03": {
+    "margin": -2.8,
+    "year": 2024
+   },
+   "WI-04": {
+    "margin": 52.5,
+    "year": 2024
+   },
+   "WI-05": {
+    "margin": -29,
+    "year": 2024
+   },
+   "WI-06": {
+    "margin": -22.6,
+    "year": 2024
+   },
+   "WI-07": {
+    "margin": -27.2,
+    "year": 2024
+   },
+   "WI-08": {
+    "margin": -14.6,
+    "year": 2024
+   },
+   "WY-AL": {
+    "margin": -47.6,
+    "year": 2024
+   }
+  }
+ },
+ "downballot": {
+  "fetched": true,
+  "districts": 435,
+  "statesCovered": [
+   "AK",
+   "AL",
+   "AR",
+   "AZ",
+   "CA",
+   "CO",
+   "CT",
+   "DE",
+   "FL",
+   "GA",
+   "HI",
+   "IA",
+   "ID",
+   "IL",
+   "IN",
+   "KS",
+   "KY",
+   "LA",
+   "MA",
+   "MD",
+   "ME",
+   "MI",
+   "MN",
+   "MO",
+   "MS",
+   "MT",
+   "NC",
+   "ND",
+   "NE",
+   "NH",
+   "NJ",
+   "NM",
+   "NV",
+   "NY",
+   "OH",
+   "OK",
+   "OR",
+   "PA",
+   "RI",
+   "SC",
+   "SD",
+   "TN",
+   "TX",
+   "UT",
+   "VA",
+   "VT",
+   "WA",
+   "WI",
+   "WV",
+   "WY"
+  ],
+  "redrawnStatesCoverage": {
+   "TX": {
+    "rows": 38,
+    "has2020": 0
+   },
+   "CA": {
+    "rows": 52,
+    "has2020": 0
+   },
+   "MO": {
+    "rows": 8,
+    "has2020": 8
+   },
+   "UT": {
+    "rows": 4,
+    "has2020": 0
+   },
+   "NC": {
+    "rows": 14,
+    "has2020": 0
+   },
+   "OH": {
+    "rows": 15,
+    "has2020": 0
+   },
+   "FL": {
+    "rows": 28,
+    "has2020": 0
+   },
+   "TN": {
+    "rows": 9,
+    "has2020": 0
+   },
+   "LA": {
+    "rows": 6,
+    "has2020": 0
+   },
+   "AL": {
+    "rows": 7,
+    "has2020": 0
+   }
+  }
+ },
+ "medsl": {
+  "attempted": true,
+  "ok": false,
+  "message": "datafile 13592823 HTTP 400: {\"status\":\"ERROR\",\"message\":\"You may not download this file without the required Guestbook response for guestbookID 458.\"}"
+ }
+}

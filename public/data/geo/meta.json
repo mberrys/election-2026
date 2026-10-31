@@ -1,0 +1,164 @@
+{
+  "builtAt": "2026-10-31T00:16:12.293Z",
+  "projection": {
+    "name": "d3.geoAlbersUsa",
+    "scale": 1300,
+    "translate": [
+      487.5,
+      305
+    ],
+    "viewport": [
+      975,
+      610
+    ],
+    "note": "All planar layers (counties, states, districts) share this frame and overlay directly."
+  },
+  "sources": [
+    {
+      "name": "us-atlas (counties-albers-10m, states-albers-10m)",
+      "url": "https://github.com/topojson/us-atlas",
+      "license": "ISC",
+      "version": "3.0.1",
+      "note": "Census cartographic boundaries 2017; pre-projected to Albers USA 975x610."
+    },
+    {
+      "name": "Census TIGER/Line 2026, 120th Congressional Districts (tl_2026_{ss}_cd120)",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2026/CD/",
+      "license": "Public domain (US Census Bureau)",
+      "version": "TIGER2026 (files dated 2026-10-06)"
+    },
+    {
+      "name": "Census TIGER/Line 2025, 119th Congressional Districts, Missouri (tl_2025_29_cd119)",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/CD/tl_2025_29_cd119.zip",
+      "license": "Public domain (US Census Bureau)",
+      "version": "TIGER2025",
+      "note": "Used for MO instead of TIGER 2026 (HB 1 struck for 2026). Same 119th lines as cb_2025_us_cd119_500k at full resolution."
+    },
+    {
+      "name": "The Downballot / Daily Kos Elections Congressional District Hexmap",
+      "url": "https://the-db.co/maps",
+      "license": "CC BY 4.0",
+      "version": "3.2",
+      "attribution": "Daily Kos Elections / The Downballot (Daniel Donner), https://dkel.ec/map"
+    }
+  ],
+  "districtCounts": {
+    "AK": 1,
+    "AL": 7,
+    "AR": 4,
+    "AZ": 9,
+    "CA": 52,
+    "CO": 8,
+    "CT": 5,
+    "DE": 1,
+    "FL": 28,
+    "GA": 14,
+    "HI": 2,
+    "IA": 4,
+    "ID": 2,
+    "IL": 17,
+    "IN": 9,
+    "KS": 4,
+    "KY": 6,
+    "LA": 6,
+    "MA": 9,
+    "MD": 8,
+    "ME": 2,
+    "MI": 13,
+    "MN": 8,
+    "MO": 8,
+    "MS": 4,
+    "MT": 2,
+    "NC": 14,
+    "ND": 1,
+    "NE": 3,
+    "NH": 2,
+    "NJ": 12,
+    "NM": 3,
+    "NV": 4,
+    "NY": 26,
+    "OH": 15,
+    "OK": 5,
+    "OR": 6,
+    "PA": 17,
+    "RI": 2,
+    "SC": 7,
+    "SD": 1,
+    "TN": 9,
+    "TX": 38,
+    "UT": 4,
+    "VA": 11,
+    "VT": 1,
+    "WA": 10,
+    "WI": 8,
+    "WV": 2,
+    "WY": 1
+  },
+  "totalDistricts": 435,
+  "delegates": [
+    "DC"
+  ],
+  "missouriSource": "tiger2025-cd119",
+  "hexmap": {
+    "kind": "downballot-polygon-cartogram",
+    "version": "3.2"
+  },
+  "files": {
+    "counties-10m.json": {
+      "raw": 795405,
+      "gzip": 253612
+    },
+    "states-10m.json": {
+      "raw": 82031,
+      "gzip": 29258
+    },
+    "districts-2026.json": {
+      "raw": 1277643,
+      "gzip": 352259
+    },
+    "hexmap-2026.json": {
+      "raw": 193998,
+      "gzip": 51806
+    },
+    "state-tiles.json": {
+      "raw": 3182,
+      "gzip": 851
+    }
+  },
+  "checks": {
+    "projectionSelfCheck": {
+      "pointsCompared": 436,
+      "maxDeltaPx": 0
+    },
+    "featuresAfterZZFilter": 436,
+    "alignment": {
+      "checked": 436,
+      "insideOwnState": 436,
+      "insideAnyState": 436,
+      "misses": [],
+      "nc01": {
+        "centroid": [
+          842.732,
+          335.496
+        ],
+        "insideNC": true
+      },
+      "districtBbox": [
+        -57.63445472997702,
+        12.97635452036684,
+        957.0565715456056,
+        606.5694262668665
+      ],
+      "statesBbox": [
+        -57.63445472997703,
+        12.97635452036684,
+        957.0565715456056,
+        606.5694262668666
+      ]
+    }
+  },
+  "warnings": [
+    "Missouri: TIGER 2026 cd120 (HB 1) differs from the 119th-Congress map in 6 of 8 districts; using 119th lines (tiger2025-cd119) because HB 1 was struck for Nov 2026 — verify before launch. MO-01 land area differs 3.4%; MO-02 land area differs 101.3%; MO-03 land area differs 23.7%; MO-04 land area differs 29.2%; MO-05 land area differs 1846.8%; MO-06 land area differs 17.8%",
+    "hexmap v3.2 (Downballot): AL, LA and MO tiles were not redrawn for their 2026/2022 maps; tile numbers still map 1:1 to district numbers."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "raceTitle": "U.S. House of Representatives District 13 - Districtwide Results",
+  "Reporting": "4% (39 of 974) precincts reporting",
+  "ReportingTime": "October 30, 2026, 4:39 p.m.",
+  "candidates": [
+    {
+      "Name": "Adam Gray",
+      "Party": "Dem",
+      "Votes": "62",
+      "Percent": "46.3",
+      "incumbent": false
+    },
+    {
+      "Name": "Kevin Lincoln",
+      "Party": "Rep",
+      "Votes": "72",
+      "Percent": "53.7",
+      "incumbent": false
+    }
+  ]
+}

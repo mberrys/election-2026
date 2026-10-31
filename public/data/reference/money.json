@@ -1,0 +1,803 @@
+{
+ "builtAt": "2026-10-31T05:09:08.336Z",
+ "apiKeyMode": "DEMO_KEY",
+ "offices": [
+  "S"
+ ],
+ "endpoint": "/candidates/totals/?election_year=2026&cycle=2026&office=S|H (bulk receipts + cash on hand; one call per 100 candidates)",
+ "fecCandidates": 693,
+ "matched": {
+  "candidates": 109,
+  "races": 35,
+  "ofCandidates": 123,
+  "ofRaces": 35
+ },
+ "races": {
+  "senate:FL-special": {
+   "receipts": {
+    "moody-ashley": 14524032,
+    "nixon-angie": 11319380
+   },
+   "cashOnHand": {
+    "moody-ashley": 816355,
+    "nixon-angie": 3266795
+   },
+   "asOf": "2026-10-14"
+  },
+  "senate:OH-special": {
+   "receipts": {
+    "husted-jon": 19894786,
+    "brown-sherrod": 68409200,
+    "levy-greg": 132712,
+    "redpath-william": 55256
+   },
+   "cashOnHand": {
+    "husted-jon": 4239097,
+    "brown-sherrod": 4452803,
+    "levy-greg": 26916,
+    "redpath-william": 8255
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:AL": {
+   "receipts": {
+    "moore-barry": 4635926,
+    "wess-everett": 128570
+   },
+   "cashOnHand": {
+    "moore-barry": 467199,
+    "wess-everett": 10543
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:AK": {
+   "receipts": {
+    "sullivan-dan-s": 14107205,
+    "heikes-gerald": 0,
+    "peltola-mary": 36887509,
+    "sullivan-dan-j": 30556
+   },
+   "cashOnHand": {
+    "sullivan-dan-s": 2839758,
+    "heikes-gerald": 0,
+    "peltola-mary": 4102126,
+    "sullivan-dan-j": 1902
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:AR": {
+   "receipts": {
+    "cotton-tom": 14517576,
+    "shoffner-hallie": 4042811,
+    "wadlin-jeff": 80063
+   },
+   "cashOnHand": {
+    "cotton-tom": 5129928,
+    "shoffner-hallie": 756932,
+    "wadlin-jeff": 6291
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:CO": {
+   "receipts": {
+    "hickenlooper-john": 11695273,
+    "baisley-mark": 138210,
+    "chew-bob": 3603854,
+    "withrow-adam": 0
+   },
+   "cashOnHand": {
+    "hickenlooper-john": 1558828,
+    "baisley-mark": 27710,
+    "chew-bob": 235007,
+    "withrow-adam": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:DE": {
+   "receipts": {
+    "coons-chris": 7685072,
+    "katz-michael": 190416
+   },
+   "cashOnHand": {
+    "coons-chris": 5031711,
+    "katz-michael": 16085
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:GA": {
+   "receipts": {
+    "ossoff-jon": 136610982,
+    "collins-mike": 10679277
+   },
+   "cashOnHand": {
+    "ossoff-jon": 15134336,
+    "collins-mike": 1103682
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:ID": {
+   "receipts": {
+    "risch-jim": 5009089,
+    "achilles-todd": 1921132,
+    "fleming-natalie": 0,
+    "loesby-matt": 0
+   },
+   "cashOnHand": {
+    "risch-jim": 2122235,
+    "achilles-todd": 195819,
+    "fleming-natalie": 0,
+    "loesby-matt": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:IL": {
+   "receipts": {
+    "harrington-whitfield": 143382,
+    "stratton-juliana": 7230577,
+    "tracy-don": 4914363
+   },
+   "cashOnHand": {
+    "harrington-whitfield": 19484,
+    "stratton-juliana": 1541585,
+    "tracy-don": 483017
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:IA": {
+   "receipts": {
+    "hinson-ashley": 14147973,
+    "laehn-thomas": 83667,
+    "turek-josh": 24290521
+   },
+   "cashOnHand": {
+    "hinson-ashley": 2172989,
+    "laehn-thomas": 9035,
+    "turek-josh": 3072851
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:KS": {
+   "receipts": {
+    "marshall-roger": 7546611,
+    "hamilton-adam": 19175044
+   },
+   "cashOnHand": {
+    "marshall-roger": 809806,
+    "hamilton-adam": 2874364
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:KY": {
+   "receipts": {
+    "barr-andy": 12541350,
+    "booker-charles": 1936324
+   },
+   "cashOnHand": {
+    "barr-andy": 1553857,
+    "booker-charles": 303599
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:LA": {
+   "receipts": {
+    "davis-jamie": 5019888,
+    "letlow-julia": 7062069
+   },
+   "cashOnHand": {
+    "davis-jamie": 1254929,
+    "letlow-julia": 443170
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:ME": {
+   "receipts": {
+    "collins-susan": 25225468,
+    "jackson-troy": 26872874
+   },
+   "cashOnHand": {
+    "collins-susan": 2689883,
+    "jackson-troy": 1596871
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:MA": {
+   "receipts": {
+    "markey-ed": 8685207,
+    "ayyadurai-shiva": 239098,
+    "deaton-john": 1674460,
+    "tache-joe": 285403
+   },
+   "cashOnHand": {
+    "markey-ed": 799913,
+    "ayyadurai-shiva": 78522,
+    "deaton-john": 488156,
+    "tache-joe": 23780
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:MI": {
+   "receipts": {
+    "christensen-lydia": 7159,
+    "sayed-abdul": 53830872,
+    "kristy-walter": 0,
+    "long-tim": 0,
+    "rogers-mike": 23016439
+   },
+   "cashOnHand": {
+    "christensen-lydia": 2601,
+    "sayed-abdul": 2734029,
+    "kristy-walter": 0,
+    "long-tim": 0,
+    "rogers-mike": 3902506
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:MN": {
+   "receipts": {
+    "flanagan-peggy": 11563963,
+    "simonetti-marisa": 0,
+    "tafoya-michele": 12501786,
+    "whiting-rebecca": 3756
+   },
+   "cashOnHand": {
+    "flanagan-peggy": 993214,
+    "simonetti-marisa": 0,
+    "tafoya-michele": 2819387,
+    "whiting-rebecca": 1928
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:MS": {
+   "receipts": {
+    "smith-cindy": 6279659,
+    "colom-scott": 4400890,
+    "pinkins-ty": 104686
+   },
+   "cashOnHand": {
+    "smith-cindy": 1395724,
+    "colom-scott": 1018717,
+    "pinkins-ty": 4047
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:MT": {
+   "receipts": {
+    "alme-kurt": 3013681,
+    "austin-kyle": 261825,
+    "bankhead-alani": 190565,
+    "bodnar-seth": 4918341
+   },
+   "cashOnHand": {
+    "alme-kurt": 602738,
+    "austin-kyle": 2684,
+    "bankhead-alani": 22820,
+    "bodnar-seth": 580921
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:NE": {
+   "receipts": {
+    "ricketts-pete": 14546959,
+    "conboy-chuck": 0,
+    "marvin-mike": 27750,
+    "osborn-dan": 11029845,
+    "richards-robin": 0
+   },
+   "cashOnHand": {
+    "ricketts-pete": 1218139,
+    "conboy-chuck": -88,
+    "marvin-mike": 0,
+    "osborn-dan": 1953183,
+    "richards-robin": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:NH": {
+   "receipts": {
+    "laplante-edmond": 0,
+    "pappas-chris": 23703648,
+    "sununu-john": 5681528
+   },
+   "cashOnHand": {
+    "laplante-edmond": 0,
+    "pappas-chris": 1984366,
+    "sununu-john": 1711396
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:NJ": {
+   "receipts": {
+    "booker-cory": 35910076,
+    "fernandez-veronica": 0,
+    "murphy-justin": 68189
+   },
+   "cashOnHand": {
+    "booker-cory": 22899411,
+    "fernandez-veronica": 0,
+    "murphy-justin": 10191
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:NM": {
+   "receipts": {
+    "lujan-ben": 9111371,
+    "marker-larry": 99230
+   },
+   "cashOnHand": {
+    "lujan-ben": 2843276,
+    "marker-larry": 88
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:NC": {
+   "receipts": {
+    "bray-shannon": 0,
+    "cooper-roy": 49585341,
+    "dublin-michael": 28231,
+    "whatley-michael": 13668468
+   },
+   "cashOnHand": {
+    "bray-shannon": 0,
+    "cooper-roy": 9088860,
+    "dublin-michael": 2996,
+    "whatley-michael": 902238
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:OK": {
+   "receipts": {
+    "hern-kevin": 10862233,
+    "meinhardt-ron": 15903,
+    "thomas-nkiyla": 115954
+   },
+   "cashOnHand": {
+    "hern-kevin": 2811987,
+    "meinhardt-ron": 1596,
+    "thomas-nkiyla": 24102
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:OR": {
+   "receipts": {
+    "merkley-jeff": 8729810,
+    "henry-chris": 0,
+    "smith-david": 311174
+   },
+   "cashOnHand": {
+    "merkley-jeff": 6621250,
+    "henry-chris": 0,
+    "smith-david": 44198
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:RI": {
+   "receipts": {
+    "reed-jack": 4814653,
+    "bahry-michael": 125116,
+    "mckay-raymond": 207231
+   },
+   "cashOnHand": {
+    "reed-jack": 1883532,
+    "bahry-michael": 92617,
+    "mckay-raymond": 8357
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:SC": {
+   "receipts": {
+    "graham-darline": 1917646,
+    "andrews-annie": 24216841,
+    "whitener-kasie": 27615
+   },
+   "cashOnHand": {
+    "graham-darline": 634430,
+    "andrews-annie": 1709466,
+    "whitener-kasie": 5781
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:SD": {
+   "receipts": {
+    "rounds-mike": 5148217,
+    "bengs-brian": 1855763
+   },
+   "cashOnHand": {
+    "rounds-mike": 1295543,
+    "bengs-brian": 69708
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:TN": {
+   "receipts": {
+    "hagerty-bill": 17226961,
+    "bradshaw-marquita": 35195,
+    "chandler-tharon": 0,
+    "jones-robert": 12300,
+    "matthews-yoshi": 47,
+    "sutman-david": 26349,
+    "whitson-catherine": 0
+   },
+   "cashOnHand": {
+    "hagerty-bill": 4956455,
+    "bradshaw-marquita": 8252,
+    "chandler-tharon": 0,
+    "jones-robert": 707,
+    "matthews-yoshi": -2083,
+    "sutman-david": 500,
+    "whitson-catherine": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:TX": {
+   "receipts": {
+    "brown-ted": 14257,
+    "paxton-ken": 22327474,
+    "talarico-james": 146349912
+   },
+   "cashOnHand": {
+    "brown-ted": 1288,
+    "paxton-ken": 4784408,
+    "talarico-james": 9922857
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:VA": {
+   "receipts": {
+    "warner-mark": 27493348,
+    "mizusawa-bert": 1141130
+   },
+   "cashOnHand": {
+    "warner-mark": 6217677,
+    "mizusawa-bert": 154034
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:WV": {
+   "receipts": {
+    "capito-shelley": 7314563,
+    "anderson-rachel": 164558,
+    "wilson-s": 65287
+   },
+   "cashOnHand": {
+    "capito-shelley": 3071076,
+    "anderson-rachel": 35681,
+    "wilson-s": 1250
+   },
+   "asOf": "2026-10-22"
+  },
+  "senate:WY": {
+   "receipts": {
+    "byrd-james": 53560,
+    "hageman-harriet": 2810754
+   },
+   "cashOnHand": {
+    "byrd-james": 7927,
+    "hageman-harriet": 439422
+   },
+   "asOf": "2026-10-22"
+  }
+ },
+ "unmatchedFecTop": [
+  {
+   "id": "S6IL00482",
+   "name": "KRISHNAMOORTHI, S",
+   "state": "IL",
+   "district": null,
+   "party": "DEM",
+   "receipts": 31560943
+  },
+  {
+   "id": "S0SC00149",
+   "name": "GRAHAM, LINDSEY O.",
+   "state": "SC",
+   "district": "00",
+   "party": "REP",
+   "receipts": 21650508
+  },
+  {
+   "id": "S6FL00855",
+   "name": "VINDMAN, ALEXANDER",
+   "state": "FL",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 20487916
+  },
+  {
+   "id": "S6FL00756",
+   "name": "WEIL, JOSHUA JOSEPH",
+   "state": "FL",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 15933478
+  },
+  {
+   "id": "S2TX00106",
+   "name": "CORNYN, JOHN SEN",
+   "state": "TX",
+   "district": "00",
+   "party": "REP",
+   "receipts": 14265890
+  },
+  {
+   "id": "S6MN00499",
+   "name": "CRAIG, ANGIE",
+   "state": "MN",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 13380880
+  },
+  {
+   "id": "S6MI00426",
+   "name": "STEVENS, HALEY",
+   "state": "MI",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 13304162
+  },
+  {
+   "id": "S4LA00107",
+   "name": "CASSIDY, WILLIAM M.",
+   "state": "LA",
+   "district": "00",
+   "party": "REP",
+   "receipts": 13298957
+  },
+  {
+   "id": "S6LA00318",
+   "name": "FLEMING, JOHN C. JR.",
+   "state": "LA",
+   "district": "00",
+   "party": "REP",
+   "receipts": 12372938
+  },
+  {
+   "id": "S6MI00392",
+   "name": "MCMORROW, MALLORY",
+   "state": "MI",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 11405912
+  },
+  {
+   "id": "S6TX00552",
+   "name": "CROCKETT, JASMINE",
+   "state": "TX",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 11096966
+  },
+  {
+   "id": "S6KY00302",
+   "name": "MORRIS, NATE",
+   "state": "KY",
+   "district": "00",
+   "party": "REP",
+   "receipts": 9082021
+  },
+  {
+   "id": "S2MT00096",
+   "name": "DAINES, STEVE",
+   "state": "MT",
+   "district": "00",
+   "party": "REP",
+   "receipts": 8405689
+  },
+  {
+   "id": "S4NC00162",
+   "name": "TILLIS, THOM R SEN",
+   "state": "NC",
+   "district": "00",
+   "party": "REP",
+   "receipts": 8113422
+  },
+  {
+   "id": "S2KY00012",
+   "name": "MCCONNELL, MITCH",
+   "state": "KY",
+   "district": "00",
+   "party": "REP",
+   "receipts": 7982686
+  },
+  {
+   "id": "S4MI00355",
+   "name": "PETERS, GARY",
+   "state": "MI",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 7894115
+  },
+  {
+   "id": "S4TX00722",
+   "name": "ALLRED, COLIN",
+   "state": "TX",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 7630709
+  },
+  {
+   "id": "S6GA00374",
+   "name": "CARTER, EARL LEROY",
+   "state": "GA",
+   "district": "00",
+   "party": "REP",
+   "receipts": 7323301
+  },
+  {
+   "id": "S4IA00129",
+   "name": "ERNST, JONI K",
+   "state": "IA",
+   "district": "00",
+   "party": "REP",
+   "receipts": 6964047
+  },
+  {
+   "id": "S6MA00296",
+   "name": "MOULTON, SETH",
+   "state": "MA",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 6669668
+  },
+  {
+   "id": "S6ME00332",
+   "name": "WOOD, JORDAN",
+   "state": "ME",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 6391430
+  },
+  {
+   "id": "S6ME00407",
+   "name": "MILLS, JANET TRAFTON",
+   "state": "ME",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 6115222
+  },
+  {
+   "id": "S6SC04213",
+   "name": "LYNCH, MARK",
+   "state": "SC",
+   "district": "00",
+   "party": "REP",
+   "receipts": 5924362
+  },
+  {
+   "id": "S6OH00387",
+   "name": "ODE, FREDERICK J",
+   "state": "OH",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 5001939
+  },
+  {
+   "id": "S2OK00186",
+   "name": "MULLIN, MARKWAYNE",
+   "state": "OK",
+   "district": "00",
+   "party": "REP",
+   "receipts": 4845484
+  },
+  {
+   "id": "S0AL00230",
+   "name": "TUBERVILLE, THOMAS H",
+   "state": "AL",
+   "district": "00",
+   "party": "REP",
+   "receipts": 3994826
+  },
+  {
+   "id": "S6CO00549",
+   "name": "CHEW, ROBERT",
+   "state": "CO",
+   "district": "00",
+   "party": "FWD",
+   "receipts": 3603854
+  },
+  {
+   "id": "S6IL00474",
+   "name": "KELLY, ROBIN",
+   "state": "IL",
+   "district": null,
+   "party": "DEM",
+   "receipts": 3509919
+  },
+  {
+   "id": "S6SC04445",
+   "name": "NORMAN, RALPH",
+   "state": "SC",
+   "district": "00",
+   "party": "REP",
+   "receipts": 3176283
+  },
+  {
+   "id": "S8MN00578",
+   "name": "SMITH, TINA",
+   "state": "MN",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 3057267
+  },
+  {
+   "id": "S6NC00340",
+   "name": "NICKEL, WILEY",
+   "state": "NC",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 2972089
+  },
+  {
+   "id": "S0WY00137",
+   "name": "LUMMIS, CYNTHIA MARIE MRS.",
+   "state": "WY",
+   "district": "00",
+   "party": "REP",
+   "receipts": 2718017
+  },
+  {
+   "id": "S0NH00219",
+   "name": "SHAHEEN, JEANNE",
+   "state": "NH",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 2672181
+  },
+  {
+   "id": "S0KY00339",
+   "name": "MCGRATH, AMY",
+   "state": "KY",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 2384956
+  },
+  {
+   "id": "S6IL00151",
+   "name": "DURBIN, RICHARD J.",
+   "state": "IL",
+   "district": "00",
+   "party": "DEM",
+   "receipts": 2381002
+  },
+  {
+   "id": "S6NH00166",
+   "name": "BROWN, SCOTT P.",
+   "state": "NH",
+   "district": "00",
+   "party": "REP",
+   "receipts": 2255700
+  },
+  {
+   "id": "S6KY00237",
+   "name": "CAMERON, DANIEL",
+   "state": "KY",
+   "district": "00",
+   "party": "REP",
+   "receipts": 2254149
+  },
+  {
+   "id": "S6TX00511",
+   "name": "HUNT, WESLEY",
+   "state": "TX",
+   "district": "00",
+   "party": "REP",
+   "receipts": 2154468
+  },
+  {
+   "id": "S6AL00468",
+   "name": "WALKER, RODNEY",
+   "state": "AL",
+   "district": "00",
+   "party": "REP",
+   "receipts": 2015963
+  },
+  {
+   "id": "S6AL00443",
+   "name": "HUDSON, JARED",
+   "state": "AL",
+   "district": "00",
+   "party": "REP",
+   "receipts": 1922302
+  }
+ ],
+ "note": "DEMO_KEY (~30 req/hr): Senate only by default; pass --full to page House (~40 calls, auto-resumes from cache after 429 waits). Set FEC_API_KEY for 1,000/hr. House money skipped (run with --full)."
+}

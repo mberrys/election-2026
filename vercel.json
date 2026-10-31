@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "crons": [
+    { "path": "/api/ingest", "schedule": "17 12 * * *" }
+  ],
+  "headers": [
+    {
+      "source": "/data/geo/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800" }
+      ]
+    },
+    {
+      "source": "/data/reference/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=300, s-maxage=1800, stale-while-revalidate=86400" }
+      ]
+    }
+  ]
+}
