@@ -24,7 +24,7 @@ export function StateHeader({
   return (
     <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
       <div className="min-w-0">
-        <div className="flex flex-wrap items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+        <div className="flex flex-wrap items-center gap-2 text-[11px] text-muted-foreground">
           <span>State board</span>
           <span aria-hidden>·</span>
           <span className="tnum">
@@ -34,7 +34,7 @@ export function StateHeader({
           <span aria-hidden>·</span>
           <span className="tnum">{raceCount} races tracked</span>
         </div>
-        <h1 className="display text-4xl md:text-5xl font-bold leading-none tracking-tight mt-1">{state.name}</h1>
+        <h1 className="display text-2xl md:text-[2rem] font-bold leading-none tracking-tight mt-1">{state.name}</h1>
       </div>
       <div className="flex flex-col items-start gap-2 md:items-end">
         <div className="flex flex-wrap items-center gap-2">
@@ -72,7 +72,7 @@ export function ModeChip({ on, label, title, className }: { on: boolean; label: 
   return (
     <span
       className={cn(
-        "inline-flex h-4 min-w-4 items-center justify-center rounded px-1 text-[9px] font-semibold tracking-wide",
+        "inline-flex h-4 min-w-4 items-center justify-center rounded px-1 text-[11px] font-semibold tracking-wide",
         on ? "bg-live/20 text-live" : "bg-muted text-muted-foreground/60 line-through decoration-muted-foreground/40",
         className,
       )}

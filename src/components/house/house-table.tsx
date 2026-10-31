@@ -128,7 +128,7 @@ export function HouseTable({
                         <PartyDot party={c.party} />
                         <span className="truncate">{c.name}</span>
                         {c.incumbent && <span className="text-muted-foreground">*</span>}
-                        {c.id === winner && <span className="text-[10px] text-muted-foreground">✓</span>}
+                        {c.id === winner && <span className="text-[11px] text-muted-foreground">Called</span>}
                       </span>
                     ))}
                   </div>

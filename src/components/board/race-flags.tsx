@@ -42,7 +42,7 @@ export function RaceFlags({ flags, className, detailed = false }: { flags?: Flag
         <span
           key={i}
           title={`${LABEL[f.kind]}: ${f.summary}${f.challengedBallots ? ` (~${f.challengedBallots.toLocaleString()} ballots)` : ""}`}
-          className="inline-flex items-center rounded border border-stale/50 px-1 py-px text-[10px] font-medium text-stale"
+          className="inline-flex items-center rounded border border-stale/50 px-1 py-px text-[11px] font-medium text-stale"
         >
           {LABEL[f.kind]}
         </span>

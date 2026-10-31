@@ -75,7 +75,7 @@ function Lane({ party, bop, vpParty, uncalled }: { party: Party; bop: BalanceOfP
             {name} · +{lean} leaning
           </span>
           <span className={cn(need === 0 && "font-semibold text-foreground")}>
-            {need === 0 ? "control secured" : `need ${need} of ${uncalled} open`}
+            {need === 0 ? "control secured" : `need ${need} of ${uncalled}`}
           </span>
         </div>
       </div>

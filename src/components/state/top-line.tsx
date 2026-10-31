@@ -112,8 +112,8 @@ export function TopLine({ race, meta }: { race?: Race; meta?: RaceMeta }) {
                       {c.name}
                       {c.incumbent ? <span className="text-muted-foreground"> *</span> : null}
                     </span>
-                    <span className="text-[11px] uppercase tracking-wider text-muted-foreground">{partyLabel[c.party]}</span>
-                    {isWinner && <span className="ml-auto text-[10px] font-semibold uppercase tracking-wider text-live">Projected</span>}
+                    <span className="text-[11px] text-muted-foreground">{partyLabel[c.party]}</span>
+                    {isWinner && <span className="ml-auto text-[11px] font-semibold text-live">Projected</span>}
                   </div>
                   <div className="mt-2 flex items-end justify-between gap-3">
                     <Votes value={c.votes} className="display text-4xl md:text-5xl font-bold leading-none" />
@@ -172,7 +172,7 @@ export function ProjectionGauge({ margin, band, live, className }: { margin: num
   return (
     <div className={cn("min-w-0", className)}>
       <div className="mb-1 flex items-baseline justify-between text-[11px] text-muted-foreground">
-        <span className="uppercase tracking-[0.18em]">{live ? "Projected final margin" : "Pre-election expectation"}</span>
+        <span>{live ? "Projected final margin" : "Pre-election expectation"}</span>
         <span className="tnum">
           <span className="font-semibold text-foreground">{fmtMarginDR(margin)}</span> ± {band.toFixed(1)} ·{" "}
           <span className="italic">{live ? "model, not a call" : "polls & ratings, not a call"}</span>

@@ -79,7 +79,7 @@ export function WhatsLeft({
                     className="h-full flex-1"
                     style={{
                       backgroundImage:
-                        "repeating-linear-gradient(135deg, transparent 0 3px, color-mix(in oklch, var(--foreground) 18%, transparent) 3px 4px)",
+                        "repeating-linear-gradient(135deg, transparent 0 3px, color-mix(in oklch, var(--foreground) 18%, transparent) 3px 4px)", // taste-skill-ignore: hatch marks the not-yet-counted share
                     }}
                   />
                 </span>

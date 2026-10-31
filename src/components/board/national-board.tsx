@@ -33,7 +33,7 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
 
   // Pre-election balance from ratings alone, so the board is meaningful before any votes arrive.
   const balance = useMemo(() => {
-    if (mounted && data?.balance) return data.balance;
+    if (mounted && data?.balance && data.races.length) return data.balance;
     return {
       senate: computeBalance("senate", [], metas, SENATE_NOT_UP_2026),
       house: computeBalance("house", [], metas, { D: 0, R: 0, I: 0 }),
@@ -70,7 +70,7 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
   return (
     <div className="space-y-6">
       <header className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-        <h1 className="display text-2xl font-bold tracking-tight">Midterm board</h1>
+        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">Midterm board</h1>
         <p className="text-sm text-muted-foreground">Senate, House and governors from official count feeds</p>
       </header>
 
@@ -80,7 +80,7 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
         <ControlLanes title="U.S. House" bop={balance.house} href="/house" />
         <Card className="gap-3">
           <CardHeader className="pb-0">
-            <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">Governors · Generic ballot</CardTitle>
+            <CardTitle className="text-sm font-semibold">Governors · Generic ballot</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <GovStrip bop={balance.governor} />
@@ -129,19 +129,19 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
       <section className="grid gap-4 xl:grid-cols-[1.4fr_1fr]">
         <Card className="gap-3">
           <CardHeader className="pb-0 flex-row items-center justify-between">
-            <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">House · all 435 districts</CardTitle>
+            <CardTitle className="text-sm font-semibold">House · all 435 districts</CardTitle>
             <Link href="/house" className="text-xs text-muted-foreground hover:text-foreground">
               Open House board →
             </Link>
           </CardHeader>
           <CardContent>
             <HouseCartogram metaById={metaById} live={live} />
-            <p className="mt-2 text-[10px] text-muted-foreground">{HEXMAP_ATTRIBUTION}</p>
+            <p className="mt-2 text-[11px] text-muted-foreground">{HEXMAP_ATTRIBUTION}</p>
           </CardContent>
         </Card>
         <Card className="gap-3">
           <CardHeader className="pb-0">
-            <CardTitle className="text-xs uppercase tracking-wider text-muted-foreground">Poll closings · Tuesday Nov 3 (ET)</CardTitle>
+            <CardTitle className="text-sm font-semibold">Poll closings · Tuesday Nov 3 (ET)</CardTitle>
           </CardHeader>
           <CardContent>
             <PollCloseTimeline states={states} metas={metas} live={live} />
@@ -173,7 +173,7 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
           {data.notices.length > 0 && (
             <ul className="mt-2 text-xs text-stale space-y-1">
               {data.notices.map((n, i) => (
-                <li key={i}>⚠ {n}</li>
+                <li key={i}>{n}</li>
               ))}
             </ul>
           )}
@@ -242,7 +242,7 @@ function HouseCartogram({ metaById, live }: { metaById: Map<string, RaceMeta>; l
 
 function Legend() {
   return (
-    <div className="flex items-center gap-3 text-[10px] text-muted-foreground">
+    <div className="flex items-center gap-3 text-[11px] text-muted-foreground">
       <span className="flex items-center gap-1"><i className="h-2.5 w-2.5 rounded-sm bg-party-d inline-block" /> D</span>
       <span className="flex items-center gap-1"><i className="h-2.5 w-2.5 rounded-sm bg-party-d-faint inline-block" /> Lean D</span>
       <span className="flex items-center gap-1"><i className="h-2.5 w-2.5 rounded-sm bg-uncalled inline-block" /> Toss-up</span>
@@ -294,7 +294,7 @@ function PollCloseTimeline({ states, metas, live }: { states: StateMeta[]; metas
                   title={n ? `${s.name}: ${n} competitive race${n > 1 ? "s" : ""}` : s.name}
                 >
                   {s.abbr}
-                  {n > 0 && <span className="ml-1 text-[10px] text-muted-foreground">{n}</span>}
+                  {n > 0 && <span className="ml-1 text-[11px] text-muted-foreground">{n}</span>}
                 </Link>
               );
             })}

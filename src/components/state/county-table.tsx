@@ -95,7 +95,7 @@ export function CountyTable({
               >
                 <button type="button" onClick={() => toggle(c.key)} className={cn("inline-flex items-center gap-1 hover:text-foreground", sort.key === c.key && "text-foreground")}>
                   {c.label}
-                  <span className="w-2 text-[9px] text-muted-foreground">{sort.key === c.key ? (sort.dir === 1 ? "▲" : "▼") : ""}</span>
+                  <span className="w-2 text-[11px] text-muted-foreground">{sort.key === c.key ? (sort.dir === 1 ? "▲" : "▼") : ""}</span>
                 </button>
               </TableHead>
             ))}

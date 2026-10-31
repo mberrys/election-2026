@@ -67,7 +67,7 @@ export function Bellwethers({
             >
               <div className="flex items-baseline justify-between gap-2">
                 <span className="truncate text-sm font-semibold">
-                  <span className="mr-1.5 text-[10px] text-muted-foreground tnum">#{i + 1}</span>
+                  <span className="mr-1.5 text-[11px] text-muted-foreground tnum">#{i + 1}</span>
                   {b.name ?? r?.name ?? b.id}
                 </span>
                 <span className="text-[11px] tnum text-muted-foreground">{pctIn != null ? `${Math.round(pctIn * 100)}% in` : "—"}</span>

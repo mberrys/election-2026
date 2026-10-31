@@ -45,10 +45,10 @@ export function SeatSparkline({ office = "senate", majority = 51 }: { office?: "
 
   return (
     <ChartContainer config={config} className="aspect-auto h-24 w-full" initialDimension={{ width: 320, height: 96 }}>
-      <LineChart data={points} margin={{ top: 4, right: 8, bottom: 0, left: -24 }}>
+      <LineChart data={points} margin={{ top: 4, right: 8, bottom: 0, left: 0 }}>
         <CartesianGrid vertical={false} strokeOpacity={0.4} />
-        <XAxis dataKey="t" type="number" domain={["dataMin", "dataMax"]} tickFormatter={(v: number) => timeFmt.format(v)} tickLine={false} axisLine={false} minTickGap={48} fontSize={10} />
-        <YAxis domain={[lo, hi]} tickLine={false} axisLine={false} width={40} fontSize={10} allowDecimals={false} />
+        <XAxis dataKey="t" type="number" domain={["dataMin", "dataMax"]} tickFormatter={(v: number) => timeFmt.format(v)} tickLine={false} axisLine={false} minTickGap={48} fontSize={11} />
+        <YAxis domain={[lo, hi]} tickLine={false} axisLine={false} width={30} fontSize={11} allowDecimals={false} />
         <ReferenceLine y={majority} stroke="var(--foreground)" strokeOpacity={0.5} strokeDasharray="3 3" />
         <ChartTooltip
           content={<ChartTooltipContent labelFormatter={(_, payload) => (payload?.[0]?.payload?.t ? timeFmt.format(payload[0].payload.t) + " ET" : "")} />}

@@ -151,7 +151,7 @@ export function StateBoard({ state, metas, counties }: StateBoardProps) {
 }
 
 function SectionLabel({ children, className }: { children: React.ReactNode; className?: string }) {
-  return <h2 className={cn("text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground", className)}>{children}</h2>;
+  return <h2 className={cn("text-[11px] font-semibold text-muted-foreground", className)}>{children}</h2>;
 }
 
 interface AnnounceState {

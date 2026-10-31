@@ -18,10 +18,11 @@ function tileClasses(projected: Party | undefined, rating: RaceMeta["ratings"]["
   if (projected) return "bg-party-i text-black border-party-i";
   const lean = ratingLean(rating);
   const strong = rating?.startsWith("solid") || rating?.startsWith("likely");
-  const ring = counting && leader === "D" ? "ring-1 ring-party-d/70" : counting && leader === "R" ? "ring-1 ring-party-r/70" : "";
-  if (lean === "D") return cn(strong ? "bg-party-d-soft/60" : "bg-party-d-faint", "border-party-d/40", ring);
-  if (lean === "R") return cn(strong ? "bg-party-r-soft/60" : "bg-party-r-faint", "border-party-r/40", ring);
-  return cn("bg-uncalled/40 border-border", ring);
+  // The vote leader is drawn as a full-strength border; the fill carries the rating and stays pale so called seats are the loudest tiles.
+  const edge = (p: "d" | "r") => (counting && leader === p.toUpperCase() ? (p === "d" ? "border-party-d" : "border-party-r") : p === "d" ? "border-party-d/40" : "border-party-r/40");
+  if (lean === "D") return cn(strong ? "bg-party-d-faint" : "bg-party-d-faint/45", edge("d"));
+  if (lean === "R") return cn(strong ? "bg-party-r-faint" : "bg-party-r-faint/45", edge("r"));
+  return cn("bg-uncalled/40", counting && leader ? (leader === "D" ? "border-party-d" : "border-party-r") : "border-border");
 }
 
 export function GovernorTile({ meta, race, stateName }: { meta: RaceMeta; race: LiveRace | undefined; stateName: string }) {
@@ -49,12 +50,12 @@ export function GovernorTile({ meta, race, stateName }: { meta: RaceMeta; race: 
         <span className="display text-3xl font-bold leading-none tracking-tight">{meta.state}</span>
         <div className="flex flex-col items-end gap-0.5">
           {called ? (
-            <span className="rounded bg-black/25 px-1 text-[9px] font-semibold uppercase tracking-wider">✓ Called</span>
+            <span className="rounded bg-black/25 px-1 text-[11px] font-semibold">Called</span>
           ) : (
-            <RatingBadge rating={rating} className="text-[10px]" />
+            <RatingBadge rating={rating} className="text-[11px]" />
           )}
-          {flip && <span className="text-[9px] font-semibold uppercase tracking-wider">Flip → {flip}</span>}
-          {meta.heldBy && !flip && <span className={cn("text-[9px] uppercase tracking-wider", called ? "opacity-80" : "text-muted-foreground")}>Held {meta.heldBy}</span>}
+          {flip && <span className="text-[11px] font-semibold">Flip → {flip}</span>}
+          {meta.heldBy && !flip && <span className={cn("text-[11px]", called ? "opacity-80" : "text-muted-foreground")}>Held {meta.heldBy}</span>}
         </div>
       </div>
 

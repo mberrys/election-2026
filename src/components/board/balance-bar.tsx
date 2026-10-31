@@ -41,7 +41,7 @@ export function BalanceBar({
           style={{ left: pct(bop.majority) }}
           aria-hidden
         >
-          <span className="absolute -top-4 left-1/2 -translate-x-1/2 text-[10px] text-muted-foreground tnum">
+          <span className="absolute -top-4 left-1/2 -translate-x-1/2 text-[11px] text-muted-foreground tnum">
             {bop.majority}
           </span>
         </div>

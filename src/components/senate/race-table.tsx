@@ -133,7 +133,7 @@ export function RaceTable({
           {FILTERS.map((f) => (
             <ToggleGroupItem key={f.value} value={f.value} className="gap-1.5">
               {f.label}
-              <span className="tnum text-[10px] text-muted-foreground">{counts[f.value]}</span>
+              <span className="tnum text-[11px] text-muted-foreground">{counts[f.value]}</span>
             </ToggleGroupItem>
           ))}
         </ToggleGroup>
@@ -196,17 +196,17 @@ function Th({
   const active = k && sort?.key === k;
   return (
     <TableHead
-      className={cn("text-[11px] uppercase tracking-wider text-muted-foreground", className)}
+      className={cn("text-[11px] text-muted-foreground", className)}
       aria-sort={active ? (sort?.dir === "asc" ? "ascending" : "descending") : undefined}
     >
       {k && onSort ? (
         <button
           type="button"
           onClick={() => onSort(k)}
-          className={cn("inline-flex items-center gap-1 uppercase tracking-wider hover:text-foreground", active && "text-foreground")}
+          className={cn("inline-flex items-center gap-1 hover:text-foreground", active && "text-foreground")}
         >
           {children}
-          <span aria-hidden className="w-2 text-[9px]">
+          <span aria-hidden className="w-2 text-[11px]">
             {active ? (sort?.dir === "asc" ? "▲" : "▼") : ""}
           </span>
         </button>
@@ -246,7 +246,7 @@ function RaceRow({ row, expectedTier }: { row: Row; expectedTier?: StateMeta["ti
           <Link href={`/state/${meta.state}`} className="font-semibold hover:underline underline-offset-2">
             {stateName} <span className="tnum text-[11px] text-muted-foreground">{meta.state}</span>
           </Link>
-          <div className="flex flex-wrap items-center gap-1 text-[10px] uppercase tracking-wider text-muted-foreground">
+          <div className="flex flex-wrap items-center gap-1 text-[11px] text-muted-foreground">
             {meta.special && <span className="rounded border border-border px-1">Special</span>}
             <RaceFlags flags={race?.flags ?? annotationsFor(meta)} className="normal-case tracking-normal" />
             {meta.runoffRule === "majority" && (
@@ -276,7 +276,7 @@ function RaceRow({ row, expectedTier }: { row: Row; expectedTier?: StateMeta["ti
                   {c.name}
                   {c.incumbent && <span className="text-muted-foreground"> *</span>}
                 </span>
-                {isWinner && <span className="text-[10px] text-muted-foreground">✓</span>}
+                {isWinner && <span className="text-[11px] text-muted-foreground">Called</span>}
                 {c.pct != null && race && race.totalVotes > 0 && (
                   <Pct value={c.pct} className="ml-auto text-xs text-muted-foreground" />
                 )}
@@ -309,7 +309,7 @@ function RaceRow({ row, expectedTier }: { row: Row; expectedTier?: StateMeta["ti
           <ul className="space-y-0.5 text-xs">
             {cashRows.map((c) => (
               <li key={c.id} className="flex items-center justify-end gap-1.5">
-                <span className={cn("text-[10px]", c.party === "D" ? "text-party-d-ink" : c.party === "R" ? "text-party-r-ink" : "text-party-i")}>{c.party}</span>
+                <span className={cn("text-[11px]", c.party === "D" ? "text-party-d-ink" : c.party === "R" ? "text-party-r-ink" : "text-party-i")}>{c.party}</span>
                 <span>${compact.format(cash[c.id])}</span>
               </li>
             ))}
@@ -352,7 +352,7 @@ function RaceRow({ row, expectedTier }: { row: Row; expectedTier?: StateMeta["ti
         {race?.source?.tier ? (
           <TierBadge tier={race.source.tier} />
         ) : expectedTier ? (
-          <span className="text-[10px] uppercase tracking-wider text-muted-foreground/70" title="Expected feed tier before counting begins">
+          <span className="text-[11px] text-muted-foreground/70" title="Expected feed tier before counting begins">
             {expectedTier} · expected
           </span>
         ) : (

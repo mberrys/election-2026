@@ -34,7 +34,7 @@ export function PathToMajority({
   return (
     <Card className={className}>
       <CardHeader className="pb-2">
-        <CardTitle className="text-sm uppercase tracking-wider text-muted-foreground">Path to majority</CardTitle>
+        <CardTitle className="text-sm font-semibold">Path to majority</CardTitle>
       </CardHeader>
       <CardContent className="space-y-5">
         <PartyPath party="D" path={paths.D} won={bop.raceIds?.calledD.concat(bop.raceIds.calledI) ?? []} metaById={metaById} live={live} stateName={stateName} uncalledCount={uncalled.length} />
@@ -158,16 +158,15 @@ function Chip({
           state === "needed" && hostile && "border-dashed border-foreground/30 bg-transparent text-muted-foreground",
         )}
       >
-        {state === "won" && <span aria-hidden>✓</span>}
         {meta.state}
-        {meta.special && <span className="text-[9px] font-normal opacity-80">sp</span>}
+        {meta.special && <span className="text-[11px] font-normal opacity-80">sp</span>}
         {state === "needed" && (lean === "tossup" || hostile) && (
-          <span className="text-[9px] font-normal uppercase tracking-wider opacity-80">{lean === "tossup" ? "toss" : "flip"}</span>
+          <span className="text-[11px] font-normal opacity-80">{lean === "tossup" ? "toss" : "flip"}</span>
         )}
         {counting && state === "needed" && (
           <span
             className={cn(
-              "ml-0.5 text-[10px] font-medium",
+              "ml-0.5 text-[11px] font-medium",
               leader?.party === party ? "text-live" : leader ? "text-stale" : "opacity-70",
             )}
           >

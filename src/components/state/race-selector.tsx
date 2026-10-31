@@ -38,7 +38,7 @@ export function RaceSelector({
       <TabsList variant="line" className="h-auto w-full justify-start gap-4 overflow-x-auto scrollbar-thin pb-1.5 flex-nowrap">
         {groups.map((grp) => (
           <div key={grp.label} className="flex shrink-0 items-center gap-1">
-            <span className="mr-1 text-[10px] uppercase tracking-[0.18em] text-muted-foreground/70">{grp.label}</span>
+            <span className="mr-1 text-[11px] text-muted-foreground/70">{grp.label}</span>
             {grp.items.map((m) => {
               const r = live.get(m.id);
               const win = r?.projection;
@@ -48,7 +48,7 @@ export function RaceSelector({
                   {win ? (
                     <PartyDot party={win.party} />
                   ) : m.ratings.consensus && m.office !== "ballot" ? (
-                    <RatingBadge rating={m.ratings.consensus} className="px-1 py-0 text-[9px]" />
+                    <RatingBadge rating={m.ratings.consensus} className="px-1 py-0 text-[11px]" />
                   ) : null}
                 </TabsTrigger>
               );
