@@ -12,9 +12,9 @@ export const metadata: Metadata = pageMetadata({
 export default function SourcesPage() {
   const sources: SourceRef[] = loadSources();
   return (
-    <article className="max-w-5xl space-y-6">
+    <article className="max-w-5xl space-y-10">
       <header>
-        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">Sources &amp; licenses</h1>
+        <h1 className="page-title">Sources &amp; licenses</h1>
         <p className="text-sm text-muted-foreground mt-1">
           The Big Board pulls live vote counts straight from official election authorities. We scrape no news
           organization&apos;s results page and republish no AP or network race calls. Every other source is listed below.

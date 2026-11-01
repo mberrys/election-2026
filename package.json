@@ -10,6 +10,7 @@
     "test": "vitest run",
     "build:geometry": "tsx scripts/build-geometry.ts",
     "build:reference": "tsx scripts/build-reference.ts",
+    "build:stories": "tsx scripts/build-stories.ts",
     "typecheck": "tsc --noEmit -p .",
     "sim": "tsx scripts/simulate.ts",
     "sim:drive": "tsx scripts/sim-drive.ts",

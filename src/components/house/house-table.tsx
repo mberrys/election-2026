@@ -1,12 +1,13 @@
 "use client";
 
+import { raceHref } from "@/lib/race-slug";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { ArrowDownIcon, ArrowUpIcon } from "lucide-react";
-import type { RaceMeta, StateMeta } from "@/data/schema";
+import type { RaceMeta } from "@/data/schema";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import { PartyDot, RatingBadge, StatusBadge, TierBadge } from "@/components/board/status-badge";
+import { RatingBadge, StatusBadge } from "@/components/board/status-badge";
 import { MarginDR, Pct } from "@/components/board/num";
 import { fmtMarginDR } from "@/lib/format";
 import { cn } from "@/lib/utils";
@@ -17,33 +18,34 @@ type Sort = { key: SortKey; dir: 1 | -1 };
 
 const PAGE = 60;
 
-const COLS: { key: SortKey | null; label: string; className?: string }[] = [
+/** `live` columns are empty for every district until votes are counted, so they stay hidden until then. */
+const COLS: { key: SortKey | null; label: string; className?: string; live?: boolean }[] = [
   { key: "district", label: "District" },
   { key: null, label: "Candidates" },
   { key: "rating", label: "Rating" },
-  { key: "pres2024", label: "2024 pres.", className: "text-right" },
-  { key: "pctIn", label: "% in", className: "text-right" },
-  { key: "margin", label: "Margin", className: "text-right" },
-  { key: null, label: "Status" },
-  { key: null, label: "Tier" },
+  { key: "pres2024", label: "2024 president", className: "text-right max-sm:hidden" },
+  { key: "pctIn", label: "% in", className: "text-right", live: true },
+  { key: "margin", label: "Margin", className: "text-right", live: true },
+  { key: null, label: "Status", live: true },
 ];
 
 export function HouseTable({
   metas,
-  states,
   live,
+  hasVotes,
   selected,
   onSelect,
 }: {
   metas: RaceMeta[];
-  states: StateMeta[];
   live: Map<string, LiveRace>;
+  /** Any House race has votes or a projection: shows % in, margin and status. */
+  hasVotes: boolean;
   selected?: string | null;
   onSelect?: (id: string) => void;
 }) {
   const [sort, setSort] = useState<Sort>({ key: "state", dir: 1 });
   const [limit, setLimit] = useState(PAGE);
-  const stateTier = useMemo(() => new Map(states.map((s) => [s.abbr, s.tier])), [states]);
+  const cols = useMemo(() => COLS.filter((c) => hasVotes || !c.live), [hasVotes]);
 
   const rows = useMemo(() => {
     const val = (m: RaceMeta): number | string => {
@@ -75,11 +77,11 @@ export function HouseTable({
   const visible = rows.slice(0, limit);
 
   return (
-    <div className="space-y-2">
-      <Table className="text-xs md:text-sm">
+    <div className="space-y-3">
+      <Table className="text-sm">
         <TableHeader>
           <TableRow className="hover:bg-transparent">
-            {COLS.map((c) => (
+            {cols.map((c) => (
               <TableHead
                 key={c.label}
                 className={cn("text-xs", c.className)}
@@ -105,30 +107,29 @@ export function HouseTable({
           {visible.map((m) => {
             const lr = live.get(m.id);
             const cands = lr?.candidates?.length
-              ? [...lr.candidates].sort((a, b) => b.votes - a.votes).slice(0, 2).map((c) => ({ ...c, incumbent: c.incumbent ?? m.candidates.find((x) => x.id === c.id)?.incumbent }))
+              ? [...lr.candidates]
+                  .sort((a, b) => b.votes - a.votes)
+                  .slice(0, 2)
+                  .map((c) => ({ ...c, incumbent: c.incumbent ?? m.candidates.find((x) => x.id === c.id)?.incumbent }))
               : m.candidates.filter((c) => c.party === "D" || c.party === "R").slice(0, 2);
             const winner = lr?.projection?.winnerId;
+            const pres = m.baseline.presMargin2024;
             return (
-              <TableRow
-                key={m.id}
-                data-state={selected === m.id ? "selected" : undefined}
-                className="cursor-pointer"
-                onClick={() => onSelect?.(m.id)}
-              >
+              <TableRow key={m.id} data-state={selected === m.id ? "selected" : undefined} className="cursor-pointer" onClick={() => onSelect?.(m.id)}>
                 <TableCell className="font-semibold tnum">
-                  <Link href={`/state/${m.state}`} className="hover:underline" onClick={(e) => e.stopPropagation()}>
+                  <Link href={raceHref(m.id)} className="hover:underline" onClick={(e) => e.stopPropagation()}>
                     {shortDistrict(m.id)}
                   </Link>
                 </TableCell>
-                <TableCell className="max-w-[16rem]">
-                  <div className="flex flex-wrap gap-x-3 gap-y-0.5">
-                    {cands.length === 0 && <span className="text-muted-foreground">—</span>}
+                <TableCell className="max-w-[18rem]">
+                  <div className="flex flex-wrap gap-x-4 gap-y-0.5">
                     {cands.map((c) => (
-                      <span key={c.id} className={cn("inline-flex items-center gap-1.5 truncate", c.id === winner && "font-semibold")}>
-                        <PartyDot party={c.party} />
-                        <span className="truncate">{c.name}</span>
-                        {c.incumbent && <span className="text-muted-foreground">*</span>}
-                        {c.id === winner && <span className="text-[11px] text-muted-foreground">Called</span>}
+                      <span key={c.id} className={cn("truncate", c.id === winner && "font-semibold")}>
+                        {c.name}
+                        <span className="text-muted-foreground">
+                          {" "}
+                          ({c.party}){c.incumbent && " *"}
+                        </span>
                       </span>
                     ))}
                   </div>
@@ -136,27 +137,22 @@ export function HouseTable({
                 <TableCell>
                   <RatingBadge rating={m.ratings.consensus} />
                 </TableCell>
-                <TableCell className={cn("text-right tnum", (m.baseline.presMargin2024 ?? 0) > 0 ? "text-party-d-ink" : (m.baseline.presMargin2024 ?? 0) < 0 ? "text-party-r-ink" : "text-muted-foreground")}>
-                  {fmtMarginDR(m.baseline.presMargin2024)}
-                </TableCell>
-                <TableCell className="text-right">
-                  <Pct value={pctIn(lr)} digits={0} />
-                </TableCell>
-                <TableCell className="text-right">
-                  <MarginDR value={liveMarginDR(lr)} />
-                </TableCell>
-                <TableCell>
-                  <StatusBadge status={lr?.status ?? "not_started"} party={lr?.projection?.party} />
-                </TableCell>
-                <TableCell>
-                  <TierBadge tier={lr?.source.tier ?? stateTier.get(m.state)} />
-                </TableCell>
+                <TableCell className="text-right tnum max-sm:hidden">{pres != null ? fmtMarginDR(pres) : null}</TableCell>
+                {hasVotes && (
+                  <>
+                    <TableCell className="text-right">{pctIn(lr) != null && <Pct value={pctIn(lr)} digits={0} />}</TableCell>
+                    <TableCell className="text-right">{liveMarginDR(lr) != null && <MarginDR value={liveMarginDR(lr)} />}</TableCell>
+                    <TableCell>
+                      <StatusBadge status={lr?.status ?? "not_started"} party={lr?.projection?.party} />
+                    </TableCell>
+                  </>
+                )}
               </TableRow>
             );
           })}
         </TableBody>
       </Table>
-      <div className="flex items-center justify-between text-xs text-muted-foreground px-1">
+      <div className="flex flex-wrap items-center justify-between gap-2 px-1 text-xs text-muted-foreground">
         <span className="tnum">
           Showing {Math.min(limit, rows.length)} of {rows.length} districts · * incumbent
         </span>

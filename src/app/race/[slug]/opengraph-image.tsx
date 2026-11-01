@@ -1,5 +1,6 @@
 import { raceCardLines, raceCode, raceHeading, type RaceOffice } from "@/components/race/race-content";
 import { raceContentInput, racePageSlugs } from "@/components/race/race-content-data";
+import { measureContentInput, measurePageSlugs } from "@/components/race/measure-content";
 import { OG_SIZE, ogCard, type StripCell } from "@/lib/og-card";
 
 export const alt = "Big Board 2026 race page: candidates, rating, polls and history";
@@ -7,7 +8,7 @@ export const size = OG_SIZE;
 export const contentType = "image/png";
 
 export function generateStaticParams() {
-  return racePageSlugs().map((slug) => ({ slug }));
+  return [...racePageSlugs(), ...measurePageSlugs()].map((slug) => ({ slug }));
 }
 
 const OFFICE = { senate: "Senate", governor: "governor", house: "House" } as const;

@@ -1,5 +1,5 @@
 /**
- * "Then & Now": project each unit from current polling, then find the last election it voted that way.
+ * Flashback: project each unit from current polling, then find the last election it voted that way.
  * All margins are D - R in points; negative = R. Polls are used as published (no house-effect adjustment).
  */
 import type { DistrictHistory, History, MarginSeries, RaceMeta } from "../data/schema";
@@ -147,7 +147,7 @@ export function statewideRace(races: RaceMeta[]): RaceMeta | undefined {
   return withPolls("senate", false) ?? withPolls("senate", true) ?? withPolls("governor", false);
 }
 
-/** Then & Now row for one race: its own poll average when it has one, else its 2024 margin moved by the national swing. */
+/** Flashback row for one race: its own poll average when it has one, else its 2024 margin moved by the national swing. */
 export function raceRow(meta: RaceMeta, series: MarginSeries, baseline2024: number | undefined, input: BuildInput, label: string): HistoryRowModel {
   const projection = projectedMargin(meta, baseline2024, ctx(input, latestNational(input.history)));
   return finishRow({ id: meta.id, label, kind: meta.office === "house" ? "district" : "state", series, projection });
@@ -214,6 +214,39 @@ function latestNational(history: History): number | undefined {
   const ys = history.years;
   const y = ys[ys.length - 1];
   return y === undefined ? undefined : history.national.pres[String(y)]?.margin;
+}
+
+export interface YearSimilarity {
+  year: number;
+  /** Mean absolute difference between the projected and actual unit margins, in points. */
+  meanGap: number;
+  /** Units where the projection and that year's result lean the same way (zero counts as D). */
+  sameSide: number;
+  /** Units compared (those with both a projection and a result that year). */
+  n: number;
+}
+
+/**
+ * How closely a projected map resembles each past election: the mean absolute difference of unit margins, which
+ * scores the national level and the geography together, plus how many units lean the same way. Closest first;
+ * ties go to the more recent year.
+ */
+export function mapSimilarity(projected: Record<string, number>, past: Record<string, MarginSeries>, yearsToCompare: number[]): YearSimilarity[] {
+  const out: YearSimilarity[] = [];
+  for (const year of yearsToCompare) {
+    let sum = 0;
+    let n = 0;
+    let sameSide = 0;
+    for (const [id, p] of Object.entries(projected)) {
+      const m = past[id]?.[String(year)];
+      if (m === undefined || !Number.isFinite(m) || !Number.isFinite(p)) continue;
+      sum += Math.abs(m - p);
+      n++;
+      if (sideOf(m) === sideOf(p)) sameSide++;
+    }
+    if (n) out.push({ year, meanGap: sum / n, sameSide, n });
+  }
+  return out.sort((a, b) => a.meanGap - b.meanGap || b.year - a.year);
 }
 
 export type SortKey = "projected" | "lastTime" | "change" | "name";

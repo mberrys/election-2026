@@ -1,10 +1,11 @@
 import { districtRows, nationRow, stateRows, type BuildInput, type HistoryRowModel } from "@/analytics/history";
 import { loadHistory, loadPolls, loadRaces, loadStates } from "@/data/reference/load";
+import { buildFlashback, type FlashbackData } from "./flashback-data";
 
 export interface HistoryView {
   nation: HistoryRowModel;
   rowsets: Record<string, HistoryRowModel[]>;
-  trend: NonNullable<ReturnType<typeof loadPolls>["trend"]>;
+  flashback: FlashbackData;
   asOf?: string;
 }
 
@@ -26,19 +27,38 @@ export function buildInput(): BuildInput {
   };
 }
 
-/** Everything the Then & Now page needs, computed once at build time. */
+const round3 = (x: number | undefined) => (x === undefined ? undefined : Math.round(x * 1000) / 1000);
+
+/** Only what the reference table reads (strip, projection, last time, sort keys): about a third less to ship. */
+function leanRow(r: HistoryRowModel): HistoryRowModel {
+  return {
+    id: r.id,
+    label: r.label,
+    kind: r.kind,
+    series: r.series,
+    projection: r.projection && { margin: round3(r.projection.margin)!, source: r.projection.source },
+    lastTime: r.lastTime,
+    change: round3(r.change),
+    caveat: r.caveat,
+  };
+}
+
+/** Everything the Flashback page needs, computed once at build time. */
 export function buildHistoryView(): HistoryView {
   const input = buildInput();
+  const nation = nationRow(input);
+  const statesPres = stateRows(input, "pres");
+  const asOf = genericBallot().asOf;
   return {
-    nation: nationRow(input),
+    nation: leanRow(nation),
     rowsets: {
-      "states:pres": stateRows(input, "pres"),
-      "states:senate": stateRows(input, "senate"),
-      "states:governor": stateRows(input, "governor"),
-      "districts:house": districtRows(input, "house"),
-      "districts:pres": districtRows(input, "pres"),
+      "states:pres": statesPres.map(leanRow),
+      "states:senate": stateRows(input, "senate").map(leanRow),
+      "states:governor": stateRows(input, "governor").map(leanRow),
+      "districts:house": districtRows(input, "house").map(leanRow),
+      "districts:pres": districtRows(input, "pres").map(leanRow),
     },
-    trend: loadPolls().trend ?? {},
-    asOf: genericBallot().asOf,
+    flashback: buildFlashback(nation, statesPres, input.history.years, asOf),
+    asOf,
   };
 }

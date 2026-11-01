@@ -12,6 +12,6 @@ export const metadata: Metadata = pageMetadata({
 
 export default function GovernorsPage() {
   const metas = loadRaces().filter((r) => r.office === "governor");
-  const states = loadStates().map(({ abbr, name, tier }) => ({ abbr, name, tier }));
+  const states = loadStates().map(({ abbr, name }) => ({ abbr, name }));
   return <GovernorsBoard metas={metas} states={states} />;
 }

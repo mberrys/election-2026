@@ -1,6 +1,7 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import robots from "../../src/app/robots";
 import sitemap from "../../src/app/sitemap";
+import { loadRaces } from "../../src/data/reference/load";
 import { pageMetadata } from "../../src/lib/page-meta";
 import { SITE_PAGES, breadcrumbJsonLd, historyDatasetJsonLd, serializeJsonLd, webPageJsonLd, websiteJsonLd } from "../../src/lib/seo";
 import { absoluteUrl, siteUrl } from "../../src/lib/site";
@@ -26,9 +27,10 @@ describe("siteUrl / absoluteUrl", () => {
 
 describe("sitemap", () => {
   const urls = sitemap().map((e) => e.url);
+  const measures = loadRaces().filter((r) => r.office === "ballot").length;
 
-  it("lists every static page, all 51 state pages and all 506 race pages, once each, as absolute URLs", () => {
-    expect(urls).toHaveLength(SITE_PAGES.length + 51 + 506);
+  it("lists every static page, all 51 state pages, all 506 race pages and every ballot measure page, once each, as absolute URLs", () => {
+    expect(urls).toHaveLength(SITE_PAGES.length + 51 + 506 + measures);
     expect(new Set(urls).size).toBe(urls.length);
     expect(urls.every((u) => /^https?:\/\//.test(u))).toBe(true);
     expect(urls).toContain(absoluteUrl("/history"));
@@ -36,11 +38,12 @@ describe("sitemap", () => {
     expect(urls).toContain(absoluteUrl("/state/DC"));
   });
 
-  it("lists one race page per Senate, governor and House race", () => {
+  it("lists one race page per Senate, governor and House race, and one per ballot measure", () => {
     expect(urls).toContain(absoluteUrl("/race/senate-tx"));
     expect(urls).toContain(absoluteUrl("/race/governor-ga"));
     expect(urls).toContain(absoluteUrl("/race/house-tx-15"));
-    expect(urls.filter((u) => u.includes("/race/"))).toHaveLength(506);
+    expect(urls).toContain(absoluteUrl("/race/ballot-ca-prop-3"));
+    expect(urls.filter((u) => u.includes("/race/"))).toHaveLength(506 + measures);
   });
 
   it("leaves out API routes and the redirect-only /senate/[state]", () => {

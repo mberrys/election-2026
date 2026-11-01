@@ -1,130 +1,164 @@
 "use client";
 
-import { useMemo } from "react";
-import { rampColor } from "@/components/board/hatch";
+import Link from "next/link";
+import { memo, useMemo } from "react";
+import { rampStep } from "@/components/board/hatch";
 import type { HistoryRowModel } from "@/analytics/history";
 import { fmtMarginDR } from "@/lib/format";
+import { raceHref } from "@/lib/race-slug";
 import { cn } from "@/lib/utils";
 
 interface Props {
   rows: HistoryRowModel[];
   /** Pinned above the list regardless of sort (the national row). */
   pinned?: HistoryRowModel;
-  selectedId?: string;
-  onSelect: (id: string) => void;
   /** Noun for the unit column header. */
   unitLabel: string;
 }
 
-const ROW_COLS = "grid grid-cols-[6.5rem_minmax(11rem,1fr)_3.25rem_5.5rem] items-center gap-x-2 sm:grid-cols-[9rem_minmax(14rem,1fr)_3.75rem_6.5rem]";
+/** Phones: name, 2026 and last-time on one line, the strip full width below. Wider: one line per place. */
+const ROW_COLS =
+  "grid grid-cols-[minmax(0,1fr)_auto_auto] items-center gap-x-4 gap-y-2 sm:grid-cols-[minmax(7rem,10rem)_minmax(0,1fr)_4.5rem_6.5rem] sm:gap-x-5 lg:grid-cols-[minmax(8rem,12rem)_minmax(0,1fr)_5rem_7.5rem]";
+
+/** Strip cells stay on the light half of the ramp (steps 1–3) so a long table reads calmly. */
+const stripColor = (m: number) => `var(--ramp-${m >= 0 ? "d" : "r"}-${Math.min(rampStep(m), 3)})`;
+const partyInk = (m: number) => (m >= 0 ? "text-party-d-ink" : "text-party-r-ink");
+const short = (y: number) => `’${String(y).slice(2)}`;
+
+/** Indices to label at a given density: every k-th, plus the last, never crowding the last. */
+function labelled(n: number, k: number): Set<number> {
+  const out = new Set<number>([n - 1]);
+  for (let i = 0; i < n - 1; i += k) if (n - 1 - i >= Math.min(k, 2)) out.add(i);
+  return out;
+}
 
 /**
- * One row per unit; one narrow cell per past election coloured on the margin ramp, then a hatched cell for the
- * 2026 projection. The cell for the "last time" election is outlined so the answer is visible in the row itself.
+ * One row per place: a cell per past election on the margin ramp, then the 2026 projection as an outlined cell
+ * (the row's only highlight). Rows link to the state or district page.
  */
-export function HistoryStrips({ rows, pinned, selectedId, onSelect, unitLabel }: Props) {
+export function HistoryStrips({ rows, pinned, unitLabel }: Props) {
   const years = useMemo(() => {
     const set = new Set<number>();
     for (const r of [...(pinned ? [pinned] : []), ...rows]) for (const y of Object.keys(r.series)) set.add(Number(y));
     return [...set].sort((a, b) => a - b);
   }, [rows, pinned]);
 
-  const labelEvery = years.length > 24 ? 4 : years.length > 14 ? 2 : 1;
+  const cells = years.length + 1;
+  const wide = labelled(cells, cells > 16 ? 2 : 1);
+  const narrow = labelled(cells, cells > 16 ? 4 : 2);
+  const labels = [...years, 2026];
 
   return (
-    <div className="overflow-x-auto rounded-md border border-border bg-card" role="group" aria-label={`${unitLabel} election history`}>
-      <div className="min-w-[34rem]">
-        <div className={cn(ROW_COLS, "sticky top-0 z-10 border-b border-border bg-card px-2 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground")}>
-          <span>{unitLabel}</span>
-          <div className="grid" style={{ gridTemplateColumns: `repeat(${years.length}, minmax(0, 1fr))` }} aria-hidden>
-            {years.map((y, i) => (
-              <span key={y} className="overflow-visible whitespace-nowrap text-center text-[10px] font-normal normal-case tracking-normal">
-                {i % labelEvery === 0 || i === years.length - 1 ? `’${String(y).slice(2)}` : ""}
+    <div className="overflow-hidden rounded-xl border border-border bg-card" role="group" aria-label={`${unitLabel} election history`}>
+      <div className={cn(ROW_COLS, "border-b border-border px-3 py-3 text-[13px] font-semibold text-ink-muted sm:px-5")}>
+        <span>{unitLabel}</span>
+        <div className="col-span-3 row-start-2 grid gap-[2px] sm:col-span-1 sm:row-start-auto" style={{ gridTemplateColumns: `repeat(${cells}, minmax(0, 1fr))` }} aria-hidden>
+          {labels.map((y, i) => {
+            const show = wide.has(i) || narrow.has(i);
+            return (
+              <span
+                key={y}
+                className={cn(
+                  "overflow-visible text-center text-[12px] font-medium whitespace-nowrap tnum",
+                  !show && "invisible",
+                  wide.has(i) && !narrow.has(i) && "max-lg:invisible",
+                  !wide.has(i) && narrow.has(i) && "lg:invisible",
+                  i === cells - 1 && "font-bold text-ink",
+                )}
+              >
+                {short(y)}
               </span>
-            ))}
-          </div>
-          <span className="text-right">2026</span>
-          <span className="text-right">Last this way</span>
+            );
+          })}
         </div>
-        <ul className="divide-y divide-border/60">
-          {pinned && (
-            <li className="bg-muted/30">
-              <Row row={pinned} years={years} selected={selectedId === pinned.id} onSelect={onSelect} />
-            </li>
-          )}
-          {rows.map((r) => (
-            <li key={r.id}>
-              <Row row={r} years={years} selected={selectedId === r.id} onSelect={onSelect} />
-            </li>
-          ))}
-          {rows.length === 0 && <li className="px-3 py-6 text-center text-sm text-muted-foreground">No matches.</li>}
-        </ul>
+        <span className="text-right">2026</span>
+        <span className="text-right">Last this way</span>
       </div>
+      <ul className="divide-y divide-border">
+        {pinned && (
+          <li className="bg-s3/40">
+            <Row row={pinned} years={years} />
+          </li>
+        )}
+        {rows.map((r) => (
+          <li key={r.id}>
+            <Row row={r} years={years} />
+          </li>
+        ))}
+        {rows.length === 0 && <li className="px-5 py-6 text-center text-[15px] text-ink-muted">No matches.</li>}
+      </ul>
     </div>
   );
 }
 
-/** "1976–2024": the years this row has data for. */
-function span(row: HistoryRowModel): string {
-  const ys = Object.keys(row.series).map(Number);
-  return `${Math.min(...ys)}–${Math.max(...ys)}`;
+/** "1976": the first year this row has data for. */
+function firstYear(row: HistoryRowModel): number {
+  return Math.min(...Object.keys(row.series).map(Number));
 }
 
-function Row({ row, years, selected, onSelect }: { row: HistoryRowModel; years: number[]; selected: boolean; onSelect: (id: string) => void }) {
+function hrefFor(row: HistoryRowModel): string | undefined {
+  if (row.kind === "state") return `/state/${row.id}`;
+  if (row.kind === "district") return raceHref(`house:${row.id}`);
+  return undefined;
+}
+
+const Row = memo(function Row({ row, years }: { row: HistoryRowModel; years: number[] }) {
   const p = row.projection;
+  const sideWord = p && p.margin >= 0 ? "Democratic" : "Republican";
   const summary = p
-    ? `${row.label}: projected ${fmtMarginDR(p.margin)}. ${row.lastTime ? `Last at least this ${p.margin >= 0 ? "Democratic" : "Republican"} in ${row.lastTime}.` : `No election from ${span(row)} was this ${p.margin >= 0 ? "Democratic" : "Republican"}.`}`
+    ? `${row.label}: projected ${fmtMarginDR(p.margin)}. ${row.lastTime ? `Last at least this ${sideWord} in ${row.lastTime}.` : `No election since ${firstYear(row)} was this ${sideWord}.`}`
     : `${row.label}: no projection yet.`;
-  return (
-    <button
-      type="button"
-      onClick={() => onSelect(row.id)}
-      aria-pressed={selected}
-      aria-label={summary}
-      className={cn(ROW_COLS, "w-full px-2 py-[3px] text-left text-xs transition-colors hover:bg-accent/50 focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-ring", selected && "bg-accent")}
-    >
-      <span className="truncate font-medium">
+  const href = hrefFor(row);
+  const cls = cn(ROW_COLS, "px-3 py-2.5 text-[15px] sm:px-5", href && "transition-colors hover:bg-s3 focus-visible:bg-s3 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-ring");
+
+  const content = (
+    <>
+      <span className="truncate font-bold">
         {row.label}
         {row.caveat && (
-          <span className="ml-1 text-[10px] font-normal text-muted-foreground" title="District lines changed; see detail">
+          <span className="ml-1 font-normal text-ink-muted" title="District lines changed; see the note under the table">
             *
           </span>
         )}
       </span>
-      <span className="grid h-4 gap-px" style={{ gridTemplateColumns: `repeat(${years.length}, minmax(0, 1fr))` }} aria-hidden>
+      <span className="col-span-3 row-start-2 grid h-4 gap-[2px] sm:col-span-1 sm:row-start-auto" style={{ gridTemplateColumns: `repeat(${years.length + 1}, minmax(0, 1fr))` }} aria-hidden>
         {years.map((y) => {
           const m = row.series[String(y)];
-          const isLast = row.lastTime === y;
           return (
             <i
               key={y}
-              title={m === undefined ? `${y}: no data` : `${y}: ${fmtMarginDR(m)}${isLast ? " (last this way)" : ""}`}
-              className={cn("block rounded-[1px]", m === undefined && "bg-muted/40", isLast && "outline outline-2 -outline-offset-1 outline-foreground")}
-              style={m === undefined ? undefined : { background: rampColor(m) }}
+              title={m === undefined ? undefined : `${y}: ${fmtMarginDR(m)}`}
+              className={cn("block rounded-[2px]", m === undefined && "bg-s3/50")}
+              style={m === undefined ? undefined : { backgroundColor: stripColor(m) }}
             />
           );
         })}
+        <i
+          title={p ? `2026 projected: ${fmtMarginDR(p.margin)}` : undefined}
+          className={cn("block rounded-[2px]", p ? "outline-2 -outline-offset-2 outline-ink" : "bg-s3/50")}
+          style={p ? { backgroundColor: stripColor(p.margin) } : undefined}
+        />
       </span>
-      <span
-        className={cn("tnum flex h-4 items-center justify-end rounded-[2px] px-1 text-right text-[11px] font-semibold", p ? (p.margin >= 0 ? "hatch-d" : "hatch-r") : "text-muted-foreground")}
-        title={p ? (p.source === "poll" ? "From the latest poll average" : "From 2024 margin plus national swing (no race poll)") : undefined}
-      >
-        <span className={cn("rounded-[2px] bg-card/85 px-0.5", p && (p.margin >= 0 ? "text-party-d-ink" : "text-party-r-ink"))}>{p ? fmtMarginDR(p.margin, 1) : "—"}</span>
-      </span>
-      <span className="tnum text-right text-[11px]">
-        {!p ? (
-          <span className="text-muted-foreground">—</span>
-        ) : row.lastTime ? (
-          <span>
-            <span className="font-semibold">{row.lastTime}</span>
-            {row.lastTime === row.latestYear && <span className="ml-1 text-muted-foreground">latest</span>}
-          </span>
+      <span className={cn("text-right font-semibold tnum", p && partyInk(p.margin))}>{p ? fmtMarginDR(p.margin) : null}</span>
+      <span className="text-right tnum">
+        {!p ? null : row.lastTime ? (
+          <span className="font-medium">{row.lastTime}</span>
         ) : (
-          <span className="font-semibold text-alert-ink" title="No election in the data was this far toward the projected side">
-            none {span(row)}
+          <span className="text-ink-muted" title={`No election since ${firstYear(row)} was this ${sideWord}`}>
+            No match
           </span>
         )}
       </span>
-    </button>
+    </>
   );
-}
+
+  return href ? (
+    <Link href={href} prefetch={false} aria-label={summary} className={cls}>
+      {content}
+    </Link>
+  ) : (
+    <div aria-label={summary} role="group" className={cls}>
+      {content}
+    </div>
+  );
+});

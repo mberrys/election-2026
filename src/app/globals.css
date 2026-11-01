@@ -15,6 +15,12 @@
  * The hatch and hazard patterns are the only repeating gradients: they carry data.
  */
 
+/* Type floor: the smallest utility is 13px; 12px is reserved for captions written as text-[12px]. */
+@theme {
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.25rem;
+}
+
 @theme inline {
   /* Surfaces + ink */
   --color-ground: var(--ground);
@@ -306,7 +312,7 @@
   html {
     color-scheme: dark;
     /* The sticky header (56px, 96px with the phone nav row) never covers an anchored heading. */
-    scroll-padding-top: 6.5rem;
+    scroll-padding-top: 8.5rem;
   }
   body {
     font-stretch: 100%;
@@ -322,6 +328,21 @@
   .hero-num { font-family: var(--font-display); font-stretch: 125%; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
   /* Ticking figures only (vote counts, shares, deltas). Labels stay in Archivo. */
   .fig { font-family: var(--font-mono); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+
+  /* Page frame: one title size and one lede size on every page. */
+  .page-header { display: flex; flex-direction: column; gap: 0.75rem; max-width: 60rem; }
+  .page-title {
+    font-family: var(--font-display);
+    font-stretch: 118%;
+    font-weight: 800;
+    font-size: clamp(2rem, 1.2rem + 1.6vw, 2.5rem);
+    line-height: 1;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+  .page-lede { font-size: 1.0625rem; line-height: 1.55; color: var(--ink-muted); text-wrap: pretty; max-width: 68ch; }
+  /* Section heading inside a page (below the h1). */
+  .section-title { font-family: var(--font-display); font-stretch: 108%; font-weight: 700; font-size: 1.5rem; line-height: 1.2; letter-spacing: -0.01em; }
 }
 
 @layer utilities {
@@ -330,6 +351,10 @@
   /* Uncounted / uncalled. 6px pitch; .hatch-sm (5px) on small marks. */
   .hatch {
     background: repeating-linear-gradient(135deg, var(--hatch-line) 0 1.5px, transparent 1.5px 6px), var(--hatch-ground);
+  }
+  /* Larger marks that must read at a glance (map tiles): brighter lines on a lifted ground. */
+  .hatch-strong {
+    background: repeating-linear-gradient(135deg, var(--ink-faint) 0 2px, transparent 2px 7px), var(--s3);
   }
   .hatch-sm {
     background: repeating-linear-gradient(135deg, var(--hatch-line) 0 1.5px, transparent 1.5px 5px), var(--hatch-ground);

@@ -1,12 +1,13 @@
 "use client";
 
+import { raceHref } from "@/lib/race-slug";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { indexRaces, useNational, useSlowReference } from "@/hooks/use-results";
 import { useMounted } from "@/hooks/use-mounted";
 import { RaceCard } from "./race-card";
 import { ChamberRow, SenateHero } from "./control-lanes";
-import { FreshDot, Swatch } from "./hatch";
+import { Swatch } from "./hatch";
 import { VP_PARTY } from "@/components/senate/chamber-balance";
 import { TierBadge } from "./status-badge";
 import { HEX_HATCH, HEX_HATCH_D, HEX_HATCH_R, HexCartogram, HEXMAP_ATTRIBUTION } from "@/components/maps/hex-cartogram";
@@ -70,14 +71,14 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
   const finding = useMemo(() => nightFinding(balance.senate, counting), [balance, counting]);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-12">
       <header className="max-w-3xl space-y-2">
-        <h1 className="display text-[28px] font-extrabold leading-tight md:text-[32px]">{counting ? "Election night" : "2026 midterms"}</h1>
+        <h1 className="page-title">{counting ? "Election night" : "2026 midterms"}</h1>
         <p className="text-lg text-pretty text-foreground md:text-xl">{finding}</p>
       </header>
 
       {/* Balance of power: the Senate decides control and gets the hero figure; House and governors are compact rows. */}
-      <section className="grid gap-4 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
+      <section className="grid gap-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
         <SenateHero bop={balance.senate} href="/senate" vpParty={VP_PARTY} />
         <Card className="gap-0 divide-y divide-border px-4 py-1 md:px-5">
           <ChamberRow title="U.S. House" bop={balance.house} href="/house" />
@@ -110,8 +111,8 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
 
       {/* Key races */}
       <section>
-        <SectionTitle title="Key races" sub="Toss-ups and leaners by consensus rating (Cook · Inside Elections · Sabato)" />
-        <div className="grid auto-rows-fr gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <SectionTitle title="Key races" sub="The closest contests by the consensus of Cook, Inside Elections and Sabato. Pick one for the campaigns, polls and news." />
+        <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {keyRaces.map((m) => {
             const lr = live.get(m.id);
             return (
@@ -119,7 +120,7 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
                 key={m.id}
                 meta={m}
                 live={lr}
-                href={`/state/${m.state}`}
+                href={raceHref(m.id)}
                 className="h-full"
               />
             );
@@ -128,22 +129,22 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
       </section>
 
       {/* Cartogram + poll-closing timeline */}
-      <section className="grid gap-4 xl:grid-cols-[1.4fr_1fr]">
+      <section className="grid items-start gap-6 xl:grid-cols-[1.4fr_1fr]">
         <Card className="gap-3">
           <CardHeader className="flex flex-row flex-wrap items-baseline justify-between gap-x-3 pb-0">
-            <CardTitle className="display text-lg font-bold">House, all 435 districts</CardTitle>
+            <CardTitle>House, all 435 districts</CardTitle>
             <Link href="/house" className="text-sm text-muted-foreground hover:text-foreground">
               House board →
             </Link>
           </CardHeader>
           <CardContent>
-            <HouseCartogram metaById={metaById} live={live} />
+            <HouseCartogram metaById={metaById} live={live} counting={counting} />
             <p className="mt-2 text-xs text-muted-foreground">{HEXMAP_ATTRIBUTION}</p>
           </CardContent>
         </Card>
         <Card className="gap-3">
           <CardHeader className="pb-0">
-            <CardTitle className="display text-lg font-bold">Poll closings, Tuesday Nov 3</CardTitle>
+            <CardTitle>Poll closings, Tuesday Nov 3</CardTitle>
           </CardHeader>
           <CardContent>
             <PollCloseTimeline states={states} metas={metas} live={live} />
@@ -152,7 +153,7 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
       </section>
 
       {/* Feeds */}
-      {mounted && data?.feeds?.length ? (
+      {counting && data?.feeds?.length ? (
         <section>
           <SectionTitle title="Data feeds" sub="Official state and county sources polled every minute" />
           <div className="flex flex-wrap gap-2">
@@ -188,15 +189,17 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
 
 function SectionTitle({ title, sub }: { title: string; sub?: string }) {
   return (
-    <div className="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-      <h2 className="display text-2xl font-bold">{title}</h2>
-      {sub && <p className="text-sm text-muted-foreground text-pretty">{sub}</p>}
+    <div className="mb-5 space-y-1.5">
+      <h2 className="section-title">{title}</h2>
+      {sub && <p className="text-[15px] text-muted-foreground text-pretty">{sub}</p>}
     </div>
   );
 }
 
-function HouseCartogram({ metaById, live }: { metaById: Map<string, RaceMeta>; live: Map<string, LiveRace> }) {
-  const [mode, setMode] = useState<"status" | "ratings">("status");
+function HouseCartogram({ metaById, live, counting }: { metaById: Map<string, RaceMeta>; live: Map<string, LiveRace>; counting: boolean }) {
+  const [picked, setMode] = useState<"status" | "ratings">("status");
+  // Before any votes, "results" would only restate the ratings with hatching: show the ratings plainly.
+  const mode = counting ? picked : "ratings";
   const leaderParty = (lr: LiveRace | undefined) =>
     lr && lr.status === "counting" && lr.totalVotes > 0 ? lr.candidates.find((c) => c.id === lr.leaderId)?.party : undefined;
   const fill = (id: string): string | null => {
@@ -209,7 +212,7 @@ function HouseCartogram({ metaById, live }: { metaById: Map<string, RaceMeta>; l
     const r = meta?.ratings.consensus;
     if (!r) return null;
     const lean = RATING_LEAN[r];
-    if (lean === "tossup") return HEX_HATCH;
+    if (lean === "tossup") return mode === "ratings" ? "var(--s4)" : HEX_HATCH;
     if (mode === "ratings") {
       const step = r.startsWith("solid") ? 4 : r.startsWith("likely") ? 3 : r.startsWith("lean") ? 2 : 1;
       return `var(--ramp-${lean === "D" ? "d" : "r"}-${step})`;
@@ -230,15 +233,15 @@ function HouseCartogram({ metaById, live }: { metaById: Map<string, RaceMeta>; l
   };
   return (
     <div>
-      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-        <ToggleGroup value={[mode]} onValueChange={(v) => v[0] && setMode(v[0] as typeof mode)} className="gap-1">
-          <ToggleGroupItem value="status" className="h-8 px-2.5 text-sm">
-            Results
-          </ToggleGroupItem>
-          <ToggleGroupItem value="ratings" className="h-8 px-2.5 text-sm">
-            Ratings
-          </ToggleGroupItem>
-        </ToggleGroup>
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        {counting ? (
+          <ToggleGroup value={[mode]} onValueChange={(v) => v[0] && setMode(v[0] as typeof mode)} className="gap-1">
+            <ToggleGroupItem value="status">Results</ToggleGroupItem>
+            <ToggleGroupItem value="ratings">Ratings</ToggleGroupItem>
+          </ToggleGroup>
+        ) : (
+          <p className="text-[15px] text-muted-foreground">Coloured by forecast rating</p>
+        )}
         <Legend mode={mode} />
       </div>
       <HexCartogram fill={fill} mark={mark} label={(id) => metaById.get(id)?.name ?? id} showLabels={false} />
@@ -258,7 +261,7 @@ function Legend({ mode }: { mode: "status" | "ratings" }) {
           <Swatch kind="ramp-d-2" /> Lean D
         </span>
         <span className={item}>
-          <Swatch kind="uncounted" /> Toss-up
+          <span className="inline-block size-3 rounded-[2px] bg-s4" /> Toss-up
         </span>
         <span className={item}>
           <Swatch kind="ramp-r-2" /> Lean R
@@ -312,33 +315,38 @@ function PollCloseTimeline({ states, metas, live }: { states: StateMeta[]; metas
   const counted = (abbr: string) => [...live.values()].some((r) => r.state === abbr && r.totalVotes > 0);
 
   return (
-    <ol className="space-y-2">
-      {groups.map((g) => (
-        <li key={g.t} className="grid grid-cols-[72px_1fr] gap-2 items-start">
-          <div className="text-sm font-semibold tnum pt-0.5">{fmtEt(g.t)}</div>
-          <div className="flex flex-wrap gap-1">
-            {g.states.map((s) => {
-              const n = g.competitive.get(s.abbr) ?? 0;
-              return (
-                <Link
-                  key={s.abbr}
-                  href={`/state/${s.abbr}`}
-                  className={cn(
-                    "inline-flex items-center gap-1 rounded-[3px] border px-1.5 py-0.5 text-sm tnum transition-colors",
-                    n > 0 ? "border-border-strong font-semibold" : "border-border text-muted-foreground",
-                  )}
-                  title={n ? `${s.name}: ${n} competitive race${n > 1 ? "s" : ""}` : s.name}
-                >
-                  {counted(s.abbr) && <FreshDot state="live" className="h-2 w-2" />}
-                  {s.abbr}
-                  {n > 0 && <span className="text-xs font-normal text-muted-foreground">{n}</span>}
-                </Link>
-              );
-            })}
-          </div>
-        </li>
-      ))}
-    </ol>
+    <div className="space-y-4">
+      <ol className="divide-y divide-border">
+        {groups.map((g) => (
+          <li key={g.t} className="grid grid-cols-[5.5rem_minmax(0,1fr)] items-baseline gap-4 py-3">
+            <div className="text-[15px] font-bold tnum">{fmtEt(g.t).replace(" ET", "")}</div>
+            <p className="text-[15px] leading-relaxed">
+              {g.states.map((s, i) => {
+                const n = g.competitive.get(s.abbr) ?? 0;
+                return (
+                  <span key={s.abbr}>
+                    {i > 0 && <span className="text-muted-foreground">, </span>}
+                    <Link
+                      href={`/state/${s.abbr}`}
+                      className={cn("underline-offset-4 hover:underline", n > 0 ? "font-semibold text-foreground" : "text-muted-foreground", counted(s.abbr) && "text-signal-ink")}
+                      title={n ? `${s.name}: ${n} competitive race${n > 1 ? "s" : ""}` : s.name}
+                    >
+                      {s.name}
+                    </Link>
+                  </span>
+                );
+              })}
+            </p>
+          </li>
+        ))}
+      </ol>
+      <p className="text-sm text-muted-foreground">
+        Times are Eastern. States in bold have a competitive race.{" "}
+        <Link href="/election-night" className="font-semibold text-foreground underline-offset-4 hover:underline">
+          Full schedule
+        </Link>
+      </p>
+    </div>
   );
 }
 

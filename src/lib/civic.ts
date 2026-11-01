@@ -36,6 +36,10 @@ export interface Contest {
   title: string;
   level?: string;
   district?: string;
+  /** Google's district scope ("statewide", "congressional", "countywide", ...), when given. */
+  scope?: string;
+  /** OCD division id of the district ("ocd-division/country:us/state:tx/cd:15"), when given. */
+  districtId?: string;
   special?: boolean;
   seats?: number;
   candidates: ContestCandidate[];
@@ -46,6 +50,8 @@ export interface Contest {
 export interface BallotLookup {
   election: CivicElection;
   address?: string;
+  /** Two-letter state of the normalized address, when Google returns one. */
+  state?: string;
   pollingPlaces: Place[];
   earlyVoteSites: Place[];
   dropOffLocations: Place[];
@@ -103,7 +109,10 @@ function normalizePlaces(v: unknown): Place[] {
 
 function normalizeContests(v: unknown): Contest[] {
   return arr(v).flatMap((c): Contest[] => {
-    const district = str((c.district as Raw | undefined)?.name);
+    const d = c.district as Raw | undefined;
+    const district = str(d?.name);
+    const scope = str(d?.scope);
+    const districtId = str(d?.id);
     const level = Array.isArray(c.level) ? str(c.level[0]) : undefined;
     if (str(c.referendumTitle)) {
       return [
@@ -112,6 +121,8 @@ function normalizeContests(v: unknown): Contest[] {
           title: str(c.referendumTitle)!,
           level,
           district,
+          scope,
+          districtId,
           candidates: [],
           brief: str(c.referendumBrief) ?? str(c.referendumSubtitle),
           url: str(c.referendumUrl),
@@ -126,6 +137,8 @@ function normalizeContests(v: unknown): Contest[] {
         title,
         level,
         district,
+        scope,
+        districtId,
         special: c.special === true || undefined,
         seats: typeof c.numberElected === "number" ? c.numberElected : undefined,
         candidates: arr(c.candidates)
@@ -143,6 +156,7 @@ export function normalizeVoterInfo(raw: Raw, election: CivicElection): BallotLoo
   return {
     election,
     address: ni ? addressLine({ ...ni, locationName: undefined }) : undefined,
+    state: str(ni?.state)?.toUpperCase(),
     pollingPlaces: normalizePlaces(raw.pollingLocations),
     earlyVoteSites: normalizePlaces(raw.earlyVoteSites),
     dropOffLocations: normalizePlaces(raw.dropOffLocations),

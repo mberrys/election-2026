@@ -18,10 +18,13 @@ export default function StatesPage() {
   const states = loadStates();
 
   return (
-    <div className="space-y-4">
-      <header className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">States &amp; Measures</h1>
-        <p className="text-sm text-muted-foreground">Legislative chambers and statewide ballot measures on the 2026 ballot</p>
+    <div className="space-y-10">
+      <header className="page-header">
+        <h1 className="page-title">States &amp; Measures</h1>
+        <p className="page-lede">
+          {legs.length} legislative chambers and {measures.length} statewide ballot measures on the Nov 3 ballot. Pick a state on either map to see
+          everything it votes on.
+        </p>
       </header>
       <Suspense>
         <StatesBoard legs={legs} measures={measures} governors={governors} states={states} />

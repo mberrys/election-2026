@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useId, useMemo, useState } from "react";
 import type { Race, RaceMeta, StateMeta, Tier } from "@/data/schema";
 import { useStateResults } from "@/hooks/use-results";
 import { useMounted } from "@/hooks/use-mounted";
@@ -68,66 +68,68 @@ export function StateBoard({ state, metas, counties }: StateBoardProps) {
 
   const groups = useMemo(() => groupRaces(metas), [metas]);
   const tier: Tier | undefined = state.tier ?? selectedLive?.source.tier ?? data?.races?.[0]?.source.tier;
+  const hasVotes = rows.some((r) => r.votesIn > 0);
 
   const settled = mounted && !isPending;
   const noFeed = settled && (isError || !data?.races?.length);
+  const sourceNote = !noFeed
+    ? undefined
+    : isError
+      ? "The results feed is unreachable right now; we retry automatically."
+      : tier
+        ? `Results will come from the ${TIER_SOURCE_LABEL[tier]}.`
+        : "No automated results source is set up for this state yet; the board uses reference data and 2024 county baselines.";
 
   const announcement = useProjectionAnnouncements(data?.races, state.name);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <span className="sr-only" aria-live="polite" aria-atomic="true">
         {announcement}
       </span>
 
-      <StateHeader state={state} tier={tier} race={selectedLive} generatedAt={data?.generatedAt ?? null} raceCount={metas.length} />
-
-      {noFeed && (
-        <Card className="border-dashed px-4 py-3 text-sm text-muted-foreground" role="status">
-          <p>
-            <span className="font-medium text-foreground">No live feed yet.</span>{" "}
-            {tier
-              ? `This state's results come from ${TIER_SOURCE_LABEL[tier]}${state.feeds.length ? ` (${state.feeds.join(", ")})` : ""}.`
-              : "No automated source is configured for this state yet. The board below uses reference data and 2024 county baselines."}
-            {isError && " The results endpoint is unreachable. We retry automatically."}
-          </p>
-        </Card>
-      )}
-
-      <RaceSelector metas={metas} live={live} value={selectedId} onChange={selectRace} />
+      <div className="space-y-8">
+        <StateHeader state={state} race={selectedLive} generatedAt={data?.generatedAt ?? null} raceCount={metas.length} sourceNote={sourceNote} />
+        <RaceSelector metas={metas} live={live} value={selectedId} onChange={selectRace} />
+      </div>
 
       {selectedId && <TopLine race={selectedLive} meta={selectedMeta} />}
 
-      <section className="grid gap-4 lg:grid-cols-12" aria-label="County detail">
-        <Card className="gap-3 p-4 lg:col-span-5">
-          <SectionLabel>County map</SectionLabel>
-          <CountyMapPanel
-            stateFips={state.fips}
-            rows={rows}
-            selected={selectedFips}
-            onSelect={setSelectedFips}
-            mode={mapMode}
-            onModeChange={setMapMode}
-          />
-        </Card>
-        <Card className="gap-3 p-4 lg:col-span-7">
-          <SectionLabel>
-            Counties <span className="tnum normal-case tracking-normal text-muted-foreground/80">({rows.length})</span>
-          </SectionLabel>
-          <CountyTable rows={rows} selected={selectedFips} onSelect={setSelectedFips} />
-        </Card>
-      </section>
+      <Section
+        title="Counties"
+        count={rows.length}
+        description={
+          hasVotes
+            ? "Hover a county for its numbers; click a county on the map or in the table to pin it."
+            : "Coloured by the 2024 presidential margin until votes are counted. Click a county to pin it in the table."
+        }
+      >
+        <div className="grid items-start gap-6 lg:grid-cols-12">
+          {/* The map gets the wide side until votes arrive; then the table needs it for its live columns. */}
+          <Card className={cn("p-4", hasVotes ? "lg:col-span-5" : "lg:col-span-7")}>
+            <CountyMapPanel
+              stateFips={state.fips}
+              rows={rows}
+              selected={selectedFips}
+              onSelect={setSelectedFips}
+              mode={mapMode}
+              onModeChange={setMapMode}
+              hasVotes={hasVotes}
+            />
+          </Card>
+          <CountyTable rows={rows} selected={selectedFips} onSelect={setSelectedFips} hasVotes={hasVotes} className={cn("bg-card", hasVotes ? "lg:col-span-7" : "lg:col-span-5")} />
+        </div>
+      </Section>
 
-      <section className="grid gap-4 lg:grid-cols-12" aria-label="Outstanding vote and bellwethers">
-        <Card className="gap-3 p-4 lg:col-span-5">
-          <SectionLabel>What&apos;s left</SectionLabel>
-          <WhatsLeft rows={rows} selected={selectedFips} onSelect={setSelectedFips} />
-        </Card>
-        <Card className="gap-3 p-4 lg:col-span-7">
-          <SectionLabel>
-            Bellwether watchlist{" "}
-            <span className="normal-case tracking-normal text-muted-foreground/80">(counties that tracked the state in 2020 &amp; 2024)</span>
-          </SectionLabel>
+      <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-6">
+        <Section title={hasVotes ? "What’s left" : "Where the vote is"} className="lg:col-span-5">
+          <WhatsLeft rows={rows} hasVotes={hasVotes} selected={selectedFips} onSelect={setSelectedFips} />
+        </Section>
+        <Section
+          title="Bellwether counties"
+          description="Counties whose 2020 and 2024 margins tracked the statewide result most closely."
+          className="lg:col-span-7"
+        >
           <Bellwethers
             rows={rows}
             stateBaseline={stateBaseline}
@@ -135,23 +137,45 @@ export function StateBoard({ state, metas, counties }: StateBoardProps) {
             selected={selectedFips}
             onSelect={setSelectedFips}
           />
-        </Card>
-      </section>
+        </Section>
+      </div>
 
       {groups.house.length > 0 && (
-        <section aria-label="House districts" className="space-y-3">
-          <SectionLabel>
-            House districts <span className="tnum normal-case tracking-normal text-muted-foreground/80">({groups.house.length})</span>
-          </SectionLabel>
+        <Section title="House districts" count={groups.house.length} description="Select a district to load it at the top of the page.">
           <HouseStrip metas={groups.house} live={live} selectedId={selectedId} onSelect={selectRace} />
-        </section>
+        </Section>
       )}
     </div>
   );
 }
 
-function SectionLabel({ children, className }: { children: React.ReactNode; className?: string }) {
-  return <h2 className={cn("text-[11px] font-semibold text-muted-foreground", className)}>{children}</h2>;
+/** A page section: 24px heading, optional count and one-line description, content 20px below. */
+function Section({
+  title,
+  count,
+  description,
+  className,
+  children,
+}: {
+  title: string;
+  count?: number;
+  description?: string;
+  className?: string;
+  children: React.ReactNode;
+}) {
+  const id = useId();
+  return (
+    <section aria-labelledby={id} className={cn("space-y-5", className)}>
+      <div className="space-y-1.5">
+        <h2 id={id} className="section-title">
+          {title}
+          {count != null && <span className="ml-2 font-semibold text-muted-foreground tnum">{count}</span>}
+        </h2>
+        {description && <p className="max-w-[68ch] text-sm text-muted-foreground">{description}</p>}
+      </div>
+      {children}
+    </section>
+  );
 }
 
 interface AnnounceState {

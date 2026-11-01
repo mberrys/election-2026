@@ -40,7 +40,7 @@ export default async function StatePage({ params }: PageProps<"/state/[st]">) {
   const path = `/state/${state.abbr}`;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <JsonLd
         data={webPageJsonLd({
           name: stateTitle(state.name),
@@ -61,8 +61,10 @@ export default async function StatePage({ params }: PageProps<"/state/[st]">) {
         <StateBoard state={state} metas={metas} counties={counties} />
       </Suspense>
       <StateHistoryPanel abbr={state.abbr} />
-      <StateQa input={input} />
-      <StateRaces abbr={state.abbr} stateName={state.name} />
+      <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-6">
+        <StateQa input={input} className="lg:col-span-7" />
+        <StateRaces abbr={state.abbr} stateName={state.name} className="lg:col-span-5" />
+      </div>
     </div>
   );
 }

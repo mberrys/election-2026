@@ -32,41 +32,41 @@ export default function ElectionNightPage() {
     ));
 
   return (
-    <article className="max-w-4xl space-y-6">
+    <article className="max-w-4xl space-y-10">
       <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/election-night", dateModified: loadPolls().builtAt })} />
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Election night", path: "/election-night" }])} />
       <header className="space-y-1">
-        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">Election night 2026: when polls close</h1>
-        <p className="text-sm text-muted-foreground">
+        <h1 className="page-title">Election night 2026: when polls close</h1>
+        <p className="page-lede">
           Election Day is {ELECTION_DAY_LABEL}. Times are Eastern. States that span time zones close in more than one wave, so
           the later time is shown too. Close times come from The Green Papers; the races to watch are those rated Lean or closer
           {updated ? ` (data updated ${updated})` : ""}.
         </p>
       </header>
 
-      <div className="space-y-4">
+      <div className="space-y-12">
         {groups.map((g) => (
           <section key={g.key} aria-labelledby={`h-${g.key.replace(":", "")}`}>
-            <h2 id={`h-${g.key.replace(":", "")}`} className="display text-lg font-bold tracking-tight">
+            <h2 id={`h-${g.key.replace(":", "")}`} className="section-title">
               {g.label}
               {g.overnight ? " (after midnight, early Wednesday)" : ""}
             </h2>
-            <p className="text-xs text-muted-foreground">
+            <p className="mt-1 text-[15px] text-muted-foreground">
               {g.states.length} {g.states.length === 1 ? "state" : "states"}
               {g.competitiveHouse ? `, ${g.competitiveHouse} competitive House ${g.competitiveHouse === 1 ? "seat" : "seats"}` : ""}
             </p>
-            <Card size="sm" className="mt-2">
+            <Card size="sm" className="mt-4">
               <CardContent>
-                <ul className="divide-y divide-border/60 text-sm">
+                <ul className="divide-y divide-border text-[15px]">
                   {g.states.map((s) => (
-                    <li key={s.abbr} className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-0.5 py-1.5">
+                    <li key={s.abbr} className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
                       <span>
-                        <Link href={`/state/${s.abbr}`} className="font-medium underline-offset-2 hover:underline">
+                        <Link href={`/state/${s.abbr}`} className="font-semibold underline-offset-4 hover:underline">
                           {s.name}
                         </Link>
                         {s.laterClose && <span className="text-muted-foreground"> · rest of the state closes {s.laterClose}</span>}
                       </span>
-                      <span className="text-xs text-muted-foreground">
+                      <span className="text-sm text-muted-foreground">
                         {[
                           ...s.races.map((r) => `${r.label}: ${r.rating}`),
                           s.competitiveHouse ? `${s.competitiveHouse} of ${s.houseSeats} House seats competitive` : "",
@@ -83,11 +83,11 @@ export default function ElectionNightPage() {
         ))}
       </div>
 
-      <section aria-labelledby="h-order" className="space-y-2">
-        <h2 id="h-order" className="display text-lg font-bold tracking-tight">
+      <section aria-labelledby="h-order" className="space-y-4">
+        <h2 id="h-order" className="section-title">
           Which states count early votes first?
         </h2>
-        <p className="text-sm text-muted-foreground">
+        <p className="max-w-[68ch] text-base leading-relaxed text-muted-foreground">
           Where early and mail ballots are reported first, the first numbers tend to lean Democratic and the lead narrows as
           Election Day votes arrive (a blue mirage). Where Election Day votes are reported first, the opposite can happen (a red
           mirage). Orders below are the ones documented for each state; states not listed have no confirmed 2026 order.{" "}
@@ -97,7 +97,7 @@ export default function ElectionNightPage() {
           .
         </p>
         <Card size="sm">
-          <CardContent className="space-y-2 text-sm">
+          <CardContent className="space-y-3 text-[15px]">
             <p>
               <span className="font-semibold">Early and mail first:</span> {links(order.earlyFirst)}
             </p>

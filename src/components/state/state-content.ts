@@ -21,7 +21,7 @@ export interface StateContentInput {
   races: RaceMeta[];
   /** `history.states[abbr]`. */
   history?: HistoryRow;
-  /** Presidential Then & Now row for the state. */
+  /** Presidential Flashback row for the state. */
   row?: HistoryRowModel;
 }
 

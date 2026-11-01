@@ -4,16 +4,19 @@ import { useMemo } from "react";
 import { indexRaces, useNational } from "@/hooks/use-results";
 import { useMounted } from "@/hooks/use-mounted";
 import { BalanceBar } from "@/components/board/balance-bar";
-import { Num } from "@/components/board/num";
 import { Card, CardContent } from "@/components/ui/card";
-import type { RaceMeta, StateMeta } from "@/data/schema";
+import type { Party, RaceMeta, StateMeta } from "@/data/schema";
 import { cn } from "@/lib/utils";
-import { buildBalance, EMPTY_LIVE, flippedTo, stateNameLookup, type LiveIndex } from "@/components/senate/balance";
+import { buildBalance, EMPTY_LIVE, flippedTo, partyInk, stateNameLookup, type LiveIndex } from "@/components/senate/balance";
+import { HeroCount } from "@/components/senate/chamber-balance";
 import { RaceTable } from "@/components/senate/race-table";
+import { SeatBar } from "@/components/senate/seat-bar";
 import { useCallAnnouncer } from "@/components/senate/use-call-announcer";
 import { GovernorTile } from "./governor-tile";
 
-export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: Pick<StateMeta, "abbr" | "name" | "tier">[] }) {
+const listFmt = new Intl.ListFormat("en-US", { style: "long", type: "conjunction" });
+
+export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: Pick<StateMeta, "abbr" | "name">[] }) {
   const mounted = useMounted();
   const { data } = useNational();
 
@@ -32,106 +35,99 @@ export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: P
     () =>
       metas
         .map((m) => ({ meta: m, to: flippedTo(m, live.get(m.id)) }))
-        .filter((f): f is { meta: RaceMeta; to: "D" | "R" | "I" | "L" | "G" | "O" } => !!f.to),
-    [metas, live],
+        .filter((f): f is { meta: RaceMeta; to: Party } => !!f.to)
+        .sort((a, b) => stateName(a.meta.state).localeCompare(stateName(b.meta.state))),
+    [metas, live, stateName],
   );
-  const flipsD = flips.filter((f) => f.to === "D");
-  const flipsR = flips.filter((f) => f.to === "R");
-  const calledTotal = bop.called.D + bop.called.R + bop.called.I;
+  const net = flips.filter((f) => f.to === "D").length - flips.filter((f) => f.to === "R").length;
+  const anyCalled = bop.called.D + bop.called.R + bop.called.I > 0;
+  const runoffs = metas.filter((m) => m.runoffRule === "majority").map((m) => stateName(m.state));
 
   const sorted = useMemo(() => [...metas].sort((a, b) => a.state.localeCompare(b.state)), [metas]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <div aria-live="polite" aria-atomic="true" className="sr-only">
         {announcement}
       </div>
 
-      <header className="flex flex-wrap items-baseline justify-between gap-2">
-        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">Governors</h1>
-        <p className="text-sm text-muted-foreground">{metas.length} governorships on the ballot · Georgia requires a majority or goes to a runoff</p>
+      <header className="page-header">
+        <h1 className="page-title">Governors</h1>
+        <p className="page-lede">
+          {metas.length} governorships are on the ballot, {held.D} held by Democrats and {held.R} by Republicans
+          {held.I ? ` and ${held.I} by independents` : ""}.
+          {runoffs.length ? ` ${listFmt.format(runoffs)} ${runoffs.length === 1 ? "goes" : "go"} to a runoff if no one wins a majority.` : ""}
+        </p>
       </header>
 
-      <Card>
-        <CardContent>
-          <div className="grid gap-4 sm:grid-cols-[1fr_auto_1fr] sm:items-end">
-            <Stat
-              party="D"
-              big={bop.called.D + bop.leaning.D}
-              bigLabel="Dem (won + leaning)"
-              sub={[
-                [held.D, "held going in"],
-                [bop.called.D, "won"],
-                [flipsD.length, "flipped in"],
-              ]}
-            />
-            <div className="text-center text-xs text-muted-foreground tnum">
-              <div className="display text-base font-semibold text-foreground tracking-wide">36 seats up</div>
-              <div>
-                {calledTotal} called · {bop.tossup} toss-up{bop.tossup === 1 ? "" : "s"}
-              </div>
-              <div>
-                Net so far:{" "}
-                <span className={cn("font-semibold", flipsD.length > flipsR.length && "text-party-d-ink", flipsR.length > flipsD.length && "text-party-r-ink")}>
-                  {flipsD.length === flipsR.length ? "even" : flipsD.length > flipsR.length ? `D +${flipsD.length - flipsR.length}` : `R +${flipsR.length - flipsD.length}`}
-                </span>
-              </div>
-            </div>
-            <Stat
-              party="R"
-              big={bop.called.R + bop.leaning.R}
-              bigLabel="GOP (won + leaning)"
-              sub={[
-                [held.R, "held going in"],
-                [bop.called.R, "won"],
-                [flipsR.length, "flipped in"],
-              ]}
-              right
-            />
-          </div>
-          <div className="mt-5">
-            <BalanceBar bop={bop} height={16} showMajorityTick={false} />
-          </div>
-          {flips.length > 0 && (
-            <p className="mt-3 text-xs text-muted-foreground">
-              Flips so far:{" "}
-              {flips.map((f, i) => (
-                <span key={f.meta.id}>
-                  {i > 0 && ", "}
-                  <span className={f.to === "D" ? "text-party-d-ink" : f.to === "R" ? "text-party-r-ink" : "text-party-i"}>
-                    {f.meta.state} {f.meta.heldBy}→{f.to}
-                  </span>
-                </span>
-              ))}
-            </p>
-          )}
-          <p className="mt-3 text-[11px] text-muted-foreground">
-            Of the {metas.length} seats up, {held.D} are held by Democrats and {held.R} by Republicans{held.I ? ` and ${held.I} by independents` : ""}. Totals
-            count projected wins plus uncalled seats by consensus rating; governorships not on the ballot are excluded.
-          </p>
-        </CardContent>
-      </Card>
-
-      <section aria-labelledby="gov-tiles">
-        <h2 id="gov-tiles" className="display mb-3 text-xl font-semibold">
-          The map, as tiles
+      <section aria-labelledby="gov-balance" className="space-y-4">
+        <h2 id="gov-balance" className="section-title">
+          Balance of power
         </h2>
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 2xl:grid-cols-9">
+        <Card>
+          <CardContent>
+            <div className="grid grid-cols-2 gap-x-6">
+              <HeroCount party="D" total={bop.called.D + bop.leaning.D} label="Democrats" />
+              <HeroCount party="R" total={bop.called.R + bop.leaning.R} label="Republicans" right />
+            </div>
+
+            <div className="mt-6">
+              {anyCalled ? (
+                <BalanceBar bop={bop} height={16} showMajorityTick={false} />
+              ) : (
+                <SeatBar d={bop.leaning.D} r={bop.leaning.R} total={bop.total} />
+              )}
+            </div>
+
+            <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-2 text-[15px] sm:grid-cols-2">
+              <Standing party="D" won={bop.called.D} leaning={bop.leaning.D} held={held.D} up={metas.length} anyCalled={anyCalled} />
+              <Standing party="R" won={bop.called.R} leaning={bop.leaning.R} held={held.R} up={metas.length} anyCalled={anyCalled} right />
+            </div>
+
+            {flips.length > 0 && (
+              <p className="mt-4 text-[15px]">
+                <b className={cn(partyInk(net > 0 ? "D" : net < 0 ? "R" : undefined))}>
+                  {net === 0 ? "Flips even so far" : `Net ${net > 0 ? "Democratic" : "Republican"} gain of ${Math.abs(net)}`}:
+                </b>{" "}
+                {flips.map((f, i) => (
+                  <span key={f.meta.id}>
+                    {i > 0 && ", "}
+                    <span className={partyInk(f.to)}>
+                      {stateName(f.meta.state)} to {f.to}
+                    </span>
+                  </span>
+                ))}
+              </p>
+            )}
+
+            <p className="mt-5 text-xs text-muted-foreground text-pretty">
+              Each total is {anyCalled ? "races won plus " : ""}uncalled races rated toward that side; {bop.tossup} toss-up
+              {bop.tossup === 1 ? " is" : "s are"} left out. Governorships not on the ballot this year are not counted.
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section aria-labelledby="gov-tiles" className="space-y-4">
+        <h2 id="gov-tiles" className="section-title">
+          State by state
+        </h2>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {sorted.map((m) => (
             <GovernorTile key={m.id} meta={m} race={live.get(m.id)} stateName={stateName(m.state)} />
           ))}
         </div>
       </section>
 
-      <section aria-labelledby="gov-races">
-        <h2 id="gov-races" className="display mb-3 text-xl font-semibold">
+      <section aria-labelledby="gov-races" className="space-y-4">
+        <h2 id="gov-races" className="section-title">
           All {metas.length} races
         </h2>
         <RaceTable office="governor" metas={metas} live={live} states={states} />
       </section>
 
-      {mounted && data?.notices?.length ? (
-        <ul className="space-y-1 text-xs text-stale">
+      {live.size > 0 && data?.notices?.length ? (
+        <ul className="space-y-1 text-xs text-muted-foreground">
           {data.notices.map((n, i) => (
             <li key={i}>{n}</li>
           ))}
@@ -141,33 +137,43 @@ export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: P
   );
 }
 
-function Stat({
+/** One sentence per side: where the ratings put it against the seats it holds now, or what it has won so far. */
+function Standing({
   party,
-  big,
-  bigLabel,
-  sub,
+  won,
+  leaning,
+  held,
+  up,
+  anyCalled,
   right,
 }: {
   party: "D" | "R";
-  big: number;
-  bigLabel: string;
-  sub: [number, string][];
+  won: number;
+  leaning: number;
+  held: number;
+  up: number;
+  anyCalled: boolean;
   right?: boolean;
 }) {
-  const color = party === "D" ? "text-party-d-ink" : "text-party-r-ink";
+  const who = party === "D" ? "Democrats" : "Republicans";
+  const ink = party === "D" ? "text-party-d-ink" : "text-party-r-ink";
   return (
-    <div className={cn(right && "sm:text-right")}>
-      <div className={cn("display tnum text-6xl font-bold leading-none", color)}>
-        <Num value={big} />
-      </div>
-      <div className="mt-1 text-[11px] text-muted-foreground">{bigLabel}</div>
-      <div className={cn("mt-2 flex flex-wrap gap-x-3 text-[11px] text-muted-foreground tnum", right && "sm:justify-end")}>
-        {sub.map(([n, l]) => (
-          <span key={l}>
-            <b className="text-foreground">{n}</b> {l}
-          </span>
-        ))}
-      </div>
-    </div>
+    <p className={cn("text-pretty tnum", right && "sm:text-right")}>
+      {anyCalled ? (
+        <>
+          <b className={ink}>
+            {who} have won {won}
+          </b>
+          {leaning ? ` and are favoured in ${leaning} more` : ""}. They held {held} going in.
+        </>
+      ) : (
+        <>
+          <b className={ink}>
+            Ratings favour {who} in {leaning}
+          </b>{" "}
+          of {up} races. They hold {held} of these seats now.
+        </>
+      )}
+    </p>
   );
 }

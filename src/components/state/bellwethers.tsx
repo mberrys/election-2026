@@ -2,16 +2,17 @@
 
 import { useMemo } from "react";
 import { rankBellwethers } from "@/analytics";
-import { Card } from "@/components/ui/card";
 import { fmtMarginDR } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { fmtOU, ouColor } from "./county-map-panel";
 import type { CountyRow } from "./derive";
 
+const leanInk = (v: number) => (v > 0.05 ? "text-party-d-ink" : v < -0.05 ? "text-party-r-ink" : "text-foreground");
+
 /**
- * Eight counties whose 2020/2024 lean tracked the statewide result most closely. Live "over/under" compares the
+ * Eight counties whose 2020/2024 lean tracked the statewide result most closely. Live "vs lean" compares the
  * county's current margin to (statewide margin now + its historical lean): positive means the county is running
- * ahead of where it "should" be for D given the statewide picture.
+ * ahead of where it "should" be for D given the statewide picture. Before votes, each shows only its lean.
  */
 export function Bellwethers({
   rows,
@@ -42,57 +43,53 @@ export function Bellwethers({
   );
 
   if (!ranked.length)
-    return <p className={cn("text-sm text-muted-foreground", className)}>No county baselines for this state yet. Bellwethers appear once 2020/2024 county results load.</p>;
+    return <p className={cn("text-[15px] text-muted-foreground", className)}>Bellwethers appear once 2020 and 2024 county results load for this state.</p>;
 
   return (
-    <ul className={cn("grid gap-2 sm:grid-cols-2 xl:grid-cols-4", className)}>
-      {ranked.map((b, i) => {
+    <ul className={cn("grid gap-2 sm:grid-cols-2", className)}>
+      {ranked.map((b) => {
         const r = byId.get(b.id);
+        const counted = r?.live && r.votesIn > 0;
         const expectedNow = stateMarginNow != null ? stateMarginNow + b.lean : undefined;
-        const ou = r?.margin != null && expectedNow != null ? r.margin - expectedNow : undefined;
-        const pctIn = r?.pctIn;
+        const ou = counted && r?.margin != null && expectedNow != null ? r.margin - expectedNow : undefined;
+        const isSel = selected === b.id;
         return (
           <li key={b.id}>
-            <Card
-              role="button"
-              tabIndex={0}
-              onClick={() => onSelect(selected === b.id ? null : b.id)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  e.preventDefault();
-                  onSelect(selected === b.id ? null : b.id);
-                }
-              }}
-              className={cn("cursor-pointer gap-1.5 p-3 transition-colors hover:border-foreground/20", selected === b.id && "border-foreground/40 bg-accent/40")}
+            <button
+              type="button"
+              aria-pressed={isSel}
+              onClick={() => onSelect(isSel ? null : b.id)}
+              className={cn(
+                "flex w-full flex-col gap-0.5 rounded-lg border border-border px-3.5 py-2.5 text-left transition-colors hover:bg-s3 focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50",
+                isSel && "border-foreground/40 bg-accent/40",
+              )}
             >
-              <div className="flex items-baseline justify-between gap-2">
-                <span className="truncate text-sm font-semibold">
-                  <span className="mr-1.5 text-[11px] text-muted-foreground tnum">#{i + 1}</span>
-                  {b.name ?? r?.name ?? b.id}
-                </span>
-                <span className="text-[11px] tnum text-muted-foreground">{pctIn != null ? `${Math.round(pctIn * 100)}% in` : "—"}</span>
-              </div>
-              <dl className="grid grid-cols-3 gap-1 text-[11px]">
-                <div>
-                  <dt className="text-muted-foreground" title="Historical lean relative to the statewide margin">
-                    Lean
-                  </dt>
-                  <dd className={cn("tnum font-medium", b.lean > 0.05 ? "text-party-d-ink" : b.lean < -0.05 ? "text-party-r-ink" : "")} title={`Mean of ${b.baselines} baseline${b.baselines === 1 ? "" : "s"}; |lean| ${b.absLean.toFixed(1)}`}>
-                    {fmtMarginDR(b.lean)}
-                  </dd>
-                </div>
-                <div>
-                  <dt className="text-muted-foreground">Now</dt>
-                  <dd className="tnum font-medium">{fmtMarginDR(r?.margin)}</dd>
-                </div>
-                <div>
-                  <dt className="text-muted-foreground">vs lean</dt>
-                  <dd className={cn("tnum font-medium", ouColor(ou))} title={expectedNow != null ? `Expected ${fmtMarginDR(expectedNow)} given statewide ${fmtMarginDR(stateMarginNow)}` : undefined}>
-                    {fmtOU(ou)}
-                  </dd>
-                </div>
-              </dl>
-            </Card>
+              <span className="flex items-baseline justify-between gap-2">
+                <span className="truncate text-[15px] font-semibold">{(b.name ?? r?.name ?? b.id).replace(/ County$/, "")}</span>
+                {counted && r?.pctIn != null && <span className="shrink-0 text-xs text-muted-foreground tnum">{Math.round(r.pctIn * 100)}% in</span>}
+              </span>
+              <span className="text-xs text-muted-foreground tnum" title={`Mean of ${b.baselines} baseline${b.baselines === 1 ? "" : "s"}`}>
+                Runs <span className={cn("font-medium", leanInk(b.lean))}>{fmtMarginDR(b.lean)}</span> vs the state
+                {counted && r?.margin != null && (
+                  <>
+                    {" · now "}
+                    <span className={cn("font-medium", leanInk(r.margin))}>{fmtMarginDR(r.margin)}</span>
+                  </>
+                )}
+                {ou != null && (
+                  <>
+                    {" · "}
+                    <span
+                      className={cn("font-medium", ouColor(ou))}
+                      title={expectedNow != null ? `Expected ${fmtMarginDR(expectedNow)} given statewide ${fmtMarginDR(stateMarginNow)}` : undefined}
+                    >
+                      {fmtOU(ou)}
+                    </span>{" "}
+                    vs lean
+                  </>
+                )}
+              </span>
+            </button>
           </li>
         );
       })}

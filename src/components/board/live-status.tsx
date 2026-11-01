@@ -32,6 +32,10 @@ function useFreshness() {
 /** Header pill: freshness dot + "Updated 12s ago". */
 export function LiveStatus() {
   const { data, isFetching, now, generatedAt, state } = useFreshness();
+  // Before the first polls close there is nothing live to signal: say when the night starts, with no dot.
+  if (now == null || now < WINDOW_START) {
+    return <div className="whitespace-nowrap text-sm font-medium text-muted-foreground max-sm:hidden">Election Day · Tue, Nov 3</div>;
+  }
   const label =
     state === "error" ? "Feed error" : state === "idle" ? "Awaiting first results" : `Updated ${now ? timeAgo(generatedAt, now) : "—"}`;
 
@@ -50,7 +54,7 @@ export function LiveStatus() {
       ) : (
         <FreshDot state="stale" />
       )}
-      <span className={cn(state === "error" && "text-alert-ink")}>{label}</span>
+      <span className={cn("max-sm:sr-only", state === "error" && "text-alert-ink")}>{label}</span>
       {isFetching && <span className="sr-only">Refreshing</span>}
     </div>
   );

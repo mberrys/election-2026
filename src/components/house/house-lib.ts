@@ -127,11 +127,14 @@ export function divergingFill(v: number | undefined, saturateAt: number): string
   return rampFor(v, saturateAt);
 }
 
-/** Consensus rating on the ramp (tilt 1 … solid 4); toss-ups hatched. */
+/** Neutral mid-grey for toss-ups in the ratings view: a forecast, not outstanding votes, so no hatch; mid-grey so the seats that matter most do not sink into the background. */
+export const TOSSUP_FILL = "var(--ink-faint)";
+
+/** Consensus rating on the ramp (tilt 1 … solid 4); toss-ups neutral. */
 export function ratingFill(r: RatingCode | undefined): string | null {
   if (!r) return null;
   const lean = RATING_LEAN[r];
-  if (lean === "tossup") return HATCH;
+  if (lean === "tossup") return TOSSUP_FILL;
   const step = RAMP_BY_STRENGTH[r.split("-")[0] as keyof typeof RAMP_BY_STRENGTH];
   return `var(--ramp-${lean === "D" ? "d" : "r"}-${step})`;
 }
@@ -252,9 +255,112 @@ export function shortDistrict(id: string): string {
   return id.replace(/^house:/, "");
 }
 
-/** Sort key for poll-close times: 18:00 → 18, 00:00 → 24, 01:00 → 25. */
+/** The last close of a split poll-close value ("19:00/20:00" → "20:00"), which is what `fmtEt` prints. */
+export function lastClose(hhmm: string): string {
+  return hhmm.split("/").pop() ?? hhmm;
+}
+
+/** Sort key for poll-close times (by the last close): 18:00 → 18, 00:00 → 24, 01:00 → 25. */
 export function pollCloseSortKey(hhmm: string): number {
-  const [h, m] = hhmm.split("/")[0].split(":").map(Number);
+  const [h, m] = lastClose(hhmm).split(":").map(Number);
   const hour = h < 12 ? h + 24 : h;
   return hour + (m || 0) / 60;
+}
+
+/** Any House race has counted votes or a projection: the live map modes, table columns and legend marks apply. */
+export function houseHasVotes(live: Map<string, LiveRace>): boolean {
+  for (const r of live.values()) if (r.office === "house" && (r.projection || (r.totalVotes ?? 0) > 0)) return true;
+  return false;
+}
+
+/** Map modes worth offering: before any vote only the ratings view has anything to show. */
+export function availableModes(hasVotes: boolean): MapMode[] {
+  return hasVotes ? MAP_MODES.map((m) => m.value) : ["ratings"];
+}
+
+export type LegendKey =
+  | { kind: "swatch"; swatch: "projected-d" | "projected-r" | "leading-d" | "leading-r" | "lean-d" | "lean-r" | "uncounted"; label: string }
+  | { kind: "fill"; fill: string; label: string }
+  | { kind: "flip"; label: string };
+
+const RATING_KEYS: { code: RatingCode; label: string }[] = [
+  { code: "solid-d", label: "Solid D" },
+  { code: "likely-d", label: "Likely D" },
+  { code: "lean-d", label: "Lean D" },
+  { code: "tilt-d", label: "Tilt D" },
+  { code: "tossup", label: "Toss-up" },
+  { code: "tilt-r", label: "Tilt R" },
+  { code: "lean-r", label: "Lean R" },
+  { code: "likely-r", label: "Likely R" },
+  { code: "solid-r", label: "Solid R" },
+];
+
+/** Margin/swing ramp steps present, D landslide → R landslide, with their bucket labels for a given saturation. */
+function rampKeys(values: number[], saturateAt: number, prefix: string): LegendKey[] {
+  const k = saturateAt / 30;
+  const edges = [2, 5, 10, 20].map((e) => +(e * k).toFixed(1));
+  const bucket = (step: number) =>
+    step === 1 ? `<${edges[0]}` : step === 5 ? `${edges[3]}+` : `${edges[step - 2]}–${edges[step - 1]}`;
+  const present = new Set<string>();
+  for (const v of values) if (Math.abs(v) >= 0.05) present.add(rampFor(v, saturateAt));
+  const out: LegendKey[] = [];
+  for (const side of ["d", "r"] as const) {
+    const steps = side === "d" ? [5, 4, 3, 2, 1] : [1, 2, 3, 4, 5];
+    for (const step of steps) {
+      const fill = `var(--ramp-${side}-${step})`;
+      if (present.has(fill)) out.push({ kind: "fill", fill, label: `${prefix}${side.toUpperCase()} ${bucket(step)}` });
+    }
+  }
+  return out;
+}
+
+/**
+ * Legend entries for the marks actually drawn in the current mode, D side first.
+ * A key that no district currently shows is left out.
+ */
+export function legendKeys(mode: MapMode, metas: RaceMeta[], live: Map<string, LiveRace>): LegendKey[] {
+  if (mode === "ratings") {
+    const present = new Set(metas.map((m) => m.ratings.consensus).filter(Boolean));
+    return RATING_KEYS.filter((k) => present.has(k.code)).map((k) => {
+      const fill = ratingFill(k.code)!;
+      return { kind: "fill", fill, label: k.label };
+    });
+  }
+  if (mode === "status") {
+    const seen = new Set<string>();
+    let flip = false;
+    for (const m of metas) {
+      const lr = live.get(m.id);
+      seen.add(statusFill(lr, m) ?? HATCH);
+      if (tileMark(mode, lr, m)?.flipFrom) flip = true;
+    }
+    const order: [string, LegendKey][] = [
+      ["var(--party-d)", { kind: "swatch", swatch: "projected-d", label: "D projected" }],
+      [TINT.D!, { kind: "swatch", swatch: "leading-d", label: "D leads" }],
+      ["hatch-d", { kind: "swatch", swatch: "lean-d", label: "Uncalled, rated D" }],
+      [HATCH, { kind: "swatch", swatch: "uncounted", label: "Uncalled toss-up" }],
+      ["hatch-r", { kind: "swatch", swatch: "lean-r", label: "Uncalled, rated R" }],
+      [TINT.R!, { kind: "swatch", swatch: "leading-r", label: "R leads" }],
+      ["var(--party-r)", { kind: "swatch", swatch: "projected-r", label: "R projected" }],
+    ];
+    const out = order.filter(([f]) => seen.has(f)).map(([, k]) => k);
+    if (flip) out.push({ kind: "flip", label: "Flipped (marker in old holder's colour)" });
+    return out;
+  }
+  const values: number[] = [];
+  let missing = false;
+  let even = false;
+  for (const m of metas) {
+    const v = mode === "margin" ? liveMarginDR(live.get(m.id)) : swingDR(live.get(m.id), m);
+    if (v == null || Number.isNaN(v)) missing = true;
+    else if (Math.abs(v) < 0.05) even = true;
+    else values.push(v);
+  }
+  const out = rampKeys(values, mode === "margin" ? MARGIN_SATURATE_AT : SWING_SATURATE_AT, mode === "swing" ? "→" : "");
+  if (even) {
+    const firstR = out.findIndex((k) => k.kind === "fill" && k.fill.includes("-r-"));
+    out.splice(firstR === -1 ? out.length : firstR, 0, { kind: "fill", fill: "var(--s4)", label: "Even" });
+  }
+  if (missing) out.push({ kind: "swatch", swatch: "uncounted", label: "No votes yet" });
+  return out;
 }
