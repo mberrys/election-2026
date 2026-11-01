@@ -7,6 +7,7 @@ import type { z } from "zod";
 import type { Baseline, History, Office, PollAverage as PollAverageSchema, RaceMeta, StateMeta } from "../schema";
 import countiesJson from "../../../public/data/reference/counties.json";
 import historyJson from "../../../public/data/reference/history.json";
+import metaJson from "../../../public/data/reference/meta.json";
 import pollsJson from "../../../public/data/reference/polls.json";
 import racesJson from "../../../public/data/reference/races.json";
 import sourcesJson from "../../../public/data/reference/sources.json";
@@ -90,6 +91,11 @@ export function loadPolls(): PollsRef {
 
 export function loadHistory(): z.infer<typeof History> {
   return history;
+}
+
+/** When the reference data was last rebuilt by any step; every build, partial or full, rewrites it. */
+export function loadBuiltAt(): string {
+  return metaJson.builtAt;
 }
 
 export function loadSources(): SourceRef[] {
