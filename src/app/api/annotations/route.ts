@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server";
 import { z } from "zod";
-import { jsonResponse } from "@/lib/http";
+import { jsonResponse, safeEqual } from "@/lib/http";
 import { readSlow, writeSlow } from "@/lib/snapshot-store";
 import { ANNOTATIONS, type Annotation } from "@/data/annotations";
 
@@ -8,12 +8,13 @@ export const maxDuration = 10;
 
 /**
  * Election-night annotations without a redeploy (ballot seizure, court-ordered pause, set-aside order, or a
- * general "advisory"). Any annotated state joins the Integrity Watch automatically.
+ * general "advisory"). Set `standing: "rejected"` once a court or
+ * official has thrown a challenge out: it stays visible but no longer holds back calls.
  *
  *   GET  /api/annotations                       → { static: [...], runtime: [...] }
  *   POST /api/annotations  (Bearer ADMIN_SECRET) → replace the runtime list with the JSON array body
  *
- * The next ingest (≤1 min) attaches them to races; `challengedBallots` immediately raises the bar for calls.
+ * The next ingest (≤1 min) attaches them to races; a pending `challengedBallots` immediately raises the bar for calls.
  */
 const AnnotationSchema = z.object({
   raceId: z.string().optional(),
@@ -22,7 +23,9 @@ const AnnotationSchema = z.object({
   kind: z.enum(["litigation", "set-aside", "count-paused", "advisory"]),
   summary: z.string().min(5).max(600),
   url: z.string().url().optional(),
+  sources: z.array(z.object({ name: z.string().min(1), url: z.string().url() })).max(8).optional(),
   challengedBallots: z.number().int().nonnegative().optional(),
+  standing: z.enum(["pending", "rejected"]).optional(),
   asOf: z.string(),
 });
 
@@ -33,7 +36,7 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   const secret = process.env.ADMIN_SECRET;
-  if (!secret || request.headers.get("authorization") !== `Bearer ${secret}`) {
+  if (!secret || !safeEqual(request.headers.get("authorization") ?? "", `Bearer ${secret}`)) {
     return jsonResponse(request, { error: "unauthorized" }, { status: 401, profile: "none" });
   }
   let body: unknown;

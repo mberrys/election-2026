@@ -4,8 +4,10 @@
  * `npx tsx scripts/build-reference.ts` and validated against src/data/schema.ts there.
  */
 import type { z } from "zod";
-import type { Baseline, Office, PollAverage as PollAverageSchema, RaceMeta, StateMeta } from "../schema";
+import type { Baseline, History, Office, PollAverage as PollAverageSchema, RaceMeta, StateMeta } from "../schema";
 import countiesJson from "../../../public/data/reference/counties.json";
+import historyJson from "../../../public/data/reference/history.json";
+import metaJson from "../../../public/data/reference/meta.json";
 import pollsJson from "../../../public/data/reference/polls.json";
 import racesJson from "../../../public/data/reference/races.json";
 import sourcesJson from "../../../public/data/reference/sources.json";
@@ -29,10 +31,20 @@ export interface GenericBallot {
   votehub?: PollAverage & { windowDays?: number; pollsters?: number };
 }
 
+export interface TrendPoint {
+  /** Week-ending date, YYYY-MM-DD. */
+  t: string;
+  d: number;
+  r: number;
+  n: number;
+}
+
 export interface PollsRef {
   builtAt: string;
   generic: GenericBallot;
   races: Record<string, PollAverage>;
+  /** Weekly rolling poll averages since January: "generic" plus race ids with enough polls. */
+  trend?: Record<string, TrendPoint[]>;
   votehub: { reachable: boolean; status: number; auth: string; endpoints: string[]; filters: string[]; note: string };
   riotimes: { reachable: boolean; status: number; updated?: string };
 }
@@ -53,6 +65,7 @@ const races = racesJson as unknown as RaceMeta[];
 const states = statesJson as unknown as StateRef[];
 const counties = countiesJson as unknown as Record<string, CountyBaseline>;
 const polls = pollsJson as unknown as PollsRef;
+const history = historyJson as unknown as z.infer<typeof History>;
 const sources = sourcesJson as unknown as SourceRef[];
 
 let raceById: Map<string, RaceMeta> | undefined;
@@ -74,6 +87,15 @@ export function loadCounties(): Record<string, CountyBaseline> {
 
 export function loadPolls(): PollsRef {
   return polls;
+}
+
+export function loadHistory(): z.infer<typeof History> {
+  return history;
+}
+
+/** When the reference data was last rebuilt by any step; every build, partial or full, rewrites it. */
+export function loadBuiltAt(): string {
+  return metaJson.builtAt;
 }
 
 export function loadSources(): SourceRef[] {

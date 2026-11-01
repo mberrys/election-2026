@@ -75,8 +75,6 @@ async function main() {
     );
   }
   console.log(`retractions: ${retractions}`);
-  const fin = await readNational();
-  console.log(`watch: ${(fin?.watch ?? []).map((w) => `${w.state}${w.reasons.length ? ` [${w.reasons.join(", ")}]` : ""}`).join("  ")}`);
   const final = await readNational();
   const ga = final?.races.find((r) => r.id === "senate:GA");
   if (ga) console.log(`GA Senate: ${ga.status} ${ga.candidates.map((c) => `${c.name} ${c.pct}%`).join(" / ")}`);

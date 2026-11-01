@@ -9,6 +9,8 @@ const NAV = [
   { href: "/house", label: "House" },
   { href: "/governors", label: "Governors" },
   { href: "/states", label: "States & Measures" },
+  { href: "/history", label: "Then & Now" },
+  { href: "/ballot", label: "My Ballot" },
   { href: "/methodology", label: "Method" },
 ] as const;
 

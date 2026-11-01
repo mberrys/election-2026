@@ -8,7 +8,7 @@ export const maxDuration = 120;
 
 /**
  * Ingest trigger. Called once a minute by an external pinger on Hobby (cron-job.org; see docs/PINGER.md) or by
- * Vercel Cron on Pro, with `Authorization: Bearer $CRON_SECRET` (or `?key=`).
+ * Vercel Cron on Pro, with `Authorization: Bearer $CRON_SECRET`.
  *
  * Each call runs INGEST_PULLS_PER_RUN pulls (default 2) on a fixed grid INGEST_PULL_GAP_MS apart (default 30 s),
  * measured from the start of the call, so a 1/min trigger gives updates at :00 and :30. The first pull's result

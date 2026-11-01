@@ -317,7 +317,7 @@ export function applyAnalytics(
       stableTicks: opts.stableTicks,
       // Vote-order states swing late (WI late mail, NC/GA election day): no model call before 85% in.
       minPctExpected: Math.max(isMirageState(stateMeta) ? (opts.mirageMinPct ?? 0.85) : 0.5, opts.minPctExpected ?? 0),
-      challengedBallots: (race.flags ?? []).reduce((s, f) => s + (f.challengedBallots ?? 0), 0),
+      challengedBallots: (race.flags ?? []).reduce((s, f) => s + (f.standing === "rejected" ? 0 : (f.challengedBallots ?? 0)), 0),
       priorProjection: race.projection,
       now: opts.now ?? race.updatedAt,
     });

@@ -270,8 +270,8 @@ export function makeEnhancedVotingAdapter(cfg: EnhancedVotingConfig): Adapter {
     cadenceSec: cfg.cadenceSec ?? 60,
     async fetch(ctx: AdapterCtx): Promise<Race[]> {
       const slug =
-        cfg.electionSlug ??
-        (cfg.slugEnv ? process.env[cfg.slugEnv] : undefined) ??
+        cfg.electionSlug ||
+        (cfg.slugEnv ? process.env[cfg.slugEnv] : undefined) ||
         (await discoverSlug(ctx, cfg.host, cfg.jurisdiction, cfg.electionDate));
       if (!slug) {
         throw new Error(

@@ -1,9 +1,9 @@
 /**
  * Big Board reference-data build.
  *
- *   npx tsx scripts/build-reference.ts [--only=states,races,polls,money,baselines] [--no-cache] [--full]
+ *   npx tsx scripts/build-reference.ts [--only=states,races,polls,money,baselines,history] [--no-cache] [--full]
  *
- * Writes public/data/reference/{states,races,polls,money,baselines,counties,sources,meta}.json.
+ * Writes public/data/reference/{states,races,polls,money,baselines,counties,history,sources,meta}.json.
  * Every step is isolated: a failure records a warning and the build continues.
  * HTTP responses are cached under scripts/.cache/http keyed by URL hash.
  */
@@ -13,14 +13,15 @@ import { RaceMeta, StateMeta } from "../src/data/schema";
 import { setNoCache } from "./lib/http";
 import { SOURCES, type SourceEntry } from "./lib/sources";
 import { buildBaselines, type BaselinesOut, type CountyRow } from "./lib/step-baselines";
+import { buildHistory } from "./lib/step-history";
 import { buildMoney, type MoneyOut } from "./lib/step-money";
 import { buildPolls, type PollsOut } from "./lib/step-polls";
 import { buildRaces, type RacesResult } from "./lib/step-races";
 import { buildStates, type StateMetaOut } from "./lib/step-states";
 import { OUT_DIR, ensureDir, getWarnings, info, warn, writeJson } from "./lib/util";
 
-type Step = "states" | "races" | "polls" | "money" | "baselines";
-const ALL_STEPS: Step[] = ["states", "races", "polls", "money", "baselines"];
+type Step = "states" | "races" | "polls" | "money" | "baselines" | "history";
+const ALL_STEPS: Step[] = ["states", "races", "polls", "money", "baselines", "history"];
 
 function parseArgs(argv: string[]) {
   const only = new Set<Step>();
@@ -36,7 +37,7 @@ function parseArgs(argv: string[]) {
         else warn(`unknown step "${s}" in --only`);
       }
     } else if (a === "--help" || a === "-h") {
-      process.stdout.write("usage: tsx scripts/build-reference.ts [--only=states,races,polls,money,baselines] [--no-cache] [--full]\n");
+      process.stdout.write("usage: tsx scripts/build-reference.ts [--only=states,races,polls,money,baselines,history] [--no-cache] [--full]\n");
       process.exit(0);
     }
   }
@@ -52,6 +53,16 @@ async function step<T>(name: string, fn: () => Promise<T>): Promise<T | undefine
     return r;
   } catch (e) {
     warn(`${name} FAILED: ${(e as Error).stack ?? String(e)}`);
+    return undefined;
+  }
+}
+
+function readJson<T>(name: string): T | undefined {
+  const f = path.join(OUT_DIR, name);
+  if (!fs.existsSync(f)) return undefined;
+  try {
+    return JSON.parse(fs.readFileSync(f, "utf8")) as T;
+  } catch {
     return undefined;
   }
 }
@@ -140,6 +151,13 @@ async function main() {
     }
   }
 
+  // ---- history ----
+  if (steps.includes("history")) {
+    const history = await step("history", () => buildHistory(races ?? []));
+    setSrc("medsl-president", history ? "ok" : "failed", history ? `${history.years.length} elections` : undefined);
+    if (history) writeJson(path.join(OUT_DIR, "history.json"), history);
+  }
+
   // ---- races.json (after enrichment) ----
   if (races) {
     const validated: RaceMeta[] = [];
@@ -155,19 +173,15 @@ async function main() {
 
   // ---- sources ----
   setSrc("research-vote-order", "ok");
+  // A partial run (--only) carries forward the status of sources it did not touch instead of reporting them skipped.
+  for (const s of readJson<SourceEntry[]>("sources.json") ?? []) {
+    if (s.status && s.status !== "skipped" && !sourceStatus.has(s.id)) sourceStatus.set(s.id, { status: s.status, statusNote: s.statusNote });
+  }
   const sources = SOURCES.map((s) => ({ ...s, ...(sourceStatus.get(s.id) ?? { status: "skipped" as const }) }));
   writeJson(path.join(OUT_DIR, "sources.json"), sources);
 
   // ---- meta (steps skipped via --only report the on-disk outputs) ----
-  const readJson = <T,>(name: string): T | undefined => {
-    const f = path.join(OUT_DIR, name);
-    if (!fs.existsSync(f)) return undefined;
-    try {
-      return JSON.parse(fs.readFileSync(f, "utf8")) as T;
-    } catch {
-      return undefined;
-    }
-  };
+  const prevMeta = readJson<{ coverage?: { rioTimes?: unknown; wikipediaRevisions?: unknown }; warnings?: string[] }>("meta.json");
   states ??= readJson<StateMetaOut[]>("states.json");
   polls ??= readJson<PollsOut>("polls.json");
   money ??= readJson<MoneyOut>("money.json");
@@ -208,14 +222,15 @@ async function main() {
       houseMissingMajorPartyCandidate: houseMissingCands,
       houseNoCandidates: houseNoCands,
       houseNoRating: houseNoRating,
-      rioTimes: racesResult?.rioTimes,
+      rioTimes: racesResult?.rioTimes ?? prevMeta?.coverage?.rioTimes,
       downballot: baselines?.downballot,
       medsl: baselines?.medsl,
       votehub: polls ? { reachable: polls.votehub.reachable, status: polls.votehub.status, racesWithPolls: Object.keys(polls.races).length } : undefined,
       pollCloseSource: states?.[0]?.pollCloseSource,
-      wikipediaRevisions: racesResult?.pages,
+      wikipediaRevisions: racesResult?.pages ?? prevMeta?.coverage?.wikipediaRevisions,
     },
-    warnings: getWarnings(),
+    // Warnings from steps this run skipped stay until a full build re-runs them.
+    warnings: [...new Set([...(steps.length < ALL_STEPS.length ? (prevMeta?.warnings ?? []) : []), ...getWarnings()])],
   };
   writeJson(path.join(OUT_DIR, "meta.json"), meta);
 

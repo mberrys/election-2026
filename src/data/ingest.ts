@@ -8,7 +8,7 @@ import { pollsClosed, zeroRace } from "./election-gate";
 import { ANNOTATIONS, annotationsFor, type Annotation } from "./annotations";
 import { readSlow } from "@/lib/snapshot-store";
 import { isSimulation, simNow } from "./adapters/simulator";
-import { resolveWatch, stalledMinutes, WATCH_MIN_PCT } from "./watch";
+import { stalledMinutes } from "./stall";
 
 export type IngestResult = {
   ok: boolean;
@@ -70,9 +70,6 @@ export async function runIngest({ reason, timeoutMs = 25_000 }: { reason: string
 
     // Static annotations + any posted at runtime via /api/annotations, + simulator-generated ones.
     const annotations: Annotation[] = [...ANNOTATIONS, ...((await readSlow<Annotation[]>("annotations")) ?? [])];
-    // Watch list as of this tick: base + annotated states + states that stalled earlier tonight.
-    const prevWatch = prev?.watch ?? [];
-    const watchNow = new Set(resolveWatch({ annotations, previous: prevWatch }).map((w) => w.state));
     const analyzed: Race[] = [];
     const now = new Date();
     const gated = new Set<string>();
@@ -93,10 +90,7 @@ export async function runIngest({ reason, timeoutMs = 25_000 }: { reason: string
       }
       try {
         analyzed.push(
-          applyAnalytics(race, meta, st, counties, {
-            prevLeaderId: history.get(race.id),
-            ...(watchNow.has(race.state) ? { minPctExpected: WATCH_MIN_PCT } : {}),
-          }),
+          applyAnalytics(race, meta, st, counties, { prevLeaderId: history.get(race.id) }),
         );
       } catch (e) {
         console.error(`[ingest] analytics failed for ${race.id}`, e);
@@ -111,9 +105,8 @@ export async function runIngest({ reason, timeoutMs = 25_000 }: { reason: string
       r.lastChangeAt = p && p.totalVotes === r.totalVotes ? (p.lastChangeAt ?? clock.toISOString()) : clock.toISOString();
     }
     // County-level stalls in EVERY state with county data (a seized or court-paused county hides inside a moving
-    // statewide total). A stall anywhere adds that state to the Integrity Watch.
+    // statewide total).
     const unitStalls: { text: string; severity: number }[] = [];
-    const stalledStates = new Set<string>();
     for (const st of new Set(analyzed.filter((r) => r.office !== "house" && r.units.length).map((r) => r.state))) {
       const prevState = await readState(st);
       const prevUnits = new Map(
@@ -132,8 +125,6 @@ export async function runIngest({ reason, timeoutMs = 25_000 }: { reason: string
           // Only counties big enough to matter: outstanding vote larger than the statewide margin.
           const outstanding = (u.expectedVote ?? 0) - u.totalVotes;
           const marginVotes = Math.abs((r.marginPts ?? 0) / 100) * r.totalVotes;
-          // A big frozen county is an integrity signal even in a lopsided race: it puts the state on the watch.
-          if (mins != null && outstanding >= 0.02 * (r.expectedVote ?? Infinity)) stalledStates.add(st);
           // A top-of-board alert only when the outstanding votes could change the result.
           if (mins != null && outstanding > marginVotes) {
             unitStalls.push({
@@ -145,12 +136,10 @@ export async function runIngest({ reason, timeoutMs = 25_000 }: { reason: string
       }
     }
     const stalled = analyzed
-      .filter((r) => r.office !== "house" || watchNow.has(r.state))
+      .filter((r) => r.office !== "house")
       .map((r) => ({ r, mins: stalledMinutes(r, clock.getTime()) }))
       .filter((x): x is { r: Race; mins: number } => x.mins != null);
 
-    for (const { r } of stalled) stalledStates.add(r.state);
-    const watch = resolveWatch({ annotations, stalledStates, previous: prevWatch });
 
     const seq = await nextSeq();
     const notices: string[] = [];
@@ -174,7 +163,6 @@ export async function runIngest({ reason, timeoutMs = 25_000 }: { reason: string
       },
       feeds,
       notices,
-      watch,
     };
 
     const parsed = SnapshotSchema.safeParse(snapshot);

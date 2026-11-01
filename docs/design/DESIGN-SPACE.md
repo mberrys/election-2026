@@ -41,7 +41,7 @@ Findings:
 - B2 scans well but dropped the thing that makes a flag meaningful: how far along the statewide race is.
 - B3 answers "what needs attention" instantly but hides the quiet states' race status, which is itself information (Michigan counting at 36%).
 
-**Verdict: B2 plus B3's ordering.** A ledger (rows, rules, aligned columns) with live race progress kept inline, sorted worst first (stalled count, then legal flag, then watch list), and severity shown by a 2 px left edge instead of a coloured box. Implemented in `src/components/board/integrity-watch.tsx`. Emoji glyphs were replaced with words.
+**Verdict: B2 plus B3's ordering.** A ledger (rows, rules, aligned columns) with live race progress kept inline, sorted worst first (stalled count, then legal flag, then watch list), and severity shown by a 2 px left edge instead of a coloured box. Implemented as `integrity-watch.tsx`, since removed: the panel singled out states in advance, and pauses and challenges now show only as context chips on the races they affect. Emoji glyphs were replaced with words.
 
 ## C. Race card (Key races, House hover, state House strip)
 

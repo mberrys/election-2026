@@ -1,8 +1,18 @@
+import type { Metadata } from "next";
 import { NationalBoard } from "@/components/board/national-board";
+import { nationalCopy } from "@/components/board/page-copy";
+import { JsonLd } from "@/components/seo/json-ld";
 import { loadPolls, loadRaces, loadStates } from "@/data/reference/load";
 import type { RaceMeta } from "@/data/schema";
+import { pageMetadata } from "@/lib/page-meta";
+import { webPageJsonLd } from "@/lib/seo";
+import { DEFAULT_TITLE } from "@/lib/site";
 
 export const ensureStatic = "navigation";
+
+const description = nationalCopy(loadRaces()).home;
+
+export const metadata: Metadata = pageMetadata({ description, path: "/" });
 
 /** The national board only needs identity, candidates, ratings and holder — drop polls/money/baselines/notes. */
 function slim(m: RaceMeta): RaceMeta {
@@ -27,5 +37,10 @@ export default function Page() {
     .map(slim);
   const states = loadStates();
   const polls = loadPolls();
-  return <NationalBoard metas={races} states={states} polls={{ ...polls, races: {} }} />;
+  return (
+    <>
+      <JsonLd data={webPageJsonLd({ name: DEFAULT_TITLE, description, path: "/", dateModified: polls.builtAt })} />
+      <NationalBoard metas={races} states={states} polls={{ ...polls, races: {} }} />
+    </>
+  );
 }

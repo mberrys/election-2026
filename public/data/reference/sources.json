@@ -83,6 +83,31 @@
   "statusNote": "datafile 13592823 HTTP 400: {\"status\":\"ERROR\",\"message\":\"You may not download this file without the required Guestbook response for guestbookID 458.\"}"
  },
  {
+  "id": "medsl-president",
+  "name": "MIT Election Data + Science Lab — U.S. President 1976–2024",
+  "url": "https://doi.org/10.7910/DVN/42MVDX",
+  "license": "CC0 1.0",
+  "attribution": "MIT Election Data and Science Lab, 2017, 'U.S. President 1976–2020' (extended to 2024), Harvard Dataverse, doi:10.7910/DVN/42MVDX.",
+  "cadence": "static",
+  "usedFor": [
+   "presidential margin by state and nationally, 1976–2024 (Then & Now history)"
+  ],
+  "status": "ok",
+  "statusNote": "13 elections"
+ },
+ {
+  "id": "google-civic",
+  "name": "Google Civic Information API v2",
+  "url": "https://developers.google.com/civic-information/docs/v2",
+  "license": "Google APIs Terms of Service; data comes from state election authorities",
+  "attribution": "Ballot information via the Google Civic Information API. Addresses are passed through and not stored.",
+  "cadence": "live, per lookup on /ballot",
+  "usedFor": [
+   "polling places, early-vote sites, drop-off locations and ballot contests for a voter's address"
+  ],
+  "status": "skipped"
+ },
+ {
   "id": "downballot-presbycd",
   "name": "The Downballot — 2024 presidential results by 2026 congressional district",
   "url": "https://the-db.co/presbycd",

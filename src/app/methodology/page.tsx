@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/page-meta";
 
-export const metadata: Metadata = { title: "Methodology" };
+export const metadata: Metadata = pageMetadata({
+  title: "Methodology: How the Big Board Projects Elections",
+  description: "How the Big Board turns polls, ratings, vote counts and election history into projections for the 2026 midterms, what it adjusts, and what it does not.",
+  path: "/methodology",
+});
 
 export default function MethodologyPage() {
   return (
@@ -50,6 +55,23 @@ export default function MethodologyPage() {
         the pre-election consensus for the race. A county running ahead of benchmark is good news for that candidate even
         if they trail in raw votes there. For the statewide picture we compute the share of the remaining expected vote the
         trailing candidate needs to pull even; anything over 100% is marked <em>impossible</em>.
+      </p>
+
+      <h2>Then &amp; Now: polls against history</h2>
+      <p>
+        The <a href="/history">Then &amp; Now</a> page sets current polling against past elections. History is the
+        presidential result by state since 1976 (MIT Election Data + Science Lab), plus Senate and governor margins since
+        1990 and House margins for 2022 and 2024 (Wikipedia). A place&apos;s <em>projected margin</em> is its race poll
+        average where one exists. Where none does, it is the 2024 presidential margin moved by the national swing since
+        2024 (the generic ballot against the 2024 popular vote), applied on a logit scale so lopsided places stay bounded.
+        <em> Last this way</em> is the most recent election whose margin was at least as far toward the projected side;
+        &ldquo;none&rdquo; means no election in the data was.
+      </p>
+      <p>
+        Polls are shown as published. We have not adjusted for past poll error: no published figure for this year&apos;s
+        miss exists yet, and the direction has flipped from cycle to cycle. A Senate or governor poll is compared against
+        presidential history, so candidate strength shows up as extra &ldquo;change&rdquo;. House history is only
+        comparable within a map era, so districts redrawn for 2024 or 2026 carry a caveat.
       </p>
 
       <h2>4. The projection band</h2>

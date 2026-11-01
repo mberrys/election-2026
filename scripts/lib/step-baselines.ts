@@ -73,12 +73,15 @@ function aggregateTonmcg(csv: string): { byState: Map<string, StateAgg>; byCount
   return { byState, byCounty };
 }
 
-async function priorFromRaceSummary(page: string, sectionRe: RegExp, year: number, label: string) {
+export async function priorFromRaceSummary(page: string, sectionRe: RegExp, year: number, label: string, opts: { requireSection?: boolean } = {}) {
   const out: Record<string, { margin: number; year: number }> = {};
   const p = await fetchWikitext(page);
   if (!p) return out;
   const text = stripComments(p.wikitext);
-  const sec = getSection(text, sectionRe) ?? text;
+  const found = getSection(text, sectionRe);
+  // With `requireSection`, a page without that section yields nothing instead of falling back to the first table anywhere.
+  if (!found && opts.requireSection) return out;
+  const sec = found ?? text;
   for (const t of parseTables(sec)) {
     for (const row of t.dataRows) {
       const st = stateAtStart(cellText(row.cells[0]));
@@ -93,9 +96,11 @@ async function priorFromRaceSummary(page: string, sectionRe: RegExp, year: numbe
   return out;
 }
 
-async function house2024FromWikipedia(): Promise<Record<string, { margin: number; year: number }>> {
+const house2024FromWikipedia = () => houseFromWikipedia(2024);
+
+export async function houseFromWikipedia(year: number): Promise<Record<string, { margin: number; year: number }>> {
   const out: Record<string, { margin: number; year: number }> = {};
-  const p = await fetchWikitext("2024 United States House of Representatives elections");
+  const p = await fetchWikitext(`${year} United States House of Representatives elections`);
   if (!p) return out;
   for (const sec of level2Sections(stripComments(p.wikitext))) {
     const st = stateByName(sec.title);
@@ -107,11 +112,11 @@ async function house2024FromWikipedia(): Promise<Record<string, { margin: number
         const key = `${k.state}-${k.district}`;
         if (key in out) continue;
         const m = marginFromCandidates(extractCandidates(row.raw));
-        if (m !== undefined) out[key] = { margin: m, year: 2024 };
+        if (m !== undefined) out[key] = { margin: m, year };
       }
     }
   }
-  info(`House 2024 (Wikipedia): ${Object.keys(out).length} district margins`);
+  info(`House ${year} (Wikipedia): ${Object.keys(out).length} district margins`);
   return out;
 }
 

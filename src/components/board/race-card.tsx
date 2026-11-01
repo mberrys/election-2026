@@ -45,8 +45,8 @@ function holdLine(f: Flag): string {
     ? new Date(f.asOf).toLocaleTimeString("en-US", { timeZone: "America/New_York", hour: "numeric", minute: "2-digit" }).toLowerCase()
     : null;
   if (f.kind === "count-paused") return t ? `Count paused at ${t}` : "Count paused";
-  if (f.kind === "set-aside") return f.challengedBallots ? `About ${f.challengedBallots.toLocaleString()} ballots set aside` : "Ballots set aside";
-  return "In litigation, call on hold";
+  if (f.kind === "set-aside") return f.challengedBallots ? `Demand to set aside ~${f.challengedBallots.toLocaleString()} ballots` : "Set-aside demand";
+  return "In litigation";
 }
 
 /**
