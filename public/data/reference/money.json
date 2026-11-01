@@ -1,16 +1,17 @@
 {
- "builtAt": "2026-10-31T05:09:08.336Z",
- "apiKeyMode": "DEMO_KEY",
+ "builtAt": "2026-11-01T01:55:35.789Z",
+ "apiKeyMode": "env",
  "offices": [
-  "S"
+  "S",
+  "H"
  ],
  "endpoint": "/candidates/totals/?election_year=2026&cycle=2026&office=S|H (bulk receipts + cash on hand; one call per 100 candidates)",
- "fecCandidates": 693,
+ "fecCandidates": 4547,
  "matched": {
-  "candidates": 109,
-  "races": 35,
-  "ofCandidates": 123,
-  "ofRaces": 35
+  "candidates": 1150,
+  "races": 470,
+  "ofCandidates": 1282,
+  "ofRaces": 470
  },
  "races": {
   "senate:FL-special": {
@@ -119,13 +120,11 @@
    "receipts": {
     "risch-jim": 5009089,
     "achilles-todd": 1921132,
-    "fleming-natalie": 0,
     "loesby-matt": 0
    },
    "cashOnHand": {
     "risch-jim": 2122235,
     "achilles-todd": 195819,
-    "fleming-natalie": 0,
     "loesby-matt": 0
    },
    "asOf": "2026-10-22"
@@ -159,10 +158,12 @@
   "senate:KS": {
    "receipts": {
     "marshall-roger": 7546611,
+    "graham-david": 0,
     "hamilton-adam": 19175044
    },
    "cashOnHand": {
     "marshall-roger": 809806,
+    "graham-david": 0,
     "hamilton-adam": 2874364
    },
    "asOf": "2026-10-22"
@@ -309,11 +310,13 @@
    "receipts": {
     "booker-cory": 35910076,
     "fernandez-veronica": 0,
+    "kuniansky-joanne": 0,
     "murphy-justin": 68189
    },
    "cashOnHand": {
     "booker-cory": 22899411,
     "fernandez-veronica": 0,
+    "kuniansky-joanne": 0,
     "murphy-justin": 10191
    },
    "asOf": "2026-10-22"
@@ -360,11 +363,13 @@
   "senate:OR": {
    "receipts": {
     "merkley-jeff": 8729810,
+    "dye-gary": 0,
     "henry-chris": 0,
     "smith-david": 311174
    },
    "cashOnHand": {
     "merkley-jeff": 6621250,
+    "dye-gary": 0,
     "henry-chris": 0,
     "smith-david": 44198
    },
@@ -475,6 +480,5129 @@
     "hageman-harriet": 439422
    },
    "asOf": "2026-10-22"
+  },
+  "house:AL-01": {
+   "receipts": {
+    "carl-jerry": 1452254,
+    "jones-clyde": 198018
+   },
+   "cashOnHand": {
+    "carl-jerry": 168086,
+    "jones-clyde": 6026
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AL-02": {
+   "receipts": {
+    "figures-shomari": 2706098,
+    "marques-rhett": 1716374
+   },
+   "cashOnHand": {
+    "figures-shomari": 1197689,
+    "marques-rhett": 178057
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AL-03": {
+   "receipts": {
+    "rogers-mike": 2521576,
+    "mcinnis-lee": 62982
+   },
+   "cashOnHand": {
+    "rogers-mike": 2707644,
+    "mcinnis-lee": 41130
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AL-04": {
+   "receipts": {
+    "aderholt-robert": 1238586,
+    "pusczek-amanda": 22283
+   },
+   "cashOnHand": {
+    "aderholt-robert": 719712,
+    "pusczek-amanda": 2371
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AL-05": {
+   "receipts": {
+    "strong-dale": 1775618,
+    "sneed-andrew": 917290
+   },
+   "cashOnHand": {
+    "strong-dale": 1054172,
+    "sneed-andrew": 247807
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AL-06": {
+   "receipts": {
+    "palmer-gary": 1154753,
+    "mercer-maurice": 34751
+   },
+   "cashOnHand": {
+    "palmer-gary": 74382,
+    "mercer-maurice": 14187
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AL-07": {
+   "receipts": {
+    "sewell-terri": 2260894,
+    "akin-ammie": 270462
+   },
+   "cashOnHand": {
+    "sewell-terri": 3351034,
+    "akin-ammie": 33973
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AK-AL": {
+   "receipts": {
+    "begich-nick": 6438904,
+    "hill-bill": 2630793,
+    "mcdermott-jim": 0
+   },
+   "cashOnHand": {
+    "begich-nick": 1782867,
+    "hill-bill": 117732,
+    "mcdermott-jim": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AZ-01": {
+   "receipts": {
+    "alponte-monica": 9453,
+    "feely-jay": 3799654,
+    "shah-amish": 5654454
+   },
+   "cashOnHand": {
+    "alponte-monica": 754,
+    "feely-jay": 182764,
+    "shah-amish": 206045
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AZ-02": {
+   "receipts": {
+    "crane-eli": 11904946,
+    "nez-jonathan": 5805341
+   },
+   "cashOnHand": {
+    "crane-eli": 1349063,
+    "nez-jonathan": 506072
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AZ-03": {
+   "receipts": {
+    "ansari-yassamin": 1697729,
+    "aversa-alan": 774
+   },
+   "cashOnHand": {
+    "ansari-yassamin": 410624,
+    "aversa-alan": 256
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AZ-04": {
+   "receipts": {
+    "stanton-greg": 2674367,
+    "jasser-zuhdi": 744304
+   },
+   "cashOnHand": {
+    "stanton-greg": 1918707,
+    "jasser-zuhdi": 89556
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AZ-05": {
+   "receipts": {
+    "lamb-mark": 1771671,
+    "lee-elizabeth": 375628
+   },
+   "cashOnHand": {
+    "lamb-mark": 180751,
+    "lee-elizabeth": 124136
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AZ-06": {
+   "receipts": {
+    "ciscomani-juan": 7649794,
+    "mendoza-joanna": 11242473,
+    "peters-jereme": 10500
+   },
+   "cashOnHand": {
+    "ciscomani-juan": 618699,
+    "mendoza-joanna": 807899,
+    "peters-jereme": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AZ-07": {
+   "receipts": {
+    "grijalva-adelita": 2559577,
+    "butierez-daniel": 233882
+   },
+   "cashOnHand": {
+    "grijalva-adelita": 437547,
+    "butierez-daniel": 11287
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AZ-08": {
+   "receipts": {
+    "hamadeh-abraham": 1434538,
+    "placentia-bernadette": 372826
+   },
+   "cashOnHand": {
+    "hamadeh-abraham": 186541,
+    "placentia-bernadette": 152740
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AZ-09": {
+   "receipts": {
+    "gosar-paul": 813542,
+    "sterbinsky-dani": 461875
+   },
+   "cashOnHand": {
+    "gosar-paul": 250385,
+    "sterbinsky-dani": 33626
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AR-01": {
+   "receipts": {
+    "crawford-rick": 1135655,
+    "green-terri": 124314
+   },
+   "cashOnHand": {
+    "crawford-rick": 853001,
+    "green-terri": 8996
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AR-02": {
+   "receipts": {
+    "hill-french": 5264024,
+    "jones-chris": 1959018
+   },
+   "cashOnHand": {
+    "hill-french": 1488431,
+    "jones-chris": 274179
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AR-03": {
+   "receipts": {
+    "womack-steve": 2363074,
+    "ryerse-robb": 160834,
+    "wilson-bobby": 0
+   },
+   "cashOnHand": {
+    "womack-steve": 2410732,
+    "ryerse-robb": 14700,
+    "wilson-bobby": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:AR-04": {
+   "receipts": {
+    "westerman-bruce": 2975233,
+    "russell-james": 21554
+   },
+   "cashOnHand": {
+    "westerman-bruce": 4501823,
+    "russell-james": 4546
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-01": {
+   "receipts": {
+    "gallagher-james": 1995260,
+    "mcguire-mike": 2266830
+   },
+   "cashOnHand": {
+    "gallagher-james": 327729,
+    "mcguire-mike": 153647
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-02": {
+   "receipts": {
+    "huffman-jared": 1205634
+   },
+   "cashOnHand": {
+    "huffman-jared": 1151201
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-03": {
+   "receipts": {
+    "bera-ami": 1492834,
+    "tucker-robb": 304654
+   },
+   "cashOnHand": {
+    "bera-ami": 1651289,
+    "tucker-robb": 16451
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-04": {
+   "receipts": {
+    "thompson-mike": 5482944,
+    "jones-eric": 18058057
+   },
+   "cashOnHand": {
+    "thompson-mike": 1401440,
+    "jones-eric": 1541079
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-05": {
+   "receipts": {
+    "mcclintock-tom": 1254442,
+    "masuda-michael": 581621
+   },
+   "cashOnHand": {
+    "mcclintock-tom": 314100,
+    "masuda-michael": 59666
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-06": {
+   "receipts": {
+    "kiley-kevin": 3723215,
+    "pan-richard": 2548242
+   },
+   "cashOnHand": {
+    "kiley-kevin": 34648,
+    "pan-richard": 207936
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-07": {
+   "receipts": {
+    "matsui-doris": 7837819,
+    "vang-mai": 1828418
+   },
+   "cashOnHand": {
+    "matsui-doris": 1995780,
+    "vang-mai": 388763
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-08": {
+   "receipts": {
+    "garamendi-john": 582746,
+    "recile-rudy": 20073
+   },
+   "cashOnHand": {
+    "garamendi-john": 1231643,
+    "recile-rudy": 235
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-09": {
+   "receipts": {
+    "harder-josh": 4490401,
+    "mcbride-john": 77473
+   },
+   "cashOnHand": {
+    "harder-josh": 4782692,
+    "mcbride-john": 4547
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-10": {
+   "receipts": {
+    "desaulnier-mark": 721776,
+    "frese-jeff": 0
+   },
+   "cashOnHand": {
+    "desaulnier-mark": 467220,
+    "frese-jeff": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-11": {
+   "receipts": {
+    "chan-connie": 2404664,
+    "wiener-scott": 5808855
+   },
+   "cashOnHand": {
+    "chan-connie": 581805,
+    "wiener-scott": 611039
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-12": {
+   "receipts": {
+    "simon-lateefah": 1703906,
+    "joyce-jamie": 69669
+   },
+   "cashOnHand": {
+    "simon-lateefah": 725757,
+    "joyce-jamie": 5258
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-13": {
+   "receipts": {
+    "gray-adam": 5241028,
+    "lincoln-kevin": 2971922
+   },
+   "cashOnHand": {
+    "gray-adam": 848633,
+    "lincoln-kevin": 448388
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-14": {
+   "receipts": {
+    "wahab-aisha": 1214547,
+    "hernandez-melissa": 2112674
+   },
+   "cashOnHand": {
+    "wahab-aisha": 462322,
+    "hernandez-melissa": 108358
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-15": {
+   "receipts": {
+    "mullin-kevin": 981645,
+    "hoelter-charles": 0
+   },
+   "cashOnHand": {
+    "mullin-kevin": 191601,
+    "hoelter-charles": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-16": {
+   "receipts": {
+    "liccardo-sam": 3873150,
+    "soule-peter": 4272
+   },
+   "cashOnHand": {
+    "liccardo-sam": 2259659,
+    "soule-peter": 4125
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-17": {
+   "receipts": {
+    "khanna-ro": 15320813,
+    "tandon-ritesh": 57011
+   },
+   "cashOnHand": {
+    "khanna-ro": 16578402,
+    "tandon-ritesh": 5227
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-18": {
+   "receipts": {
+    "lofgren-zoe": 1983394,
+    "lewis-shane": 115469
+   },
+   "cashOnHand": {
+    "lofgren-zoe": 602361,
+    "lewis-shane": 4417
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-19": {
+   "receipts": {
+    "panetta-jimmy": 3622737,
+    "verbica-peter": 85541
+   },
+   "cashOnHand": {
+    "panetta-jimmy": 5467202,
+    "verbica-peter": 6821
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-20": {
+   "receipts": {
+    "fong-vince": 2407334,
+    "scotter-sandra": 47739
+   },
+   "cashOnHand": {
+    "fong-vince": 667339,
+    "scotter-sandra": -1680
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-21": {
+   "receipts": {
+    "costa-jim": 1685249,
+    "kirkland-kyle": 464700
+   },
+   "cashOnHand": {
+    "costa-jim": 500767,
+    "kirkland-kyle": 13101
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-22": {
+   "receipts": {
+    "valadao-david": 6325324,
+    "villegas-randy": 5942030
+   },
+   "cashOnHand": {
+    "valadao-david": 1711651,
+    "villegas-randy": 962352
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-23": {
+   "receipts": {
+    "obernolte-jay": 1854658,
+    "hodge-tessa": 126772
+   },
+   "cashOnHand": {
+    "obernolte-jay": 1378568,
+    "hodge-tessa": 12434
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-24": {
+   "receipts": {
+    "carbajal-salud": 1917271,
+    "smith-bob": 346742
+   },
+   "cashOnHand": {
+    "carbajal-salud": 3343463,
+    "smith-bob": 57208
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-25": {
+   "receipts": {
+    "ruiz-raul": 2455631,
+    "males-joe": 1114056
+   },
+   "cashOnHand": {
+    "ruiz-raul": 2466905,
+    "males-joe": 57995
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-26": {
+   "receipts": {
+    "gallucci-sam": 537530,
+    "irwin-jacqui": 1170990
+   },
+   "cashOnHand": {
+    "gallucci-sam": 18881,
+    "irwin-jacqui": 457811
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-27": {
+   "receipts": {
+    "whitesides-george": 4512697,
+    "gibbs-jason": 413838
+   },
+   "cashOnHand": {
+    "whitesides-george": 2173658,
+    "gibbs-jason": 60499
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-28": {
+   "receipts": {
+    "chu-judy": 1375778,
+    "verlato-april": 700
+   },
+   "cashOnHand": {
+    "chu-judy": 3680653,
+    "verlato-april": 655
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-29": {
+   "receipts": {
+    "rivas-luz": 1032475,
+    "duenas-angelica": 97450
+   },
+   "cashOnHand": {
+    "rivas-luz": 296150,
+    "duenas-angelica": 16145
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-30": {
+   "receipts": {
+    "friedman-laura": 994571,
+    "meyers-scott": 122819
+   },
+   "cashOnHand": {
+    "friedman-laura": 520548,
+    "meyers-scott": 5242
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-31": {
+   "receipts": {
+    "cisneros-gil": 853124,
+    "ching-eric": 97170
+   },
+   "cashOnHand": {
+    "cisneros-gil": 212818,
+    "ching-eric": 10375
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-32": {
+   "receipts": {
+    "sherman-brad": 2899860,
+    "thompson-larry": 66331
+   },
+   "cashOnHand": {
+    "sherman-brad": 2673243,
+    "thompson-larry": 7146
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-33": {
+   "receipts": {
+    "aguilar-pete": 5676011,
+    "vargas-stephanie": 721
+   },
+   "cashOnHand": {
+    "aguilar-pete": 2673714,
+    "vargas-stephanie": 521
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-34": {
+   "receipts": {
+    "gomez-jimmy": 1336235,
+    "torres-angela": 509752
+   },
+   "cashOnHand": {
+    "gomez-jimmy": 628395,
+    "torres-angela": 104818
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-35": {
+   "receipts": {
+    "torres-norma": 922924,
+    "cargile-mike": 9799
+   },
+   "cashOnHand": {
+    "torres-norma": 244897,
+    "cargile-mike": 448
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-36": {
+   "receipts": {
+    "lieu-ted": 2218448,
+    "brignano-houston": 7020
+   },
+   "cashOnHand": {
+    "lieu-ted": 1181424,
+    "brignano-houston": 1219
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-37": {
+   "receipts": {
+    "dove-sydney": 1644249,
+    "mota-samantha": 12579
+   },
+   "cashOnHand": {
+    "dove-sydney": 184760,
+    "mota-samantha": 328
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-38": {
+   "receipts": {
+    "casas-pedro": 0,
+    "solis-hilda": 1482148
+   },
+   "cashOnHand": {
+    "casas-pedro": 0,
+    "solis-hilda": 284507
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-39": {
+   "receipts": {
+    "takano-mark": 1133984,
+    "manos-steve": 11929
+   },
+   "cashOnHand": {
+    "takano-mark": 231215,
+    "manos-steve": 3988
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-40": {
+   "receipts": {
+    "kim-young": 10148196,
+    "calvert-ken": 7050383
+   },
+   "cashOnHand": {
+    "kim-young": 910973,
+    "calvert-ken": 980391
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-41": {
+   "receipts": {
+    "sanchez-linda": 1898188,
+    "clemmons-mitch": 6154
+   },
+   "cashOnHand": {
+    "sanchez-linda": 420799,
+    "clemmons-mitch": 3073
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-42": {
+   "receipts": {
+    "garcia-robert": 3394175,
+    "burley-brian": 251137
+   },
+   "cashOnHand": {
+    "garcia-robert": 1572980,
+    "burley-brian": 1939
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-43": {
+   "receipts": {
+    "waters-maxine": 1107267,
+    "morales-cristian": 14995
+   },
+   "cashOnHand": {
+    "waters-maxine": 104671,
+    "morales-cristian": 539
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-44": {
+   "receipts": {
+    "barragan-nanette": 1021921,
+    "angel-genevieve": 21826
+   },
+   "cashOnHand": {
+    "barragan-nanette": 1083798,
+    "angel-genevieve": 10944
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-45": {
+   "receipts": {
+    "tran-derek": 5988192,
+    "vo-chuong": 937469
+   },
+   "cashOnHand": {
+    "tran-derek": 2682392,
+    "vo-chuong": 175456
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-46": {
+   "receipts": {
+    "correa-lou": 1493329,
+    "pan-david": 104145
+   },
+   "cashOnHand": {
+    "correa-lou": 2323395,
+    "pan-david": 1856
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-47": {
+   "receipts": {
+    "min-dave": 3872175,
+    "roux-jenny": 592041
+   },
+   "cashOnHand": {
+    "min-dave": 1482646,
+    "roux-jenny": 135774
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-48": {
+   "receipts": {
+    "desmond-jim": 3177972,
+    "wilpert-marni": 4966576
+   },
+   "cashOnHand": {
+    "desmond-jim": 717518,
+    "wilpert-marni": 659136
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-49": {
+   "receipts": {
+    "levin-mike": 3564690,
+    "kurdian-armen": 189196
+   },
+   "cashOnHand": {
+    "levin-mike": 1360778,
+    "kurdian-armen": 30427
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-50": {
+   "receipts": {
+    "peters-scott": 2191968,
+    "cohen-steve": 4092
+   },
+   "cashOnHand": {
+    "peters-scott": 2567656,
+    "cohen-steve": 2032
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-51": {
+   "receipts": {
+    "jacobs-sara": 1864955
+   },
+   "cashOnHand": {
+    "jacobs-sara": 317430
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CA-52": {
+   "receipts": {
+    "vargas-juan": 836097,
+    "belle-jeff": 26538
+   },
+   "cashOnHand": {
+    "vargas-juan": 317662,
+    "belle-jeff": 82
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CO-01": {
+   "receipts": {
+    "blau-shimon": 204361,
+    "kiros-melat": 1308528,
+    "peterson-christy": 9446
+   },
+   "cashOnHand": {
+    "blau-shimon": 59760,
+    "kiros-melat": 75724,
+    "peterson-christy": 7393
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CO-02": {
+   "receipts": {
+    "neguse-joe": 3342640,
+    "dennison-kelley": 12348
+   },
+   "cashOnHand": {
+    "neguse-joe": 3239138,
+    "dennison-kelley": 1087
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CO-03": {
+   "receipts": {
+    "hurd-jeff": 4168636,
+    "romero-dwayne": 1701091
+   },
+   "cashOnHand": {
+    "hurd-jeff": 237768,
+    "romero-dwayne": 196124
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CO-04": {
+   "receipts": {
+    "boebert-lauren": 1226253,
+    "laubacher-eileen": 13700426,
+    "mangeris-douglas": 0
+   },
+   "cashOnHand": {
+    "boebert-lauren": 274162,
+    "laubacher-eileen": 1846288,
+    "mangeris-douglas": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CO-05": {
+   "receipts": {
+    "crank-jeff": 2872434,
+    "elworth-mark": 0,
+    "killin-jessica": 5593463,
+    "mitchell-christopher": 210
+   },
+   "cashOnHand": {
+    "crank-jeff": 542836,
+    "elworth-mark": 0,
+    "killin-jessica": 507728,
+    "mitchell-christopher": 201
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CO-06": {
+   "receipts": {
+    "crow-jason": 4008282,
+    "clark-jason": 0,
+    "mcmahon-patty": 6027,
+    "witta-samir": 103438
+   },
+   "cashOnHand": {
+    "crow-jason": 2940183,
+    "clark-jason": 0,
+    "mcmahon-patty": 566,
+    "witta-samir": -47149
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CO-07": {
+   "receipts": {
+    "pettersen-brittany": 2260249,
+    "bennett-tim": 109339,
+    "krzeczkowski-joe": 3531
+   },
+   "cashOnHand": {
+    "pettersen-brittany": 1196445,
+    "bennett-tim": 4615,
+    "krzeczkowski-joe": 916
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CO-08": {
+   "receipts": {
+    "evans-gabe": 7248106,
+    "rutinel-manny": 9459070
+   },
+   "cashOnHand": {
+    "evans-gabe": 1328189,
+    "rutinel-manny": 1002642
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CT-01": {
+   "receipts": {
+    "bronin-luke": 3865511,
+    "chai-amy": 21972,
+    "sanders-mary": 0
+   },
+   "cashOnHand": {
+    "bronin-luke": 390818,
+    "chai-amy": 690,
+    "sanders-mary": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CT-02": {
+   "receipts": {
+    "courtney-joe": 966514,
+    "austin-george": 314977
+   },
+   "cashOnHand": {
+    "courtney-joe": 385578,
+    "austin-george": 96712
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CT-03": {
+   "receipts": {
+    "delauro-rosa": 1622999,
+    "lancia-chris": 17486
+   },
+   "cashOnHand": {
+    "delauro-rosa": 83415,
+    "lancia-chris": 68
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CT-04": {
+   "receipts": {
+    "himes-jim": 1704622,
+    "goldstein-michael": 59216
+   },
+   "cashOnHand": {
+    "himes-jim": 2419414,
+    "goldstein-michael": 26665
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:CT-05": {
+   "receipts": {
+    "hayes-jahana": 1716462,
+    "shea-chris": 465963
+   },
+   "cashOnHand": {
+    "hayes-jahana": 1136297,
+    "shea-chris": 53768
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:DE-AL": {
+   "receipts": {
+    "mcbride-sarah": 5556755,
+    "arminio-joseph": 12302
+   },
+   "cashOnHand": {
+    "mcbride-sarah": 2326039,
+    "arminio-joseph": 6944
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-01": {
+   "receipts": {
+    "patronis-jimmy": 4467313,
+    "davis-tyler": 0,
+    "valimont-gay": 295714
+   },
+   "cashOnHand": {
+    "patronis-jimmy": 939474,
+    "davis-tyler": 0,
+    "valimont-gay": 34723
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-02": {
+   "receipts": {
+    "green-amanda": 658316,
+    "rogers-austin": 1359852
+   },
+   "cashOnHand": {
+    "green-amanda": 28139,
+    "rogers-austin": 98295
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-03": {
+   "receipts": {
+    "cammack-kat": 2437580,
+    "harp-seth": 172435,
+    "klein-mike": 120556
+   },
+   "cashOnHand": {
+    "cammack-kat": 962289,
+    "harp-seth": 44145,
+    "klein-mike": 12412
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-04": {
+   "receipts": {
+    "bean-aaron": 2682267,
+    "holloway-lashonda": 58546,
+    "schaefer-todd": 0,
+    "sell-mike": 24206
+   },
+   "cashOnHand": {
+    "bean-aaron": 577964,
+    "holloway-lashonda": 44105,
+    "schaefer-todd": 0,
+    "sell-mike": 4857
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-05": {
+   "receipts": {
+    "rutherford-john": 913650,
+    "grage-rachel": 448143
+   },
+   "cashOnHand": {
+    "rutherford-john": 240063,
+    "grage-rachel": 65881
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-06": {
+   "receipts": {
+    "fine-randy": 4645045,
+    "gist-michael": 7949,
+    "yonce-eric": 619305
+   },
+   "cashOnHand": {
+    "fine-randy": 184588,
+    "gist-michael": -153,
+    "yonce-eric": 96905
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-07": {
+   "receipts": {
+    "dalton-bale": 2334664,
+    "dennison-christopher": 10500,
+    "elijah-ryan": 818460
+   },
+   "cashOnHand": {
+    "dalton-bale": 202254,
+    "dennison-christopher": 60,
+    "elijah-ryan": 173006
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-08": {
+   "receipts": {
+    "haridopolos-mike": 2049237,
+    "jenkins-jennifer": 960174
+   },
+   "cashOnHand": {
+    "haridopolos-mike": 482350,
+    "jenkins-jennifer": 152722
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-09": {
+   "receipts": {
+    "soto-darren": 3652280,
+    "green-dan": 2692713
+   },
+   "cashOnHand": {
+    "soto-darren": 249995,
+    "green-dan": 449960
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-10": {
+   "receipts": {
+    "frost-maxwell": 3835169
+   },
+   "cashOnHand": {
+    "frost-maxwell": 1055862
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-11": {
+   "receipts": {
+    "groves-ralph": 0,
+    "pericola-james": 225868,
+    "strada-joe": 5512075
+   },
+   "cashOnHand": {
+    "groves-ralph": 0,
+    "pericola-james": 35196,
+    "strada-joe": 860068
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-12": {
+   "receipts": {
+    "bilirakis-gus": 2255342,
+    "overman-kimberly": 280118,
+    "scrivener-branden": 8195
+   },
+   "cashOnHand": {
+    "bilirakis-gus": 254246,
+    "overman-kimberly": 29526,
+    "scrivener-branden": 28
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-13": {
+   "receipts": {
+    "luna-anna": 4351792,
+    "darrigo-tony": 28181,
+    "gray-leela": 2917665
+   },
+   "cashOnHand": {
+    "luna-anna": 746955,
+    "darrigo-tony": 25681,
+    "gray-leela": 656423
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-14": {
+   "receipts": {
+    "castor-kathy": 4930537,
+    "beltran-mike": 2731428,
+    "lambert-brian": 17092
+   },
+   "cashOnHand": {
+    "castor-kathy": 577435,
+    "beltran-mike": 1731518,
+    "lambert-brian": 2477
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-15": {
+   "receipts": {
+    "lee-laurel": 2711189,
+    "people-robert": 82518
+   },
+   "cashOnHand": {
+    "lee-laurel": 1320456,
+    "people-robert": 26625
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-16": {
+   "receipts": {
+    "davis-mark": 66969,
+    "gruters-sydney": 1618888,
+    "kirschner-kelly": 876363
+   },
+   "cashOnHand": {
+    "davis-mark": 1699,
+    "gruters-sydney": 252497,
+    "kirschner-kelly": 261139
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-17": {
+   "receipts": {
+    "steube-greg": 1587827,
+    "montavon-matthew": 156274,
+    "quirk-michael": 32488
+   },
+   "cashOnHand": {
+    "steube-greg": 2132055,
+    "montavon-matthew": 25123,
+    "quirk-michael": 3141
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-18": {
+   "receipts": {
+    "franklin-scott": 1026404,
+    "gibson-curtis": 13785,
+    "simmons-deva": 29704
+   },
+   "cashOnHand": {
+    "franklin-scott": 883231,
+    "gibson-curtis": 1577,
+    "simmons-deva": -1516
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-19": {
+   "receipts": {
+    "arias-victor": 69983,
+    "haskin-seth": 8000,
+    "schwartzel-jim": 2828903
+   },
+   "cashOnHand": {
+    "arias-victor": 15417,
+    "haskin-seth": 651,
+    "schwartzel-jim": 506211
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-20": {
+   "receipts": {
+    "andersen-brent": 100350,
+    "maxime-kedner": 126573,
+    "schultz-debbie": 3707925
+   },
+   "cashOnHand": {
+    "andersen-brent": 16555,
+    "maxime-kedner": 59351,
+    "schultz-debbie": 784570
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-21": {
+   "receipts": {
+    "mast-brian": 5097732,
+    "cooke-alexander": 30244,
+    "martin-james": 821779
+   },
+   "cashOnHand": {
+    "mast-brian": 2378763,
+    "cooke-alexander": 1384,
+    "martin-james": 50898
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-22": {
+   "receipts": {
+    "askar-casey": 7418255,
+    "dandiya-pia": 4619822
+   },
+   "cashOnHand": {
+    "askar-casey": 1891162,
+    "dandiya-pia": 735105
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-23": {
+   "receipts": {
+    "frankel-lois": 2631968,
+    "adeimy-deborah": 201145
+   },
+   "cashOnHand": {
+    "frankel-lois": 564090,
+    "adeimy-deborah": 32790
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-24": {
+   "receipts": {
+    "brown-te": 313459,
+    "gilbert-oliver": 1458355
+   },
+   "cashOnHand": {
+    "brown-te": 169276,
+    "gilbert-oliver": 427295
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-25": {
+   "receipts": {
+    "moskowitz-jared": 5710776,
+    "jassenoff-peter": 10500,
+    "singer-scott": 3255313
+   },
+   "cashOnHand": {
+    "moskowitz-jared": 1210073,
+    "jassenoff-peter": 60,
+    "singer-scott": 466625
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-26": {
+   "receipts": {
+    "balart-mario": 2763196,
+    "locklin-nicole": 599527,
+    "hosey-deborah": 10780
+   },
+   "cashOnHand": {
+    "balart-mario": 1676213,
+    "locklin-nicole": 109990,
+    "hosey-deborah": 2375
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-27": {
+   "receipts": {
+    "salazar-maria": 2519401,
+    "rodriguez-eliott": 1567393
+   },
+   "cashOnHand": {
+    "salazar-maria": 1680478,
+    "rodriguez-eliott": 621791
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:FL-28": {
+   "receipts": {
+    "gimenez-carlos": 722291,
+    "ehr-phil": 508311,
+    "rojas-eddy": 0
+   },
+   "cashOnHand": {
+    "gimenez-carlos": 540783,
+    "ehr-phil": 506963,
+    "rojas-eddy": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-01": {
+   "receipts": {
+    "hollowell-amanda": 264753,
+    "kingston-jim": 2357233
+   },
+   "cashOnHand": {
+    "hollowell-amanda": 50137,
+    "kingston-jim": 269955
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-02": {
+   "receipts": {
+    "bishop-sanford": 1362149,
+    "day-matt": 217632
+   },
+   "cashOnHand": {
+    "bishop-sanford": 431525,
+    "day-matt": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-03": {
+   "receipts": {
+    "jack-brian": 2431348,
+    "keller-maura": 246621
+   },
+   "cashOnHand": {
+    "jack-brian": 1105820,
+    "keller-maura": 93522
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-04": {
+   "receipts": {
+    "johnson-hank": 514399,
+    "duffie-james": 0
+   },
+   "cashOnHand": {
+    "johnson-hank": 125435,
+    "duffie-james": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-05": {
+   "receipts": {
+    "williams-nikema": 772833,
+    "salvesen-john": 0
+   },
+   "cashOnHand": {
+    "williams-nikema": 63107,
+    "salvesen-john": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-06": {
+   "receipts": {
+    "mcbath-lucy": 1189989,
+    "martin-kevin": 10320
+   },
+   "cashOnHand": {
+    "mcbath-lucy": 682336,
+    "martin-kevin": 100
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-07": {
+   "receipts": {
+    "mccormick-rich": 2250503,
+    "kozycki-tony": 922117
+   },
+   "cashOnHand": {
+    "mccormick-rich": 1335872,
+    "kozycki-tony": 492432
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-08": {
+   "receipts": {
+    "scott-austin": 1416651,
+    "esti-kelly": 27963
+   },
+   "cashOnHand": {
+    "scott-austin": 1316056,
+    "esti-kelly": 3709
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-09": {
+   "receipts": {
+    "clyde-andrew": 738198,
+    "gegen-caitlyn": 101339
+   },
+   "cashOnHand": {
+    "clyde-andrew": 161469,
+    "gegen-caitlyn": 21137
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-10": {
+   "receipts": {
+    "delancy-pam": 78670,
+    "gaines-houston": 2816583
+   },
+   "cashOnHand": {
+    "delancy-pam": 24292,
+    "gaines-houston": 1062079
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-11": {
+   "receipts": {
+    "cowan-john": 2824606,
+    "harden-chris": 139283
+   },
+   "cashOnHand": {
+    "cowan-john": 145818,
+    "harden-chris": 8709
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-12": {
+   "receipts": {
+    "allen-rick": 1265488,
+    "smith-ceretta": 47693
+   },
+   "cashOnHand": {
+    "allen-rick": 1464865,
+    "smith-ceretta": 12318
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-13": {
+   "receipts": {
+    "chavez-jonathan": 0,
+    "clark-jasmine": 2386955
+   },
+   "cashOnHand": {
+    "chavez-jonathan": 0,
+    "clark-jasmine": 343732
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:GA-14": {
+   "receipts": {
+    "fuller-clay": 2160464,
+    "harris-shawn": 8418045
+   },
+   "cashOnHand": {
+    "fuller-clay": 204314,
+    "harris-shawn": 59313
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:HI-01": {
+   "receipts": {
+    "case-ed": 1339008,
+    "berning-nathan": 0,
+    "conley-jordan": 0,
+    "lam-adriel": 0
+   },
+   "cashOnHand": {
+    "case-ed": 449674,
+    "berning-nathan": 0,
+    "conley-jordan": 0,
+    "lam-adriel": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:HI-02": {
+   "receipts": {
+    "tokuda-jill": 985930,
+    "awa-brenton": 131063
+   },
+   "cashOnHand": {
+    "tokuda-jill": 486975,
+    "awa-brenton": 9143
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:ID-01": {
+   "receipts": {
+    "fulcher-russ": 848384,
+    "gomez-brendan": 0,
+    "peterson-kaylee": 279404,
+    "zabel-sarah": 272260
+   },
+   "cashOnHand": {
+    "fulcher-russ": 209944,
+    "gomez-brendan": 0,
+    "peterson-kaylee": 24345,
+    "zabel-sarah": 62333
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:ID-02": {
+   "receipts": {
+    "simpson-mike": 1409212,
+    "gilbreath-ellie": 169226,
+    "houser-emre": 0,
+    "hutchinson-tripp": 7565
+   },
+   "cashOnHand": {
+    "simpson-mike": 300591,
+    "gilbreath-ellie": 36716,
+    "houser-emre": 0,
+    "hutchinson-tripp": 6963
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-01": {
+   "receipts": {
+    "jackson-jonathan": 539051,
+    "maxwell-christian": 94709
+   },
+   "cashOnHand": {
+    "jackson-jonathan": 40070,
+    "maxwell-christian": 62200
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-02": {
+   "receipts": {
+    "miller-donna": 2700313,
+    "noack-michael": 0
+   },
+   "cashOnHand": {
+    "miller-donna": 92407,
+    "noack-michael": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-03": {
+   "receipts": {
+    "ramirez-delia": 1626337,
+    "oakley-angel": 18443
+   },
+   "cashOnHand": {
+    "ramirez-delia": 913892,
+    "oakley-angel": 4061
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-04": {
+   "receipts": {
+    "garcia-patty": 526691,
+    "getty-chris": 412838
+   },
+   "cashOnHand": {
+    "garcia-patty": 156711,
+    "getty-chris": 103170
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-05": {
+   "receipts": {
+    "quigley-mike": 998074,
+    "hanson-tommy": 0
+   },
+   "cashOnHand": {
+    "quigley-mike": 1102664,
+    "hanson-tommy": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-06": {
+   "receipts": {
+    "casten-sean": 2516549,
+    "conforti-niki": 348453
+   },
+   "cashOnHand": {
+    "casten-sean": 1022383,
+    "conforti-niki": 7639
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-07": {
+   "receipts": {
+    "ford-la": 819321,
+    "koppie-chad": 60409
+   },
+   "cashOnHand": {
+    "ford-la": 93472,
+    "koppie-chad": 42
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-08": {
+   "receipts": {
+    "bean-melissa": 2457207,
+    "davis-jennifer": 1782175
+   },
+   "cashOnHand": {
+    "bean-melissa": 301714,
+    "davis-jennifer": 279747
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-09": {
+   "receipts": {
+    "biss-daniel": 3446463,
+    "elleson-john": 0
+   },
+   "cashOnHand": {
+    "biss-daniel": 608883,
+    "elleson-john": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-10": {
+   "receipts": {
+    "schneider-brad": 3657882,
+    "lambrecht-carl": 0
+   },
+   "cashOnHand": {
+    "schneider-brad": 1707158,
+    "lambrecht-carl": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-11": {
+   "receipts": {
+    "foster-bill": 2588027,
+    "walter-jeff": 431415
+   },
+   "cashOnHand": {
+    "foster-bill": 2629689,
+    "walter-jeff": 7780
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-12": {
+   "receipts": {
+    "bost-mike": 1617353,
+    "fortier-julie": 161511
+   },
+   "cashOnHand": {
+    "bost-mike": 844809,
+    "fortier-julie": 33644
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-13": {
+   "receipts": {
+    "budzinski-nikki": 3654996,
+    "wilson-jeff": 532330
+   },
+   "cashOnHand": {
+    "budzinski-nikki": 2951806,
+    "wilson-jeff": 48167
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-14": {
+   "receipts": {
+    "underwood-lauren": 2848042,
+    "marter-james": 214272
+   },
+   "cashOnHand": {
+    "underwood-lauren": 1155856,
+    "marter-james": 37832
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-15": {
+   "receipts": {
+    "miller-mary": 1862238,
+    "todd-jennifer": 210097
+   },
+   "cashOnHand": {
+    "miller-mary": 910536,
+    "todd-jennifer": 37186
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-16": {
+   "receipts": {
+    "lahood-darin": 4205602,
+    "nolley-paul": 639225
+   },
+   "cashOnHand": {
+    "lahood-darin": 5988459,
+    "nolley-paul": 59059
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IL-17": {
+   "receipts": {
+    "sorensen-eric": 2657085,
+    "vancil-dillan": 406023
+   },
+   "cashOnHand": {
+    "sorensen-eric": 1289862,
+    "vancil-dillan": 52482
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IN-01": {
+   "receipts": {
+    "mrvan-frank": 3035422,
+    "regnitz-barb": 2755770
+   },
+   "cashOnHand": {
+    "mrvan-frank": 772227,
+    "regnitz-barb": 504235
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IN-02": {
+   "receipts": {
+    "yakym-rudy": 6577079,
+    "decio-jamee": 1455232,
+    "henry-william": 0
+   },
+   "cashOnHand": {
+    "yakym-rudy": 421570,
+    "decio-jamee": 454600,
+    "henry-william": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IN-03": {
+   "receipts": {
+    "stutzman-marlin": 967095,
+    "thompson-kelly": 347103
+   },
+   "cashOnHand": {
+    "stutzman-marlin": 101048,
+    "thompson-kelly": 53981
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IN-04": {
+   "receipts": {
+    "baird-jim": 604800,
+    "cox-drew": 60559
+   },
+   "cashOnHand": {
+    "baird-jim": 110355,
+    "cox-drew": 6820
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IN-05": {
+   "receipts": {
+    "spartz-victoria": 2192717,
+    "ford-j": 1410737
+   },
+   "cashOnHand": {
+    "spartz-victoria": 514922,
+    "ford-j": 324529
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IN-06": {
+   "receipts": {
+    "shreve-jefferson": 2534240,
+    "wirth-cinde": 91566
+   },
+   "cashOnHand": {
+    "shreve-jefferson": 1184693,
+    "wirth-cinde": 26538
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IN-07": {
+   "receipts": {
+    "carson-andre": 1131715,
+    "mcauley-patrick": 0,
+    "sceniak-james": 0
+   },
+   "cashOnHand": {
+    "carson-andre": 558520,
+    "mcauley-patrick": 0,
+    "sceniak-james": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IN-08": {
+   "receipts": {
+    "messmer-mark": 1424577,
+    "allen-mary": 493068
+   },
+   "cashOnHand": {
+    "messmer-mark": 550906,
+    "allen-mary": 107507
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IN-09": {
+   "receipts": {
+    "houchin-erin": 2205948,
+    "hudson-tonya": 1822,
+    "meyer-brad": 203411
+   },
+   "cashOnHand": {
+    "houchin-erin": 928736,
+    "hudson-tonya": -251,
+    "meyer-brad": 28807
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IA-01": {
+   "receipts": {
+    "meeks-mariannette": 9101898,
+    "bohannan-christina": 9905570,
+    "bridgford-michael": 338285
+   },
+   "cashOnHand": {
+    "meeks-mariannette": 1700717,
+    "bohannan-christina": 2110846,
+    "bridgford-michael": 76730
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IA-02": {
+   "receipts": {
+    "bushaw-dave": 38292,
+    "james-lindsay": 3917994,
+    "mitchell-joe": 2916069
+   },
+   "cashOnHand": {
+    "bushaw-dave": 11318,
+    "james-lindsay": 265953,
+    "mitchell-joe": 545534
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IA-03": {
+   "receipts": {
+    "nunn-zach": 6123740,
+    "garriott-sarah": 8070402
+   },
+   "cashOnHand": {
+    "nunn-zach": 620759,
+    "garriott-sarah": 1153590
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:IA-04": {
+   "receipts": {
+    "dawson-david": 259241,
+    "mcgowan-chris": 862816
+   },
+   "cashOnHand": {
+    "dawson-david": 41976,
+    "mcgowan-chris": 443915
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:KS-01": {
+   "receipts": {
+    "mann-tracey": 1793300,
+    "jacob-steven": 0,
+    "reinhold-lauren": 136351
+   },
+   "cashOnHand": {
+    "mann-tracey": 2914104,
+    "jacob-steven": 0,
+    "reinhold-lauren": 32985
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:KS-02": {
+   "receipts": {
+    "schmidt-derek": 1772989,
+    "coover-don": 1363193,
+    "hauer-john": 0
+   },
+   "cashOnHand": {
+    "schmidt-derek": 457586,
+    "coover-don": 231676,
+    "hauer-john": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:KS-03": {
+   "receipts": {
+    "davids-sharice": 4656759,
+    "hohe-steven": 0,
+    "jenkins-eric": 51735
+   },
+   "cashOnHand": {
+    "davids-sharice": 1860026,
+    "hohe-steven": 0,
+    "jenkins-eric": 18941
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:KS-04": {
+   "receipts": {
+    "estes-ron": 2203776,
+    "tyndell-katy": 633159
+   },
+   "cashOnHand": {
+    "estes-ron": 1325359,
+    "tyndell-katy": 145996
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:KY-01": {
+   "receipts": {
+    "comer-james": 2318361,
+    "williams-drew": 223180
+   },
+   "cashOnHand": {
+    "comer-james": 1623432,
+    "williams-drew": 7977
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:KY-02": {
+   "receipts": {
+    "guthrie-brett": 5986647,
+    "loecken-thomas": 0,
+    "wingfield-megan": 9584
+   },
+   "cashOnHand": {
+    "guthrie-brett": 1447296,
+    "loecken-thomas": 0,
+    "wingfield-megan": 1271
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:KY-03": {
+   "receipts": {
+    "mcgarvey-morgan": 1998328
+   },
+   "cashOnHand": {
+    "mcgarvey-morgan": 1933846
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:KY-04": {
+   "receipts": {
+    "gallrein-ed": 4095784,
+    "strange-melissa": 157330,
+    "todd-jeremy": 30838
+   },
+   "cashOnHand": {
+    "gallrein-ed": 433535,
+    "strange-melissa": 40742,
+    "todd-jeremy": 3389
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:KY-05": {
+   "receipts": {
+    "rogers-hal": 1026114,
+    "pillersdorf-ned": 377089,
+    "serrano-gerardo": 0,
+    "wein-mikel": 4250
+   },
+   "cashOnHand": {
+    "rogers-hal": 701924,
+    "pillersdorf-ned": 106494,
+    "serrano-gerardo": 0,
+    "wein-mikel": 2912
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:KY-06": {
+   "receipts": {
+    "alvarado-ralph": 2307369,
+    "bowman-jay": 18958,
+    "dembo-zach": 3205462,
+    "lynch-pete": 0
+   },
+   "cashOnHand": {
+    "alvarado-ralph": 180812,
+    "bowman-jay": 216,
+    "dembo-zach": 620330,
+    "lynch-pete": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:LA-01": {
+   "receipts": {
+    "scalise-steve": 11172078,
+    "jewett-lauren": 716339
+   },
+   "cashOnHand": {
+    "scalise-steve": 2912526,
+    "jewett-lauren": 156046
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:LA-02": {
+   "receipts": {
+    "carter-troy": 1941169,
+    "ballay-lisa": 1110,
+    "williams-peter": 0
+   },
+   "cashOnHand": {
+    "carter-troy": 630466,
+    "ballay-lisa": 610,
+    "williams-peter": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:LA-03": {
+   "receipts": {
+    "higgins-clay": 904294,
+    "day-john": 222557
+   },
+   "cashOnHand": {
+    "higgins-clay": 566472,
+    "day-john": 124738
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:LA-04": {
+   "receipts": {
+    "johnson-mike": 24583416,
+    "cable-conrad": 1842506,
+    "gromlich-matt": 452199,
+    "heslop-gordon": 128720,
+    "nichols-mike": 71605
+   },
+   "cashOnHand": {
+    "johnson-mike": 6510748,
+    "cable-conrad": 408808,
+    "gromlich-matt": 16846,
+    "heslop-gordon": 5978,
+    "nichols-mike": 82
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:LA-05": {
+   "receipts": {
+    "cathey-stewart": 245550,
+    "cordell-misti": 658608,
+    "dantzler-omar": 0,
+    "echols-michael": 3188840,
+    "firment-gabe": 453882,
+    "magee-austin": 11431,
+    "mckay-dan": 121182,
+    "moore-patricia": 23054,
+    "wilson-antonio": 71047
+   },
+   "cashOnHand": {
+    "cathey-stewart": 97779,
+    "cordell-misti": 200178,
+    "dantzler-omar": 0,
+    "echols-michael": 888952,
+    "firment-gabe": 63269,
+    "magee-austin": 180,
+    "mckay-dan": 4998,
+    "moore-patricia": 4145,
+    "wilson-antonio": 31051
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:LA-06": {
+   "receipts": {
+    "appeaning-monique": 109183,
+    "craig-rufus": 0,
+    "davis-larry": 33216,
+    "edmonds-rick": 697139,
+    "forbes-pat": 156334,
+    "garcia-lindsay": 97007,
+    "johnson-chris": 0,
+    "mebruer-michael": 70714,
+    "miguez-blake": 7749606,
+    "wagley-stephen": 874344
+   },
+   "cashOnHand": {
+    "appeaning-monique": 14709,
+    "craig-rufus": 0,
+    "davis-larry": 809,
+    "edmonds-rick": 134635,
+    "forbes-pat": 97400,
+    "garcia-lindsay": 21654,
+    "johnson-chris": 0,
+    "mebruer-michael": 10987,
+    "miguez-blake": 1534513,
+    "wagley-stephen": 195633
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:ME-01": {
+   "receipts": {
+    "pingree-chellie": 551078,
+    "russell-ronald": 214096
+   },
+   "cashOnHand": {
+    "pingree-chellie": 320049,
+    "russell-ronald": 8364
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:ME-02": {
+   "receipts": {
+    "dunlap-matthew": 2964964,
+    "lepage-paul": 3299130
+   },
+   "cashOnHand": {
+    "dunlap-matthew": 443968,
+    "lepage-paul": 848224
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MD-01": {
+   "receipts": {
+    "harris-andy": 2703696,
+    "schwartz-dan": 1155585
+   },
+   "cashOnHand": {
+    "harris-andy": 1219985,
+    "schwartz-dan": -4473
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MD-02": {
+   "receipts": {
+    "olszewski-johnny": 1290367,
+    "wallace-dave": 29269
+   },
+   "cashOnHand": {
+    "olszewski-johnny": 681817,
+    "wallace-dave": 4899
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MD-03": {
+   "receipts": {
+    "elfreth-sarah": 1429993,
+    "flowers-berney": 35462
+   },
+   "cashOnHand": {
+    "elfreth-sarah": 240887,
+    "flowers-berney": 9035
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MD-04": {
+   "receipts": {
+    "ivey-glenn": 886967
+   },
+   "cashOnHand": {
+    "ivey-glenn": 493566
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MD-05": {
+   "receipts": {
+    "boafo-adrian": 1906194
+   },
+   "cashOnHand": {
+    "boafo-adrian": 92102
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MD-06": {
+   "receipts": {
+    "delaney-april": 12535128,
+    "ficker-robin": 1284599,
+    "landman-moshe": 0
+   },
+   "cashOnHand": {
+    "delaney-april": 121839,
+    "ficker-robin": 4328,
+    "landman-moshe": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MD-07": {
+   "receipts": {
+    "mfume-kweisi": 489736
+   },
+   "cashOnHand": {
+    "mfume-kweisi": 612318
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MD-08": {
+   "receipts": {
+    "raskin-jamie": 9316434,
+    "riley-cheryl": 22354,
+    "wallace-nancy": 0
+   },
+   "cashOnHand": {
+    "raskin-jamie": 7912572,
+    "riley-cheryl": 2691,
+    "wallace-nancy": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MA-01": {
+   "receipts": {
+    "neal-richard": 3112617,
+    "milleron-nadia": 1585489
+   },
+   "cashOnHand": {
+    "neal-richard": 1878102,
+    "milleron-nadia": 310205
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MA-02": {
+   "receipts": {
+    "mcgovern-jim": 1013810
+   },
+   "cashOnHand": {
+    "mcgovern-jim": 369457
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MA-03": {
+   "receipts": {
+    "trahan-lori": 1878707,
+    "grossi-gary": 9151
+   },
+   "cashOnHand": {
+    "trahan-lori": 1791267,
+    "grossi-gary": 7378
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MA-04": {
+   "receipts": {
+    "auchincloss-jake": 3935406,
+    "stalcup-thomas": 26619
+   },
+   "cashOnHand": {
+    "auchincloss-jake": 7476829,
+    "stalcup-thomas": 147
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MA-05": {
+   "receipts": {
+    "clark-katherine": 5026058
+   },
+   "cashOnHand": {
+    "clark-katherine": 1229548
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MA-06": {
+   "receipts": {
+    "jones-micah": 619904,
+    "koh-dan": 5383421
+   },
+   "cashOnHand": {
+    "jones-micah": 169782,
+    "koh-dan": 1081991
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MA-07": {
+   "receipts": {
+    "pressley-ayanna": 1319248
+   },
+   "cashOnHand": {
+    "pressley-ayanna": 86476
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MA-08": {
+   "receipts": {
+    "lynch-stephen": 1052703
+   },
+   "cashOnHand": {
+    "lynch-stephen": 493969
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MA-09": {
+   "receipts": {
+    "keating-bill": 553690,
+    "macallister-tyler": 215467
+   },
+   "cashOnHand": {
+    "keating-bill": 460620,
+    "macallister-tyler": 53180
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-01": {
+   "receipts": {
+    "bergman-jack": 2417376,
+    "barr-callie": 1724592,
+    "davenport-laveta": 0,
+    "featherly-zebulon": 0,
+    "hakola-liz": 0,
+    "kovaly-doc": 0,
+    "satterla-arnett": 0
+   },
+   "cashOnHand": {
+    "bergman-jack": 263089,
+    "barr-callie": 383735,
+    "davenport-laveta": 0,
+    "featherly-zebulon": 0,
+    "hakola-liz": 0,
+    "kovaly-doc": 0,
+    "satterla-arnett": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-02": {
+   "receipts": {
+    "moolenaar-john": 2068418,
+    "ambrose-ben": 186504,
+    "magoon-charlotte": 0,
+    "sills-richard": 0
+   },
+   "cashOnHand": {
+    "moolenaar-john": 1213299,
+    "ambrose-ben": 32956,
+    "magoon-charlotte": 0,
+    "sills-richard": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-03": {
+   "receipts": {
+    "scholten-hillary": 3034438,
+    "deboer-terri": 865481
+   },
+   "cashOnHand": {
+    "scholten-hillary": 1531772,
+    "deboer-terri": 70281
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-04": {
+   "receipts": {
+    "huizenga-bill": 5562775,
+    "barnett-shafina": 0,
+    "mccann-sean": 4699153
+   },
+   "cashOnHand": {
+    "huizenga-bill": 394222,
+    "barnett-shafina": 0,
+    "mccann-sean": 1034442
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-05": {
+   "receipts": {
+    "walberg-tim": 2220379,
+    "bronke-jim": 0,
+    "muszynski-ronald": 1130,
+    "renier-sharon": 0,
+    "vukasovich-christian": 151704
+   },
+   "cashOnHand": {
+    "walberg-tim": 1179966,
+    "bronke-jim": 0,
+    "muszynski-ronald": 572,
+    "renier-sharon": 0,
+    "vukasovich-christian": 39517
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-06": {
+   "receipts": {
+    "dingell-debbie": 1525723,
+    "mickevicius-michael": 0,
+    "rayburn-linda": 0,
+    "shabazz-clyde": 0,
+    "smiley-heather": 0
+   },
+   "cashOnHand": {
+    "dingell-debbie": 455811,
+    "mickevicius-michael": 0,
+    "rayburn-linda": 0,
+    "shabazz-clyde": 0,
+    "smiley-heather": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-07": {
+   "receipts": {
+    "barrett-tom": 8238468,
+    "dedrick-shane": 0,
+    "lawrence-william": 4160041
+   },
+   "cashOnHand": {
+    "barrett-tom": 1039763,
+    "dedrick-shane": 0,
+    "lawrence-william": 628966
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-08": {
+   "receipts": {
+    "rivet-kristen": 6922879,
+    "casha-jim": 0,
+    "goodwin-kathy": 0,
+    "pettus-mia": 0,
+    "smith-thomas": 561097
+   },
+   "cashOnHand": {
+    "rivet-kristen": 2674869,
+    "casha-jim": 0,
+    "goodwin-kathy": 0,
+    "pettus-mia": 0,
+    "smith-thomas": 85066
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-09": {
+   "receipts": {
+    "mcclain-lisa": 6046475,
+    "clayton-destiny": 0,
+    "pooley-ray": 26387,
+    "vayko-kevin": 0,
+    "walkowicz-jim": 0
+   },
+   "cashOnHand": {
+    "mcclain-lisa": 1752710,
+    "clayton-destiny": 0,
+    "pooley-ray": 14075,
+    "vayko-kevin": 0,
+    "walkowicz-jim": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-10": {
+   "receipts": {
+    "bouchard-mike": 2884259,
+    "hines-christina": 4159693,
+    "kirby-andrea": 0,
+    "saliba-mike": 0
+   },
+   "cashOnHand": {
+    "bouchard-mike": 1573470,
+    "hines-christina": 1007628,
+    "kirby-andrea": 0,
+    "saliba-mike": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-11": {
+   "receipts": {
+    "baker-ethan": 204668,
+    "ishac-farid": 0,
+    "kumar-anil": 724355,
+    "moss-jeremy": 1874872,
+    "teasdale-ryan": 0
+   },
+   "cashOnHand": {
+    "baker-ethan": 56621,
+    "ishac-farid": 0,
+    "kumar-anil": 319467,
+    "moss-jeremy": 70000,
+    "teasdale-ryan": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-12": {
+   "receipts": {
+    "tlaib-rashida": 3255577,
+    "hooper-james": 2002,
+    "sosnowski-marc": 0,
+    "walkowicz-gary": 0
+   },
+   "cashOnHand": {
+    "tlaib-rashida": 3038173,
+    "hooper-james": 7769,
+    "sosnowski-marc": 0,
+    "walkowicz-gary": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MI-13": {
+   "receipts": {
+    "light-raelyn": 0,
+    "mckinney-donavan": 1876780,
+    "nykoriak-t": 0
+   },
+   "cashOnHand": {
+    "light-raelyn": 0,
+    "mckinney-donavan": 129674,
+    "nykoriak-t": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MN-01": {
+   "receipts": {
+    "finstad-brad": 2765870,
+    "johnson-jake": 3507568
+   },
+   "cashOnHand": {
+    "finstad-brad": 603622,
+    "johnson-jake": 561094
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MN-02": {
+   "receipts": {
+    "little-matt": 1494554,
+    "pratt-eric": 768791
+   },
+   "cashOnHand": {
+    "little-matt": 205276,
+    "pratt-eric": 173430
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MN-03": {
+   "receipts": {
+    "morrison-kelly": 1867912,
+    "bass-tyler": 0
+   },
+   "cashOnHand": {
+    "morrison-kelly": 507865,
+    "bass-tyler": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MN-04": {
+   "receipts": {
+    "mccollum-betty": 1539014,
+    "wikstrom-paul": 65016
+   },
+   "cashOnHand": {
+    "mccollum-betty": 526264,
+    "wikstrom-paul": 18548
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MN-05": {
+   "receipts": {
+    "omar-ilhan": 8247982,
+    "nagel-john": 1126115
+   },
+   "cashOnHand": {
+    "omar-ilhan": 3003684,
+    "nagel-john": 102552
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MN-06": {
+   "receipts": {
+    "emmer-tom": 10861547,
+    "chapin-doug": 765076
+   },
+   "cashOnHand": {
+    "emmer-tom": 2971245,
+    "chapin-doug": 118476
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MN-07": {
+   "receipts": {
+    "fischbach-michelle": 1673105,
+    "osberg-erik": 577219
+   },
+   "cashOnHand": {
+    "fischbach-michelle": 866362,
+    "osberg-erik": 126748
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MN-08": {
+   "receipts": {
+    "stauber-pete": 2566760,
+    "swanson-trina": 727330
+   },
+   "cashOnHand": {
+    "stauber-pete": 1086287,
+    "swanson-trina": 176816
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MS-01": {
+   "receipts": {
+    "kelly-trent": 1314373,
+    "johnson-cliff": 848648
+   },
+   "cashOnHand": {
+    "kelly-trent": 834173,
+    "johnson-cliff": 89248
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MS-02": {
+   "receipts": {
+    "thompson-bennie": 928245,
+    "eller-ron": 70825,
+    "foster-bennie": 0
+   },
+   "cashOnHand": {
+    "thompson-bennie": 1282156,
+    "eller-ron": 42109,
+    "foster-bennie": 9190
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MS-03": {
+   "receipts": {
+    "guest-michael": 1089344,
+    "chiaradio-michael": 224381,
+    "kiehle-erik": 0
+   },
+   "cashOnHand": {
+    "guest-michael": 780058,
+    "chiaradio-michael": 39339,
+    "kiehle-erik": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MS-04": {
+   "receipts": {
+    "ezell-mike": 1149873,
+    "hulum-jeffrey": 60173
+   },
+   "cashOnHand": {
+    "ezell-mike": 88880,
+    "hulum-jeffrey": 10554
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MO-01": {
+   "receipts": {
+    "bell-wesley": 4024636,
+    "berry-paul": 0,
+    "schmitz-tom": 0
+   },
+   "cashOnHand": {
+    "bell-wesley": 407001,
+    "berry-paul": 0,
+    "schmitz-tom": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MO-02": {
+   "receipts": {
+    "wagner-ann": 4189876,
+    "wellman-fred": 2178965
+   },
+   "cashOnHand": {
+    "wagner-ann": 1631397,
+    "wellman-fred": 240718
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MO-03": {
+   "receipts": {
+    "onder-bob": 1146489,
+    "higgins-jim": 0,
+    "mann-bethany": 86554
+   },
+   "cashOnHand": {
+    "onder-bob": 525828,
+    "higgins-jim": 0,
+    "mann-bethany": 5712
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MO-04": {
+   "receipts": {
+    "alford-mark": 1599366,
+    "herrera-jordan": 41657,
+    "holbrook-thomas": 0
+   },
+   "cashOnHand": {
+    "alford-mark": 757047,
+    "herrera-jordan": 19366,
+    "holbrook-thomas": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MO-05": {
+   "receipts": {
+    "cleaver-emanuel": 1766864,
+    "brattin-rick": 457467
+   },
+   "cashOnHand": {
+    "cleaver-emanuel": 882948,
+    "brattin-rick": 359
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MO-06": {
+   "receipts": {
+    "smead-josh": 145753,
+    "stigall-chris": 1045324
+   },
+   "cashOnHand": {
+    "smead-josh": 35201,
+    "stigall-chris": 211005
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MO-07": {
+   "receipts": {
+    "burlison-eric": 1697442,
+    "craig-kevin": 0,
+    "hesketh-missi": 65740
+   },
+   "cashOnHand": {
+    "burlison-eric": 962364,
+    "craig-kevin": 0,
+    "hesketh-missi": 60779
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MO-08": {
+   "receipts": {
+    "smith-jason": 6299171,
+    "reichard-chris": 27958
+   },
+   "cashOnHand": {
+    "smith-jason": 5415077,
+    "reichard-chris": 6652
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MT-01": {
+   "receipts": {
+    "flint-aaron": 2856139,
+    "forstag-sam": 4312110
+   },
+   "cashOnHand": {
+    "flint-aaron": 408153,
+    "forstag-sam": 726126
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:MT-02": {
+   "receipts": {
+    "downing-troy": 2733160,
+    "eisenhauer-michael": 354191,
+    "mccracken-patrick": 0,
+    "miller-brian": 30958
+   },
+   "cashOnHand": {
+    "downing-troy": 746648,
+    "eisenhauer-michael": 23304,
+    "mccracken-patrick": 0,
+    "miller-brian": 669
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NE-01": {
+   "receipts": {
+    "flood-mike": 2770861,
+    "backemeyer-chris": 1154613
+   },
+   "cashOnHand": {
+    "flood-mike": 859905,
+    "backemeyer-chris": 355166
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NE-02": {
+   "receipts": {
+    "harding-brinker": 2850577,
+    "powell-denise": 5093104
+   },
+   "cashOnHand": {
+    "harding-brinker": 313373,
+    "powell-denise": 480473
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NE-03": {
+   "receipts": {
+    "smith-adrian": 2246593,
+    "budke-macey": 6347,
+    "cohen-mark": 75901,
+    "else-david": 0,
+    "stille-becky": 97390
+   },
+   "cashOnHand": {
+    "smith-adrian": 1101567,
+    "budke-macey": 326,
+    "cohen-mark": 15674,
+    "else-david": 0,
+    "stille-becky": -50
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NV-01": {
+   "receipts": {
+    "titus-dina": 2055144,
+    "buck-carrie": 2632235,
+    "khan-bobby": 87344
+   },
+   "cashOnHand": {
+    "titus-dina": 202235,
+    "buck-carrie": 184263,
+    "khan-bobby": 350
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NV-02": {
+   "receipts": {
+    "thompson-teresa": 1054467,
+    "chapman-lynn": 0,
+    "flippo-david": 2934108
+   },
+   "cashOnHand": {
+    "thompson-teresa": 181849,
+    "chapman-lynn": 0,
+    "flippo-david": 161162
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NV-03": {
+   "receipts": {
+    "lee-susie": 5942432,
+    "odonnell-martin": 4864563
+   },
+   "cashOnHand": {
+    "lee-susie": 931294,
+    "odonnell-martin": 184549
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NV-04": {
+   "receipts": {
+    "horsford-steven": 4077555,
+    "whipple-cody": 1217197
+   },
+   "cashOnHand": {
+    "horsford-steven": 821833,
+    "whipple-cody": 66379
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NH-01": {
+   "receipts": {
+    "dilorenzo-anthony": 6762643,
+    "shaheen-stefany": 3247792
+   },
+   "cashOnHand": {
+    "dilorenzo-anthony": 983794,
+    "shaheen-stefany": 270733
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NH-02": {
+   "receipts": {
+    "goodlander-maggie": 5012909,
+    "mahrou-robbie": 0,
+    "williams-lily": 1443796
+   },
+   "cashOnHand": {
+    "goodlander-maggie": 1821563,
+    "mahrou-robbie": 0,
+    "williams-lily": 472230
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-01": {
+   "receipts": {
+    "norcross-donald": 1950973,
+    "galdo-damon": 16220
+   },
+   "cashOnHand": {
+    "norcross-donald": 2364759,
+    "galdo-damon": 772
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-02": {
+   "receipts": {
+    "drew-jeff": 2414607,
+    "mora-ramon": 1139,
+    "mullock-zack": 960948
+   },
+   "cashOnHand": {
+    "drew-jeff": 894792,
+    "mora-ramon": 85,
+    "mullock-zack": 105400
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-03": {
+   "receipts": {
+    "conaway-herb": 1152632,
+    "kelly-ryan": 5725,
+    "mcguire-michael": 221324,
+    "welzer-steven": 0
+   },
+   "cashOnHand": {
+    "conaway-herb": 436316,
+    "kelly-ryan": 762,
+    "mcguire-michael": 16575,
+    "welzer-steven": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-04": {
+   "receipts": {
+    "smith-chris": 797217,
+    "peace-rachel": 101426
+   },
+   "cashOnHand": {
+    "smith-chris": 553017,
+    "peace-rachel": 14431
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-05": {
+   "receipts": {
+    "gottheimer-josh": 5788812,
+    "kirrane-sean": 103742,
+    "rueda-adam": 0
+   },
+   "cashOnHand": {
+    "gottheimer-josh": 13531047,
+    "kirrane-sean": 196,
+    "rueda-adam": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-06": {
+   "receipts": {
+    "pallone-frank": 2844906,
+    "herzig-hillary": 11766
+   },
+   "cashOnHand": {
+    "pallone-frank": 3069517,
+    "herzig-hillary": 614
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-07": {
+   "receipts": {
+    "kean-thomas": 6128373,
+    "bennett-rebecca": 8757003
+   },
+   "cashOnHand": {
+    "kean-thomas": 1365406,
+    "bennett-rebecca": 1053454
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-08": {
+   "receipts": {
+    "menendez-rob": 2236502,
+    "hughey-dashone": 0
+   },
+   "cashOnHand": {
+    "menendez-rob": 722400,
+    "hughey-dashone": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-09": {
+   "receipts": {
+    "pou-nellie": 3131322,
+    "pino-rosie": 548326
+   },
+   "cashOnHand": {
+    "pou-nellie": 1080500,
+    "pino-rosie": 13133
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-10": {
+   "receipts": {
+    "mciver-lamonica": 2516563,
+    "bucco-carmen": 8931
+   },
+   "cashOnHand": {
+    "mciver-lamonica": 897195,
+    "bucco-carmen": 2293
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-11": {
+   "receipts": {
+    "mejia-analilia": 2229339,
+    "bond-alan": 0,
+    "hathaway-joe": 837601
+   },
+   "cashOnHand": {
+    "mejia-analilia": 115467,
+    "bond-alan": 0,
+    "hathaway-joe": 42173
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NJ-12": {
+   "receipts": {
+    "hamawy-adam": 1993157,
+    "jinete-andres": 0,
+    "mele-gregg": 101521
+   },
+   "cashOnHand": {
+    "hamawy-adam": 239845,
+    "jinete-andres": 0,
+    "mele-gregg": 13566
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NM-01": {
+   "receipts": {
+    "stansbury-melanie": 1721315,
+    "okpareke-didi": 174529
+   },
+   "cashOnHand": {
+    "stansbury-melanie": 310746,
+    "okpareke-didi": 57545
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NM-02": {
+   "receipts": {
+    "vasquez-gabe": 5518618,
+    "cunningham-greg": 2527072
+   },
+   "cashOnHand": {
+    "vasquez-gabe": 496982,
+    "cunningham-greg": 343747
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NM-03": {
+   "receipts": {
+    "fernandez-teresa": 1578389,
+    "zamora-martin": 605834
+   },
+   "cashOnHand": {
+    "fernandez-teresa": 517398,
+    "zamora-martin": 44752
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-01": {
+   "receipts": {
+    "lalota-nick": 4486089,
+    "gallant-chris": 1735638
+   },
+   "cashOnHand": {
+    "lalota-nick": 2314993,
+    "gallant-chris": 425993
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-02": {
+   "receipts": {
+    "garbarino-andrew": 4057667,
+    "halpin-patrick": 586334
+   },
+   "cashOnHand": {
+    "garbarino-andrew": 2686930,
+    "halpin-patrick": 49442
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-03": {
+   "receipts": {
+    "suozzi-tom": 7599603,
+    "lipetri-mike": 2584014
+   },
+   "cashOnHand": {
+    "suozzi-tom": 3234342,
+    "lipetri-mike": 456873
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-04": {
+   "receipts": {
+    "gillen-laura": 6221631,
+    "driscoll-jeanine": 684947,
+    "tarnoff-blay": 24572
+   },
+   "cashOnHand": {
+    "gillen-laura": 3212650,
+    "driscoll-jeanine": 2553,
+    "tarnoff-blay": 66
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-05": {
+   "receipts": {
+    "meeks-gregory": 2283140,
+    "marsh-george": 0
+   },
+   "cashOnHand": {
+    "meeks-gregory": 2098241,
+    "marsh-george": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-06": {
+   "receipts": {
+    "meng-grace": 2199074,
+    "chou-joseph": 2578
+   },
+   "cashOnHand": {
+    "meng-grace": 765125,
+    "chou-joseph": 4097
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-07": {
+   "receipts": {
+    "ghaznavi-priscilla": 40055,
+    "rivera-melvin": 0,
+    "valdez-claire": 1915867
+   },
+   "cashOnHand": {
+    "ghaznavi-priscilla": 13179,
+    "rivera-melvin": 0,
+    "valdez-claire": 110430
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-08": {
+   "receipts": {
+    "jeffries-hakeem": 17893352
+   },
+   "cashOnHand": {
+    "jeffries-hakeem": 4234848
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-09": {
+   "receipts": {
+    "clarke-yvette": 1288234
+   },
+   "cashOnHand": {
+    "clarke-yvette": 66299
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-10": {
+   "receipts": {
+    "lander-brad": 2785967,
+    "moore-jennifer": 2693
+   },
+   "cashOnHand": {
+    "lander-brad": 80536,
+    "moore-jennifer": 1526
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-11": {
+   "receipts": {
+    "malliotakis-nicole": 3315037,
+    "decillis-michael": 183306
+   },
+   "cashOnHand": {
+    "malliotakis-nicole": 2788340,
+    "decillis-michael": 107888
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-12": {
+   "receipts": {
+    "lasher-micah": 3493974,
+    "negron-wilneida": 57807,
+    "ortiz-karen": 47330,
+    "shinkle-caroline": 272963
+   },
+   "cashOnHand": {
+    "lasher-micah": 309209,
+    "negron-wilneida": 6087,
+    "ortiz-karen": 13926,
+    "shinkle-caroline": 126424
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-13": {
+   "receipts": {
+    "chevalier-darializa": 1603709,
+    "williams-jomo": 0
+   },
+   "cashOnHand": {
+    "chevalier-darializa": 154560,
+    "williams-jomo": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-14": {
+   "receipts": {
+    "cortez-alexandria": 38029039,
+    "hysenaj-diamant": 446004
+   },
+   "cashOnHand": {
+    "cortez-alexandria": 17575301,
+    "hysenaj-diamant": 40671
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-15": {
+   "receipts": {
+    "torres-ritchie": 7172393,
+    "easton-andre": 93799,
+    "sapaskis-stylo": 0,
+    "vega-jose": 344810
+   },
+   "cashOnHand": {
+    "torres-ritchie": 13835642,
+    "easton-andre": 828,
+    "sapaskis-stylo": 0,
+    "vega-jose": 5642
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-16": {
+   "receipts": {
+    "latimer-george": 681938,
+    "cinquemani-joseph": 0
+   },
+   "cashOnHand": {
+    "latimer-george": 133518,
+    "cinquemani-joseph": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-17": {
+   "receipts": {
+    "lawler-mike": 10317627,
+    "conley-cait": 10706692
+   },
+   "cashOnHand": {
+    "lawler-mike": 1959524,
+    "conley-cait": 948540
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-18": {
+   "receipts": {
+    "ryan-pat": 5359733,
+    "auringer-jacqueline": 158703
+   },
+   "cashOnHand": {
+    "ryan-pat": 2543837,
+    "auringer-jacqueline": 21703
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-19": {
+   "receipts": {
+    "riley-josh": 5986869,
+    "oberacker-peter": 1424571
+   },
+   "cashOnHand": {
+    "riley-josh": 1791679,
+    "oberacker-peter": 23155
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-20": {
+   "receipts": {
+    "tonko-paul": 1247202,
+    "ambrosio-ralph": 61545
+   },
+   "cashOnHand": {
+    "tonko-paul": 490736,
+    "ambrosio-ralph": 7343
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-21": {
+   "receipts": {
+    "constantino-anthony": 17064951,
+    "gendebien-blake": 7655529
+   },
+   "cashOnHand": {
+    "constantino-anthony": 2298984,
+    "gendebien-blake": 364012
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-22": {
+   "receipts": {
+    "mannion-john": 3240826,
+    "buller-kailee": 464688
+   },
+   "cashOnHand": {
+    "mannion-john": 1016372,
+    "buller-kailee": 160138
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-23": {
+   "receipts": {
+    "langworthy-nick": 2675793,
+    "gies-aaron": 678484
+   },
+   "cashOnHand": {
+    "langworthy-nick": 1994177,
+    "gies-aaron": 54077
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-24": {
+   "receipts": {
+    "tenney-claudia": 3084891,
+    "ellman-alissa": 452166
+   },
+   "cashOnHand": {
+    "tenney-claudia": 835741,
+    "ellman-alissa": 46242
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-25": {
+   "receipts": {
+    "morelle-joseph": 2247173,
+    "mcintyre-virginia": 55459
+   },
+   "cashOnHand": {
+    "morelle-joseph": 468122,
+    "mcintyre-virginia": -10855
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NY-26": {
+   "receipts": {
+    "kennedy-tim": 2761025,
+    "hannon-dennis": 5525
+   },
+   "cashOnHand": {
+    "kennedy-tim": 1208991,
+    "hannon-dennis": 4438
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-01": {
+   "receipts": {
+    "davis-don": 5805482,
+    "bailey-tom": 0,
+    "buckhout-laurie": 4787737
+   },
+   "cashOnHand": {
+    "davis-don": 825818,
+    "bailey-tom": 0,
+    "buckhout-laurie": 1437901
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-02": {
+   "receipts": {
+    "ross-deborah": 2039911,
+    "douglass-eugene": 0
+   },
+   "cashOnHand": {
+    "ross-deborah": 1278165,
+    "douglass-eugene": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-03": {
+   "receipts": {
+    "murphy-greg": 2897749,
+    "cavender-daniel": 0,
+    "smith-raymond": 366581
+   },
+   "cashOnHand": {
+    "murphy-greg": 2255691,
+    "cavender-daniel": 0,
+    "smith-raymond": 44282
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-04": {
+   "receipts": {
+    "foushee-valerie": 1048543,
+    "meilleur-guy": 0
+   },
+   "cashOnHand": {
+    "foushee-valerie": 49354,
+    "meilleur-guy": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-05": {
+   "receipts": {
+    "foxx-virginia": 2189052,
+    "hubbard-chuck": 863260,
+    "luffman-robert": 0
+   },
+   "cashOnHand": {
+    "foxx-virginia": 3490070,
+    "hubbard-chuck": 152010,
+    "luffman-robert": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-06": {
+   "receipts": {
+    "mcdowell-addison": 1456167,
+    "jefferson-cyril": 232325
+   },
+   "cashOnHand": {
+    "mcdowell-addison": 152973,
+    "jefferson-cyril": 7859
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-07": {
+   "receipts": {
+    "rouzer-david": 2534038,
+    "ghazalah-maad": 8899,
+    "hardy-kimberly": 390475
+   },
+   "cashOnHand": {
+    "rouzer-david": 1699753,
+    "ghazalah-maad": 279,
+    "hardy-kimberly": 20419
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-08": {
+   "receipts": {
+    "harris-mark": 1238724,
+    "watson-colby": 57590
+   },
+   "cashOnHand": {
+    "harris-mark": 411264,
+    "watson-colby": 4158
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-09": {
+   "receipts": {
+    "hudson-richard": 4173708,
+    "ojeda-richard": 2930069
+   },
+   "cashOnHand": {
+    "hudson-richard": 925976,
+    "ojeda-richard": 45572
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-10": {
+   "receipts": {
+    "harrigan-pat": 1318233,
+    "bell-ashley": 147720,
+    "feldman-steve": 48754
+   },
+   "cashOnHand": {
+    "harrigan-pat": 462978,
+    "bell-ashley": 11774,
+    "feldman-steve": 1295
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-11": {
+   "receipts": {
+    "ager-jamie": 5869453,
+    "balkcom-jennifer": 399492,
+    "groo-travis": 0
+   },
+   "cashOnHand": {
+    "ager-jamie": 620158,
+    "balkcom-jennifer": 294818,
+    "groo-travis": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-12": {
+   "receipts": {
+    "adams-alma": 483375,
+    "codiga-jack": 54620
+   },
+   "cashOnHand": {
+    "adams-alma": 483997,
+    "codiga-jack": 3790
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-13": {
+   "receipts": {
+    "knott-brad": 1697075,
+    "barringer-paul": 1215151
+   },
+   "cashOnHand": {
+    "knott-brad": 619471,
+    "barringer-paul": 409522
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:NC-14": {
+   "receipts": {
+    "moore-tim": 2091455,
+    "womack-lakesha": 59183
+   },
+   "cashOnHand": {
+    "moore-tim": 1093141,
+    "womack-lakesha": 4793
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:ND-AL": {
+   "receipts": {
+    "fedorchak-julie": 2107166,
+    "hammer-trygve": 370969,
+    "tuttle-charles": 0
+   },
+   "cashOnHand": {
+    "fedorchak-julie": 774846,
+    "hammer-trygve": 42109,
+    "tuttle-charles": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-01": {
+   "receipts": {
+    "landsman-greg": 5662206,
+    "conroy-eric": 2372637,
+    "weise-nathan": 0
+   },
+   "cashOnHand": {
+    "landsman-greg": 502952,
+    "conroy-eric": 293397,
+    "weise-nathan": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-02": {
+   "receipts": {
+    "taylor-david": 1768915
+   },
+   "cashOnHand": {
+    "taylor-david": 707174
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-03": {
+   "receipts": {
+    "beatty-joyce": 1454156
+   },
+   "cashOnHand": {
+    "beatty-joyce": 2731737
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-04": {
+   "receipts": {
+    "jordan-jim": 5617702,
+    "kolasinski-joshua": 26211
+   },
+   "cashOnHand": {
+    "jordan-jim": 3051863,
+    "kolasinski-joshua": 3850
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-05": {
+   "receipts": {
+    "latta-bob": 1772110,
+    "shaver-brian": 59140
+   },
+   "cashOnHand": {
+    "latta-bob": 799134,
+    "shaver-brian": 39323
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-06": {
+   "receipts": {
+    "rulli-michael": 1419957,
+    "kirtley-elizabeth": 11432
+   },
+   "cashOnHand": {
+    "rulli-michael": 417633,
+    "kirtley-elizabeth": 4373
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-07": {
+   "receipts": {
+    "miller-max": 3324942,
+    "poindexter-brian": 3720342
+   },
+   "cashOnHand": {
+    "miller-max": 135629,
+    "poindexter-brian": 793675
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-08": {
+   "receipts": {
+    "davidson-warren": 757166,
+    "enoch-vanessa": 3125
+   },
+   "cashOnHand": {
+    "davidson-warren": 298274,
+    "enoch-vanessa": -727
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-09": {
+   "receipts": {
+    "kaptur-marcy": 5910481,
+    "merrin-derek": 2217821
+   },
+   "cashOnHand": {
+    "kaptur-marcy": 697508,
+    "merrin-derek": 449466
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-10": {
+   "receipts": {
+    "turner-mike": 1315094,
+    "knickerbocker-kristina": 1015878,
+    "mcmasters-thomas": 0
+   },
+   "cashOnHand": {
+    "turner-mike": 325250,
+    "knickerbocker-kristina": 133445,
+    "mcmasters-thomas": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-11": {
+   "receipts": {
+    "brown-shontel": 1566468,
+    "kirchner-mike": 0
+   },
+   "cashOnHand": {
+    "brown-shontel": 1244617,
+    "kirchner-mike": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-12": {
+   "receipts": {
+    "balderson-troy": 2187393,
+    "christian-jerrad": 139968
+   },
+   "cashOnHand": {
+    "balderson-troy": 1062979,
+    "christian-jerrad": 24079
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-13": {
+   "receipts": {
+    "sykes-emilia": 3990519,
+    "coleman-carey": 169537,
+    "dixit-sandeep": 92372
+   },
+   "cashOnHand": {
+    "sykes-emilia": 941758,
+    "coleman-carey": 62793,
+    "dixit-sandeep": 2044
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-14": {
+   "receipts": {
+    "joyce-david": 1763174,
+    "jukic-maria": 118360
+   },
+   "cashOnHand": {
+    "joyce-david": 2201696,
+    "jukic-maria": 38447
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OH-15": {
+   "receipts": {
+    "carey-mike": 4184981,
+    "barrington-brennan": 0,
+    "leonard-don": 1329844
+   },
+   "cashOnHand": {
+    "carey-mike": 370343,
+    "barrington-brennan": 0,
+    "leonard-don": 97707
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OK-01": {
+   "receipts": {
+    "croisant-john": 217469,
+    "tedford-mark": 2490274
+   },
+   "cashOnHand": {
+    "croisant-john": 38289,
+    "tedford-mark": 157345
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OK-02": {
+   "receipts": {
+    "brecheen-josh": 250176,
+    "hopkins-ronnie": 0,
+    "wade-brandon": 7983
+   },
+   "cashOnHand": {
+    "brecheen-josh": 71201,
+    "hopkins-ronnie": 0,
+    "wade-brandon": -280
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OK-03": {
+   "receipts": {
+    "lucas-frank": 1055085,
+    "byrd-suzie": 18188
+   },
+   "cashOnHand": {
+    "lucas-frank": 570474,
+    "byrd-suzie": 9508
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OK-04": {
+   "receipts": {
+    "cole-tom": 4281681,
+    "jacob-mitchell": 121500
+   },
+   "cashOnHand": {
+    "cole-tom": 2370395,
+    "jacob-mitchell": 19451
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OK-05": {
+   "receipts": {
+    "bice-stephanie": 2476529,
+    "henri-robert": 6361,
+    "nelson-jena": 821989
+   },
+   "cashOnHand": {
+    "bice-stephanie": 1123989,
+    "henri-robert": 1672,
+    "nelson-jena": 108543
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OR-01": {
+   "receipts": {
+    "bonamici-suzanne": 1025138,
+    "kahl-barbara": 17728
+   },
+   "cashOnHand": {
+    "bonamici-suzanne": 518634,
+    "kahl-barbara": 5412
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OR-02": {
+   "receipts": {
+    "bentz-cliff": 1339192,
+    "beck-chris": 276515
+   },
+   "cashOnHand": {
+    "bentz-cliff": 1440096,
+    "beck-chris": 112666
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OR-03": {
+   "receipts": {
+    "dexter-maxine": 1297975,
+    "ayles-loran": 0
+   },
+   "cashOnHand": {
+    "dexter-maxine": 188640,
+    "ayles-loran": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OR-04": {
+   "receipts": {
+    "hoyle-val": 1652428,
+    "despain-monique": 921876,
+    "filip-justin": 4636
+   },
+   "cashOnHand": {
+    "hoyle-val": 186656,
+    "despain-monique": 153576,
+    "filip-justin": 3616
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OR-05": {
+   "receipts": {
+    "bynum-janelle": 4737332,
+    "adair-patti": 682239,
+    "townsend-andrea": 0
+   },
+   "cashOnHand": {
+    "bynum-janelle": 2175981,
+    "adair-patti": 122585,
+    "townsend-andrea": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:OR-06": {
+   "receipts": {
+    "salinas-andrea": 1984299,
+    "russ-david": 13166
+   },
+   "cashOnHand": {
+    "salinas-andrea": 636057,
+    "russ-david": -550
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-01": {
+   "receipts": {
+    "fitzpatrick-brian": 8021376,
+    "harvie-bob": 3167942
+   },
+   "cashOnHand": {
+    "fitzpatrick-brian": 709097,
+    "harvie-bob": 409413
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-02": {
+   "receipts": {
+    "boyle-brendan": 2883855
+   },
+   "cashOnHand": {
+    "boyle-brendan": 5894247
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-03": {
+   "receipts": {
+    "mahoney-dennis": 37385,
+    "rabb-chris": 1457912
+   },
+   "cashOnHand": {
+    "mahoney-dennis": 2565,
+    "rabb-chris": 90880
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-04": {
+   "receipts": {
+    "dean-madeleine": 1966148,
+    "stuski-aurora": 9750
+   },
+   "cashOnHand": {
+    "dean-madeleine": 1360165,
+    "stuski-aurora": 2354
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-05": {
+   "receipts": {
+    "scanlon-mary": 1340757,
+    "manganaro-nicholas": 21318
+   },
+   "cashOnHand": {
+    "scanlon-mary": 471706,
+    "manganaro-nicholas": 9335
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-06": {
+   "receipts": {
+    "houlahan-chrissy": 2086891,
+    "young-marty": 459245
+   },
+   "cashOnHand": {
+    "houlahan-chrissy": 4147728,
+    "young-marty": 101641
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-07": {
+   "receipts": {
+    "mackenzie-ryan": 5296664,
+    "brooks-bob": 5347353
+   },
+   "cashOnHand": {
+    "mackenzie-ryan": 1069993,
+    "brooks-bob": 741579
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-08": {
+   "receipts": {
+    "bresnahan-rob": 6519139,
+    "cognetti-paige": 7502359
+   },
+   "cashOnHand": {
+    "bresnahan-rob": 732724,
+    "cognetti-paige": 243672
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-09": {
+   "receipts": {
+    "meuser-dan": 2129641,
+    "wallace-rachel": 1145383
+   },
+   "cashOnHand": {
+    "meuser-dan": 29791,
+    "wallace-rachel": 250759
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-10": {
+   "receipts": {
+    "perry-scott": 6791519,
+    "stelson-janelle": 9234260
+   },
+   "cashOnHand": {
+    "perry-scott": 1023569,
+    "stelson-janelle": 2069306
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-11": {
+   "receipts": {
+    "smucker-lloyd": 1854590,
+    "mannion-nancy": 320444
+   },
+   "cashOnHand": {
+    "smucker-lloyd": 258808,
+    "mannion-nancy": 39681
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-12": {
+   "receipts": {
+    "lee-summer": 1630368,
+    "hayes-james": 80534
+   },
+   "cashOnHand": {
+    "lee-summer": 1713225,
+    "hayes-james": 11274
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-13": {
+   "receipts": {
+    "joyce-john": 2755440,
+    "farnham-beth": 107708
+   },
+   "cashOnHand": {
+    "joyce-john": 3587578,
+    "farnham-beth": 25092
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-14": {
+   "receipts": {
+    "reschenthaler-guy": 5037695,
+    "bradstock-alan": 406026
+   },
+   "cashOnHand": {
+    "reschenthaler-guy": 713105,
+    "bradstock-alan": 72837
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-15": {
+   "receipts": {
+    "thompson-glenn": 2152944,
+    "bilger-ray": 230753
+   },
+   "cashOnHand": {
+    "thompson-glenn": 703946,
+    "bilger-ray": 88914
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-16": {
+   "receipts": {
+    "kelly-mike": 1414935,
+    "wagner-justin": 247119
+   },
+   "cashOnHand": {
+    "kelly-mike": 1039192,
+    "wagner-justin": 62854
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:PA-17": {
+   "receipts": {
+    "deluzio-chris": 3815970,
+    "guy-tony": 211632
+   },
+   "cashOnHand": {
+    "deluzio-chris": 1223960,
+    "guy-tony": 26090
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:RI-01": {
+   "receipts": {
+    "amo-gabe": 1952763,
+    "desouza-pedro": 13118,
+    "keenan-kellie": 15435
+   },
+   "cashOnHand": {
+    "amo-gabe": 1998865,
+    "desouza-pedro": 112,
+    "keenan-kellie": 1465
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:RI-02": {
+   "receipts": {
+    "magaziner-seth": 1612495,
+    "mellor-vic": 3885929
+   },
+   "cashOnHand": {
+    "magaziner-seth": 1580194,
+    "mellor-vic": 44353
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:SC-01": {
+   "receipts": {
+    "honeycutt-jenny": 1291996,
+    "lacore-nancy": 4865630,
+    "reeside-bill": 115492
+   },
+   "cashOnHand": {
+    "honeycutt-jenny": 308018,
+    "lacore-nancy": 175304,
+    "reeside-bill": 3660
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:SC-02": {
+   "receipts": {
+    "wilson-joe": 1017186,
+    "khalifa-zyon": 29039
+   },
+   "cashOnHand": {
+    "wilson-joe": 137249,
+    "khalifa-zyon": 7148
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:SC-03": {
+   "receipts": {
+    "biggs-sheri": 706779,
+    "lehmacher-eunice": 98662
+   },
+   "cashOnHand": {
+    "biggs-sheri": 201218,
+    "lehmacher-eunice": 21976
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:SC-04": {
+   "receipts": {
+    "timmons-william": 1774180,
+    "ethridge-jessica": 963,
+    "mcclain-courtney": 130730
+   },
+   "cashOnHand": {
+    "timmons-william": 85603,
+    "ethridge-jessica": 480,
+    "mcclain-courtney": 50465
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:SC-05": {
+   "receipts": {
+    "climer-wes": 1132484,
+    "dittmer-mallory": 226553
+   },
+   "cashOnHand": {
+    "climer-wes": 269169,
+    "dittmer-mallory": 79564
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:SC-06": {
+   "receipts": {
+    "clyburn-jim": 1687458,
+    "peterson-john": 0
+   },
+   "cashOnHand": {
+    "clyburn-jim": 1827711,
+    "peterson-john": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:SC-07": {
+   "receipts": {
+    "fry-russell": 1985244,
+    "vincent-john": 640419
+   },
+   "cashOnHand": {
+    "fry-russell": 159187,
+    "vincent-john": 70347
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:SD-AL": {
+   "receipts": {
+    "gronli-nikki": 421803,
+    "jackley-marty": 1737520
+   },
+   "cashOnHand": {
+    "gronli-nikki": 22491,
+    "jackley-marty": 1050141
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TN-01": {
+   "receipts": {
+    "harshbarger-diana": 1536325,
+    "burke-kristi": 222585
+   },
+   "cashOnHand": {
+    "harshbarger-diana": 1898700,
+    "burke-kristi": 27318
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TN-02": {
+   "receipts": {
+    "burchett-tim": 3131315,
+    "barnett-michaela": 717842,
+    "heimerman-adam": 0
+   },
+   "cashOnHand": {
+    "burchett-tim": 914111,
+    "barnett-michaela": 130251,
+    "heimerman-adam": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TN-03": {
+   "receipts": {
+    "fleischmann-chuck": 2728034,
+    "golladay-anna": 164744,
+    "king-rodney": 7810,
+    "ownby-donnie": 0,
+    "roland-edward": 0
+   },
+   "cashOnHand": {
+    "fleischmann-chuck": 4895445,
+    "golladay-anna": 43309,
+    "king-rodney": 5,
+    "ownby-donnie": 0,
+    "roland-edward": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TN-04": {
+   "receipts": {
+    "desjarlais-scott": 667181,
+    "anders-jacob": 2267,
+    "broderick-victoria": 94217
+   },
+   "cashOnHand": {
+    "desjarlais-scott": 525034,
+    "anders-jacob": 805,
+    "broderick-victoria": 11848
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TN-05": {
+   "receipts": {
+    "hatcher-charlie": 1803851,
+    "molder-chaz": 3531778,
+    "oleary-micheal": 0
+   },
+   "cashOnHand": {
+    "hatcher-charlie": 474543,
+    "molder-chaz": 560495,
+    "oleary-micheal": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TN-06": {
+   "receipts": {
+    "croley-mike": 117168,
+    "garrett-johnny": 3000586
+   },
+   "cashOnHand": {
+    "croley-mike": 14342,
+    "garrett-johnny": 343418
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TN-07": {
+   "receipts": {
+    "epps-matt": 2646915,
+    "copeland-darden": 1257202,
+    "koontz-andrew": 5100,
+    "reynolds-lowell": 0
+   },
+   "cashOnHand": {
+    "epps-matt": 358455,
+    "copeland-darden": 73686,
+    "koontz-andrew": 4970,
+    "reynolds-lowell": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TN-08": {
+   "receipts": {
+    "kustoff-david": 2585197,
+    "kuhn-heidi": 112309,
+    "taylor-horace": 8119
+   },
+   "cashOnHand": {
+    "kustoff-david": 2719271,
+    "kuhn-heidi": 6589,
+    "taylor-horace": 145
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TN-09": {
+   "receipts": {
+    "pearson-justin": 4009058,
+    "taylor-brent": 2832273
+   },
+   "cashOnHand": {
+    "pearson-justin": 746128,
+    "taylor-brent": 524251
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-01": {
+   "receipts": {
+    "moran-nathaniel": 2380647,
+    "prince-yolanda": 33182
+   },
+   "cashOnHand": {
+    "moran-nathaniel": 959563,
+    "prince-yolanda": 8232
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-02": {
+   "receipts": {
+    "finnie-shaun": 3158588,
+    "toth-steve": 1035121
+   },
+   "cashOnHand": {
+    "finnie-shaun": 261649,
+    "toth-steve": 112380
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-03": {
+   "receipts": {
+    "self-keith": 887245,
+    "hunt-evan": 702786
+   },
+   "cashOnHand": {
+    "self-keith": 292331,
+    "hunt-evan": 56115
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-04": {
+   "receipts": {
+    "fallon-pat": 1024466,
+    "pearce-jason": 27749
+   },
+   "cashOnHand": {
+    "fallon-pat": 1099395,
+    "pearce-jason": 2712
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-05": {
+   "receipts": {
+    "gooden-lance": 1526218,
+    "hockett-chelsey": 56908
+   },
+   "cashOnHand": {
+    "gooden-lance": 1343838,
+    "hockett-chelsey": 27223
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-06": {
+   "receipts": {
+    "ellzey-jake": 5518242,
+    "minton-danny": 147189
+   },
+   "cashOnHand": {
+    "ellzey-jake": 2604671,
+    "minton-danny": 39638
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-07": {
+   "receipts": {
+    "fletcher-lizzie": 1846898,
+    "hale-alexander": 115678,
+    "ngabo-espoir": 3133
+   },
+   "cashOnHand": {
+    "fletcher-lizzie": 1492810,
+    "hale-alexander": 19119,
+    "ngabo-espoir": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-08": {
+   "receipts": {
+    "jones-laura": 30782,
+    "steinmann-jessica": 2441284
+   },
+   "cashOnHand": {
+    "jones-laura": 4115,
+    "steinmann-jessica": 79371
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-09": {
+   "receipts": {
+    "gutierrez-leticia": 215053,
+    "mealer-alex": 2782240
+   },
+   "cashOnHand": {
+    "gutierrez-leticia": 110892,
+    "mealer-alex": 201272
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-10": {
+   "receipts": {
+    "gober-chris": 3103392,
+    "rourk-caitlin": 576475
+   },
+   "cashOnHand": {
+    "gober-chris": 165565,
+    "rourk-caitlin": 79336
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-11": {
+   "receipts": {
+    "pfluger-august": 3609434,
+    "reynolds-claire": 128535
+   },
+   "cashOnHand": {
+    "pfluger-august": 2029824,
+    "reynolds-claire": 55769
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-12": {
+   "receipts": {
+    "goldman-craig": 1932745,
+    "prilliman-angela": 0
+   },
+   "cashOnHand": {
+    "goldman-craig": 1512501,
+    "prilliman-angela": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-13": {
+   "receipts": {
+    "jackson-ronny": 4806245,
+    "nair-mark": 137624
+   },
+   "cashOnHand": {
+    "jackson-ronny": 5396663,
+    "nair-mark": 2824
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-14": {
+   "receipts": {
+    "weber-randy": 1132032,
+    "bartie-thurman": 39403
+   },
+   "cashOnHand": {
+    "weber-randy": 928845,
+    "bartie-thurman": 4754
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-15": {
+   "receipts": {
+    "cruz-monica": 6814267,
+    "pulido-bobby": 6819247
+   },
+   "cashOnHand": {
+    "cruz-monica": 393812,
+    "pulido-bobby": 1269454
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-16": {
+   "receipts": {
+    "escobar-veronica": 1068096,
+    "bauman-adam": 3293
+   },
+   "cashOnHand": {
+    "escobar-veronica": 216768,
+    "bauman-adam": 2858
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-17": {
+   "receipts": {
+    "sessions-pete": 1323420,
+    "shepard-casey": 93531
+   },
+   "cashOnHand": {
+    "sessions-pete": 1033567,
+    "shepard-casey": 78198
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-18": {
+   "receipts": {
+    "menefee-christian": 3761777,
+    "whitfield-ronald": 0
+   },
+   "cashOnHand": {
+    "menefee-christian": 77685,
+    "whitfield-ronald": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-19": {
+   "receipts": {
+    "rable-kyle": 49030,
+    "sell-tom": 2502266
+   },
+   "cashOnHand": {
+    "rable-kyle": 6317,
+    "sell-tom": 268007
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-20": {
+   "receipts": {
+    "castro-joaquin": 592416,
+    "baez-edgardo": 69063
+   },
+   "cashOnHand": {
+    "castro-joaquin": 129317,
+    "baez-edgardo": 8531
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-21": {
+   "receipts": {
+    "hook-kristin": 388865,
+    "teixeira-mark": 4392606
+   },
+   "cashOnHand": {
+    "hook-kristin": 52250,
+    "teixeira-mark": 440539
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-22": {
+   "receipts": {
+    "scott-marquette": 68295,
+    "nehls-trever": 327410
+   },
+   "cashOnHand": {
+    "scott-marquette": 2630,
+    "nehls-trever": 74767
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-23": {
+   "receipts": {
+    "herrera-brandon": 3115205,
+    "mendoza-ben": 0,
+    "stout-katy": 1117715
+   },
+   "cashOnHand": {
+    "herrera-brandon": 318812,
+    "mendoza-ben": 0,
+    "stout-katy": 144424
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-24": {
+   "receipts": {
+    "duyne-beth": 3049506,
+    "burge-kevin": 334210
+   },
+   "cashOnHand": {
+    "duyne-beth": 1683212,
+    "burge-kevin": 81346
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-25": {
+   "receipts": {
+    "williams-roger": 1654633,
+    "sims-dione": 546
+   },
+   "cashOnHand": {
+    "williams-roger": 1205151,
+    "sims-dione": -3004
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-26": {
+   "receipts": {
+    "gill-brandon": 7939470,
+    "shook-steven": 35821
+   },
+   "cashOnHand": {
+    "gill-brandon": 2092335,
+    "shook-steven": 5603
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-27": {
+   "receipts": {
+    "cloud-michael": 1219653,
+    "lloyd-tanya": 270814
+   },
+   "cashOnHand": {
+    "cloud-michael": 275804,
+    "lloyd-tanya": 19679
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-28": {
+   "receipts": {
+    "cuellar-henry": 3043039,
+    "tijerina-tano": 1862407
+   },
+   "cashOnHand": {
+    "cuellar-henry": 657231,
+    "tijerina-tano": 113050
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-29": {
+   "receipts": {
+    "garcia-sylvia": 1201322,
+    "fierro-martha": 585
+   },
+   "cashOnHand": {
+    "garcia-sylvia": 235764,
+    "fierro-martha": 492
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-30": {
+   "receipts": {
+    "haynes-frederick": 694865,
+    "jackson-everett": 25349
+   },
+   "cashOnHand": {
+    "haynes-frederick": 159036,
+    "jackson-everett": 2463
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-31": {
+   "receipts": {
+    "carter-john": 1522250,
+    "early-justin": 291880,
+    "stoker-greg": 89121
+   },
+   "cashOnHand": {
+    "carter-john": 159171,
+    "early-justin": 20848,
+    "stoker-greg": 9151
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-32": {
+   "receipts": {
+    "barrios-dan": 160379,
+    "yarbrough-jace": 1261760
+   },
+   "cashOnHand": {
+    "barrios-dan": 8745,
+    "yarbrough-jace": 123094
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-33": {
+   "receipts": {
+    "allred-colin": 8134456
+   },
+   "cashOnHand": {
+    "allred-colin": 298428
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-34": {
+   "receipts": {
+    "gonzalez-vicente": 5211344,
+    "espinoza-eddie": 0,
+    "flores-eric": 4009074
+   },
+   "cashOnHand": {
+    "gonzalez-vicente": 1396949,
+    "espinoza-eddie": 0,
+    "flores-eric": 246427
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-35": {
+   "receipts": {
+    "cruz-carlos": 2021118,
+    "garcia-johnny": 2201579
+   },
+   "cashOnHand": {
+    "cruz-carlos": 312607,
+    "garcia-johnny": 149503
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-36": {
+   "receipts": {
+    "babin-brian": 1201014,
+    "hart-rhonda": 24316
+   },
+   "cashOnHand": {
+    "babin-brian": 928300,
+    "hart-rhonda": 5935
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-37": {
+   "receipts": {
+    "casar-greg": 1382791,
+    "pena-lauren": 132162
+   },
+   "cashOnHand": {
+    "casar-greg": 544085,
+    "pena-lauren": 4454
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:TX-38": {
+   "receipts": {
+    "bonck-jon": 2202298,
+    "mcdonough-melissa": 124711,
+    "mcmenemy-alex": 9888
+   },
+   "cashOnHand": {
+    "bonck-jon": 248170,
+    "mcdonough-melissa": 44442,
+    "mcmenemy-alex": 746
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:UT-01": {
+   "receipts": {
+    "mcadams-ben": 2813807,
+    "owen-riley": 164070,
+    "west-jesse": 0
+   },
+   "cashOnHand": {
+    "mcadams-ben": 377817,
+    "owen-riley": 9503,
+    "west-jesse": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:UT-02": {
+   "receipts": {
+    "moore-blake": 2796221,
+    "bowen-carlton": 6977,
+    "crosby-peter": 153918,
+    "moesinger-robert": 11606
+   },
+   "cashOnHand": {
+    "moore-blake": 1608084,
+    "bowen-carlton": 1079,
+    "crosby-peter": 47879,
+    "moesinger-robert": -556
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:UT-03": {
+   "receipts": {
+    "maloy-celeste": 1652695,
+    "easley-cassie": 0,
+    "hooslyn-adonis": 762,
+    "stoddard-michael": 0,
+    "udell-kent": 99541
+   },
+   "cashOnHand": {
+    "maloy-celeste": 359561,
+    "easley-cassie": 0,
+    "hooslyn-adonis": -27,
+    "stoddard-michael": 0,
+    "udell-kent": 5716
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:UT-04": {
+   "receipts": {
+    "burt-steven": 39744,
+    "kennedy-mike": 1209378,
+    "larsen-jonny": 88136,
+    "wright-taylor": 0
+   },
+   "cashOnHand": {
+    "burt-steven": 1782,
+    "kennedy-mike": 448818,
+    "larsen-jonny": 4861,
+    "wright-taylor": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VT-AL": {
+   "receipts": {
+    "balint-becca": 1178503,
+    "malloy-gerald": 189568,
+    "ortiz-adam": 0,
+    "walton-ryan": 0
+   },
+   "cashOnHand": {
+    "balint-becca": 612016,
+    "malloy-gerald": 34220,
+    "ortiz-adam": 0,
+    "walton-ryan": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VA-01": {
+   "receipts": {
+    "wittman-rob": 5432689,
+    "taylor-shannon": 4607379
+   },
+   "cashOnHand": {
+    "wittman-rob": 797346,
+    "taylor-shannon": 598734
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VA-02": {
+   "receipts": {
+    "kiggans-jen": 7589812,
+    "baker-j": 8349,
+    "luria-elaine": 8044064,
+    "staten-geral": 0
+   },
+   "cashOnHand": {
+    "kiggans-jen": 1292408,
+    "baker-j": 6497,
+    "luria-elaine": 478862,
+    "staten-geral": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VA-03": {
+   "receipts": {
+    "scott-bobby": 882179,
+    "gaines-makiba": 0,
+    "rivera-edwin": 15391,
+    "woll-stephen": 67506
+   },
+   "cashOnHand": {
+    "scott-bobby": 162483,
+    "gaines-makiba": 0,
+    "rivera-edwin": 4635,
+    "woll-stephen": 15194
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VA-04": {
+   "receipts": {
+    "mcclellan-jennifer": 1546997,
+    "murray-robert": 1550
+   },
+   "cashOnHand": {
+    "mcclellan-jennifer": 222830,
+    "murray-robert": 1509
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VA-05": {
+   "receipts": {
+    "mcguire-john": 2419702,
+    "harvey-cooke": 0,
+    "perriello-tom": 3762301
+   },
+   "cashOnHand": {
+    "mcguire-john": 382053,
+    "harvey-cooke": 0,
+    "perriello-tom": 684166
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VA-06": {
+   "receipts": {
+    "cline-ben": 1908289,
+    "macy-beth": 2926193
+   },
+   "cashOnHand": {
+    "cline-ben": 527303,
+    "macy-beth": 362878
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VA-07": {
+   "receipts": {
+    "vindman-eugene": 16339250,
+    "ahrar-alaha": 28923,
+    "ertle-joshua": 0,
+    "ollivant-doug": 389127,
+    "terry-randall": 56462
+   },
+   "cashOnHand": {
+    "vindman-eugene": 5225595,
+    "ahrar-alaha": 3660,
+    "ertle-joshua": 0,
+    "ollivant-doug": 109216,
+    "terry-randall": 12246
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VA-08": {
+   "receipts": {
+    "beyer-don": 2529480,
+    "sabio-tony": 44256,
+    "sharman-tim": 45422
+   },
+   "cashOnHand": {
+    "beyer-don": 848727,
+    "sabio-tony": 6205,
+    "sharman-tim": 50
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VA-09": {
+   "receipts": {
+    "griffith-morgan": 2173785,
+    "powers-joy": 256578
+   },
+   "cashOnHand": {
+    "griffith-morgan": 879117,
+    "powers-joy": 59671
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VA-10": {
+   "receipts": {
+    "subramanyam-suhas": 1707804,
+    "beckwith-dave": 256489,
+    "malik-ahsen": 0
+   },
+   "cashOnHand": {
+    "subramanyam-suhas": 746033,
+    "beckwith-dave": 31847,
+    "malik-ahsen": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:VA-11": {
+   "receipts": {
+    "walkinshaw-james": 3270621,
+    "blais-dianne": 0,
+    "purves-arthur": 38665
+   },
+   "cashOnHand": {
+    "walkinshaw-james": 1143115,
+    "blais-dianne": 0,
+    "purves-arthur": 19735
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WA-01": {
+   "receipts": {
+    "delbene-suzan": 4281272,
+    "silva-mary": 8479
+   },
+   "cashOnHand": {
+    "delbene-suzan": 1035589,
+    "silva-mary": 1299
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WA-02": {
+   "receipts": {
+    "larsen-rick": 2625476,
+    "feller-edwin": 11338
+   },
+   "cashOnHand": {
+    "larsen-rick": 537476,
+    "feller-edwin": 6843
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WA-03": {
+   "receipts": {
+    "perez-marie": 9472267,
+    "braun-john": 3311756
+   },
+   "cashOnHand": {
+    "perez-marie": 234520,
+    "braun-john": 671919
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WA-04": {
+   "receipts": {
+    "duresky-john": 459020,
+    "mckinney-amanda": 1448474
+   },
+   "cashOnHand": {
+    "duresky-john": 83691,
+    "mckinney-amanda": 217376
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WA-05": {
+   "receipts": {
+    "baumgartner-michael": 2208415,
+    "conroy-carmela": 840423
+   },
+   "cashOnHand": {
+    "baumgartner-michael": 689915,
+    "conroy-carmela": 90193
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WA-06": {
+   "receipts": {
+    "randall-emily": 1422767,
+    "fox-teresa": 70639
+   },
+   "cashOnHand": {
+    "randall-emily": 168665,
+    "fox-teresa": 10880
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WA-07": {
+   "receipts": {
+    "jayapal-pramila": 2920967,
+    "sheth-nirav": 71544
+   },
+   "cashOnHand": {
+    "jayapal-pramila": 1753241,
+    "sheth-nirav": 4877
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WA-08": {
+   "receipts": {
+    "schrier-kim": 3766607,
+    "meline-spencer": 157774
+   },
+   "cashOnHand": {
+    "schrier-kim": 3216892,
+    "meline-spencer": 72721
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WA-09": {
+   "receipts": {
+    "smith-adam": 2202051,
+    "basler-doug": 44411
+   },
+   "cashOnHand": {
+    "smith-adam": 627352,
+    "basler-doug": 9249
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WA-10": {
+   "receipts": {
+    "strickland-marilyn": 1892576,
+    "chung-chris": 0
+   },
+   "cashOnHand": {
+    "strickland-marilyn": 608762,
+    "chung-chris": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WV-01": {
+   "receipts": {
+    "miller-carol": 2036643,
+    "spencer-belinda": 0,
+    "george-vince": 311586
+   },
+   "cashOnHand": {
+    "miller-carol": 505035,
+    "spencer-belinda": 0,
+    "george-vince": 3138
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WV-02": {
+   "receipts": {
+    "moore-riley": 1617727,
+    "parsi-ace": 276741
+   },
+   "cashOnHand": {
+    "moore-riley": 580625,
+    "parsi-ace": 88775
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WI-01": {
+   "receipts": {
+    "steil-bryan": 6393553,
+    "berman-mitchell": 1977099
+   },
+   "cashOnHand": {
+    "steil-bryan": 2243605,
+    "berman-mitchell": 351558
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WI-02": {
+   "receipts": {
+    "pocan-mark": 1025263
+   },
+   "cashOnHand": {
+    "pocan-mark": 881636
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WI-03": {
+   "receipts": {
+    "orden-derrick": 9101596,
+    "cooke-rebecca": 12675997,
+    "kent-alexander": 0,
+    "provance-rustin": 0
+   },
+   "cashOnHand": {
+    "orden-derrick": 1165671,
+    "cooke-rebecca": 447387,
+    "kent-alexander": 0,
+    "provance-rustin": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WI-04": {
+   "receipts": {
+    "moore-gwen": 1319135,
+    "rogers-tim": 0
+   },
+   "cashOnHand": {
+    "moore-gwen": 45067,
+    "rogers-tim": 0
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WI-05": {
+   "receipts": {
+    "fitzgerald-scott": 1729317,
+    "beck-andrew": 14612
+   },
+   "cashOnHand": {
+    "fitzgerald-scott": 1206615,
+    "beck-andrew": 3158
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WI-06": {
+   "receipts": {
+    "grothman-glenn": 1209007,
+    "arndt-matthew": 2210,
+    "fitzgibbon-elizabeth": 21161,
+    "smith-brad": 322261,
+    "thurow-michael": 195140
+   },
+   "cashOnHand": {
+    "grothman-glenn": 615525,
+    "arndt-matthew": 1710,
+    "fitzgibbon-elizabeth": 3671,
+    "smith-brad": 91303,
+    "thurow-michael": 8274
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WI-07": {
+   "receipts": {
+    "alfonso-michael": 1770041,
+    "clark-fred": 863780
+   },
+   "cashOnHand": {
+    "alfonso-michael": 426939,
+    "clark-fred": 260844
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WI-08": {
+   "receipts": {
+    "wied-tony": 1354324,
+    "crosson-rick": 168412
+   },
+   "cashOnHand": {
+    "wied-tony": 242366,
+    "crosson-rick": 62027
+   },
+   "asOf": "2026-10-22"
+  },
+  "house:WY-AL": {
+   "receipts": {
+    "gray-chuck": 2011264,
+    "haggit-jeffrey": 0,
+    "kinney-lisa": 99131
+   },
+   "cashOnHand": {
+    "gray-chuck": 161175,
+    "haggit-jeffrey": 0,
+    "kinney-lisa": 33081
+   },
+   "asOf": "2026-10-22"
   }
  },
  "unmatchedFecTop": [
@@ -485,6 +5613,14 @@
    "district": null,
    "party": "DEM",
    "receipts": 31560943
+  },
+  {
+   "id": "H6MD08549",
+   "name": "TRONE, DAVID",
+   "state": "MD",
+   "district": "06",
+   "party": "DEM",
+   "receipts": 26216747
   },
   {
    "id": "S0SC00149",
@@ -551,6 +5687,22 @@
    "receipts": 12372938
   },
   {
+   "id": "H4FL01247",
+   "name": "GROSS, KEITH",
+   "state": "FL",
+   "district": "02",
+   "party": "REP",
+   "receipts": 12340831
+  },
+  {
+   "id": "H6NY17213",
+   "name": "CHATZKY, PETER",
+   "state": "NY",
+   "district": "17",
+   "party": "DEM",
+   "receipts": 11707922
+  },
+  {
    "id": "S6MI00392",
    "name": "MCMORROW, MALLORY",
    "state": "MI",
@@ -575,12 +5727,36 @@
    "receipts": 9082021
   },
   {
+   "id": "H2KY04121",
+   "name": "MASSIE, THOMAS H.",
+   "state": "KY",
+   "district": "04",
+   "party": "REP",
+   "receipts": 8891772
+  },
+  {
+   "id": "H2NY10308",
+   "name": "GOLDMAN, DANIEL",
+   "state": "NY",
+   "district": "10",
+   "party": "DEM",
+   "receipts": 8699480
+  },
+  {
    "id": "S2MT00096",
    "name": "DAINES, STEVE",
    "state": "MT",
    "district": "00",
    "party": "REP",
    "receipts": 8405689
+  },
+  {
+   "id": "H2TX30178",
+   "name": "CROCKETT, JASMINE",
+   "state": "TX",
+   "district": "30",
+   "party": "DEM",
+   "receipts": 8276008
   },
   {
    "id": "S4NC00162",
@@ -623,12 +5799,28 @@
    "receipts": 7323301
   },
   {
+   "id": "H6NY12347",
+   "name": "CONWAY, GEORGE",
+   "state": "NY",
+   "district": "12",
+   "party": "DEM",
+   "receipts": 7097493
+  },
+  {
    "id": "S4IA00129",
    "name": "ERNST, JONI K",
    "state": "IA",
    "district": "00",
    "party": "REP",
    "receipts": 6964047
+  },
+  {
+   "id": "H4MD05235",
+   "name": "BAREEBE, QUINCY",
+   "state": "MD",
+   "district": "05",
+   "party": "DEM",
+   "receipts": 6816672
   },
   {
    "id": "S6MA00296",
@@ -663,12 +5855,52 @@
    "receipts": 5924362
   },
   {
+   "id": "H6FL19129",
+   "name": "OBERWEIS, JAMES MR.",
+   "state": "FL",
+   "district": "19",
+   "party": "REP",
+   "receipts": 5442627
+  },
+  {
+   "id": "H6MA06152",
+   "name": "BECCIA, JOHN",
+   "state": "MA",
+   "district": "06",
+   "party": "DEM",
+   "receipts": 5197587
+  },
+  {
+   "id": "H6FL22206",
+   "name": "KEISER, BELINDA",
+   "state": "FL",
+   "district": "22",
+   "party": "REP",
+   "receipts": 5048481
+  },
+  {
+   "id": "H4NY21079",
+   "name": "STEFANIK, ELISE M.",
+   "state": "NY",
+   "district": "21",
+   "party": "REP",
+   "receipts": 5005266
+  },
+  {
    "id": "S6OH00387",
    "name": "ODE, FREDERICK J",
    "state": "OH",
    "district": "00",
    "party": "DEM",
    "receipts": 5001939
+  },
+  {
+   "id": "H6KY06259",
+   "name": "ARQUETTE, ADAM PEREZ",
+   "state": "KY",
+   "district": "06",
+   "party": "REP",
+   "receipts": 4990948
   },
   {
    "id": "S2OK00186",
@@ -679,125 +5911,21 @@
    "receipts": 4845484
   },
   {
-   "id": "S0AL00230",
-   "name": "TUBERVILLE, THOMAS H",
-   "state": "AL",
-   "district": "00",
+   "id": "H4NV03225",
+   "name": "O'DONNELL, MARTY",
+   "state": "NV",
+   "district": "03",
    "party": "REP",
-   "receipts": 3994826
+   "receipts": 4835730
   },
   {
-   "id": "S6CO00549",
-   "name": "CHEW, ROBERT",
-   "state": "CO",
-   "district": "00",
-   "party": "FWD",
-   "receipts": 3603854
-  },
-  {
-   "id": "S6IL00474",
-   "name": "KELLY, ROBIN",
-   "state": "IL",
-   "district": null,
-   "party": "DEM",
-   "receipts": 3509919
-  },
-  {
-   "id": "S6SC04445",
-   "name": "NORMAN, RALPH",
-   "state": "SC",
-   "district": "00",
+   "id": "H6FL25035",
+   "name": "CARBONARA, MICHAEL",
+   "state": "FL",
+   "district": "22",
    "party": "REP",
-   "receipts": 3176283
-  },
-  {
-   "id": "S8MN00578",
-   "name": "SMITH, TINA",
-   "state": "MN",
-   "district": "00",
-   "party": "DEM",
-   "receipts": 3057267
-  },
-  {
-   "id": "S6NC00340",
-   "name": "NICKEL, WILEY",
-   "state": "NC",
-   "district": "00",
-   "party": "DEM",
-   "receipts": 2972089
-  },
-  {
-   "id": "S0WY00137",
-   "name": "LUMMIS, CYNTHIA MARIE MRS.",
-   "state": "WY",
-   "district": "00",
-   "party": "REP",
-   "receipts": 2718017
-  },
-  {
-   "id": "S0NH00219",
-   "name": "SHAHEEN, JEANNE",
-   "state": "NH",
-   "district": "00",
-   "party": "DEM",
-   "receipts": 2672181
-  },
-  {
-   "id": "S0KY00339",
-   "name": "MCGRATH, AMY",
-   "state": "KY",
-   "district": "00",
-   "party": "DEM",
-   "receipts": 2384956
-  },
-  {
-   "id": "S6IL00151",
-   "name": "DURBIN, RICHARD J.",
-   "state": "IL",
-   "district": "00",
-   "party": "DEM",
-   "receipts": 2381002
-  },
-  {
-   "id": "S6NH00166",
-   "name": "BROWN, SCOTT P.",
-   "state": "NH",
-   "district": "00",
-   "party": "REP",
-   "receipts": 2255700
-  },
-  {
-   "id": "S6KY00237",
-   "name": "CAMERON, DANIEL",
-   "state": "KY",
-   "district": "00",
-   "party": "REP",
-   "receipts": 2254149
-  },
-  {
-   "id": "S6TX00511",
-   "name": "HUNT, WESLEY",
-   "state": "TX",
-   "district": "00",
-   "party": "REP",
-   "receipts": 2154468
-  },
-  {
-   "id": "S6AL00468",
-   "name": "WALKER, RODNEY",
-   "state": "AL",
-   "district": "00",
-   "party": "REP",
-   "receipts": 2015963
-  },
-  {
-   "id": "S6AL00443",
-   "name": "HUDSON, JARED",
-   "state": "AL",
-   "district": "00",
-   "party": "REP",
-   "receipts": 1922302
+   "receipts": 4493768
   }
  ],
- "note": "DEMO_KEY (~30 req/hr): Senate only by default; pass --full to page House (~40 calls, auto-resumes from cache after 429 waits). Set FEC_API_KEY for 1,000/hr. House money skipped (run with --full)."
+ "note": "FEC_API_KEY from environment."
 }

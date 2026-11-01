@@ -1,22 +1,40 @@
 import type { Metadata } from "next";
-import { BallotLookupForm } from "@/components/ballot/ballot-lookup";
+import { BallotLookupSection } from "@/components/ballot/ballot-lookup";
+import { buildBallotIndex } from "@/components/ballot/ballot-races";
+import { ElectionDay } from "@/components/ballot/election-day";
+import { GetReady } from "@/components/ballot/get-ready";
+import { loadRaces, loadStates } from "@/data/reference/load";
+import { civicConfigured } from "@/lib/civic";
 import { pageMetadata } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMetadata({
   title: "Find Your Polling Place and Ballot for Nov 3, 2026",
-  description: "Enter your address to see your polling place, early-voting sites and the contests on your ballot for the Nov 3, 2026 election.",
+  description:
+    "Check your voter registration with Vote.org, find your polling place and see the contests on your ballot for the Nov 3, 2026 election, with links to every Senate, House and governor race.",
   path: "/ballot",
 });
 
 export default function BallotPage() {
+  // Whether the Google Civic key is set: without it the page leads with the state picker instead of an address form that can only fail.
+  const configured = civicConfigured();
+  const index = buildBallotIndex(loadRaces(), loadStates());
+
   return (
-    <div className="mx-auto max-w-3xl space-y-4">
-      <header className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">My Ballot</h1>
-        <p className="text-sm text-muted-foreground">Polling place, early voting and contests for your address</p>
+    <article className="max-w-6xl space-y-10">
+      <header className="page-header">
+        <h1 className="page-title">My Ballot</h1>
+        <p className="page-lede">Check your registration, find where to vote and see what&apos;s on your ballot.</p>
       </header>
-      <BallotLookupForm />
-      <p className="text-xs text-muted-foreground">Ballot information via the Google Civic Information API. Confirm details with your state or county election office.</p>
-    </div>
+
+      <ElectionDay />
+
+      {/* Phone: one column in reading order. Desktop: the Vote.org checklist beside the lookup, both in the first screen. */}
+      <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
+        <GetReady />
+        <div className="space-y-12">
+          <BallotLookupSection configured={configured} index={index} />
+        </div>
+      </div>
+    </article>
   );
 }

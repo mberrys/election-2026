@@ -29,14 +29,14 @@ export interface RaceContentInput {
   stateHistory?: HistoryRow;
   /** `history.districts[...]`, House races only. */
   district?: DistrictHistory;
-  /** Then & Now row built from this race's own poll (statewide races only). */
+  /** Flashback row built from this race's own poll (statewide races only). */
   row?: HistoryRowModel;
 }
 
 export const isRaceOffice = (o: string): o is RaceOffice => o === "senate" || o === "governor" || o === "house";
 
-/** "senate:TX" -> "senate-tx", "house:TX-15" -> "house-tx-15", "senate:FL-special" -> "senate-fl-special". */
-export const raceSlug = (meta: Pick<RaceMeta, "id">): string => meta.id.replace(":", "-").toLowerCase();
+export { raceSlug } from "@/lib/race-slug";
+import { raceSlug } from "@/lib/race-slug";
 
 const districtCode = (meta: RaceMeta): string => `${meta.state}-${meta.district ?? "AL"}`;
 

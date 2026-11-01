@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
-/** Plain header link; the current section is ink with a 2px underline (and aria-current for assistive tech). */
+/** Header link; the current section is ink with a chartreuse bar along the header's bottom edge (and aria-current). */
 export function NavLink({ href, children, className }: { href: string; children: React.ReactNode; className?: string }) {
   const pathname = usePathname();
   const active = href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
@@ -13,8 +13,9 @@ export function NavLink({ href, children, className }: { href: string; children:
       href={href}
       aria-current={active ? "page" : undefined}
       className={cn(
-        "px-2 py-1.5 text-muted-foreground underline-offset-[6px] decoration-2 transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-ring",
-        active && "font-semibold text-foreground underline decoration-foreground",
+        "relative flex h-full items-center whitespace-nowrap rounded-sm px-3 font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-ring",
+        "after:absolute after:inset-x-3 after:bottom-0 after:h-[3px] after:rounded-t-sm after:bg-signal after:opacity-0 after:transition-opacity hover:after:opacity-30",
+        active && "font-semibold text-foreground after:opacity-100 hover:after:opacity-100",
         className,
       )}
     >

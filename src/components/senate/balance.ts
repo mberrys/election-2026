@@ -69,6 +69,16 @@ export function flippedTo(meta: RaceMeta, race: LiveRace | undefined): Party | u
 
 const COMPETITIVE = new Set<RatingCode>(["lean-d", "tilt-d", "tossup", "tilt-r", "lean-r"]);
 
+/** Lean, tilt or toss-up, or unrated: races where a missing poll is itself worth saying. */
+export function isCompetitive(rating: RatingCode | undefined): boolean {
+  return !rating || COMPETITIVE.has(rating);
+}
+
+/** The race has produced something to show: votes, a call, or a runoff. Before that, live columns stay hidden. */
+export function hasResults(race: LiveRace | undefined): boolean {
+  return !!race && (race.totalVotes > 0 || isCalled(race) || race.status === "runoff");
+}
+
 /** A seat that could change hands: competitive rating, rating leaning away from the holder, or already flipped. */
 export function flipPossible(meta: RaceMeta, race: LiveRace | undefined): boolean {
   if (isCalled(race)) return flippedTo(meta, race) !== undefined;
@@ -77,6 +87,11 @@ export function flipPossible(meta: RaceMeta, race: LiveRace | undefined): boolea
   if (COMPETITIVE.has(rating)) return true;
   const lean = ratingLean(rating);
   return !meta.heldBy || lean !== meta.heldBy;
+}
+
+/** Name colour: the two major parties carry their ink; everyone else stays plain. */
+export function partyInk(party: Party | undefined): string | undefined {
+  return party === "D" ? "text-party-d-ink" : party === "R" ? "text-party-r-ink" : undefined;
 }
 
 export function pollMargin(meta: RaceMeta): number | undefined {

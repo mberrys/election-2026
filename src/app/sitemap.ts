@@ -34,5 +34,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...(lastModified ? { lastModified } : {}),
     }));
 
-  return [...pages, ...states, ...races];
+  const measures: MetadataRoute.Sitemap = loadRaces()
+    .filter((r) => r.office === "ballot")
+    .map((r) => ({
+      url: absoluteUrl(`/race/${raceSlug(r)}`),
+      changeFrequency: "daily",
+      priority: 0.5,
+      ...(lastModified ? { lastModified } : {}),
+    }));
+
+  return [...pages, ...states, ...races, ...measures];
 }

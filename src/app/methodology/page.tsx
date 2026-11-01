@@ -57,9 +57,9 @@ export default function MethodologyPage() {
         trailing candidate needs to pull even; anything over 100% is marked <em>impossible</em>.
       </p>
 
-      <h2>Then &amp; Now: polls against history</h2>
+      <h2>Flashback: polls against history</h2>
       <p>
-        The <a href="/history">Then &amp; Now</a> page sets current polling against past elections. History is the
+        The <a href="/history">Flashback</a> page sets current polling against past elections. History is the
         presidential result by state since 1976 (MIT Election Data + Science Lab), plus Senate and governor margins since
         1990 and House margins for 2022 and 2024 (Wikipedia). A place&apos;s <em>projected margin</em> is its race poll
         average where one exists. Where none does, it is the 2024 presidential margin moved by the national swing since

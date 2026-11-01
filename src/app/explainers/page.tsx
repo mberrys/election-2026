@@ -98,7 +98,7 @@ export default function ExplainersPage() {
       q: "What does “last time it voted this way” mean?",
       body: (
         <p>
-          For each state, <A href="/history">Then &amp; Now</A> takes the projected margin and finds the most recent election in
+          For each state, <A href="/history">Flashback</A> takes the projected margin and finds the most recent election in
           the dataset in which that state voted at least as far toward the same party. The presidential history covers{" "}
           {years.length} elections from {years[0]} to {years[years.length - 1]}; Senate and governor history starts in 1990; House
           history covers the current district map. “None {years[0]}–{years[years.length - 1]}” means no election in that range
@@ -193,12 +193,12 @@ export default function ExplainersPage() {
   ];
 
   return (
-    <article className="max-w-3xl space-y-6">
+    <article className="max-w-3xl space-y-10">
       <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/explainers", dateModified: loadPolls().builtAt })} />
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Explainers", path: "/explainers" }])} />
       <header className="space-y-1">
-        <h1 className="display text-2xl md:text-[1.75rem] font-bold tracking-tight">2026 election explainers</h1>
-        <p className="text-sm text-muted-foreground">Plain answers to the questions the board raises, with the numbers from the data on this site.</p>
+        <h1 className="page-title">2026 election explainers</h1>
+        <p className="page-lede">Plain answers to the questions the board raises, with the numbers from the data on this site.</p>
       </header>
 
       <nav aria-label="On this page">
@@ -216,7 +216,7 @@ export default function ExplainersPage() {
       <div className="space-y-4">
         {items.map((it) => (
           <section key={it.id} id={it.id} className="scroll-mt-20">
-            <h2 className="display text-lg font-bold tracking-tight">{it.q}</h2>
+            <h2 className="section-title">{it.q}</h2>
             <Card size="sm" className="mt-2">
               <CardContent className="text-sm text-muted-foreground">{it.body}</CardContent>
             </Card>

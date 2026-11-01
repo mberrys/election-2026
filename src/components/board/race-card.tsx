@@ -99,6 +99,51 @@ export function RaceCard({ live, meta, href, className }: { live?: LiveRace; met
   const showNeeds = trailer && needs != null && needs > 0 && needs <= NEEDS_CLOSE && (pctFrac ?? 0) >= NEEDS_MIN_IN && remainderW > 0.01;
   const remainderStart = 1 - remainderW;
 
+  // Before the first vote there is no margin, bar or status to show: the card is the matchup, the forecast and the polls.
+  if (!counting) {
+    const poll = meta?.polls;
+    const pm = poll ? poll.d - poll.r : undefined;
+    const pre = (
+      <Card className={cn("h-full gap-4 p-5 transition-colors hover:border-border-strong hover:bg-s3/40", className)}>
+        <div className="flex items-baseline justify-between gap-3">
+          <h3 className="min-w-0 truncate text-lg font-semibold leading-snug">{title}</h3>
+          {meta?.ratings.consensus && <RatingBadge rating={meta.ratings.consensus} className="shrink-0" />}
+        </div>
+        <div className="space-y-1.5">
+          {[d, r].map((c, i) =>
+            c ? (
+              <div key={c.id} className="flex items-baseline justify-between gap-3 text-base">
+                <span className={cn("truncate font-semibold", c.party === "D" ? "text-party-d-ink" : "text-party-r-ink")}>{c.name}</span>
+                <span className="shrink-0 text-sm text-muted-foreground">{c.incumbent ? "Incumbent" : c.party === "D" ? "Democrat" : "Republican"}</span>
+              </div>
+            ) : (
+              <div key={i} className="text-sm text-muted-foreground">
+                No {i === 0 ? "Democratic" : "Republican"} nominee
+              </div>
+            ),
+          )}
+        </div>
+        {pm == null ? (
+          <p className="mt-auto text-sm text-muted-foreground">No public polling average</p>
+        ) : (
+          <p className="mt-auto text-sm text-muted-foreground">
+            Poll average{" "}
+            <span className={cn("font-semibold", pm > 0 ? "text-party-d-ink" : pm < 0 ? "text-party-r-ink" : "text-foreground")}>
+              {Math.abs(pm) < 0.05 ? "Even" : `${pm > 0 ? "D" : "R"}+${Math.abs(pm).toFixed(1)}`}
+            </span>
+          </p>
+        )}
+      </Card>
+    );
+    return href ? (
+      <Link href={href} className="block h-full rounded-xl outline-none focus-visible:ring-[3px] focus-visible:ring-signal">
+        {pre}
+      </Link>
+    ) : (
+      pre
+    );
+  }
+
   const body = (
     <Card className={cn("relative h-full gap-3 p-3 transition-colors hover:border-border-strong", held && "pt-[22px]", className)}>
       {held && <div aria-hidden className="hazard absolute inset-x-0 top-0 h-2.5" />}

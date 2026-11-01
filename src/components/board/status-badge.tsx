@@ -13,7 +13,7 @@ const main = (p?: Party): Main | undefined => (p === "D" || p === "R" ? p : p ? 
  *   projected  → solid party fill + BB stamp, "Projected · Big Board"
  *   certified  → solid party fill + ink check (decided)
  *   counting   → dashed party outline on a tint when someone leads, else a neutral outline
- *   not started→ hatched swatch: nothing counted yet
+ *   not started→ nothing (no mark carries information before the first vote)
  */
 export function StatusBadge({
   status,
@@ -65,35 +65,22 @@ export function StatusBadge({
       );
     return <span className={cn(chip, "border border-border-strong text-muted-foreground", className)}>Counting</span>;
   }
-  return (
-    <span className={cn(chip, "border border-hairline font-medium text-muted-foreground", className)}>
-      <i aria-hidden className="hatch-sm inline-block h-3 w-3 rounded-[2px]" />
-      Polls open
-    </span>
-  );
+  // Nothing counted yet: no mark. Pages say when polls close instead.
+  return null;
 }
 
-const RAMP_BY_STRENGTH = { solid: 4, likely: 3, lean: 2, tilt: 1 } as const;
-
-/** Consensus rating: a forecast, not a count, so never a solid party block. Ramp square + label; toss-ups hatched. */
+/** Consensus rating: a forecast, not a count. One mark only: the label in the favoured party's ink, toss-ups in plain ink. */
 export function RatingBadge({ rating, className }: { rating?: RatingCode; className?: string }) {
   if (!rating) return null;
   const lean = rating.endsWith("-d") ? "d" : rating.endsWith("-r") ? "r" : null;
-  const step = lean ? RAMP_BY_STRENGTH[rating.split("-")[0] as keyof typeof RAMP_BY_STRENGTH] : null;
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-medium tnum",
+        "inline-flex items-center whitespace-nowrap text-sm font-semibold",
         lean === "d" ? "text-party-d-ink" : lean === "r" ? "text-party-r-ink" : "text-foreground",
         className,
       )}
-      title={ratingLabel[rating]}
     >
-      <i
-        aria-hidden
-        className={cn("inline-block h-3 w-3 shrink-0 rounded-[2px]", !lean && "hatch-sm")}
-        style={lean ? { background: `var(--ramp-${lean}-${step})` } : undefined}
-      />
       {ratingLabel[rating]}
     </span>
   );

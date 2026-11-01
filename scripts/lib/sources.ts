@@ -72,7 +72,7 @@ export const SOURCES: SourceEntry[] = [
     license: "CC0 1.0",
     attribution: "MIT Election Data and Science Lab, 2017, 'U.S. President 1976–2020' (extended to 2024), Harvard Dataverse, doi:10.7910/DVN/42MVDX.",
     cadence: "static",
-    usedFor: ["presidential margin by state and nationally, 1976–2024 (Then & Now history)"],
+    usedFor: ["presidential margin by state and nationally, 1976–2024 (Flashback history)"],
   },
   {
     id: "google-civic",

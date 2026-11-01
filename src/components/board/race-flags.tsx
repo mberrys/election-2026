@@ -10,7 +10,7 @@ const LABEL: Record<Flag["kind"], string> = {
   advisory: "Advisory",
 };
 
-/** Chips for paused counts, litigation and set-aside demands (amber). A challenge is context, not a finding: each says where it stands. */
+/** Labels for paused counts, litigation and set-aside demands, in amber text. A challenge is context, not a finding: each says where it stands. */
 export function RaceFlags({ flags, className, detailed = false }: { flags?: Flag[]; className?: string; detailed?: boolean }) {
   if (!flags?.length) return null;
   if (detailed) {
@@ -48,9 +48,8 @@ export function RaceFlags({ flags, className, detailed = false }: { flags?: Flag
         <span
           key={i}
           title={`${LABEL[f.kind]}${f.standing === "rejected" ? " (rejected)" : ""}: ${f.summary}${f.challengedBallots ? ` (~${f.challengedBallots.toLocaleString()} ballots)` : ""}`}
-          className="inline-flex items-center gap-1 whitespace-nowrap text-xs font-semibold text-alert-ink"
+          className="whitespace-nowrap text-sm font-semibold text-alert-ink"
         >
-          <i aria-hidden className="inline-block h-2.5 w-2.5 bg-alert" />
           {LABEL[f.kind]}
         </span>
       ))}

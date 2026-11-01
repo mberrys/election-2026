@@ -55,7 +55,7 @@
    "FEC candidate ids"
   ],
   "status": "ok",
-  "statusNote": "DEMO_KEY; offices S"
+  "statusNote": "env; offices S,H"
  },
  {
   "id": "tonmcg-county",
@@ -90,7 +90,7 @@
   "attribution": "MIT Election Data and Science Lab, 2017, 'U.S. President 1976–2020' (extended to 2024), Harvard Dataverse, doi:10.7910/DVN/42MVDX.",
   "cadence": "static",
   "usedFor": [
-   "presidential margin by state and nationally, 1976–2024 (Then & Now history)"
+   "presidential margin by state and nationally, 1976–2024 (Flashback history)"
   ],
   "status": "ok",
   "statusNote": "13 elections"

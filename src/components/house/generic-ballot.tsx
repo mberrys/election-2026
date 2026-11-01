@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { fmtMarginDR } from "@/lib/format";
 import { cn } from "@/lib/utils";
+import { shortDate } from "@/components/state/state-content";
 
 /**
  * 2024 national House popular vote, D − R points.
@@ -20,7 +21,7 @@ export type GenericBallotData = {
   votehub?: { d: number; r: number; n: number; asOf: string; source?: string; windowDays?: number; pollsters?: number };
 };
 
-const AXIS = 15; // bar spans R+15 … D+15
+const AXIS = 15; // bar spans D+15 … R+15, D on the left like every other margin scale on the site
 
 type Marker = { key: string; label: string; value: number; detail: string; kind: "avg" | "baseline" };
 
@@ -54,27 +55,27 @@ export function GenericBallotPanel({ generic, className }: { generic: GenericBal
     detail: HOUSE_NATIONAL_MARGIN_2024_SOURCE,
   });
 
-  const pos = (v: number) => `${((Math.max(-AXIS, Math.min(AXIS, v)) + AXIS) / (2 * AXIS)) * 100}%`;
+  const pos = (v: number) => `${((AXIS - Math.max(-AXIS, Math.min(AXIS, v))) / (2 * AXIS)) * 100}%`;
   const hasPolls = markers.some((m) => m.kind === "avg");
 
   return (
     <Card size="sm" className={className}>
       <CardHeader>
-        <CardTitle className="text-sm font-semibold">Generic ballot</CardTitle>
+        <CardTitle>Generic ballot</CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">
-        {!hasPolls && <p className="text-xs text-muted-foreground">No generic-ballot averages in the reference data.</p>}
+        {!hasPolls && <p className="text-sm text-muted-foreground">No generic-ballot averages in the reference data.</p>}
         <div className="relative pt-6 pb-5">
           {/* axis */}
           <div className="flex h-2 gap-px overflow-hidden rounded-sm" aria-hidden>
-            <div className="flex-1 bg-party-r-soft" />
-            <div className="flex-1 bg-uncalled/50" />
             <div className="flex-1 bg-party-d-soft" />
+            <div className="flex-1 bg-uncalled/50" />
+            <div className="flex-1 bg-party-r-soft" />
           </div>
-          <div className="absolute inset-x-0 top-6 h-2 flex justify-between text-[11px] text-muted-foreground tnum -translate-y-5">
-            <span>R+{AXIS}</span>
-            <span>Even</span>
+          <div className="absolute inset-x-0 top-6 h-2 flex justify-between text-xs text-muted-foreground tnum -translate-y-5">
             <span>D+{AXIS}</span>
+            <span>Even</span>
+            <span>R+{AXIS}</span>
           </div>
           {/* even tick */}
           <div className="absolute left-1/2 top-5 h-4 w-px bg-foreground/40 -translate-x-1/2" aria-hidden />
@@ -91,7 +92,7 @@ export function GenericBallotPanel({ generic, className }: { generic: GenericBal
                 {m.kind === "avg" ? (
                   <span className="block h-6 w-[3px] rounded-full bg-foreground outline outline-1 outline-background" />
                 ) : (
-                  <span className="block h-4 w-[2px] bg-stale" />
+                  <span className="block h-4 w-[2px] bg-muted-foreground" />
                 )}
               </TooltipTrigger>
               <TooltipContent side="top" className="max-w-xs">
@@ -104,25 +105,33 @@ export function GenericBallotPanel({ generic, className }: { generic: GenericBal
             </Tooltip>
           ))}
         </div>
-        <ul className="grid gap-1 text-xs">
+        <ul className="grid gap-1.5 text-sm">
           {markers.map((m) => (
             <li key={m.key} className="flex items-center justify-between gap-3">
               <span className="flex items-center gap-2 text-muted-foreground">
-                <span className={cn("inline-block h-3 rounded-full", m.kind === "avg" ? "w-[3px] bg-foreground" : "w-[2px] bg-stale")} />
+                <span className={cn("inline-block h-3 rounded-full", m.kind === "avg" ? "w-[3px] bg-foreground" : "w-[2px] bg-muted-foreground")} />
                 {m.label}
-                {m.kind === "avg" && <span className="opacity-70">({m.key === "rio" ? generic?.riotimes?.asOf : generic?.votehub?.asOf})</span>}
+                {m.kind === "avg" && <span>· {shortDate(m.key === "rio" ? generic?.riotimes?.asOf : generic?.votehub?.asOf)}</span>}
               </span>
               <span className={cn("tnum font-semibold", m.value > 0 ? "text-party-d-ink" : m.value < 0 ? "text-party-r-ink" : "")}>{fmtMarginDR(m.value)}</span>
             </li>
           ))}
         </ul>
         {hasPolls && (
-          <p className="text-[11px] text-muted-foreground leading-snug">
-            Rio Times average is an equal-weight mean of public averages (CC BY 4.0); VoteHub average CC BY 4.0.
-            {markers.filter((m) => m.kind === "avg").map((m) => ` ${m.label} is ${fmtMarginDR(m.value - HOUSE_NATIONAL_MARGIN_2024_DR)} toward D vs 2024.`).join("")}
+          <p className="text-xs leading-snug text-muted-foreground">
+            {shiftSentence(markers)} Averages: Rio Times (equal-weight mean of public averages) and VoteHub, both CC BY 4.0.
           </p>
         )}
       </CardContent>
     </Card>
   );
+}
+
+/** "The averages are D+11.2 and D+9.6 relative to the 2024 House vote." */
+function shiftSentence(markers: Marker[]): string {
+  const shifts = markers.filter((m) => m.kind === "avg").map((m) => fmtMarginDR(m.value - HOUSE_NATIONAL_MARGIN_2024_DR));
+  if (!shifts.length) return "";
+  return shifts.length === 1
+    ? `The average is ${shifts[0]} relative to the 2024 House vote.`
+    : `The averages are ${shifts.slice(0, -1).join(", ")} and ${shifts[shifts.length - 1]} relative to the 2024 House vote.`;
 }
