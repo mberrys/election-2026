@@ -346,7 +346,7 @@ function ChamberTable({
           </li>
         ))}
       </ul>
-      <div className="hidden rounded-lg border border-border bg-card md:block">
+      <div className="hidden rounded-lg bg-card md:block">
         <Table className="text-[15px]">
           <TableHeader>
             <TableRow className="hover:bg-transparent">
@@ -425,7 +425,7 @@ function InPlayPanel({
     .filter((c) => c.inPlay)
     .sort((a, b) => RATING_ORDER[a.rating!] - RATING_ORDER[b.rating!] || (a.split?.spare ?? 0) - (b.split?.spare ?? 0));
   return (
-    <div className="rounded-lg border border-border bg-card p-6 md:p-7">
+    <div className="rounded-lg bg-card p-6 md:p-7">
       <h2 className="section-title">Where control is in play</h2>
       <p className="mt-2 text-[15px] leading-relaxed text-ink-muted">
         {list.length} chambers are rated <Link href="/explainers#ratings" className="text-foreground underline underline-offset-4">toss-up, tilt or lean</Link> by <a href="https://centerforpolitics.org/crystalball/" target="_blank" rel="noreferrer" className="text-foreground underline underline-offset-4">Sabato&apos;s Crystal Ball</a>. Pick one to open its state.
@@ -527,7 +527,7 @@ function StatePanel({
   const chambers = chambersOf(entry);
   const gov = entry.governor;
   return (
-    <div className="space-y-5 rounded-lg border border-border bg-card p-6 md:p-7">
+    <div className="space-y-5 rounded-lg bg-card p-6 md:p-7">
       <div className="flex items-start justify-between gap-4">
         <div className="space-y-1.5">
           <h2 className="display text-[2rem] font-extrabold leading-none">{entry.name}</h2>

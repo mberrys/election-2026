@@ -86,7 +86,7 @@ export function StateRaces({ index, initial = "" }: { index: BallotIndex; initia
                     <Link
                       href={raceHref(r.id)}
                       aria-label={`${state.name} ${districtLabel(r.district ?? "")}`}
-                      className="flex h-12 items-center justify-center rounded-lg border border-border bg-card text-[15px] font-semibold text-foreground tabular-nums transition-colors hover:bg-s3"
+                      className="flex h-12 items-center justify-center rounded-lg bg-card text-[15px] font-semibold text-foreground tabular-nums transition-colors hover:bg-s3"
                     >
                       {Number(r.district)}
                     </Link>

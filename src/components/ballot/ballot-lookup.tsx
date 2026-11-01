@@ -215,7 +215,7 @@ function Results({ data, index }: { data: BallotLookup; index: BallotIndex }) {
       {groups.map((g) => (
         <div key={g.key}>
           <GroupHeading note={`${g.items.length} ${g.items.length === 1 ? "contest" : "contests"}`}>{g.label}</GroupHeading>
-          <ul className="divide-y divide-border overflow-hidden rounded-lg border border-border bg-card">
+          <ul className="divide-y divide-border overflow-hidden rounded-lg bg-card">
             {g.items.map((it, i) => (
               <ContestRow key={`${it.contest.title}-${i}`} contest={it.contest} race={it.race} stateName={stateName} />
             ))}
@@ -235,7 +235,7 @@ function Results({ data, index }: { data: BallotLookup; index: BallotIndex }) {
       {office && (office.name || office.url || office.phone) ? (
         <div>
           <GroupHeading>Your election office</GroupHeading>
-          <div className="space-y-2 rounded-lg border border-border bg-card px-5 py-4 text-[15px] leading-relaxed text-ink-muted">
+          <div className="space-y-2 rounded-lg bg-card px-5 py-4 text-[15px] leading-relaxed text-ink-muted">
             {office.name ? <p className="text-[18px] font-semibold leading-snug text-foreground">{office.name}</p> : null}
             <p className="flex flex-wrap gap-x-5 gap-y-1">
               {office.url && safeUrl(office.url) ? <ExternalLink href={safeUrl(office.url)!}>Election information</ExternalLink> : null}
@@ -279,7 +279,7 @@ function Places({ title, places, dates = false }: { title: string; places: Place
   return (
     <div>
       <GroupHeading note={places.length > 1 ? `${places.length} locations` : undefined}>{title}</GroupHeading>
-      <ul className="divide-y divide-border overflow-hidden rounded-lg border border-border bg-card">
+      <ul className="divide-y divide-border overflow-hidden rounded-lg bg-card">
         {shown.map((p, i) => {
           const ended = dates && !!today && isDay(p.endDate) && p.endDate < today;
           const { title: heading, address } = splitPlace(p);

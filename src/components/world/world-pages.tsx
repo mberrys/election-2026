@@ -152,7 +152,7 @@ export function WorldCountryPage({ lang, country: c }: { lang: LangCode; country
         </p>
       </header>
 
-      <dl className="grid grid-cols-2 gap-x-8 gap-y-8 rounded-lg border border-border bg-card px-6 py-6 md:grid-cols-4 md:px-8">
+      <dl className="grid grid-cols-2 gap-x-8 gap-y-8 rounded-lg bg-card px-6 py-6 md:grid-cols-4 md:px-8">
         {[
           { label: i.t("moment.first"), v: first },
           { label: i.t("moment.big"), v: t(Math.max(0, waves.findIndex((w) => w.et === "20:00"))) },

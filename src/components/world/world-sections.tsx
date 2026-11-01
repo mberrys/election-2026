@@ -24,7 +24,7 @@ export function NightTable({ i, waves, country }: { i: I18n; waves: Wave[]; coun
   const locale = clockLocale(i, country);
   const sep = i.t("list.separator");
   return (
-    <div className="overflow-x-auto rounded-lg border border-border bg-card">
+    <div className="overflow-x-auto rounded-lg bg-card">
       <table className="w-full min-w-[640px] text-[15px]">
         <thead>
           <tr className="border-b border-border text-left text-[13px] text-muted-foreground">

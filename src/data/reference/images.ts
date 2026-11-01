@@ -45,3 +45,38 @@ export function getStateImage(abbr: string): CreditedImage | undefined {
   const k = abbr.toUpperCase();
   return has(FILE.states, k) ? FILE.states[k] : undefined;
 }
+
+/** Slim photo data for client components: a thumbnail URL and the "Author / Licence" credit for a tooltip. */
+export interface CandidatePhoto {
+  src: string;
+  credit: string;
+}
+
+/** Keyed by `CandidateMeta.id`; candidates without a photo are absent. */
+export type PhotoMap = Record<string, CandidatePhoto>;
+
+/** "Author / Licence", the text of a photo's `title` and the credits page. */
+export function creditText(image: Pick<CreditedImage, "author" | "license">): string {
+  return `${image.author} / ${image.license}`;
+}
+
+/**
+ * The same Commons thumbnail at a smaller standard width (Wikimedia's steps are 20, 40, 60, 120, 250, 330, 500, 960),
+ * so a 44 px face does not download a 500 px portrait. URLs that are not in the `/{n}px-File` form, or are already
+ * that small, come back unchanged.
+ */
+export function thumbAt(url: string, px: number): string {
+  const m = /\/(\d+)px-([^/]+)$/.exec(url);
+  if (!m || Number(m[1]) <= px) return url;
+  return url.slice(0, m.index) + `/${px}px-${m[2]}`;
+}
+
+/** Photo data for the given candidate ids, at `px` wide. Build it on the server and pass only the races shown. */
+export function candidatePhotoMap(ids: Iterable<string>, px = 120): PhotoMap {
+  const out: PhotoMap = {};
+  for (const id of ids) {
+    const img = getCandidateImage(id);
+    if (img) out[id] = { src: thumbAt(img.thumbUrl, px), credit: creditText(img) };
+  }
+  return out;
+}

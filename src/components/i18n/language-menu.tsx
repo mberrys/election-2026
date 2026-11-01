@@ -66,7 +66,7 @@ export function LanguageMenu({ labels, siteUrl }: { labels: Record<string, MenuL
           <Menu.Popup
             aria-describedby={world ? undefined : noteId}
             aria-label={ui.label}
-            className="w-48 rounded-lg border border-border bg-popover p-1 text-popover-foreground shadow-lg outline-none"
+            className="w-48 rounded-lg border border-border bg-popover p-1 text-popover-foreground elev-3 outline-none"
           >
             <div className="grid grid-cols-3 gap-0.5">
             {LOCALES.map((l) => {

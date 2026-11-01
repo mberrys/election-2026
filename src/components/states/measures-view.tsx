@@ -180,7 +180,7 @@ export function MeasuresView({
         </section>
 
         <aside className="order-first lg:sticky lg:top-36 lg:order-2 lg:max-h-[calc(100vh-10rem)] lg:self-start lg:overflow-y-auto xl:top-28 xl:max-h-[calc(100vh-8rem)]">
-          <div className="space-y-5 rounded-lg border border-border bg-card p-5 md:p-6">
+          <div className="space-y-5 rounded-lg bg-card p-5 md:p-6">
             <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
               <div className="space-y-1">
                 <h2 className="text-xl font-bold">Where the measures are</h2>

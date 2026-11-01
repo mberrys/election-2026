@@ -6,6 +6,8 @@ import { useMemo, useState } from "react";
 import { indexRaces, useNational, useSlowReference } from "@/hooks/use-results";
 import { useMounted } from "@/hooks/use-mounted";
 import { RaceCard } from "./race-card";
+import { selectKeyRaces } from "./key-races";
+import type { PhotoMap } from "@/data/reference/images";
 import { ChamberRow, SenateHero } from "./control-lanes";
 import { Swatch } from "./hatch";
 import { VP_PARTY } from "@/components/senate/chamber-balance";
@@ -15,7 +17,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import type { BalanceOfPower, Race, RaceMeta, StateMeta } from "@/data/schema";
-import { RATING_LEAN, RATING_ORDER } from "@/data/schema";
+import { RATING_LEAN } from "@/data/schema";
 import { fmtEt, fmtMarginDR, partyColorVar } from "@/lib/format";
 import { computeBalance, seatsHeld, seatsNeeded, SENATE_NOT_UP_2026 } from "@/analytics";
 import { cn } from "@/lib/utils";
@@ -24,7 +26,7 @@ import type { PollsRef } from "@/data/reference/load";
 type Polls = PollsRef | null | undefined;
 type LiveRace = Omit<Race, "units">;
 
-export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; states: StateMeta[]; polls?: Polls }) {
+export function NationalBoard({ metas, states, polls, photos }: { metas: RaceMeta[]; states: StateMeta[]; polls?: Polls; photos?: PhotoMap }) {
   const mounted = useMounted();
   const { data } = useNational();
   const live = useMemo(() => indexRaces(mounted ? data : undefined), [data, mounted]);
@@ -41,22 +43,7 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
     };
   }, [data, metas, mounted]);
 
-  const keyRaces = useMemo(() => {
-    const score = (m: RaceMeta) => {
-      const r = m.ratings.consensus ?? "tossup";
-      const d = Math.abs(RATING_ORDER.indexOf(r) - 4); // 0 = tossup
-      const officeW = m.office === "senate" ? 0 : m.office === "governor" ? 0.5 : 1;
-      return d * 10 + officeW;
-    };
-    return metas
-      .filter((m) => m.office !== "ballot" && m.office !== "stateleg")
-      .filter((m) => {
-        const r = m.ratings.consensus;
-        return !r || RATING_LEAN[r] === "tossup" || r.startsWith("tilt") || r.startsWith("lean");
-      })
-      .sort((a, b) => score(a) - score(b) || a.state.localeCompare(b.state))
-      .slice(0, 18);
-  }, [metas]);
+  const keyRaces = useMemo(() => selectKeyRaces(metas), [metas]);
 
   const { data: slow } = useSlowReference();
   const genericBallot = useMemo(() => {
@@ -113,18 +100,9 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
       <section>
         <SectionTitle title="Key races" sub="The closest contests by the consensus of Cook, Inside Elections and Sabato. Pick one for the campaigns, polls and news." />
         <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {keyRaces.map((m) => {
-            const lr = live.get(m.id);
-            return (
-              <RaceCard
-                key={m.id}
-                meta={m}
-                live={lr}
-                href={raceHref(m.id)}
-                className="h-full"
-              />
-            );
-          })}
+          {keyRaces.map((m) => (
+            <RaceCard key={m.id} meta={m} live={live.get(m.id)} href={raceHref(m.id)} photos={photos} className="h-full" />
+          ))}
         </div>
       </section>
 

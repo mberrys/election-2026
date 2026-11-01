@@ -8,6 +8,8 @@ import { RatingBadge, StatusBadge } from "./status-badge";
 import { cn } from "@/lib/utils";
 import { RaceFlags } from "./race-flags";
 import { annotationsFor } from "@/data/annotations";
+import type { PhotoMap } from "@/data/reference/images";
+import { Face } from "@/components/race/face";
 
 type LiveRace = Omit<Race, "units"> | Race;
 type Cand = { id: string; name: string; party: string; incumbent?: boolean; votes: number; pct: number };
@@ -55,7 +57,20 @@ function holdLine(f: Flag): string {
  * share of what is left the trailing candidate needs. A held race (paused count, litigation, set-aside ballots) gets a
  * hazard band on its top edge, muted party colours and an amber status line.
  */
-export function RaceCard({ live, meta, href, className }: { live?: LiveRace; meta?: RaceMeta; href?: string; className?: string }) {
+export function RaceCard({
+  live,
+  meta,
+  href,
+  photos,
+  className,
+}: {
+  live?: LiveRace;
+  meta?: RaceMeta;
+  href?: string;
+  /** Candidate photos by id; before the count each nominee gets a face, with initials when there is no photo. */
+  photos?: PhotoMap;
+  className?: string;
+}) {
   const title = live?.name ?? meta?.name ?? "Race";
   const counting = !!live && live.totalVotes > 0 && live.candidates.length > 0;
   const field: Cand[] = counting
@@ -104,20 +119,23 @@ export function RaceCard({ live, meta, href, className }: { live?: LiveRace; met
     const poll = meta?.polls;
     const pm = poll ? poll.d - poll.r : undefined;
     const pre = (
-      <Card className={cn("h-full gap-4 p-5 transition-colors hover:border-border-strong hover:bg-s3/40", className)}>
+      <Card className={cn("h-full gap-4 p-5 transition-colors hover:bg-s2", className)}>
         <div className="flex items-baseline justify-between gap-3">
           <h3 className="min-w-0 truncate text-lg font-semibold leading-snug">{title}</h3>
           {meta?.ratings.consensus && <RatingBadge rating={meta.ratings.consensus} className="shrink-0" />}
         </div>
-        <div className="space-y-1.5">
+        <div className="space-y-3">
           {[d, r].map((c, i) =>
             c ? (
-              <div key={c.id} className="flex items-baseline justify-between gap-3 text-base">
-                <span className={cn("truncate font-semibold", c.party === "D" ? "text-party-d-ink" : "text-party-r-ink")}>{c.name}</span>
-                <span className="shrink-0 text-sm text-muted-foreground">{c.incumbent ? "Incumbent" : c.party === "D" ? "Democrat" : "Republican"}</span>
+              <div key={c.id} className="flex items-center gap-3">
+                <Face name={c.name} party={c.party} photo={photos?.[c.id]} size={44} />
+                <div className="min-w-0 flex-1">
+                  <div className={cn("truncate text-base font-semibold leading-snug", c.party === "D" ? "text-party-d-ink" : "text-party-r-ink")}>{c.name}</div>
+                  <div className="text-sm text-muted-foreground">{c.incumbent ? "Incumbent" : c.party === "D" ? "Democrat" : "Republican"}</div>
+                </div>
               </div>
             ) : (
-              <div key={i} className="text-sm text-muted-foreground">
+              <div key={i} className="flex min-h-11 items-center text-sm text-muted-foreground">
                 No {i === 0 ? "Democratic" : "Republican"} nominee
               </div>
             ),
@@ -145,7 +163,7 @@ export function RaceCard({ live, meta, href, className }: { live?: LiveRace; met
   }
 
   const body = (
-    <Card className={cn("relative h-full gap-3 p-3 transition-colors hover:border-border-strong", held && "pt-[22px]", className)}>
+    <Card className={cn("relative h-full gap-3 p-3 transition-colors hover:bg-s2", held && "pt-[22px]", className)}>
       {held && <div aria-hidden className="hazard absolute inset-x-0 top-0 h-2.5" />}
       <div className="flex items-start justify-between gap-2">
         <h3 className={cn("min-w-0 truncate text-base font-semibold leading-6", held && "text-muted-foreground")}>{title}</h3>

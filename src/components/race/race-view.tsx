@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import type { CandidateMeta, Party, RaceMeta, RatingCode } from "@/data/schema";
 import type { TrendPoint } from "@/data/reference/load";
 import { compact, fmtEt, fmtMarginDR, partyName, ratingLabel } from "@/lib/format";
@@ -103,15 +103,25 @@ export function KeyFacts({ meta, pollClose }: { meta: RaceMeta; pollClose: strin
   const poll = meta.polls;
   const pres = meta.baseline.presMargin2024;
   const margin = poll ? poll.d - poll.r : undefined;
+  const prev = meta.baseline.prevRaceMargin;
   return (
-    <dl className="grid grid-cols-2 gap-x-8 gap-y-8 rounded-lg border border-border bg-card px-6 py-6 md:grid-cols-4 md:px-8">
+    <dl className="grid grid-cols-2 content-center gap-x-8 gap-y-8 rounded-lg bg-card px-6 py-6 md:grid-cols-4 md:px-8 lg:grid-cols-2">
       <Fact label="Forecast" value={r ? ratingLabel[r] : "Not rated"} color={ratingInk(r)} note={r ? "Consensus of the forecasters" : undefined} />
-      <Fact
-        label="Poll average"
-        value={margin != null ? fmtMarginDR(margin) : "No polls"}
-        color={margin == null ? "var(--ink-muted)" : margin > 0 ? "var(--party-d-ink)" : margin < 0 ? "var(--party-r-ink)" : undefined}
-        note={poll ? `${poll.n} polls through ${shortDate(poll.asOf) ?? "recently"}` : undefined}
-      />
+      {prev != null ? (
+        <Fact
+          label={`Last ${meta.office === "governor" ? "governor" : meta.office === "senate" ? "Senate" : "House"} race`}
+          value={fmtMarginDR(prev)}
+          color={prev > 0 ? "var(--party-d-ink)" : prev < 0 ? "var(--party-r-ink)" : undefined}
+          note={meta.baseline.prevRaceYear ? String(meta.baseline.prevRaceYear) : undefined}
+        />
+      ) : (
+        <Fact
+          label="Poll average"
+          value={margin != null ? fmtMarginDR(margin) : "No polls"}
+          color={margin == null ? "var(--ink-muted)" : margin > 0 ? "var(--party-d-ink)" : margin < 0 ? "var(--party-r-ink)" : undefined}
+          note={poll ? `${poll.n} polls through ${shortDate(poll.asOf) ?? "recently"}` : undefined}
+        />
+      )}
       <Fact
         label="2024 president"
         value={pres != null ? fmtMarginDR(pres) : "—"}
@@ -145,7 +155,7 @@ export function Campaigns({ meta, story }: { meta: RaceMeta; story?: StoryLike }
           const money = moneyLine(meta, c);
           const photo = getCandidateImage(c.id);
           return (
-            <article key={c.id} className="space-y-4 rounded-lg border border-border bg-card p-6" style={{ borderTop: `3px solid ${partyInk(c.party)}` }}>
+            <article key={c.id} className="space-y-4 rounded-lg bg-card p-6" style={{ borderTop: `3px solid ${partyInk(c.party)}` }}>
               <header className="flex items-start gap-4">
                 <Portrait image={photo} name={c.name} size={84} />
                 <div className="min-w-0 space-y-1">
@@ -201,14 +211,14 @@ export function Polling({ meta, trend }: { meta: RaceMeta; trend?: TrendPoint[] 
       <div className="flex flex-wrap items-end gap-x-10 gap-y-4">
         <div>
           <div className="text-[15px] text-ink-muted">{d?.name ?? "Democrat"}</div>
-          <div className="hero-num text-5xl" style={{ color: "var(--party-d)" }}>
+          <div className="hero-num text-[40px]" style={{ color: "var(--party-d)" }}>
             {poll.d.toFixed(1)}
             <span className="text-2xl">%</span>
           </div>
         </div>
         <div>
           <div className="text-[15px] text-ink-muted">{r?.name ?? "Republican"}</div>
-          <div className="hero-num text-5xl" style={{ color: "var(--party-r)" }}>
+          <div className="hero-num text-[40px]" style={{ color: "var(--party-r)" }}>
             {poll.r.toFixed(1)}
             <span className="text-2xl">%</span>
           </div>
@@ -218,7 +228,7 @@ export function Polling({ meta, trend }: { meta: RaceMeta; trend?: TrendPoint[] 
         </p>
       </div>
       {trend && trend.length > 1 && (
-        <figure className="space-y-2 rounded-lg border border-border bg-card p-5 md:p-6">
+        <figure data-reveal className="space-y-2 rounded-lg bg-card p-4 sm:p-6">
           <PollTrend points={trend} dName={d?.name ?? "Democrat"} rName={r?.name ?? "Republican"} />
           <figcaption className="text-sm text-ink-muted">Weekly rolling average since {new Intl.DateTimeFormat("en-US", { month: "long", timeZone: "UTC" }).format(Date.parse(trend[0].t))}.</figcaption>
         </figure>
@@ -229,7 +239,7 @@ export function Polling({ meta, trend }: { meta: RaceMeta; trend?: TrendPoint[] 
 
 export function QaList({ qa }: { qa: { q: string; a: string }[] }) {
   return (
-    <div className="divide-y divide-border rounded-lg border border-border bg-card">
+    <div className="divide-y divide-border rounded-lg bg-card">
       {qa.map((item) => (
         <details key={item.q} className="group px-6 py-4 open:pb-5">
           <summary className="cursor-pointer list-none text-[17px] font-semibold marker:hidden [&::-webkit-details-marker]:hidden">
@@ -290,8 +300,8 @@ export function Money({ meta }: { meta: RaceMeta }) {
           {lead[1].name}.
         </p>
       )}
-      <div className="space-y-5 rounded-lg border border-border bg-card p-6">
-        {rows.map((c) => {
+      <div data-reveal className="space-y-5 rounded-lg bg-card p-4 sm:p-6">
+        {rows.map((c, i) => {
           const fill = c.party === "D" ? "var(--party-d)" : c.party === "R" ? "var(--party-r)" : "var(--party-i)";
           const r = receipts[c.id];
           const h = cash[c.id];
@@ -302,18 +312,25 @@ export function Money({ meta }: { meta: RaceMeta }) {
                   {c.name}
                 </span>
                 <span className="text-[15px] text-muted-foreground tnum">
-                  <span className="font-semibold text-foreground">{usd(r)}</span> raised{h != null ? ` · ${usd(h)} on hand` : ""}
+                  <span aria-hidden className="mr-1.5 inline-block size-2 align-middle opacity-40" style={{ background: fill }} />
+                  <span className="font-semibold text-foreground">{usd(r)}</span> raised
+                  {h != null && (
+                    <>
+                      <span aria-hidden className="mr-1.5 ml-3 inline-block size-2 align-middle" style={{ background: fill }} />
+                      <span className="font-semibold text-foreground">{usd(h)}</span> on hand
+                    </>
+                  )}
                 </span>
               </div>
-              <div className="relative h-3 overflow-hidden rounded-full bg-s3" aria-hidden>
-                <div className="absolute inset-y-0 left-0 rounded-full opacity-40" style={{ width: `${(r / max) * 100}%`, background: fill }} />
-                {h != null && <div className="absolute inset-y-0 left-0 rounded-full" style={{ width: `${(Math.min(h, r) / max) * 100}%`, background: fill }} />}
+              <div className="relative h-3 overflow-hidden bg-s3" aria-hidden>
+                <div className="chart-grow-x absolute inset-y-0 left-0 opacity-40" style={{ width: `${(r / max) * 100}%`, background: fill, "--j": i * 2 } as CSSProperties} />
+                {h != null && <div className="chart-grow-x absolute inset-y-0 left-0" style={{ width: `${(Math.min(h, r) / max) * 100}%`, background: fill, "--j": i * 2 + 1 } as CSSProperties} />}
               </div>
             </div>
           );
         })}
-        <p className="text-sm text-muted-foreground">
-          Pale bar: total raised. Solid bar: cash on hand. FEC filings{meta.money?.asOf ? ` through ${shortDate(meta.money.asOf)}` : ""}.
+        <p className="text-[13px] text-muted-foreground">
+          FEC filings through {meta.money?.asOf ? shortDate(meta.money.asOf) : "the latest report"}.
         </p>
       </div>
     </div>
@@ -328,7 +345,7 @@ export type SourceLink = { label: string; href: string; note?: string };
 export function Sources({ links }: { links: SourceLink[] }) {
   if (!links.length) return null;
   return (
-    <ul className="divide-y divide-border rounded-lg border border-border bg-card">
+    <ul className="divide-y divide-border rounded-lg bg-card">
       {links.map((l) => (
         <li key={`${l.href} ${l.label}`}>
           <a

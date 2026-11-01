@@ -15,7 +15,7 @@ export function YourTime({ moments, heading, locale }: { moments: Moment[]; head
   const zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const fmt = new Intl.DateTimeFormat(locale, { weekday: "long", hour: "numeric", minute: "2-digit" });
   return (
-    <div className="rounded-lg border border-border bg-card px-6 py-5">
+    <div className="rounded-lg bg-card px-6 py-5">
       <p className="text-base font-semibold">{format(heading, { zone: zone.replace(/_/g, " ") })}</p>
       <dl className="mt-3 grid gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-4">
         {moments.map((m) => (

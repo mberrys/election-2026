@@ -215,16 +215,16 @@
 
 /* ---------- Dark theme (default, primary) ---------- */
 .dark {
-  --ground: #07090d;
-  --s1: #0d1016;
-  --s2: #141820;
-  --s3: #1c212b;
-  --s4: #262c38;
-  --hairline: #222833;
-  --border-strong: #323a48;
+  --ground: #0b0c0e;
+  --s1: #121417;
+  --s2: #181a1e;
+  --s3: #22252a;
+  --s4: #2d3036;
+  --hairline: #24272c;
+  --border-strong: #3a3e45;
   --ink: #eef1f6;
-  --ink-muted: #9aa3b2;
-  --ink-faint: #6b7383;
+  --ink-muted: #b0b4bb;
+  --ink-faint: #949aa2;
   --on-party: #07090d;
 
   --party-d: #59a0f9;
@@ -255,7 +255,7 @@
   --ramp-r-5: #ff9a8f;
 
   --hatch-line: #3a4252;
-  --hatch-ground: #0d1016;
+  --hatch-ground: #121417;
   --uncalled: var(--hatch-line);
   --signal: #d4f25a;
   --signal-ink: #d4f25a;
@@ -268,7 +268,7 @@
   --foreground: var(--ink);
   --card: var(--s2);
   --card-foreground: var(--ink);
-  --popover: var(--s2);
+  --popover: var(--s3);
   --popover-foreground: var(--ink);
   --primary: var(--ink);
   --primary-foreground: var(--ground);
@@ -327,7 +327,7 @@
   /* The one hero number per screen. */
   .hero-num { font-family: var(--font-display); font-stretch: 125%; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
   /* Ticking figures only (vote counts, shares, deltas). Labels stay in Archivo. */
-  .fig { font-family: var(--font-mono); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+  .fig { font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
 
   /* Page frame: one title size and one lede size on every page. */
   .page-header { display: flex; flex-direction: column; gap: 0.75rem; max-width: 60rem; }
@@ -401,6 +401,72 @@
   .anim-flash { animation: hatch-flash 1200ms ease-out 1; }
   .anim-call { animation: hatch-call 1400ms var(--ease-roll) 1; }
 }
+/*
+ * Depth (true-black-flat): elevation by lightness alone. Ground → card (bg-card, one step up) → nested panel
+ * (bg-s3) → popover (bg-popover + elev-3). Resting surfaces carry no border and no shadow; only what floats
+ * (menus, popovers, tooltips) gets elev-3.
+ */
+:root {
+  --elev-1: 0 1px 2px rgb(16 24 40 / 6%), 0 1px 3px rgb(16 24 40 / 8%);
+  --elev-2: 0 2px 4px -2px rgb(16 24 40 / 6%), 0 8px 16px -4px rgb(16 24 40 / 10%);
+  --elev-3: 0 4px 8px -4px rgb(16 24 40 / 8%), 0 20px 40px -12px rgb(16 24 40 / 18%);
+}
+.dark {
+  --elev-1: inset 0 1px 0 rgb(255 255 255 / 4%), 0 1px 2px rgb(0 0 0 / 50%);
+  --elev-2: inset 0 1px 0 rgb(255 255 255 / 5%), 0 2px 4px -2px rgb(0 0 0 / 45%), 0 10px 24px -6px rgb(0 0 0 / 55%);
+  --elev-3: inset 0 1px 0 rgb(255 255 255 / 7%), 0 8px 16px -8px rgb(0 0 0 / 55%), 0 28px 56px -16px rgb(0 0 0 / 75%);
+}
+@layer utilities {
+  .elev-1 { box-shadow: var(--elev-1); }
+  .elev-2 { box-shadow: var(--elev-2); }
+  .elev-3 { box-shadow: var(--elev-3); }
+}
+
+/*
+ * Scroll animation, in CSS alone: scroll-driven animations tied to the [data-reveal] wrapper's view timeline, so no script
+ * touches the DOM and nothing differs between server and client HTML. Browsers without animation-timeline, and
+ * anyone who prefers reduced motion, see everything at rest.
+ *   [data-reveal]               fades and rises 16px as it enters
+ *   .chart-draw (pathLength=1)  an SVG line draws itself
+ *   .chart-grow / .chart-grow-x a bar grows from its base / from the left; --j staggers bars
+ *   recharts series             wipe in from the left
+ */
+@keyframes rv-in { from { opacity: 0; transform: translateY(16px); } }
+@keyframes rv-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes rv-grow-y { from { transform: scaleY(0); } }
+@keyframes rv-grow-x { from { transform: scaleX(0); } }
+@keyframes rv-wipe { from { clip-path: inset(-6px 100% -6px -6px); } to { clip-path: inset(-6px -6px -6px -6px); } }
+.chart-grow { transform-box: fill-box; transform-origin: bottom; }
+.chart-grow-x { transform-box: fill-box; transform-origin: left; }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-reveal] {
+      view-timeline-name: --rv;
+      animation: rv-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+    [data-reveal] .chart-draw {
+      stroke-dasharray: 1;
+      animation: rv-draw linear both;
+      animation-timeline: --rv;
+      animation-range: entry 20% cover 45%;
+    }
+    [data-reveal] .chart-grow,
+    [data-reveal] .chart-grow-x {
+      animation: rv-grow-y linear both;
+      animation-timeline: --rv;
+      animation-range: entry calc(10% + var(--j, 0) * 1.5%) cover calc(30% + var(--j, 0) * 1.5%);
+    }
+    [data-reveal] .chart-grow-x { animation-name: rv-grow-x; }
+    [data-reveal] :is(.recharts-bar, .recharts-line) {
+      animation: rv-wipe linear both;
+      animation-timeline: --rv;
+      animation-range: entry 20% cover 45%;
+    }
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

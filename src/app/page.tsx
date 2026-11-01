@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { NationalBoard } from "@/components/board/national-board";
 import { nationalCopy } from "@/components/board/page-copy";
 import { JsonLd } from "@/components/seo/json-ld";
+import { selectKeyRaces } from "@/components/board/key-races";
+import { candidatePhotoMap } from "@/data/reference/images";
 import { loadPolls, loadRaces, loadStates } from "@/data/reference/load";
 import type { RaceMeta } from "@/data/schema";
 import { pageMetadata } from "@/lib/page-meta";
@@ -37,11 +39,13 @@ export default function Page() {
     .filter((m) => m.office === "senate" || m.office === "house" || m.office === "governor")
     .map(slim);
   const states = loadStates();
+  // Faces only for the cards the board will show, not all ~1,000 candidates.
+  const photos = candidatePhotoMap(selectKeyRaces(races).flatMap((m) => m.candidates.map((c) => c.id)));
   const polls = loadPolls();
   return (
     <>
       <JsonLd data={webPageJsonLd({ name: DEFAULT_TITLE, description, path: "/", dateModified: polls.builtAt })} />
-      <NationalBoard metas={races} states={states} polls={{ ...polls, races: {} }} />
+      <NationalBoard metas={races} states={states} polls={{ ...polls, races: {} }} photos={photos} />
     </>
   );
 }
