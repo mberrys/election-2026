@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMetadata({
   title: "2026 State Ballot Measures and Legislature Races",
-  description: `${loadRaces().filter((r) => r.office === "ballot").length} statewide ballot measures and ${loadRaces().filter((r) => r.office === "stateleg").length} state legislative chamber races on the Nov 3, 2026 ballot, by state, with governors and poll closing times.`,
+  description: `${loadRaces().filter((r) => r.office === "ballot").length} statewide ballot measures and ${loadRaces().filter((r) => r.office === "stateleg").length} state legislative chamber races on the Nov 3, 2026 ballot. Browse them by state, with governor races and poll closing times.`,
   path: "/states",
 });
 
@@ -22,8 +22,7 @@ export default function StatesPage() {
       <header className="page-header">
         <h1 className="page-title">States &amp; Measures</h1>
         <p className="page-lede">
-          {legs.length} legislative chambers and {measures.length} statewide ballot measures on the Nov 3 ballot. Pick a state on either map to see
-          everything it votes on.
+          {legs.length} legislative chambers and {measures.length} statewide ballot measures on the Nov 3 ballot. Pick a state on either map to see its full ballot.
         </p>
       </header>
       <Suspense>

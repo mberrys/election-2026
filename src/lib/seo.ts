@@ -1,3 +1,4 @@
+import { stripInline } from "./inline-links";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL, absoluteUrl } from "./site";
 
 /** Static top-level pages in the sitemap. `/senate/[state]` only redirects and `/api/*` is not for crawlers. */
@@ -102,6 +103,6 @@ export function faqJsonLd(qa: ReadonlyArray<{ q: string; a: string }>) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: qa.map((x) => ({ "@type": "Question", name: x.q, acceptedAnswer: { "@type": "Answer", text: x.a } })),
+    mainEntity: qa.map((x) => ({ "@type": "Question", name: x.q, acceptedAnswer: { "@type": "Answer", text: stripInline(x.a) } })),
   };
 }

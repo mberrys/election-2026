@@ -1,3 +1,4 @@
+import { renderInline } from "@/lib/inline-links";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -21,7 +22,7 @@ export function StateQa({ input, className }: { input: StateContentInput; classN
           {qa.map((item) => (
             <div key={item.q}>
               <h3 className="text-base font-semibold">{item.q}</h3>
-              <p className="mt-1 text-[15px] leading-relaxed text-muted-foreground">{item.a}</p>
+              <p className="mt-1 text-[15px] leading-relaxed text-muted-foreground">{renderInline(item.a)}</p>
             </div>
           ))}
           <p className="text-sm text-muted-foreground">

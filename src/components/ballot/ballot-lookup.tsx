@@ -76,7 +76,7 @@ export function BallotLookupSection({ configured, index }: { configured: boolean
           </h2>
           {configured ? (
             <p className="text-[15px] leading-relaxed text-ink-muted">
-              Enter the address where you&apos;re registered to see your polling place, early voting sites and the contests on your ballot.
+              Enter the address where you&apos;re registered. We&apos;ll show your polling place, early voting sites and the contests on your ballot.
             </p>
           ) : null}
         </div>
@@ -114,7 +114,7 @@ export function BallotLookupSection({ configured, index }: { configured: boolean
                 </p>
               ) : null}
               <p id={`${id}-help`} className="text-[13px] leading-relaxed text-ink-muted">
-                We send it to the Google Civic Information API for this one lookup. We don&apos;t store or log it.
+                We send your address to the Google Civic Information API for this one lookup. We don&apos;t store or log it.
               </p>
             </form>
 
@@ -138,8 +138,8 @@ export function BallotLookupSection({ configured, index }: { configured: boolean
               <div className="space-y-8">
                 <Notice role="alert" title={errorCopy(lookup.code, lookup.message).title}>
                   <p>
-                    {errorCopy(lookup.code, lookup.message).body} Meanwhile, pick your state to see the races we cover, and{" "}
-                    <ExternalLink href={VOTE_ORG.pollingPlace}>find your polling place on Vote.org</ExternalLink>.
+                    {errorCopy(lookup.code, lookup.message).body} In the meantime, pick your state to see the races we cover. You can
+                    also <ExternalLink href={VOTE_ORG.pollingPlace}>find your polling place on Vote.org</ExternalLink>.
                   </p>
                 </Notice>
                 <StateRaces index={index} />
@@ -150,8 +150,8 @@ export function BallotLookupSection({ configured, index }: { configured: boolean
           <div className="space-y-8">
             <Notice title="Address lookup isn't available right now">
               <p>
-                Pick your state to see the federal and governor races and statewide measures on your ballot, with links to the
-                candidates, polls and news for each. To find where you vote,{" "}
+                Pick your state to see the federal and governor races and statewide measures on your ballot. Each one links to its
+                candidates, polls and news. To find where you vote,{" "}
                 <ExternalLink href={VOTE_ORG.pollingPlace}>use Vote.org&apos;s polling place locator</ExternalLink>.
               </p>
             </Notice>
@@ -191,7 +191,7 @@ function Results({ data, index }: { data: BallotLookup; index: BallotIndex }) {
         {data.mailOnly ? (
           <p className="text-[15px] leading-relaxed text-ink-muted">
             <strong className="font-semibold text-foreground">Voters at this address vote by mail.</strong> Your election office mails
-            the ballot; check its return deadline with them.
+            the ballot. Ask it for the return deadline.
           </p>
         ) : null}
       </header>
@@ -200,7 +200,7 @@ function Results({ data, index }: { data: BallotLookup; index: BallotIndex }) {
         <div className="space-y-8">
           <Notice title="No details for this address yet">
             <p>
-              Google hasn&apos;t published polling places or contests for this address. Your election office has the official list. Pick
+              Google hasn&apos;t published polling places or contests for this address. Your election office keeps the official list. Pick
               your state to see the races we cover.
             </p>
           </Notice>
@@ -253,8 +253,8 @@ function Results({ data, index }: { data: BallotLookup; index: BallotIndex }) {
       ) : null}
 
       <p className="text-[13px] leading-relaxed text-ink-muted">
-        Ballot details come from the Google Civic Information API and can be incomplete. Confirm with your state or county election
-        office.
+        The Google Civic Information API supplies these ballot details, and they can be incomplete. Confirm them with your state or
+        county election office.
         {stateName && st ? (
           <>
             {" "}

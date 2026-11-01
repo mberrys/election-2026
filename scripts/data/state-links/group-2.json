@@ -1,0 +1,62 @@
+[
+  {
+    "abbr": "GA",
+    "office": { "name": "Georgia Secretary of State, Elections Division", "url": "https://sos.ga.gov/elections-division", "verified": false },
+    "results": { "url": "https://results.sos.ga.gov/results/public/Georgia", "verified": true },
+    "voterInfo": { "url": "https://mvp.sos.ga.gov/", "verified": false }
+  },
+  {
+    "abbr": "HI",
+    "office": { "name": "Hawaii Office of Elections", "url": "https://elections.hawaii.gov/", "verified": true },
+    "results": { "url": "https://elections.hawaii.gov/election-results/", "verified": true },
+    "voterInfo": { "url": "https://olvr.hawaii.gov/", "verified": true }
+  },
+  {
+    "abbr": "ID",
+    "office": { "name": "Idaho Secretary of State, Elections Division (VoteIdaho)", "url": "https://voteidaho.gov/", "verified": true },
+    "results": null,
+    "voterInfo": { "url": "https://voteidaho.gov/", "verified": true }
+  },
+  {
+    "abbr": "IL",
+    "office": { "name": "Illinois State Board of Elections", "url": "https://www.elections.il.gov/", "verified": true },
+    "results": { "url": "https://www.elections.il.gov/ElectionOperations/ElectionResults.aspx", "verified": true },
+    "voterInfo": null
+  },
+  {
+    "abbr": "IN",
+    "office": { "name": "Indiana Secretary of State, Election Division", "url": "https://www.in.gov/sos/elections/", "verified": true },
+    "results": { "url": "https://enr.indianavoters.in.gov/site/index.html", "verified": true },
+    "voterInfo": { "url": "https://indianavoters.in.gov/", "verified": false }
+  },
+  {
+    "abbr": "IA",
+    "office": { "name": "Iowa Secretary of State, Elections", "url": "https://sos.iowa.gov/elections/", "verified": false },
+    "results": { "url": "https://electionresults.iowa.gov/IA/", "verified": true },
+    "voterInfo": { "url": "https://mymvd.iowadot.gov/VoterRegistration/Registration/Status", "verified": false }
+  },
+  {
+    "abbr": "KS",
+    "office": { "name": "Kansas Secretary of State, Elections", "url": "https://sos.ks.gov/elections/elections.html", "verified": true },
+    "results": null,
+    "voterInfo": { "url": "https://myvoteinfo.voteks.org/VoterView", "verified": true }
+  },
+  {
+    "abbr": "KY",
+    "office": { "name": "Kentucky State Board of Elections", "url": "https://elect.ky.gov/Pages/default.aspx", "verified": true },
+    "results": { "url": "https://elect.ky.gov/Results/Pages/default.aspx", "verified": true },
+    "voterInfo": { "url": "https://vrsws.sos.ky.gov/ovrweb/", "verified": false }
+  },
+  {
+    "abbr": "LA",
+    "office": { "name": "Louisiana Secretary of State, Elections and Voting", "url": "https://www.sos.la.gov/", "verified": true },
+    "results": null,
+    "voterInfo": { "url": "https://voterportal.sos.la.gov/", "verified": true }
+  },
+  {
+    "abbr": "ME",
+    "office": { "name": "Maine Secretary of State, Division of Elections", "url": "https://www.maine.gov/sos/cec/elec/", "verified": false },
+    "results": null,
+    "voterInfo": { "url": "https://www.maine.gov/sos/cec/elec/voter-info/", "verified": false }
+  }
+]

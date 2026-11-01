@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/page-meta";
 export const metadata: Metadata = pageMetadata({
   title: "Find Your Polling Place and Ballot for Nov 3, 2026",
   description:
-    "Check your voter registration with Vote.org, find your polling place and see the contests on your ballot for the Nov 3, 2026 election, with links to every Senate, House and governor race.",
+    "Check your registration with Vote.org, find your polling place and see the contests on your ballot for the Nov 3, 2026 election. Each Senate, House and governor race links to its page.",
   path: "/ballot",
 });
 

@@ -2,10 +2,10 @@ import { ExternalLink, LinkRow, RowList } from "./link-row";
 import { VOTE_GOV, VOTE_ORG } from "./links";
 
 const STEPS = [
-  { href: VOTE_ORG.checkRegistration, title: "Check your registration", desc: "Confirm you're registered at the address where you live now." },
-  { href: VOTE_ORG.register, title: "Register to vote", desc: "Deadlines have passed in most states, but many allow same-day registration." },
-  { href: VOTE_ORG.pollingPlace, title: "Find your polling place", desc: "See where you vote on Election Day." },
-  { href: VOTE_ORG.voterId, title: "Voter ID rules", desc: "Find out which ID, if any, your state asks for at the polls." },
+  { href: VOTE_ORG.checkRegistration, title: "Check your registration", desc: "Make sure your registration shows your current address." },
+  { href: VOTE_ORG.register, title: "Register to vote", desc: "Most states' deadlines have passed. Many still allow same-day registration." },
+  { href: VOTE_ORG.pollingPlace, title: "Find your polling place", desc: "Find out where you vote on Election Day." },
+  { href: VOTE_ORG.voterId, title: "Voter ID rules", desc: "Check whether your state requires ID at the polls, and which kind." },
 ];
 
 export function GetReady() {
@@ -17,7 +17,7 @@ export function GetReady() {
         </h2>
         <p className="text-[15px] leading-relaxed text-ink-muted">
           These tools come from <strong className="font-semibold text-foreground">Vote.org</strong>, a nonpartisan 501(c)(3) nonprofit
-          that helps Americans register and vote. Each link opens Vote.org in a new tab.
+          that helps Americans register and vote. Each link opens in a new tab.
         </p>
       </div>
 
@@ -29,14 +29,13 @@ export function GetReady() {
 
       <div className="space-y-3 text-[15px] leading-relaxed text-ink-muted">
         <p>
-          <strong className="font-semibold text-foreground">Not registered yet?</strong> With Election Day this close, most
-          states&apos; registration deadlines have passed. Many states still let you register and vote on the same day,
-          including on Election Day itself. The rules differ by state, so{" "}
-          <ExternalLink href={VOTE_ORG.register}>check yours on Vote.org</ExternalLink>.
+          <strong className="font-semibold text-foreground">Not registered yet?</strong> Election Day is close, and most
+          states&apos; registration deadlines have passed. Many states still let you register and vote the same day, including on
+          Election Day itself. Rules differ by state. <ExternalLink href={VOTE_ORG.register}>Check yours on Vote.org</ExternalLink>.
         </p>
         <p>
           <strong className="font-semibold text-foreground">Official source:</strong>{" "}
-          <ExternalLink href={VOTE_GOV}>Vote.gov</ExternalLink> is the U.S. government&apos;s voter registration site, with links to
+          <ExternalLink href={VOTE_GOV}>Vote.gov</ExternalLink> is the official U.S. government site for voter registration. It links to
           every state&apos;s election office.
         </p>
       </div>

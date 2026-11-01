@@ -130,9 +130,27 @@ export function StatesBoard({ legs, measures, governors, states }: { legs: RaceM
       </div>
 
       <p className="max-w-4xl text-sm leading-relaxed text-ink-muted">
-        Chamber compositions, candidates, ratings and measure summaries: Wikipedia, CC BY-SA 4.0. Forecast ratings: Sabato&apos;s Crystal Ball via
-        Wikipedia. Topics are matched from each measure&apos;s title. Measure texts: Ballotpedia (link-outs). Live counts come from official state and
-        county feeds where available; see{" "}
+        Chamber makeups, candidates, ratings and measure summaries come from{" "}
+        <a href="https://en.wikipedia.org/wiki/2026_United_States_state_legislative_elections" target="_blank" rel="noopener noreferrer" className="text-foreground underline underline-offset-4">
+          Wikipedia
+        </a>{" "}
+        (CC BY-SA 4.0). Forecast{" "}
+        <Link href="/explainers#ratings" className="text-foreground underline underline-offset-4">
+          ratings
+        </Link>{" "}
+        come from{" "}
+        <a href="https://centerforpolitics.org/crystalball/" target="_blank" rel="noreferrer" className="text-foreground underline underline-offset-4">
+          Sabato&apos;s Crystal Ball
+        </a>
+        , relayed through{" "}
+        <a href="https://en.wikipedia.org/wiki/2026_United_States_state_legislative_elections" target="_blank" rel="noopener noreferrer" className="text-foreground underline underline-offset-4">
+          Wikipedia
+        </a>
+        . Topics are matched from each measure&apos;s title. Full measure texts link out to{" "}
+        <a href="https://ballotpedia.org/2026_ballot_measures" target="_blank" rel="noopener noreferrer" className="text-foreground underline underline-offset-4">
+          Ballotpedia
+        </a>
+        . Live counts come from official state and county feeds where available. See{" "}
         <Link href="/methodology" className="text-foreground underline underline-offset-4">
           methodology
         </Link>

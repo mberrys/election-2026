@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DEFAULT_TITLE, SITE_DESCRIPTION, SITE_NAME } from "./site";
+import { stripInline } from "./inline-links";
 
 /**
  * Per-page metadata: title, description, canonical, and matching Open Graph / Twitter tags. Next replaces `openGraph`
@@ -19,6 +20,7 @@ export function pageMetadata({
   /** hreflang alternates, e.g. { "en-GB": "/world/uk", "x-default": "/world" }. */
   languages?: Record<string, string>;
 }): Metadata {
+  description = stripInline(description);
   const shareTitle = title ? `${title} · ${SITE_NAME}` : DEFAULT_TITLE;
   return {
     // Leave the key out when there is no page title: an explicit `title: undefined` wipes the layout's default title.

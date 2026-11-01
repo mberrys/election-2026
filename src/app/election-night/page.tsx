@@ -11,7 +11,7 @@ import { ELECTION_DAY_LABEL } from "@/lib/site";
 
 const TITLE = "Election Night 2026: What Time Polls Close in Every State";
 const DESCRIPTION =
-  "Poll closing times for all 50 states and DC on Nov 3, 2026 (Eastern time), grouped by hour with the Senate, governor and House races to watch and which states count early votes first.";
+  "Poll closing times for all 50 states and DC on Nov 3, 2026, in Eastern time, grouped by hour. See the Senate, governor and House races to watch and which states count early votes first.";
 
 export const metadata: Metadata = pageMetadata({ title: TITLE, description: DESCRIPTION, path: "/election-night" });
 
@@ -38,9 +38,20 @@ export default function ElectionNightPage() {
       <header className="space-y-1">
         <h1 className="page-title">Election night 2026: when polls close</h1>
         <p className="page-lede">
-          Election Day is {ELECTION_DAY_LABEL}. Times are Eastern. States that span time zones close in more than one wave, so
-          the later time is shown too. Close times come from The Green Papers; the races to watch are those rated Lean or closer
-          {updated ? ` (data updated ${updated})` : ""}.
+          Election Day is {ELECTION_DAY_LABEL}, and all times are Eastern. States that span time zones close in more than one wave,
+          so the later time is listed too. Close times come from{" "}
+          <a href="https://www.thegreenpapers.com" target="_blank" rel="noopener noreferrer" className="underline-offset-2 hover:underline">
+            The Green Papers
+          </a>
+          . Races to watch are those rated Lean or closer on the{" "}
+          <Link href="/" className="underline-offset-2 hover:underline">
+            Big Board
+          </Link>
+          {updated ? ` (data updated ${updated})` : ""}. How we build the data is on the{" "}
+          <Link href="/methodology" className="underline-offset-2 hover:underline">
+            methodology page
+          </Link>
+          .
         </p>
       </header>
 
@@ -64,7 +75,7 @@ export default function ElectionNightPage() {
                         <Link href={`/state/${s.abbr}`} className="font-semibold underline-offset-4 hover:underline">
                           {s.name}
                         </Link>
-                        {s.laterClose && <span className="text-muted-foreground"> · rest of the state closes {s.laterClose}</span>}
+                        {s.laterClose && <span className="text-muted-foreground"> · rest of state closes {s.laterClose}</span>}
                       </span>
                       <span className="text-sm text-muted-foreground">
                         {[
@@ -88,9 +99,9 @@ export default function ElectionNightPage() {
           Which states count early votes first?
         </h2>
         <p className="max-w-[68ch] text-base leading-relaxed text-muted-foreground">
-          Where early and mail ballots are reported first, the first numbers tend to lean Democratic and the lead narrows as
-          Election Day votes arrive (a blue mirage). Where Election Day votes are reported first, the opposite can happen (a red
-          mirage). Orders below are the ones documented for each state; states not listed have no confirmed 2026 order.{" "}
+          When early and mail ballots are counted first, early returns tend to favor Democrats, and their lead narrows as Election
+          Day votes arrive: a blue mirage. When Election Day votes come in first, the reverse can happen: a red mirage. The orders
+          below are documented for each state. States not listed have no confirmed 2026 order.{" "}
           <Link href="/explainers#mirage" className="underline-offset-2 hover:underline">
             More on mirages
           </Link>

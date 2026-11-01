@@ -1,12 +1,14 @@
 /**
  * Content for readers outside the US: US poll-closing times turned into local clocks, a short catch-up built from the
- * reference data, and the questions people abroad search for. Pure functions of plain data, so every number traces
- * to a reference file and the wording is testable.
+ * reference data, and the questions people abroad search for. Pure functions of plain data plus a message catalog, so
+ * every number traces to a reference file, the wording is testable, and every sentence is a whole template a
+ * translator can reorder (see `src/i18n/messages/en.ts`).
  */
-import type { RaceMeta, StateMeta } from "@/data/schema";
+import type { RaceMeta, RatingCode, StateMeta } from "@/data/schema";
 import { computeBalance, seatsNeeded, SENATE_NOT_UP_2026 } from "@/analytics";
-import { fmtMarginDR, ratingLabel } from "@/lib/format";
+import { fmtEt, ratingLabel } from "@/lib/format";
 import { WATCH_RATINGS } from "@/components/election-night/schedule";
+import type { I18n } from "@/i18n";
 import type { Country } from "./countries";
 
 /** US Eastern is UTC-5 on Election Day: daylight time ended on Sunday, November 1, 2026. */
@@ -20,7 +22,7 @@ export function etToUtc(hhmm: string): Date {
   return new Date(Date.UTC(2026, 10, day, h + ET_OFFSET_HOURS, m));
 }
 
-/** "Wednesday 4 November, 00:00" in the country's own conventions. */
+/** "Wednesday 4 November, 00:00" in the locale's own conventions ("miércoles, 4 de noviembre, 1:00" in Spanish). */
 export function localTime(d: Date, zone: string, locale: string): { day: string; time: string; full: string } {
   const day = new Intl.DateTimeFormat(locale, { weekday: "long", day: "numeric", month: "long", timeZone: zone }).format(d);
   // 24-hour locales read "00:00", not "0:00"; 12-hour ones keep "5:30 am".
@@ -29,14 +31,67 @@ export function localTime(d: Date, zone: string, locale: string): { day: string;
   return { day, time, full: `${day}, ${time}` };
 }
 
+/**
+ * The locale dates and clocks are formatted in. English pages keep each country's own flavour (en-GB, en-AU); every
+ * other language formats in that language, with the country's time zone supplying the clock.
+ */
+export function clockLocale(i: I18n, country?: Country): string {
+  return i.lang === "en" ? (country?.locale ?? "en-GB") : i.tag;
+}
+
+/** A country's wording from the catalog: its name, the short form for headings, "in Spain", and the clock cities. */
+export function countryText(i: I18n, c: Country) {
+  const get = (part: string) => i.lookup(`country.${c.slug}.${part}`) ?? c.slug;
+  return {
+    name: get("name"),
+    short: get("short"),
+    inName: get("in"),
+    city: get("city"),
+    alsoCity: c.also ? get("city_also") : undefined,
+  };
+}
+
+/** A US state's name in the page's language. */
+export function stateName(i: I18n, abbr: string): string {
+  return i.lookup(`state.${abbr}`) ?? abbr;
+}
+
+/** A forecast margin as "D+8.6" / "R+3.2" / "Even", with the language's own decimal mark. */
+export function marginLabel(i: I18n, m: number): string {
+  if (Math.abs(m) < 0.05) return i.t("margin.even");
+  const n = i.num(Math.abs(m), { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  return i.t(m > 0 ? "margin.d" : "margin.r", { n });
+}
+
+/** "Oct 30" in English, "30 oct" in French: the month and day of a date given as an ISO string. */
+export function shortDateIn(i: I18n, iso: string | undefined): string | undefined {
+  if (!iso) return undefined;
+  const t = Date.parse(iso);
+  if (Number.isNaN(t)) return undefined;
+  return new Intl.DateTimeFormat(i.lang === "en" ? "en-US" : i.tag, { month: "short", day: "numeric", timeZone: "UTC" }).format(t);
+}
+
+/** The Eastern clock time of a poll closing: "7 PM" in English, the language's own format elsewhere. */
+export function easternTime(i: I18n, w: Wave): string {
+  return i.lang === "en" ? fmtEt(w.et).replace(" ET", "") : localTime(w.utc, "America/New_York", i.tag).time;
+}
+
+/** A Senate or governor race the forecasters rate as close. */
+export interface WatchRace {
+  office: "senate" | "governor";
+  /** Two-letter state code. */
+  state: string;
+  rating: RatingCode;
+}
+
 export interface Wave {
   /** "19:00" ET. */
   et: string;
   utc: Date;
-  /** States whose polls close (all of the state, or its first part) at this time. */
+  /** Postal codes of the states whose polls close (all of the state, or its first part) at this time, in English name order. */
   states: string[];
   /** Senate and governor races rated Lean or closer in those states. */
-  watch: string[];
+  watch: WatchRace[];
 }
 
 /** Poll-closing waves on election night, earliest first, keyed by when each state's polls start to close. */
@@ -46,21 +101,39 @@ export function closingWaves(states: StateMeta[], races: RaceMeta[]): Wave[] {
     const first = s.pollCloseFirstEt ?? s.pollCloseEt.split("/")[0];
     (byTime.get(first) ?? byTime.set(first, []).get(first)!).push(s);
   }
-  const statewide = new Map<string, string[]>();
+  const statewide = new Map<string, WatchRace[]>();
   for (const r of races) {
     const rating = r.ratings.consensus;
     if (!rating || !WATCH_RATINGS.has(rating) || (r.office !== "senate" && r.office !== "governor")) continue;
-    const label = `${r.office === "senate" ? `${r.state} Senate` : `${r.state} governor`} (${ratingLabel[rating]})`;
-    (statewide.get(r.state) ?? statewide.set(r.state, []).get(r.state)!).push(label);
+    (statewide.get(r.state) ?? statewide.set(r.state, []).get(r.state)!).push({ office: r.office, state: r.state, rating });
   }
   return [...byTime.entries()]
     .map(([et, list]) => ({
       et,
       utc: etToUtc(et),
-      states: list.map((s) => s.name).sort(),
+      states: [...list].sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0)).map((s) => s.abbr),
       watch: list.flatMap((s) => statewide.get(s.abbr) ?? []),
     }))
     .sort((a, b) => a.utc.getTime() - b.utc.getTime());
+}
+
+/** The states closing in a wave, named in the page's language and sorted by those names. */
+export function waveStateNames(i: I18n, w: Wave): string[] {
+  return w.states.map((abbr) => stateName(i, abbr)).sort((a, b) => a.localeCompare(b, i.tag));
+}
+
+/** "TX Senate (Lean R)" in the page's language. */
+export function watchLabel(i: I18n, r: WatchRace): string {
+  const rating = i.lookup(`rating.${r.rating}`) ?? ratingLabel[r.rating];
+  return i.t(r.office === "senate" ? "watch.senate" : "watch.governor", { state: r.state, rating });
+}
+
+/** "Georgia Governor", "Ohio Senate (special)" in the page's language. */
+export function raceLabel(i: I18n, r: RaceMeta): string {
+  const state = stateName(i, r.state);
+  if (r.office === "governor") return i.t("race.governor", { state });
+  if (r.office === "senate") return i.t(r.special ? "race.senate_special" : "race.senate", { state });
+  return r.name;
 }
 
 /** The last polls of the night (western Alaska), from each state's final closing time. */
@@ -117,66 +190,96 @@ export function catchUp(
   };
 }
 
+/** The counts the catch-up and answer templates share, as template variables. */
+function countVars(c: CatchUp) {
+  return {
+    house: c.houseSeats,
+    senate: c.senateSeats,
+    specials: c.senateSpecials,
+    governors: c.governors,
+    chambers: c.chambers,
+    measures: c.measures,
+    needD: c.senateNeedD,
+    needR: c.senateNeedR,
+    leanD: c.houseLeanD,
+    leanR: c.houseLeanR,
+  };
+}
+
+/** The two-minute catch-up: a bold lead-in and a body each, from the reference data. */
+export function catchUpItems(i: I18n, c: CatchUp): { lead: string; body: string }[] {
+  const v = countVars(c);
+  const items = [
+    { lead: i.t("catchup.decided_lead"), body: i.t("catchup.decided_body", v) },
+    { lead: i.t("catchup.senate_lead"), body: i.t("catchup.senate_body", { ...v, tossups: c.senateTossups }) },
+    { lead: i.t("catchup.house_lead"), body: i.t("catchup.house_body", { ...v, tossups: c.houseTossups }) },
+  ];
+  if (c.genericMargin != null) {
+    const margin = marginLabel(i, c.genericMargin);
+    const date = shortDateIn(i, c.genericAsOf);
+    items.push({
+      lead: i.t("catchup.mood_lead"),
+      body: date ? i.t("catchup.mood_body_asof", { margin, date }) : i.t("catchup.mood_body", { margin }),
+    });
+  }
+  if (c.lookalike) items.push({ lead: i.t("catchup.echo_lead"), body: i.t("catchup.echo_body", { year: c.lookalike.year }) });
+  return items;
+}
+
 export interface QA {
   q: string;
   a: string;
 }
 
-const party = (m: number) => (m > 0 ? "Democrats" : "Republicans");
-
 /** Questions readers in a given country search for, answered from the data. Without a country, the hub's version. */
-export function worldQa(c: CatchUp, waves: Wave[], final: Date, country?: Country): QA[] {
-  const place = country ? country.inName : "outside the US";
+export function worldQa(i: I18n, c: CatchUp, waves: Wave[], final: Date, country?: Country): QA[] {
+  const text = country ? countryText(i, country) : undefined;
+  const place = text ? text.inName : i.t("place.world");
   const zone = country?.zone ?? "UTC";
-  const locale = country?.locale ?? "en-GB";
-  const clock = country ? `${country.city} time` : "UTC";
+  const locale = clockLocale(i, country);
+  const clock = text ? i.t("clock.city", { city: text.city }) : i.t("clock.utc");
   const first = waves[0];
   const big = waves.find((w) => w.et === "20:00") ?? waves[Math.min(2, waves.length - 1)];
   const mainland = waves.find((w) => w.et === "23:00");
-  const t = (w: Wave) => localTime(w.utc, zone, locale).full;
+  const at = (w: Wave) => localTime(w.utc, zone, locale).full;
+  const v = countVars(c);
 
   const qa: QA[] = [
     {
-      q: `What time do US polls close ${place}?`,
-      a: `The first polls close at ${t(first)} ${clock}${first ? ` (${first.states.slice(0, 3).join(", ")})` : ""}. The biggest wave closes at ${t(big)}, polls on the West Coast close at ${mainland ? t(mainland) : "the end of the night"}, and the last ones, in Alaska, close at ${localTime(final, zone, locale).full}.`,
+      q: i.t("qa.close_q", { place }),
+      a: i.t("qa.close_a", {
+        first: at(first),
+        clock,
+        states: waveStateNames(i, first).slice(0, 3).join(i.t("list.separator")),
+        big: at(big),
+        west: mainland ? at(mainland) : i.t("qa.end_of_night"),
+        last: localTime(final, zone, locale).full,
+      }),
     },
+    { q: i.t("qa.results_q", { place }), a: i.t("qa.results_a", { first: at(first), clock, place }) },
+    { q: i.t("qa.what_q"), a: i.t(c.senateSpecials ? "qa.what_a_specials" : "qa.what_a", v) },
+    { q: i.t("qa.president_q"), a: i.t("qa.president_a") },
+    { q: i.t("qa.matter_q"), a: i.t("qa.matter_a") },
+    { q: i.t("qa.senate_q"), a: i.t("qa.senate_a", { ...v, tossups: c.senateTossups }) },
     {
-      q: `When will the US midterm results be known ${place}?`,
-      a: `Results start arriving within minutes of each closing time, from ${t(first)} ${clock}. Most races are projected overnight, which for readers ${place} usually means by the following morning or day. Close races, and states that count mail ballots slowly, can take several days. The Big Board updates every minute through the night.`,
+      q: i.t("qa.house_q"),
+      a:
+        c.genericMargin != null
+          ? i.t("qa.house_a_generic", {
+              ...v,
+              tossups: c.houseTossups,
+              margin: marginLabel(i, c.genericMargin),
+              party: i.t(c.genericMargin > 0 ? "party.democrats" : "party.republicans"),
+            })
+          : i.t("qa.house_a", { ...v, tossups: c.houseTossups }),
     },
-    {
-      q: "What are the US midterm elections?",
-      a: `Midterms are the national elections held halfway through a president's four-year term. On Tuesday, November 3, 2026, Americans elect all ${c.houseSeats} members of the House of Representatives, ${c.senateSeats} of the 100 senators${c.senateSpecials ? ` (including ${c.senateSpecials} special elections)` : ""}, ${c.governors} state governors, ${c.chambers} state legislative chambers, and vote on ${c.measures} statewide ballot measures.`,
-    },
-    {
-      q: "Is the US president on the ballot in 2026?",
-      a: "No. The president was elected in 2024 and serves until January 2029. The midterms decide which party controls Congress, which writes laws, sets the budget and, in the Senate, approves treaties, judges and cabinet nominees.",
-    },
-    {
-      q: "Why do the US midterms matter outside America?",
-      a: "Congress controls US spending, including foreign aid and defence budgets, writes tariff and trade law, can impose or lift sanctions, and the Senate must approve treaties and ambassadors. A Congress controlled by the president's opponents can block much of the president's agenda for the next two years.",
-    },
-    {
-      q: "Who is expected to win the US Senate in 2026?",
-      a: `Republicans hold the Senate going in. By the consensus of the race forecasters, Democrats need ${c.senateNeedD} of the ${c.senateSeats} seats on the ballot for control and Republicans need ${c.senateNeedR}; ${c.senateTossups} races are rated Toss-up.`,
-    },
-    {
-      q: "Who is expected to win the US House in 2026?",
-      a: `${c.houseLeanD} House seats are rated toward the Democrats, ${c.houseLeanR} toward the Republicans and ${c.houseTossups} are Toss-ups; 218 seats make a majority.${c.genericMargin != null ? ` The national generic-ballot polling average is ${fmtMarginDR(c.genericMargin)}, meaning ${party(c.genericMargin)} lead the question of which party people would vote for.` : ""}`,
-    },
-    {
-      q: `How can I follow the US election results live ${place}?`,
-      a: "The Big Board is free, needs no account and works on a phone. It shows the balance of power in the Senate and House, every race's count as states report it, and its own projections. It does not republish calls by US television networks or the Associated Press.",
-    },
-    {
-      q: "When does the new US Congress take office?",
-      a: "The new Congress is sworn in on January 3, 2027. Newly elected governors take office in January in most states.",
-    },
+    { q: i.t("qa.live_q", { place }), a: i.t("qa.live_a") },
+    { q: i.t("qa.congress_q"), a: i.t("qa.congress_a") },
   ];
   if (c.lookalike) {
     qa.splice(6, 0, {
-      q: "Which past US election does 2026 look like?",
-      a: `State by state, current polling sits closest to the ${c.lookalike.year} presidential result, an average of ${c.lookalike.meanGap} points away. Polls can move and midterm electorates differ from presidential ones, so it is a comparison, not a forecast.`,
+      q: i.t("qa.echo_q"),
+      a: i.t("qa.echo_a", { year: c.lookalike.year, gap: i.num(c.lookalike.meanGap, { maximumFractionDigits: 1 }) }),
     });
   }
   return qa;
