@@ -174,13 +174,13 @@ export function MeasuresView({
           ) : (
             <div className="rounded-lg bg-s2 px-6 py-10 text-center">
               <p className="text-lg font-semibold">No measures match.</p>
-              <p className="mt-1 text-[15px] text-ink-muted">Try another word, or clear the topic and state filters.</p>
+              <p className="mt-1 text-[15px] text-ink-muted">Try another word, or clear the filters.</p>
             </div>
           )}
         </section>
 
         <aside className="order-first lg:sticky lg:top-36 lg:order-2 lg:max-h-[calc(100vh-10rem)] lg:self-start lg:overflow-y-auto xl:top-28 xl:max-h-[calc(100vh-8rem)]">
-          <div className="space-y-5 rounded-lg border border-border bg-card p-5 md:p-6">
+          <div className="space-y-5 rounded-lg bg-card p-5 md:p-6">
             <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
               <div className="space-y-1">
                 <h2 className="text-xl font-bold">Where the measures are</h2>
@@ -277,7 +277,7 @@ function StateGroup({
           rel="noreferrer"
           className="ml-auto inline-flex items-center gap-1.5 rounded-sm text-sm font-medium text-ink-muted underline-offset-4 outline-none hover:text-foreground hover:underline focus-visible:ring-[3px] focus-visible:ring-signal"
         >
-          Full text on Ballotpedia <ExternalLinkIcon className="size-3.5" />
+          Read the full text on Ballotpedia <ExternalLinkIcon className="size-3.5" />
         </a>
       </header>
       <ul className="space-y-2">

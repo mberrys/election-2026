@@ -76,7 +76,7 @@ export function BallotLookupSection({ configured, index }: { configured: boolean
           </h2>
           {configured ? (
             <p className="text-[15px] leading-relaxed text-ink-muted">
-              Enter the address where you&apos;re registered to see your polling place, early voting sites and the contests on your ballot.
+              Enter the address where you&apos;re registered. We&apos;ll show your polling place, early voting sites and the contests on your ballot.
             </p>
           ) : null}
         </div>
@@ -114,7 +114,7 @@ export function BallotLookupSection({ configured, index }: { configured: boolean
                 </p>
               ) : null}
               <p id={`${id}-help`} className="text-[13px] leading-relaxed text-ink-muted">
-                We send it to the Google Civic Information API for this one lookup. We don&apos;t store or log it.
+                We send your address to the Google Civic Information API for this one lookup. We don&apos;t store or log it.
               </p>
             </form>
 
@@ -138,8 +138,8 @@ export function BallotLookupSection({ configured, index }: { configured: boolean
               <div className="space-y-8">
                 <Notice role="alert" title={errorCopy(lookup.code, lookup.message).title}>
                   <p>
-                    {errorCopy(lookup.code, lookup.message).body} Meanwhile, pick your state to see the races we cover, and{" "}
-                    <ExternalLink href={VOTE_ORG.pollingPlace}>find your polling place on Vote.org</ExternalLink>.
+                    {errorCopy(lookup.code, lookup.message).body} In the meantime, pick your state to see the races we cover. You can
+                    also <ExternalLink href={VOTE_ORG.pollingPlace}>find your polling place on Vote.org</ExternalLink>.
                   </p>
                 </Notice>
                 <StateRaces index={index} />
@@ -150,8 +150,8 @@ export function BallotLookupSection({ configured, index }: { configured: boolean
           <div className="space-y-8">
             <Notice title="Address lookup isn't available right now">
               <p>
-                Pick your state to see the federal and governor races and statewide measures on your ballot, with links to the
-                candidates, polls and news for each. To find where you vote,{" "}
+                Pick your state to see the federal and governor races and statewide measures on your ballot. Each one links to its
+                candidates, polls and news. To find where you vote,{" "}
                 <ExternalLink href={VOTE_ORG.pollingPlace}>use Vote.org&apos;s polling place locator</ExternalLink>.
               </p>
             </Notice>
@@ -191,7 +191,7 @@ function Results({ data, index }: { data: BallotLookup; index: BallotIndex }) {
         {data.mailOnly ? (
           <p className="text-[15px] leading-relaxed text-ink-muted">
             <strong className="font-semibold text-foreground">Voters at this address vote by mail.</strong> Your election office mails
-            the ballot; check its return deadline with them.
+            the ballot. Ask it for the return deadline.
           </p>
         ) : null}
       </header>
@@ -200,7 +200,7 @@ function Results({ data, index }: { data: BallotLookup; index: BallotIndex }) {
         <div className="space-y-8">
           <Notice title="No details for this address yet">
             <p>
-              Google hasn&apos;t published polling places or contests for this address. Your election office has the official list. Pick
+              Google hasn&apos;t published polling places or contests for this address. Your election office keeps the official list. Pick
               your state to see the races we cover.
             </p>
           </Notice>
@@ -215,7 +215,7 @@ function Results({ data, index }: { data: BallotLookup; index: BallotIndex }) {
       {groups.map((g) => (
         <div key={g.key}>
           <GroupHeading note={`${g.items.length} ${g.items.length === 1 ? "contest" : "contests"}`}>{g.label}</GroupHeading>
-          <ul className="divide-y divide-border overflow-hidden rounded-lg border border-border bg-card">
+          <ul className="divide-y divide-border overflow-hidden rounded-lg bg-card">
             {g.items.map((it, i) => (
               <ContestRow key={`${it.contest.title}-${i}`} contest={it.contest} race={it.race} stateName={stateName} />
             ))}
@@ -235,7 +235,7 @@ function Results({ data, index }: { data: BallotLookup; index: BallotIndex }) {
       {office && (office.name || office.url || office.phone) ? (
         <div>
           <GroupHeading>Your election office</GroupHeading>
-          <div className="space-y-2 rounded-lg border border-border bg-card px-5 py-4 text-[15px] leading-relaxed text-ink-muted">
+          <div className="space-y-2 rounded-lg bg-card px-5 py-4 text-[15px] leading-relaxed text-ink-muted">
             {office.name ? <p className="text-[18px] font-semibold leading-snug text-foreground">{office.name}</p> : null}
             <p className="flex flex-wrap gap-x-5 gap-y-1">
               {office.url && safeUrl(office.url) ? <ExternalLink href={safeUrl(office.url)!}>Election information</ExternalLink> : null}
@@ -253,8 +253,8 @@ function Results({ data, index }: { data: BallotLookup; index: BallotIndex }) {
       ) : null}
 
       <p className="text-[13px] leading-relaxed text-ink-muted">
-        Ballot details come from the Google Civic Information API and can be incomplete. Confirm with your state or county election
-        office.
+        The Google Civic Information API supplies these ballot details, and they can be incomplete. Confirm them with your state or
+        county election office.
         {stateName && st ? (
           <>
             {" "}
@@ -279,7 +279,7 @@ function Places({ title, places, dates = false }: { title: string; places: Place
   return (
     <div>
       <GroupHeading note={places.length > 1 ? `${places.length} locations` : undefined}>{title}</GroupHeading>
-      <ul className="divide-y divide-border overflow-hidden rounded-lg border border-border bg-card">
+      <ul className="divide-y divide-border overflow-hidden rounded-lg bg-card">
         {shown.map((p, i) => {
           const ended = dates && !!today && isDay(p.endDate) && p.endDate < today;
           const { title: heading, address } = splitPlace(p);

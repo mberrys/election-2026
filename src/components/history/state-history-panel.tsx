@@ -20,11 +20,13 @@ export function StateHistoryPanel({ abbr }: { abbr: string }) {
           All states
         </Link>
       </div>
-      <Card size="sm">
-        <CardContent>
-          <HistoryDetail row={row} yardstick="pres" trend={trend} />
-        </CardContent>
-      </Card>
+      <div data-reveal>
+        <Card size="sm">
+          <CardContent>
+            <HistoryDetail row={row} yardstick="pres" trend={trend} />
+          </CardContent>
+        </Card>
+      </div>
     </section>
   );
 }

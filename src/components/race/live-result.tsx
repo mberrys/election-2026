@@ -18,7 +18,7 @@ export function LiveResult({ raceId, pollClose, measure = false }: { raceId: str
 
   if (!counting) {
     return (
-      <div className="rounded-lg border border-border bg-card px-6 py-5">
+      <div className="rounded-lg bg-card px-6 py-5">
         <p className="text-base font-semibold">Results</p>
         <p className="mt-1 text-[15px] text-ink-muted">The count appears here after polls close at {pollClose}.</p>
       </div>
@@ -34,7 +34,7 @@ export function LiveResult({ raceId, pollClose, measure = false }: { raceId: str
   };
 
   return (
-    <section aria-label="Results" className="space-y-5 rounded-lg border border-border bg-card px-6 py-6">
+    <section aria-label="Results" className="space-y-5 rounded-lg bg-card px-6 py-6">
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
         <h2 className="text-xl font-bold">{race.status === "projected" ? "Projected result" : "Results so far"}</h2>
         <p className="text-[15px] text-ink-muted tnum">

@@ -1,3 +1,4 @@
+import { stripInline } from "./inline-links";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL, absoluteUrl } from "./site";
 
 /** Static top-level pages in the sitemap. `/senate/[state]` only redirects and `/api/*` is not for crawlers. */
@@ -16,6 +17,7 @@ export const SITE_PAGES: ReadonlyArray<{
   { path: "/election-night", changeFrequency: "daily", priority: 0.8, dataDriven: true },
   { path: "/history", changeFrequency: "daily", priority: 0.7, dataDriven: true },
   { path: "/explainers", changeFrequency: "weekly", priority: 0.6, dataDriven: true },
+  { path: "/world", changeFrequency: "daily", priority: 0.6, dataDriven: true },
   { path: "/ballot", changeFrequency: "monthly", priority: 0.5, dataDriven: false },
   { path: "/methodology", changeFrequency: "monthly", priority: 0.4, dataDriven: false },
   { path: "/sources", changeFrequency: "monthly", priority: 0.3, dataDriven: false },
@@ -40,7 +42,7 @@ export function websiteJsonLd(base: string = SITE_URL) {
 
 /** A page of the site, with its last data refresh. `about` names the place when the page is about one. */
 export function webPageJsonLd(
-  opts: { name: string; description: string; path: string; dateModified?: string; about?: { type: string; name: string } },
+  opts: { name: string; description: string; path: string; dateModified?: string; about?: { type: string; name: string }; inLanguage?: string },
   base: string = SITE_URL,
 ) {
   const url = absoluteUrl(opts.path, base);
@@ -51,11 +53,18 @@ export function webPageJsonLd(
     url,
     name: opts.name,
     description: opts.description,
-    inLanguage: "en-US",
+    inLanguage: opts.inLanguage ?? "en-US",
     isPartOf: { "@id": `${base}/#website` },
     ...(opts.dateModified ? { dateModified: opts.dateModified } : {}),
     ...(opts.about
-      ? { about: { "@type": opts.about.type, name: opts.about.name, containedInPlace: { "@type": "Country", name: "United States" } } }
+      ? {
+          about: {
+            "@type": opts.about.type,
+            name: opts.about.name,
+            // US states and districts sit inside the US; the /world guides are about other countries
+            ...(opts.about.type === "Country" ? {} : { containedInPlace: { "@type": "Country", name: "United States" } }),
+          },
+        }
       : {}),
   };
 }
@@ -93,5 +102,14 @@ export function historyDatasetJsonLd(opts: { firstYear: number; lastYear: number
       "https://votehub.com/polls/api",
     ],
     ...(opts.dateModified ? { dateModified: opts.dateModified } : {}),
+  };
+}
+
+/** Question-and-answer block for rich results. Answers are plain text. */
+export function faqJsonLd(qa: ReadonlyArray<{ q: string; a: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: qa.map((x) => ({ "@type": "Question", name: x.q, acceptedAnswer: { "@type": "Answer", text: stripInline(x.a) } })),
   };
 }

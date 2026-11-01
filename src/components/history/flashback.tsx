@@ -93,8 +93,8 @@ export function Flashback({ data }: { data: FlashbackData }) {
               2026 looks most like {finding.year}
             </h2>
             <p className="text-[15px] leading-relaxed text-ink-muted">
-              State by state, 2026 sits an average of {finding.meanGap.toFixed(1)} points from the {finding.year} result, closer than any election since{" "}
-              {finding.since}, and {finding.sameSide} of {finding.n} lean the same way.
+              Across the states, 2026 sits an average of {finding.meanGap.toFixed(1)} points from the {finding.year} result, closer than any election since{" "}
+              {finding.since}. {finding.sameSide} of {finding.n} states lean the same way.
             </p>
           </div>
           <button
@@ -102,7 +102,7 @@ export function Flashback({ data }: { data: FlashbackData }) {
             onClick={() => jump(atFinding ? last : findingStep)}
             className="inline-flex h-11 shrink-0 items-center gap-2 self-start rounded-full px-5 text-[15px] font-semibold ring-1 ring-border-strong transition-colors outline-none hover:bg-s3 focus-visible:ring-[3px] focus-visible:ring-signal md:self-auto"
           >
-            {atFinding ? "Back to 2026" : `Take me to ${finding.year}`}
+            {atFinding ? "Back to 2026" : `Go to ${finding.year}`}
             <ArrowRightIcon aria-hidden className={cn("size-4 transition-transform", atFinding && "rotate-180")} />
           </button>
         </section>
@@ -129,7 +129,7 @@ export function Flashback({ data }: { data: FlashbackData }) {
           <MapLegend className="hidden lg:flex" />
         </div>
 
-        <aside className="space-y-6 rounded-xl border border-border bg-card p-4 sm:p-5 lg:sticky lg:top-36 xl:top-28">
+        <aside className="space-y-6 rounded-xl bg-card p-4 sm:p-5 lg:sticky lg:top-36 xl:top-28">
           <div className="space-y-3">
             <div className="flex items-center gap-4">
               <button
@@ -142,7 +142,7 @@ export function Flashback({ data }: { data: FlashbackData }) {
                 {playing ? "Pause" : "Play"}
               </button>
               <p className="text-[13px] leading-snug text-ink-muted">
-                {steps[0].year} to 2026, one election every beat. States bounce when they change sides.
+                {steps[0].year} to 2026, one election per beat. States bounce when they switch sides.
               </p>
             </div>
             <Scrubber steps={steps} step={view.step} onChange={jump} />
@@ -375,10 +375,15 @@ function NationPanel({ data, step, onGo }: { data: FlashbackData; step: number; 
       </dl>
       <MiniStrip margins={steps.map((x) => x.national)} steps={steps} step={step} onGo={onGo} label="National margin by election" />
       <div className="space-y-1.5">
-        <p className="text-[15px] leading-relaxed">{data.nationSentence.replace(/^Projected /, "The 2026 generic ballot is ")}</p>
+        <p className="text-[15px] leading-relaxed">
+          {data.nationSentence.replace(/^Projected /, "The 2026 generic ballot is ")}{" "}
+          <Link href="/methodology" className="underline-offset-2 hover:underline">
+            How the projection works
+          </Link>
+        </p>
         <p className="text-[13px] leading-snug text-ink-muted">
-          <span className="hidden lg:inline">Hover a state to see its story; click to keep it open.</span>
-          <span className="lg:hidden">Tap a state to see its story.</span>
+          <span className="hidden lg:inline">Hover a state to read its story. Click to keep it open.</span>
+          <span className="lg:hidden">Tap a state to read its story.</span>
         </p>
       </div>
     </div>

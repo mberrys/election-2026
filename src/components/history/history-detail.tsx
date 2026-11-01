@@ -92,7 +92,7 @@ export function HistoryDetail({ row, yardstick, trend, className }: Props) {
                 />
               )}
               <ChartTooltip content={<ChartTooltipContent labelFormatter={(_, pl) => (pl?.[0]?.payload?.t ? `Week of ${dateFmt.format(pl[0].payload.t)}` : "")} formatter={(v) => fmtMarginDR(Number(v))} />} />
-              <Line type="monotone" dataKey="margin" stroke="var(--color-margin)" strokeWidth={2} dot={false} isAnimationActive={false} />
+              <Line type="linear" dataKey="margin" stroke="var(--color-margin)" strokeWidth={2} dot={false} isAnimationActive={false} />
             </LineChart>
           </ChartContainer>
         ) : (
@@ -110,7 +110,7 @@ export function HistoryDetail({ row, yardstick, trend, className }: Props) {
               <YAxis tickLine={false} axisLine={false} width={44} fontSize={12} tickFormatter={(v: number) => fmtMarginDR(v, 0)} />
               <ReferenceLine y={0} stroke="var(--foreground)" strokeOpacity={0.5} />
               <ChartTooltip content={<ChartTooltipContent formatter={(v) => fmtMarginDR(Number(v))} labelFormatter={(l) => (l === "2026" ? "2026 projected" : String(l))} />} />
-              <Bar dataKey="margin" isAnimationActive={false} radius={1}>
+              <Bar dataKey="margin" isAnimationActive={false}>
                 {barData.map((b) => (
                   <Cell
                     key={b.year}

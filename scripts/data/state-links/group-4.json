@@ -1,0 +1,62 @@
+[
+  {
+    "abbr": "NM",
+    "office": { "name": "New Mexico Secretary of State, Bureau of Elections", "url": "https://www.sos.nm.gov/voting-and-elections/", "verified": true },
+    "results": { "url": "https://electionresults.sos.nm.gov/", "verified": true },
+    "voterInfo": { "url": "https://voterportal.sos.state.nm.us/", "verified": false }
+  },
+  {
+    "abbr": "NY",
+    "office": { "name": "New York State Board of Elections", "url": "https://www.elections.ny.gov/", "verified": false },
+    "results": { "url": "https://www.elections.ny.gov/NYElectionResults.html", "verified": false },
+    "voterInfo": { "url": "https://voterlookup.elections.ny.gov/", "verified": false }
+  },
+  {
+    "abbr": "NC",
+    "office": { "name": "North Carolina State Board of Elections", "url": "https://www.ncsbe.gov/", "verified": true },
+    "results": { "url": "https://er.ncsbe.gov/", "verified": true },
+    "voterInfo": { "url": "https://vt.ncsbe.gov/", "verified": true }
+  },
+  {
+    "abbr": "ND",
+    "office": { "name": "North Dakota Secretary of State, Elections", "url": "https://www.sos.nd.gov/elections", "verified": true },
+    "results": { "url": "https://results.sos.nd.gov/", "verified": true },
+    "voterInfo": { "url": "https://vip.sos.nd.gov/PortalList.aspx", "verified": true }
+  },
+  {
+    "abbr": "OH",
+    "office": { "name": "Ohio Secretary of State, Elections", "url": "https://www.ohiosos.gov/elections/", "verified": false },
+    "results": { "url": "https://liveresults.ohiosos.gov/", "verified": true },
+    "voterInfo": { "url": "https://voterlookup.ohiosos.gov/voterlookup.aspx", "verified": false }
+  },
+  {
+    "abbr": "OK",
+    "office": { "name": "Oklahoma State Election Board", "url": "https://oklahoma.gov/elections.html", "verified": true },
+    "results": { "url": "https://results.okelections.us/", "verified": false },
+    "voterInfo": { "url": "https://okvoterportal.okelections.us/", "verified": false }
+  },
+  {
+    "abbr": "OR",
+    "office": { "name": "Oregon Secretary of State, Elections Division", "url": "https://sos.oregon.gov/elections/Pages/default.aspx", "verified": true },
+    "results": null,
+    "voterInfo": { "url": "https://sos.oregon.gov/elections/pages/registration.aspx", "verified": true }
+  },
+  {
+    "abbr": "PA",
+    "office": { "name": "Pennsylvania Department of State, Elections", "url": "https://www.pa.gov/agencies/vote", "verified": true },
+    "results": { "url": "https://www.electionreturns.pa.gov/", "verified": true },
+    "voterInfo": { "url": "https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx", "verified": true }
+  },
+  {
+    "abbr": "RI",
+    "office": { "name": "Rhode Island Secretary of State, Elections Division", "url": "https://vote.sos.ri.gov/", "verified": false },
+    "results": null,
+    "voterInfo": { "url": "https://vote.sos.ri.gov/Voter/Search", "verified": false }
+  },
+  {
+    "abbr": "SC",
+    "office": { "name": "South Carolina Election Commission", "url": "https://www.scvotes.gov/", "verified": true },
+    "results": { "url": "https://results.enr-scvotes.org/", "verified": false },
+    "voterInfo": { "url": "https://info.scvotes.gov/", "verified": false }
+  }
+]

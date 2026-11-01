@@ -13,11 +13,17 @@ import {
   topicLabels,
   type MeasureContentInput,
 } from "@/components/race/measure-content";
+import { MarginAxis } from "@/components/charts/margin-axis";
+import { RaceHero } from "@/components/race/race-hero";
+import { MarginHistory } from "@/components/charts/margin-history";
 import { LiveResult } from "@/components/race/live-result";
 import { NewsFeed } from "@/components/race/news-feed";
-import { Campaigns, KeyFacts, LinkList, Polling, Prose, QaList, Section, SourceLine, mainCandidates, pollCloseLabel, type StoryLike } from "@/components/race/race-view";
+import { Campaigns, KeyFacts, LinkList, Money, Polling, Prose, QaList, Section, SourceLine, Sources, mainCandidates, pollCloseLabel, type SourceLink, type StoryLike } from "@/components/race/race-view";
+import { stateSourceLinks } from "@/data/reference/state-links";
 import { getState, loadPolls, loadRaces } from "@/data/reference/load";
 import { getStory } from "@/data/reference/stories";
+import { getStateImage } from "@/data/reference/images";
+import { StatePhoto } from "@/components/race/state-photo";
 import { ballotpediaUrl } from "@/components/states/states-lib";
 import { pageMetadata } from "@/lib/page-meta";
 import { raceHref } from "@/lib/race-slug";
@@ -63,7 +69,7 @@ function KeyDates({ dates }: { dates: { date: string; text: string }[] }) {
   return (
     <div className="space-y-3 pt-2">
       <h3 className="text-lg font-semibold">Key dates</h3>
-      <ol className="max-w-[68ch] divide-y divide-border rounded-lg border border-border bg-card">
+      <ol className="max-w-[68ch] divide-y divide-border rounded-lg bg-card">
         {dates.map((d) => {
           const t = Date.parse(d.date);
           return (
@@ -100,6 +106,16 @@ export default async function RacePage({ params }: PageProps<"/race/[slug]">) {
   const m = measureContentInput(slug);
   if (m) return <Measure slug={slug} input={m} />;
   notFound();
+}
+
+/** FEC filings for each main candidate, the state's official election pages, and the article the story quotes. */
+function raceSources(meta: RaceContentInput["meta"], stateName: string, story?: StoryLike): SourceLink[] {
+  const out: SourceLink[] = mainCandidates(meta)
+    .main.filter((c) => c.fecId)
+    .map((c) => ({ label: `${c.name}: campaign finance filings`, href: `https://www.fec.gov/data/candidate/${c.fecId}/`, note: "Federal Election Commission" }));
+  out.push(...stateSourceLinks(meta.state, stateName));
+  if (story?.source.kind === "wikipedia") out.push({ label: story.source.title, href: story.source.url, note: "Wikipedia" });
+  return out;
 }
 
 function lede(input: RaceContentInput): string {
@@ -140,7 +156,11 @@ function CandidateRace({ slug, input }: { slug: string; input: RaceContentInput 
         <p className="page-lede">{lede(input)}</p>
       </header>
 
-      <KeyFacts meta={meta} pollClose={close} />
+      <div className="grid gap-4 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)]">
+        <RaceHero meta={meta} />
+        <KeyFacts meta={meta} pollClose={close} />
+      </div>
+      <MarginAxis meta={meta} />
       <LiveResult raceId={meta.id} pollClose={close} />
 
       <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] xl:grid-cols-[minmax(0,1fr)_26rem]">
@@ -159,6 +179,22 @@ function CandidateRace({ slug, input }: { slug: string; input: RaceContentInput 
 
           <Section id="h-polls" title="Polling">
             <Polling meta={meta} trend={trend} />
+          </Section>
+
+          {(meta.office === "senate" || meta.office === "governor") && (
+            <Section id="h-history" title={`How ${state.name} has voted`}>
+              <MarginHistory abbr={state.abbr} stateName={state.name} office={meta.office} />
+            </Section>
+          )}
+
+          {meta.money && Object.keys(meta.money.receipts ?? {}).length > 0 && (
+            <Section id="h-money" title="Money">
+              <Money meta={meta} />
+            </Section>
+          )}
+
+          <Section id="h-sources" title="Official sources">
+            <Sources links={raceSources(meta, state.name, story)} />
           </Section>
 
           <Section id="h-qa" title="Questions and answers">
@@ -215,7 +251,9 @@ function Measure({ slug, input }: { slug: string; input: MeasureContentInput }) 
         </p>
       </header>
 
-      <dl className="grid grid-cols-2 gap-x-8 gap-y-8 rounded-lg border border-border bg-card px-6 py-6 md:grid-cols-4 md:px-8">
+      <StatePhoto image={getStateImage(state.abbr)} stateName={state.name} className="max-w-5xl" />
+
+      <dl className="grid grid-cols-2 gap-x-8 gap-y-8 rounded-lg bg-card px-6 py-6 md:grid-cols-4 md:px-8">
         {facts.map((f) => (
           <div key={f.label} className="min-w-0">
             <dt className="text-[15px] text-ink-muted">{f.label}</dt>
@@ -250,7 +288,7 @@ function Measure({ slug, input }: { slug: string; input: MeasureContentInput }) 
             <Section id="h-sides" title="Supporters and opponents">
               <div className="grid gap-6 md:grid-cols-2">
                 {sides.map((s) => (
-                  <article key={s.side} className="space-y-3 rounded-lg border border-border bg-card p-6" style={{ borderTop: `3px solid ${s.side === "yes" ? "var(--signal)" : "var(--ink-faint)"}` }}>
+                  <article key={s.side} className="space-y-3 rounded-lg bg-card p-6" style={{ borderTop: `3px solid ${s.side === "yes" ? "var(--signal)" : "var(--ink-faint)"}` }}>
                     <h3 className="text-2xl font-bold">{s.side === "yes" ? "Yes campaign" : "No campaign"}</h3>
                     <div className="space-y-3 text-base leading-relaxed text-foreground/90">
                       {s.paragraphs.map((p, i) => (
@@ -262,6 +300,16 @@ function Measure({ slug, input }: { slug: string; input: MeasureContentInput }) 
               </div>
             </Section>
           )}
+
+          <Section id="h-sources" title="Official sources">
+            <Sources
+              links={[
+                ...stateSourceLinks(state.abbr, state.name),
+                { label: `${state.name} 2026 ballot measures`, href: ballotpediaUrl(state.name), note: "Ballotpedia, full text and arguments" },
+                ...(story?.source.kind === "wikipedia" ? [{ label: story.source.title, href: story.source.url, note: "Wikipedia" }] : []),
+              ]}
+            />
+          </Section>
 
           {siblings.length > 0 && (
             <Section id="h-more" title={`More on the ${state.name} ballot`}>

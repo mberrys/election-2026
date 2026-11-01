@@ -2,6 +2,8 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import robots from "../../src/app/robots";
 import sitemap from "../../src/app/sitemap";
 import { loadRaces } from "../../src/data/reference/load";
+import { COUNTRIES } from "../../src/components/world/countries";
+import { TRANSLATED_LANGS } from "../../src/i18n/locales";
 import { pageMetadata } from "../../src/lib/page-meta";
 import { SITE_PAGES, breadcrumbJsonLd, historyDatasetJsonLd, serializeJsonLd, webPageJsonLd, websiteJsonLd } from "../../src/lib/seo";
 import { absoluteUrl, siteUrl } from "../../src/lib/site";
@@ -30,7 +32,7 @@ describe("sitemap", () => {
   const measures = loadRaces().filter((r) => r.office === "ballot").length;
 
   it("lists every static page, all 51 state pages, all 506 race pages and every ballot measure page, once each, as absolute URLs", () => {
-    expect(urls).toHaveLength(SITE_PAGES.length + 51 + 506 + measures);
+    expect(urls).toHaveLength(SITE_PAGES.length + 51 + 506 + measures + COUNTRIES.length * (1 + TRANSLATED_LANGS.length) + TRANSLATED_LANGS.length);
     expect(new Set(urls).size).toBe(urls.length);
     expect(urls.every((u) => /^https?:\/\//.test(u))).toBe(true);
     expect(urls).toContain(absoluteUrl("/history"));
@@ -44,6 +46,27 @@ describe("sitemap", () => {
     expect(urls).toContain(absoluteUrl("/race/house-tx-15"));
     expect(urls).toContain(absoluteUrl("/race/ballot-ca-prop-3"));
     expect(urls.filter((u) => u.includes("/race/"))).toHaveLength(506 + measures);
+  });
+
+  it("lists the international guides in every language, each with its full hreflang cluster", () => {
+    const entries = sitemap();
+    expect(urls).toContain(absoluteUrl("/world"));
+    expect(urls).toContain(absoluteUrl("/es/world"));
+    expect(urls).toContain(absoluteUrl("/zh/world/hong-kong"));
+    const uk = entries.find((e) => e.url === absoluteUrl("/es/world/uk"))!;
+    expect(uk.alternates?.languages).toMatchObject({
+      "en-GB": absoluteUrl("/world/uk"),
+      es: absoluteUrl("/es/world/uk"),
+      ja: absoluteUrl("/ja/world/uk"),
+      "zh-Hans": absoluteUrl("/zh/world/uk"),
+      "x-default": absoluteUrl("/world/uk"),
+    });
+    // hub and country clusters: English + eight translations + x-default, identical from every member (reciprocal)
+    const cluster = (u: string) => entries.find((e) => e.url === absoluteUrl(u))!.alternates?.languages;
+    expect(Object.keys(cluster("/world")!)).toHaveLength(2 + TRANSLATED_LANGS.length);
+    expect(cluster("/world")).toEqual(cluster("/fr/world"));
+    expect(cluster("/world/uk")).toEqual(cluster("/de/world/uk"));
+    expect(cluster("/world/uk")).not.toEqual(cluster("/world/ireland"));
   });
 
   it("leaves out API routes and the redirect-only /senate/[state]", () => {
@@ -118,6 +141,8 @@ describe("structured data", () => {
       about: { "@type": "State", name: "Texas" },
     });
     expect(webPageJsonLd({ name: "n", description: "d", path: "/" }, "https://x.test")).not.toHaveProperty("about");
+    const germany = webPageJsonLd({ name: "n", description: "d", path: "/world/germany", about: { type: "Country", name: "Germany" } }, "https://x.test");
+    expect(germany.about).not.toHaveProperty("containedInPlace");
   });
 
   it("builds an ordered breadcrumb with absolute URLs", () => {

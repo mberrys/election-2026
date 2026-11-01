@@ -12,6 +12,8 @@ import { RatingBadge, StatusBadge } from "@/components/board/status-badge";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import type { PhotoMap } from "@/data/reference/images";
+import { Face } from "@/components/race/face";
 import { compact, fmtMarginDR } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { flipPossible, flippedTo, hasResults, isCalled, isCompetitive, leaderOf, partyInk, pollMargin, type LiveIndex, type LiveRace } from "./balance";
@@ -91,6 +93,7 @@ export function RaceTable({
   live,
   states,
   defaultSort = "rating",
+  photos,
   className,
 }: {
   office: "senate" | "governor";
@@ -98,6 +101,8 @@ export function RaceTable({
   live: LiveIndex;
   states: readonly Pick<StateMeta, "abbr" | "name">[];
   defaultSort?: SortKey;
+  /** Candidate photos by id, for the face beside each name. */
+  photos?: PhotoMap;
   className?: string;
 }) {
   const [filter, setFilter] = useState<RaceFilter>("all");
@@ -167,7 +172,7 @@ export function RaceTable({
         <p className="text-xs text-muted-foreground">{anyLive ? "Updates about every 25 seconds." : "Results columns appear once counting starts."}</p>
       </div>
 
-      <ScrollArea className="w-full rounded-lg border border-border bg-card">
+      <ScrollArea className="w-full rounded-lg bg-card">
         <table
           className={cn("relative w-full caption-bottom text-[15px]", cols.live ? "min-w-[900px] md:min-w-[1040px]" : "min-w-[560px] md:min-w-[720px]")}
           aria-label={office === "senate" ? "Senate races" : "Governor races"}
@@ -199,7 +204,7 @@ export function RaceTable({
           </TableHeader>
           <TableBody>
             {visible.map((row) => (
-              <RaceRow key={row.meta.id} row={row} cols={cols} />
+              <RaceRow key={row.meta.id} row={row} cols={cols} photos={photos} />
             ))}
             {visible.length === 0 && (
               <TableRow>
@@ -272,7 +277,7 @@ function Facts({ items }: { items: ReactNode[] }) {
 
 type Cols = { polls: boolean; cash: boolean; live: boolean; projection: boolean };
 
-function RaceRow({ row, cols }: { row: Row; cols: Cols }) {
+function RaceRow({ row, cols, photos }: { row: Row; cols: Cols; photos?: PhotoMap }) {
   const { meta, race, stateName } = row;
   const cands = shownCandidates(meta, race);
   const counting = !!race && race.totalVotes > 0;
@@ -309,9 +314,10 @@ function RaceRow({ row, cols }: { row: Row; cols: Cols }) {
       </TableCell>
 
       <TableCell className="py-5 align-top">
-        <ul className="space-y-1">
+        <ul>
           {cands.map((c) => (
-            <li key={c.id} className="flex items-baseline gap-2 leading-6">
+            <li key={c.id} className="flex h-10 items-center gap-2.5 leading-6">
+              <Face name={c.name} party={c.party} photo={photos?.[c.id]} size={32} />
               <span className={cn("max-w-[220px] truncate", partyInk(c.party), (c.id === winnerId || c.id === leaderId) && "font-semibold")}>
                 {c.name}
               </span>
@@ -344,9 +350,9 @@ function RaceRow({ row, cols }: { row: Row; cols: Cols }) {
       {cols.cash && (
         <TableCell className="py-5 align-top text-right tnum">
           {/* One figure per candidate, on the same line as their name. */}
-          <ul className="space-y-1">
+          <ul>
             {cands.map((c) => (
-              <li key={c.id} className="leading-6">
+              <li key={c.id} className="flex h-10 items-center justify-end leading-6">
                 {cash[c.id] != null ? (
                   <>
                     <span className="sr-only">{c.name}: </span>${compact.format(cash[c.id])}

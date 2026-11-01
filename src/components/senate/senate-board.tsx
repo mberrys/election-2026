@@ -1,9 +1,12 @@
 "use client";
 
+import type { ReactNode } from "react";
+
 import { useMemo } from "react";
 import { SENATE_NOT_UP_2026 } from "@/analytics";
 import { indexRaces, useNational } from "@/hooks/use-results";
 import { useMounted } from "@/hooks/use-mounted";
+import type { PhotoMap } from "@/data/reference/images";
 import type { RaceMeta, StateMeta } from "@/data/schema";
 import { buildBalance, EMPTY_LIVE, stateNameLookup, type LiveIndex } from "./balance";
 import { ChamberBalance } from "./chamber-balance";
@@ -18,7 +21,7 @@ const listFmt = new Intl.ListFormat("en-US", { style: "long", type: "conjunction
  * national poll. Before mount (SSR + hydration) the board renders from metas alone, so there is no
  * skeleton flash and no hydration mismatch when the browser cache already holds a snapshot.
  */
-export function SenateBoard({ metas, states }: { metas: RaceMeta[]; states: Pick<StateMeta, "abbr" | "name">[] }) {
+export function SenateBoard({ metas, states, photos, ratings }: { metas: RaceMeta[]; states: Pick<StateMeta, "abbr" | "name">[]; photos?: PhotoMap; ratings?: ReactNode }) {
   const mounted = useMounted();
   const { data } = useNational();
 
@@ -54,11 +57,13 @@ export function SenateBoard({ metas, states }: { metas: RaceMeta[]; states: Pick
         </div>
       </section>
 
+      {ratings}
+
       <section aria-labelledby="senate-races" className="space-y-4">
         <h2 id="senate-races" className="section-title">
           All {metas.length} races
         </h2>
-        <RaceTable office="senate" metas={metas} live={live} states={states} />
+        <RaceTable office="senate" metas={metas} live={live} states={states} photos={photos} />
       </section>
 
       {live.size > 0 && data?.notices?.length ? (

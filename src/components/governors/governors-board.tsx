@@ -1,10 +1,13 @@
 "use client";
 
+import type { ReactNode } from "react";
+
 import { useMemo } from "react";
 import { indexRaces, useNational } from "@/hooks/use-results";
 import { useMounted } from "@/hooks/use-mounted";
 import { BalanceBar } from "@/components/board/balance-bar";
 import { Card, CardContent } from "@/components/ui/card";
+import type { PhotoMap } from "@/data/reference/images";
 import type { Party, RaceMeta, StateMeta } from "@/data/schema";
 import { cn } from "@/lib/utils";
 import { buildBalance, EMPTY_LIVE, flippedTo, partyInk, stateNameLookup, type LiveIndex } from "@/components/senate/balance";
@@ -16,7 +19,7 @@ import { GovernorTile } from "./governor-tile";
 
 const listFmt = new Intl.ListFormat("en-US", { style: "long", type: "conjunction" });
 
-export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: Pick<StateMeta, "abbr" | "name">[] }) {
+export function GovernorsBoard({ metas, states, photos, ratings }: { metas: RaceMeta[]; states: Pick<StateMeta, "abbr" | "name">[]; photos?: PhotoMap; ratings?: ReactNode }) {
   const mounted = useMounted();
   const { data } = useNational();
 
@@ -108,6 +111,8 @@ export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: P
         </Card>
       </section>
 
+      {ratings}
+
       <section aria-labelledby="gov-tiles" className="space-y-4">
         <h2 id="gov-tiles" className="section-title">
           State by state
@@ -123,7 +128,7 @@ export function GovernorsBoard({ metas, states }: { metas: RaceMeta[]; states: P
         <h2 id="gov-races" className="section-title">
           All {metas.length} races
         </h2>
-        <RaceTable office="governor" metas={metas} live={live} states={states} />
+        <RaceTable office="governor" metas={metas} live={live} states={states} photos={photos} />
       </section>
 
       {live.size > 0 && data?.notices?.length ? (

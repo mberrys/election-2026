@@ -1,10 +1,12 @@
 import Link from "next/link";
+import { KofiWidget } from "./kofi-widget";
 
 const LINKS = [
   { href: "/election-night", label: "Poll closing times" },
   { href: "/explainers", label: "Explainers" },
   { href: "/methodology", label: "Methodology" },
   { href: "/sources", label: "Sources & licenses" },
+  { href: "/credits", label: "Photo credits" },
 ] as const;
 
 export function SiteFooter() {
@@ -31,6 +33,7 @@ export function SiteFooter() {
           </a>
         </nav>
       </div>
+      <KofiWidget />
     </footer>
   );
 }

@@ -9,6 +9,7 @@ import type { HistoryRowModel } from "@/analytics/history";
 import { fmtEt, fmtMarginDR, partyName, ratingLabel } from "@/lib/format";
 import { ELECTION_DAY_LABEL } from "@/lib/site";
 import { lastTimeSentence } from "@/components/history/summary";
+import { raceHref } from "@/lib/race-slug";
 
 export interface QA {
   q: string;
@@ -137,8 +138,8 @@ export function lastWinQa(phrase: (who: string) => string, ansNoun: string, w: L
   const hit = w[ask];
   const alt = w[other];
   const q = phrase(ask === "d" ? "a Democrat" : "a Republican");
-  const twoRaces = ansNoun === "a Senate race" ? " Where a state held two Senate races in one year, only the regular election is counted." : "";
-  const caveat = `This covers the ${w.total} elections in the Big Board's dataset, ${w.first}–${w.last}, which may have gaps.${twoRaces}`;
+  const twoRaces = ansNoun === "a Senate race" ? " Only the regular election counts when a state holds two Senate races in one year." : "";
+  const caveat = `The Big Board's dataset covers ${w.total} elections, ${w.first}–${w.last}, and may have gaps.${twoRaces}`;
   if (!hit) {
     return { q, a: `No ${SIDE[ask]} candidate won ${ansNoun} in the dataset.${alt ? ` The last ${SIDE[other]} win was ${alt.year} (${fmtMarginDR(alt.margin)}).` : ""} ${caveat}` };
   }
@@ -166,11 +167,11 @@ function orderText(state: StateContentInput["state"]): string {
   const note = state.voteOrderNote ? ` ${state.voteOrderNote}` : "";
   switch (state.voteOrder) {
     case "early-first":
-      return `${state.name} typically reports early and mail ballots first, so early returns can lean Democratic until Election Day votes are counted.${note}`;
+      return `${state.name} reports early and mail ballots first, so early returns can lean Democratic until Election Day votes are counted.${note}`;
     case "eday-first":
-      return `${state.name} typically reports Election Day votes first, so early returns can lean Republican until mail ballots are counted.${note}`;
+      return `${state.name} reports Election Day votes first, so early returns can lean Republican until mail ballots are counted.${note}`;
     case "mixed":
-      return `The order varies by county in ${state.name}, so early numbers are noisy.${note}`;
+      return `Counting order varies by county in ${state.name}, so early numbers are noisy.${note}`;
     default:
       return `The reporting order for ${state.name} has not been confirmed for 2026, so treat early numbers with caution.`;
   }
@@ -237,13 +238,13 @@ export function stateDescription({ state, races, row }: StateContentInput): stri
   }
   const p = row?.projection;
   if (p && row.lastTime !== undefined && row.lastTime !== row.latestYear) {
-    bits.push(`Polls point to ${fmtMarginDR(p.margin)}, last this ${p.margin >= 0 ? "Democratic" : "Republican"} in ${row.lastTime}.`);
+    bits.push(`Polls point to ${fmtMarginDR(p.margin)}. ${state.name} last voted this ${p.margin >= 0 ? "Democratic" : "Republican"} in ${row.lastTime}.`);
   }
   if (!bits.length) {
     const houseN = races.filter((r) => r.office === "house").length;
     bits.push(`${houseN ? `${houseN} U.S. House ${houseN === 1 ? "seat" : "seats"}, ` : ""}ballot measures, county results and presidential history.`);
   }
-  bits.push("Poll closing times and vote-count order.");
+  bits.push("Poll closing times and counting order.");
   return led ? bits.join(" ") : `${state.name} 2026: ${bits.join(" ")}`;
 }
 
@@ -253,17 +254,23 @@ export function stateQa(input: StateContentInput): QA[] {
   const name = state.name;
   const qa: QA[] = [];
 
-  qa.push({ q: `What time do polls close in ${name} on Election Day 2026?`, a: closeTimesText(state) });
+  qa.push({ q: `What time do polls close in ${name} on Election Day 2026?`, a: `${closeTimesText(state)} For every state, see [poll closing times](/election-night).` });
 
   qa.push({
     q: `When will ${name} election results be known?`,
-    a: `Election Day is ${ELECTION_DAY_LABEL}. ${closeTimesText(state).replace(/ Close times per The Green Papers\.$/, "")} ${orderText(state)} Results from official sources arrive after polls close; the Big Board shows its own projection and does not call races.`,
+    a: `Election Day is ${ELECTION_DAY_LABEL}. ${closeTimesText(state).replace(/ Close times per The Green Papers\.$/, "")} ${orderText(state)} Official results arrive after polls close. The Big Board shows its own projection and does not call races. For why early totals shift, read [blue and red mirages](/explainers#mirage).`,
   });
 
   for (const w of statewideRaces(races)) {
     const m = matchup(w.meta);
-    const held = w.meta.heldBy ? `The seat is currently held by a ${partyName[w.meta.heldBy]}.` : undefined;
-    const a = [m ? `The matchup is ${m}.` : candidatesText(w.meta), ratingText(w.meta), pollText(w.meta), held, "The Big Board shows polls and ratings; it does not call races."]
+    const held = w.meta.heldBy ? `The seat is held by a ${partyName[w.meta.heldBy]}.` : undefined;
+    const a = [
+      m ? `The matchup is ${m}.` : candidatesText(w.meta),
+      ratingText(w.meta),
+      pollText(w.meta),
+      held,
+      `The Big Board shows polls and ratings but does not call races. Read [how ratings work](/explainers#ratings), or see the [${name} ${w.short} race](${raceHref(w.meta.id)}).`,
+    ]
       .filter(Boolean)
       .join(" ");
     qa.push({ q: `Who is favored to win the ${name} ${w.noun} in 2026?`, a });
@@ -288,7 +295,7 @@ export function stateQa(input: StateContentInput): QA[] {
   if (house && state.abbr !== "DC") {
     qa.push({
       q: `How many U.S. House districts does ${name} have in 2026?`,
-      a: house === 1 ? `${name} has one at-large U.S. House seat, and it is on the 2026 ballot.` : `${name} elects ${house} U.S. House members in 2026, one per district. All ${house} seats are on the ballot.`,
+      a: house === 1 ? `${name} has one at-large U.S. House seat on the 2026 ballot.` : `${name} elects ${house} U.S. House members in 2026, one per district, and all ${house} seats are on the ballot.`,
     });
   }
 
@@ -297,14 +304,14 @@ export function stateQa(input: StateContentInput): QA[] {
     const shown = measures.slice(0, 6).map((m) => clip(m, 140));
     qa.push({
       q: `What ballot measures are on the ${name} ballot in 2026?`,
-      a: `${measures.length} statewide ${measures.length === 1 ? "measure is" : "measures are"} tracked: ${shown.join("; ")}${measures.length > shown.length ? `; and ${measures.length - shown.length} more` : ""}.`,
+      a: `The Big Board tracks ${measures.length} statewide ${measures.length === 1 ? "measure" : "measures"}: ${shown.join("; ")}${measures.length > shown.length ? `; and ${measures.length - shown.length} more` : ""}.`,
     });
   }
 
   if (races.some((r) => r.runoffRule === "majority" && r.office !== "ballot")) {
     qa.push({
       q: `Is there a runoff in ${name} if no candidate wins a majority?`,
-      a: `Yes. ${name} requires a majority winner in its general elections for Senate, governor and U.S. House, so a race where no candidate passes 50% goes to a runoff between the top two.`,
+      a: `Yes. ${name} requires a majority in its general elections for Senate, governor and U.S. House. A race where no candidate wins more than 50% goes to a runoff between the top two.`,
     });
   }
 
@@ -322,7 +329,7 @@ function presidentialQa(name: string, w: LastWins): QA {
   }
   return {
     q,
-    a: `${name} last voted for a ${SIDE[ask]} presidential candidate in ${hit.year} (${fmtMarginDR(hit.margin)})${alt ? ` and for a ${SIDE[other]} in ${alt.year} (${fmtMarginDR(alt.margin)})` : ""}. Margins are D minus R, from ${w.total} elections, ${w.first}–${w.last}.`,
+    a: `${name} last voted for a ${SIDE[ask]} presidential candidate in ${hit.year} (${fmtMarginDR(hit.margin)})${alt ? ` and for a ${SIDE[other]} in ${alt.year} (${fmtMarginDR(alt.margin)})` : ""}. Margins run D minus R across ${w.total} elections, ${w.first}–${w.last}. Compare every state in [Flashback](/history).`,
   };
 }
 
@@ -335,6 +342,6 @@ function redBlueQa(name: string, series: MarginSeries, w: LastWins): QA {
   const narrowest = Object.entries(series).sort((a, b) => Math.abs(a[1]) - Math.abs(b[1]))[0];
   return {
     q: `Is ${name} a red state or a blue state?`,
-    a: `${name} voted ${latest > 0 ? "Democratic" : "Republican"} in ${w.last} (${fmtMarginDR(latest)})${priorText}. Of the ${w.total} presidential elections from ${w.first} to ${w.last}, Democrats carried it ${w.dWins} ${w.dWins === 1 ? "time" : "times"} and Republicans ${w.rWins}. The narrowest margin was ${narrowest[0]} (${fmtMarginDR(narrowest[1])}).`,
+    a: `${name} voted ${latest > 0 ? "Democratic" : "Republican"} in ${w.last} (${fmtMarginDR(latest)})${priorText}. Of the ${w.total} presidential elections from ${w.first} to ${w.last}, Democrats carried it ${w.dWins} ${w.dWins === 1 ? "time" : "times"} and Republicans ${w.rWins}. The narrowest margin came in ${narrowest[0]} (${fmtMarginDR(narrowest[1])}).`,
   };
 }

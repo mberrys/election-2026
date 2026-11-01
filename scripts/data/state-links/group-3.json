@@ -1,0 +1,68 @@
+[
+  {
+    "abbr": "MD",
+    "office": { "name": "Maryland State Board of Elections", "url": "https://elections.maryland.gov/", "verified": true },
+    "results": { "url": "https://elections.maryland.gov/elections/results.html", "verified": true },
+    "voterInfo": { "url": "https://voterservices.elections.maryland.gov/PollingPlaceSearch", "verified": true }
+  },
+  {
+    "abbr": "MA",
+    "office": { "name": "Massachusetts Elections Division (Secretary of the Commonwealth)", "url": "https://www.sec.state.ma.us/ele/eleidx.htm", "verified": false },
+    "results": { "url": "https://electionstats.state.ma.us/", "verified": true },
+    "voterInfo": { "url": "https://www.sec.state.ma.us/WhereDoIVoteMA/WhereDoIVote", "verified": false }
+  },
+  {
+    "abbr": "MI",
+    "office": { "name": "Michigan Department of State, Bureau of Elections", "url": "https://www.michigan.gov/sos/elections", "verified": true },
+    "results": null,
+    "voterInfo": { "url": "https://mvic.sos.state.mi.us/", "verified": false }
+  },
+  {
+    "abbr": "MN",
+    "office": { "name": "Minnesota Secretary of State, Elections", "url": "https://www.sos.mn.gov/elections-voting/", "verified": false },
+    "results": { "url": "https://electionresults.sos.mn.gov/", "verified": false },
+    "voterInfo": { "url": "https://pollfinder.sos.mn.gov/", "verified": false }
+  },
+  {
+    "abbr": "MS",
+    "office": { "name": "Mississippi Secretary of State, Elections and Voting", "url": "https://www.sos.ms.gov/elections-voting", "verified": true },
+    "results": { "url": "https://www.sos.ms.gov/elections-voting/election-results", "verified": true },
+    "voterInfo": { "url": "https://www.msegov.com/sos/voter_registration/", "verified": true }
+  },
+  {
+    "abbr": "MO",
+    "office": { "name": "Missouri Secretary of State, Elections", "url": "https://www.sos.mo.gov/elections", "verified": false },
+    "results": { "url": "https://enr.sos.mo.gov/", "verified": false },
+    "voterInfo": { "url": "https://voteroutreach.sos.mo.gov/portal/", "verified": false }
+  },
+  {
+    "abbr": "MT",
+    "office": { "name": "Montana Secretary of State, Elections", "url": "https://sosmt.gov/elections/", "verified": false },
+    "results": { "url": "https://sosmt.gov/elections/results/", "verified": false },
+    "voterInfo": null
+  },
+  {
+    "abbr": "NE",
+    "office": { "name": "Nebraska Secretary of State, Elections", "url": "https://sos.nebraska.gov/elections", "verified": true },
+    "results": { "url": "https://electionresults.nebraska.gov/", "verified": true },
+    "voterInfo": { "url": "https://www.votercheck.necvr.ne.gov/voterview/", "verified": true }
+  },
+  {
+    "abbr": "NV",
+    "office": { "name": "Nevada Secretary of State, Elections", "url": "https://www.nvsos.gov/sos/elections", "verified": true },
+    "results": { "url": "https://www.nvsos.gov/sos/elections/election-results", "verified": true },
+    "voterInfo": { "url": "https://www.nvsos.gov/votersearch/", "verified": true }
+  },
+  {
+    "abbr": "NH",
+    "office": { "name": "New Hampshire Secretary of State, Elections Division", "url": "https://www.sos.nh.gov/elections", "verified": false },
+    "results": null,
+    "voterInfo": { "url": "https://app.sos.nh.gov/Public/PollingPlaceSearch.aspx", "verified": false }
+  },
+  {
+    "abbr": "NJ",
+    "office": { "name": "New Jersey Division of Elections", "url": "https://www.nj.gov/state/elections/", "verified": true },
+    "results": { "url": "https://nj.gov/state/elections/election-information-results.shtml", "verified": true },
+    "voterInfo": { "url": "https://voter.svrs.nj.gov/polling-place-search", "verified": true }
+  }
+]

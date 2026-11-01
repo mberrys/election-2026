@@ -77,7 +77,7 @@ export function StateRaces({ index, initial = "" }: { index: BallotIndex; initia
             <div>
               <GroupHeading note={`${house.length} districts`}>U.S. House</GroupHeading>
               <p className="mb-4 text-[15px] leading-relaxed text-ink-muted">
-                Pick your congressional district. Not sure which one is yours?{" "}
+                Choose your congressional district. Not sure which one you live in?{" "}
                 <ExternalLink href={FIND_YOUR_REP}>Look it up by ZIP code on house.gov</ExternalLink>.
               </p>
               <ul className="grid grid-cols-[repeat(auto-fill,minmax(3.25rem,1fr))] gap-2">
@@ -86,7 +86,7 @@ export function StateRaces({ index, initial = "" }: { index: BallotIndex; initia
                     <Link
                       href={raceHref(r.id)}
                       aria-label={`${state.name} ${districtLabel(r.district ?? "")}`}
-                      className="flex h-12 items-center justify-center rounded-lg border border-border bg-card text-[15px] font-semibold text-foreground tabular-nums transition-colors hover:bg-s3"
+                      className="flex h-12 items-center justify-center rounded-lg bg-card text-[15px] font-semibold text-foreground tabular-nums transition-colors hover:bg-s3"
                     >
                       {Number(r.district)}
                     </Link>
@@ -111,8 +111,12 @@ export function StateRaces({ index, initial = "" }: { index: BallotIndex; initia
             Your ballot will also list state and local contests. For the full picture, see{" "}
             <Link href={`/state/${state.abbr}`} className={textLink}>
               our {state.name} page
-            </Link>{" "}
-            and <ExternalLink href={VOTE_ORG.pollingPlace}>find your polling place on Vote.org</ExternalLink>.
+            </Link>
+            , and <ExternalLink href={VOTE_ORG.pollingPlace}>find your polling place on Vote.org</ExternalLink>. New to these races?{" "}
+            <Link href="/explainers" className={textLink}>
+              Read our explainers
+            </Link>
+            .
           </p>
         </div>
       ) : null}

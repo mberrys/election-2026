@@ -59,7 +59,7 @@ export function LinkRow({ href, title, desc, external = false }: { href: string;
 /** A calm, specific message: bold title, muted body. */
 export function Notice({ title, children, role = "status" }: { title: string; children?: ReactNode; role?: "status" | "alert" }) {
   return (
-    <div role={role} className="rounded-lg border border-border bg-card px-5 py-4">
+    <div role={role} className="rounded-lg bg-card px-5 py-4">
       <p className="text-[18px] font-semibold leading-snug text-foreground">{title}</p>
       {children ? <div className="mt-1.5 text-[15px] leading-relaxed text-ink-muted">{children}</div> : null}
     </div>

@@ -49,7 +49,7 @@ export function HistoryStrips({ rows, pinned, unitLabel }: Props) {
   const labels = [...years, 2026];
 
   return (
-    <div className="overflow-hidden rounded-xl border border-border bg-card" role="group" aria-label={`${unitLabel} election history`}>
+    <div className="overflow-hidden rounded-xl bg-card" role="group" aria-label={`${unitLabel} election history`}>
       <div className={cn(ROW_COLS, "border-b border-border px-3 py-3 text-[13px] font-semibold text-ink-muted sm:px-5")}>
         <span>{unitLabel}</span>
         <div className="col-span-3 row-start-2 grid gap-[2px] sm:col-span-1 sm:row-start-auto" style={{ gridTemplateColumns: `repeat(${cells}, minmax(0, 1fr))` }} aria-hidden>

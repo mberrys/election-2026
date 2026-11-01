@@ -1,4 +1,7 @@
 import type { MetadataRoute } from "next";
+import { COUNTRIES } from "@/components/world/countries";
+import { worldAlternates } from "@/components/world/world-data";
+import { TRANSLATED_LANGS, worldPath } from "@/i18n/locales";
 import { isRaceOffice, raceSlug } from "@/components/race/race-content";
 import { loadBuiltAt, loadRaces, loadStates } from "@/data/reference/load";
 import { SITE_PAGES } from "@/lib/seo";
@@ -10,11 +13,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const built = new Date(loadBuiltAt());
   const lastModified = Number.isNaN(built.getTime()) ? undefined : built;
 
+  // Every URL of an international guide lists its whole language cluster (itself included): the same set the page's own
+  // <link rel="alternate" hreflang> tags carry.
+  const cluster = (alternates: Record<string, string>) => ({
+    languages: Object.fromEntries(Object.entries(alternates).map(([k, v]) => [k, absoluteUrl(v)])),
+  });
+
   const pages: MetadataRoute.Sitemap = SITE_PAGES.map((p) => ({
     url: absoluteUrl(p.path),
     changeFrequency: p.changeFrequency,
     priority: p.priority,
     ...(p.dataDriven && lastModified ? { lastModified } : {}),
+    ...(p.path === worldPath("en") ? { alternates: cluster(worldAlternates()) } : {}),
   }));
 
   const states: MetadataRoute.Sitemap = loadStates().map((s) => ({
@@ -43,5 +53,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...(lastModified ? { lastModified } : {}),
     }));
 
-  return [...pages, ...states, ...races, ...measures];
+  // Country guides for readers outside the US, in English and each translated language; the translated hubs come first.
+  const world: MetadataRoute.Sitemap = [
+    ...TRANSLATED_LANGS.map((lang) => ({
+      url: absoluteUrl(worldPath(lang)),
+      changeFrequency: "daily" as const,
+      priority: 0.5,
+      alternates: cluster(worldAlternates()),
+      ...(lastModified ? { lastModified } : {}),
+    })),
+    ...COUNTRIES.flatMap((c) =>
+      (["en", ...TRANSLATED_LANGS] as const).map((lang) => ({
+        url: absoluteUrl(worldPath(lang, `/${c.slug}`)),
+        changeFrequency: "daily" as const,
+        priority: lang === "en" ? 0.5 : 0.4,
+        alternates: cluster(worldAlternates(c)),
+        ...(lastModified ? { lastModified } : {}),
+      })),
+    ),
+  ];
+
+  return [...pages, ...states, ...races, ...measures, ...world];
 }

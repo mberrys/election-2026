@@ -57,7 +57,7 @@ export function PollCloseWatch({
       </div>
       <div className="flex snap-x items-start gap-3 overflow-x-auto pb-2 scrollbar-thin">
         {groups.map((g) => (
-          <section key={g.key} aria-label={`Polls close ${g.label}`} className="min-w-[14rem] max-w-[16rem] shrink-0 snap-start rounded-lg border border-border bg-card">
+          <section key={g.key} aria-label={`Polls close ${g.label}`} className="min-w-[14rem] max-w-[16rem] shrink-0 snap-start rounded-lg bg-card">
             <header className="flex items-baseline justify-between border-b border-border px-3 py-2">
               <h3 className="text-lg font-semibold tnum">{g.label}</h3>
               <span className="text-xs text-muted-foreground tnum">
