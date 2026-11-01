@@ -476,3 +476,15 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Ko-fi's floating button shows only over the empty strip at the foot of the footer (see KofiWidget). */
+:is(.floatingchat-container-wrap, .floatingchat-container-wrap-mobi) {
+  transition: opacity 240ms var(--ease-roll), transform 240ms var(--ease-roll), visibility 0s;
+}
+html:not([data-kofi]) :is(.floatingchat-container-wrap, .floatingchat-container-wrap-mobi) {
+  opacity: 0;
+  transform: translateY(16px);
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 240ms var(--ease-roll), transform 240ms var(--ease-roll), visibility 0s 240ms;
+}
