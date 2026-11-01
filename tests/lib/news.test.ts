@@ -216,14 +216,14 @@ describe("fetchRaceNews", () => {
     const fakeFetch = (async (input: URL | string) => {
       const url = String(input);
       calls.push(url);
-      if (url.includes("gdeltproject.org")) return new Response("Please limit requests", { status: 429 });
-      return new Response(RSS.replace("Georgia Senate race:", "Georgia Senate race:"), { status: 200 });
+      if (new URL(url).hostname === "api.gdeltproject.org") return new Response("Please limit requests", { status: 429 });
+      return new Response(RSS, { status: 200 });
     }) as unknown as typeof fetch;
     const out = await fetchRaceNews(ga(), "Georgia", { fetch: fakeFetch, now });
     expect(out.source).toBe("google-news");
     expect(out.raceId).toBe("senate:GA");
     expect(out.items.map((i) => i.outlet)).toEqual(["Atlanta Journal-Constitution", "Politico"]);
-    expect(calls.some((u) => u.includes("news.google.com/rss/search"))).toBe(true);
+    expect(calls.some((u) => { const p = new URL(u); return p.hostname === "news.google.com" && p.pathname === "/rss/search"; })).toBe(true);
   });
 
   it("returns source none and no items when every source fails, without throwing", async () => {

@@ -47,18 +47,23 @@ export function decodeEntities(s: string): string {
 
 // ---------- wikitext scanning ----------
 
+/**
+ * Remove comments, refs and blocks we cannot render. Runs until nothing changes, so a tag split around
+ * another one ("<ref<ref/>>") cannot survive a single pass.
+ */
 function stripCommentsAndRefs(s: string): string {
   let out = s;
   for (let prev = ""; prev !== out; ) {
     prev = out;
-    out = out.replace(/<!--[\s\S]*?-->/g, "");
+    out = out
+      .replace(/<!--[\s\S]*?-->/g, "")
+      .replace(/<ref\b[^>]*\/\s*>/gi, "")
+      .replace(/<ref\b[^>]*>[\s\S]*?<\/ref\s*>/gi, "")
+      .replace(/<(gallery|timeline|imagemap|noinclude|score)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, "\n")
+      // inline blocks we cannot reproduce: mark the paragraph so it is dropped rather than shipped with a hole
+      .replace(/<(math|poem|blockquote|syntaxhighlight)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, HOLE)
+      .replace(/<\/?(onlyinclude|includeonly)\s*>/gi, "");
   }
-  out = out.replace(/<ref\b[^>]*\/\s*>/gi, "").replace(/<ref\b[^>]*>[\s\S]*?<\/ref\s*>/gi, "");
-  out = out
-    .replace(/<(gallery|timeline|imagemap|noinclude|score)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, "\n")
-    // inline blocks we cannot reproduce: mark the paragraph so it is dropped rather than shipped with a hole
-    .replace(/<(math|poem|blockquote|syntaxhighlight)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, HOLE)
-    .replace(/<\/?(onlyinclude|includeonly)\s*>/gi, "");
   return out;
 }
 
