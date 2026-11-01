@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { NationalBoard } from "@/components/board/national-board";
 import { nationalCopy } from "@/components/board/page-copy";
-import { genericBallot } from "@/components/history/build-view";
 import { JsonLd } from "@/components/seo/json-ld";
 import { loadPolls, loadRaces, loadStates } from "@/data/reference/load";
 import type { RaceMeta } from "@/data/schema";
@@ -11,7 +10,7 @@ import { DEFAULT_TITLE } from "@/lib/site";
 
 export const ensureStatic = "navigation";
 
-const description = nationalCopy(loadRaces(), genericBallot().margin).home;
+const description = nationalCopy(loadRaces()).home;
 
 export const metadata: Metadata = pageMetadata({ description, path: "/" });
 

@@ -221,7 +221,7 @@ export function raceQa(input: RaceContentInput): QA[] {
       const noun = meta.office === "senate" ? "a Senate race" : "the governor's race";
       qa.push(lastWinQa((who) => `When did ${state.name} last elect ${who} ${meta.office === "senate" ? "to the U.S. Senate" : "as governor"}?`, noun, w));
     }
-    if (row?.projection && w && w.total >= 6) {
+    if (row?.projection?.source === "poll" && w && w.total >= 6) {
       qa.push({ q: `When was the last time ${state.name} voted the way polls in ${subject} point?`, a: lastTimeSentence(row, meta.office) });
     }
   }

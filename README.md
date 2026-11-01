@@ -42,7 +42,7 @@ Tests: `npm test` (analytics, adapters against fixtures, and a full simulated el
 ## Deploy (Vercel)
 
 1. Import the repo; add **Upstash for Redis** from the Marketplace (sets `UPSTASH_REDIS_REST_*`).
-2. Copy `.env.example` for local use. In Vercel set `CRON_SECRET`, `ADMIN_SECRET`, `FEC_API_KEY`, `GOOGLE_CIVIC_API_KEY` (powers `/ballot`) and `NEXT_PUBLIC_SITE_URL` (mark the secrets Sensitive). After a data deploy, `POST /api/indexnow` with the cron bearer header pings Bing-family search engines (see `docs/PINGER.md`).
+2. Copy `.env.example` for local use. In Vercel set `CRON_SECRET`, `ADMIN_SECRET`, `FEC_API_KEY`, `GOOGLE_CIVIC_API_KEY` (powers `/ballot`) and `NEXT_PUBLIC_SITE_URL` (add the secrets as `Secret`; `NEXT_PUBLIC_SITE_URL` is public, so `Config`). After a data deploy, `POST /api/indexnow` with the cron bearer header pings Bing-family search engines (see `docs/PINGER.md`).
 3. `vercel.json` schedules `/api/ingest` once a day as a safety net (Hobby-legal). Live updates need a per-minute trigger: Vercel Pro cron, or an external pinger (cron-job.org, QStash) sending `Authorization: Bearer $CRON_SECRET` to `/api/ingest`. See `docs/PINGER.md`.
 4. For election-night traffic enable Flat Rate CDN and a Spend Management cap (see docs/research/04).
 

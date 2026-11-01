@@ -65,12 +65,12 @@ describe("page copy", () => {
     expect(officeTally(races, "house")).toEqual({ total: 1, tossups: 1, watch: 1 });
   });
 
-  it("puts this build's counts and the generic ballot into the descriptions", () => {
-    const copy = nationalCopy(loadRaces(), 4.2);
+  it("puts this build's counts, but no poll margin, into the descriptions", () => {
+    const copy = nationalCopy(loadRaces());
     expect(copy.home).toContain("35 Senate races");
     expect(copy.home).toContain("435 House seats");
-    expect(copy.home).toContain("Generic ballot D+4.2");
+    expect(copy.home).not.toContain("Generic ballot");
     expect(copy.senate).toMatch(/^35 Senate seats are on the 2026 ballot: \d+ rated Toss-up/);
-    expect(nationalCopy(loadRaces()).house).not.toContain("Generic ballot");
+    expect(copy.house).not.toContain("Generic ballot");
   });
 });
