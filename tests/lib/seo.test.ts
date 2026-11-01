@@ -141,6 +141,8 @@ describe("structured data", () => {
       about: { "@type": "State", name: "Texas" },
     });
     expect(webPageJsonLd({ name: "n", description: "d", path: "/" }, "https://x.test")).not.toHaveProperty("about");
+    const germany = webPageJsonLd({ name: "n", description: "d", path: "/world/germany", about: { type: "Country", name: "Germany" } }, "https://x.test");
+    expect(germany.about).not.toHaveProperty("containedInPlace");
   });
 
   it("builds an ordered breadcrumb with absolute URLs", () => {

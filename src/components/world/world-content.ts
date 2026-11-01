@@ -90,6 +90,8 @@ export interface Wave {
   utc: Date;
   /** Postal codes of the states whose polls close (all of the state, or its first part) at this time, in English name order. */
   states: string[];
+  /** States whose remaining polls close at this time, after part of the state closed in an earlier wave. */
+  rest: string[];
   /** Senate and governor races rated Lean or closer in those states. */
   watch: WatchRace[];
 }
@@ -97,9 +99,16 @@ export interface Wave {
 /** Poll-closing waves on election night, earliest first, keyed by when each state's polls start to close. */
 export function closingWaves(states: StateMeta[], races: RaceMeta[]): Wave[] {
   const byTime = new Map<string, StateMeta[]>();
+  const restByTime = new Map<string, StateMeta[]>();
   for (const s of states) {
-    const first = s.pollCloseFirstEt ?? s.pollCloseEt.split("/")[0];
+    const times = s.pollCloseEt.split("/");
+    const first = s.pollCloseFirstEt ?? times[0];
     (byTime.get(first) ?? byTime.set(first, []).get(first)!).push(s);
+    const last = times.at(-1)!;
+    if (last !== first) {
+      (restByTime.get(last) ?? restByTime.set(last, []).get(last)!).push(s);
+      if (!byTime.has(last)) byTime.set(last, []);
+    }
   }
   const statewide = new Map<string, WatchRace[]>();
   for (const r of races) {
@@ -112,6 +121,7 @@ export function closingWaves(states: StateMeta[], races: RaceMeta[]): Wave[] {
       et,
       utc: etToUtc(et),
       states: [...list].sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0)).map((s) => s.abbr),
+      rest: (restByTime.get(et) ?? []).map((s) => s.abbr),
       watch: list.flatMap((s) => statewide.get(s.abbr) ?? []),
     }))
     .sort((a, b) => a.utc.getTime() - b.utc.getTime());
@@ -119,7 +129,9 @@ export function closingWaves(states: StateMeta[], races: RaceMeta[]): Wave[] {
 
 /** The states closing in a wave, named in the page's language and sorted by those names. */
 export function waveStateNames(i: I18n, w: Wave): string[] {
-  return w.states.map((abbr) => stateName(i, abbr)).sort((a, b) => a.localeCompare(b, i.tag));
+  const names = w.states.map((abbr) => stateName(i, abbr)).sort((a, b) => a.localeCompare(b, i.tag));
+  const rest = w.rest.map((abbr) => i.t("table.rest_of_state", { state: stateName(i, abbr) })).sort((a, b) => a.localeCompare(b, i.tag));
+  return [...names, ...rest];
 }
 
 /** "TX Senate (Lean R)" in the page's language. */

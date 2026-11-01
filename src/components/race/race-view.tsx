@@ -330,7 +330,7 @@ export function Sources({ links }: { links: SourceLink[] }) {
   return (
     <ul className="divide-y divide-border rounded-lg border border-border bg-card">
       {links.map((l) => (
-        <li key={l.href}>
+        <li key={`${l.href} ${l.label}`}>
           <a
             href={l.href}
             target="_blank"

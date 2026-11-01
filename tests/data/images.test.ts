@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   authorOf,
   hasWatermark,
+  licenseFromKey,
   htmlToText,
   isAllowedLicense,
   isConfidentArticle,
@@ -222,5 +223,15 @@ describe("built images.json", () => {
     expect(getCandidateImage("no-such-candidate")).toBeUndefined();
     expect(getCandidateImage("constructor")).toBeUndefined();
     expect(getStateImage("ZZ")).toBeUndefined();
+  });
+});
+
+describe("licenseFromKey", () => {
+  it("names the licence from Commons' key instead of assuming public domain", () => {
+    expect(licenseFromKey("cc-by-sa-4.0")).toBe("CC BY-SA 4.0");
+    expect(licenseFromKey("cc-by-2.0")).toBe("CC BY 2.0");
+    expect(licenseFromKey("cc0")).toBe("CC0");
+    expect(licenseFromKey("pd-usgov")).toBe("Public domain");
+    expect(licenseFromKey("")).toBe("");
   });
 });

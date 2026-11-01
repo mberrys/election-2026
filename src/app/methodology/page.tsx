@@ -18,7 +18,7 @@ export default function MethodologyPage() {
 
       <h2>1. Vote counts</h2>
       <p>
-        An ingest job runs every minute and pulls machine-readable results from election authorities. Each state carries a <em>tier</em> label that you will see beside its name. Counts appear as they arrive on the <Link href="/election-night">election night</Link> page, and the <Link href="/sources">sources page</Link> lists every feed:
+        An ingest job runs every minute and pulls machine-readable results from election authorities. Each state carries a <em>tier</em> label that you will see beside its name. Counts appear as they arrive on the <Link href="/">Big Board</Link>, and the <Link href="/sources">sources page</Link> lists every feed:
       </p>
       <ul>
         <li>

@@ -57,7 +57,14 @@ export function webPageJsonLd(
     isPartOf: { "@id": `${base}/#website` },
     ...(opts.dateModified ? { dateModified: opts.dateModified } : {}),
     ...(opts.about
-      ? { about: { "@type": opts.about.type, name: opts.about.name, containedInPlace: { "@type": "Country", name: "United States" } } }
+      ? {
+          about: {
+            "@type": opts.about.type,
+            name: opts.about.name,
+            // US states and districts sit inside the US; the /world guides are about other countries
+            ...(opts.about.type === "Country" ? {} : { containedInPlace: { "@type": "Country", name: "United States" } }),
+          },
+        }
       : {}),
   };
 }

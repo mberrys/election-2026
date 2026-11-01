@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 /** `[label](href)` inside plain prose strings. Internal paths start with "/", everything else opens in a new tab. */
-const LINK = /\[([^\]]+)\]\(((?:\/|https?:\/\/)[^\s)]+)\)/g;
+const LINK = /\[([^\]]+)\]\((\/[^\s)]*|https?:\/\/[^\s)]+)\)/g;
 
 const linkClass = "font-medium text-foreground underline decoration-border-strong underline-offset-4 hover:decoration-foreground";
 

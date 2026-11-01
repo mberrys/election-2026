@@ -39,6 +39,12 @@ describe("closingWaves", () => {
     expect(waves.flatMap((w) => w.states)).toHaveLength(loadStates().length);
     for (let i = 1; i < waves.length; i++) expect(waves[i].utc.getTime()).toBeGreaterThan(waves[i - 1].utc.getTime());
   });
+
+  it("lists the later closing of states split across time zones", () => {
+    expect(waves.find((w) => w.et === "18:00")!.states).toContain("IN");
+    expect(waves.find((w) => w.et === "19:00")!.rest).toContain("IN");
+    expect(waves.find((w) => w.et === "01:00")!.rest).toContain("AK");
+  });
 });
 
 describe("finalClose", () => {

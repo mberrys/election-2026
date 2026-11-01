@@ -36,6 +36,7 @@
   "table.closes_in": "Chiusura dei seggi tra",
   "table.races": "Corse da seguire",
   "table.none_close": "Nessuna corsa combattuta",
+  "table.rest_of_state": "{state} (resto dello stato)",
   "office.senate": "Senato",
   "office.governor": "Governatore",
   "race.senate": "Senato in {state}",

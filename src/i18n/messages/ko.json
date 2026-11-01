@@ -36,6 +36,7 @@
   "table.closes_in": "투표 마감까지",
   "table.races": "주목할 선거",
   "table.none_close": "박빙으로 분류된 선거 없음",
+  "table.rest_of_state": "{state} (나머지 지역)",
   "office.senate": "상원",
   "office.governor": "주지사",
   "race.senate": "{state} 상원",

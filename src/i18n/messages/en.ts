@@ -72,6 +72,7 @@ export const en = {
   "table.closes_in": "Polls close in",
   "table.races": "Races to watch",
   "table.none_close": "None rated close",
+  "table.rest_of_state": "{state} (rest of state)",
   /** Which office a race is for, shown beside the race name. */
   "office.senate": "Senate",
   "office.governor": "Governor",

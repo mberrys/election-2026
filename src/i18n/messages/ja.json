@@ -36,6 +36,7 @@
   "table.closes_in": "投票締め切りまで",
   "table.races": "注目の選挙区",
   "table.none_close": "接戦と評価された選挙区はなし",
+  "table.rest_of_state": "{state}(残りの地域)",
   "office.senate": "上院",
   "office.governor": "州知事",
   "race.senate": "{state}上院選",

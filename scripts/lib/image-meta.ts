@@ -169,6 +169,15 @@ export function thumbDims(thumbUrl: string, origW: number, origH: number): { wid
   return { width: w, height: Math.max(1, Math.round((origH * w) / origW)) };
 }
 
+/** A display label from Commons' licence key ("cc-by-sa-4.0" → "CC BY-SA 4.0"), or "" when the key names no accepted licence. */
+export function licenseFromKey(raw: string): string {
+  const key = raw.trim().toLowerCase();
+  if (/^pd($|-)/.test(key)) return "Public domain";
+  if (key === "cc0") return "CC0";
+  const cc = /^cc-by(-sa)?-(\d(?:\.\d)?)/.exec(key);
+  return cc ? `CC BY${cc[1] ? "-SA" : ""} ${cc[2]}` : "";
+}
+
 /** Apply every rule (type, size, licence, watermark) and build the stored entry, or say why not. */
 export function toImageEntry(
   info: CommonsInfo | undefined,
@@ -186,7 +195,8 @@ export function toImageEntry(
   // keep the host the API hands out: thumb.wikimedia.org serves thumbnails, upload.wikimedia.org refuses non-browser hotlinks
   const thumbUrl = rawThumb.split("?")[0];
   const { width, height } = thumbDims(thumbUrl, info.width, info.height);
-  const license = metaValue(info.extmetadata, "LicenseShortName").trim() || "Public domain";
+  const license = metaValue(info.extmetadata, "LicenseShortName").trim() || licenseFromKey(metaValue(info.extmetadata, "License"));
+  if (!license) return { ok: false, reason: "licence" };
   const licenseUrl = metaValue(info.extmetadata, "LicenseUrl").trim();
   const img: ImageEntry = {
     thumbUrl,

@@ -36,6 +36,7 @@
   "table.closes_in": "距投票截止",
   "table.races": "值得关注的竞选",
   "table.none_close": "暂无接近的竞选",
+  "table.rest_of_state": "{state}(其余地区)",
   "office.senate": "参议院",
   "office.governor": "州长",
   "race.senate": "{state}参议院",

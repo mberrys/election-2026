@@ -36,6 +36,7 @@
   "table.closes_in": "Urnas fecham em",
   "table.races": "Corridas a acompanhar",
   "table.none_close": "Nenhuma com disputa acirrada",
+  "table.rest_of_state": "{state} (restante do estado)",
   "office.senate": "Senado",
   "office.governor": "Governador",
   "race.senate": "Senado, {state}",

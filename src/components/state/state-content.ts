@@ -238,7 +238,7 @@ export function stateDescription({ state, races, row }: StateContentInput): stri
   }
   const p = row?.projection;
   if (p && row.lastTime !== undefined && row.lastTime !== row.latestYear) {
-    bits.push(`Polls point to ${fmtMarginDR(p.margin)}, a ${p.margin >= 0 ? "Democratic" : "Republican"} result last seen in ${row.lastTime}.`);
+    bits.push(`Polls point to ${fmtMarginDR(p.margin)}. ${state.name} last voted this ${p.margin >= 0 ? "Democratic" : "Republican"} in ${row.lastTime}.`);
   }
   if (!bits.length) {
     const houseN = races.filter((r) => r.office === "house").length;
@@ -311,7 +311,7 @@ export function stateQa(input: StateContentInput): QA[] {
   if (races.some((r) => r.runoffRule === "majority" && r.office !== "ballot")) {
     qa.push({
       q: `Is there a runoff in ${name} if no candidate wins a majority?`,
-      a: `Yes. ${name} requires a majority in its general elections for Senate, governor and U.S. House. A race where no candidate reaches 50% goes to a runoff between the top two.`,
+      a: `Yes. ${name} requires a majority in its general elections for Senate, governor and U.S. House. A race where no candidate wins more than 50% goes to a runoff between the top two.`,
     });
   }
 
