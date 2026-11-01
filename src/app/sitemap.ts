@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next";
+import { COUNTRIES } from "@/components/world/countries";
+import { worldLanguages } from "@/components/world/world-data";
 import { isRaceOffice, raceSlug } from "@/components/race/race-content";
 import { loadBuiltAt, loadRaces, loadStates } from "@/data/reference/load";
 import { SITE_PAGES } from "@/lib/seo";
@@ -43,5 +45,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...(lastModified ? { lastModified } : {}),
     }));
 
-  return [...pages, ...states, ...races, ...measures];
+  // Country guides for readers outside the US, each listing every language variant.
+  const languages = Object.fromEntries(Object.entries(worldLanguages()).map(([k, v]) => [k, absoluteUrl(v)]));
+  const world: MetadataRoute.Sitemap = COUNTRIES.map((c) => ({
+    url: absoluteUrl(`/world/${c.slug}`),
+    changeFrequency: "daily",
+    priority: 0.5,
+    alternates: { languages },
+    ...(lastModified ? { lastModified } : {}),
+  }));
+
+  return [...pages, ...states, ...races, ...measures, ...world];
 }
