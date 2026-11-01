@@ -14,7 +14,7 @@ const description = nationalCopy(loadRaces()).home;
 
 export const metadata: Metadata = pageMetadata({ description, path: "/" });
 
-/** The national board only needs identity, candidates, ratings and holder — drop polls/money/baselines/notes. */
+/** The national board needs identity, candidates, ratings, holder and the poll average (race cards show it); drop money, baselines and notes. */
 function slim(m: RaceMeta): RaceMeta {
   return {
     id: m.id,
@@ -25,6 +25,7 @@ function slim(m: RaceMeta): RaceMeta {
     name: m.name,
     candidates: m.candidates.map((c) => ({ id: c.id, name: c.name, party: c.party, incumbent: c.incumbent, aliases: [] })),
     ratings: { consensus: m.ratings.consensus },
+    ...(m.polls ? { polls: m.polls } : {}),
     baseline: {},
     heldBy: m.heldBy,
     runoffRule: m.runoffRule,

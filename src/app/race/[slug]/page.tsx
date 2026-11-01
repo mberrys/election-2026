@@ -15,9 +15,12 @@ import {
 } from "@/components/race/measure-content";
 import { LiveResult } from "@/components/race/live-result";
 import { NewsFeed } from "@/components/race/news-feed";
-import { Campaigns, KeyFacts, LinkList, Polling, Prose, QaList, Section, SourceLine, mainCandidates, pollCloseLabel, type StoryLike } from "@/components/race/race-view";
+import { Campaigns, KeyFacts, LinkList, Money, Polling, Prose, QaList, Section, SourceLine, Sources, mainCandidates, pollCloseLabel, type SourceLink, type StoryLike } from "@/components/race/race-view";
+import { stateSourceLinks } from "@/data/reference/state-links";
 import { getState, loadPolls, loadRaces } from "@/data/reference/load";
 import { getStory } from "@/data/reference/stories";
+import { getStateImage } from "@/data/reference/images";
+import { StatePhoto } from "@/components/race/state-photo";
 import { ballotpediaUrl } from "@/components/states/states-lib";
 import { pageMetadata } from "@/lib/page-meta";
 import { raceHref } from "@/lib/race-slug";
@@ -102,6 +105,16 @@ export default async function RacePage({ params }: PageProps<"/race/[slug]">) {
   notFound();
 }
 
+/** FEC filings for each main candidate, the state's official election pages, and the article the story quotes. */
+function raceSources(meta: RaceContentInput["meta"], stateName: string, story?: StoryLike): SourceLink[] {
+  const out: SourceLink[] = mainCandidates(meta)
+    .main.filter((c) => c.fecId)
+    .map((c) => ({ label: `${c.name}: campaign finance filings`, href: `https://www.fec.gov/data/candidate/${c.fecId}/`, note: "Federal Election Commission" }));
+  out.push(...stateSourceLinks(meta.state, stateName));
+  if (story?.source.kind === "wikipedia") out.push({ label: story.source.title, href: story.source.url, note: "Wikipedia" });
+  return out;
+}
+
 function lede(input: RaceContentInput): string {
   const { main } = mainCandidates(input.meta);
   const who = (c: (typeof main)[number]) => `${c.name} (${c.party}${c.incumbent ? ", incumbent" : ""})`;
@@ -161,6 +174,16 @@ function CandidateRace({ slug, input }: { slug: string; input: RaceContentInput 
             <Polling meta={meta} trend={trend} />
           </Section>
 
+          {meta.money && Object.keys(meta.money.receipts ?? {}).length > 0 && (
+            <Section id="h-money" title="Money">
+              <Money meta={meta} />
+            </Section>
+          )}
+
+          <Section id="h-sources" title="Official sources">
+            <Sources links={raceSources(meta, state.name, story)} />
+          </Section>
+
           <Section id="h-qa" title="Questions and answers">
             <QaList qa={raceQa(input)} />
           </Section>
@@ -215,6 +238,8 @@ function Measure({ slug, input }: { slug: string; input: MeasureContentInput }) 
         </p>
       </header>
 
+      <StatePhoto image={getStateImage(state.abbr)} stateName={state.name} className="max-w-5xl" />
+
       <dl className="grid grid-cols-2 gap-x-8 gap-y-8 rounded-lg border border-border bg-card px-6 py-6 md:grid-cols-4 md:px-8">
         {facts.map((f) => (
           <div key={f.label} className="min-w-0">
@@ -262,6 +287,16 @@ function Measure({ slug, input }: { slug: string; input: MeasureContentInput }) 
               </div>
             </Section>
           )}
+
+          <Section id="h-sources" title="Official sources">
+            <Sources
+              links={[
+                ...stateSourceLinks(state.abbr, state.name),
+                { label: `${state.name} 2026 ballot measures`, href: ballotpediaUrl(state.name), note: "Ballotpedia, full text and arguments" },
+                ...(story?.source.kind === "wikipedia" ? [{ label: story.source.title, href: story.source.url, note: "Wikipedia" }] : []),
+              ]}
+            />
+          </Section>
 
           {siblings.length > 0 && (
             <Section id="h-more" title={`More on the ${state.name} ballot`}>

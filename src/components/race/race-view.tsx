@@ -5,6 +5,10 @@ import type { TrendPoint } from "@/data/reference/load";
 import { compact, fmtEt, fmtMarginDR, partyName, ratingLabel } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { PollTrend } from "./poll-trend";
+import { renderInline } from "@/lib/inline-links";
+import { getCandidateImage } from "@/data/reference/images";
+import { Portrait } from "./portrait";
+import { Credit } from "./credit";
 import { shortDate } from "@/components/state/state-content";
 
 /** The shape of a race's story, matching src/data/reference/stories.ts. */
@@ -73,7 +77,7 @@ export function Prose({ paragraphs, className }: { paragraphs: string[]; classNa
   return (
     <div className={cn("max-w-[68ch] space-y-4 text-[17px] leading-[1.65] text-foreground/90", className)}>
       {paragraphs.map((p, i) => (
-        <p key={i}>{p}</p>
+        <p key={i}>{renderInline(p)}</p>
       ))}
     </div>
   );
@@ -139,9 +143,12 @@ export function Campaigns({ meta, story }: { meta: RaceMeta; story?: StoryLike }
         {main.map((c) => {
           const paras = textFor(c);
           const money = moneyLine(meta, c);
+          const photo = getCandidateImage(c.id);
           return (
             <article key={c.id} className="space-y-4 rounded-lg border border-border bg-card p-6" style={{ borderTop: `3px solid ${partyInk(c.party)}` }}>
-              <header className="space-y-1">
+              <header className="flex items-start gap-4">
+                <Portrait image={photo} name={c.name} size={84} />
+                <div className="min-w-0 space-y-1">
                 <h3 className="text-2xl font-bold leading-tight">{c.name}</h3>
                 <p className="text-[15px] text-ink-muted">
                   <span className="font-semibold" style={{ color: partyInk(c.party) }}>
@@ -150,6 +157,7 @@ export function Campaigns({ meta, story }: { meta: RaceMeta; story?: StoryLike }
                   {c.incumbent ? " · incumbent" : ""}
                 </p>
                 {money && <p className="text-[15px] text-ink-muted tnum">{money}</p>}
+                </div>
               </header>
               {paras.length ? (
                 <div className="space-y-3 text-base leading-relaxed text-foreground/90">
@@ -160,6 +168,7 @@ export function Campaigns({ meta, story }: { meta: RaceMeta; story?: StoryLike }
               ) : (
                 <p className="text-[15px] text-ink-muted">No campaign summary is available yet. The latest coverage is in the news feed.</p>
               )}
+              <Credit image={photo} />
             </article>
           );
         })}
@@ -231,7 +240,7 @@ export function QaList({ qa }: { qa: { q: string; a: string }[] }) {
               </span>
             </span>
           </summary>
-          <p className="mt-3 max-w-[68ch] text-base leading-relaxed text-ink-muted">{item.a}</p>
+          <p className="mt-3 max-w-[68ch] text-base leading-relaxed text-ink-muted">{renderInline(item.a)}</p>
         </details>
       ))}
     </div>
@@ -257,3 +266,82 @@ export function LinkList({ items }: { items: { href: string; label: string; deta
 }
 
 export const pollCloseLabel = (pollCloseEt: string) => fmtEt(pollCloseEt);
+
+// ---------- money ----------
+
+const usd = (n: number) => `$${compact.format(n)}`;
+
+/** Raised and cash on hand for the two main candidates, as bars on one shared scale (FEC filings). */
+export function Money({ meta }: { meta: RaceMeta }) {
+  const receipts = meta.money?.receipts ?? {};
+  const cash = meta.money?.cashOnHand ?? {};
+  const { main } = mainCandidates(meta);
+  const rows = main.filter((c) => (receipts[c.id] ?? 0) > 0);
+  if (!rows.length) return null;
+  const max = Math.max(...rows.map((c) => receipts[c.id]));
+  const lead = [...rows].sort((a, b) => receipts[b.id] - receipts[a.id]);
+  const ratio = lead.length > 1 && receipts[lead[1].id] > 0 ? receipts[lead[0].id] / receipts[lead[1].id] : undefined;
+  return (
+    <div className="space-y-5">
+      {ratio && ratio >= 1.2 && (
+        <p className="max-w-[68ch] text-[17px] leading-relaxed text-foreground/90">
+          <span className="font-semibold">{lead[0].name}</span> has raised {ratio >= 2 ? `${ratio.toFixed(1)} times` : `${Math.round((ratio - 1) * 100)}% more than`}{" "}
+          {ratio >= 2 ? "as much as " : ""}
+          {lead[1].name}.
+        </p>
+      )}
+      <div className="space-y-5 rounded-lg border border-border bg-card p-6">
+        {rows.map((c) => {
+          const fill = c.party === "D" ? "var(--party-d)" : c.party === "R" ? "var(--party-r)" : "var(--party-i)";
+          const r = receipts[c.id];
+          const h = cash[c.id];
+          return (
+            <div key={c.id} className="space-y-2">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-4">
+                <span className="text-base font-semibold" style={{ color: partyInk(c.party) }}>
+                  {c.name}
+                </span>
+                <span className="text-[15px] text-muted-foreground tnum">
+                  <span className="font-semibold text-foreground">{usd(r)}</span> raised{h != null ? ` · ${usd(h)} on hand` : ""}
+                </span>
+              </div>
+              <div className="relative h-3 overflow-hidden rounded-full bg-s3" aria-hidden>
+                <div className="absolute inset-y-0 left-0 rounded-full opacity-40" style={{ width: `${(r / max) * 100}%`, background: fill }} />
+                {h != null && <div className="absolute inset-y-0 left-0 rounded-full" style={{ width: `${(Math.min(h, r) / max) * 100}%`, background: fill }} />}
+              </div>
+            </div>
+          );
+        })}
+        <p className="text-sm text-muted-foreground">
+          Pale bar: total raised. Solid bar: cash on hand. FEC filings{meta.money?.asOf ? ` through ${shortDate(meta.money.asOf)}` : ""}.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+// ---------- sources ----------
+
+export type SourceLink = { label: string; href: string; note?: string };
+
+/** Primary sources for a race: FEC filings for each candidate, the state's election office and results page. */
+export function Sources({ links }: { links: SourceLink[] }) {
+  if (!links.length) return null;
+  return (
+    <ul className="divide-y divide-border rounded-lg border border-border bg-card">
+      {links.map((l) => (
+        <li key={l.href}>
+          <a
+            href={l.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 px-5 py-4 transition-colors outline-none hover:bg-s3/50 focus-visible:ring-[3px] focus-visible:ring-signal"
+          >
+            <span className="font-semibold underline-offset-4 group-hover:underline">{l.label}</span>
+            {l.note && <span className="text-sm text-muted-foreground">{l.note}</span>}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}

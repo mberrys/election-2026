@@ -2,6 +2,7 @@ import Link from "next/link";
 import { NavLink } from "./nav-link";
 import { FreshnessRail, LiveStatus } from "./live-status";
 import { HeaderBalance } from "./header-balance";
+import { SiteLanguageMenu } from "@/components/i18n/site-language-menu";
 
 const NAV = [
   { href: "/", label: "Board" },
@@ -38,6 +39,7 @@ export function SiteHeader() {
           <div className="hidden 2xl:block">
             <HeaderBalance />
           </div>
+          <SiteLanguageMenu />
           <LiveStatus />
         </div>
       </div>

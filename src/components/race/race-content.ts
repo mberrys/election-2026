@@ -137,7 +137,7 @@ function moneyText(meta: RaceMeta): string | undefined {
     .filter((c) => (receipts[c.id] ?? 0) > 0)
     .sort((a, b) => receipts[b.id] - receipts[a.id])
     .slice(0, 4)
-    .map((c) => `${c.name} (${c.party}) has raised ${money(receipts[c.id])}${cash[c.id] !== undefined ? ` and has ${money(cash[c.id])} on hand` : ""}`);
+    .map((c) => `${c.name} (${c.party}) raised ${money(receipts[c.id])}${cash[c.id] !== undefined ? `, with ${money(cash[c.id])} on hand` : ""}`);
   if (!rows.length) return undefined;
   const asOf = shortDate(meta.money?.asOf);
   return `${rows.join("; ")}${asOf ? `, per FEC filings through ${asOf}` : ""}.`;
@@ -146,9 +146,15 @@ function moneyText(meta: RaceMeta): string | undefined {
 function incumbencyText(meta: RaceMeta): string | undefined {
   const inc = meta.candidates.find((c) => c.incumbent);
   if (inc) return `${inc.name} is seeking re-election.`;
-  if (meta.notes?.includes("New seat")) return "This is a new seat, so there is no incumbent.";
-  if (meta.heldBy) return `No incumbent is on the ballot, so the seat is open. It is currently held by a ${partyName[meta.heldBy]}.`;
+  if (meta.notes?.includes("New seat")) return "This is a new seat with no incumbent.";
+  if (meta.heldBy) return `The seat is open with no incumbent on the ballot. It is currently held by a ${partyName[meta.heldBy]}.`;
   return undefined;
+}
+
+/** Links each candidate's FEC filing page, for candidates that have an FEC id. */
+function filingsText(meta: RaceMeta): string | undefined {
+  const links = meta.candidates.filter((c) => c.fecId).map((c) => `[${c.name}](https://www.fec.gov/data/candidate/${c.fecId}/)`);
+  return links.length ? `FEC filings: ${links.join(", ")}.` : undefined;
 }
 
 function competitiveText(meta: RaceMeta): string | undefined {
@@ -156,15 +162,15 @@ function competitiveText(meta: RaceMeta): string | undefined {
   if (!c) return undefined;
   const label = ratingLabel[c];
   if (c === "tossup") return `Yes. The consensus rating is ${label}, the most competitive category.`;
-  if (c.startsWith("tilt") || c.startsWith("lean")) return `Fairly. The consensus rating is ${label}: one party is ahead, but not by a safe margin.`;
-  return `Not by the ratings. The consensus rating is ${label}, so the forecasters expect the ${c.endsWith("-d") ? "Democratic" : "Republican"} candidate to win comfortably.`;
+  if (c.startsWith("tilt") || c.startsWith("lean")) return `Somewhat. The consensus rating is ${label}. One party leads, but not by a safe margin.`;
+  return `No. The consensus rating is ${label}, so forecasters expect the ${c.endsWith("-d") ? "Democratic" : "Republican"} candidate to win comfortably.`;
 }
 
 function previousRaceText(meta: RaceMeta, district: DistrictHistory | undefined): string | undefined {
   const { prevRaceMargin: m, prevRaceYear: y } = meta.baseline;
   if (m === undefined || y === undefined) return undefined;
   const office = meta.office === "senate" ? "Senate" : meta.office === "governor" ? "governor's" : "House";
-  const moved = district?.caveat ? " The district's lines have changed since, so that result is an approximate guide." : "";
+  const moved = district?.caveat ? " The district's lines have changed since then, so treat that result as a rough guide." : "";
   return `The previous ${office} race, in ${y}, was ${fmtMarginDR(m)}.${moved}`;
 }
 
@@ -177,14 +183,29 @@ export function raceQa(input: RaceContentInput): QA[] {
   const incumbency = incumbencyText(meta);
   qa.push({
     q: `Who is running in ${subject} in 2026?`,
-    a: [candidatesText(meta) ?? "No candidate list is available yet.", incumbency].filter(Boolean).join(" "),
+    a: [
+      candidatesText(meta) ?? "No candidate list is available yet.",
+      incumbency,
+      filingsText(meta),
+      `Browse the [${state.name} board](/state/${state.abbr}).`,
+    ]
+      .filter(Boolean)
+      .join(" "),
   });
 
   const m = matchup(meta);
-  const polls = pollText(meta) ?? "There is no public poll average for this race yet, so the rating and the 2024 results are the best guide.";
+  const polls = pollText(meta) ?? "There is no public poll average yet. The rating and 2024 results are the best guide.";
   qa.push({
     q: `Who is favored to win ${subject}?`,
-    a: [m ? `The matchup is ${m}.` : undefined, ratingText(meta), polls, "The Big Board shows polls and ratings; it does not call races."].filter(Boolean).join(" "),
+    a: [
+      m ? `The matchup is ${m}.` : undefined,
+      ratingText(meta),
+      polls,
+      "Raters include [Cook Political Report](https://www.cookpolitical.com), [Sabato's Crystal Ball](https://centerforpolitics.org/crystalball/) and [Inside Elections](https://insideelections.com).",
+      "The Big Board does not call races. See [how ratings work](/explainers#ratings).",
+    ]
+      .filter(Boolean)
+      .join(" "),
   });
 
   const comp = competitiveText(meta);
@@ -200,14 +221,14 @@ export function raceQa(input: RaceContentInput): QA[] {
   if (!p24 && m24 !== undefined) {
     qa.push({
       q: `Did Donald Trump or Kamala Harris win ${place} in 2024?`,
-      a: `Neither carried it: the 2024 presidential vote in ${place} was even in the Big Board's data (${fmtMarginDR(m24)}).`,
+      a: `Neither carried it. The 2024 presidential vote in ${place} was even (${fmtMarginDR(m24)}).`,
     });
   }
   if (p24) {
     const p20 = presFact(meta, 2020, "it", false);
     qa.push({
       q: `Did Donald Trump or Kamala Harris win ${place} in 2024?`,
-      a: `${p24}.${p20 ? ` In 2020, ${p20}.` : ""}${meta.office === "house" ? " Presidential margins are on the district's 2026 lines." : ""}`,
+      a: `${p24}.${p20 ? ` In 2020, ${p20}.` : ""}${meta.office === "house" ? " The margins use the district's 2026 lines." : ""}`,
     });
   }
 
@@ -226,12 +247,12 @@ export function raceQa(input: RaceContentInput): QA[] {
     }
   }
 
-  qa.push({ q: `What time do polls close for ${subject}?`, a: closeTimesText(state) });
+  qa.push({ q: `What time do polls close for ${subject}?`, a: `${closeTimesText(state)} For every state, see [poll closing times](/election-night).` });
 
   if (meta.runoffRule === "majority") {
     qa.push({
       q: `Is there a runoff in ${subject}?`,
-      a: `Yes. ${state.name} requires a majority winner in the general election, so if no candidate passes 50% the top two go to a runoff.`,
+      a: `Yes. ${state.name} requires a majority winner in the general election. If no candidate reaches 50%, the top two advance to a runoff.`,
     });
   } else if (meta.notes && meta.office !== "house") {
     qa.push({ q: `Are there special rules for ${subject}?`, a: meta.notes });

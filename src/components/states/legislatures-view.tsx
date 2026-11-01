@@ -123,12 +123,12 @@ export function LegislaturesView({
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div className="space-y-1.5">
                 <h2 id="leg-map" className="section-title">
-                  {mode === "control" ? "Who controls each chamber" : "Who is favoured to control it"}
+                  {mode === "control" ? "Who controls each chamber" : "Who is favored to control it"}
                 </h2>
-                <p className="text-[15px] text-muted-foreground">Top half of each tile is the senate, bottom half the house.</p>
+                <p className="text-[15px] text-muted-foreground">The top half of each tile is the Senate. The bottom half is the House.</p>
               </div>
               <FilterChips
-                label="Map colouring"
+                label="Map coloring"
                 value={mode}
                 onChange={setMode}
                 options={[
@@ -219,7 +219,7 @@ function ChamberTally({ all, counts }: { all: Chamber[]; counts: { D: number; R:
           })}
         </div>
         <p className="text-sm text-ink-muted">
-          One block per chamber, {all.length} in all. Faded blocks are rated toss-up, tilt or lean.
+          One block per chamber, {all.length} in all. Faded blocks are rated <Link href="/explainers#ratings" className="text-foreground underline underline-offset-4">toss-up, tilt or lean</Link>.
         </p>
       </div>
     </section>
@@ -428,7 +428,7 @@ function InPlayPanel({
     <div className="rounded-lg border border-border bg-card p-6 md:p-7">
       <h2 className="section-title">Where control is in play</h2>
       <p className="mt-2 text-[15px] leading-relaxed text-ink-muted">
-        {list.length} chambers are rated toss-up, tilt or lean by Sabato&apos;s Crystal Ball. Pick one to open its state.
+        {list.length} chambers are rated <Link href="/explainers#ratings" className="text-foreground underline underline-offset-4">toss-up, tilt or lean</Link> by <a href="https://centerforpolitics.org/crystalball/" target="_blank" rel="noreferrer" className="text-foreground underline underline-offset-4">Sabato&apos;s Crystal Ball</a>. Pick one to open its state.
       </p>
       <ul className="mt-6 space-y-1.5" onMouseLeave={() => onPreview(null)}>
         {list.map((c) => (
@@ -461,9 +461,9 @@ function InPlayPanel({
 
 function spareLine(c: Chamber): string {
   const s = c.split!;
-  if (s.spare == null) return `Tied; ${s.majority} seats make a majority`;
+  if (s.spare == null) return `Tied. ${s.majority} seats make a majority`;
   const who = s.lead === "D" ? "Democrats" : s.lead === "R" ? "Republicans" : "The coalition";
-  if (s.spare === 0) return `${s.majority} for a majority. ${who} hold it with no seat to spare.`;
+  if (s.spare === 0) return `${s.majority} for a majority. ${who} can lose no seats and keep control.`;
   return `${s.majority} for a majority. ${who} can lose ${s.spare} seat${s.spare === 1 ? "" : "s"} and keep control.`;
 }
 
