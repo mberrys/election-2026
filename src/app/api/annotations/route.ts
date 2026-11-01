@@ -8,12 +8,13 @@ export const maxDuration = 10;
 
 /**
  * Election-night annotations without a redeploy (ballot seizure, court-ordered pause, set-aside order, or a
- * general "advisory"). Any annotated state joins the Integrity Watch automatically.
+ * general "advisory"). Set `standing: "rejected"` once a court or
+ * official has thrown a challenge out: it stays visible but no longer holds back calls.
  *
  *   GET  /api/annotations                       → { static: [...], runtime: [...] }
  *   POST /api/annotations  (Bearer ADMIN_SECRET) → replace the runtime list with the JSON array body
  *
- * The next ingest (≤1 min) attaches them to races; `challengedBallots` immediately raises the bar for calls.
+ * The next ingest (≤1 min) attaches them to races; a pending `challengedBallots` immediately raises the bar for calls.
  */
 const AnnotationSchema = z.object({
   raceId: z.string().optional(),
@@ -23,6 +24,7 @@ const AnnotationSchema = z.object({
   summary: z.string().min(5).max(600),
   url: z.string().url().optional(),
   challengedBallots: z.number().int().nonnegative().optional(),
+  standing: z.enum(["pending", "rejected"]).optional(),
   asOf: z.string(),
 });
 

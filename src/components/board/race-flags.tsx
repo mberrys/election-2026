@@ -5,12 +5,12 @@ type Flag = NonNullable<Race["flags"]>[number];
 
 const LABEL: Record<Flag["kind"], string> = {
   litigation: "Litigation",
-  "set-aside": "Ballots set aside",
+  "set-aside": "Set-aside demand",
   "count-paused": "Count paused",
   advisory: "Advisory",
 };
 
-/** Integrity chips (amber: the one colour reserved for paused counts, litigation and set-aside ballots). */
+/** Chips for paused counts, litigation and set-aside demands (amber). A challenge is context, not a finding: each says where it stands. */
 export function RaceFlags({ flags, className, detailed = false }: { flags?: Flag[]; className?: string; detailed?: boolean }) {
   if (!flags?.length) return null;
   if (detailed) {
@@ -21,16 +21,18 @@ export function RaceFlags({ flags, className, detailed = false }: { flags?: Flag
             <div aria-hidden className="hazard h-2.5" />
             <div className="px-3 py-2">
               <span className="font-semibold text-alert-ink">{LABEL[f.kind]}</span>
-              {f.challengedBallots ? <span className="fig text-alert-ink"> · ~{f.challengedBallots.toLocaleString()} ballots</span> : null}
+              {f.challengedBallots ? <span className="fig text-alert-ink"> · ~{f.challengedBallots.toLocaleString()} ballots demanded</span> : null}
+              {f.standing === "rejected" ? <span className="text-muted-foreground"> · rejected</span> : null}
               <span className="text-muted-foreground">: {f.summary} </span>
               {f.url && (
                 <a href={f.url} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-foreground">
                   Source ({f.asOf})
                 </a>
               )}
-              {f.challengedBallots ? (
+              {f.challengedBallots && f.standing !== "rejected" ? (
                 <div className="mt-1 text-xs text-muted-foreground">
-                  We will not project a winner whose lead is smaller than this pool.
+                  Pending: we will not project a winner whose lead is smaller than this pool. If the challenge is thrown out, this
+                  stops applying.
                 </div>
               ) : null}
             </div>
@@ -44,7 +46,7 @@ export function RaceFlags({ flags, className, detailed = false }: { flags?: Flag
       {flags.map((f, i) => (
         <span
           key={i}
-          title={`${LABEL[f.kind]}: ${f.summary}${f.challengedBallots ? ` (~${f.challengedBallots.toLocaleString()} ballots)` : ""}`}
+          title={`${LABEL[f.kind]}${f.standing === "rejected" ? " (rejected)" : ""}: ${f.summary}${f.challengedBallots ? ` (~${f.challengedBallots.toLocaleString()} ballots)` : ""}`}
           className="inline-flex items-center gap-1 whitespace-nowrap text-xs font-semibold text-alert-ink"
         >
           <i aria-hidden className="inline-block h-2.5 w-2.5 bg-alert" />

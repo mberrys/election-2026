@@ -194,7 +194,7 @@ export const ReportingUnit = z.object({
   overUnder: z.number().optional(),
   needsOfRemaining: z.number().optional(), // share of remaining D needs for a tie (0–100, >100 impossible)
   baselineMargin2024: z.number().optional(),
-  /** Last time this unit's total changed (tracked for watch states). */
+  /** Last time this unit's total changed (tracked for stall detection). */
   lastChangeAt: z.string().optional(),
 });
 export type ReportingUnit = z.infer<typeof ReportingUnit>;
@@ -245,7 +245,7 @@ export const Race = z.object({
     })
     .optional(),
   units: z.array(ReportingUnit).default([]),
-  /** Litigation / set-aside ballot annotations (src/data/annotations.ts). Informational except challengedBallots. */
+  /** Litigation / set-aside ballot annotations (src/data/annotations.ts). Informational except a pending challengedBallots. */
   flags: z
     .array(
       z.object({
@@ -253,6 +253,8 @@ export const Race = z.object({
         summary: z.string(),
         url: z.string().optional(),
         challengedBallots: z.number().optional(),
+        /** Where the challenge stands. Default "pending"; a "rejected" challenge no longer holds back calls. */
+        standing: z.enum(["pending", "rejected"]).optional(),
         asOf: z.string(),
       }),
     )
@@ -314,8 +316,6 @@ export const Snapshot = z.object({
   }),
   feeds: z.array(FeedStatus),
   notices: z.array(z.string()).default([]), // human-readable banners ("GA feed stale 4m")
-  /** Integrity watch, resolved each ingest: base states + annotated states + states with stalled counts. */
-  watch: z.array(z.object({ state: z.string(), reasons: z.array(z.string()), base: z.boolean() })).default([]),
 });
 export type Snapshot = z.infer<typeof Snapshot>;
 

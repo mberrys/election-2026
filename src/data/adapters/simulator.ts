@@ -67,7 +67,7 @@ const MIDTERM_RATIO = 0.72;
  * SIM_SCENARIO=contested — situations from pre-election reporting (Votebeat/TIME, Oct 2026):
  *  - AK Senate finishes razor-thin while a namesake spoiler (Dan J. Sullivan) draws ~3%.
  *  - GA Senate is close and federal agents seize Fulton County ballots: its count freezes 9:30 PM → 1:30 AM ET.
- *  - Philadelphia (PA, not on the base watch list) halts 10:00 PM → 12:30 AM ET.
+ *  - Philadelphia (PA) halts 10:00 PM → 12:30 AM ET.
  */
 const SCENARIO = process.env.SIM_SCENARIO ?? "";
 const CONTESTED = {
@@ -82,7 +82,6 @@ const CONTESTED = {
       summary: "SIMULATED: federal agents seized Fulton County ballots; count paused pending a court order.",
     },
     {
-      // Not on the base watch list: proves the Integrity Watch picks up new states on its own.
       fips: "42101",
       state: "PA",
       from: Date.parse("2026-11-04T03:00:00Z"),

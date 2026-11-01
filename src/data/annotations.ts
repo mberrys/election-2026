@@ -12,7 +12,7 @@ export type Annotation = RaceFlag & {
 
 /**
  * Hand-maintained legal/administrative context that changes how much a lead is worth.
- * Edit and redeploy to update (Vercel deploys in ~1 min). `challengedBallots` feeds the call rule: a lead
+ * Edit and redeploy to update (Vercel deploys in ~1 min). a pending `challengedBallots` feeds the call rule: a lead
  * smaller than the pool is never projected. Everything else is display-only.
  *
  * Seeded from Votebeat, 2026-10-29:
@@ -57,10 +57,13 @@ export function annotationsFor(race: Pick<Race, "id" | "state" | "office">, list
       (a) =>
         a.raceId === race.id || (!a.raceId && a.state === race.state && (!a.offices || a.offices.includes(race.office))),
     )
-    .map(({ kind, summary, url, challengedBallots, asOf }) => ({ kind, summary, url, challengedBallots, asOf }));
+    .map(({ kind, summary, url, challengedBallots, standing, asOf }) => ({ kind, summary, url, challengedBallots, standing, asOf }));
 }
 
-/** Challenged pool for a race. A state-wide pool is not split by district: conservative for every race in the state. */
+/**
+ * Challenged pool that still holds back calls. A state-wide pool is not split by district: conservative for every race in the
+ * state. A challenge marked `standing: "rejected"` is shown but no longer counts, since not every challenge is legitimate.
+ */
 export function challengedBallotsFor(flags: RaceFlag[] | undefined): number {
-  return (flags ?? []).reduce((s, f) => s + (f.challengedBallots ?? 0), 0);
+  return (flags ?? []).reduce((s, f) => s + (f.standing === "rejected" ? 0 : (f.challengedBallots ?? 0)), 0);
 }

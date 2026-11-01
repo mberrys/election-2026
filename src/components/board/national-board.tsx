@@ -5,7 +5,6 @@ import { useMemo, useState } from "react";
 import { indexRaces, useNational, useSlowReference } from "@/hooks/use-results";
 import { useMounted } from "@/hooks/use-mounted";
 import { RaceCard } from "./race-card";
-import { IntegrityWatch } from "./integrity-watch";
 import { ChamberRow, SenateHero } from "./control-lanes";
 import { FreshDot, Swatch } from "./hatch";
 import { VP_PARTY } from "@/components/senate/chamber-balance";
@@ -108,8 +107,6 @@ export function NationalBoard({ metas, states, polls }: { metas: RaceMeta[]; sta
           </div>
         </Card>
       </section>
-
-      <IntegrityWatch metas={metas} states={states} live={live} payload={mounted ? data : undefined} />
 
       {/* Key races */}
       <section>
