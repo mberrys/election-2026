@@ -276,7 +276,7 @@
   --secondary-foreground: var(--ink);
   --muted: var(--s3);
   --muted-foreground: var(--ink-muted);
-  --accent: var(--s3);
+  --accent: var(--s4);
   --accent-foreground: var(--ink);
   --destructive: var(--alert);
   --border: var(--hairline);
@@ -450,19 +450,19 @@
       stroke-dasharray: 1;
       animation: rv-draw linear both;
       animation-timeline: --rv;
-      animation-range: entry 20% cover 45%;
+      animation-range: entry 20% entry 100%;
     }
     [data-reveal] .chart-grow,
     [data-reveal] .chart-grow-x {
       animation: rv-grow-y linear both;
       animation-timeline: --rv;
-      animation-range: entry calc(10% + var(--j, 0) * 1.5%) cover calc(30% + var(--j, 0) * 1.5%);
+      animation-range: entry calc(10% + var(--j, 0) * 1.5%) entry 100%;
     }
     [data-reveal] .chart-grow-x { animation-name: rv-grow-x; }
     [data-reveal] :is(.recharts-bar, .recharts-line) {
       animation: rv-wipe linear both;
       animation-timeline: --rv;
-      animation-range: entry 20% cover 45%;
+      animation-range: entry 20% entry 100%;
     }
   }
 }

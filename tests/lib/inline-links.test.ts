@@ -7,3 +7,9 @@ describe("stripInline", () => {
     expect(stripInline("[FEC](https://www.fec.gov/) and [explainers](/explainers)")).toBe("FEC and explainers");
   });
 });
+
+describe("protocol-relative links", () => {
+  it("treats //host links as external, not site paths", () => {
+    expect(stripInline("See [example](//example.com/x).")).toBe("See example.");
+  });
+});

@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 /** `[label](href)` inside plain prose strings. Internal paths start with "/", everything else opens in a new tab. */
-const LINK = /\[([^\]]+)\]\((\/[^\s)]*|https?:\/\/[^\s)]+)\)/g;
+const LINK = /\[([^\]]+)\]\((\/(?!\/)[^\s)]*|(?:https?:)?\/\/[^\s)]+)\)/g;
 
 const linkClass = "font-medium text-foreground underline decoration-border-strong underline-offset-4 hover:decoration-foreground";
 
@@ -13,7 +13,7 @@ export function renderInline(text: string): ReactNode {
     const [whole, label, href] = m;
     if (m.index > last) out.push(text.slice(last, m.index));
     out.push(
-      href.startsWith("/") ? (
+      href.startsWith("/") && !href.startsWith("//") ? (
         <Link key={m.index} href={href} className={linkClass}>
           {label}
         </Link>
