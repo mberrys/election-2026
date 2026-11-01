@@ -1,11 +1,16 @@
 {
- "builtAt": "2026-11-01T00:26:49.793Z",
+ "builtAt": "2026-11-01T01:55:30.824Z",
  "args": {
   "steps": [
+   "states",
+   "races",
+   "polls",
+   "money",
+   "baselines",
    "history"
   ],
   "noCache": false,
-  "full": false
+  "full": true
  },
  "counts": {
   "states": 51,
@@ -18,11 +23,11 @@
   "candidates": 1416,
   "ratingsCoveragePct": 100,
   "ratingsWithAllThree": 214,
-  "fecMatchedPct": 88.6,
-  "fecMatchedCandidates": 109,
-  "fecEligibleCandidates": 123,
+  "fecMatchedPct": 89.7,
+  "fecMatchedCandidates": 1150,
+  "fecEligibleCandidates": 1282,
   "racesWithPolls": 129,
-  "racesWithMoney": 35,
+  "racesWithMoney": 470,
   "counties": 3208,
   "houseWithPresBaseline": 435,
   "houseWithPrevMargin": 435
@@ -169,19 +174,19 @@
   "wikipediaRevisions": [
    {
     "title": "2026 United States Senate elections",
-    "revid": 1382915634
+    "revid": 1383102895
    },
    {
     "title": "2026 United States gubernatorial elections",
-    "revid": 1382860978
+    "revid": 1383050992
    },
    {
     "title": "2026 United States House of Representatives elections",
-    "revid": 1382821364
+    "revid": 1383103767
    },
    {
     "title": "2026 United States House of Representatives election ratings",
-    "revid": 1382868346
+    "revid": 1383032294
    },
    {
     "title": "2026 United States ballot measures",

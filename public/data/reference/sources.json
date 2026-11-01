@@ -55,7 +55,7 @@
    "FEC candidate ids"
   ],
   "status": "ok",
-  "statusNote": "DEMO_KEY; offices S"
+  "statusNote": "env; offices S,H"
  },
  {
   "id": "tonmcg-county",
