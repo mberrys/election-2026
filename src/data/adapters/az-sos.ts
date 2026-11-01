@@ -60,8 +60,8 @@ export function makeAzSosAdapter(cfg: AzSosConfig): Adapter {
     cadenceSec: 60,
     async fetch(ctx: AdapterCtx): Promise<Race[]> {
       const slug =
-        (cfg.slugEnv ? process.env[cfg.slugEnv] : undefined) ??
-        cfg.slug ??
+        (cfg.slugEnv ? process.env[cfg.slugEnv] : undefined) ||
+        cfg.slug ||
         (await discoverSlug(ctx, AZ_EV_HOST, cfg.jurisdiction.toLowerCase(), cfg.electionDate));
       if (!slug) throw new Error(`no Arizona EV election for ${cfg.electionDate}`);
       const { races, counties, contests } = await fetchEvBreakdownRaces(ctx, {

@@ -2,6 +2,9 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { CivicError, lookupBallot, normalizeVoterInfo, pickElection, type CivicElection } from "../../src/lib/civic";
 import { allow } from "../../src/lib/rate-limit";
 
+// The rate-limit test must use the in-memory path whatever Redis variables the shell or CI has set.
+vi.mock("../../src/lib/redis", () => ({ getRedis: () => null }));
+
 const E = (id: string, name: string, electionDay: string): CivicElection => ({ id, name, electionDay });
 
 describe("pickElection", () => {

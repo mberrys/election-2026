@@ -57,6 +57,16 @@ async function step<T>(name: string, fn: () => Promise<T>): Promise<T | undefine
   }
 }
 
+function readJson<T>(name: string): T | undefined {
+  const f = path.join(OUT_DIR, name);
+  if (!fs.existsSync(f)) return undefined;
+  try {
+    return JSON.parse(fs.readFileSync(f, "utf8")) as T;
+  } catch {
+    return undefined;
+  }
+}
+
 function loadExistingRaces(): RaceMeta[] | undefined {
   const f = path.join(OUT_DIR, "races.json");
   if (!fs.existsSync(f)) return undefined;
@@ -163,19 +173,15 @@ async function main() {
 
   // ---- sources ----
   setSrc("research-vote-order", "ok");
+  // A partial run (--only) carries forward the status of sources it did not touch instead of reporting them skipped.
+  for (const s of readJson<SourceEntry[]>("sources.json") ?? []) {
+    if (s.status && s.status !== "skipped" && !sourceStatus.has(s.id)) sourceStatus.set(s.id, { status: s.status, statusNote: s.statusNote });
+  }
   const sources = SOURCES.map((s) => ({ ...s, ...(sourceStatus.get(s.id) ?? { status: "skipped" as const }) }));
   writeJson(path.join(OUT_DIR, "sources.json"), sources);
 
   // ---- meta (steps skipped via --only report the on-disk outputs) ----
-  const readJson = <T,>(name: string): T | undefined => {
-    const f = path.join(OUT_DIR, name);
-    if (!fs.existsSync(f)) return undefined;
-    try {
-      return JSON.parse(fs.readFileSync(f, "utf8")) as T;
-    } catch {
-      return undefined;
-    }
-  };
+  const prevMeta = readJson<{ coverage?: { rioTimes?: unknown; wikipediaRevisions?: unknown }; warnings?: string[] }>("meta.json");
   states ??= readJson<StateMetaOut[]>("states.json");
   polls ??= readJson<PollsOut>("polls.json");
   money ??= readJson<MoneyOut>("money.json");
@@ -216,14 +222,15 @@ async function main() {
       houseMissingMajorPartyCandidate: houseMissingCands,
       houseNoCandidates: houseNoCands,
       houseNoRating: houseNoRating,
-      rioTimes: racesResult?.rioTimes,
+      rioTimes: racesResult?.rioTimes ?? prevMeta?.coverage?.rioTimes,
       downballot: baselines?.downballot,
       medsl: baselines?.medsl,
       votehub: polls ? { reachable: polls.votehub.reachable, status: polls.votehub.status, racesWithPolls: Object.keys(polls.races).length } : undefined,
       pollCloseSource: states?.[0]?.pollCloseSource,
-      wikipediaRevisions: racesResult?.pages,
+      wikipediaRevisions: racesResult?.pages ?? prevMeta?.coverage?.wikipediaRevisions,
     },
-    warnings: getWarnings(),
+    // Warnings from steps this run skipped stay until a full build re-runs them.
+    warnings: [...new Set([...(steps.length < ALL_STEPS.length ? (prevMeta?.warnings ?? []) : []), ...getWarnings()])],
   };
   writeJson(path.join(OUT_DIR, "meta.json"), meta);
 

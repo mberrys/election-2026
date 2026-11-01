@@ -93,10 +93,9 @@ export function BallotLookupForm() {
 }
 
 function Result({ data }: { data: BallotLookup }) {
-  const groups = LEVEL_ORDER.map((level) => ({ level, items: data.contests.filter((c) => (c.level ?? "other") === level) })).filter((g) => g.items.length);
   const known = new Set(LEVEL_ORDER);
-  const rest = data.contests.filter((c) => c.level && !known.has(c.level));
-  if (rest.length) groups.push({ level: "other", items: rest });
+  const levelOf = (c: { level?: string }) => (c.level && known.has(c.level) ? c.level : "other");
+  const groups = LEVEL_ORDER.map((level) => ({ level, items: data.contests.filter((c) => levelOf(c) === level) })).filter((g) => g.items.length);
   const none = !data.pollingPlaces.length && !data.earlyVoteSites.length && !data.dropOffLocations.length && !data.contests.length;
 
   return (

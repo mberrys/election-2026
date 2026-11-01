@@ -13,7 +13,8 @@
    "state legislative chamber control + Sabato ratings",
    "prior-race margins (2020 Senate, 2022/2024 Governor, 2024 House fallback)"
   ],
-  "status": "skipped"
+  "status": "ok",
+  "statusNote": "6 pages"
  },
  {
   "id": "riotimes-dataroom",
@@ -26,7 +27,7 @@
    "generic-ballot five-average",
    "ratings cross-check (consensus disagreements recorded in RaceMeta.notes)"
   ],
-  "status": "skipped"
+  "status": "ok"
  },
  {
   "id": "votehub",
@@ -39,7 +40,8 @@
    "generic-ballot polls",
    "per-race Senate/Governor/House polls"
   ],
-  "status": "skipped"
+  "status": "ok",
+  "statusNote": "HTTP 200"
  },
  {
   "id": "openfec",
@@ -52,7 +54,8 @@
    "candidate receipts and cash on hand",
    "FEC candidate ids"
   ],
-  "status": "skipped"
+  "status": "ok",
+  "statusNote": "DEMO_KEY; offices S"
  },
  {
   "id": "tonmcg-county",
@@ -64,7 +67,7 @@
   "usedFor": [
    "2024/2020 presidential margins and turnout by county and by state"
   ],
-  "status": "skipped"
+  "status": "ok"
  },
  {
   "id": "medsl-house",
@@ -76,7 +79,8 @@
   "usedFor": [
    "2024 House margins (preferred when the Dataverse guestbook allows API download)"
   ],
-  "status": "skipped"
+  "status": "blocked",
+  "statusNote": "datafile 13592823 HTTP 400: {\"status\":\"ERROR\",\"message\":\"You may not download this file without the required Guestbook response for guestbookID 458.\"}"
  },
  {
   "id": "medsl-president",
@@ -113,7 +117,8 @@
   "usedFor": [
    "House baseline presMargin2024/presMargin2020 on 2026 lines"
   ],
-  "status": "skipped"
+  "status": "ok",
+  "statusNote": "435 districts"
  },
  {
   "id": "greenpapers",
@@ -125,7 +130,8 @@
   "usedFor": [
    "StateMeta.pollCloseEt / pollCloseFirstEt"
   ],
-  "status": "skipped"
+  "status": "ok",
+  "statusNote": "thegreenpapers.com/G26/closing.phtml?format=ga"
  },
  {
   "id": "research-vote-order",

@@ -24,6 +24,8 @@ cron-job.org (every 1 min) ──► GET /api/ingest  (Authorization: Bearer $CR
    - **Schedule:** every 1 minute
    - **Advanced → Headers:** `Authorization: Bearer <CRON_SECRET>`
      (the secret is only accepted in this header, never in the URL, so it stays out of request logs)
+   - **Migrating an existing job:** earlier versions accepted `?key=<CRON_SECRET>` in the URL. That form now returns
+     401, so before deploying add the header above and remove `?key=...` from the URL, or live updates stop.
    - **Advanced → Timeout:** 30 s (the route answers after the first pull, ~10–15 s)
    - **Notifications:** on failure, and when the job gets disabled
 3. Click **Test run** → expect HTTP 200 and `"ok": true, "nextPullsIn": [30000]`.
@@ -65,7 +67,7 @@ project**. Fine for you and a small audience; for anything public, move to Pro b
 ## Search engine pings (IndexNow)
 
 After a deploy that ships new reference data, tell Bing-family search engines the pages changed. The key file lives at
-`public/<key>.txt` and the route submits every sitemap URL (needs `NEXT_PUBLIC_SITE_URL` set to the public origin):
+`public/<key>.txt` and the route submits every sitemap URL (needs `NEXT_PUBLIC_SITE_URL` to be set to the public origin):
 
 ```bash
 curl -X POST https://<your-deployment>/api/indexnow -H "Authorization: Bearer $CRON_SECRET"

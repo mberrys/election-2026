@@ -1,5 +1,5 @@
 {
- "builtAt": "2026-10-31T23:22:37.104Z",
+ "builtAt": "2026-11-01T00:26:49.793Z",
  "args": {
   "steps": [
    "history"
@@ -51,6 +51,12 @@
   ],
   "houseNoCandidates": [],
   "houseNoRating": [],
+  "rioTimes": {
+   "reachable": true,
+   "compared": 178,
+   "disagreements": 0,
+   "missingInRio": 0
+  },
   "downballot": {
    "fetched": true,
    "districts": 435,
@@ -159,7 +165,35 @@
    "status": 200,
    "racesWithPolls": 129
   },
-  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga"
+  "pollCloseSource": "thegreenpapers.com/G26/closing.phtml?format=ga",
+  "wikipediaRevisions": [
+   {
+    "title": "2026 United States Senate elections",
+    "revid": 1382915634
+   },
+   {
+    "title": "2026 United States gubernatorial elections",
+    "revid": 1382860978
+   },
+   {
+    "title": "2026 United States House of Representatives elections",
+    "revid": 1382821364
+   },
+   {
+    "title": "2026 United States House of Representatives election ratings",
+    "revid": 1382868346
+   },
+   {
+    "title": "2026 United States ballot measures",
+    "revid": 1382837973
+   },
+   {
+    "title": "2026 United States state legislative elections",
+    "revid": 1382284395
+   }
+  ]
  },
- "warnings": []
+ "warnings": [
+  "MEDSL House download unavailable (datafile 13592823 HTTP 400: {\"status\":\"ERROR\",\"message\":\"You may not download this file without the required Guestbook response for guestbookID 458.\"}); falling back to Wikipedia 2024 House page"
+ ]
 }
