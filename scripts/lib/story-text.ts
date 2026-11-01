@@ -7,6 +7,7 @@
  * the whole paragraph is dropped instead of shipping a sentence with a hole in it.
  */
 import { stripAccents } from "./util";
+import { stripComments } from "./wikitext";
 
 /** Marks the spot where an unrenderable inline template was removed; paragraphs containing it are dropped. */
 const HOLE = "\u0001";
@@ -52,11 +53,10 @@ export function decodeEntities(s: string): string {
  * another one ("<ref<ref/>>") cannot survive a single pass.
  */
 function stripCommentsAndRefs(s: string): string {
-  let out = s;
+  let out = stripComments(s);
   for (let prev = ""; prev !== out; ) {
     prev = out;
     out = out
-      .replace(/<!--[\s\S]*?-->/g, "")
       .replace(/<ref\b[^>]*\/\s*>/gi, "")
       .replace(/<ref\b[^>]*>[\s\S]*?<\/ref\s*>/gi, "")
       .replace(/<(gallery|timeline|imagemap|noinclude|score)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, "\n")
