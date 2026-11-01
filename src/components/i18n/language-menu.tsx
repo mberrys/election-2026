@@ -29,7 +29,15 @@ export function translateUrl(code: LangCode, pageUrl: string): string {
 }
 
 const itemClass =
-  "flex min-h-11 w-full cursor-pointer items-center rounded-md px-3 text-[15px] text-popover-foreground no-underline outline-none select-none data-[highlighted]:bg-s3 focus-visible:ring-[3px] focus-visible:ring-signal focus-visible:ring-inset";
+  "flex h-11 w-full cursor-pointer items-center justify-center rounded-md no-underline outline-none select-none data-[highlighted]:bg-s3 focus-visible:ring-[3px] focus-visible:ring-signal focus-visible:ring-inset";
+
+/** A small flag standing in for the language's name; the name stays as the accessible label and the tooltip. */
+function Flag({ flag, current }: { flag: string; current?: boolean }) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src={`/flags/${flag}.svg`} alt="" width={24} height={18} className={`h-[18px] w-6 rounded-[3px] object-cover ${current ? "ring-2 ring-signal" : "ring-1 ring-border"}`} />
+  );
+}
 
 /**
  * Language button for the site header. On the international guides each language is a link to the same page in that
@@ -48,28 +56,32 @@ export function LanguageMenu({ labels, siteUrl }: { labels: Record<string, MenuL
     <Menu.Root modal={false}>
       <Menu.Trigger
         aria-label={`${ui.label}: ${here.native}`}
-        className="inline-flex h-11 items-center rounded-md px-2.5 text-[15px] font-medium whitespace-nowrap text-muted-foreground transition-colors outline-none hover:text-foreground focus-visible:ring-[3px] focus-visible:ring-signal data-[popup-open]:text-foreground"
+        title={here.native}
+        className="inline-flex size-11 items-center justify-center rounded-md opacity-80 transition-opacity outline-none hover:opacity-100 focus-visible:ring-[3px] focus-visible:ring-signal data-[popup-open]:opacity-100"
       >
-        <span lang={here.tag}>{here.native}</span>
+        <Flag flag={here.flag} />
       </Menu.Trigger>
       <Menu.Portal>
         <Menu.Positioner align="end" sideOffset={6} className="z-50 outline-none">
           <Menu.Popup
             aria-describedby={world ? undefined : noteId}
             aria-label={ui.label}
-            className="min-w-52 rounded-lg border border-border bg-popover p-1 text-popover-foreground shadow-lg outline-none"
+            className="w-48 rounded-lg border border-border bg-popover p-1 text-popover-foreground shadow-lg outline-none"
           >
+            <div className="grid grid-cols-3 gap-0.5">
             {LOCALES.map((l) => {
               const current = l.code === lang;
-              const weight = current ? "font-bold" : "font-normal";
-              const label = <span lang={l.tag}>{l.native}</span>;
+              const label = <Flag flag={l.flag} current={current} />;
+              // the flag replaces the name on screen; the name is still the accessible label and the tooltip
+              const named = { "aria-label": l.native, title: l.native, lang: l.tag };
               if (world) {
                 return (
                   <Menu.LinkItem
                     key={l.code}
                     render={<Link href={worldPath(l.code, rest)} hrefLang={l.tag} />}
                     aria-current={current ? "page" : undefined}
-                    className={`${itemClass} ${weight}`}
+                    className={itemClass}
+                    {...named}
                   >
                     {label}
                   </Menu.LinkItem>
@@ -78,7 +90,8 @@ export function LanguageMenu({ labels, siteUrl }: { labels: Record<string, MenuL
               // No translated version of this page: English stays here, everything else goes through Google Translate.
               if (l.code === DEFAULT_LANG) {
                 return (
-                  <Menu.LinkItem key={l.code} render={<Link href={pathname} />} aria-current="page" className={`${itemClass} ${weight}`}>
+                  <Menu.LinkItem key={l.code} render={<Link href={pathname} />} aria-current="page" className={itemClass}
+                    {...named}>
                     {label}
                   </Menu.LinkItem>
                 );
@@ -90,12 +103,14 @@ export function LanguageMenu({ labels, siteUrl }: { labels: Record<string, MenuL
                   target="_blank"
                   rel="noopener noreferrer"
                   hrefLang={l.tag}
-                  className={`${itemClass} ${weight}`}
+                  className={itemClass}
+                    {...named}
                 >
                   {label}
                 </Menu.LinkItem>
               );
             })}
+            </div>
             {!world && (
               <p id={noteId} className="mt-1 border-t border-border px-3 pt-3 pb-2 text-sm text-muted-foreground">
                 {ui.note}

@@ -104,6 +104,7 @@ export default function SourcesPage() {
             ["D3 (d3-geo, d3-scale, d3-shape, d3-array)", "https://d3js.org", "ISC"],
             ["us-atlas and topojson-client", "https://github.com/topojson/us-atlas", "ISC"],
             ["Lucide icons", "https://lucide.dev", "ISC"],
+            ["flag-icons (language menu flags)", "https://github.com/lipis/flag-icons", "MIT"],
             ["Recharts", "https://recharts.org", "MIT"],
             ["NumberFlow", "https://number-flow.barvian.me", "MIT"],
             ["Base UI", "https://base-ui.com", "MIT"],

@@ -12,18 +12,20 @@ export interface Locale {
   /** BCP 47 tag for hreflang, `lang` attributes and date/number formatting. */
   tag: string;
   dir: "ltr" | "rtl";
+  /** Flag file in public/flags (flag-icons, MIT). A language is not a country, so this is the flag most readers expect. */
+  flag: string;
 }
 
 export const LOCALES = [
-  { code: "en", native: "English", english: "English", tag: "en", dir: "ltr" },
-  { code: "es", native: "Español", english: "Spanish", tag: "es", dir: "ltr" },
-  { code: "fr", native: "Français", english: "French", tag: "fr", dir: "ltr" },
-  { code: "de", native: "Deutsch", english: "German", tag: "de", dir: "ltr" },
-  { code: "pt", native: "Português", english: "Portuguese", tag: "pt", dir: "ltr" },
-  { code: "it", native: "Italiano", english: "Italian", tag: "it", dir: "ltr" },
-  { code: "ja", native: "日本語", english: "Japanese", tag: "ja", dir: "ltr" },
-  { code: "ko", native: "한국어", english: "Korean", tag: "ko", dir: "ltr" },
-  { code: "zh", native: "中文", english: "Chinese (Simplified)", tag: "zh-Hans", dir: "ltr" },
+  { code: "en", flag: "us", native: "English", english: "English", tag: "en", dir: "ltr" },
+  { code: "es", flag: "mx", native: "Español", english: "Spanish", tag: "es", dir: "ltr" },
+  { code: "fr", flag: "fr", native: "Français", english: "French", tag: "fr", dir: "ltr" },
+  { code: "de", flag: "de", native: "Deutsch", english: "German", tag: "de", dir: "ltr" },
+  { code: "pt", flag: "br", native: "Português", english: "Portuguese", tag: "pt", dir: "ltr" },
+  { code: "it", flag: "it", native: "Italiano", english: "Italian", tag: "it", dir: "ltr" },
+  { code: "ja", flag: "jp", native: "日本語", english: "Japanese", tag: "ja", dir: "ltr" },
+  { code: "ko", flag: "kr", native: "한국어", english: "Korean", tag: "ko", dir: "ltr" },
+  { code: "zh", flag: "cn", native: "中文", english: "Chinese (Simplified)", tag: "zh-Hans", dir: "ltr" },
 ] as const satisfies readonly Locale[];
 
 export type LangCode = (typeof LOCALES)[number]["code"];
