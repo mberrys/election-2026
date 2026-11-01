@@ -24,11 +24,12 @@ export function RaceFlags({ flags, className, detailed = false }: { flags?: Flag
               {f.challengedBallots ? <span className="fig text-alert-ink"> · ~{f.challengedBallots.toLocaleString()} ballots demanded</span> : null}
               {f.standing === "rejected" ? <span className="text-muted-foreground"> · rejected</span> : null}
               <span className="text-muted-foreground">: {f.summary} </span>
-              {f.url && (
-                <a href={f.url} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-foreground">
-                  Source ({f.asOf})
+              {[...(f.url ? [{ name: "Source", url: f.url }] : []), ...(f.sources ?? [])].map((s, j) => (
+                <a key={j} href={s.url} target="_blank" rel="noreferrer" className="mr-2 underline underline-offset-2 hover:text-foreground">
+                  {s.name}
                 </a>
-              )}
+              ))}
+              <span className="text-xs text-muted-foreground">as of {f.asOf}</span>
               {f.challengedBallots && f.standing !== "rejected" ? (
                 <div className="mt-1 text-xs text-muted-foreground">
                   Pending: we will not project a winner whose lead is smaller than this pool. If the challenge is thrown out, this

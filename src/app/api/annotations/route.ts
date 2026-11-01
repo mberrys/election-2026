@@ -23,6 +23,7 @@ const AnnotationSchema = z.object({
   kind: z.enum(["litigation", "set-aside", "count-paused", "advisory"]),
   summary: z.string().min(5).max(600),
   url: z.string().url().optional(),
+  sources: z.array(z.object({ name: z.string().min(1), url: z.string().url() })).max(8).optional(),
   challengedBallots: z.number().int().nonnegative().optional(),
   standing: z.enum(["pending", "rejected"]).optional(),
   asOf: z.string(),

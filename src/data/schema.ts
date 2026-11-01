@@ -252,6 +252,8 @@ export const Race = z.object({
         kind: z.enum(["litigation", "set-aside", "count-paused", "advisory"]),
         summary: z.string(),
         url: z.string().optional(),
+        /** Reporting or filings behind the summary. Prefer several independent ones over a single article. */
+        sources: z.array(z.object({ name: z.string(), url: z.string() })).optional(),
         challengedBallots: z.number().optional(),
         /** Where the challenge stands. Default "pending"; a "rejected" challenge no longer holds back calls. */
         standing: z.enum(["pending", "rejected"]).optional(),
